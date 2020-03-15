@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <title>getkeys</title>
+</head>
+<body>
+
+    <div id="app">
+      <el-table  :data="keyObject"   style="width: 100%">
+          <el-table-column        prop="privateKey"        label="秘钥"> </el-table-column>
+          <el-table-column        prop="publicKey"        label="公钥"> </el-table-column>
+      </el-table>
+      <el-button type="primary" @click="getKeys">生成公钥秘钥</el-button> 
+    </div>
+   
+    <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script>
+        new Vue({
+          el: '#app',
+          data: {
+            keyObject: [           
+            ]
+          },
+          created () {
+          
+          },
+          methods: {
+            getKeys () {
+              axios.get('/api/getKeys/').then((res) => {
+                let { data } = res.data
+                console.log(data)
+                this.keyObject = [data]
+              })
+            }
+          }
+        })
+    </script>
+</body>
+</html>
