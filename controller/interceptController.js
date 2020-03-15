@@ -1,12 +1,11 @@
-
 const { SuccessModel, ErrorModel }= require('../model/resModle')
 const { JWT_COMF } = require('../conf/db')
 const colors = require('colors')
 const jwt = require('jsonwebtoken')
 const redisFn = require('../db/redis')
-module.exports = function (app) {
-  //登录拦截器
-  app.use(function (req, res, next) {
+
+class interceptController {
+  checkUser (req, res, next) {
     var url = req.originalUrl;
     let token = req.headers.token
     if (url === "/api/login") {
@@ -31,5 +30,7 @@ module.exports = function (app) {
         res.json(new ErrorModel('还未登入!'))
       }
     }
-  });
+  }
 }
+
+module.exports = new interceptController()
