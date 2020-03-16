@@ -1,16 +1,17 @@
-const { loginServer } = require('../server/userServer')
+const UserServer = require('../server/UserServer')
 const { SuccessModel, ErrorModel }= require('../model/resModle')
 const { JWT_COMF } = require('../conf/db')
-const redisFn = require('../db/redis')
-const jwt = require('jsonwebtoken')
+const redis = require('../db/redis')
+const JwtToken = require('../utils/authToken')
 const colors = require('colors')
 const secret = 'wangxiping'
   class UserController {
     // 登入
-    login (req, res) {
+     login (req, res) {
       let phone = req.body.phone
       let password = req.body.password
-      loginServer(phone).then(_data => {
+      UserServer.login(phone).then(_data => {
+        let nickName = _data.nick_name
         if (_data.phone !== phone) {
           res.json(new ErrorModel('账号错误!'))
         }
@@ -18,13 +19,13 @@ const secret = 'wangxiping'
           res.json(new ErrorModel('密码错误!'))
         }
         let payload = {
-          id: _data.user_id,
+          user_id: _data.user_id,
           nickName: _data.nick_name,
-          admin: true
+          admin: true,
          }
-        let token = jwt.sign(payload, JWT_COMF.JWTKEY) //3分钟过期// 签发
-        console.log(token, 'login')
-        redisFn.set(token, _data.user_id, JWT_COMF.JWTEXP) //  同步到redis  
+        let token = JwtToken.createToken(payload) // 签发
+        redis.set(nickName, token, JWT_COMF.JWTEXP) //  同步到redis
+        res.cookie('nickName', nickName,{maxAge: 900000, httpOnly: true}) // 设置cookie
         res.json(new SuccessModel({token : token, userid: _data.user_id}, '登入成功'))
       })
     }

@@ -3,11 +3,14 @@ const path = require('path');
 const routers = require('./router/')
 const app = express()
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser');  
 require("body-parser-xml")(bodyParser);
 var ejs = require('ejs');
 
 //  application/json  
 app.use(bodyParser.json());
+// cookies
+app.use(cookieParser());  
 //  application/x-www-form-urlencoded  
 app.use(bodyParser.urlencoded({ extended: false }))    
 

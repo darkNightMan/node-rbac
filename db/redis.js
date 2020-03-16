@@ -1,27 +1,25 @@
 const redis = require('redis')
 const { REDIS_CONF } = require('../conf/db')
-
-// 创建客户端 
-const redisClient = redis.createClient(REDIS_CONF.port, REDIS_CONF.host)
-
-redisClient.on('error', err => {
-  console.log(err)
-})
-
-let redisFn = {
-  set: function(key, val, expTime) {
+class Redis {
+  constructor (redis) {
+    this.redisClinet = redis.createClient(REDIS_CONF.port, REDIS_CONF.host)
+    this.redisClinet.on('error', err => {
+      console.log(err)
+    })
+  }
+  set (key, val, expTime) {
     if (typeof val === 'object') {
-      var val = JSON.stringify(val)
+      let val = JSON.stringify(val)
     }
-   if (expTime) {
-      redisClient.setex(key, expTime, val)
-   } else {
-      redisClient.set(key, val, redis.print)
-   }
-  },
-  get: function (key) {
+    if (expTime) {
+      this.redisClinet.setex(key, expTime, val)
+    } else {
+      this.redisClinet.set(key, val, redis.print)
+    }
+  }
+  get (key) {
     const promise = new Promise((resolve, reject) => {
-      redisClient.get(key, (err, val) => {
+      this.redisClinet.get(key, (err, val) => {
         if (err) {
           reject(err)
           return
@@ -40,5 +38,4 @@ let redisFn = {
     return promise
   }
 }
-
-module.exports = redisFn
+module.exports = new Redis(redis)

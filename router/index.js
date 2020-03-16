@@ -1,10 +1,9 @@
-const userConlltoller = require('../controller/userController')
-const interceptController = require('../controller/interceptController')
-const testController = require('../controller/testController')
+const UserController = require('../controller/UserController')
+const InterceptAuth = require('../middlewares/intercept')
+const TestController = require('../controller/TestController')
 
 module.exports = function (app) {
-    app.post('/api/login', userConlltoller.login) // 登入接口
-    app.use(interceptController.checkUser) // 拦截器
-    app.get('/api/test', testController.test) // 测试接口
-    
+    app.post('/api/login', UserController.login) // 登入接口
+    app.use(InterceptAuth.auth) // 拦截器校验
+    app.get('/api/test', TestController.test) // 测试接口
 }
