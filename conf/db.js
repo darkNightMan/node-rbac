@@ -1,8 +1,14 @@
 //mysql配置文件
+// mysqlConf = {
+//   host: "127.0.0.1", //数据库的地址
+//   user: "root", // 用户的名字
+//   password: "root", // 用户密码 ，
+//   database: "blog" //数据库名字
+// } 
 mysqlConf = {
-  host: "127.0.0.1", //数据库的地址
+  host: "106.54.63.174", //数据库的地址
   user: "root", // 用户的名字
-  password: "root", // 用户密码 ，
+  password: "wang", // 用户密码 ，
   database: "blog" //数据库名字
 } 
 REDIS_CONF = {
