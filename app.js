@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const routers = require('./router/')
 const app = express()
+const R = require('./middlewares/r')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');  
 require("body-parser-xml")(bodyParser);
@@ -12,7 +13,10 @@ app.use(bodyParser.json());
 // cookies
 app.use(cookieParser());  
 //  application/x-www-form-urlencoded  
-app.use(bodyParser.urlencoded({ extended: false }))    
+app.use(bodyParser.urlencoded({ extended: false }))  
+
+// 扩展req
+app.use(R.resExtend)
 
 // 这里是静态文件夹，不走路由的
 app.use('/public', express.static(path.join(__dirname, '/views/public')));

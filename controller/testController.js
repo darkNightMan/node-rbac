@@ -1,8 +1,10 @@
 
 const { SuccessModel, ErrorModel }= require('../model/resModle')
+const UserServer = require('../server/UserServer')
 class TestController {
-  test (req, res) {
-    res.json(new SuccessModel('test'))
+  async test (req, res) {
+    let data = await UserServer.testSql()
+    res.json(new SuccessModel(data))
   }
 }
 module.exports = new TestController()

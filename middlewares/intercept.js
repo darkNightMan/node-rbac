@@ -20,7 +20,7 @@ class InterceptAuth {
         // 当前的token 是否和 redis中的一致 token 反则 用户可能重新登入或者在林外一台机子登入了
         if (token === redisToken) {
             redis.set(nickName, token, JWT_COMF.JWTEXP) // 继续激活当前token
-            next()
+            next() // 跳转下一个路由
         } else {
           res.json(new ErrorModel('token过期!'))
         }
