@@ -1,4 +1,4 @@
-const { SuccessModel, ErrorModel }= require('../model/resModle')
+
 const { JWT_COMF } = require('../conf/db')
 const colors = require('colors')
 const JwtToken = require('../utils/authToken')
@@ -10,7 +10,7 @@ class InterceptAuth {
     var url = req.originalUrl;
     let cookieName = req.cookies.username
     let token = req.headers.token
-    if (!token) return  res.json(new ErrorModel('还未登入!'))
+    if (!token) return  res.R.err('TOKEN_IS_MISSING')
     try {
       let { nickName, user_id } = JwtToken.verifyToken(token)
       // 验证客户端token是否合法
@@ -22,11 +22,13 @@ class InterceptAuth {
             redis.set(nickName, token, JWT_COMF.JWTEXP) // 继续激活当前token
             next() // 跳转下一个路由
         } else {
-          res.json(new ErrorModel('token过期!'))
+          res.R.err('TOKEN_HAS_EXPIRED')
         }
-      } 
+      } else {
+        res.R.err('TOKEN_IS_INVALID')
+      }
     } catch (ex) {
-      res.json(new ErrorModel(ex.message))
+      res.R.err('TOKEN_IS_INVALID')
     }
   } 
 }

@@ -1,33 +1,32 @@
-
+const errMsg = require('../utils/err-msg')
 
 class BaseModel {
-  constructor (data, msg) {
-    if (typeof data === 'string') {
-      this.data = null
-      this.msg = data
+  constructor (data, type) {
+    if (type === 'success') {
+      this.data = data
     } else {
-      this.data =data
-      this.msg = msg
+     return Object.assign(data, {data: null})
     }
-    return this
   }
 }
 class R {
   constructor (res) {
     this.res = res
+    this.errMsg = errMsg
+    this.successMsg
   }
   static resExtend(req, res, next){
     res.R = new R(res)
     next()
   }
-  ok (data, msg) {
-    let r = new BaseModel(data, msg)
+  ok (data) {
+    let r = new BaseModel(data, 'success')
+    r.msg = '成功'
     r.code = 200
     this.res.send(r)
   }
-  err (data, msg){
-    let r = new BaseModel(data, msg)
-    r.code = -1
+  err (msg){
+    let r = new BaseModel(this.errMsg[msg], 'error')
     this.res.send(r)
   }
 }
