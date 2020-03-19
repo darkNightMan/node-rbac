@@ -7,5 +7,6 @@ module.exports = function (app) {
     app.use(log.setLog) // 日志
     app.post('/api/login', UserController.login) // 登入接口
     app.use(InterceptAuth.auth) // 拦截器校验
+    app.get('/api/getMenuList', UserController.getMenuList) // 获取菜单接口
     app.get('/api/test', TestController.test) // 测试接口
 }

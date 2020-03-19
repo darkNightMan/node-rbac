@@ -33,6 +33,10 @@ module.exports = {
     code: 20002,
     msg: 'token已经过期'
   },
+  USER_ID_NULL: {
+    code: 20101,
+    msg: 'user_id不能为空'
+  },
   // 用户管理模块错误
   USER_HAS_EXITS: {
     code: 20100,

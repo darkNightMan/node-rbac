@@ -15,8 +15,7 @@ class UserController {
 
     try {
       let _data = await UserServer.login(phone)
-      let menu = await UserServer.getMenu(_data.user_id)
-      if (!_data) throw 'USER_NOT_EXITS'
+     if (!_data) return res.R.err('USER_NOT_EXITS')
      
       if (_data.password !== password) {       
         res.R.err('USER_PASSWORD_WRONG')
@@ -28,29 +27,17 @@ class UserController {
         nickName: _data.nick_name,
         admin: true,
       }
-      //  遍历菜单
-      function menuTree(data) {
-        let arr = [] // 存储一级菜单
-        function tree(data) {
-          data.map((it, idx) => {
-            if (it.parent_id) {
-              arr.map((i, d) => {
-                if (i.res_id === it.parent_id) {
-                  i.children = it
-                }
-              })
-            } else {
-              arr.push(it)
-            }
-          })
-        }
-        tree(data)
-        return arr
+      let userInfo = {
+        user_id: _data.user_id,
+        nick_name: _data.nick_name,
+        phone: _data.phone,
+        login_time: _data.login_time,
+        email: _data.email
       }
       let token = JwtToken.createToken(payload) // 签发
       redis.set(nickName, token, JWT_COMF.JWTEXP) //  同步到redis
       res.cookie('nickName', nickName, { maxAge: 900000, httpOnly: true }) // 设置cookie
-      res.R.ok({token:token, menuList: menuTree(menu) })
+      res.R.ok({token:token, userInfo: userInfo })
     } catch (ex) {
       res.R.err(ex)
     }
@@ -59,12 +46,35 @@ class UserController {
   loginOut(req, res) {
 
   }
-  getMeunList (req, res) {
-    
-  }
-  // 获取用户信息
-  getUserInfo(req, res) {
-
+  // 获取用户信息和菜单权限
+  async getMenuList (req, res) {
+    let userid = req.query['user_id']
+    if (!userid) {
+      res.R.err('USER_ID_NULL')
+    }
+    // 递归遍历菜单
+    function menuTree(data) {
+        let arr = [] // 存储一级菜单
+        function tree(data) {
+          data.map((it, idx) => {
+            if (it.parent_id) {
+              arr.map((i, d) => {
+                if (i.res_id === it.parent_id) {
+                  i.children = []
+                  i.children.push(it)
+                }
+              })
+            } else {
+              arr.push(it)
+            }
+          })
+        }
+        tree(data)
+      return arr
+    }
+    let _menu = await UserServer.getMenu(userid)
+    if (!_menu) return res.R.err('USER_NOT_EXITS')
+      res.R.ok({menuList: menuTree(_menu) })
   }
 }
 
