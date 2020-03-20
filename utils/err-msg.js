@@ -22,15 +22,15 @@ module.exports = {
   },
   // token认证模块错误
   TOKEN_IS_MISSING: {
-    code: 20000,
+    code: 401,
     msg: 'token缺失'
   },
   TOKEN_IS_INVALID: {
-    code: 20001,
-    msg: 'token无效'
+    code: 401,
+    msg: '登录失效'
   },
   TOKEN_HAS_EXPIRED: {
-    code: 20002,
+    code: 403,
     msg: 'token已经过期'
   },
   USER_ID_NULL: {

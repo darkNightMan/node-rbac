@@ -12,16 +12,18 @@ class InterceptAuth {
     let token = req.headers.token
     if (!token) return  res.R.err('TOKEN_IS_MISSING')
     try {
-      let { nickName, user_id } = JwtToken.verifyToken(token)
+      let decoded  = JwtToken.verifyToken(token)
       // 验证客户端token是否合法
-      if (nickName) {
+      if (decoded.user_id) {
         // 获取redis中的token
-        let redisToken = await redis.get(nickName)
+        let redisToken = await redis.get(`token_${decoded.user_id}`)
         // 当前的token 是否和 redis中的一致 token 反则 用户可能重新登入或者在林外一台机子登入了
         if (token === redisToken) {
-            redis.set(nickName, token, JWT_COMF.JWTEXP) // 继续激活当前token
+            req.userInfo = decoded
+            redis.set(`token_${decoded.user_id}`, token, JWT_COMF.JWTEXP) // 继续激活当前token
             next() // 跳转下一个路由
         } else {
+          // res.status(401).send()
           res.R.err('TOKEN_HAS_EXPIRED')
         }
       } else {

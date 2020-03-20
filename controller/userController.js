@@ -21,34 +21,31 @@ class UserController {
         res.R.err('USER_PASSWORD_WRONG')
         return false
       }
-      let nickName = _data.nick_name
       let payload = {
         user_id: _data.user_id,
         nickName: _data.nick_name,
         admin: true,
       }
-      let userInfo = {
-        user_id: _data.user_id,
-        nick_name: _data.nick_name,
-        phone: _data.phone,
-        login_time: _data.login_time,
-        email: _data.email
-      }
       let token = JwtToken.createToken(payload) // 签发
-      redis.set(nickName, token, JWT_COMF.JWTEXP) //  同步到redis
-      res.cookie('nickName', nickName, { maxAge: 900000, httpOnly: true }) // 设置cookie
-      res.R.ok({token:token, userInfo: userInfo })
+      redis.set(`token_${_data.user_id}`, token, JWT_COMF.JWTEXP) //  同步到redis
+      res.cookie(`token_${_data.user_id}`, _data.user_id, { maxAge: 900000, httpOnly: true }) // 设置cookie
+      res.R.ok({token:token })
     } catch (ex) {
       res.R.err(ex)
     }
   }
   // 退出
   loginOut(req, res) {
-
+    let userid = req.userInfo.user_id
+    if (!userid) {
+      res.R.err('USER_ID_NULL')
+    }
+    redis.set(`token_${userid}`, '')
+    res.R.ok('退出成功') 
   }
   // 获取用户信息和菜单权限
-  async getMenuList (req, res) {
-    let userid = req.query['user_id']
+  async getUserMenuList (req, res) {
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
@@ -73,8 +70,18 @@ class UserController {
       return arr
     }
     let _menu = await UserServer.getMenu(userid)
+    let _data = await UserServer.getUserInfo(userid)
+
+     let userInfo = {
+        user_id: _data.user_id,
+        nick_name: _data.nick_name,
+        phone: _data.phone,
+        login_time: _data.login_time,
+        email: _data.email,
+        avatar: _data.avatar
+      }
     if (!_menu) return res.R.err('USER_NOT_EXITS')
-      res.R.ok({menuList: menuTree(_menu) })
+      res.R.ok({menuList: menuTree(_menu), userInfo: userInfo })
   }
 }
 
