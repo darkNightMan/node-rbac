@@ -1,5 +1,7 @@
 const UserServer = require('../server/UserServer')
-const { JWT_COMF } = require('../conf/db')
+const {
+  JWT_COMF
+} = require('../conf/db')
 const redis = require('../db/redis')
 const JwtToken = require('../utils/authToken')
 const colors = require('colors')
@@ -15,9 +17,9 @@ class UserController {
 
     try {
       let _data = await UserServer.login(phone)
-     if (!_data) return res.R.err('USER_NOT_EXITS')
-     
-      if (_data.password !== password) {       
+      if (!_data) return res.R.err('USER_NOT_EXITS')
+
+      if (_data.password !== password) {
         res.R.err('USER_PASSWORD_WRONG')
         return false
       }
@@ -28,8 +30,13 @@ class UserController {
       }
       let token = JwtToken.createToken(payload) // 签发
       redis.set(`token_${_data.user_id}`, token, JWT_COMF.JWTEXP) //  同步到redis
-      res.cookie(`token_${_data.user_id}`, _data.user_id, { maxAge: 900000, httpOnly: true }) // 设置cookie
-      res.R.ok({token:token })
+      res.cookie(`token_${_data.user_id}`, _data.user_id, {
+        maxAge: 900000,
+        httpOnly: true
+      }) // 设置cookie
+      res.R.ok({
+        token: token
+      })
     } catch (ex) {
       res.R.err(ex)
     }
@@ -41,47 +48,85 @@ class UserController {
       res.R.err('USER_ID_NULL')
     }
     redis.set(`token_${userid}`, '')
-    res.R.ok('退出成功') 
+    res.R.ok('退出成功')
   }
   // 获取用户信息和菜单权限
-  async getUserMenuList (req, res) {
+  async getUserMenuList(req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    // 递归遍历菜单
-    function menuTree(data) {
-        let arr = [] // 存储一级菜单
-        function tree(data) {
-          data.map((it, idx) => {
-            if (it.parent_id) {
-              arr.map((i, d) => {
-                if (i.res_id === it.parent_id) {
-                  i.children = []
-                  i.children.push(it)
-                }
-              })
+    // 遍历菜单
+    function menuEach(menu) {
+      let parentMenu = menu.filter((it, index) => !it.parent_id) //  获取父级  
+      parentMenu.map((p, i1) => {
+        menu.map((c, i2) => {
+          if (p.res_id == c.parent_id) {
+            if (Object.prototype.toString.call(p.children) == '[object Array]') {
+              p.children.push(c)
             } else {
-              arr.push(it)
+              p.children = new Array()
+              p.children.push(c)
             }
-          })
-        }
-        tree(data)
-      return arr
+          }
+        })
+      })
+      return parentMenu
     }
     let _menu = await UserServer.getMenu(userid)
     let _data = await UserServer.getUserInfo(userid)
 
-     let userInfo = {
-        user_id: _data.user_id,
-        nick_name: _data.nick_name,
-        phone: _data.phone,
-        login_time: _data.login_time,
-        email: _data.email,
-        avatar: _data.avatar
-      }
+    let menuList = menuEach(_menu) // 获取菜单树  
+    let userInfo = {
+      user_id: _data.user_id,
+      nick_name: _data.nick_name,
+      phone: _data.phone,
+      login_time: _data.login_time,
+      email: _data.email,
+      avatar: _data.avatar
+    }
     if (!_menu) return res.R.err('USER_NOT_EXITS')
-      res.R.ok({menuList: menuTree(_menu), userInfo: userInfo })
+    res.R.ok({
+      menuList: menuList,
+      userInfo: userInfo
+    })
+  }
+  // 获取所以用户
+  async getAllUser (req, res){
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
+    if (!userid) {
+      res.R.err('USER_ID_NULL')
+    }
+    let _data = await UserServer.getAllUser()
+     if (_data) {
+       res.R.ok({userList: _data})
+     }
+  }
+  //  获取角色列表
+  async getAllRole (req, res){
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
+    if (!userid) {
+      res.R.err('USER_ID_NULL')
+    }
+    let _data = await UserServer.getAllRole()
+     if (_data) {
+       res.R.ok({roleList: _data})
+     }
+  }
+  // 获取角色权限菜单
+  async getUserPer (req, res) {
+    let role_id = req.query['role_id'] // 参数
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户 
+    console.log(role_id)
+    // let _menu = await UserServer.getMenu(user_id)
+    if (!userid) {
+      res.R.err('USER_ID_NULL')
+    }   
+    if (_menu) {
+      let resIdarr = []
+      _menu.map(it => {resIdarr.push(it.res_id)})
+      res.R.ok({res_id: resIdarr})
+    }
   }
 }
 
