@@ -25,9 +25,9 @@ class UserServer {
   // 获取菜单
   async getMenu(userId) {
     let sql = `SELECT	sys_resource.*  FROM  sys_user_role
-        INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
-        INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-        WHERE user_id = ${userId} GROUP BY res_id`
+      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
+      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
+      WHERE user_id = ${userId} GROUP BY res_id`
     let row = await exec(sql)
     return row
   }
@@ -40,12 +40,6 @@ class UserServer {
   // 获取的用户
   async getAllUser() {
     let sql = `SELECT * FROM sys_user`
-    let row = await exec(sql)
-    return row
-  }
-  // 获取所有的角色
-  async getAllRole() {
-    let sql = `SELECT * FROM sys_role`
     let row = await exec(sql)
     return row
   }

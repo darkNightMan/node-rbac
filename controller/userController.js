@@ -102,32 +102,5 @@ class UserController {
        res.R.ok({userList: _data})
      }
   }
-  //  获取角色列表
-  async getAllRole (req, res){
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
-    let _data = await UserServer.getAllRole()
-     if (_data) {
-       res.R.ok({roleList: _data})
-     }
-  }
-  // 获取角色权限菜单
-  async getUserPer (req, res) {
-    let role_id = req.query['role_id'] // 参数
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户 
-    console.log(role_id)
-    // let _menu = await UserServer.getMenu(user_id)
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }   
-    if (_menu) {
-      let resIdarr = []
-      _menu.map(it => {resIdarr.push(it.res_id)})
-      res.R.ok({res_id: resIdarr})
-    }
-  }
 }
-
 module.exports = new UserController()
