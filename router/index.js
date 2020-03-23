@@ -15,9 +15,10 @@ module.exports = function (app) {
   app.get('/api/getUserMenuList', UserController.getUserMenuList) // 获取用户信息和菜单
   app.get('/api/sysMenu/',SysMenuController.list) // 获取菜单列表
   app.get('/api/sysMenutree/',SysMenuController.treeMenu) // 获取菜单树
-  app.get('/api/getRoleTreePer/', SysRoleController.getRoleTreePer) // 根据角色获取权限
+  app.get('/api/getRoleTreePer/', SysRoleController.getRoleTreePer) // 获取当前角色下的权限
   app.post('/api/setRoleTreePer/', SysRoleController.setRoleTreePer) //修改角色权限
   app.get('/api/getAllRole', SysRoleController.getAllRole) // 获取所有的角色 
   app.post('/api/createRole', SysRoleController.createRole) // 新建角色 
-  app.post('/api/updateRole', SysRoleController.updateRole) // 更新角色 
+  app.post('/api/updateRole', SysRoleController.updateRole) // 更新角色  
+  app.get('/api/deleteRole', SysRoleController.deleteRole)  // 删除角色 
 }

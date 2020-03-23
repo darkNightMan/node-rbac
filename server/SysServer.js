@@ -19,4 +19,3 @@ class SysServer {
   }
 }
 module.exports = new SysServer()
-module.exports = new SysServer()

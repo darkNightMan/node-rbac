@@ -43,5 +43,10 @@ class SysRoleServer {
     let data = await exec(sql) 
     return data
   }
+  async daleteRole (roleId) {
+    let sql = `DELETE FROM sys_role WHERE role_id = ${roleId}`   
+    let data = await exec(sql) 
+    return data
+  }
 }
 module.exports = new SysRoleServer()
