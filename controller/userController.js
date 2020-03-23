@@ -50,7 +50,7 @@ class UserController {
     redis.set(`token_${userid}`, '')
     res.R.ok('退出成功')
   }
-  // 获取用户信息和菜单权限
+  // 获取登录用户信息和菜单权限
   async getUserMenuList(req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {

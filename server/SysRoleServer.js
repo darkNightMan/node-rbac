@@ -9,18 +9,19 @@ class SysRoleServer {
     return row
   }
   async setRolePer (roleid, residArr) {
+    console.log(residArr)
     function getValues(params) {
       let values = ''
       residArr.forEach((res_id) => {
         values+=`(${roleid},${res_id}),`
       })
-      return values
+      return values.replace(/,$/gi, '')
     }
     let deletSql = `DELETE FROM sys_role_permmision WHERE role_id = ${roleid};`
     let insertSql = `INSERT INTO sys_role_permmision (role_id, res_id) VALUES ${getValues(residArr)}`
     let isDelete = await exec(deletSql) // 先将所有的删除
     if (isDelete) {
-      // let isInsert = await exec(insertSql)// 再插入数据
+      let isInsert = await exec(insertSql)// 再插入数据
     }
     if (isDelete) {
       return true
