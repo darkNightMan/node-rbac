@@ -54,5 +54,10 @@ class SysRoleServer {
     let data = await exec(sql) 
     return data
   }
+  async findRoles () {
+    let sql = `SELECT * FROM sys_user_role`
+    let data = await exec(sql) 
+    return data
+  }
 }
 module.exports = new SysRoleServer()
