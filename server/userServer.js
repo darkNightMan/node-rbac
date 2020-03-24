@@ -22,29 +22,11 @@ class UserServer {
     let row = await exec(sql)
     return row
   }
-  // 获取菜单
-  async getMenu(userId) {
-    let sql = `SELECT	sys_resource.*  FROM  sys_user_role
-      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
-      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} GROUP BY res_id`
-    let row = await exec(sql)
-    return row
-  }
   // 获取用户信息
   async getUserInfo(userId) {
     let sql = `SELECT user_id, nick_name, phone, password, login_time, avatar, email FROM sys_user WHERE user_id = ${userId}`
     let row = await exec(sql)
     return row[0]
-  }
-  // 获取的用户
-  async getAllUser() {
-    let sql = `SELECT * FROM sys_user`
-    let row = await exec(sql)
-    return row
-  }
-  async setUserPer (user_id) {
-
   }
 }
 

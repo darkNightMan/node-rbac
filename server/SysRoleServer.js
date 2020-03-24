@@ -2,12 +2,15 @@
 const {
   exec
 } = require('../db/mysql.js')
+// 角色
 class SysRoleServer {
+  // 获取当前角色的权限
   async getRolePer (role_id){   
     let sql = `SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = ${role_id};`
     let row = await exec(sql)
     return row
   }
+  // 给角色设置权限
   async setRolePer (roleid, residArr) {
     console.log(residArr)
     function getValues(params) {
@@ -33,17 +36,19 @@ class SysRoleServer {
     let row = await exec(sql)
     return row
   }
+  // 创建角色
   async createRole (name, code) {
     let sql = `INSERT INTO sys_role (role_name, role_code) VALUES ('${name}', '${code}')` 
     let data = await exec(sql) 
     return data
   }
-
+  // 更新角色
   async updateRole (roleId, name, code) {
     let sql = `UPDATE sys_role SET role_code='${code}', role_name='${name}' WHERE role_id=${roleId}` 
     let data = await exec(sql) 
     return data
   }
+  // 删除角色
   async daleteRole (roleId) {
     let sql = `DELETE FROM sys_role WHERE role_id = ${roleId}`   
     let data = await exec(sql) 

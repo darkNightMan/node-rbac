@@ -1,4 +1,5 @@
 const UserServer = require('../server/UserServer')
+const SysMenuServer = require('../server/SysMenuServer')
 const {
   JWT_COMF
 } = require('../conf/db')
@@ -73,7 +74,7 @@ class UserController {
       })
       return parentMenu
     }
-    let _menu = await UserServer.getMenu(userid)
+    let _menu = await SysMenuServer.getMenu(userid)
     let _data = await UserServer.getUserInfo(userid)
 
     let menuList = menuEach(_menu) // 获取菜单树  
@@ -90,17 +91,6 @@ class UserController {
       menuList: menuList,
       userInfo: userInfo
     })
-  }
-  // 获取所以用户
-  async getAllUser (req, res){
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
-    let _data = await UserServer.getAllUser()
-     if (_data) {
-       res.R.ok({userList: _data})
-     }
   }
 }
 module.exports = new UserController()

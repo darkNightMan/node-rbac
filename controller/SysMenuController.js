@@ -1,4 +1,4 @@
-const SysServer = require('../server/SysServer')
+const SysServer = require('../server/SysMenuServer')
 class SysMenuController {
   async list(req, res) {
     let _data = await SysServer.getResourceList()
