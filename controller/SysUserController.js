@@ -1,6 +1,6 @@
 
 
-const sysUserServer = require('../server/sysUserServer')
+const SysUserServer = require('../server/SysUserServer')
 const SysRoleServer = require('../server/SysRoleServer')
 class SysUserController {
   async test (req, res) {
@@ -13,7 +13,7 @@ class SysUserController {
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    let _data = await sysUserServer.getAllUser() // 用户表
+    let _data = await SysUserServer.getAllUser() // 用户表
     let roleList = await SysRoleServer.findRoles() // 用户角色关联
     let roleName = await SysRoleServer.getAllRole() // 角色名
     _data.map((it1) => {
@@ -56,7 +56,7 @@ class SysUserController {
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    let _data = await sysUserServer.createUser(userInfo) // 用户表
+    let _data = await SysUserServer.createUser(userInfo) // 用户表
     if (_data) {
       res.R.ok(_data)
     }

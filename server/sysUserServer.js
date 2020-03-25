@@ -4,7 +4,7 @@ const {
 
 
 // 用户
-class sysUserServer {
+class SysUserServer {
    // 获取的用户
    async getAllUser() {
     let sql = `SELECT * FROM sys_user`
@@ -34,4 +34,4 @@ class sysUserServer {
   }
 
 }
-module.exports = new sysUserServer()
+module.exports = new SysUserServer()
