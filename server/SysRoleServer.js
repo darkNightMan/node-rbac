@@ -12,7 +12,6 @@ class SysRoleServer {
   }
   // 给角色设置权限
   async setRolePer (roleid, residArr) {
-    console.log(residArr)
     function getValues(params) {
       let values = ''
       residArr.forEach((res_id) => {

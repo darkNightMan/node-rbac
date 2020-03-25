@@ -22,4 +22,5 @@ module.exports = function (app) {
   app.post('/api/updateRole', SysRoleController.updateRole) // 更新角色  
   app.get('/api/deleteRole', SysRoleController.deleteRole)  // 删除角色 
   app.get('/api/getAllUser', SysUserController.getAllUser) // 获取所有的用户
+  app.post('/api/user/createUser', SysUserController.createUser) // 新增用户
 }
