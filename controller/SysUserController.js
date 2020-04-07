@@ -42,7 +42,7 @@ class SysUserController {
       res.R.ok({userList: _data})
     }
   }
-
+  // 创建用户
   async createUser (req, res) {
     let userInfo = {
       nick_name: req.body.nick_name,
@@ -61,11 +61,26 @@ class SysUserController {
       res.R.ok(_data)
     }
   }
+  // 更新用户
   async updateUser (req, res) {
-    
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
+    if (!userid) {
+      res.R.err('USER_ID_NULL')
+    }
+    let data = req.body  
+    let _data = await SysUserServer.updateUser(data) // 更新
+    res.R.ok(_data)
   }
   async deleteUser (req, res) {
-    
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
+    if (!userid) {
+      res.R.err('USER_ID_NULL')
+    }
+    let user_id = req.body.user_id
+    let _data = await SysUserServer.deleteUser(user_id) // 删除
+    if (_data) {
+      res.R.ok(_data)
+    }
   }
 }
 module.exports = new SysUserController()
