@@ -27,5 +27,14 @@ class SysMenuController {
       treeMenu: menuEach(_data)
     })
   }
+  async createMenu (req, res) {    
+    let data = req.body
+    let _data = await SysServer.insertMenu(data)
+    if(_data) {
+      res.R.ok(_data)
+    } else {
+      res.R.err('MENU_INSERT_FAILED')
+    }
+  }
 }
 module.exports = new SysMenuController()

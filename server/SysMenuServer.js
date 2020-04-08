@@ -26,5 +26,12 @@ class SysMenuServer {
       let row = await exec(sql)
     return row
   }
+  async insertMenu (data) {
+    let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon) 
+    VALUES (${data.parent_id ? data.parent_id : 0},'${data.res_name}','${data.res_code}','${data.component}','${data.description}',now(),'${data.res_icon}'
+    )`
+    let row = await exec(sql)
+    return row
+  }
 }
 module.exports = new SysMenuServer()

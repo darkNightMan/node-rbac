@@ -83,6 +83,10 @@ module.exports = {
     code: 20108,
     msg: '用户列表查询失败'
   },
+  MENU_INSERT_FAILED: {
+    code: 20108,
+    msg: '菜单插新增失败'
+  },
   // 路由管理模块错误
   ROUTER_HAS_EXITS: {
     code: 20200,
