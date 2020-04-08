@@ -43,8 +43,8 @@ class SysUserServer {
   async deleteUser (user_id) {
     let sqluser = `DELETE FROM sys_user  WHERE user_id = ${user_id}`
     let sqlRole = `DELETE FROM sys_user_role WHERE user_id = ${user_id}`
-    let deluser = await exec(sqluser)
     let delrole = await exec(sqlRole)
+    let deluser = await exec(sqluser)
     return true
   }
   // 更新用户角色

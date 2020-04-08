@@ -23,7 +23,6 @@ class SysMenuController {
       })
       return parentMenu
     }
-
     res.R.ok({
       treeMenu: menuEach(_data)
     })
