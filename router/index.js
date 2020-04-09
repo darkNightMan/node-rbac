@@ -26,5 +26,6 @@ module.exports = function (app) {
   app.post('/api/user/updateUser', SysUserController.updateUser) // 更新用户
   app.post('/api/user/deleteUser', SysUserController.deleteUser) // 删除用户
   app.post('/api/menu/createMenu', SysMenuController.createMenu) // 新增菜单
-      
+  app.post('/api/menu/updatedMenu', SysMenuController.updatedMenu) // 更新菜单
+  app.post('/api/menu/deleteMenu', SysMenuController.deleteMenu) // 更新菜单    
 }

@@ -85,7 +85,15 @@ module.exports = {
   },
   MENU_INSERT_FAILED: {
     code: 20108,
-    msg: '菜单插新增失败'
+    msg: '菜单新增失败'
+  },
+  MENU_UPDATE_FAILED: {
+    code: 20108,
+    msg: '菜单更新失败'
+  },
+  MENU_DELETE_FAILED: {
+    code: 20108,
+    msg: '菜单删除失败'
   },
   // 路由管理模块错误
   ROUTER_HAS_EXITS: {
