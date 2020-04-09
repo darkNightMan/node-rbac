@@ -38,9 +38,18 @@ class SysMenuServer {
     let row = await exec(sql)
     return row
   }
+  // 删除菜单
   async deleteMenu (res_id) {
-    let sql = `DELETE FROM sys_resource WHERE  res_id = ${res_id}`
-    let row = await exec(sql)
+    const del = async(resid) => {
+      let row = await exec(`SELECT * FROM sys_resource WHERE parent_id = ${resid}`) // 查询是否有关联的子菜单
+      if (row.length > 0) { // 如果存在子子菜单递归删除
+        await exec(`DELETE FROM sys_resource WHERE parent_id = ${resid}`)
+        return del(resid)
+      } else { // 如果没有子菜单则删除当前菜单
+        return await exec(`DELETE FROM sys_resource WHERE res_id = ${resid}`)
+      }
+    }   
+    let row = await del(res_id)
     return row
   }
 }
