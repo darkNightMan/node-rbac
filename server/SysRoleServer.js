@@ -22,7 +22,7 @@ class SysRoleServer {
     let deletSql = `DELETE FROM sys_role_permmision WHERE role_id = ${roleid};`
     let insertSql = `INSERT INTO sys_role_permmision (role_id, res_id) VALUES ${getValues(residArr)}`
     let isDelete = await exec(deletSql) // 先将所有的删除
-    if (isDelete) {
+    if (isDelete && residArr.length > 0) {
       let isInsert = await exec(insertSql)// 再插入数据
     }
     if (isDelete) {
