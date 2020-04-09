@@ -8,7 +8,8 @@ class SysMenuController {
     let _data = await SysServer.getTreeMenu()
     // 遍历菜单
     function menuEach(menu) {
-      let parentMenu = menu.filter((it, index) => !it.parent_id) //  获取父级  
+      let root = menu.filter((it, index) => it.parent_id == null) //  获取根级
+      let parentMenu = menu.filter((it, index) => !it.parent_id)  //  获取根父级
       parentMenu.map((p, i1) => {
         menu.map((c, i2) => {
           if (p.res_id == c.parent_id) {
@@ -21,11 +22,9 @@ class SysMenuController {
           }
         })
       })
-      return parentMenu
+      return root
     }
-    res.R.ok({
-      treeMenu: menuEach(_data)
-    })
+    res.R.ok(menuEach(_data))
   }
   async createMenu (req, res) {    
     let data = req.body
