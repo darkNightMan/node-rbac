@@ -2,7 +2,7 @@ const {
   exec
 } = require('../db/mysql.js')
 
-// 登入
+// 登入1
 class UserServer {
   async login(phone) {
     let sqlfind = `SELECT user_id, nick_name, phone, password, login_time, avatar, email FROM sys_user WHERE phone = ${phone}`
