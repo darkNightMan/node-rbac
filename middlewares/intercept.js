@@ -16,7 +16,7 @@ class InterceptAuth {
       let decoded = JwtToken.verifyToken(token)
       // 验证客户端token是否合法
       if (decoded.user_id) {
-        // 获取redis中的token
+        // 获取redis中的token1
         let redisToken = await redis.get(`token_${decoded.user_id}`)
         // 当前的token 是否和 redis中的一致 token 反则 用户可能重新登入或者在林外一台机子登入了
         if (token === redisToken) {

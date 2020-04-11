@@ -1,4 +1,4 @@
-const env = process.env.NODE_ENV  // 环境参数
+const env = process.env.NODE_ENV  // 环境参数123
 
 if (env === 'dev') {
   MYSQL_CONF = { // 服务器
