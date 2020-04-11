@@ -8,7 +8,7 @@ const JwtToken = require('../utils/authToken')
 const colors = require('colors')
 
 class UserController {
-  // 登入
+  // 登入1
   async login(req, res) {
     let phone = req.body.phone
     let password = req.body.password
