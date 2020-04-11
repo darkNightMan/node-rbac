@@ -39,4 +39,4 @@ module.exports = {
   mysqlConf,
   REDIS_CONF,
   JWT_COMF
-}; //用module.exports暴露出这个接口，
+}
