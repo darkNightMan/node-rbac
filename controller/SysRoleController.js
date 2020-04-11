@@ -64,7 +64,7 @@ class SysRoleController {
     }
     let _data = await SysRoleServer.updateRole(roleId, roleName, roleCode)
     if (_data) {
-      res.R.ok('修改成功')
+      res.R.ok('修改成功')      
     }
   }
   // 删除角色
