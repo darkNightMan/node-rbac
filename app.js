@@ -3,11 +3,19 @@ const path = require('path');
 const routers = require('./router/')
 const app = express()
 const R = require('./middlewares/r')
+const log4js = require('log4js')
+const logConfig = require('./conf/log')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');  
 require("body-parser-xml")(bodyParser);
 var ejs = require('ejs');
 
+
+// 日志配置
+log4js.configure(logConfig)
+let logger = log4js.getLogger()
+console.log(logger)
+global.logger = logger
 //  application/json  
 app.use(bodyParser.json());
 // cookies

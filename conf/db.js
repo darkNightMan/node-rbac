@@ -33,7 +33,7 @@ if (env === 'dev') {
     JWTEXP: 3600 // token 过期时间
   }
 }
-console.log(MYSQL_CONF,  REDIS_CONF,  JWT_COMF)
+// console.log(MYSQL_CONF,  REDIS_CONF,  JWT_COMF)
 module.exports = {
   MYSQL_CONF,
   REDIS_CONF,

@@ -18,6 +18,7 @@ class R {
     this.successMsg
   }
   static resExtend(req, res, next) {
+    // logger.info(`traceId:${JSON.stringify(req.headers)}`)
     res.R = new R(res)
     next()
   }

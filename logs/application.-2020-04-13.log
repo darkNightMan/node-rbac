@@ -1,0 +1,12 @@
+[2020-04-13T13:43:27.967] [INFO] default - traceId:[object Object]
+[2020-04-13T13:43:36.250] [INFO] default - traceId:[object Object]
+[2020-04-13T17:16:19.000] [INFO] default - traceId:[object Object]
+[2020-04-13T17:16:44.882] [INFO] default - traceId:[object Object]
+[2020-04-13T17:16:54.772] [INFO] default - traceId:[object Object]
+[2020-04-13T17:17:19.203] [INFO] default - traceId:undefined
+[2020-04-13T17:17:34.014] [INFO] default - traceId:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY3NDMyNDl9.8_--Rtm1ITH3L3HHVWnPjYp9fpIWwBSHgrtigFqIcyQ
+[2020-04-13T17:17:45.772] [INFO] default - traceId:undefined
+[2020-04-13T17:17:54.840] [INFO] default - traceId:undefined
+[2020-04-13T17:18:55.147] [INFO] default - traceId:{}
+[2020-04-13T17:19:12.335] [INFO] default - traceId:{"cache-control":"no-cache","postman-token":"f034059b-af04-493a-b8a0-fcde7ef90403","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY3NDMyNDl9.8_--Rtm1ITH3L3HHVWnPjYp9fpIWwBSHgrtigFqIcyQ","user-agent":"PostmanRuntime/3.0.11-hotfix.2","accept":"*/*","host":"127.0.0.1:10086","accept-encoding":"gzip, deflate","connection":"keep-alive"}
+[2020-04-13T17:28:13.773] [INFO] default - traceId:{"cache-control":"no-cache","postman-token":"087a5eee-e0cb-4c45-b6d4-5445b8a8054a","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY3NDMyNDl9.8_--Rtm1ITH3L3HHVWnPjYp9fpIWwBSHgrtigFqIcyQ","user-agent":"PostmanRuntime/3.0.11-hotfix.2","accept":"*/*","host":"127.0.0.1:10086","accept-encoding":"gzip, deflate","connection":"keep-alive"}
