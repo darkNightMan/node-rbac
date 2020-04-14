@@ -25,3 +25,12 @@
 [2020-04-14T12:53:07.711] [ERROR] default - req-params:{}
 [2020-04-14T12:53:07.712] [ERROR] default - req-body:{}
 [2020-04-14T12:53:07.712] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}
+[2020-04-14T13:49:20.318] [INFO] default - traceId:d5969b27-c713-4862-a3c6-b49781ab843b
+[2020-04-14T13:49:20.326] [INFO] default - traceId:d5969b27-c713-4862-a3c6-b49781ab843b
+[2020-04-14T13:49:20.328] [INFO] default - ip:::ffff:127.0.0.1
+[2020-04-14T13:49:20.329] [INFO] default - host:127.0.0.1
+[2020-04-14T13:49:20.330] [ERROR] default - method: [GET] URL: /api/test
+[2020-04-14T13:49:20.331] [ERROR] default - req-query:{}
+[2020-04-14T13:49:20.332] [ERROR] default - req-params:{}
+[2020-04-14T13:49:20.334] [ERROR] default - req-body:{}
+[2020-04-14T13:49:20.335] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}

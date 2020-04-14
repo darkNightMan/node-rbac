@@ -11,6 +11,12 @@ class BaseModel {
     }
   }
 }
+function getClientIp(req) {
+  return req.headers['x-forwarded-for'] ||
+  req.connection.remoteAddress ||
+  req.socket.remoteAddress ||
+  req.connection.socket.remoteAddress;
+}
 class R {
   constructor(res, req) {
     this.res = res
@@ -27,7 +33,7 @@ class R {
     r.msg = '成功'
     r.code = 200
     logger.info(`traceId:${this.req.headers.traceId}`)
-    logger.info(`ip:${this.req.connection.remoteAddress}`)
+    logger.info(`ip:${getClientIp(this.req)}`)
     logger.info(`host:${this.req.hostname}`)
     logger.info(`method: [${this.req.method}] URL: ${this.req.url}`)
     logger.info(`req-query:${JSON.stringify(this.req.query)}`)
@@ -39,7 +45,7 @@ class R {
   err(msg) {
     let r = new BaseModel(this.errMsg[msg], 'error')
     logger.info(`traceId:${this.req.headers.traceId}`)
-    logger.info(`ip:${this.req.connection.remoteAddress}`)
+    logger.info(`ip:${getClientIp(this.req)}`)
     logger.info(`host:${this.req.hostname}`)
     logger.error(`method: [${this.req.method}] URL: ${this.req.url}`)
     logger.error(`req-query:${JSON.stringify(this.req.query)}`)
