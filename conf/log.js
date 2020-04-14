@@ -8,7 +8,7 @@ let LOG_CONFIG = {
       category: 'http'
     },
     application: {
-      type: 'DateFile',
+      type: 'dateFile',
       filename: './logs/application',
       pattern: '-yyyy-MM-dd.log',
       maxLogSize: 10485760, // 10mb,日志文件大小,超过该size则自动创建新的日志文件
