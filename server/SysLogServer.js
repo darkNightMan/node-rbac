@@ -4,14 +4,25 @@ const {
 
 // 登入1
 class SysLogServer {
-  insert (data) {
-    let sql = `INSERT INTO sys_loging_log(user_log_id, user_name, login_time, login_ip, login_address, user_role) VALUES(
-      ${data.user_id},
+  async insert (data) {  
+    let inserData = Object.assign({
+      user_id: '',
+      user_name: '',
+      login_time: '',
+      login_ip: '',
+      login_address: '',
+      login_description: ''
+    }, data)
+    let sql = `INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description) VALUES(
+      ${inserData.user_id},    
+      '${inserData.user_name}',
       now(),
-      ${data.user_id},
-      ${data.user_id},
-      ${data.user_id},
+      '${inserData.login_ip}',
+      '${inserData.login_address}',
+      '${inserData.login_description}'
     )`
+    let row = await exec(sql)
+    return row[0]
   }
 }
 

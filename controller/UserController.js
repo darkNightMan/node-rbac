@@ -9,38 +9,50 @@ const {
 const redis = require('../db/redis')
 const JwtToken = require('../utils/authToken')
 const colors = require('colors')
-
+const errMsg = require('../utils/err-msg')
 class UserController {
   // 登入
   async login(req, res) {
+   
     let phone = req.body.phone
-    let password = req.body.password
+    let password = req.body.password  
     
-    if (!phone) res.R.err('USER_PHONE_NULL')
-    if (!password) res.R.err('USER_PASSWORD_NULL')
+    if (!phone) {
+      res.R.err('USER_PHONE_NULL')
+    }
+    if (!password){
+      res.R.err('USER_PASSWORD_NULL')
+    }
 
     try {
       let _data = await UserServer.login(phone)
-      if (!_data) return res.R.err('USER_NOT_EXITS')
-
-      if (_data.password !== password) {
-        res.R.err('USER_PASSWORD_WRONG')
-        return false
+      let dataLog = {
+        user_id: _data.user_id,
+        user_name: _data.nick_name,
+        login_ip: env === 'dev'? req.hostname : req.headers.remoteIP,
+        login_address: env === 'dev' ? '本地登入' : '未知',
+      }
+      if (!_data) {
+        dataLog.login_description = errMsg['USER_NOT_EXITS'].msg
+        await SysLogServer.insert(dataLog)      
+        return res.R.err('USER_NOT_EXITS')
+      }
+      if (_data.password !== password) {   
+        dataLog.login_description = errMsg['USER_PASSWORD_WRONG'].msg   
+        await SysLogServer.insert(dataLog)
+        return res.R.err('USER_PASSWORD_WRONG')
       }
       let payload = {
         user_id: _data.user_id,
         nickName: _data.nick_name,
         admin: true,
       }
+      dataLog.login_description = '登入成功'
+      let logrow = await SysLogServer.insert(dataLog)
       let token = JwtToken.createToken(payload) // 签发
       redis.set(`token_${_data.user_id}`, token, JWT_COMF.JWTEXP) //  同步到redis
-      res.cookie(`token_${_data.user_id}`, _data.user_id, {
-        maxAge: 900000,
-        httpOnly: true
-      }) // 设置cookie
-      res.R.ok({
-        token: token
-      })
+      res.cookie(`token_${_data.user_id}`, _data.user_id, { maxAge: 900000, httpOnly: true }) // 设置cookie
+      res.R.ok({ token: token })
     } catch (ex) {
       console.log(ex)
       // res.R.err(ex)
