@@ -27,6 +27,8 @@ class R {
     r.msg = '成功'
     r.code = 200
     logger.info(`traceId:${this.req.headers.traceId}`)
+    logger.info(`ip:${this.req.ip}`)
+    logger.info(`host:${this.req.hostname}`)
     logger.info(`method: [${this.req.method}] URL: ${this.req.url}`)
     logger.info(`req-query:${JSON.stringify(this.req.query)}`)
     logger.info(`req-params:${JSON.stringify(this.req.params)}`)
@@ -37,6 +39,8 @@ class R {
   err(msg) {
     let r = new BaseModel(this.errMsg[msg], 'error')
     logger.info(`traceId:${this.req.headers.traceId}`)
+    logger.info(`IP:${this.req.ip}`)
+    logger.info(`host:${this.req.hostname}`)
     logger.error(`method: [${this.req.method}] URL: ${this.req.url}`)
     logger.error(`req-query:${JSON.stringify(this.req.query)}`)
     logger.error(`req-params:${JSON.stringify(this.req.params)}`)

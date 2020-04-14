@@ -153,3 +153,51 @@
 [2020-04-14T10:32:31.853] [INFO] default - req-params:{}
 [2020-04-14T10:32:31.854] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
 [2020-04-14T10:32:31.854] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzE1NTF9.XIe_lNH9WQNvDW5hsn3unZwaqtRgIipMzS5SjBzHX3w"},"msg":"成功","code":200}
+[2020-04-14T10:41:15.169] [INFO] default - traceId:0bca4b87-80c6-41c9-a4f3-3e767c0f80f2
+[2020-04-14T10:41:15.307] [INFO] default - traceId:0bca4b87-80c6-41c9-a4f3-3e767c0f80f2
+[2020-04-14T10:41:15.308] [INFO] default - traceId:[object Object]
+[2020-04-14T10:41:15.309] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T10:41:15.310] [INFO] default - req-query:{}
+[2020-04-14T10:41:15.310] [INFO] default - req-params:{}
+[2020-04-14T10:41:15.311] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T10:41:15.312] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzIwNzV9.lyKjStmwIDv6MVM5XniAqgabheQeQDRHRJbEXvTuHgI"},"msg":"成功","code":200}
+[2020-04-14T10:49:25.504] [INFO] default - traceId:8bf161e6-e9c8-472b-b073-9eddeaaf46b0
+[2020-04-14T10:49:25.507] [INFO] default - traceId:8bf161e6-e9c8-472b-b073-9eddeaaf46b0
+[2020-04-14T10:49:25.507] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:49:25.508] [ERROR] default - req-query:{}
+[2020-04-14T10:49:25.508] [ERROR] default - req-params:{}
+[2020-04-14T10:49:25.509] [ERROR] default - req-body:{}
+[2020-04-14T10:49:25.509] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:49:36.767] [INFO] default - traceId:a6032862-873b-44aa-91b0-c245e8c854c0
+[2020-04-14T10:49:36.771] [INFO] default - traceId:a6032862-873b-44aa-91b0-c245e8c854c0
+[2020-04-14T10:49:36.772] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:49:36.773] [ERROR] default - req-query:{}
+[2020-04-14T10:49:36.774] [ERROR] default - req-params:{}
+[2020-04-14T10:49:36.774] [ERROR] default - req-body:{}
+[2020-04-14T10:49:36.775] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:49:58.869] [INFO] default - traceId:a4bc8fd9-e897-4552-aad2-8e9f485d6b4a
+[2020-04-14T10:52:36.723] [INFO] default - traceId:9ecd085f-bbf2-4f06-a756-5994f9385e19
+[2020-04-14T10:52:36.726] [INFO] default - traceId:9ecd085f-bbf2-4f06-a756-5994f9385e19
+[2020-04-14T10:52:36.728] [INFO] default - ip:::ffff:127.0.0.1
+[2020-04-14T10:52:36.729] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:52:36.730] [ERROR] default - req-query:{}
+[2020-04-14T10:52:36.730] [ERROR] default - req-params:{}
+[2020-04-14T10:52:36.731] [ERROR] default - req-body:{}
+[2020-04-14T10:52:36.731] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:52:51.400] [INFO] default - traceId:ba824615-f912-430b-8542-cb6ef7bd6f4a
+[2020-04-14T10:52:51.403] [INFO] default - traceId:ba824615-f912-430b-8542-cb6ef7bd6f4a
+[2020-04-14T10:52:51.404] [INFO] default - ip:::ffff:127.0.0.1
+[2020-04-14T10:52:51.404] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:52:51.405] [ERROR] default - req-query:{}
+[2020-04-14T10:52:51.405] [ERROR] default - req-params:{}
+[2020-04-14T10:52:51.406] [ERROR] default - req-body:{}
+[2020-04-14T10:52:51.406] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:54:45.061] [INFO] default - traceId:28c97cff-ac87-41ec-bff1-9690b6f8c70d
+[2020-04-14T10:54:45.177] [INFO] default - traceId:28c97cff-ac87-41ec-bff1-9690b6f8c70d
+[2020-04-14T10:54:45.178] [INFO] default - ip:::ffff:127.0.0.1
+[2020-04-14T10:54:45.181] [INFO] default - host:127.0.0.1
+[2020-04-14T10:54:45.181] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T10:54:45.182] [INFO] default - req-query:{}
+[2020-04-14T10:54:45.182] [INFO] default - req-params:{}
+[2020-04-14T10:54:45.183] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T10:54:45.183] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzI4ODV9.Y0nYbnUcZg2WMdY1hFRDZxPK7Cx2NFw6wilxsGYNSGE"},"msg":"成功","code":200}
