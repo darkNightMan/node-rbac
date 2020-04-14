@@ -35,6 +35,7 @@ class SysRoleServer {
     let row = await exec(sql)
     return row
   }
+  
   // 创建角色
   async createRole (name, code) {
     let sql = `INSERT INTO sys_role (role_name, role_code) VALUES ('${name}', '${code}')` 
@@ -53,8 +54,8 @@ class SysRoleServer {
     let data = await exec(sql) 
     return data
   }
-  async findRoles () {
-    let sql = `SELECT * FROM sys_user_role`
+  async findRoles (userid) {
+    let sql = userid ? `SELECT role_id FROM sys_user_role WHERE user_id =${userid}` : `SELECT * FROM sys_user_role`
     let data = await exec(sql) 
     return data
   }

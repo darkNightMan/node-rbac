@@ -27,6 +27,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "log4js": "^6.1.2",
+    "moment": "^2.24.0",
     "redis": "^3.0.2",
     "uuidv4": "^6.0.7",
     "web-push": "^3.4.0"

@@ -9,8 +9,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');  
 require("body-parser-xml")(bodyParser);
 var ejs = require('ejs');
-
-
+global.env = process.env.NODE_ENV  // 环境参数
 // 日志配置
 log4js.configure(logConfig)
 let logger = log4js.getLogger()

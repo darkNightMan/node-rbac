@@ -1,5 +1,8 @@
 const UserServer = require('../server/UserServer')
 const SysMenuServer = require('../server/SysMenuServer')
+const SysRoleServer = require('../server/SysRoleServer')
+const SysLogServer = require('../server/SysLogServer')
+const http = require('http');
 const {
   JWT_COMF
 } = require('../conf/db')
@@ -8,11 +11,11 @@ const JwtToken = require('../utils/authToken')
 const colors = require('colors')
 
 class UserController {
-  // 登入1
+  // 登入
   async login(req, res) {
     let phone = req.body.phone
     let password = req.body.password
-
+    
     if (!phone) res.R.err('USER_PHONE_NULL')
     if (!password) res.R.err('USER_PASSWORD_NULL')
 
@@ -39,7 +42,8 @@ class UserController {
         token: token
       })
     } catch (ex) {
-      res.R.err(ex)
+      console.log(ex)
+      // res.R.err(ex)
     }
   }
   // 退出

@@ -1,36 +1,47 @@
-[2020-04-14T12:06:03.521] [INFO] default - traceId:853393b2-23ad-436d-87f2-d45ff602e51a
-[2020-04-14T12:06:03.528] [INFO] default - traceId:853393b2-23ad-436d-87f2-d45ff602e51a
-[2020-04-14T12:06:03.529] [INFO] default - IP:::ffff:127.0.0.1
-[2020-04-14T12:06:03.529] [INFO] default - host:127.0.0.1
-[2020-04-14T12:06:03.530] [ERROR] default - method: [GET] URL: /api/sysMenu/
-[2020-04-14T12:06:03.530] [ERROR] default - req-query:{}
-[2020-04-14T12:06:03.531] [ERROR] default - req-params:{}
-[2020-04-14T12:06:03.531] [ERROR] default - req-body:{}
-[2020-04-14T12:06:03.531] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}
-[2020-04-14T12:51:32.566] [INFO] default - traceId:1330b9de-ba51-406f-8b76-a8a397c5a2c0
-[2020-04-14T12:51:32.662] [INFO] default - traceId:1330b9de-ba51-406f-8b76-a8a397c5a2c0
-[2020-04-14T12:51:32.663] [INFO] default - ip:::ffff:127.0.0.1
-[2020-04-14T12:51:32.663] [INFO] default - host:127.0.0.1
-[2020-04-14T12:51:32.664] [INFO] default - method: [POST] URL: /api/login
-[2020-04-14T12:51:32.664] [INFO] default - req-query:{}
-[2020-04-14T12:51:32.665] [INFO] default - req-params:{}
-[2020-04-14T12:51:32.665] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
-[2020-04-14T12:51:32.666] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4Mzk4OTJ9.mTlCbpHs_j2n-70lEN8GAHiT47eaJgiyw50AXCghQM8"},"msg":"成功","code":200}
-[2020-04-14T12:53:07.701] [INFO] default - traceId:fa85c8a8-9eee-43ef-b0fb-a7e1130b7c76
-[2020-04-14T12:53:07.707] [INFO] default - traceId:fa85c8a8-9eee-43ef-b0fb-a7e1130b7c76
-[2020-04-14T12:53:07.709] [INFO] default - IP:::ffff:127.0.0.1
-[2020-04-14T12:53:07.709] [INFO] default - host:127.0.0.1
-[2020-04-14T12:53:07.710] [ERROR] default - method: [GET] URL: /api/test
-[2020-04-14T12:53:07.710] [ERROR] default - req-query:{}
-[2020-04-14T12:53:07.711] [ERROR] default - req-params:{}
-[2020-04-14T12:53:07.712] [ERROR] default - req-body:{}
-[2020-04-14T12:53:07.712] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}
-[2020-04-14T13:49:20.318] [INFO] default - traceId:d5969b27-c713-4862-a3c6-b49781ab843b
-[2020-04-14T13:49:20.326] [INFO] default - traceId:d5969b27-c713-4862-a3c6-b49781ab843b
-[2020-04-14T13:49:20.328] [INFO] default - ip:::ffff:127.0.0.1
-[2020-04-14T13:49:20.329] [INFO] default - host:127.0.0.1
-[2020-04-14T13:49:20.330] [ERROR] default - method: [GET] URL: /api/test
-[2020-04-14T13:49:20.331] [ERROR] default - req-query:{}
-[2020-04-14T13:49:20.332] [ERROR] default - req-params:{}
-[2020-04-14T13:49:20.334] [ERROR] default - req-body:{}
-[2020-04-14T13:49:20.335] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}
+[2020-04-14T18:11:44.468] [INFO] default - traceId:f5f9a970-2b99-43c8-8389-db0fe049cf21
+[2020-04-14T18:11:44.493] [INFO] default - traceId:f5f9a970-2b99-43c8-8389-db0fe049cf21
+[2020-04-14T18:11:44.493] [INFO] default - host:127.0.0.1
+[2020-04-14T18:11:44.493] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T18:11:44.494] [INFO] default - req-query:{}
+[2020-04-14T18:11:44.494] [INFO] default - req-params:{}
+[2020-04-14T18:11:44.494] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T18:11:44.494] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4NTkxMDR9.Eu5sgZRivlUH5IqJTH2xpzNlGG_I5cytBU8SCOpiUHk"},"msg":"成功","code":200}
+[2020-04-14T18:12:51.374] [INFO] default - traceId:81c1d46a-8f4d-4bbd-9901-12a51c4e50ef
+[2020-04-14T18:12:58.162] [INFO] default - traceId:81c1d46a-8f4d-4bbd-9901-12a51c4e50ef
+[2020-04-14T18:12:58.163] [INFO] default - host:127.0.0.1
+[2020-04-14T18:12:58.164] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T18:12:58.164] [INFO] default - req-query:{}
+[2020-04-14T18:12:58.164] [INFO] default - req-params:{}
+[2020-04-14T18:12:58.164] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T18:12:58.164] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4NTkxNzh9.N5IO3-4TgU7vqbW9ADJ2JoFlZEQ3K0MOdcB7NaRPMyI"},"msg":"成功","code":200}
+[2020-04-14T18:13:16.364] [INFO] default - traceId:17e3a54a-6e08-4c72-8937-5e67bb5f4d35
+[2020-04-14T18:13:16.456] [INFO] default - traceId:17e3a54a-6e08-4c72-8937-5e67bb5f4d35
+[2020-04-14T18:13:16.460] [INFO] default - host:127.0.0.1
+[2020-04-14T18:13:16.462] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T18:13:16.463] [INFO] default - req-query:{}
+[2020-04-14T18:13:16.465] [INFO] default - req-params:{}
+[2020-04-14T18:13:16.467] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T18:13:16.467] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4NTkxOTZ9.Hq9_quuIHR0Nyu54THr15b89y_FQnnJILfZdw7yOCjI"},"msg":"成功","code":200}
+[2020-04-14T18:14:04.238] [INFO] default - traceId:9620db08-1f92-4c4e-adbd-92e2bd91f8e7
+[2020-04-14T18:14:04.324] [INFO] default - traceId:9620db08-1f92-4c4e-adbd-92e2bd91f8e7
+[2020-04-14T18:14:04.326] [INFO] default - host:127.0.0.1
+[2020-04-14T18:14:04.326] [ERROR] default - method: [POST] URL: /api/login
+[2020-04-14T18:14:04.327] [ERROR] default - req-query:{}
+[2020-04-14T18:14:04.328] [ERROR] default - req-params:{}
+[2020-04-14T18:14:04.328] [ERROR] default - req-body:{"phone":"13076897374","password":"1223"}
+[2020-04-14T18:14:04.329] [ERROR] default - err:{"code":20102,"msg":"用户密码错误","data":null}
+[2020-04-14T18:14:26.815] [INFO] default - traceId:undefined
+[2020-04-14T18:14:26.817] [INFO] default - host:127.0.0.1
+[2020-04-14T18:14:26.818] [ERROR] default - method: [POST] URL: /api/login
+[2020-04-14T18:14:26.818] [ERROR] default - req-query:{}
+[2020-04-14T18:14:26.819] [ERROR] default - req-params:{}
+[2020-04-14T18:14:26.820] [ERROR] default - req-body:{"phone":"13076897374","password":"1223"}
+[2020-04-14T18:14:26.820] [ERROR] default - err:{"code":20102,"msg":"用户密码错误","data":null}
+[2020-04-14T18:16:40.512] [INFO] default - traceId:f9b3435e-ef14-4b84-a07b-2d9dd75b29ca
+[2020-04-14T18:16:40.607] [INFO] default - traceId:f9b3435e-ef14-4b84-a07b-2d9dd75b29ca
+[2020-04-14T18:16:40.615] [INFO] default - host:127.0.0.1
+[2020-04-14T18:16:40.618] [ERROR] default - method: [POST] URL: /api/login
+[2020-04-14T18:16:40.620] [ERROR] default - req-query:{}
+[2020-04-14T18:16:40.622] [ERROR] default - req-params:{}
+[2020-04-14T18:16:40.624] [ERROR] default - req-body:{"phone":"13076897374","password":"1223"}
+[2020-04-14T18:16:40.626] [ERROR] default - err:{"code":20102,"msg":"用户密码错误","data":null}
