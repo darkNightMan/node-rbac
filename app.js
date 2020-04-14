@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }))  
 
 // 扩展req
-app.use(R.resExtend)
+app.use(R.initR)
 
 // 这里是静态文件夹，不走路由的
 app.use('/public', express.static(path.join(__dirname, '/views/public')));

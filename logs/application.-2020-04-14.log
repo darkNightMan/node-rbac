@@ -69,3 +69,87 @@
 [2020-04-14T10:13:11.889] [INFO] default - req-params:{}
 [2020-04-14T10:13:11.889] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
 [2020-04-14T10:13:11.890] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzAzOTF9.fvgIuqZD9AuiRObWJ8VUxzdvtte3uhzKYYiJo5A1CSw"},"msg":"成功","code":200}
+[2020-04-14T10:26:28.576] [INFO] default - traceId:1f306cf4-af71-413e-ba2f-3f650737f039
+[2020-04-14T10:26:28.583] [INFO] default - traceId:1f306cf4-af71-413e-ba2f-3f650737f039
+[2020-04-14T10:26:28.585] [ERROR] default - method: [GET] URL: /api/tests
+[2020-04-14T10:26:28.586] [ERROR] default - req-query:{}
+[2020-04-14T10:26:28.587] [ERROR] default - req-params:{}
+[2020-04-14T10:26:28.588] [ERROR] default - req-body:{}
+[2020-04-14T10:26:28.589] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}
+[2020-04-14T10:26:51.489] [INFO] default - traceId:ecdf00d6-c4f1-40af-b617-3154d253583a
+[2020-04-14T10:26:51.494] [INFO] default - traceId:ecdf00d6-c4f1-40af-b617-3154d253583a
+[2020-04-14T10:26:51.495] [ERROR] default - method: [GET] URL: /api/tests
+[2020-04-14T10:26:51.496] [ERROR] default - req-query:{}
+[2020-04-14T10:26:51.496] [ERROR] default - req-params:{}
+[2020-04-14T10:26:51.497] [ERROR] default - req-body:{}
+[2020-04-14T10:26:51.497] [ERROR] default - err:{"code":10000,"msg":"访问的路由不存在","data":null}
+[2020-04-14T10:26:58.586] [INFO] default - traceId:ce04933c-6725-4bcc-bb22-4ae0e0e57cca
+[2020-04-14T10:26:58.590] [INFO] default - traceId:ce04933c-6725-4bcc-bb22-4ae0e0e57cca
+[2020-04-14T10:26:58.591] [ERROR] default - method: [GET] URL: /api/test
+[2020-04-14T10:26:58.592] [ERROR] default - req-query:{}
+[2020-04-14T10:26:58.592] [ERROR] default - req-params:{}
+[2020-04-14T10:26:58.592] [ERROR] default - req-body:{}
+[2020-04-14T10:26:58.593] [ERROR] default - err:{"code":10000,"msg":"访问的路由不存在","data":null}
+[2020-04-14T10:27:04.190] [INFO] default - traceId:89177f27-f174-462e-a688-fb4c5dace545
+[2020-04-14T10:27:04.234] [INFO] default - traceId:89177f27-f174-462e-a688-fb4c5dace545
+[2020-04-14T10:27:04.235] [INFO] default - method: [GET] URL: /api/sysMenu/
+[2020-04-14T10:27:04.235] [INFO] default - req-query:{}
+[2020-04-14T10:27:04.236] [INFO] default - req-params:{}
+[2020-04-14T10:27:04.238] [INFO] default - req-body:{}
+[2020-04-14T10:27:04.239] [INFO] default - ok:{"data":[{"res_id":0,"parent_id":null,"res_name":"根节点","res_icon":null,"create_time":null,"state":null,"res_code":null,"type":null,"component":null,"description":"根节点不能操作","sort":null},{"res_id":1,"parent_id":0,"res_name":"文章管理","res_icon":"el-icon-document","create_time":"2020-03-10T09:51:37.000Z","state":0,"res_code":null,"type":null,"component":null,"description":null,"sort":3},{"res_id":2,"parent_id":0,"res_name":"权限管理","res_icon":"el-icon-user","create_time":"2020-03-19T10:05:20.000Z","state":0,"res_code":null,"type":null,"component":null,"description":null,"sort":2},{"res_id":3,"parent_id":0,"res_name":"分类管理","res_icon":"el-icon-menu","create_time":"2020-03-14T10:05:17.000Z","state":0,"res_code":null,"type":null,"component":null,"description":null,"sort":4},{"res_id":4,"parent_id":0,"res_name":"系统管理","res_icon":"el-icon-setting","create_time":"2020-03-16T07:46:18.000Z","state":0,"res_code":null,"type":null,"component":null,"description":null,"sort":1},{"res_id":5,"parent_id":1,"res_name":"文章列表","res_icon":"","create_time":"2020-03-17T07:46:21.000Z","state":0,"res_code":null,"type":null,"component":null,"description":null,"sort":null},{"res_id":7,"parent_id":2,"res_name":"用户列表","res_icon":"","create_time":"2020-03-11T07:33:43.000Z","state":0,"res_code":null,"type":null,"component":"userList","description":null,"sort":null},{"res_id":8,"parent_id":4,"res_name":"登录日志","res_icon":"","create_time":"2020-03-03T07:46:06.000Z","state":0,"res_code":null,"type":null,"component":"log","description":null,"sort":null},{"res_id":9,"parent_id":2,"res_name":"菜单列表","res_icon":null,"create_time":"2020-03-20T05:57:01.000Z","state":0,"res_code":null,"type":null,"component":"menuList","description":null,"sort":null},{"res_id":10,"parent_id":2,"res_name":"角色列表","res_icon":null,"create_time":null,"state":null,"res_code":null,"type":null,"component":"roleList","description":null,"sort":null},{"res_id":11,"parent_id":1,"res_name":"12323","res_icon":"234","create_time":"2020-04-08T13:51:12.000Z","state":null,"res_code":"234234","type":null,"component":"23423","description":"23423423","sort":null},{"res_id":34,"parent_id":8,"res_name":"123","res_icon":"","create_time":"2020-04-11T13:56:10.000Z","state":null,"res_code":"123","type":0,"component":"123","description":"","sort":0}],"msg":"成功","code":200}
+[2020-04-14T10:30:51.803] [INFO] default - traceId:c5896eef-2d41-4190-8054-656f07953eb1
+[2020-04-14T10:30:51.804] [INFO] default - traceId:c5896eef-2d41-4190-8054-656f07953eb1
+[2020-04-14T10:30:51.804] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:30:51.804] [ERROR] default - req-query:{}
+[2020-04-14T10:30:51.804] [ERROR] default - req-params:{}
+[2020-04-14T10:30:51.804] [ERROR] default - req-body:{}
+[2020-04-14T10:30:51.804] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:30:53.721] [INFO] default - traceId:3ebbd4d4-06b6-4188-8e98-f7691e51fb6a
+[2020-04-14T10:30:53.721] [INFO] default - traceId:3ebbd4d4-06b6-4188-8e98-f7691e51fb6a
+[2020-04-14T10:30:53.721] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:30:53.721] [ERROR] default - req-query:{}
+[2020-04-14T10:30:53.721] [ERROR] default - req-params:{}
+[2020-04-14T10:30:53.721] [ERROR] default - req-body:{}
+[2020-04-14T10:30:53.721] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:30:54.453] [INFO] default - traceId:4634d5c6-a3ec-4084-bf26-c4033b621130
+[2020-04-14T10:30:54.453] [INFO] default - traceId:4634d5c6-a3ec-4084-bf26-c4033b621130
+[2020-04-14T10:30:54.453] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:30:54.453] [ERROR] default - req-query:{}
+[2020-04-14T10:30:54.453] [ERROR] default - req-params:{}
+[2020-04-14T10:30:54.453] [ERROR] default - req-body:{}
+[2020-04-14T10:30:54.453] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:30:58.692] [INFO] default - traceId:be2aff9c-210e-4e77-8fba-c1f6ae09adb4
+[2020-04-14T10:30:58.693] [INFO] default - traceId:be2aff9c-210e-4e77-8fba-c1f6ae09adb4
+[2020-04-14T10:30:58.693] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:30:58.693] [ERROR] default - req-query:{}
+[2020-04-14T10:30:58.693] [ERROR] default - req-params:{}
+[2020-04-14T10:30:58.693] [ERROR] default - req-body:{}
+[2020-04-14T10:30:58.693] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:31:14.615] [INFO] default - traceId:e974528e-5d6a-4622-abf9-20f858a02778
+[2020-04-14T10:31:14.617] [INFO] default - traceId:e974528e-5d6a-4622-abf9-20f858a02778
+[2020-04-14T10:31:14.617] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:31:14.617] [ERROR] default - req-query:{}
+[2020-04-14T10:31:14.617] [ERROR] default - req-params:{}
+[2020-04-14T10:31:14.617] [ERROR] default - req-body:{}
+[2020-04-14T10:31:14.617] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:31:49.879] [INFO] default - traceId:b94c1980-3586-4fb6-8f03-02b4422fdc0c
+[2020-04-14T10:31:49.881] [INFO] default - traceId:b94c1980-3586-4fb6-8f03-02b4422fdc0c
+[2020-04-14T10:31:49.883] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:31:49.883] [ERROR] default - req-query:{}
+[2020-04-14T10:31:49.884] [ERROR] default - req-params:{}
+[2020-04-14T10:31:49.885] [ERROR] default - req-body:{}
+[2020-04-14T10:31:49.885] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:32:20.306] [INFO] default - traceId:6e95245a-f4eb-42d3-8557-7959c1f45bec
+[2020-04-14T10:32:20.308] [INFO] default - traceId:6e95245a-f4eb-42d3-8557-7959c1f45bec
+[2020-04-14T10:32:20.309] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:32:20.310] [ERROR] default - req-query:{}
+[2020-04-14T10:32:20.310] [ERROR] default - req-params:{}
+[2020-04-14T10:32:20.311] [ERROR] default - req-body:{}
+[2020-04-14T10:32:20.311] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:32:31.733] [INFO] default - traceId:0171c1c6-3893-4ecc-87af-3bff5954fd65
+[2020-04-14T10:32:31.852] [INFO] default - traceId:0171c1c6-3893-4ecc-87af-3bff5954fd65
+[2020-04-14T10:32:31.852] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T10:32:31.853] [INFO] default - req-query:{}
+[2020-04-14T10:32:31.853] [INFO] default - req-params:{}
+[2020-04-14T10:32:31.854] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T10:32:31.854] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzE1NTF9.XIe_lNH9WQNvDW5hsn3unZwaqtRgIipMzS5SjBzHX3w"},"msg":"成功","code":200}

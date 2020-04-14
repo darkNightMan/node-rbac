@@ -18,7 +18,7 @@ class R {
     this.errMsg = errMsg
     this.successMsg
   }
-  static resExtend(req, res, next) {
+  static initR(req, res, next) {
     res.R = new R(res, req)
     next()
   }
