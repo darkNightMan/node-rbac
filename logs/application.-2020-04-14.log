@@ -210,3 +210,4 @@
 [2020-04-14T10:55:24.032] [INFO] default - req-params:{}
 [2020-04-14T10:55:24.033] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
 [2020-04-14T10:55:24.033] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzI5MjR9.mOjUlxu4YVJ-RgbYgOlUQKmPKQddS9L7lACUl3XvdDg"},"msg":"成功","code":200}
+[2020-04-14T11:29:37.899] [INFO] default - traceId:54c43922-0fdf-4885-9a58-7c891afa403f
