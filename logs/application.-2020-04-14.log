@@ -7,3 +7,21 @@
 [2020-04-14T12:06:03.531] [ERROR] default - req-params:{}
 [2020-04-14T12:06:03.531] [ERROR] default - req-body:{}
 [2020-04-14T12:06:03.531] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}
+[2020-04-14T12:51:32.566] [INFO] default - traceId:1330b9de-ba51-406f-8b76-a8a397c5a2c0
+[2020-04-14T12:51:32.662] [INFO] default - traceId:1330b9de-ba51-406f-8b76-a8a397c5a2c0
+[2020-04-14T12:51:32.663] [INFO] default - ip:::ffff:127.0.0.1
+[2020-04-14T12:51:32.663] [INFO] default - host:127.0.0.1
+[2020-04-14T12:51:32.664] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T12:51:32.664] [INFO] default - req-query:{}
+[2020-04-14T12:51:32.665] [INFO] default - req-params:{}
+[2020-04-14T12:51:32.665] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T12:51:32.666] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4Mzk4OTJ9.mTlCbpHs_j2n-70lEN8GAHiT47eaJgiyw50AXCghQM8"},"msg":"成功","code":200}
+[2020-04-14T12:53:07.701] [INFO] default - traceId:fa85c8a8-9eee-43ef-b0fb-a7e1130b7c76
+[2020-04-14T12:53:07.707] [INFO] default - traceId:fa85c8a8-9eee-43ef-b0fb-a7e1130b7c76
+[2020-04-14T12:53:07.709] [INFO] default - IP:::ffff:127.0.0.1
+[2020-04-14T12:53:07.709] [INFO] default - host:127.0.0.1
+[2020-04-14T12:53:07.710] [ERROR] default - method: [GET] URL: /api/test
+[2020-04-14T12:53:07.710] [ERROR] default - req-query:{}
+[2020-04-14T12:53:07.711] [ERROR] default - req-params:{}
+[2020-04-14T12:53:07.712] [ERROR] default - req-body:{}
+[2020-04-14T12:53:07.712] [ERROR] default - err:{"code":403,"msg":"token已经过期","data":null}
