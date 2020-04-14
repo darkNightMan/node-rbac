@@ -14,7 +14,6 @@ var ejs = require('ejs');
 // 日志配置
 log4js.configure(logConfig)
 let logger = log4js.getLogger()
-console.log(logger)
 global.logger = logger
 //  application/json  
 app.use(bodyParser.json());

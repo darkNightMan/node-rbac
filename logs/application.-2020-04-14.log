@@ -1,0 +1,71 @@
+
+[2020-04-14T10:05:58.927] [INFO] default - traceId:4143de18-8f3e-4ac6-9061-91c16f8b7fed
+[2020-04-14T10:05:58.931] [INFO] default - req-query:{}
+[2020-04-14T10:05:58.931] [INFO] default - req-params:{}
+[2020-04-14T10:06:40.637] [INFO] default - traceId:19f9f7f1-5ece-44e7-865c-ed8daf116a9a
+[2020-04-14T10:06:40.638] [INFO] default - req-query:{}
+[2020-04-14T10:06:40.639] [INFO] default - req-params:{}
+[2020-04-14T10:06:40.640] [INFO] default - traceId:19f9f7f1-5ece-44e7-865c-ed8daf116a9a
+[2020-04-14T10:06:40.641] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:06:40.641] [ERROR] default - req-query:{}
+[2020-04-14T10:06:40.642] [ERROR] default - req-params:{}
+[2020-04-14T10:06:40.643] [ERROR] default - req-body:{}
+[2020-04-14T10:06:40.643] [ERROR] default - sendErr:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:07:27.785] [INFO] default - traceId:1deff612-b568-4c3e-8982-937a60cf11c8
+[2020-04-14T10:07:27.786] [INFO] default - req-query:{}
+[2020-04-14T10:07:27.788] [INFO] default - req-params:{}
+[2020-04-14T10:07:27.790] [INFO] default - traceId:1deff612-b568-4c3e-8982-937a60cf11c8
+[2020-04-14T10:07:27.791] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:07:27.792] [ERROR] default - req-query:{}
+[2020-04-14T10:07:27.792] [ERROR] default - req-params:{}
+[2020-04-14T10:07:27.793] [ERROR] default - req-body:{}
+[2020-04-14T10:07:27.794] [ERROR] default - sendErr:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:09:16.093] [INFO] default - traceId:91aaed81-e681-43bf-a583-0c6bf53f5719
+[2020-04-14T10:09:16.095] [INFO] default - req-query:{}
+[2020-04-14T10:09:16.096] [INFO] default - req-params:{}
+[2020-04-14T10:09:16.097] [INFO] default - traceId:91aaed81-e681-43bf-a583-0c6bf53f5719
+[2020-04-14T10:09:16.097] [ERROR] default - method: [GET] URL: /api/loginOut
+[2020-04-14T10:09:16.098] [ERROR] default - req-query:{}
+[2020-04-14T10:09:16.099] [ERROR] default - req-params:{}
+[2020-04-14T10:09:16.099] [ERROR] default - req-body:{}
+[2020-04-14T10:09:16.100] [ERROR] default - err:{"code":401,"msg":"token缺失","data":null}
+[2020-04-14T10:09:57.748] [INFO] default - traceId:42e716ea-c9ec-4274-9175-e84f3515fe05
+[2020-04-14T10:09:57.751] [INFO] default - req-query:{}
+[2020-04-14T10:09:57.752] [INFO] default - req-params:{}
+[2020-04-14T10:10:19.168] [INFO] default - traceId:a4ee2a86-a7d8-4012-a71a-4f15004b3cdd
+[2020-04-14T10:10:19.171] [INFO] default - req-query:{}
+[2020-04-14T10:10:19.172] [INFO] default - req-params:{}
+[2020-04-14T10:10:36.780] [INFO] default - traceId:0965359a-5004-4345-9d92-0426d9c97e2e
+[2020-04-14T10:10:36.783] [INFO] default - req-query:{}
+[2020-04-14T10:10:36.785] [INFO] default - req-params:{}
+[2020-04-14T10:11:06.042] [INFO] default - traceId:7357b11d-68bd-4873-b500-9e81629cee8b
+[2020-04-14T10:11:06.044] [INFO] default - req-query:{}
+[2020-04-14T10:11:06.045] [INFO] default - req-params:{}
+[2020-04-14T10:11:06.182] [INFO] default - traceId:7357b11d-68bd-4873-b500-9e81629cee8b
+[2020-04-14T10:11:06.183] [INFO] default - method: [POST] req-url: /api/login
+[2020-04-14T10:11:06.184] [INFO] default - req-query:{}
+[2020-04-14T10:11:06.185] [INFO] default - req-params:{}
+[2020-04-14T10:11:06.185] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzAyNjZ9.uZwzn-oYH41Q1fHIojCDa_p5SWTFnKshpff9jqGmPo0"},"msg":"成功","code":200}
+[2020-04-14T10:11:31.582] [INFO] default - traceId:fd0497c3-b36c-43a0-869a-8f9cfc775d83
+[2020-04-14T10:11:31.585] [INFO] default - req-query:{}
+[2020-04-14T10:11:31.586] [INFO] default - req-params:{}
+[2020-04-14T10:11:31.710] [INFO] default - traceId:fd0497c3-b36c-43a0-869a-8f9cfc775d83
+[2020-04-14T10:11:31.712] [INFO] default - method: [POST] req-url: /api/login
+[2020-04-14T10:11:31.713] [INFO] default - req-query:{}
+[2020-04-14T10:11:31.714] [INFO] default - req-params:{}
+[2020-04-14T10:11:31.715] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T10:11:31.716] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzAyOTF9.FJs0cR2mKRBF8FJqMQX4-FwM7u7kWubQOl8UOdIvYec"},"msg":"成功","code":200}
+[2020-04-14T10:12:30.952] [INFO] default - traceId:3245f891-49a3-49ab-8b66-226d2ed6aee1
+[2020-04-14T10:12:31.080] [INFO] default - traceId:3245f891-49a3-49ab-8b66-226d2ed6aee1
+[2020-04-14T10:12:31.082] [INFO] default - method: [POST] req-url: /api/login
+[2020-04-14T10:12:31.082] [INFO] default - req-query:{}
+[2020-04-14T10:12:31.083] [INFO] default - req-params:{}
+[2020-04-14T10:12:31.083] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T10:12:31.084] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzAzNTF9.RLIxvawgtQwIcjJ_BnCdmnAj7yrJJ120n0A8ei5uOyc"},"msg":"成功","code":200}
+[2020-04-14T10:13:11.753] [INFO] default - traceId:d678c107-5a49-409c-a9b9-6f16a83da85d
+[2020-04-14T10:13:11.887] [INFO] default - traceId:d678c107-5a49-409c-a9b9-6f16a83da85d
+[2020-04-14T10:13:11.887] [INFO] default - method: [POST] URL: /api/login
+[2020-04-14T10:13:11.888] [INFO] default - req-query:{}
+[2020-04-14T10:13:11.889] [INFO] default - req-params:{}
+[2020-04-14T10:13:11.889] [INFO] default - req-body:{"phone":"13076897374","password":"123"}
+[2020-04-14T10:13:11.890] [INFO] default - ok:{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrTmFtZSI6IueOi-W4jOW5syIsImFkbWluIjp0cnVlLCJpYXQiOjE1ODY4MzAzOTF9.fvgIuqZD9AuiRObWJ8VUxzdvtte3uhzKYYiJo5A1CSw"},"msg":"成功","code":200}
