@@ -55,7 +55,7 @@ class SysRoleServer {
     return data
   }
   async findRoles (userid) {
-    let sql = userid ? `SELECT role_id FROM sys_user_role WHERE user_id =${userid}` : `SELECT * FROM sys_user_role`
+    let sql = userid ? `SELECT role_id, user_id FROM sys_user_role WHERE user_id =${userid}` : `SELECT * FROM sys_user_role`
     let data = await exec(sql) 
     return data
   }

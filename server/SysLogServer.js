@@ -6,7 +6,7 @@ const {
 class SysLogServer {
   async insert (data) {  
     let inserData = Object.assign({
-      user_id: '',
+      user_id: null,
       user_name: '',
       login_time: '',
       login_ip: '',
@@ -26,7 +26,7 @@ class SysLogServer {
     return row[0]
   }
   async list (user_id) {
-    let sql = `SELECT * FROM sys_login_logs WHERE user_id = ${user_id}`
+    let sql = user_id ? `SELECT * FROM sys_login_logs WHERE user_id = ${user_id}` : `SELECT * FROM sys_login_logs`
     let row = await exec(sql)
     return row
   }

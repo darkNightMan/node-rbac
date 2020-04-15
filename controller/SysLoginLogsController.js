@@ -5,9 +5,10 @@ const SysRoleServer = require('../server/SysRoleServer')
 const { formatDate } = require('../utils/format')
 class SysLoginLogsController {
   async list (req, res) {
-    let user_id = req.query.user_id
-    let _data = await SysLogServer.list(user_id)
+    let user_id = parseInt(req.query.user_id)
     let roleList = await SysRoleServer.findRoles() // 用户角色关联
+    let roleFlag = roleList.some(it =>  it.role_id === 1)
+    let _data = await SysLogServer.list(roleFlag ? '' : user_id)
     let roleName = await SysRoleServer.getAllRole() // 角色名
     _data.map((it1) => {
       roleList.map((it2) => {
