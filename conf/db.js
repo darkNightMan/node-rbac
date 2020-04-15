@@ -20,7 +20,7 @@ if (env === 'dev') {
   MYSQL_CONF = { // 服务器
     host: "127.0.0.1", //数据库的地址
     user: "root", // 用户的名字
-    password: "root", // 用户密码 ， win root mac csdewanng  lin root
+    password: "csdewanng", // 用户密码 ， win root mac csdewanng  lin root
     database: "blog", //数据库名字,
     useConnectionPooling: true
   } 
