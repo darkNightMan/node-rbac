@@ -5,11 +5,9 @@ const {
 // 登入1
 class UserServer {
   async login(phone) {
-    let sqlfind = `SELECT user_id, nick_name, phone, password, login_time, avatar, email FROM sys_user WHERE phone = ${phone}`
-    let sqlset = `update sys_user set login_time=now() WHERE phone = ${phone}`
+    let sqlfind = `SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = ${phone}`
     try {
       let data = await exec(sqlfind)
-      let row = await exec(sqlset)
       let user_id = await (data)
       return data[0]
     } catch (ex) {
@@ -24,7 +22,7 @@ class UserServer {
   }
   // 获取用户信息
   async getUserInfo(userId) {
-    let sql = `SELECT user_id, nick_name, phone, password, login_time, avatar, email FROM sys_user WHERE user_id = ${userId}`
+    let sql = `SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = ${userId}`
     let row = await exec(sql)
     return row[0]
   }

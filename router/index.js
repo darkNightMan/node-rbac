@@ -2,10 +2,12 @@ const UserController = require('../controller/UserController')
 const SysMenuController = require('../controller/SysMenuController')
 const SysRoleController = require('../controller/SysRoleController')
 const SysUserController = require('../controller/SysUserController')
+const TestController = require('../controller/TestController')
+const SysLoginLogsController = require('../controller/SysLoginLogsController')
 const InterceptAuth = require('../middlewares/intercept')
 const log = require('../middlewares/log')
 const NotFind = require('../middlewares/notFind')
-const TestController = require('../controller/TestController')
+
 
 module.exports = function (app) {
   app.use(log.setLog) // 日志
@@ -29,5 +31,7 @@ module.exports = function (app) {
   app.post('/api/menu/createMenu', SysMenuController.createMenu) // 新增菜单
   app.post('/api/menu/updatedMenu', SysMenuController.updatedMenu) // 更新菜单
   app.post('/api/menu/deleteMenu', SysMenuController.deleteMenu) // 更新菜单  
+  app.get('/api/loginLogs/list', SysLoginLogsController.list) // logs列表  
+
   app.use(NotFind.notApi) // 访问的路由不存在  
 }
