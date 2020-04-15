@@ -30,12 +30,12 @@ class SysRoleController {
     }
   }
   //  获取角色列表
-  async getAllRole (req, res){
+  async list (req, res){
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    let _data = await SysRoleServer.getAllRole()
+    let _data = await SysRoleServer.list()
     if (_data) {
       res.R.ok({roleList: _data})
     }
@@ -69,7 +69,8 @@ class SysRoleController {
   }
   // 删除角色
   async deleteRole (req, res) {    
-    let role_id = req.query['role_id'] // 参数
+    // let role_id = req.query['role_id'] // 参数
+    let role_id = req.body.role_id // 参数
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')

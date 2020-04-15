@@ -8,14 +8,14 @@ class SysUserController {
     res.R.ok(data)
   }
    // 获取所有用户列表
-  async getAllUser (req, res){
+  async list (req, res){
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    let _data = await SysUserServer.getAllUser() // 用户表
+    let _data = await SysUserServer.list() // 用户表
     let roleList = await SysRoleServer.findRoles() // 用户角色关联
-    let roleName = await SysRoleServer.getAllRole() // 角色名
+    let roleName = await SysRoleServer.list() // 角色名
     _data.map((it1) => {
       roleList.map((it2) => {
         if (it1.user_id === it2.user_id ){ // 匹配表关联的数据

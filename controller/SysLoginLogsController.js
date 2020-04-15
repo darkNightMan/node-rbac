@@ -9,7 +9,7 @@ class SysLoginLogsController {
     let roleList = await SysRoleServer.findRoles() // 用户角色关联
     let roleFlag = roleList.some(it =>  it.role_id === 1)
     let _data = await SysLogServer.list(roleFlag ? '' : user_id)
-    let roleName = await SysRoleServer.getAllRole() // 角色名
+    let roleName = await SysRoleServer.list() // 角色名
     _data.map((it1) => {
       roleList.map((it2) => {
         if (it1.user_id === it2.user_id ){ // 匹配表关联的数据

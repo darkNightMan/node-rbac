@@ -30,7 +30,7 @@ class SysRoleServer {
     }
   }
   // 获取所有的角色
-  async getAllRole() {
+  async list() {
     let sql = `SELECT * FROM sys_role`
     let row = await exec(sql)
     return row
