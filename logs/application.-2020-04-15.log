@@ -2626,3 +2626,143 @@
 [2020-04-15T21:28:52.599] [INFO] default - req-query:{}
 [2020-04-15T21:28:52.599] [INFO] default - req-params:{}
 [2020-04-15T21:28:52.599] [INFO] default - req-body:{}
+[2020-04-15T21:35:16.946] [INFO] default - traceId:cbee581c-ab5b-424e-9615-e4f7f01529c8
+[2020-04-15T21:35:16.999] [INFO] default - 'sql执行：=>'SELECT	sys_resource.*  FROM  sys_user_role
+      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
+      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
+      WHERE user_id = 1 GROUP BY res_id
+[2020-04-15T21:35:17.162] [INFO] default - 'sql执行：=>'SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1
+[2020-04-15T21:35:17.204] [INFO] default - traceId:cbee581c-ab5b-424e-9615-e4f7f01529c8
+[2020-04-15T21:35:17.205] [INFO] default - host:localhost
+[2020-04-15T21:35:17.205] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-15T21:35:17.206] [INFO] default - req-query:{}
+[2020-04-15T21:35:17.206] [INFO] default - req-params:{}
+[2020-04-15T21:35:17.207] [INFO] default - req-body:{}
+[2020-04-15T21:35:17.604] [INFO] default - traceId:61d8f8ff-7ad3-4d46-88e8-7055f6b0e550
+[2020-04-15T21:35:17.609] [INFO] default - traceId:0f3011cf-5258-42e7-b1ed-b876fdb73c6d
+[2020-04-15T21:35:17.610] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user
+[2020-04-15T21:35:17.610] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:35:17.847] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user_role
+[2020-04-15T21:35:17.885] [INFO] default - traceId:0f3011cf-5258-42e7-b1ed-b876fdb73c6d
+[2020-04-15T21:35:17.885] [INFO] default - host:localhost
+[2020-04-15T21:35:17.885] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-15T21:35:17.885] [INFO] default - req-query:{}
+[2020-04-15T21:35:17.885] [INFO] default - req-params:{}
+[2020-04-15T21:35:17.885] [INFO] default - req-body:{}
+[2020-04-15T21:35:17.923] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:35:17.971] [INFO] default - traceId:61d8f8ff-7ad3-4d46-88e8-7055f6b0e550
+[2020-04-15T21:35:17.971] [INFO] default - host:localhost
+[2020-04-15T21:35:17.971] [INFO] default - method: [GET] URL: /api/user/list
+[2020-04-15T21:35:17.971] [INFO] default - req-query:{}
+[2020-04-15T21:35:17.972] [INFO] default - req-params:{}
+[2020-04-15T21:35:17.972] [INFO] default - req-body:{}
+[2020-04-15T21:35:19.622] [INFO] default - traceId:912e15ea-0ca7-47a7-8bad-77aa9666e750
+[2020-04-15T21:35:19.623] [INFO] default - 'sql执行：=>'SELECT * FROM sys_resource;
+[2020-04-15T21:35:20.112] [INFO] default - traceId:912e15ea-0ca7-47a7-8bad-77aa9666e750
+[2020-04-15T21:35:20.112] [INFO] default - host:localhost
+[2020-04-15T21:35:20.112] [INFO] default - method: [GET] URL: /api/menu/list/
+[2020-04-15T21:35:20.112] [INFO] default - req-query:{}
+[2020-04-15T21:35:20.112] [INFO] default - req-params:{}
+[2020-04-15T21:35:20.112] [INFO] default - req-body:{}
+[2020-04-15T21:35:20.398] [INFO] default - traceId:70f60a9b-057f-440e-a7e7-1f1596fdc263
+[2020-04-15T21:35:20.399] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:35:20.436] [INFO] default - traceId:70f60a9b-057f-440e-a7e7-1f1596fdc263
+[2020-04-15T21:35:20.436] [INFO] default - host:localhost
+[2020-04-15T21:35:20.436] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-15T21:35:20.436] [INFO] default - req-query:{}
+[2020-04-15T21:35:20.437] [INFO] default - req-params:{}
+[2020-04-15T21:35:20.437] [INFO] default - req-body:{}
+[2020-04-15T21:35:26.242] [INFO] default - traceId:aef263e2-87a8-4534-8f95-def1b4003268
+[2020-04-15T21:35:26.246] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user_role
+[2020-04-15T21:35:26.306] [INFO] default - 'sql执行：=>'SELECT * FROM sys_login_logs
+[2020-04-15T21:35:26.360] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:35:26.482] [INFO] default - traceId:aef263e2-87a8-4534-8f95-def1b4003268
+[2020-04-15T21:35:26.482] [INFO] default - host:localhost
+[2020-04-15T21:35:26.482] [INFO] default - method: [GET] URL: /api/loginLogs/list?user_id=1
+[2020-04-15T21:35:26.482] [INFO] default - req-query:{"user_id":"1"}
+[2020-04-15T21:35:26.483] [INFO] default - req-params:{}
+[2020-04-15T21:35:26.483] [INFO] default - req-body:{}
+[2020-04-15T21:36:11.168] [INFO] default - traceId:bf9ea64e-0737-41c4-849e-fe3b8d092bab
+[2020-04-15T21:36:11.169] [INFO] default - 'sql执行：=>'SELECT * FROM sys_resource;
+[2020-04-15T21:36:11.324] [INFO] default - traceId:bf9ea64e-0737-41c4-849e-fe3b8d092bab
+[2020-04-15T21:36:11.326] [INFO] default - host:localhost
+[2020-04-15T21:36:11.326] [INFO] default - method: [GET] URL: /api/menu/list/
+[2020-04-15T21:36:11.327] [INFO] default - req-query:{}
+[2020-04-15T21:36:11.327] [INFO] default - req-params:{}
+[2020-04-15T21:36:11.327] [INFO] default - req-body:{}
+[2020-04-15T21:36:19.927] [INFO] default - traceId:00c053b4-35af-4b2f-9f62-2b7a0c7b2848
+[2020-04-15T21:36:19.928] [INFO] default - traceId:ea7e567c-e56b-472c-8c0d-6918815d5e25
+[2020-04-15T21:36:19.928] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:36:19.929] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user
+[2020-04-15T21:36:19.972] [INFO] default - traceId:00c053b4-35af-4b2f-9f62-2b7a0c7b2848
+[2020-04-15T21:36:19.972] [INFO] default - host:localhost
+[2020-04-15T21:36:19.973] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-15T21:36:19.973] [INFO] default - req-query:{}
+[2020-04-15T21:36:19.973] [INFO] default - req-params:{}
+[2020-04-15T21:36:19.974] [INFO] default - req-body:{}
+[2020-04-15T21:36:20.091] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user_role
+[2020-04-15T21:36:20.128] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:36:20.169] [INFO] default - traceId:ea7e567c-e56b-472c-8c0d-6918815d5e25
+[2020-04-15T21:36:20.169] [INFO] default - host:localhost
+[2020-04-15T21:36:20.169] [INFO] default - method: [GET] URL: /api/user/list
+[2020-04-15T21:36:20.169] [INFO] default - req-query:{}
+[2020-04-15T21:36:20.169] [INFO] default - req-params:{}
+[2020-04-15T21:36:20.169] [INFO] default - req-body:{}
+[2020-04-15T21:36:23.179] [INFO] default - traceId:41244fe1-7df0-4bfe-8e14-404282853e46
+[2020-04-15T21:36:23.181] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:36:23.264] [INFO] default - traceId:41244fe1-7df0-4bfe-8e14-404282853e46
+[2020-04-15T21:36:23.265] [INFO] default - host:localhost
+[2020-04-15T21:36:23.266] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-15T21:36:23.266] [INFO] default - req-query:{}
+[2020-04-15T21:36:23.266] [INFO] default - req-params:{}
+[2020-04-15T21:36:23.266] [INFO] default - req-body:{}
+[2020-04-15T21:43:09.076] [INFO] default - traceId:14abff51-28d3-45e0-87c7-de3334e1df00
+[2020-04-15T21:43:09.084] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user_role
+[2020-04-15T21:43:09.126] [INFO] default - 'sql执行：=>'SELECT * FROM sys_login_logs
+[2020-04-15T21:43:09.180] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:43:09.286] [INFO] default - traceId:14abff51-28d3-45e0-87c7-de3334e1df00
+[2020-04-15T21:43:09.287] [INFO] default - host:localhost
+[2020-04-15T21:43:09.287] [INFO] default - method: [GET] URL: /api/loginLogs/list?user_id=1
+[2020-04-15T21:43:09.287] [INFO] default - req-query:{"user_id":"1"}
+[2020-04-15T21:43:09.287] [INFO] default - req-params:{}
+[2020-04-15T21:43:09.287] [INFO] default - req-body:{}
+[2020-04-15T21:46:35.923] [INFO] default - traceId:30347989-bbd2-4de4-aee5-c18bbc58ec53
+[2020-04-15T21:46:35.932] [INFO] default - 'sql执行：=>'SELECT	sys_resource.*  FROM  sys_user_role
+      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
+      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
+      WHERE user_id = 1 GROUP BY res_id
+[2020-04-15T21:46:35.980] [INFO] default - 'sql执行：=>'SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1
+[2020-04-15T21:46:36.029] [INFO] default - traceId:30347989-bbd2-4de4-aee5-c18bbc58ec53
+[2020-04-15T21:46:36.030] [INFO] default - host:localhost
+[2020-04-15T21:46:36.030] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-15T21:46:36.031] [INFO] default - req-query:{}
+[2020-04-15T21:46:36.031] [INFO] default - req-params:{}
+[2020-04-15T21:46:36.032] [INFO] default - req-body:{}
+[2020-04-15T21:46:36.489] [INFO] default - traceId:6fffba10-2a11-427d-b299-8d82c9f63993
+[2020-04-15T21:46:36.493] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user_role
+[2020-04-15T21:46:36.541] [INFO] default - 'sql执行：=>'SELECT * FROM sys_login_logs ORDER BY login_time DESC
+[2020-04-15T21:46:36.643] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:46:36.748] [INFO] default - traceId:6fffba10-2a11-427d-b299-8d82c9f63993
+[2020-04-15T21:46:36.748] [INFO] default - host:localhost
+[2020-04-15T21:46:36.749] [INFO] default - method: [GET] URL: /api/loginLogs/list?user_id=1
+[2020-04-15T21:46:36.749] [INFO] default - req-query:{"user_id":"1"}
+[2020-04-15T21:46:36.749] [INFO] default - req-params:{}
+[2020-04-15T21:46:36.749] [INFO] default - req-body:{}
+[2020-04-15T21:47:25.763] [INFO] default - traceId:eff85187-ffe5-454a-93e7-22290fafe97c
+[2020-04-15T21:47:25.770] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user
+[2020-04-15T21:47:25.773] [INFO] default - traceId:d26da9fc-3945-4b86-85a0-948cb305bd4c
+[2020-04-15T21:47:25.776] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:47:25.818] [INFO] default - 'sql执行：=>'SELECT * FROM sys_user_role
+[2020-04-15T21:47:25.921] [INFO] default - traceId:d26da9fc-3945-4b86-85a0-948cb305bd4c
+[2020-04-15T21:47:25.921] [INFO] default - host:localhost
+[2020-04-15T21:47:25.921] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-15T21:47:25.921] [INFO] default - req-query:{}
+[2020-04-15T21:47:25.921] [INFO] default - req-params:{}
+[2020-04-15T21:47:25.921] [INFO] default - req-body:{}
+[2020-04-15T21:47:25.961] [INFO] default - 'sql执行：=>'SELECT * FROM sys_role
+[2020-04-15T21:47:26.011] [INFO] default - traceId:eff85187-ffe5-454a-93e7-22290fafe97c
+[2020-04-15T21:47:26.011] [INFO] default - host:localhost
+[2020-04-15T21:47:26.012] [INFO] default - method: [GET] URL: /api/user/list
+[2020-04-15T21:47:26.012] [INFO] default - req-query:{}
+[2020-04-15T21:47:26.012] [INFO] default - req-params:{}
+[2020-04-15T21:47:26.012] [INFO] default - req-body:{}

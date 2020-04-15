@@ -26,7 +26,7 @@ class SysLogServer {
     return row[0]
   }
   async list (user_id) {
-    let sql = user_id ? `SELECT * FROM sys_login_logs WHERE user_id = ${user_id}` : `SELECT * FROM sys_login_logs`
+    let sql = user_id ? `SELECT * FROM sys_login_logs WHERE user_id = ${user_id}` : `SELECT * FROM sys_login_logs ORDER BY login_time DESC`
     let row = await exec(sql)
     return row
   }
