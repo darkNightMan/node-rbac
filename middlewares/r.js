@@ -32,7 +32,7 @@ class R {
     logger.info(`req-query:${JSON.stringify(this.req.query)}`)
     logger.info(`req-params:${JSON.stringify(this.req.params)}`)
     logger.info(`req-body:${JSON.stringify(this.req.body)}`)
-    logger.info(`ok:${JSON.stringify(r)}`)
+    // logger.info(`ok:${JSON.stringify(r)}`)
     this.res.send(r)
   }
   err(msg) {
@@ -43,7 +43,7 @@ class R {
     logger.error(`req-query:${JSON.stringify(this.req.query)}`)
     logger.error(`req-params:${JSON.stringify(this.req.params)}`)
     logger.error(`req-body:${JSON.stringify(this.req.body)}`)
-    logger.error(`err:${JSON.stringify(r)}`)
+    // logger.error(`err:${JSON.stringify(r)}`)
     this.res.send(r)
   }
 }

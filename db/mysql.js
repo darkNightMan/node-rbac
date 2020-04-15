@@ -12,6 +12,7 @@ con.connect()
 function exec (sql) {
   const promise = new Promise((resolve, reject) => {
     console.log(colors.magenta('sql执行：=>', sql))
+    logger.info(`'sql执行：=>'${sql}`)
     con.query(sql, (err, result) => {
       if (err) {
         reject(err)

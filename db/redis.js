@@ -9,8 +9,8 @@ class Redis {
     })
   }
   set (key, val, expTime) {
-    console.log(colors.magenta('set redis：=>', 'key:', key))
-    console.log(colors.magenta('set redis：=>', 'val:', val))
+    // console.log(colors.magenta('set redis：=>', 'key:', key))
+    // console.log(colors.magenta('set redis：=>', 'val:', val))
     if (typeof val === 'object') {
       let val = JSON.stringify(val)
     }
@@ -21,7 +21,7 @@ class Redis {
     }
   }
   get (key) {
-    console.log(colors.magenta('get redis：=>', 'key:', key))
+    // console.log(colors.magenta('get redis：=>', 'key:', key))
     const promise = new Promise((resolve, reject) => {
       this.redisClinet.get(key, (err, val) => {
         if (err) {
