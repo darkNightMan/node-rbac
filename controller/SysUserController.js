@@ -2,6 +2,7 @@
 
 const SysUserServer = require('../server/SysUserServer')
 const SysRoleServer = require('../server/SysRoleServer')
+const { formatDate } = require('../utils/format')
 class SysUserController {
   async test (req, res) {
     let data = await UserServer.testSql()
@@ -28,6 +29,7 @@ class SysUserController {
           }
         }
       })
+      it1.create_time = formatDate(it1.create_time)
     })
     function getName(roleName, role_id) {
       let nameObj = {}
@@ -44,15 +46,16 @@ class SysUserController {
   }
   // 创建用户
   async createUser (req, res) {
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     let userInfo = {
       nick_name: req.body.nick_name,
       password: req.body.password,
       phone: req.body.phone,
       email: req.body.email || '',
       avatar: req.body.avatar || '',
-      role_id: req.body.role_id   
-    }
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
+      role_id: req.body.role_id,
+      user_id: userid
+    } 
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }

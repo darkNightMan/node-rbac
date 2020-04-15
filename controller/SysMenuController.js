@@ -1,7 +1,11 @@
 const SysServer = require('../server/SysMenuServer')
+const { formatDate } = require('../utils/format')
 class SysMenuController {
   async list(req, res) {
     let _data = await SysServer.getResourceList()
+    _data.map((it) => {
+      it.create_time = formatDate(it.create_time)
+    })
     res.R.ok(_data)
   }
   async treeMenu(req, res) {

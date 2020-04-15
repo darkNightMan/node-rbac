@@ -19,13 +19,13 @@ class SysUserServer {
       })
       return values.replace(/,$/gi, '')
     }
-    let sql = `INSERT INTO sys_user (nick_name, password, email, phone, avatar) 
-    VALUES ('${userInfo.nick_name}','${userInfo.password}','${userInfo.email}',${userInfo.phone},'${userInfo.avatar}')`  
+    let sql = `INSERT INTO sys_user (nick_name, password, email, phone, avatar, create_time, update_id) 
+    VALUES ('${userInfo.nick_name}','${userInfo.password}','${userInfo.email}','${userInfo.phone}','${userInfo.avatar}',now(),${userInfo.user_id})`  
     let row = await exec(sql)     
     let updateRole = await SysUserServer.setUserRole(row.insertId, userInfo.role_id)
     return true 
   }
-  // 更新用户1
+  // 更新用户
   async updateUser (data) {
     let usersql = `UPDATE sys_user SET 
       nick_name = '${data.nick_name}', 
@@ -39,7 +39,7 @@ class SysUserServer {
       let updateRole = await SysUserServer.setUserRole(data.user_id, data.role_id)
       return true
   }
-  // 删除用户2
+  // 删除用户
   async deleteUser (user_id) {
     let sqluser = `DELETE FROM sys_user  WHERE user_id = ${user_id}`
     let sqlRole = `DELETE FROM sys_user_role WHERE user_id = ${user_id}`
