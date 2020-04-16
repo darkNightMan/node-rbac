@@ -9,7 +9,7 @@ class SysMenuServer {
   async list(parmas) {
     let sqlist = `SELECT * FROM sys_resource LIMIT ?, ?;`
     let sqltotal = `SELECT COUNT(res_id) AS count FROM sys_resource;`
-    let list = await exec(sqlist, [parmas.page, parmas.pageSize])
+    let list = await exec(sqlist, [(parmas.page -1 ) * parmas.pageSize, parmas.pageSize])
     let total = await exec(sqltotal)
     console.log(total, parmas.pageSize)
     return {

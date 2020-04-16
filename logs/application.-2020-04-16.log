@@ -755,3 +755,52 @@
 [2020-04-16T19:01:46.929] [INFO] default - req-query:{"page":"1","pageSize":"3"}
 [2020-04-16T19:01:46.931] [INFO] default - req-params:{}
 [2020-04-16T19:01:46.932] [INFO] default - req-body:{}
+[2020-04-16T21:34:53.300] [INFO] default - traceId:8313d869-a951-4cae-80b4-8c0e4f549d89
+[2020-04-16T21:34:53.310] [INFO] default - traceId:8313d869-a951-4cae-80b4-8c0e4f549d89
+[2020-04-16T21:34:53.311] [INFO] default - host:127.0.0.1
+[2020-04-16T21:34:53.311] [ERROR] default - method: [GET] URL: /api/test?page=1&pageSize=3
+[2020-04-16T21:34:53.311] [ERROR] default - req-query:{"page":"1","pageSize":"3"}
+[2020-04-16T21:34:53.311] [ERROR] default - req-params:{}
+[2020-04-16T21:34:53.311] [ERROR] default - req-body:{}
+[2020-04-16T21:35:08.909] [INFO] default - traceId:e3395dfd-0fb1-4b9d-ba62-cb422a4bb06b
+[2020-04-16T21:35:08.917] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 1, 3;[39m
+[2020-04-16T21:35:09.001] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-16T21:35:09.067] [INFO] default - traceId:e3395dfd-0fb1-4b9d-ba62-cb422a4bb06b
+[2020-04-16T21:35:09.067] [INFO] default - host:127.0.0.1
+[2020-04-16T21:35:09.067] [INFO] default - method: [POST] URL: /api/test?page=1&pageSize=3
+[2020-04-16T21:35:09.067] [INFO] default - req-query:{"page":"1","pageSize":"3"}
+[2020-04-16T21:35:09.068] [INFO] default - req-params:{}
+[2020-04-16T21:35:09.068] [INFO] default - req-body:{"name":"wangxiping"}
+[2020-04-16T21:35:25.894] [INFO] default - traceId:247954e2-950e-485a-8d04-5f7b3601231a
+[2020-04-16T21:35:25.896] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 2, 3;[39m
+[2020-04-16T21:35:26.011] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-16T21:35:26.049] [INFO] default - traceId:247954e2-950e-485a-8d04-5f7b3601231a
+[2020-04-16T21:35:26.049] [INFO] default - host:127.0.0.1
+[2020-04-16T21:35:26.049] [INFO] default - method: [POST] URL: /api/test?page=2&pageSize=3
+[2020-04-16T21:35:26.049] [INFO] default - req-query:{"page":"2","pageSize":"3"}
+[2020-04-16T21:35:26.049] [INFO] default - req-params:{}
+[2020-04-16T21:35:26.049] [INFO] default - req-body:{"name":"wangxiping"}
+[2020-04-16T21:46:30.265] [INFO] default - traceId:1e1569a5-ea28-4180-8e41-b0f54da4c689
+[2020-04-16T21:46:30.273] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 3, 3;[39m
+[2020-04-16T21:46:30.476] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-16T21:46:30.522] [INFO] default - traceId:1e1569a5-ea28-4180-8e41-b0f54da4c689
+[2020-04-16T21:46:30.523] [INFO] default - host:127.0.0.1
+[2020-04-16T21:46:30.524] [INFO] default - method: [POST] URL: /api/test?page=2&pageSize=3
+[2020-04-16T21:46:30.524] [INFO] default - req-query:{"page":"2","pageSize":"3"}
+[2020-04-16T21:46:30.525] [INFO] default - req-params:{}
+[2020-04-16T21:46:30.526] [INFO] default - req-body:{"name":"wangxiping"}
+[2020-04-16T21:52:10.348] [INFO] default - traceId:d24f8c56-6a16-40b9-82e6-08379f4eca6c
+[2020-04-16T21:52:34.227] [INFO] default - traceId:03a7487f-ceed-4660-9155-74b9e0abc0b9
+[2020-04-16T21:55:46.643] [INFO] default - traceId:81af00b8-c0df-4852-be4c-428b72dc97c8
+[2020-04-16T22:05:35.441] [INFO] default - traceId:018c63b9-78ca-437c-8531-67a87d138d81
+[2020-04-16T22:05:50.457] [INFO] default - traceId:c4a2a759-d31c-4358-988e-b0c7f05a53fd
+[2020-04-16T22:08:03.764] [INFO] default - traceId:a30d6648-dc51-465d-8360-44d67e67fa96
+[2020-04-16T22:08:35.901] [INFO] default - traceId:7f8b6c71-25a6-4d92-bbee-f1d00d37d6f1
+[2020-04-16T22:09:39.257] [INFO] default - traceId:434a223b-9a1a-4651-8bcb-c657a3651692
+[2020-04-16T22:10:14.089] [INFO] default - traceId:17178eb7-ab0a-403d-baca-16e8de01f04e
+[2020-04-16T22:10:50.622] [INFO] default - traceId:8c1a720e-0dfc-4ea3-8c03-7fe095a6759d
+[2020-04-16T22:11:33.290] [INFO] default - traceId:2720c2b8-b8af-49a0-b385-dd17a4d8ff45
+[2020-04-16T22:11:44.873] [INFO] default - traceId:ccff75b6-67f7-48c9-b073-e21c6aad2d22
+[2020-04-16T22:32:16.352] [INFO] default - traceId:6e213c70-4795-4d33-98e1-99b4c2710ea1
+[2020-04-16T22:38:32.109] [INFO] default - traceId:af4b5063-c10f-4ad1-8c06-f7513197daf9
+[2020-04-16T22:38:46.192] [INFO] default - traceId:6f9f7fac-7930-420e-b16d-38864ed37b59
