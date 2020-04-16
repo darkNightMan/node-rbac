@@ -6,10 +6,16 @@ const {
 // 菜单
 class SysMenuServer {
   // 获取菜单列表
-  async getResourceList() {
-    let sql = `SELECT * FROM sys_resource;`
-    let data = await exec(sql)
-    return data
+  async list(parmas) {
+    let sqlist = `SELECT * FROM sys_resource LIMIT ?, ?;`
+    let sqltotal = `SELECT COUNT(res_id) AS count FROM sys_resource;`
+    let list = await exec(sqlist, [parmas.page, parmas.pageSize])
+    let total = await exec(sqltotal)
+    console.log(total, parmas.pageSize)
+    return {
+      data: list,
+      total
+    }
   }
   // 获取所有菜单树
   async getTreeMenu() {

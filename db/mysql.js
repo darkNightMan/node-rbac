@@ -3,25 +3,26 @@ const mysql = require('mysql')
 const { MYSQL_CONF } = require('../conf/db')
 const colors = require('colors') // https://github.com/Marak/colors.js
 // 创建连接对象
-const con = mysql.createConnection(MYSQL_CONF)
+const connection = mysql.createConnection(MYSQL_CONF)
 
 // 开始连接
-con.connect()
+connection.connect()
 
 // 统一执行sql 函授
-function exec (sql) {
-  const promise = new Promise((resolve, reject) => {
-    console.log(colors.magenta('sql执行：=>', sql))
-    logger.info(`'sql执行：=>'${sql}`)
-    con.query(sql, (err, result) => {
-      if (err) {
-        reject(err)
-        return
-      }    
-      resolve(result)
-    })  
+function exec (sql, post) {
+  return new Promise((resolve, reject) => {
+    console.log(sql, post)
+    const query = connection.query(sql, post, (err, result) => {
+        if (err) {
+          reject(err)
+          connection.end()
+          return
+        } 
+        resolve(result)
+        // connection.end()
+      })
+    logger.info(colors.magenta('sql执行：=>', query.sql))
   })
-  return promise
 }
 
 module.exports = {

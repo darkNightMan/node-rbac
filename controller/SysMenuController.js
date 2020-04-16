@@ -1,12 +1,19 @@
 const SysServer = require('../server/SysMenuServer')
 const { formatDate } = require('../utils/format')
+const { offset } = require('../conf/pageSize')
 class SysMenuController {
   async list(req, res) {
-    let _data = await SysServer.getResourceList()
+    let _data = await SysServer.list()
     _data.map((it) => {
       it.create_time = formatDate(it.create_time)
     })
-    res.R.ok(_data)
+    res.R.ok({
+      list: _data,
+      page: 1,
+      pageSize:10,
+      totalCount: 120,
+      totalPage: 60
+    })
   }
   async treeMenu(req, res) {
     let _data = await SysServer.getTreeMenu()
