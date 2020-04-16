@@ -26,8 +26,8 @@ module.exports = function (app) {
 
   app.get('/api/user/list', SysUserController.list) // 获取所有的用户
   app.post('/api/user/createUser', SysUserController.createUser) // 新增用户
-  app.post('/api/user/updateUser', SysUserController.updateUser) // 更新用户
-  app.post('/api/user/deleteUser', SysUserController.deleteUser) // 删除用户
+  app.put('/api/user/updateUser', SysUserController.updateUser) // 更新用户
+  app.delete('/api/user/deleteUser', SysUserController.deleteUser) // 删除用户
 
   app.get('/api/menu/list/',SysMenuController.list) // 获取菜单列表
   app.get('/api/menu/sysMenutree/',SysMenuController.treeMenu) // 获取菜单树
