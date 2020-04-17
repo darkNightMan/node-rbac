@@ -1,10 +1,18 @@
 module.exports = {
   offsetPage: (query) => {
-    return  {
-      pageSize: (query.pageSize !== undefined) ? parseInt(query.pageSize) : 10,
-      page: (query.page !== undefined) ? parseInt(query.page) : 1,
-      sort: (query.sortRule !== undefined) ? parseInt(query.sortRule) : parseInt(-1),
-      limitStart: (query.pageSize !== undefined) ? (query.page -1) * query.pageSize : 0 
-    }
+      let queryForMat = {
+        condition: {},
+        limitStart: query.page && query.pageSize ? (query.page - 1) * parseInt(query.pageSize) : 0,
+        pege: 1,
+        pageSize: 10
+      }
+      Object.keys(query).map((it) => {
+        if (it == 'page' || it == 'pageSize') {
+          queryForMat[it] = parseInt(query[it])
+        } else {
+          queryForMat.condition[it]= query[it]
+        }
+      })
+    return queryForMat
   }
 }

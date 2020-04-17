@@ -7,13 +7,15 @@ const {
 class SysMenuServer {
   // 获取菜单列表
   async list(parmas) {
-    let sqlist = `SELECT * FROM sys_resource LIMIT ?, ?;`
+    let sqlist = `SELECT * FROM sys_resource LIMIT ?, ? `
     let sqltotal = `SELECT COUNT(res_id) AS count FROM sys_resource;`
-    let list = await exec(sqlist, [(parmas.page -1 ) * parmas.pageSize, parmas.pageSize])
+    if (parmas.condition) { // 如果存在条件查询
+     
+    }
+    let list = await exec(sqlist, [parmas.limitStart, parmas.pageSize])
     let total = await exec(sqltotal)
-    console.log(total, parmas.pageSize)
-    return {
-      data: list,
+    return {   
+      list,
       total
     }
   }
