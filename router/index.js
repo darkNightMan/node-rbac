@@ -31,6 +31,7 @@ module.exports = function (app) {
   app.delete('/api/user/deleteUser', SysUserController.deleteUser) // 删除用户
 
   app.get('/api/menu/list/',SysMenuController.list) // 获取菜单列表
+  app.get('/api/menu/selectMenuList', SysMenuController.selectMenuList)
   app.get('/api/menu/sysMenutree/',SysMenuController.treeMenu) // 获取菜单树
   app.post('/api/menu/createMenu', SysMenuController.createMenu) // 新增菜单
   app.put('/api/menu/updatedMenu', SysMenuController.updatedMenu) // 更新菜单

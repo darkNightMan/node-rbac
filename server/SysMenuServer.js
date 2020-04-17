@@ -6,18 +6,23 @@ const {
 // 菜单
 class SysMenuServer {
   // 获取菜单列表
-  async list(parmas) {
+  async list(pageParmas, conditions) {
     let sqlist = `SELECT * FROM sys_resource LIMIT ?, ? `
     let sqltotal = `SELECT COUNT(res_id) AS count FROM sys_resource;`
-    if (parmas.condition) { // 如果存在条件查询
+    if (conditions) { // 如果存在条件查询
      
     }
-    let list = await exec(sqlist, [parmas.limitStart, parmas.pageSize])
+    let list = await exec(sqlist, [pageParmas.limitStart, pageParmas.pageSize])
     let total = await exec(sqltotal)
     return {   
       list,
       total
     }
+  }
+  async selectMenuList () {
+    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource`
+    let data = await exec(sql)
+    return data
   }
   // 获取所有菜单树
   async getTreeMenu() {
