@@ -9,9 +9,8 @@ const connection = mysql.createConnection(MYSQL_CONF)
 connection.connect()
 
 // 统一执行sql 函授
-function exec (sql, post) {
+function exec (sql, post= []) {
   return new Promise((resolve, reject) => {
-    console.log(sql, post)
     const query = connection.query(sql, post, (err, result) => {
         if (err) {
           reject(err)

@@ -15,12 +15,12 @@ class SysMenuController {
       pageSize: pageParams.pageSize
     })
   }
-  async selectMenuList () {
-    const list = await SysMenuServer.selectMenuList()
-    return list
+  async selectMenuList (req, res) {
+    let data = await SysMenuServer.selectMenuList()
+    res.R.ok(data)
   }
   async treeMenu(req, res) {
-    let _data = await SysServer.getTreeMenu()
+    let _data = await SysMenuServer.getTreeMenu()
     // 遍历菜单
     function menuEach(menu) {
       let root = menu.filter((it, index) => it.parent_id == null) //  获取根级
@@ -43,7 +43,7 @@ class SysMenuController {
   }
   async createMenu (req, res) {    
     let data = req.body
-    let _data = await SysServer.insertMenu(data)
+    let _data = await SysMenuServer.insertMenu(data)
     if(_data) {
       res.R.ok(_data)
     } else {
@@ -52,7 +52,7 @@ class SysMenuController {
   }
   async updatedMenu (req, res) {
     let data = req.body
-    let _data = await SysServer.updatedMenu(data)
+    let _data = await SysMenuServer.updatedMenu(data)
     if(_data) {
       res.R.ok()
     } else {
@@ -62,7 +62,7 @@ class SysMenuController {
 
   async deleteMenu (req, res) {
     let res_id = req.body.res_id
-    let _data = await SysServer.deleteMenu(res_id)
+    let _data = await SysMenuServer.deleteMenu(res_id)
     if(_data) {
       res.R.ok()
     } else {

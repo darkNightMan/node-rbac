@@ -20,8 +20,9 @@ class SysMenuServer {
     }
   }
   async selectMenuList () {
-    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource`
+    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource;`
     let data = await exec(sql)
+    console.log(data)
     return data
   }
   // 获取所有菜单树
