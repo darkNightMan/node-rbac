@@ -25,10 +25,27 @@ class SysLogServer {
     let row = await exec(sql)
     return row[0]
   }
-  async list (user_id) {
-    let sql = user_id ? `SELECT * FROM sys_login_logs WHERE user_id = ${user_id}` : `SELECT * FROM sys_login_logs ORDER BY login_time DESC`
-    let row = await exec(sql)
-    return row
+  async list (pageParmas, conditions) {
+    let sql = `SELECT * FROM sys_login_logs`
+    let sqlArr = [] 
+    let sqltotal = `SELECT COUNT(id) AS count FROM sys_login_logs`
+    let sqltotalArr = []
+    if (conditions.user_id) {
+      let userid = conditions.user_id
+      sql += ` WHERE user_id = ? `
+      sqltotal += ` WHERE user_id = ? `
+      sqltotalArr.push(userid)
+      sqlArr.push(userid)
+    }
+    sql += ` LIMIT ?, ? `
+    sqlArr.push(pageParmas.limitStart, pageParmas.pageSize)
+    sqltotalArr.push(pageParmas.limitStart, pageParmas.pageSize)
+    let list = await exec(sql,sqlArr)
+    let total = await exec(sqltotal, sqltotalArr)
+    return {
+      list,
+      total
+    }
   }
 }
 
