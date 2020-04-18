@@ -10,8 +10,7 @@ class SysLoginLogsController {
     let { pageParams, conditions } = offsetPage(req.query)
 
     let roleList = await SysRoleServer.findRoles(userid) // 用户角色关联
-    let isSuperManage = roleList.some(it =>  it.role_id === 1) // 超级管理员
-    console.log(isSuperManage)
+    let isSuperManage = roleList.some(it =>  it.role_id === 1) // 超级管理员   
     let _data = await SysLogServer.list(pageParams,  Object.assign({ user_id: isSuperManage ? '' : userid }, conditions))
     let roleName = await SysRoleServer.list() // 角色名
     _data.list.map((it1) => {
