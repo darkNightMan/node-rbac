@@ -6,10 +6,18 @@ const {
 // 用户
 class SysUserServer {
    // 获取的用户
-   async list() {
-    let sql = `SELECT * FROM sys_user`
-    let row = await exec(sql)
-    return row
+   async list(pageParmas, conditions) {
+    let sql = `SELECT * FROM sys_user LIMIT ?, ?`
+    let sqltotal = `SELECT COUNT(user_id) AS count FROM sys_user;`
+    if (conditions) { // 如果存在条件查询
+     
+    }
+    let list = await exec(sql, [pageParmas.limitStart, pageParmas.pageSize])
+    let total = await exec(sqltotal)
+    return {   
+      list,
+      total
+    }
   }
   async createUser (userInfo) {
     function getValues(id, arr) {

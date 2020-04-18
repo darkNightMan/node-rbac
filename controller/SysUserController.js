@@ -3,6 +3,7 @@
 const SysUserServer = require('../server/SysUserServer')
 const SysRoleServer = require('../server/SysRoleServer')
 const { formatDate } = require('../utils/format')
+const { offsetPage } = require('../utils/offsetPage')
 class SysUserController {
   async test (req, res) {
     let data = await UserServer.testSql()
@@ -14,10 +15,11 @@ class SysUserController {
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    let _data = await SysUserServer.list() // 用户表
+    const { pageParams, conditions } = offsetPage(req.query)
+    let _data = await SysUserServer.list(pageParams, conditions) // 用户表
     let roleList = await SysRoleServer.findRoles() // 用户角色关联
     let roleName = await SysRoleServer.list() // 角色名
-    _data.map((it1) => {
+    _data.list.map((it1) => {
       roleList.map((it2) => {
         if (it1.user_id === it2.user_id ){ // 匹配表关联的数据
           if(Object.prototype.toString.call(it1.roleList) == '[object Array]') {
@@ -41,7 +43,12 @@ class SysUserController {
       return nameObj
     }
     if (_data) {
-      res.R.ok({userList: _data})
+      res.R.ok({
+        list: _data.list,
+        totalCount: _data.total[0].count,
+        currentPage: pageParams.page,
+        pageSize: pageParams.pageSize
+      })
     }
   }
   // 创建用户
