@@ -26,7 +26,7 @@ class SysLogServer {
     return row[0]
   }
   async list (pageParmas, conditions) {
-    let sql = `SELECT * FROM sys_login_logs`
+    let sql = `SELECT * FROM sys_login_logs ORDER BY login_time  DESC`
     let sqlArr = [] 
     let sqltotal = `SELECT COUNT(id) AS count FROM sys_login_logs`
     let sqltotalArr = []
