@@ -1,0 +1,1398 @@
+[2020-04-21T21:05:37.605] [INFO] default - traceId:b60ddcda-3cbd-41e9-95af-24b6d29e158c
+[2020-04-21T21:05:37.615] [INFO] default - traceId:b60ddcda-3cbd-41e9-95af-24b6d29e158c
+[2020-04-21T21:05:37.615] [INFO] default - host:localhost
+[2020-04-21T21:05:37.615] [ERROR] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T21:05:37.615] [ERROR] default - req-query:{}
+[2020-04-21T21:05:37.616] [ERROR] default - req-params:{}
+[2020-04-21T21:05:37.616] [ERROR] default - req-body:{}
+[2020-04-21T21:05:51.280] [INFO] default - traceId:c5f644ee-ef0b-424c-99df-51e480092134
+[2020-04-21T21:05:51.283] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-21T21:05:51.387] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      null,    [39m
+[35m      '',[39m
+[35m      now(),[39m
+[35m      'localhost',[39m
+[35m      '本地登入',[39m
+[35m      '用户密码错误',[39m
+[35m      'Mac 10.14.6'[39m
+[35m    )[39m
+[2020-04-21T21:05:51.512] [INFO] default - traceId:c5f644ee-ef0b-424c-99df-51e480092134
+[2020-04-21T21:05:51.512] [INFO] default - host:localhost
+[2020-04-21T21:05:51.512] [ERROR] default - method: [POST] URL: /api/login
+[2020-04-21T21:05:51.512] [ERROR] default - req-query:{}
+[2020-04-21T21:05:51.512] [ERROR] default - req-params:{}
+[2020-04-21T21:05:51.512] [ERROR] default - req-body:{"phone":110,"password":"12223","code":"123456"}
+[2020-04-21T21:05:54.518] [INFO] default - traceId:15d09f5b-221f-44ba-be82-2c758cb73f9e
+[2020-04-21T21:05:54.518] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-21T21:05:54.628] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      'localhost',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Mac 10.14.6'[39m
+[35m    )[39m
+[2020-04-21T21:05:54.768] [INFO] default - traceId:15d09f5b-221f-44ba-be82-2c758cb73f9e
+[2020-04-21T21:05:54.768] [INFO] default - host:localhost
+[2020-04-21T21:05:54.768] [INFO] default - method: [POST] URL: /api/login
+[2020-04-21T21:05:54.768] [INFO] default - req-query:{}
+[2020-04-21T21:05:54.768] [INFO] default - req-params:{}
+[2020-04-21T21:05:54.769] [INFO] default - req-body:{"phone":110,"password":"123","code":"123456"}
+[2020-04-21T21:05:54.819] [INFO] default - traceId:9a22a54b-a431-49e9-9eec-072025375283
+[2020-04-21T21:05:54.838] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T21:05:55.198] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T21:05:55.322] [INFO] default - traceId:9a22a54b-a431-49e9-9eec-072025375283
+[2020-04-21T21:05:55.322] [INFO] default - host:localhost
+[2020-04-21T21:05:55.322] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T21:05:55.323] [INFO] default - req-query:{}
+[2020-04-21T21:05:55.323] [INFO] default - req-params:{}
+[2020-04-21T21:05:55.323] [INFO] default - req-body:{}
+[2020-04-21T21:05:55.486] [INFO] default - traceId:13eb0bd4-9640-4325-a27f-e62d400d97c4
+[2020-04-21T21:05:55.488] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:05:56.107] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T21:05:56.217] [INFO] default - traceId:13eb0bd4-9640-4325-a27f-e62d400d97c4
+[2020-04-21T21:05:56.217] [INFO] default - host:localhost
+[2020-04-21T21:05:56.217] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T21:05:56.217] [INFO] default - req-query:{}
+[2020-04-21T21:05:56.217] [INFO] default - req-params:{}
+[2020-04-21T21:05:56.217] [INFO] default - req-body:{}
+[2020-04-21T21:05:56.233] [INFO] default - traceId:a53c8669-5b37-4364-9744-3d514988602a
+[2020-04-21T21:05:56.235] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T21:05:56.378] [INFO] default - traceId:a53c8669-5b37-4364-9744-3d514988602a
+[2020-04-21T21:05:56.378] [INFO] default - host:localhost
+[2020-04-21T21:05:56.378] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T21:05:56.378] [INFO] default - req-query:{}
+[2020-04-21T21:05:56.379] [INFO] default - req-params:{}
+[2020-04-21T21:05:56.379] [INFO] default - req-body:{}
+[2020-04-21T21:05:58.352] [INFO] default - traceId:5552f569-9bc7-4f69-96b6-93b040fc08db
+[2020-04-21T21:05:58.354] [INFO] default - [35msql执行：=> SELECT * FROM sys_user LIMIT 0, 10[39m
+[2020-04-21T21:05:58.362] [INFO] default - traceId:ddaf7715-55f8-46c4-a7a6-28687dec1883
+[2020-04-21T21:05:58.363] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T21:05:58.493] [INFO] default - [35msql执行：=> SELECT COUNT(user_id) AS count FROM sys_user;[39m
+[2020-04-21T21:05:58.636] [INFO] default - traceId:ddaf7715-55f8-46c4-a7a6-28687dec1883
+[2020-04-21T21:05:58.636] [INFO] default - host:localhost
+[2020-04-21T21:05:58.636] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-21T21:05:58.637] [INFO] default - req-query:{}
+[2020-04-21T21:05:58.637] [INFO] default - req-params:{}
+[2020-04-21T21:05:58.637] [INFO] default - req-body:{}
+[2020-04-21T21:05:58.798] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-04-21T21:05:58.979] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T21:05:59.254] [INFO] default - traceId:5552f569-9bc7-4f69-96b6-93b040fc08db
+[2020-04-21T21:05:59.254] [INFO] default - host:localhost
+[2020-04-21T21:05:59.254] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-04-21T21:05:59.254] [INFO] default - req-query:{"currentPage":"1"}
+[2020-04-21T21:05:59.254] [INFO] default - req-params:{}
+[2020-04-21T21:05:59.254] [INFO] default - req-body:{}
+[2020-04-21T21:06:00.861] [INFO] default - traceId:226c2ff4-cf1b-414e-a687-3c8da56e4e17
+[2020-04-21T21:06:00.862] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T21:06:01.020] [INFO] default - traceId:226c2ff4-cf1b-414e-a687-3c8da56e4e17
+[2020-04-21T21:06:01.020] [INFO] default - host:localhost
+[2020-04-21T21:06:01.020] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-21T21:06:01.021] [INFO] default - req-query:{}
+[2020-04-21T21:06:01.021] [INFO] default - req-params:{}
+[2020-04-21T21:06:01.021] [INFO] default - req-body:{}
+[2020-04-21T21:41:39.828] [INFO] default - traceId:f22cd44e-8050-470d-b53a-ce7b93610d4a
+[2020-04-21T21:41:39.839] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:42:34.425] [INFO] default - traceId:452513f8-7104-4810-8a27-729e65f781e0
+[2020-04-21T21:42:34.430] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:42:38.258] [INFO] default - traceId:40e21c40-8452-4043-a891-98670d73c471
+[2020-04-21T21:42:38.259] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:42:48.736] [INFO] default - traceId:6d4eb4ae-f8bb-4544-8b4b-d1e7c7b51353
+[2020-04-21T21:42:48.737] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:42:55.803] [INFO] default - traceId:754aa151-3064-43f3-b712-c1269f0fad9e
+[2020-04-21T21:42:55.819] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:42:58.811] [INFO] default - traceId:67fb369c-9cea-43c0-a5f4-6248db1963cb
+[2020-04-21T21:42:58.812] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:43:03.218] [INFO] default - traceId:e2a4f729-e0f4-4c07-acfd-b3eb1194ac82
+[2020-04-21T21:43:03.218] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:43:07.373] [INFO] default - traceId:d9a2e752-2af0-4b0a-af08-3bdc7456a1e7
+[2020-04-21T21:43:07.381] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:43:24.714] [INFO] default - traceId:b8e6972d-5f8b-4ac9-8190-e6be1fb72212
+[2020-04-21T21:43:24.715] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:44:47.617] [INFO] default - traceId:19377085-72e1-4b78-bbca-08a54a0a5ef7
+[2020-04-21T21:44:47.620] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T21:45:01.262] [INFO] default - traceId:aea4eaa3-e869-4e1e-bad6-93cd696a3125
+[2020-04-21T21:45:01.263] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:02:32.669] [INFO] default - traceId:7b73044b-7957-4641-a83d-e585eddd75b4
+[2020-04-21T22:02:32.681] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:02:40.440] [INFO] default - traceId:8d2694a0-94cf-4b91-a1e4-3f6be015b02c
+[2020-04-21T22:02:40.441] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:02:44.536] [INFO] default - traceId:8a48351a-7d31-4be3-ab2a-5703ceebe6d1
+[2020-04-21T22:02:44.537] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:02:45.684] [INFO] default - traceId:05c8bea3-82fb-47c4-9dff-1723f1341a39
+[2020-04-21T22:02:45.684] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:04:18.692] [INFO] default - traceId:4a19c28a-a3af-45fc-8a47-3571248a0b5a
+[2020-04-21T22:04:18.700] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:07:40.433] [INFO] default - traceId:72f15030-610f-484f-8f8d-339a3f399516
+[2020-04-21T22:07:40.449] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:07:40.472] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T22:07:40.476] [INFO] default - traceId:72f15030-610f-484f-8f8d-339a3f399516
+[2020-04-21T22:07:40.476] [INFO] default - host:localhost
+[2020-04-21T22:07:40.476] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T22:07:40.476] [INFO] default - req-query:{}
+[2020-04-21T22:07:40.476] [INFO] default - req-params:{}
+[2020-04-21T22:07:40.476] [INFO] default - req-body:{}
+[2020-04-21T22:07:41.108] [INFO] default - traceId:cd4483d9-eb35-44d9-a811-458abdcbafc3
+[2020-04-21T22:07:41.111] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:07:41.113] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:07:41.119] [INFO] default - traceId:cd4483d9-eb35-44d9-a811-458abdcbafc3
+[2020-04-21T22:07:41.119] [INFO] default - host:localhost
+[2020-04-21T22:07:41.119] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:07:41.119] [INFO] default - req-query:{}
+[2020-04-21T22:07:41.120] [INFO] default - req-params:{}
+[2020-04-21T22:07:41.120] [INFO] default - req-body:{}
+[2020-04-21T22:07:41.150] [INFO] default - traceId:492daa08-d578-4370-93fd-7957a6e675f6
+[2020-04-21T22:07:41.151] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:07:41.153] [INFO] default - traceId:492daa08-d578-4370-93fd-7957a6e675f6
+[2020-04-21T22:07:41.154] [INFO] default - host:localhost
+[2020-04-21T22:07:41.154] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:07:41.154] [INFO] default - req-query:{}
+[2020-04-21T22:07:41.154] [INFO] default - req-params:{}
+[2020-04-21T22:07:41.155] [INFO] default - req-body:{}
+[2020-04-21T22:11:52.126] [INFO] default - traceId:7fd0d754-0ac2-4378-b01b-4b55d6175d94
+[2020-04-21T22:11:52.139] [INFO] default - [35msql执行：=> SELECT * FROM sys_user LIMIT 0, 10[39m
+[2020-04-21T22:11:52.139] [INFO] default - traceId:bac34b57-2f12-4c2c-b399-3fc871d3ec5a
+[2020-04-21T22:11:52.145] [INFO] default - [35msql执行：=> SELECT COUNT(user_id) AS count FROM sys_user;[39m
+[2020-04-21T22:11:52.146] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T22:11:52.147] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-04-21T22:11:52.154] [INFO] default - traceId:bac34b57-2f12-4c2c-b399-3fc871d3ec5a
+[2020-04-21T22:11:52.154] [INFO] default - host:localhost
+[2020-04-21T22:11:52.154] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-21T22:11:52.154] [INFO] default - req-query:{}
+[2020-04-21T22:11:52.154] [INFO] default - req-params:{}
+[2020-04-21T22:11:52.154] [INFO] default - req-body:{}
+[2020-04-21T22:11:52.157] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T22:11:52.158] [INFO] default - traceId:7fd0d754-0ac2-4378-b01b-4b55d6175d94
+[2020-04-21T22:11:52.159] [INFO] default - host:localhost
+[2020-04-21T22:11:52.159] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-04-21T22:11:52.159] [INFO] default - req-query:{"currentPage":"1"}
+[2020-04-21T22:11:52.159] [INFO] default - req-params:{}
+[2020-04-21T22:11:52.159] [INFO] default - req-body:{}
+[2020-04-21T22:12:02.524] [INFO] default - traceId:9141b88a-8c3f-4d97-a42e-896a8b5b260b
+[2020-04-21T22:12:02.526] [INFO] default - [35msql执行：=> SELECT role_id, user_id FROM sys_user_role WHERE user_id =1[39m
+[2020-04-21T22:12:02.527] [INFO] default - [35msql执行：=> SELECT * FROM sys_login_logs LIMIT 0, 10 [39m
+[2020-04-21T22:12:02.530] [INFO] default - [35msql执行：=> SELECT COUNT(id) AS count FROM sys_login_logs[39m
+[2020-04-21T22:12:02.530] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T22:12:02.536] [INFO] default - traceId:9141b88a-8c3f-4d97-a42e-896a8b5b260b
+[2020-04-21T22:12:02.537] [INFO] default - host:localhost
+[2020-04-21T22:12:02.537] [INFO] default - method: [GET] URL: /api/loginLogs/list?page=1&pageSize=10
+[2020-04-21T22:12:02.537] [INFO] default - req-query:{}
+[2020-04-21T22:12:02.537] [INFO] default - req-params:{}
+[2020-04-21T22:12:02.537] [INFO] default - req-body:{}
+[2020-04-21T22:41:41.335] [INFO] default - traceId:8fa05916-4e9e-451c-bea1-5f5ad8a49218
+[2020-04-21T22:41:41.355] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:41:41.371] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:41:41.377] [INFO] default - traceId:8fa05916-4e9e-451c-bea1-5f5ad8a49218
+[2020-04-21T22:41:41.410] [INFO] default - host:localhost
+[2020-04-21T22:41:41.411] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:41:41.411] [INFO] default - req-query:{}
+[2020-04-21T22:41:41.411] [INFO] default - req-params:{}
+[2020-04-21T22:41:41.412] [INFO] default - req-body:{}
+[2020-04-21T22:41:41.462] [INFO] default - traceId:23b68011-85b3-444a-ab6c-bed4164aadf7
+[2020-04-21T22:41:41.468] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:41:41.487] [INFO] default - traceId:23b68011-85b3-444a-ab6c-bed4164aadf7
+[2020-04-21T22:41:41.487] [INFO] default - host:localhost
+[2020-04-21T22:41:41.487] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:41:41.487] [INFO] default - req-query:{}
+[2020-04-21T22:41:41.488] [INFO] default - req-params:{}
+[2020-04-21T22:41:41.488] [INFO] default - req-body:{}
+[2020-04-21T22:41:55.128] [INFO] default - traceId:e263d82e-c4e9-4248-a40a-385cbbbda2b2
+[2020-04-21T22:41:55.130] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:41:55.131] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:41:55.132] [INFO] default - traceId:e263d82e-c4e9-4248-a40a-385cbbbda2b2
+[2020-04-21T22:41:55.132] [INFO] default - host:localhost
+[2020-04-21T22:41:55.132] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:41:55.133] [INFO] default - req-query:{}
+[2020-04-21T22:41:55.133] [INFO] default - req-params:{}
+[2020-04-21T22:41:55.133] [INFO] default - req-body:{}
+[2020-04-21T22:41:55.143] [INFO] default - traceId:0976a80a-a701-49e0-b1b0-a8b83d62f2f4
+[2020-04-21T22:41:55.144] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:41:55.146] [INFO] default - traceId:0976a80a-a701-49e0-b1b0-a8b83d62f2f4
+[2020-04-21T22:41:55.146] [INFO] default - host:localhost
+[2020-04-21T22:41:55.146] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:41:55.146] [INFO] default - req-query:{}
+[2020-04-21T22:41:55.146] [INFO] default - req-params:{}
+[2020-04-21T22:41:55.146] [INFO] default - req-body:{}
+[2020-04-21T22:42:48.575] [INFO] default - traceId:d50eda9b-4b6f-4690-b60d-fb6c66c9f5fa
+[2020-04-21T22:42:48.577] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:42:48.581] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T22:42:48.582] [INFO] default - traceId:d50eda9b-4b6f-4690-b60d-fb6c66c9f5fa
+[2020-04-21T22:42:48.582] [INFO] default - host:localhost
+[2020-04-21T22:42:48.582] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T22:42:48.582] [INFO] default - req-query:{}
+[2020-04-21T22:42:48.582] [INFO] default - req-params:{}
+[2020-04-21T22:42:48.582] [INFO] default - req-body:{}
+[2020-04-21T22:42:49.055] [INFO] default - traceId:58082aea-aea4-445c-ac20-7e5cdc9e554a
+[2020-04-21T22:42:49.056] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:42:49.058] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:42:49.059] [INFO] default - traceId:58082aea-aea4-445c-ac20-7e5cdc9e554a
+[2020-04-21T22:42:49.059] [INFO] default - host:localhost
+[2020-04-21T22:42:49.059] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:42:49.059] [INFO] default - req-query:{}
+[2020-04-21T22:42:49.059] [INFO] default - req-params:{}
+[2020-04-21T22:42:49.059] [INFO] default - req-body:{}
+[2020-04-21T22:42:49.122] [INFO] default - traceId:ffe5fe5f-4210-42b0-85a9-da8a9d3f63bd
+[2020-04-21T22:42:49.123] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:42:49.124] [INFO] default - traceId:ffe5fe5f-4210-42b0-85a9-da8a9d3f63bd
+[2020-04-21T22:42:49.124] [INFO] default - host:localhost
+[2020-04-21T22:42:49.124] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:42:49.124] [INFO] default - req-query:{}
+[2020-04-21T22:42:49.124] [INFO] default - req-params:{}
+[2020-04-21T22:42:49.125] [INFO] default - req-body:{}
+[2020-04-21T22:43:02.221] [INFO] default - traceId:4032d90e-2c88-453a-a612-e17a4cabbe5a
+[2020-04-21T22:43:02.223] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:43:02.228] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T22:43:02.229] [INFO] default - traceId:4032d90e-2c88-453a-a612-e17a4cabbe5a
+[2020-04-21T22:43:02.229] [INFO] default - host:localhost
+[2020-04-21T22:43:02.229] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T22:43:02.229] [INFO] default - req-query:{}
+[2020-04-21T22:43:02.229] [INFO] default - req-params:{}
+[2020-04-21T22:43:02.230] [INFO] default - req-body:{}
+[2020-04-21T22:43:02.523] [INFO] default - traceId:08a37614-e183-48c6-9771-7f2ecb5a0a93
+[2020-04-21T22:43:02.524] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:43:02.526] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:43:02.527] [INFO] default - traceId:08a37614-e183-48c6-9771-7f2ecb5a0a93
+[2020-04-21T22:43:02.528] [INFO] default - host:localhost
+[2020-04-21T22:43:02.529] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:43:02.529] [INFO] default - req-query:{}
+[2020-04-21T22:43:02.529] [INFO] default - req-params:{}
+[2020-04-21T22:43:02.530] [INFO] default - req-body:{}
+[2020-04-21T22:43:02.587] [INFO] default - traceId:72e4a4ff-36ff-40a4-ad05-17e97f97adb7
+[2020-04-21T22:43:02.588] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:43:02.589] [INFO] default - traceId:72e4a4ff-36ff-40a4-ad05-17e97f97adb7
+[2020-04-21T22:43:02.589] [INFO] default - host:localhost
+[2020-04-21T22:43:02.590] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:43:02.590] [INFO] default - req-query:{}
+[2020-04-21T22:43:02.590] [INFO] default - req-params:{}
+[2020-04-21T22:43:02.590] [INFO] default - req-body:{}
+[2020-04-21T22:46:41.004] [INFO] default - traceId:10d287ff-fe71-439b-b276-e938482b819a
+[2020-04-21T22:46:41.012] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:46:41.021] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:46:41.023] [INFO] default - traceId:10d287ff-fe71-439b-b276-e938482b819a
+[2020-04-21T22:46:41.023] [INFO] default - host:localhost
+[2020-04-21T22:46:41.024] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:46:41.024] [INFO] default - req-query:{}
+[2020-04-21T22:46:41.025] [INFO] default - req-params:{}
+[2020-04-21T22:46:41.025] [INFO] default - req-body:{}
+[2020-04-21T22:46:41.055] [INFO] default - traceId:4b8905de-c50c-4b44-9f06-6ce403facc98
+[2020-04-21T22:46:41.055] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:46:41.057] [INFO] default - traceId:4b8905de-c50c-4b44-9f06-6ce403facc98
+[2020-04-21T22:46:41.057] [INFO] default - host:localhost
+[2020-04-21T22:46:41.057] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:46:41.057] [INFO] default - req-query:{}
+[2020-04-21T22:46:41.057] [INFO] default - req-params:{}
+[2020-04-21T22:46:41.057] [INFO] default - req-body:{}
+[2020-04-21T22:47:01.830] [INFO] default - traceId:69214172-be6d-4348-a05c-6ac1e0e1d949
+[2020-04-21T22:47:01.831] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:47:01.832] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:47:01.833] [INFO] default - traceId:69214172-be6d-4348-a05c-6ac1e0e1d949
+[2020-04-21T22:47:01.833] [INFO] default - host:localhost
+[2020-04-21T22:47:01.833] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:47:01.833] [INFO] default - req-query:{}
+[2020-04-21T22:47:01.833] [INFO] default - req-params:{}
+[2020-04-21T22:47:01.833] [INFO] default - req-body:{}
+[2020-04-21T22:47:01.872] [INFO] default - traceId:28be708e-e5b7-4449-8d91-0e7a99f35ff8
+[2020-04-21T22:47:01.873] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:47:01.874] [INFO] default - traceId:28be708e-e5b7-4449-8d91-0e7a99f35ff8
+[2020-04-21T22:47:01.874] [INFO] default - host:localhost
+[2020-04-21T22:47:01.875] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:47:01.875] [INFO] default - req-query:{}
+[2020-04-21T22:47:01.875] [INFO] default - req-params:{}
+[2020-04-21T22:47:01.875] [INFO] default - req-body:{}
+[2020-04-21T22:53:58.505] [INFO] default - traceId:769c4084-e7d2-44ff-a370-451957962d08
+[2020-04-21T22:53:58.529] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T22:53:58.537] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T22:53:58.539] [INFO] default - traceId:769c4084-e7d2-44ff-a370-451957962d08
+[2020-04-21T22:53:58.540] [INFO] default - host:localhost
+[2020-04-21T22:53:58.540] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T22:53:58.540] [INFO] default - req-query:{}
+[2020-04-21T22:53:58.540] [INFO] default - req-params:{}
+[2020-04-21T22:53:58.540] [INFO] default - req-body:{}
+[2020-04-21T22:53:59.304] [INFO] default - traceId:db518e84-2a7f-4140-b13f-c40ec0bf1982
+[2020-04-21T22:53:59.305] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:53:59.310] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:53:59.312] [INFO] default - traceId:db518e84-2a7f-4140-b13f-c40ec0bf1982
+[2020-04-21T22:53:59.312] [INFO] default - host:localhost
+[2020-04-21T22:53:59.312] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:53:59.312] [INFO] default - req-query:{}
+[2020-04-21T22:53:59.312] [INFO] default - req-params:{}
+[2020-04-21T22:53:59.312] [INFO] default - req-body:{}
+[2020-04-21T22:53:59.347] [INFO] default - traceId:602d3e1d-9431-4503-b7e3-18cade56f51e
+[2020-04-21T22:53:59.348] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:53:59.349] [INFO] default - traceId:602d3e1d-9431-4503-b7e3-18cade56f51e
+[2020-04-21T22:53:59.349] [INFO] default - host:localhost
+[2020-04-21T22:53:59.349] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:53:59.349] [INFO] default - req-query:{}
+[2020-04-21T22:53:59.349] [INFO] default - req-params:{}
+[2020-04-21T22:53:59.349] [INFO] default - req-body:{}
+[2020-04-21T22:59:03.377] [INFO] default - traceId:ccd10f54-c125-4aca-9bd4-77b164d3ebf8
+[2020-04-21T22:59:03.388] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:59:03.391] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:59:03.393] [INFO] default - traceId:ccd10f54-c125-4aca-9bd4-77b164d3ebf8
+[2020-04-21T22:59:03.393] [INFO] default - host:localhost
+[2020-04-21T22:59:03.393] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:59:03.393] [INFO] default - req-query:{}
+[2020-04-21T22:59:03.393] [INFO] default - req-params:{}
+[2020-04-21T22:59:03.394] [INFO] default - req-body:{}
+[2020-04-21T22:59:03.427] [INFO] default - traceId:f4d6f3aa-3ddf-4b13-ba2c-4283530cb7a0
+[2020-04-21T22:59:03.429] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:59:03.430] [INFO] default - traceId:f4d6f3aa-3ddf-4b13-ba2c-4283530cb7a0
+[2020-04-21T22:59:03.430] [INFO] default - host:localhost
+[2020-04-21T22:59:03.430] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:59:03.431] [INFO] default - req-query:{}
+[2020-04-21T22:59:03.431] [INFO] default - req-params:{}
+[2020-04-21T22:59:03.431] [INFO] default - req-body:{}
+[2020-04-21T22:59:30.609] [INFO] default - traceId:dd22d2eb-2257-416a-b805-d3ac65cbbabd
+[2020-04-21T22:59:30.610] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:59:30.615] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:59:30.618] [INFO] default - traceId:dd22d2eb-2257-416a-b805-d3ac65cbbabd
+[2020-04-21T22:59:30.618] [INFO] default - host:localhost
+[2020-04-21T22:59:30.618] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:59:30.618] [INFO] default - req-query:{}
+[2020-04-21T22:59:30.619] [INFO] default - req-params:{}
+[2020-04-21T22:59:30.619] [INFO] default - req-body:{}
+[2020-04-21T22:59:30.630] [INFO] default - traceId:74b97535-3fbf-4cc2-a2e9-b53378f727e6
+[2020-04-21T22:59:30.632] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:59:30.634] [INFO] default - traceId:74b97535-3fbf-4cc2-a2e9-b53378f727e6
+[2020-04-21T22:59:30.634] [INFO] default - host:localhost
+[2020-04-21T22:59:30.634] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:59:30.635] [INFO] default - req-query:{}
+[2020-04-21T22:59:30.635] [INFO] default - req-params:{}
+[2020-04-21T22:59:30.635] [INFO] default - req-body:{}
+[2020-04-21T22:59:37.393] [INFO] default - traceId:15186f6c-962d-4200-8ce6-96cc065616b4
+[2020-04-21T22:59:37.398] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:59:37.406] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:59:37.412] [INFO] default - traceId:15186f6c-962d-4200-8ce6-96cc065616b4
+[2020-04-21T22:59:37.412] [INFO] default - host:localhost
+[2020-04-21T22:59:37.412] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:59:37.413] [INFO] default - req-query:{}
+[2020-04-21T22:59:37.413] [INFO] default - req-params:{}
+[2020-04-21T22:59:37.413] [INFO] default - req-body:{}
+[2020-04-21T22:59:37.540] [INFO] default - traceId:e05569b2-2387-4780-bafd-7b3ad2b44e6d
+[2020-04-21T22:59:37.541] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:59:37.542] [INFO] default - traceId:e05569b2-2387-4780-bafd-7b3ad2b44e6d
+[2020-04-21T22:59:37.542] [INFO] default - host:localhost
+[2020-04-21T22:59:37.542] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:59:37.542] [INFO] default - req-query:{}
+[2020-04-21T22:59:37.542] [INFO] default - req-params:{}
+[2020-04-21T22:59:37.542] [INFO] default - req-body:{}
+[2020-04-21T22:59:37.553] [INFO] default - traceId:b09f7160-7bfe-48f9-bfbc-28e5b0741167
+[2020-04-21T22:59:37.554] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:59:37.556] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:59:37.556] [INFO] default - traceId:b09f7160-7bfe-48f9-bfbc-28e5b0741167
+[2020-04-21T22:59:37.556] [INFO] default - host:localhost
+[2020-04-21T22:59:37.556] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:59:37.556] [INFO] default - req-query:{}
+[2020-04-21T22:59:37.557] [INFO] default - req-params:{}
+[2020-04-21T22:59:37.557] [INFO] default - req-body:{}
+[2020-04-21T22:59:37.582] [INFO] default - traceId:f252f761-c202-46a1-ab85-d0d547beda46
+[2020-04-21T22:59:37.583] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:59:37.585] [INFO] default - traceId:f252f761-c202-46a1-ab85-d0d547beda46
+[2020-04-21T22:59:37.585] [INFO] default - host:localhost
+[2020-04-21T22:59:37.585] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:59:37.585] [INFO] default - req-query:{}
+[2020-04-21T22:59:37.585] [INFO] default - req-params:{}
+[2020-04-21T22:59:37.585] [INFO] default - req-body:{}
+[2020-04-21T22:59:43.089] [INFO] default - traceId:e3b5fbfb-8f1a-4294-b96f-3eb971f82c29
+[2020-04-21T22:59:43.091] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:59:43.095] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:59:43.097] [INFO] default - traceId:e3b5fbfb-8f1a-4294-b96f-3eb971f82c29
+[2020-04-21T22:59:43.097] [INFO] default - host:localhost
+[2020-04-21T22:59:43.097] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:59:43.098] [INFO] default - req-query:{}
+[2020-04-21T22:59:43.098] [INFO] default - req-params:{}
+[2020-04-21T22:59:43.098] [INFO] default - req-body:{}
+[2020-04-21T22:59:43.118] [INFO] default - traceId:5a6645a0-940f-4b2f-a194-26f9834a5d63
+[2020-04-21T22:59:43.119] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:59:43.120] [INFO] default - traceId:5a6645a0-940f-4b2f-a194-26f9834a5d63
+[2020-04-21T22:59:43.120] [INFO] default - host:localhost
+[2020-04-21T22:59:43.120] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:59:43.120] [INFO] default - req-query:{}
+[2020-04-21T22:59:43.120] [INFO] default - req-params:{}
+[2020-04-21T22:59:43.120] [INFO] default - req-body:{}
+[2020-04-21T22:59:53.510] [INFO] default - traceId:e051ac75-139d-4113-a32a-2d86641b6f67
+[2020-04-21T22:59:53.512] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T22:59:53.513] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T22:59:53.514] [INFO] default - traceId:e051ac75-139d-4113-a32a-2d86641b6f67
+[2020-04-21T22:59:53.514] [INFO] default - host:localhost
+[2020-04-21T22:59:53.514] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T22:59:53.514] [INFO] default - req-query:{}
+[2020-04-21T22:59:53.515] [INFO] default - req-params:{}
+[2020-04-21T22:59:53.515] [INFO] default - req-body:{}
+[2020-04-21T22:59:53.589] [INFO] default - traceId:e37e1fdf-effc-484a-8f78-c5c042d041d2
+[2020-04-21T22:59:53.595] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T22:59:53.600] [INFO] default - traceId:e37e1fdf-effc-484a-8f78-c5c042d041d2
+[2020-04-21T22:59:53.601] [INFO] default - host:localhost
+[2020-04-21T22:59:53.601] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T22:59:53.602] [INFO] default - req-query:{}
+[2020-04-21T22:59:53.602] [INFO] default - req-params:{}
+[2020-04-21T22:59:53.602] [INFO] default - req-body:{}
+[2020-04-21T23:02:48.149] [INFO] default - traceId:2d377ad5-ffb6-4894-a73e-ac39311b883e
+[2020-04-21T23:02:48.158] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:02:48.164] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:02:48.165] [INFO] default - traceId:2d377ad5-ffb6-4894-a73e-ac39311b883e
+[2020-04-21T23:02:48.166] [INFO] default - host:localhost
+[2020-04-21T23:02:48.166] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:02:48.166] [INFO] default - req-query:{}
+[2020-04-21T23:02:48.166] [INFO] default - req-params:{}
+[2020-04-21T23:02:48.166] [INFO] default - req-body:{}
+[2020-04-21T23:02:48.795] [INFO] default - traceId:b352724b-6553-4d6a-9800-c66c17e387d8
+[2020-04-21T23:02:48.797] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:02:48.798] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:02:48.799] [INFO] default - traceId:b352724b-6553-4d6a-9800-c66c17e387d8
+[2020-04-21T23:02:48.799] [INFO] default - host:localhost
+[2020-04-21T23:02:48.799] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:02:48.799] [INFO] default - req-query:{}
+[2020-04-21T23:02:48.799] [INFO] default - req-params:{}
+[2020-04-21T23:02:48.799] [INFO] default - req-body:{}
+[2020-04-21T23:02:48.814] [INFO] default - traceId:0f5b4f95-3d01-4d68-baf3-ae2b6c8930fc
+[2020-04-21T23:02:48.815] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:02:48.816] [INFO] default - traceId:0f5b4f95-3d01-4d68-baf3-ae2b6c8930fc
+[2020-04-21T23:02:48.817] [INFO] default - host:localhost
+[2020-04-21T23:02:48.817] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:02:48.817] [INFO] default - req-query:{}
+[2020-04-21T23:02:48.817] [INFO] default - req-params:{}
+[2020-04-21T23:02:48.817] [INFO] default - req-body:{}
+[2020-04-21T23:03:53.422] [INFO] default - traceId:ed6eb71e-7b55-424b-88aa-64c387e9c3de
+[2020-04-21T23:03:53.424] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:03:53.425] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:03:53.426] [INFO] default - traceId:ed6eb71e-7b55-424b-88aa-64c387e9c3de
+[2020-04-21T23:03:53.426] [INFO] default - host:localhost
+[2020-04-21T23:03:53.426] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:03:53.426] [INFO] default - req-query:{}
+[2020-04-21T23:03:53.426] [INFO] default - req-params:{}
+[2020-04-21T23:03:53.426] [INFO] default - req-body:{}
+[2020-04-21T23:03:53.980] [INFO] default - traceId:14224520-99d6-463c-9dbe-bc8e73ee619c
+[2020-04-21T23:03:53.981] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:03:53.985] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:03:53.985] [INFO] default - traceId:14224520-99d6-463c-9dbe-bc8e73ee619c
+[2020-04-21T23:03:53.985] [INFO] default - host:localhost
+[2020-04-21T23:03:53.985] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:03:53.985] [INFO] default - req-query:{}
+[2020-04-21T23:03:53.985] [INFO] default - req-params:{}
+[2020-04-21T23:03:53.986] [INFO] default - req-body:{}
+[2020-04-21T23:03:54.059] [INFO] default - traceId:80a86d38-beb2-467b-a64a-283cf63ad215
+[2020-04-21T23:03:54.060] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:03:54.061] [INFO] default - traceId:80a86d38-beb2-467b-a64a-283cf63ad215
+[2020-04-21T23:03:54.062] [INFO] default - host:localhost
+[2020-04-21T23:03:54.062] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:03:54.062] [INFO] default - req-query:{}
+[2020-04-21T23:03:54.062] [INFO] default - req-params:{}
+[2020-04-21T23:03:54.062] [INFO] default - req-body:{}
+[2020-04-21T23:07:58.280] [INFO] default - traceId:950cf9cc-532e-42b7-951b-2f7db8ca9291
+[2020-04-21T23:07:58.287] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:07:58.298] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:07:58.301] [INFO] default - traceId:950cf9cc-532e-42b7-951b-2f7db8ca9291
+[2020-04-21T23:07:58.301] [INFO] default - host:localhost
+[2020-04-21T23:07:58.302] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:07:58.302] [INFO] default - req-query:{}
+[2020-04-21T23:07:58.302] [INFO] default - req-params:{}
+[2020-04-21T23:07:58.302] [INFO] default - req-body:{}
+[2020-04-21T23:07:58.796] [INFO] default - traceId:f5c831b7-a68f-400d-80a5-8e364f1e75db
+[2020-04-21T23:07:58.798] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:07:58.800] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:07:58.801] [INFO] default - traceId:f5c831b7-a68f-400d-80a5-8e364f1e75db
+[2020-04-21T23:07:58.801] [INFO] default - host:localhost
+[2020-04-21T23:07:58.801] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:07:58.801] [INFO] default - req-query:{}
+[2020-04-21T23:07:58.801] [INFO] default - req-params:{}
+[2020-04-21T23:07:58.801] [INFO] default - req-body:{}
+[2020-04-21T23:07:58.877] [INFO] default - traceId:27258450-80c8-43b2-a454-ab1c97e5a60f
+[2020-04-21T23:07:58.878] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:07:58.881] [INFO] default - traceId:27258450-80c8-43b2-a454-ab1c97e5a60f
+[2020-04-21T23:07:58.881] [INFO] default - host:localhost
+[2020-04-21T23:07:58.881] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:07:58.881] [INFO] default - req-query:{}
+[2020-04-21T23:07:58.881] [INFO] default - req-params:{}
+[2020-04-21T23:07:58.881] [INFO] default - req-body:{}
+[2020-04-21T23:08:17.541] [INFO] default - traceId:8e1b33bd-f589-41fc-a4e6-d4188e2a2a9f
+[2020-04-21T23:08:17.543] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:08:17.544] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:08:17.545] [INFO] default - traceId:8e1b33bd-f589-41fc-a4e6-d4188e2a2a9f
+[2020-04-21T23:08:17.545] [INFO] default - host:localhost
+[2020-04-21T23:08:17.545] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:08:17.546] [INFO] default - req-query:{}
+[2020-04-21T23:08:17.546] [INFO] default - req-params:{}
+[2020-04-21T23:08:17.546] [INFO] default - req-body:{}
+[2020-04-21T23:08:18.112] [INFO] default - traceId:59ef492b-bc97-4792-9c38-69f58ca234ed
+[2020-04-21T23:08:18.113] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:08:18.114] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:08:18.114] [INFO] default - traceId:59ef492b-bc97-4792-9c38-69f58ca234ed
+[2020-04-21T23:08:18.114] [INFO] default - host:localhost
+[2020-04-21T23:08:18.114] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:08:18.115] [INFO] default - req-query:{}
+[2020-04-21T23:08:18.115] [INFO] default - req-params:{}
+[2020-04-21T23:08:18.115] [INFO] default - req-body:{}
+[2020-04-21T23:08:18.179] [INFO] default - traceId:93a743a2-113a-4ad2-89b1-90707f735010
+[2020-04-21T23:08:18.180] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:08:18.181] [INFO] default - traceId:93a743a2-113a-4ad2-89b1-90707f735010
+[2020-04-21T23:08:18.181] [INFO] default - host:localhost
+[2020-04-21T23:08:18.181] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:08:18.182] [INFO] default - req-query:{}
+[2020-04-21T23:08:18.182] [INFO] default - req-params:{}
+[2020-04-21T23:08:18.182] [INFO] default - req-body:{}
+[2020-04-21T23:09:34.043] [INFO] default - traceId:c907ea2d-ab75-41cb-9527-e1f3d24ccfe9
+[2020-04-21T23:09:34.044] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:09:34.045] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:09:34.048] [INFO] default - traceId:c907ea2d-ab75-41cb-9527-e1f3d24ccfe9
+[2020-04-21T23:09:34.048] [INFO] default - host:localhost
+[2020-04-21T23:09:34.048] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:09:34.048] [INFO] default - req-query:{}
+[2020-04-21T23:09:34.048] [INFO] default - req-params:{}
+[2020-04-21T23:09:34.048] [INFO] default - req-body:{}
+[2020-04-21T23:09:34.081] [INFO] default - traceId:f7991551-de39-44d7-acb0-acadda62acc3
+[2020-04-21T23:09:34.082] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:09:34.084] [INFO] default - traceId:f7991551-de39-44d7-acb0-acadda62acc3
+[2020-04-21T23:09:34.084] [INFO] default - host:localhost
+[2020-04-21T23:09:34.084] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:09:34.084] [INFO] default - req-query:{}
+[2020-04-21T23:09:34.084] [INFO] default - req-params:{}
+[2020-04-21T23:09:34.085] [INFO] default - req-body:{}
+[2020-04-21T23:09:43.868] [INFO] default - traceId:9b003d19-b875-415b-9dd3-18dfe638dc9f
+[2020-04-21T23:09:43.869] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:09:43.873] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:09:43.876] [INFO] default - traceId:9b003d19-b875-415b-9dd3-18dfe638dc9f
+[2020-04-21T23:09:43.876] [INFO] default - host:localhost
+[2020-04-21T23:09:43.876] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:09:43.876] [INFO] default - req-query:{}
+[2020-04-21T23:09:43.876] [INFO] default - req-params:{}
+[2020-04-21T23:09:43.877] [INFO] default - req-body:{}
+[2020-04-21T23:09:43.900] [INFO] default - traceId:1d6ef77c-d1d2-4502-9238-8c4cfe2279f5
+[2020-04-21T23:09:43.902] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:09:43.903] [INFO] default - traceId:1d6ef77c-d1d2-4502-9238-8c4cfe2279f5
+[2020-04-21T23:09:43.903] [INFO] default - host:localhost
+[2020-04-21T23:09:43.903] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:09:43.903] [INFO] default - req-query:{}
+[2020-04-21T23:09:43.903] [INFO] default - req-params:{}
+[2020-04-21T23:09:43.903] [INFO] default - req-body:{}
+[2020-04-21T23:10:25.946] [INFO] default - traceId:4dae62fe-566f-499b-97d8-47d5935c8a9c
+[2020-04-21T23:10:25.948] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:10:25.949] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:10:25.950] [INFO] default - traceId:4dae62fe-566f-499b-97d8-47d5935c8a9c
+[2020-04-21T23:10:25.950] [INFO] default - host:localhost
+[2020-04-21T23:10:25.950] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:10:25.950] [INFO] default - req-query:{}
+[2020-04-21T23:10:25.950] [INFO] default - req-params:{}
+[2020-04-21T23:10:25.950] [INFO] default - req-body:{}
+[2020-04-21T23:10:26.202] [INFO] default - traceId:d8d4ac92-dcf3-463e-81d5-a4d38679e9ec
+[2020-04-21T23:10:26.203] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:10:26.204] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:10:26.205] [INFO] default - traceId:d8d4ac92-dcf3-463e-81d5-a4d38679e9ec
+[2020-04-21T23:10:26.206] [INFO] default - host:localhost
+[2020-04-21T23:10:26.206] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:10:26.206] [INFO] default - req-query:{}
+[2020-04-21T23:10:26.206] [INFO] default - req-params:{}
+[2020-04-21T23:10:26.206] [INFO] default - req-body:{}
+[2020-04-21T23:10:26.229] [INFO] default - traceId:2de1a2be-df09-4054-b625-8d763acdf3a4
+[2020-04-21T23:10:26.231] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:10:26.234] [INFO] default - traceId:2de1a2be-df09-4054-b625-8d763acdf3a4
+[2020-04-21T23:10:26.234] [INFO] default - host:localhost
+[2020-04-21T23:10:26.234] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:10:26.234] [INFO] default - req-query:{}
+[2020-04-21T23:10:26.234] [INFO] default - req-params:{}
+[2020-04-21T23:10:26.234] [INFO] default - req-body:{}
+[2020-04-21T23:10:51.487] [INFO] default - traceId:5c25c3e6-0aef-4896-b2d5-3e1fa345941c
+[2020-04-21T23:10:51.489] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:10:51.497] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:10:51.503] [INFO] default - traceId:5c25c3e6-0aef-4896-b2d5-3e1fa345941c
+[2020-04-21T23:10:51.503] [INFO] default - host:localhost
+[2020-04-21T23:10:51.503] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:10:51.503] [INFO] default - req-query:{}
+[2020-04-21T23:10:51.503] [INFO] default - req-params:{}
+[2020-04-21T23:10:51.503] [INFO] default - req-body:{}
+[2020-04-21T23:10:51.814] [INFO] default - traceId:a2932e4d-ab10-484f-9a3b-a542ab0f1385
+[2020-04-21T23:10:51.815] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:10:51.816] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:10:51.816] [INFO] default - traceId:a2932e4d-ab10-484f-9a3b-a542ab0f1385
+[2020-04-21T23:10:51.816] [INFO] default - host:localhost
+[2020-04-21T23:10:51.816] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:10:51.817] [INFO] default - req-query:{}
+[2020-04-21T23:10:51.817] [INFO] default - req-params:{}
+[2020-04-21T23:10:51.817] [INFO] default - req-body:{}
+[2020-04-21T23:10:51.831] [INFO] default - traceId:0aff8a46-7080-41e3-a495-c32677acff7a
+[2020-04-21T23:10:51.832] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:10:51.833] [INFO] default - traceId:0aff8a46-7080-41e3-a495-c32677acff7a
+[2020-04-21T23:10:51.833] [INFO] default - host:localhost
+[2020-04-21T23:10:51.833] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:10:51.834] [INFO] default - req-query:{}
+[2020-04-21T23:10:51.834] [INFO] default - req-params:{}
+[2020-04-21T23:10:51.834] [INFO] default - req-body:{}
+[2020-04-21T23:13:34.696] [INFO] default - traceId:eff75d7f-93c4-4f6c-837e-86ab12ed8a90
+[2020-04-21T23:13:34.708] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:13:34.912] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:13:34.914] [INFO] default - traceId:eff75d7f-93c4-4f6c-837e-86ab12ed8a90
+[2020-04-21T23:13:34.914] [INFO] default - host:localhost
+[2020-04-21T23:13:34.914] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:13:34.914] [INFO] default - req-query:{}
+[2020-04-21T23:13:34.915] [INFO] default - req-params:{}
+[2020-04-21T23:13:34.915] [INFO] default - req-body:{}
+[2020-04-21T23:13:35.477] [INFO] default - traceId:9fdaf56e-3405-420d-bbb9-8b761944bc04
+[2020-04-21T23:13:35.480] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:13:35.482] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:13:35.485] [INFO] default - traceId:9fdaf56e-3405-420d-bbb9-8b761944bc04
+[2020-04-21T23:13:35.486] [INFO] default - host:localhost
+[2020-04-21T23:13:35.486] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:13:35.486] [INFO] default - req-query:{}
+[2020-04-21T23:13:35.486] [INFO] default - req-params:{}
+[2020-04-21T23:13:35.486] [INFO] default - req-body:{}
+[2020-04-21T23:13:35.533] [INFO] default - traceId:ebaa58a5-a90f-44f3-acf7-b30633e74512
+[2020-04-21T23:13:35.534] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:13:35.536] [INFO] default - traceId:ebaa58a5-a90f-44f3-acf7-b30633e74512
+[2020-04-21T23:13:35.537] [INFO] default - host:localhost
+[2020-04-21T23:13:35.537] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:13:35.537] [INFO] default - req-query:{}
+[2020-04-21T23:13:35.537] [INFO] default - req-params:{}
+[2020-04-21T23:13:35.537] [INFO] default - req-body:{}
+[2020-04-21T23:14:09.098] [INFO] default - traceId:13b61616-f097-4167-8441-22a30f5b3928
+[2020-04-21T23:14:09.099] [INFO] default - [35msql执行：=> INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type) [39m
+[35m    VALUES (35,'测试2','cs2','cs','12',now(),'fa fa-arrows-alt', 12, 2[39m
+[35m    )[39m
+[2020-04-21T23:14:09.176] [INFO] default - traceId:13b61616-f097-4167-8441-22a30f5b3928
+[2020-04-21T23:14:09.176] [INFO] default - host:localhost
+[2020-04-21T23:14:09.176] [INFO] default - method: [POST] URL: /api/menu/createMenu
+[2020-04-21T23:14:09.176] [INFO] default - req-query:{}
+[2020-04-21T23:14:09.176] [INFO] default - req-params:{}
+[2020-04-21T23:14:09.176] [INFO] default - req-body:{"type":2,"res_id":"","res_name":"测试2","parent_id":35,"component":"cs","description":"12","res_code":"cs2","res_icon":"fa fa-arrows-alt","sort":"12","state":1}
+[2020-04-21T23:14:09.272] [INFO] default - traceId:d54f878c-0669-4965-827c-d4e9329cf853
+[2020-04-21T23:14:09.274] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:14:09.276] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:14:09.277] [INFO] default - traceId:d54f878c-0669-4965-827c-d4e9329cf853
+[2020-04-21T23:14:09.277] [INFO] default - host:localhost
+[2020-04-21T23:14:09.278] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:14:09.278] [INFO] default - req-query:{}
+[2020-04-21T23:14:09.278] [INFO] default - req-params:{}
+[2020-04-21T23:14:09.278] [INFO] default - req-body:{}
+[2020-04-21T23:14:09.305] [INFO] default - traceId:c5380fa8-2f8c-4d96-bf43-5fe04100b66b
+[2020-04-21T23:14:09.306] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:14:09.312] [INFO] default - traceId:c5380fa8-2f8c-4d96-bf43-5fe04100b66b
+[2020-04-21T23:14:09.312] [INFO] default - host:localhost
+[2020-04-21T23:14:09.312] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:14:09.312] [INFO] default - req-query:{}
+[2020-04-21T23:14:09.313] [INFO] default - req-params:{}
+[2020-04-21T23:14:09.313] [INFO] default - req-body:{}
+[2020-04-21T23:14:14.645] [INFO] default - traceId:e71a6f1a-c6b0-4eac-8d50-963176bc3c31
+[2020-04-21T23:14:14.646] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 10, 10 [39m
+[2020-04-21T23:14:14.649] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:14:14.650] [INFO] default - traceId:e71a6f1a-c6b0-4eac-8d50-963176bc3c31
+[2020-04-21T23:14:14.650] [INFO] default - host:localhost
+[2020-04-21T23:14:14.650] [INFO] default - method: [GET] URL: /api/menu/list/?page=2&pageSize=10
+[2020-04-21T23:14:14.650] [INFO] default - req-query:{}
+[2020-04-21T23:14:14.650] [INFO] default - req-params:{}
+[2020-04-21T23:14:14.650] [INFO] default - req-body:{}
+[2020-04-21T23:14:14.661] [INFO] default - traceId:c14e14bf-1c2e-401e-a8fa-567ed9ab3fb1
+[2020-04-21T23:14:14.662] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:14:14.663] [INFO] default - traceId:c14e14bf-1c2e-401e-a8fa-567ed9ab3fb1
+[2020-04-21T23:14:14.663] [INFO] default - host:localhost
+[2020-04-21T23:14:14.663] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:14:14.663] [INFO] default - req-query:{}
+[2020-04-21T23:14:14.663] [INFO] default - req-params:{}
+[2020-04-21T23:14:14.663] [INFO] default - req-body:{}
+[2020-04-21T23:14:18.085] [INFO] default - traceId:702883d4-987f-4d4a-b6dc-7065d33f7992
+[2020-04-21T23:14:18.086] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:14:18.088] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:14:18.088] [INFO] default - traceId:702883d4-987f-4d4a-b6dc-7065d33f7992
+[2020-04-21T23:14:18.088] [INFO] default - host:localhost
+[2020-04-21T23:14:18.089] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:14:18.089] [INFO] default - req-query:{}
+[2020-04-21T23:14:18.089] [INFO] default - req-params:{}
+[2020-04-21T23:14:18.089] [INFO] default - req-body:{}
+[2020-04-21T23:14:18.335] [INFO] default - traceId:acdae636-b9be-4089-94b0-0a48a4f531fb
+[2020-04-21T23:14:18.336] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:14:18.337] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:14:18.337] [INFO] default - traceId:acdae636-b9be-4089-94b0-0a48a4f531fb
+[2020-04-21T23:14:18.337] [INFO] default - host:localhost
+[2020-04-21T23:14:18.338] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:14:18.338] [INFO] default - req-query:{}
+[2020-04-21T23:14:18.338] [INFO] default - req-params:{}
+[2020-04-21T23:14:18.338] [INFO] default - req-body:{}
+[2020-04-21T23:14:18.359] [INFO] default - traceId:633aeaa0-abd8-4f4d-aa81-609e66d82cca
+[2020-04-21T23:14:18.360] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:14:18.361] [INFO] default - traceId:633aeaa0-abd8-4f4d-aa81-609e66d82cca
+[2020-04-21T23:14:18.362] [INFO] default - host:localhost
+[2020-04-21T23:14:18.362] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:14:18.362] [INFO] default - req-query:{}
+[2020-04-21T23:14:18.362] [INFO] default - req-params:{}
+[2020-04-21T23:14:18.362] [INFO] default - req-body:{}
+[2020-04-21T23:14:23.132] [INFO] default - traceId:2839528a-12ec-4a00-bbd5-0dedea15112c
+[2020-04-21T23:14:23.133] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T23:14:23.134] [INFO] default - traceId:2839528a-12ec-4a00-bbd5-0dedea15112c
+[2020-04-21T23:14:23.134] [INFO] default - host:localhost
+[2020-04-21T23:14:23.134] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-21T23:14:23.134] [INFO] default - req-query:{}
+[2020-04-21T23:14:23.134] [INFO] default - req-params:{}
+[2020-04-21T23:14:23.134] [INFO] default - req-body:{}
+[2020-04-21T23:14:26.036] [INFO] default - traceId:814c715b-2b5f-43c5-8479-701d85634ea8
+[2020-04-21T23:14:26.037] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-04-21T23:14:26.038] [INFO] default - traceId:d5c76892-9b1c-4405-978c-c770814dee19
+[2020-04-21T23:14:26.039] [INFO] default - [35msql执行：=> SELECT	sys_resource.res_id,  sys_resource.parent_id, sys_resource.res_name FROM sys_resource;[39m
+[2020-04-21T23:14:26.040] [INFO] default - traceId:814c715b-2b5f-43c5-8479-701d85634ea8
+[2020-04-21T23:14:26.040] [INFO] default - host:localhost
+[2020-04-21T23:14:26.040] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=1
+[2020-04-21T23:14:26.040] [INFO] default - req-query:{"role_id":"1"}
+[2020-04-21T23:14:26.040] [INFO] default - req-params:{}
+[2020-04-21T23:14:26.040] [INFO] default - req-body:{}
+[2020-04-21T23:14:26.042] [INFO] default - traceId:d5c76892-9b1c-4405-978c-c770814dee19
+[2020-04-21T23:14:26.042] [INFO] default - host:localhost
+[2020-04-21T23:14:26.042] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-04-21T23:14:26.043] [INFO] default - req-query:{}
+[2020-04-21T23:14:26.043] [INFO] default - req-params:{}
+[2020-04-21T23:14:26.043] [INFO] default - req-body:{}
+[2020-04-21T23:14:29.060] [INFO] default - traceId:06fb9e7e-f4c2-47a0-bc1a-ccb1afaa121e
+[2020-04-21T23:14:29.061] [INFO] default - [35msql执行：=> DELETE FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-04-21T23:14:29.128] [INFO] default - [35msql执行：=> INSERT INTO sys_role_permmision (role_id, res_id) VALUES (1,1),(1,5),(1,36),(1,37),(1,2),(1,7),(1,9),(1,10),(1,3),(1,4),(1,8),(1,38),(1,35),(1,59)[39m
+[2020-04-21T23:14:29.132] [INFO] default - traceId:06fb9e7e-f4c2-47a0-bc1a-ccb1afaa121e
+[2020-04-21T23:14:29.132] [INFO] default - host:localhost
+[2020-04-21T23:14:29.132] [INFO] default - method: [POST] URL: /api/role/setRoleTreePer/
+[2020-04-21T23:14:29.132] [INFO] default - req-query:{}
+[2020-04-21T23:14:29.132] [INFO] default - req-params:{}
+[2020-04-21T23:14:29.132] [INFO] default - req-body:{"res_idArr":[1,5,36,37,2,7,9,10,3,4,8,38,35,59],"role_id":1}
+[2020-04-21T23:14:31.236] [INFO] default - traceId:9af8192c-4835-47f9-a0ad-496c712d49e7
+[2020-04-21T23:14:31.237] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:14:31.239] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:14:31.239] [INFO] default - traceId:9af8192c-4835-47f9-a0ad-496c712d49e7
+[2020-04-21T23:14:31.240] [INFO] default - host:localhost
+[2020-04-21T23:14:31.240] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:14:31.240] [INFO] default - req-query:{}
+[2020-04-21T23:14:31.241] [INFO] default - req-params:{}
+[2020-04-21T23:14:31.241] [INFO] default - req-body:{}
+[2020-04-21T23:14:31.503] [INFO] default - traceId:0c3b83e0-bb9b-44d0-a319-3e6ac2898f1b
+[2020-04-21T23:14:31.504] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T23:14:31.504] [INFO] default - traceId:0c3b83e0-bb9b-44d0-a319-3e6ac2898f1b
+[2020-04-21T23:14:31.504] [INFO] default - host:localhost
+[2020-04-21T23:14:31.505] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-21T23:14:31.505] [INFO] default - req-query:{}
+[2020-04-21T23:14:31.505] [INFO] default - req-params:{}
+[2020-04-21T23:14:31.505] [INFO] default - req-body:{}
+[2020-04-21T23:14:40.163] [INFO] default - traceId:c315ce71-2ac3-4706-9690-65152263041d
+[2020-04-21T23:14:40.164] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:14:40.165] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:14:40.165] [INFO] default - traceId:c315ce71-2ac3-4706-9690-65152263041d
+[2020-04-21T23:14:40.165] [INFO] default - host:localhost
+[2020-04-21T23:14:40.165] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:14:40.165] [INFO] default - req-query:{}
+[2020-04-21T23:14:40.166] [INFO] default - req-params:{}
+[2020-04-21T23:14:40.166] [INFO] default - req-body:{}
+[2020-04-21T23:14:40.179] [INFO] default - traceId:7f23b730-387b-46e5-a328-823df2634815
+[2020-04-21T23:14:40.180] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:14:40.182] [INFO] default - traceId:7f23b730-387b-46e5-a328-823df2634815
+[2020-04-21T23:14:40.182] [INFO] default - host:localhost
+[2020-04-21T23:14:40.182] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:14:40.182] [INFO] default - req-query:{}
+[2020-04-21T23:14:40.183] [INFO] default - req-params:{}
+[2020-04-21T23:14:40.183] [INFO] default - req-body:{}
+[2020-04-21T23:15:32.685] [INFO] default - traceId:82382475-0411-46bc-b3a3-28b76eda548c
+[2020-04-21T23:15:32.687] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:15:32.689] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:15:32.690] [INFO] default - traceId:82382475-0411-46bc-b3a3-28b76eda548c
+[2020-04-21T23:15:32.691] [INFO] default - host:localhost
+[2020-04-21T23:15:32.691] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:15:32.691] [INFO] default - req-query:{}
+[2020-04-21T23:15:32.691] [INFO] default - req-params:{}
+[2020-04-21T23:15:32.691] [INFO] default - req-body:{}
+[2020-04-21T23:15:32.710] [INFO] default - traceId:384ccf0e-12c5-4684-b389-b76117cb2ee4
+[2020-04-21T23:15:32.711] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:15:32.713] [INFO] default - traceId:384ccf0e-12c5-4684-b389-b76117cb2ee4
+[2020-04-21T23:15:32.713] [INFO] default - host:localhost
+[2020-04-21T23:15:32.713] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:15:32.715] [INFO] default - req-query:{}
+[2020-04-21T23:15:32.715] [INFO] default - req-params:{}
+[2020-04-21T23:15:32.715] [INFO] default - req-body:{}
+[2020-04-21T23:17:06.289] [INFO] default - traceId:85372868-a2fb-4479-aeee-4f8874c40191
+[2020-04-21T23:17:06.290] [INFO] default - [35msql执行：=> INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type) [39m
+[35m    VALUES (0,'测试菜单1','css','1','121',now(),'el-icon-ice-tea', 1, 1[39m
+[35m    )[39m
+[2020-04-21T23:17:06.366] [INFO] default - traceId:85372868-a2fb-4479-aeee-4f8874c40191
+[2020-04-21T23:17:06.366] [INFO] default - host:localhost
+[2020-04-21T23:17:06.366] [INFO] default - method: [POST] URL: /api/menu/createMenu
+[2020-04-21T23:17:06.366] [INFO] default - req-query:{}
+[2020-04-21T23:17:06.366] [INFO] default - req-params:{}
+[2020-04-21T23:17:06.366] [INFO] default - req-body:{"type":1,"res_id":"","res_name":"测试菜单1","parent_id":0,"component":1,"description":"121","res_code":"css","res_icon":"el-icon-ice-tea","sort":"1","state":1}
+[2020-04-21T23:17:06.425] [INFO] default - traceId:9089ebfa-81dd-40f1-a58c-103f44461647
+[2020-04-21T23:17:06.426] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:17:06.427] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:17:06.428] [INFO] default - traceId:9089ebfa-81dd-40f1-a58c-103f44461647
+[2020-04-21T23:17:06.428] [INFO] default - host:localhost
+[2020-04-21T23:17:06.429] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:17:06.429] [INFO] default - req-query:{}
+[2020-04-21T23:17:06.429] [INFO] default - req-params:{}
+[2020-04-21T23:17:06.429] [INFO] default - req-body:{}
+[2020-04-21T23:17:06.449] [INFO] default - traceId:ae4df9b4-f063-4285-a099-4b0f754c9afd
+[2020-04-21T23:17:06.450] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:17:06.452] [INFO] default - traceId:ae4df9b4-f063-4285-a099-4b0f754c9afd
+[2020-04-21T23:17:06.452] [INFO] default - host:localhost
+[2020-04-21T23:17:06.452] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:17:06.452] [INFO] default - req-query:{}
+[2020-04-21T23:17:06.453] [INFO] default - req-params:{}
+[2020-04-21T23:17:06.453] [INFO] default - req-body:{}
+[2020-04-21T23:17:13.593] [INFO] default - traceId:b9fc795c-e273-404c-b836-c96bb9d73fdc
+[2020-04-21T23:17:13.594] [INFO] default - traceId:c9822a29-f36f-4da3-8dbc-e52f4f0b0b7c
+[2020-04-21T23:17:13.595] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-04-21T23:17:13.595] [INFO] default - [35msql执行：=> SELECT	sys_resource.res_id,  sys_resource.parent_id, sys_resource.res_name FROM sys_resource;[39m
+[2020-04-21T23:17:13.596] [INFO] default - traceId:b9fc795c-e273-404c-b836-c96bb9d73fdc
+[2020-04-21T23:17:13.597] [INFO] default - host:localhost
+[2020-04-21T23:17:13.597] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=1
+[2020-04-21T23:17:13.597] [INFO] default - req-query:{"role_id":"1"}
+[2020-04-21T23:17:13.597] [INFO] default - req-params:{}
+[2020-04-21T23:17:13.597] [INFO] default - req-body:{}
+[2020-04-21T23:17:13.599] [INFO] default - traceId:c9822a29-f36f-4da3-8dbc-e52f4f0b0b7c
+[2020-04-21T23:17:13.599] [INFO] default - host:localhost
+[2020-04-21T23:17:13.599] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-04-21T23:17:13.599] [INFO] default - req-query:{}
+[2020-04-21T23:17:13.599] [INFO] default - req-params:{}
+[2020-04-21T23:17:13.600] [INFO] default - req-body:{}
+[2020-04-21T23:17:18.637] [INFO] default - traceId:3619a1aa-af98-4339-b3c8-9ab7a586bd73
+[2020-04-21T23:17:18.639] [INFO] default - [35msql执行：=> DELETE FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-04-21T23:17:18.706] [INFO] default - [35msql执行：=> INSERT INTO sys_role_permmision (role_id, res_id) VALUES (1,1),(1,5),(1,36),(1,37),(1,2),(1,7),(1,9),(1,10),(1,3),(1,4),(1,8),(1,38),(1,35),(1,59),(1,60)[39m
+[2020-04-21T23:17:18.708] [INFO] default - traceId:3619a1aa-af98-4339-b3c8-9ab7a586bd73
+[2020-04-21T23:17:18.708] [INFO] default - host:localhost
+[2020-04-21T23:17:18.709] [INFO] default - method: [POST] URL: /api/role/setRoleTreePer/
+[2020-04-21T23:17:18.709] [INFO] default - req-query:{}
+[2020-04-21T23:17:18.709] [INFO] default - req-params:{}
+[2020-04-21T23:17:18.709] [INFO] default - req-body:{"res_idArr":[1,5,36,37,2,7,9,10,3,4,8,38,35,59,60],"role_id":1}
+[2020-04-21T23:17:21.490] [INFO] default - traceId:e3e0d6ce-948b-439c-ab49-cedc761e4d89
+[2020-04-21T23:17:21.491] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:17:21.493] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:17:21.494] [INFO] default - traceId:e3e0d6ce-948b-439c-ab49-cedc761e4d89
+[2020-04-21T23:17:21.494] [INFO] default - host:localhost
+[2020-04-21T23:17:21.494] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:17:21.494] [INFO] default - req-query:{}
+[2020-04-21T23:17:21.494] [INFO] default - req-params:{}
+[2020-04-21T23:17:21.495] [INFO] default - req-body:{}
+[2020-04-21T23:17:21.933] [INFO] default - traceId:0dc7470a-56a4-4a2f-9992-98d95bcc4d2b
+[2020-04-21T23:17:21.934] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T23:17:21.934] [INFO] default - traceId:0dc7470a-56a4-4a2f-9992-98d95bcc4d2b
+[2020-04-21T23:17:21.934] [INFO] default - host:localhost
+[2020-04-21T23:17:21.935] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-21T23:17:21.935] [INFO] default - req-query:{}
+[2020-04-21T23:17:21.935] [INFO] default - req-params:{}
+[2020-04-21T23:17:21.935] [INFO] default - req-body:{}
+[2020-04-21T23:17:30.370] [INFO] default - traceId:9605667b-e72d-44e3-8900-924107ab3b3d
+[2020-04-21T23:17:30.372] [INFO] default - [35msql执行：=> SELECT role_id, user_id FROM sys_user_role WHERE user_id =1[39m
+[2020-04-21T23:17:30.375] [INFO] default - [35msql执行：=> SELECT * FROM sys_login_logs LIMIT 0, 10 [39m
+[2020-04-21T23:17:30.380] [INFO] default - [35msql执行：=> SELECT COUNT(id) AS count FROM sys_login_logs[39m
+[2020-04-21T23:17:30.383] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T23:17:30.389] [INFO] default - traceId:9605667b-e72d-44e3-8900-924107ab3b3d
+[2020-04-21T23:17:30.390] [INFO] default - host:localhost
+[2020-04-21T23:17:30.390] [INFO] default - method: [GET] URL: /api/loginLogs/list?page=1&pageSize=10
+[2020-04-21T23:17:30.390] [INFO] default - req-query:{}
+[2020-04-21T23:17:30.390] [INFO] default - req-params:{}
+[2020-04-21T23:17:30.390] [INFO] default - req-body:{}
+[2020-04-21T23:17:32.467] [INFO] default - traceId:80b7e968-b963-4cfa-b779-50bfbacfcf5b
+[2020-04-21T23:17:32.468] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:17:32.474] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:17:32.475] [INFO] default - traceId:80b7e968-b963-4cfa-b779-50bfbacfcf5b
+[2020-04-21T23:17:32.476] [INFO] default - host:localhost
+[2020-04-21T23:17:32.476] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:17:32.476] [INFO] default - req-query:{}
+[2020-04-21T23:17:32.476] [INFO] default - req-params:{}
+[2020-04-21T23:17:32.476] [INFO] default - req-body:{}
+[2020-04-21T23:17:32.510] [INFO] default - traceId:df56cf8f-6d87-4f1f-adcf-98b02145cbd4
+[2020-04-21T23:17:32.511] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:17:32.512] [INFO] default - traceId:df56cf8f-6d87-4f1f-adcf-98b02145cbd4
+[2020-04-21T23:17:32.512] [INFO] default - host:localhost
+[2020-04-21T23:17:32.512] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:17:32.512] [INFO] default - req-query:{}
+[2020-04-21T23:17:32.512] [INFO] default - req-params:{}
+[2020-04-21T23:17:32.512] [INFO] default - req-body:{}
+[2020-04-21T23:17:34.368] [INFO] default - traceId:d51118b6-5b69-4211-9fb4-7381740e515e
+[2020-04-21T23:17:34.370] [INFO] default - [35msql执行：=> SELECT * FROM sys_user LIMIT 0, 10[39m
+[2020-04-21T23:17:34.371] [INFO] default - traceId:5276fd82-16cf-48cc-80d0-664db8ae91a2
+[2020-04-21T23:17:34.372] [INFO] default - [35msql执行：=> SELECT COUNT(user_id) AS count FROM sys_user;[39m
+[2020-04-21T23:17:34.373] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T23:17:34.374] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-04-21T23:17:34.375] [INFO] default - traceId:5276fd82-16cf-48cc-80d0-664db8ae91a2
+[2020-04-21T23:17:34.375] [INFO] default - host:localhost
+[2020-04-21T23:17:34.375] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-21T23:17:34.375] [INFO] default - req-query:{}
+[2020-04-21T23:17:34.375] [INFO] default - req-params:{}
+[2020-04-21T23:17:34.375] [INFO] default - req-body:{}
+[2020-04-21T23:17:34.377] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-21T23:17:34.378] [INFO] default - traceId:d51118b6-5b69-4211-9fb4-7381740e515e
+[2020-04-21T23:17:34.378] [INFO] default - host:localhost
+[2020-04-21T23:17:34.378] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-04-21T23:17:34.378] [INFO] default - req-query:{"currentPage":"1"}
+[2020-04-21T23:17:34.378] [INFO] default - req-params:{}
+[2020-04-21T23:17:34.379] [INFO] default - req-body:{}
+[2020-04-21T23:19:29.038] [INFO] default - traceId:848050cc-b307-4970-8471-9c05fbcdfe35
+[2020-04-21T23:19:29.039] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:19:29.040] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:19:29.040] [INFO] default - traceId:848050cc-b307-4970-8471-9c05fbcdfe35
+[2020-04-21T23:19:29.041] [INFO] default - host:localhost
+[2020-04-21T23:19:29.041] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:19:29.041] [INFO] default - req-query:{}
+[2020-04-21T23:19:29.041] [INFO] default - req-params:{}
+[2020-04-21T23:19:29.041] [INFO] default - req-body:{}
+[2020-04-21T23:19:29.067] [INFO] default - traceId:90db4d88-56a0-479f-a9a0-9f2bb33dbd51
+[2020-04-21T23:19:29.069] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:19:29.070] [INFO] default - traceId:90db4d88-56a0-479f-a9a0-9f2bb33dbd51
+[2020-04-21T23:19:29.070] [INFO] default - host:localhost
+[2020-04-21T23:19:29.070] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:19:29.070] [INFO] default - req-query:{}
+[2020-04-21T23:19:29.070] [INFO] default - req-params:{}
+[2020-04-21T23:19:29.070] [INFO] default - req-body:{}
+[2020-04-21T23:20:30.850] [INFO] default - traceId:d1fd058e-3d52-4b18-a9bb-cde340056e40
+[2020-04-21T23:20:30.853] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:20:30.858] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:20:30.858] [INFO] default - traceId:d1fd058e-3d52-4b18-a9bb-cde340056e40
+[2020-04-21T23:20:30.859] [INFO] default - host:localhost
+[2020-04-21T23:20:30.859] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:20:30.859] [INFO] default - req-query:{}
+[2020-04-21T23:20:30.859] [INFO] default - req-params:{}
+[2020-04-21T23:20:30.859] [INFO] default - req-body:{}
+[2020-04-21T23:20:30.877] [INFO] default - traceId:e101a822-56f3-4b71-85f7-7060886ebe28
+[2020-04-21T23:20:30.878] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:20:30.879] [INFO] default - traceId:e101a822-56f3-4b71-85f7-7060886ebe28
+[2020-04-21T23:20:30.879] [INFO] default - host:localhost
+[2020-04-21T23:20:30.879] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:20:30.879] [INFO] default - req-query:{}
+[2020-04-21T23:20:30.880] [INFO] default - req-params:{}
+[2020-04-21T23:20:30.880] [INFO] default - req-body:{}
+[2020-04-21T23:21:50.757] [INFO] default - traceId:e732e940-8318-4e58-b720-c3355758b2a0
+[2020-04-21T23:21:50.761] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:21:50.764] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:21:50.765] [INFO] default - traceId:e732e940-8318-4e58-b720-c3355758b2a0
+[2020-04-21T23:21:50.766] [INFO] default - host:localhost
+[2020-04-21T23:21:50.766] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:21:50.766] [INFO] default - req-query:{}
+[2020-04-21T23:21:50.766] [INFO] default - req-params:{}
+[2020-04-21T23:21:50.766] [INFO] default - req-body:{}
+[2020-04-21T23:21:50.773] [INFO] default - traceId:1395f956-bab8-487c-b8f3-de66cc37c97a
+[2020-04-21T23:21:50.774] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:21:50.775] [INFO] default - traceId:1395f956-bab8-487c-b8f3-de66cc37c97a
+[2020-04-21T23:21:50.775] [INFO] default - host:localhost
+[2020-04-21T23:21:50.776] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:21:50.776] [INFO] default - req-query:{}
+[2020-04-21T23:21:50.776] [INFO] default - req-params:{}
+[2020-04-21T23:21:50.776] [INFO] default - req-body:{}
+[2020-04-21T23:21:58.436] [INFO] default - traceId:f1e50846-9513-4de0-8dbb-d325c8aeea61
+[2020-04-21T23:21:58.439] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:21:58.442] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:21:58.444] [INFO] default - traceId:f1e50846-9513-4de0-8dbb-d325c8aeea61
+[2020-04-21T23:21:58.444] [INFO] default - host:localhost
+[2020-04-21T23:21:58.444] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:21:58.445] [INFO] default - req-query:{}
+[2020-04-21T23:21:58.445] [INFO] default - req-params:{}
+[2020-04-21T23:21:58.445] [INFO] default - req-body:{}
+[2020-04-21T23:21:58.500] [INFO] default - traceId:85f17413-4c7a-4bea-94a7-a4547d1b817f
+[2020-04-21T23:21:58.502] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:21:58.503] [INFO] default - traceId:85f17413-4c7a-4bea-94a7-a4547d1b817f
+[2020-04-21T23:21:58.503] [INFO] default - host:localhost
+[2020-04-21T23:21:58.503] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:21:58.504] [INFO] default - req-query:{}
+[2020-04-21T23:21:58.504] [INFO] default - req-params:{}
+[2020-04-21T23:21:58.504] [INFO] default - req-body:{}
+[2020-04-21T23:25:27.661] [INFO] default - traceId:3be42f39-6f9d-40d2-8d03-388478d38109
+[2020-04-21T23:25:27.669] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:25:27.672] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:25:27.679] [INFO] default - traceId:3be42f39-6f9d-40d2-8d03-388478d38109
+[2020-04-21T23:25:27.680] [INFO] default - host:localhost
+[2020-04-21T23:25:27.680] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:25:27.680] [INFO] default - req-query:{}
+[2020-04-21T23:25:27.680] [INFO] default - req-params:{}
+[2020-04-21T23:25:27.680] [INFO] default - req-body:{}
+[2020-04-21T23:25:27.695] [INFO] default - traceId:3302c878-3247-4b17-9c69-0e56657f8773
+[2020-04-21T23:25:27.695] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:25:27.697] [INFO] default - traceId:3302c878-3247-4b17-9c69-0e56657f8773
+[2020-04-21T23:25:27.697] [INFO] default - host:localhost
+[2020-04-21T23:25:27.697] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:25:27.697] [INFO] default - req-query:{}
+[2020-04-21T23:25:27.697] [INFO] default - req-params:{}
+[2020-04-21T23:25:27.697] [INFO] default - req-body:{}
+[2020-04-21T23:25:31.757] [INFO] default - traceId:f45492d2-d1c3-4fc7-a901-cc75dc0ea6e6
+[2020-04-21T23:25:31.758] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:25:31.759] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:25:31.760] [INFO] default - traceId:f45492d2-d1c3-4fc7-a901-cc75dc0ea6e6
+[2020-04-21T23:25:31.760] [INFO] default - host:localhost
+[2020-04-21T23:25:31.760] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:25:31.760] [INFO] default - req-query:{}
+[2020-04-21T23:25:31.761] [INFO] default - req-params:{}
+[2020-04-21T23:25:31.761] [INFO] default - req-body:{}
+[2020-04-21T23:25:31.774] [INFO] default - traceId:dd697117-f424-40a9-b557-3450517d0314
+[2020-04-21T23:25:31.775] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:25:31.776] [INFO] default - traceId:dd697117-f424-40a9-b557-3450517d0314
+[2020-04-21T23:25:31.776] [INFO] default - host:localhost
+[2020-04-21T23:25:31.776] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:25:31.776] [INFO] default - req-query:{}
+[2020-04-21T23:25:31.776] [INFO] default - req-params:{}
+[2020-04-21T23:25:31.776] [INFO] default - req-body:{}
+[2020-04-21T23:29:04.545] [INFO] default - traceId:bc559237-a075-4905-9e08-358734bfa95f
+[2020-04-21T23:29:04.560] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:04.566] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:04.568] [INFO] default - traceId:bc559237-a075-4905-9e08-358734bfa95f
+[2020-04-21T23:29:04.568] [INFO] default - host:localhost
+[2020-04-21T23:29:04.569] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:04.569] [INFO] default - req-query:{}
+[2020-04-21T23:29:04.569] [INFO] default - req-params:{}
+[2020-04-21T23:29:04.569] [INFO] default - req-body:{}
+[2020-04-21T23:29:04.578] [INFO] default - traceId:c76f91c0-f56e-4834-ad55-3970b5cefcbf
+[2020-04-21T23:29:04.579] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:04.580] [INFO] default - traceId:c76f91c0-f56e-4834-ad55-3970b5cefcbf
+[2020-04-21T23:29:04.580] [INFO] default - host:localhost
+[2020-04-21T23:29:04.580] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:04.580] [INFO] default - req-query:{}
+[2020-04-21T23:29:04.580] [INFO] default - req-params:{}
+[2020-04-21T23:29:04.581] [INFO] default - req-body:{}
+[2020-04-21T23:29:08.830] [INFO] default - traceId:ee634ba3-458e-4200-b665-2990b7acdce2
+[2020-04-21T23:29:08.831] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:08.832] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:08.834] [INFO] default - traceId:ee634ba3-458e-4200-b665-2990b7acdce2
+[2020-04-21T23:29:08.835] [INFO] default - host:localhost
+[2020-04-21T23:29:08.835] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:08.835] [INFO] default - req-query:{}
+[2020-04-21T23:29:08.835] [INFO] default - req-params:{}
+[2020-04-21T23:29:08.835] [INFO] default - req-body:{}
+[2020-04-21T23:29:08.855] [INFO] default - traceId:e53acbad-3ca9-4ec1-b232-a7bb46e866be
+[2020-04-21T23:29:08.856] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:08.860] [INFO] default - traceId:e53acbad-3ca9-4ec1-b232-a7bb46e866be
+[2020-04-21T23:29:08.860] [INFO] default - host:localhost
+[2020-04-21T23:29:08.861] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:08.861] [INFO] default - req-query:{}
+[2020-04-21T23:29:08.861] [INFO] default - req-params:{}
+[2020-04-21T23:29:08.861] [INFO] default - req-body:{}
+[2020-04-21T23:29:14.307] [INFO] default - traceId:ec69f6e2-1f6c-4fdb-bf14-de79edab5756
+[2020-04-21T23:29:14.308] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:14.309] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:14.310] [INFO] default - traceId:ec69f6e2-1f6c-4fdb-bf14-de79edab5756
+[2020-04-21T23:29:14.310] [INFO] default - host:localhost
+[2020-04-21T23:29:14.310] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:14.310] [INFO] default - req-query:{}
+[2020-04-21T23:29:14.310] [INFO] default - req-params:{}
+[2020-04-21T23:29:14.310] [INFO] default - req-body:{}
+[2020-04-21T23:29:14.334] [INFO] default - traceId:ccea6a2c-2742-45f1-a5f7-0d662bb65ec3
+[2020-04-21T23:29:14.335] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:14.336] [INFO] default - traceId:ccea6a2c-2742-45f1-a5f7-0d662bb65ec3
+[2020-04-21T23:29:14.336] [INFO] default - host:localhost
+[2020-04-21T23:29:14.336] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:14.336] [INFO] default - req-query:{}
+[2020-04-21T23:29:14.337] [INFO] default - req-params:{}
+[2020-04-21T23:29:14.337] [INFO] default - req-body:{}
+[2020-04-21T23:29:17.600] [INFO] default - traceId:4cd2804d-19f3-4367-ae35-93ebc968ff53
+[2020-04-21T23:29:17.601] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:17.603] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:17.605] [INFO] default - traceId:4cd2804d-19f3-4367-ae35-93ebc968ff53
+[2020-04-21T23:29:17.605] [INFO] default - host:localhost
+[2020-04-21T23:29:17.605] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:17.606] [INFO] default - req-query:{}
+[2020-04-21T23:29:17.606] [INFO] default - req-params:{}
+[2020-04-21T23:29:17.606] [INFO] default - req-body:{}
+[2020-04-21T23:29:17.626] [INFO] default - traceId:2ef42a9b-5edf-4ceb-af23-36ca322befb3
+[2020-04-21T23:29:17.627] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:17.630] [INFO] default - traceId:2ef42a9b-5edf-4ceb-af23-36ca322befb3
+[2020-04-21T23:29:17.630] [INFO] default - host:localhost
+[2020-04-21T23:29:17.630] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:17.630] [INFO] default - req-query:{}
+[2020-04-21T23:29:17.630] [INFO] default - req-params:{}
+[2020-04-21T23:29:17.630] [INFO] default - req-body:{}
+[2020-04-21T23:29:22.812] [INFO] default - traceId:a5c01491-f573-43a7-b104-f705aea06c2e
+[2020-04-21T23:29:22.813] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:22.815] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:22.816] [INFO] default - traceId:a5c01491-f573-43a7-b104-f705aea06c2e
+[2020-04-21T23:29:22.816] [INFO] default - host:localhost
+[2020-04-21T23:29:22.816] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:22.816] [INFO] default - req-query:{}
+[2020-04-21T23:29:22.816] [INFO] default - req-params:{}
+[2020-04-21T23:29:22.816] [INFO] default - req-body:{}
+[2020-04-21T23:29:22.827] [INFO] default - traceId:975e0e64-8272-4d90-8462-cd061b8b31b1
+[2020-04-21T23:29:22.828] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:22.829] [INFO] default - traceId:975e0e64-8272-4d90-8462-cd061b8b31b1
+[2020-04-21T23:29:22.829] [INFO] default - host:localhost
+[2020-04-21T23:29:22.829] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:22.829] [INFO] default - req-query:{}
+[2020-04-21T23:29:22.829] [INFO] default - req-params:{}
+[2020-04-21T23:29:22.830] [INFO] default - req-body:{}
+[2020-04-21T23:29:25.865] [INFO] default - traceId:b553e4d4-5fb8-48fe-bfb0-0f9823c5d4dc
+[2020-04-21T23:29:25.866] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:25.869] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:25.870] [INFO] default - traceId:b553e4d4-5fb8-48fe-bfb0-0f9823c5d4dc
+[2020-04-21T23:29:25.870] [INFO] default - host:localhost
+[2020-04-21T23:29:25.870] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:25.870] [INFO] default - req-query:{}
+[2020-04-21T23:29:25.870] [INFO] default - req-params:{}
+[2020-04-21T23:29:25.870] [INFO] default - req-body:{}
+[2020-04-21T23:29:25.907] [INFO] default - traceId:38cfed2a-d59c-4d1a-80db-99bafceec7e3
+[2020-04-21T23:29:25.908] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:25.910] [INFO] default - traceId:38cfed2a-d59c-4d1a-80db-99bafceec7e3
+[2020-04-21T23:29:25.910] [INFO] default - host:localhost
+[2020-04-21T23:29:25.910] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:25.910] [INFO] default - req-query:{}
+[2020-04-21T23:29:25.910] [INFO] default - req-params:{}
+[2020-04-21T23:29:25.910] [INFO] default - req-body:{}
+[2020-04-21T23:29:27.897] [INFO] default - traceId:0bbed671-4667-44c2-b030-e11fa127ae8f
+[2020-04-21T23:29:27.899] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:27.901] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:27.902] [INFO] default - traceId:0bbed671-4667-44c2-b030-e11fa127ae8f
+[2020-04-21T23:29:27.903] [INFO] default - host:localhost
+[2020-04-21T23:29:27.903] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:27.903] [INFO] default - req-query:{}
+[2020-04-21T23:29:27.903] [INFO] default - req-params:{}
+[2020-04-21T23:29:27.903] [INFO] default - req-body:{}
+[2020-04-21T23:29:27.950] [INFO] default - traceId:bc38a37a-e8eb-4c6c-9929-44c751a51ad6
+[2020-04-21T23:29:27.951] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:27.955] [INFO] default - traceId:bc38a37a-e8eb-4c6c-9929-44c751a51ad6
+[2020-04-21T23:29:27.958] [INFO] default - host:localhost
+[2020-04-21T23:29:27.959] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:27.959] [INFO] default - req-query:{}
+[2020-04-21T23:29:27.959] [INFO] default - req-params:{}
+[2020-04-21T23:29:27.959] [INFO] default - req-body:{}
+[2020-04-21T23:29:29.800] [INFO] default - traceId:250d0224-1e68-4b11-a546-9ba26bbb3b2d
+[2020-04-21T23:29:29.805] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:29.809] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:29.812] [INFO] default - traceId:250d0224-1e68-4b11-a546-9ba26bbb3b2d
+[2020-04-21T23:29:29.812] [INFO] default - host:localhost
+[2020-04-21T23:29:29.812] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:29.812] [INFO] default - req-query:{}
+[2020-04-21T23:29:29.812] [INFO] default - req-params:{}
+[2020-04-21T23:29:29.812] [INFO] default - req-body:{}
+[2020-04-21T23:29:29.845] [INFO] default - traceId:430e5b2f-7417-4694-a38c-d3967ecd073e
+[2020-04-21T23:29:29.845] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:29.846] [INFO] default - traceId:430e5b2f-7417-4694-a38c-d3967ecd073e
+[2020-04-21T23:29:29.846] [INFO] default - host:localhost
+[2020-04-21T23:29:29.847] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:29.847] [INFO] default - req-query:{}
+[2020-04-21T23:29:29.847] [INFO] default - req-params:{}
+[2020-04-21T23:29:29.847] [INFO] default - req-body:{}
+[2020-04-21T23:29:32.448] [INFO] default - traceId:42c4e9f3-7dfb-4ea8-8ca9-65db31d89c6f
+[2020-04-21T23:29:32.450] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:32.453] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:32.455] [INFO] default - traceId:42c4e9f3-7dfb-4ea8-8ca9-65db31d89c6f
+[2020-04-21T23:29:32.455] [INFO] default - host:localhost
+[2020-04-21T23:29:32.455] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:32.455] [INFO] default - req-query:{}
+[2020-04-21T23:29:32.455] [INFO] default - req-params:{}
+[2020-04-21T23:29:32.455] [INFO] default - req-body:{}
+[2020-04-21T23:29:32.501] [INFO] default - traceId:0f864c88-b747-4cb9-bfd5-a6ce57930806
+[2020-04-21T23:29:32.502] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:32.503] [INFO] default - traceId:0f864c88-b747-4cb9-bfd5-a6ce57930806
+[2020-04-21T23:29:32.503] [INFO] default - host:localhost
+[2020-04-21T23:29:32.503] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:32.503] [INFO] default - req-query:{}
+[2020-04-21T23:29:32.503] [INFO] default - req-params:{}
+[2020-04-21T23:29:32.503] [INFO] default - req-body:{}
+[2020-04-21T23:29:48.368] [INFO] default - traceId:d5c9df86-af74-4ebe-a8d9-ddc2f67fe812
+[2020-04-21T23:29:48.369] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:29:48.370] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:29:48.371] [INFO] default - traceId:d5c9df86-af74-4ebe-a8d9-ddc2f67fe812
+[2020-04-21T23:29:48.371] [INFO] default - host:localhost
+[2020-04-21T23:29:48.371] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:29:48.372] [INFO] default - req-query:{}
+[2020-04-21T23:29:48.372] [INFO] default - req-params:{}
+[2020-04-21T23:29:48.372] [INFO] default - req-body:{}
+[2020-04-21T23:29:48.381] [INFO] default - traceId:c14d0817-5208-458f-8c20-1af63b40f74f
+[2020-04-21T23:29:48.382] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:29:48.383] [INFO] default - traceId:c14d0817-5208-458f-8c20-1af63b40f74f
+[2020-04-21T23:29:48.383] [INFO] default - host:localhost
+[2020-04-21T23:29:48.383] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:29:48.383] [INFO] default - req-query:{}
+[2020-04-21T23:29:48.383] [INFO] default - req-params:{}
+[2020-04-21T23:29:48.384] [INFO] default - req-body:{}
+[2020-04-21T23:30:34.279] [INFO] default - traceId:4d067b2c-adb8-4d24-a5e8-676705744833
+[2020-04-21T23:30:34.280] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:30:34.281] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:30:34.283] [INFO] default - traceId:4d067b2c-adb8-4d24-a5e8-676705744833
+[2020-04-21T23:30:34.283] [INFO] default - host:localhost
+[2020-04-21T23:30:34.283] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:30:34.283] [INFO] default - req-query:{}
+[2020-04-21T23:30:34.283] [INFO] default - req-params:{}
+[2020-04-21T23:30:34.283] [INFO] default - req-body:{}
+[2020-04-21T23:30:34.307] [INFO] default - traceId:cbb17547-f2fe-4b8f-9319-7531df748f5c
+[2020-04-21T23:30:34.309] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:30:34.310] [INFO] default - traceId:cbb17547-f2fe-4b8f-9319-7531df748f5c
+[2020-04-21T23:30:34.310] [INFO] default - host:localhost
+[2020-04-21T23:30:34.311] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:30:34.311] [INFO] default - req-query:{}
+[2020-04-21T23:30:34.311] [INFO] default - req-params:{}
+[2020-04-21T23:30:34.311] [INFO] default - req-body:{}
+[2020-04-21T23:30:34.428] [INFO] default - traceId:ca417d7b-efea-4e00-87e1-fc041a8f8f08
+[2020-04-21T23:30:34.429] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:30:34.430] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:30:34.431] [INFO] default - traceId:ca417d7b-efea-4e00-87e1-fc041a8f8f08
+[2020-04-21T23:30:34.431] [INFO] default - host:localhost
+[2020-04-21T23:30:34.431] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:30:34.431] [INFO] default - req-query:{}
+[2020-04-21T23:30:34.431] [INFO] default - req-params:{}
+[2020-04-21T23:30:34.431] [INFO] default - req-body:{}
+[2020-04-21T23:30:34.445] [INFO] default - traceId:c03ff84b-9ecc-41ec-a350-a2ae2ae9d3a2
+[2020-04-21T23:30:34.446] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:30:34.448] [INFO] default - traceId:c03ff84b-9ecc-41ec-a350-a2ae2ae9d3a2
+[2020-04-21T23:30:34.448] [INFO] default - host:localhost
+[2020-04-21T23:30:34.448] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:30:34.448] [INFO] default - req-query:{}
+[2020-04-21T23:30:34.448] [INFO] default - req-params:{}
+[2020-04-21T23:30:34.448] [INFO] default - req-body:{}
+[2020-04-21T23:32:17.310] [INFO] default - traceId:35d0719a-3ee9-418f-a8bd-2e3dd5f9771e
+[2020-04-21T23:32:17.311] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:32:17.315] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:32:17.316] [INFO] default - traceId:35d0719a-3ee9-418f-a8bd-2e3dd5f9771e
+[2020-04-21T23:32:17.316] [INFO] default - host:localhost
+[2020-04-21T23:32:17.316] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:32:17.316] [INFO] default - req-query:{}
+[2020-04-21T23:32:17.316] [INFO] default - req-params:{}
+[2020-04-21T23:32:17.316] [INFO] default - req-body:{}
+[2020-04-21T23:32:17.794] [INFO] default - traceId:d2d0dc28-b727-4cc9-9f17-baec8635a43c
+[2020-04-21T23:32:17.795] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:32:17.795] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:32:17.796] [INFO] default - traceId:d2d0dc28-b727-4cc9-9f17-baec8635a43c
+[2020-04-21T23:32:17.796] [INFO] default - host:localhost
+[2020-04-21T23:32:17.796] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:32:17.796] [INFO] default - req-query:{}
+[2020-04-21T23:32:17.796] [INFO] default - req-params:{}
+[2020-04-21T23:32:17.796] [INFO] default - req-body:{}
+[2020-04-21T23:32:17.931] [INFO] default - traceId:77397bab-ec3f-4598-8d8e-44a538678d33
+[2020-04-21T23:32:17.932] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:32:17.934] [INFO] default - traceId:77397bab-ec3f-4598-8d8e-44a538678d33
+[2020-04-21T23:32:17.934] [INFO] default - host:localhost
+[2020-04-21T23:32:17.934] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:32:17.934] [INFO] default - req-query:{}
+[2020-04-21T23:32:17.934] [INFO] default - req-params:{}
+[2020-04-21T23:32:17.934] [INFO] default - req-body:{}
+[2020-04-21T23:33:10.025] [INFO] default - traceId:f2404a47-f1ce-4e41-9946-d98226641f83
+[2020-04-21T23:33:10.027] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:33:10.030] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:33:10.031] [INFO] default - traceId:f2404a47-f1ce-4e41-9946-d98226641f83
+[2020-04-21T23:33:10.031] [INFO] default - host:localhost
+[2020-04-21T23:33:10.031] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:33:10.031] [INFO] default - req-query:{}
+[2020-04-21T23:33:10.031] [INFO] default - req-params:{}
+[2020-04-21T23:33:10.032] [INFO] default - req-body:{}
+[2020-04-21T23:33:10.402] [INFO] default - traceId:3d682728-ecf7-4a36-8199-539e91dbe41f
+[2020-04-21T23:33:10.403] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:33:10.404] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:33:10.405] [INFO] default - traceId:3d682728-ecf7-4a36-8199-539e91dbe41f
+[2020-04-21T23:33:10.405] [INFO] default - host:localhost
+[2020-04-21T23:33:10.405] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:33:10.405] [INFO] default - req-query:{}
+[2020-04-21T23:33:10.405] [INFO] default - req-params:{}
+[2020-04-21T23:33:10.405] [INFO] default - req-body:{}
+[2020-04-21T23:33:10.442] [INFO] default - traceId:8a7580b5-967c-4e1b-8474-e0db58b44753
+[2020-04-21T23:33:10.443] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:33:10.444] [INFO] default - traceId:8a7580b5-967c-4e1b-8474-e0db58b44753
+[2020-04-21T23:33:10.444] [INFO] default - host:localhost
+[2020-04-21T23:33:10.444] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:33:10.444] [INFO] default - req-query:{}
+[2020-04-21T23:33:10.444] [INFO] default - req-params:{}
+[2020-04-21T23:33:10.444] [INFO] default - req-body:{}
+[2020-04-21T23:33:40.552] [INFO] default - traceId:c8a9a004-47c3-4042-8a32-47886a0b917f
+[2020-04-21T23:33:40.554] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:33:40.556] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:33:40.556] [INFO] default - traceId:c8a9a004-47c3-4042-8a32-47886a0b917f
+[2020-04-21T23:33:40.556] [INFO] default - host:localhost
+[2020-04-21T23:33:40.557] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:33:40.557] [INFO] default - req-query:{}
+[2020-04-21T23:33:40.557] [INFO] default - req-params:{}
+[2020-04-21T23:33:40.557] [INFO] default - req-body:{}
+[2020-04-21T23:33:40.811] [INFO] default - traceId:b7bb94c3-cbc0-4f5f-b5c3-b5147b1ec002
+[2020-04-21T23:33:40.812] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:33:40.812] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:33:40.813] [INFO] default - traceId:b7bb94c3-cbc0-4f5f-b5c3-b5147b1ec002
+[2020-04-21T23:33:40.813] [INFO] default - host:localhost
+[2020-04-21T23:33:40.813] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:33:40.813] [INFO] default - req-query:{}
+[2020-04-21T23:33:40.813] [INFO] default - req-params:{}
+[2020-04-21T23:33:40.813] [INFO] default - req-body:{}
+[2020-04-21T23:33:40.836] [INFO] default - traceId:3c53e628-fab4-4692-9937-492f88e5ce27
+[2020-04-21T23:33:40.837] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:33:40.838] [INFO] default - traceId:3c53e628-fab4-4692-9937-492f88e5ce27
+[2020-04-21T23:33:40.838] [INFO] default - host:localhost
+[2020-04-21T23:33:40.838] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:33:40.838] [INFO] default - req-query:{}
+[2020-04-21T23:33:40.838] [INFO] default - req-params:{}
+[2020-04-21T23:33:40.838] [INFO] default - req-body:{}
+[2020-04-21T23:34:21.026] [INFO] default - traceId:badc327b-6528-4b85-8ad8-af513f6edfac
+[2020-04-21T23:34:21.027] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 GROUP BY res_id[39m
+[2020-04-21T23:34:21.030] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-21T23:34:21.030] [INFO] default - traceId:badc327b-6528-4b85-8ad8-af513f6edfac
+[2020-04-21T23:34:21.030] [INFO] default - host:localhost
+[2020-04-21T23:34:21.031] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-21T23:34:21.031] [INFO] default - req-query:{}
+[2020-04-21T23:34:21.031] [INFO] default - req-params:{}
+[2020-04-21T23:34:21.031] [INFO] default - req-body:{}
+[2020-04-21T23:34:21.257] [INFO] default - traceId:f06734d6-d0b2-406a-b118-61108b063e67
+[2020-04-21T23:34:21.258] [INFO] default - [35msql执行：=> SELECT * FROM sys_resource LIMIT 0, 10 [39m
+[2020-04-21T23:34:21.260] [INFO] default - [35msql执行：=> SELECT COUNT(res_id) AS count FROM sys_resource;[39m
+[2020-04-21T23:34:21.260] [INFO] default - traceId:f06734d6-d0b2-406a-b118-61108b063e67
+[2020-04-21T23:34:21.261] [INFO] default - host:localhost
+[2020-04-21T23:34:21.261] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-04-21T23:34:21.261] [INFO] default - req-query:{}
+[2020-04-21T23:34:21.261] [INFO] default - req-params:{}
+[2020-04-21T23:34:21.261] [INFO] default - req-body:{}
+[2020-04-21T23:34:21.279] [INFO] default - traceId:df16064a-69b5-4b05-9fa5-d51ce14724b3
+[2020-04-21T23:34:21.281] [INFO] default - [35msql执行：=> SELECT res_name, res_id, parent_id FROM sys_resource;[39m
+[2020-04-21T23:34:21.283] [INFO] default - traceId:df16064a-69b5-4b05-9fa5-d51ce14724b3
+[2020-04-21T23:34:21.283] [INFO] default - host:localhost
+[2020-04-21T23:34:21.283] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-04-21T23:34:21.283] [INFO] default - req-query:{}
+[2020-04-21T23:34:21.283] [INFO] default - req-params:{}
+[2020-04-21T23:34:21.283] [INFO] default - req-body:{}
