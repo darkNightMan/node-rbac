@@ -21,25 +21,33 @@ class SysMenuController {
   }
   async treeMenu(req, res) {
     let _data = await SysMenuServer.getTreeMenu()
-    // 遍历菜单
-    function menuEach(menu) {
+    // 递归遍历菜单
+    function recursionMenu(menu) {
       let root = menu.filter((it, index) => it.parent_id == null) //  获取根级
-      let parentMenu = menu.filter((it, index) => !it.parent_id)  //  获取根父级
-      parentMenu.map((p, i1) => {
-        menu.map((c, i2) => {
-          if (p.res_id == c.parent_id) {
-            if (Object.prototype.toString.call(p.children) == '[object Array]') {
-              p.children.push(c)
-            } else {
-              p.children = new Array()
-              p.children.push(c)
+      function recursion (children) {
+        children.map((p, i1) => {
+          menu.map((c, i2) => {
+            if (p.res_id == c.parent_id) {              
+              if (Object.prototype.toString.call(p.children) == '[object Array]') { 
+                if (p.children.indexOf(c) === -1) {
+                  p.children.push(c)
+                }
+                recursion(p.children)
+              } else {
+                p.children = new Array()
+                if (p.children.indexOf(c) === -1) {
+                  p.children.push(c)
+                }
+                recursion(p.children)
+              }
             }
-          }
+          })
         })
-      })
+      }
+      recursion(root)
       return root
     }
-    res.R.ok(menuEach(_data)[0].children)
+    res.R.ok(recursionMenu(_data)[0].children)
   }
   async createMenu (req, res) {    
     let data = req.body
