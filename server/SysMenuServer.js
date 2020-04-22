@@ -40,14 +40,14 @@ class SysMenuServer {
     return row
   }
   async insertMenu (data) {
-    let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type) 
-    VALUES (${data.parent_id},'${data.res_name}','${data.res_code}','${data.component}','${data.description}',now(),'${data.res_icon}', ${data.sort}, ${data.type}
+    let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type, perms) 
+    VALUES (${data.parent_id},'${data.res_name}','${data.res_code}','${data.component}','${data.description}',now(),'${data.res_icon}', ${data.sort}, ${data.type}, '${data.perms}'
     )`
     let row = await exec(sql)
     return row
   }
   async updatedMenu (data) {
-    let sql = `UPDATE sys_resource SET sort = ${data.sort}, type = ${data.type}, parent_id= ${data.parent_id}, res_name = '${data.res_name}', res_code= '${data.res_code}', res_icon= '${data.res_icon}', description = '${data.description}', component= '${data.component}' WHERE res_id = ${data.res_id}`
+    let sql = `UPDATE sys_resource SET sort = ${data.sort}, type = ${data.type}, state = ${data.state}, parent_id= ${data.parent_id}, res_name = '${data.res_name}', res_code= '${data.res_code}', res_icon= '${data.res_icon}', description = '${data.description}', component= '${data.component}', perms='${data.perms}' WHERE res_id = ${data.res_id}`
     let row = await exec(sql)
     return row
   }
