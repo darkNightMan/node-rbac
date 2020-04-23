@@ -39,6 +39,14 @@ class SysMenuServer {
       let row = await exec(sql)
     return row
   }
+  async getUserPer(userId) {
+    let sql = `SELECT	sys_resource.perms FROM  sys_user_role
+      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
+      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
+      WHERE user_id = ${userId} AND type > 1  GROUP BY perms`
+      let row = await exec(sql)
+    return row
+  }
   async insertMenu (data) {
     let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type, perms) 
     VALUES (${data.parent_id},'${data.res_name}','${data.res_code}','${data.component}','${data.description}',now(),'${data.res_icon}', ${data.sort}, ${data.type}, '${data.perms}'

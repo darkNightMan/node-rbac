@@ -93,8 +93,18 @@ class UserController {
       return parentMenu
     }
     let _menu = await SysMenuServer.getMenu(userid)
+    let _perms = await SysMenuServer.getUserPer(userid)
     let _data = await UserServer.getUserInfo(userid)
 
+    function getPerms (perms) {
+      let permsArr = []
+      perms.map((it) => {
+        if (it.perms) {
+          permsArr.push(it.perms)
+        }
+      })
+      return permsArr
+    }
     let menuList = menuEach(_menu) // 获取菜单树  
     let userInfo = {
       user_id: _data.user_id,
@@ -107,7 +117,8 @@ class UserController {
     if (!_menu) return res.R.err('USER_NOT_EXITS')
     res.R.ok({
       menuList: menuList,
-      userInfo: userInfo
+      userInfo: userInfo,
+      perms: getPerms(_perms)
     })
   }
 }
