@@ -20,7 +20,7 @@ class SysMenuServer {
     }
   }
   async selectMenuList () {
-    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource;`
+    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource WHERE type < 3;`
     let data = await exec(sql)
     return data
   }
@@ -48,8 +48,8 @@ class SysMenuServer {
     return row
   }
   async insertMenu (data) {
-    let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type, perms) 
-    VALUES (${data.parent_id},'${data.res_name}','${data.res_code}','${data.component}','${data.description}',now(),'${data.res_icon}', ${data.sort}, ${data.type}, '${data.perms}'
+    let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type, perms, state) 
+    VALUES (${data.parent_id},'${data.res_name}','${data.res_code}','${data.component}','${data.description}',now(),'${data.res_icon}', ${data.sort}, ${data.type}, '${data.perms}', ${data.state}
     )`
     let row = await exec(sql)
     return row
