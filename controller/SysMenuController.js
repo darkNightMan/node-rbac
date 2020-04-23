@@ -5,8 +5,14 @@ class SysMenuController {
   async list(req, res) {
     const { pageParams, conditions } = offsetPage(req.query)
     let _data = await SysMenuServer.list(pageParams, conditions)
+    let allList = await SysMenuServer.selectMenuList()
     _data.list.map((it) => {
       it.create_time = formatDate(it.create_time)
+      allList.map((p) => {
+        if (it.parent_id == p.res_id ) {
+          it.parent_name = p.res_name
+        }
+      })
     })
     res.R.ok({
       list: _data.list,
