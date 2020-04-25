@@ -7,13 +7,30 @@ const {
 class SysMenuServer {
   // 获取菜单列表
   async list(pageParmas, conditions) {
-    let sqlist = `SELECT * FROM sys_resource LIMIT ?, ? `
-    let sqltotal = `SELECT COUNT(res_id) AS count FROM sys_resource;`
+    let sqlist = `SELECT * FROM sys_resource where 1=1 `
+    let sqltotal = `SELECT COUNT(res_id) AS count FROM sys_resource where 1=1 `
+    let sqlArr = [] 
+    let sqltotalArr = []
     if (conditions) { // 如果存在条件查询
-     
+      if (conditions.treeId) {  //  树查询
+        let tree = parseInt(conditions.treeId)        
+        sqlist+= ` and parent_id = ? `
+        sqlArr.push(tree)
+        sqlist+= `or res_id = ?`
+        sqlArr.push(tree)
+       
+        sqltotal+= ` and  parent_id = ?  `
+        sqltotalArr.push(tree)
+        sqltotal+= ` or res_id = ? `
+        sqltotalArr.push(tree)
+      }
     }
-    let list = await exec(sqlist, [pageParmas.limitStart, pageParmas.pageSize])
-    let total = await exec(sqltotal)
+    sqlist+= ` LIMIT ?, ? `
+    sqlArr.push(pageParmas.limitStart, pageParmas.pageSize)
+    
+    sqltotalArr.push(pageParmas.limitStart, pageParmas.pageSize)
+    let list = await exec(sqlist, sqlArr)
+    let total = await exec(sqltotal, sqlArr)
     return {   
       list,
       total
