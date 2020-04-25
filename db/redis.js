@@ -9,7 +9,7 @@ class Redis {
     })
   }
   set (key, val, expTime) {
-    // console.log(colors.magenta('set redis：=>', 'key:', key))
+    console.log(colors.magenta('set redis：=>', 'key:', key))
     // console.log(colors.magenta('set redis：=>', 'val:', val))
     if (typeof val === 'object') {
       let val = JSON.stringify(val)

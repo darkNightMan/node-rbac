@@ -14,10 +14,8 @@ const successMsg = require('../utils/success-msg')
 class UserController {
   // 登入
   async login(req, res) {
-   
     let phone = req.body.phone
     let password = req.body.password  
-    
     if (!phone) {
       res.R.err('USER_PHONE_NULL')
     }
@@ -42,8 +40,7 @@ class UserController {
         return res.R.err('USER_PASSWORD_WRONG')
       }
       let payload = {
-        user_id: _data.user_id,
-        nickName: _data.nick_name,
+        userInfo: _data,
         admin: true,
       }
       dataLog.login_description = successMsg['LOGING_SUCCESS']
@@ -71,9 +68,6 @@ class UserController {
   // 获取登录用户信息和菜单权限
   async getUserMenuList(req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
     // 遍历菜单
     function menuEach(menu) {
       // let root = menu.filter((it, index) => it.parent_id == null) //  获取根级
@@ -115,6 +109,7 @@ class UserController {
       avatar: _data.avatar
     }
     if (!_menu) return res.R.err('USER_NOT_EXITS')
+    redis.set(`user_perms_${userid}`, getPerms(_perms).toString(), JWT_COMF.JWTEXP) //  将权限存储到reids
     res.R.ok({
       menuList: menuList,
       userInfo: userInfo,

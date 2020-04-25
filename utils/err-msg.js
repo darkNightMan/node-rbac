@@ -38,6 +38,10 @@ module.exports = {
     msg: 'user_id不能为空'
   },
   // 用户管理模块错误
+  USER_PERMS_EXITS: {
+    code: 20000,
+    msg: '您无此权限！请联系管理员'
+  },
   USER_HAS_EXITS: {
     code: 20100,
     msg: '该用户已经存在'
