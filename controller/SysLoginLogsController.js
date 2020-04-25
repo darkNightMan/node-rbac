@@ -9,13 +9,14 @@ class SysLoginLogsController {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     let { pageParams, conditions } = offsetPage(req.query)
 
-    let roleList = await SysRoleServer.findRoles(userid) // 用户角色关联
-    let isSuperManage = roleList.some(it =>  it.role_id === 1) // 超级管理员   
-    let _data = await SysLogServer.list(pageParams,  Object.assign({ user_id: isSuperManage ? '' : userid }, conditions))
+    let roleList = await SysRoleServer.findRoles() // 用户角色关联
     let roleName = await SysRoleServer.list() // 角色名
+    let isSuperManage = roleList.some(it =>  it.role_id === 1) // 超级管理员 
+    let _data = await SysLogServer.list(pageParams,  Object.assign({ user_id: isSuperManage ? '' : userid }, conditions))
+   
     _data.list.map((it1) => {
       roleList.map((it2) => {
-        if (it1.user_id === it2.user_id ){ // 匹配表关联的数据
+        if (it1.user_id === it2.user_id ){ // 匹配表关联的数据        
           if(Object.prototype.toString.call(it1.roleList) == '[object Array]') {
             it1.roleList.push(getName(roleName,  it2.role_id))
           } else {

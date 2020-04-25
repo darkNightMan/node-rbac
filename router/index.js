@@ -19,7 +19,7 @@ module.exports = function (app) {
  // 角色
   app.get('/api/role/getRoleTreePer/',permissions.hasPerms('sys:role:lookPerms'), SysRoleController.getRoleTreePer) // 获取当前角色下的权限 
   app.post('/api/role/setRoleTreePer/', permissions.hasPerms('sys:role:editPerms'), SysRoleController.setRoleTreePer) // 修改角色权限
-  app.get('/api/role/list', permissions.hasPerms('sys:role:list'), SysRoleController.list) // 获取所有的角色  
+  app.get('/api/role/list', permissions.hasPerms('sys:role:list'), SysRoleController.list) // 获取所有的角色名  
   app.post('/api/role/createRole', permissions.hasPerms('sys:role:create'), SysRoleController.createRole) // 新建角色 
   app.put('/api/role/updateRole', permissions.hasPerms('sys:role:update'), SysRoleController.updateRole) // 更新角色名  
   app.delete('/api/role/deleteRole', permissions.hasPerms('sys:role:delete'), SysRoleController.deleteRole)  // 删除角色 
