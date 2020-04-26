@@ -37,13 +37,13 @@ class SysMenuServer {
     }
   }
   async selectMenuList () {
-    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource WHERE type < 3;`
+    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource WHERE type < 3 ORDER BY sort ASC;`
     let data = await exec(sql)
     return data
   }
   // 获取所有菜单树
   async getTreeMenu() {
-    let sql = `SELECT	sys_resource.res_id,  sys_resource.parent_id, sys_resource.res_name FROM sys_resource;` 
+    let sql = `SELECT	sys_resource.res_id,  sys_resource.parent_id, sys_resource.res_name FROM sys_resource ORDER BY sort ASC;` 
     let data = await exec(sql)
     return data
   }
@@ -52,7 +52,7 @@ class SysMenuServer {
     let sql = `SELECT	sys_resource.*  FROM  sys_user_role
       INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
       INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} AND type < 3  GROUP BY res_id`
+      WHERE user_id = ${userId} AND type < 3 GROUP BY res_id ORDER BY sort ASC`
       let row = await exec(sql)
     return row
   }
@@ -60,7 +60,7 @@ class SysMenuServer {
     let sql = `SELECT	sys_resource.perms FROM  sys_user_role
       INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
       INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} AND type > 1  GROUP BY perms`
+      WHERE user_id = ${userId} AND type > 1 GROUP BY perms ORDER BY sort ASC`
       let row = await exec(sql)
     return row
   }
