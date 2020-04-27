@@ -2,7 +2,7 @@
 
  module.exports = {
   // 密码盐
-  SALTKEY: 'wangxiping_express_pro',
+  SALTKEY: 'wangxiping_express_dev',
   // 程序启动端口
   APP_PORT: 10010,
   // mysql
