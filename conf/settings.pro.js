@@ -4,7 +4,7 @@
   // 密码盐
   SALTKEY: 'wangxiping_express_dev',
   // 程序启动端口
-  APP_PORT: 10010,
+  APP_PORT: 10086,
   // mysql
   MYSQL_CONF: { // 服务器
     host: "127.0.0.1", //数据库的地址 127.0.0.1 106.54.63.174
