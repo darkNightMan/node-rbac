@@ -1650,3 +1650,133 @@
 [2020-04-27T13:03:34.201] [INFO] default - req-query:{}
 [2020-04-27T13:03:34.203] [INFO] default - req-params:{}
 [2020-04-27T13:03:34.203] [INFO] default - req-body:{}
+[2020-04-27T13:31:06.859] [INFO] default - traceId:afe81961-36ff-4a56-bf56-1659cfe22264
+[2020-04-27T13:31:06.901] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type < 3 GROUP BY res_id ORDER BY sort ASC[39m
+[2020-04-27T13:31:06.949] [INFO] default - [35msql执行：=> SELECT	sys_resource.perms FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type > 1 GROUP BY perms ORDER BY sort ASC[39m
+[2020-04-27T13:31:07.063] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-27T13:31:07.124] [INFO] default - traceId:afe81961-36ff-4a56-bf56-1659cfe22264
+[2020-04-27T13:31:07.126] [INFO] default - host:localhost
+[2020-04-27T13:31:07.127] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-27T13:31:07.128] [INFO] default - req-query:{}
+[2020-04-27T13:31:07.129] [INFO] default - req-params:{}
+[2020-04-27T13:31:07.130] [INFO] default - req-body:{}
+[2020-04-27T13:36:37.422] [INFO] default - traceId:3ec172d3-0e0b-4941-8a44-7b39f43b1494
+[2020-04-27T13:36:37.428] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T13:36:37.462] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      'localhost',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'iPadfalse'[39m
+[35m    )[39m
+[2020-04-27T13:36:37.516] [INFO] default - traceId:3ec172d3-0e0b-4941-8a44-7b39f43b1494
+[2020-04-27T13:36:37.519] [INFO] default - host:localhost
+[2020-04-27T13:36:37.519] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T13:36:37.520] [INFO] default - req-query:{}
+[2020-04-27T13:36:37.521] [INFO] default - req-params:{}
+[2020-04-27T13:36:37.522] [INFO] default - req-body:{"phone":110,"password":"123","code":"123456"}
+[2020-04-27T13:36:37.722] [INFO] default - traceId:02093b23-74aa-4b07-902a-05cd564b630e
+[2020-04-27T13:36:37.734] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type < 3 GROUP BY res_id ORDER BY sort ASC[39m
+[2020-04-27T13:36:37.763] [INFO] default - [35msql执行：=> SELECT	sys_resource.perms FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type > 1 GROUP BY perms ORDER BY sort ASC[39m
+[2020-04-27T13:36:37.790] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-27T13:36:37.819] [INFO] default - traceId:02093b23-74aa-4b07-902a-05cd564b630e
+[2020-04-27T13:36:37.819] [INFO] default - host:localhost
+[2020-04-27T13:36:37.820] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-27T13:36:37.821] [INFO] default - req-query:{}
+[2020-04-27T13:36:37.821] [INFO] default - req-params:{}
+[2020-04-27T13:36:37.822] [INFO] default - req-body:{}
+[2020-04-27T13:36:37.980] [INFO] default - traceId:50942abb-12b9-4095-a867-e2320a6c02f2
+[2020-04-27T13:36:37.983] [INFO] default - traceId:e713a984-74ef-4dc0-8dc3-c2f9bb2869f5
+[2020-04-27T13:36:37.985] [INFO] default - [35msql执行：=> SELECT * FROM sys_user LIMIT 0, 10[39m
+[2020-04-27T13:36:37.986] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-27T13:36:38.012] [INFO] default - [35msql执行：=> SELECT COUNT(user_id) AS count FROM sys_user;[39m
+[2020-04-27T13:36:38.038] [INFO] default - traceId:e713a984-74ef-4dc0-8dc3-c2f9bb2869f5
+[2020-04-27T13:36:38.039] [INFO] default - host:localhost
+[2020-04-27T13:36:38.039] [INFO] default - method: [GET] URL: /api/role/list
+[2020-04-27T13:36:38.041] [INFO] default - req-query:{}
+[2020-04-27T13:36:38.041] [INFO] default - req-params:{}
+[2020-04-27T13:36:38.042] [INFO] default - req-body:{}
+[2020-04-27T13:36:38.065] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-04-27T13:36:38.091] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-27T13:36:38.119] [INFO] default - traceId:50942abb-12b9-4095-a867-e2320a6c02f2
+[2020-04-27T13:36:38.120] [INFO] default - host:localhost
+[2020-04-27T13:36:38.121] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-04-27T13:36:38.121] [INFO] default - req-query:{"currentPage":"1"}
+[2020-04-27T13:36:38.122] [INFO] default - req-params:{}
+[2020-04-27T13:36:38.122] [INFO] default - req-body:{}
+[2020-04-27T13:36:49.127] [INFO] default - traceId:a0f8f827-e70d-4bd4-aecf-09253b181eef
+[2020-04-27T13:36:49.130] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-04-27T13:36:49.157] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-27T13:36:49.183] [INFO] default - [35msql执行：=> SELECT * FROM sys_login_logs  ORDER BY login_time DESC LIMIT 0, 10 [39m
+[2020-04-27T13:36:49.211] [INFO] default - [35msql执行：=> SELECT COUNT(id) AS count FROM sys_login_logs[39m
+[2020-04-27T13:36:49.250] [INFO] default - traceId:a0f8f827-e70d-4bd4-aecf-09253b181eef
+[2020-04-27T13:36:49.252] [INFO] default - host:localhost
+[2020-04-27T13:36:49.253] [INFO] default - method: [GET] URL: /api/loginLogs/list?page=1&pageSize=10
+[2020-04-27T13:36:49.254] [INFO] default - req-query:{}
+[2020-04-27T13:36:49.255] [INFO] default - req-params:{}
+[2020-04-27T13:36:49.271] [INFO] default - req-body:{}
+[2020-04-27T13:37:26.930] [INFO] default - traceId:d32babcf-8f2a-410a-b59a-aecca609e9b4
+[2020-04-27T13:37:26.942] [INFO] default - traceId:d32babcf-8f2a-410a-b59a-aecca609e9b4
+[2020-04-27T13:37:26.943] [INFO] default - host:localhost
+[2020-04-27T13:37:26.943] [INFO] default - method: [GET] URL: /api/loginOut
+[2020-04-27T13:37:26.944] [INFO] default - req-query:{}
+[2020-04-27T13:37:26.945] [INFO] default - req-params:{}
+[2020-04-27T13:37:26.945] [INFO] default - req-body:{}
+[2020-04-27T13:37:35.609] [INFO] default - traceId:e4c0fe15-4aa1-408f-8b43-269ca631acff
+[2020-04-27T13:37:35.611] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T13:37:35.661] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      'localhost',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'iPadfalse'[39m
+[35m    )[39m
+[2020-04-27T13:37:35.712] [INFO] default - traceId:e4c0fe15-4aa1-408f-8b43-269ca631acff
+[2020-04-27T13:37:35.712] [INFO] default - host:localhost
+[2020-04-27T13:37:35.713] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T13:37:35.714] [INFO] default - req-query:{}
+[2020-04-27T13:37:35.714] [INFO] default - req-params:{}
+[2020-04-27T13:37:35.715] [INFO] default - req-body:{"phone":110,"password":"123","code":"123456"}
+[2020-04-27T13:37:35.803] [INFO] default - traceId:8613af81-4cb4-40cc-9f4e-9ca249fb7fab
+[2020-04-27T13:37:35.815] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type < 3 GROUP BY res_id ORDER BY sort ASC[39m
+[2020-04-27T13:37:35.855] [INFO] default - [35msql执行：=> SELECT	sys_resource.perms FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type > 1 GROUP BY perms ORDER BY sort ASC[39m
+[2020-04-27T13:37:35.891] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-27T13:37:35.932] [INFO] default - traceId:8613af81-4cb4-40cc-9f4e-9ca249fb7fab
+[2020-04-27T13:37:35.934] [INFO] default - host:localhost
+[2020-04-27T13:37:35.934] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-27T13:37:35.937] [INFO] default - req-query:{}
+[2020-04-27T13:37:35.939] [INFO] default - req-params:{}
+[2020-04-27T13:37:35.946] [INFO] default - req-body:{}
+[2020-04-27T13:37:43.935] [INFO] default - traceId:dc3b1fdc-5b98-4921-87d9-b8ccd2a05e7a
+[2020-04-27T13:37:43.943] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-04-27T13:37:43.979] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-27T13:37:44.016] [INFO] default - [35msql执行：=> SELECT * FROM sys_login_logs  ORDER BY login_time DESC LIMIT 0, 10 [39m
+[2020-04-27T13:37:44.052] [INFO] default - [35msql执行：=> SELECT COUNT(id) AS count FROM sys_login_logs[39m
+[2020-04-27T13:37:44.104] [INFO] default - traceId:dc3b1fdc-5b98-4921-87d9-b8ccd2a05e7a
+[2020-04-27T13:37:44.105] [INFO] default - host:localhost
+[2020-04-27T13:37:44.107] [INFO] default - method: [GET] URL: /api/loginLogs/list?page=1&pageSize=10
+[2020-04-27T13:37:44.108] [INFO] default - req-query:{}
+[2020-04-27T13:37:44.109] [INFO] default - req-params:{}
+[2020-04-27T13:37:44.109] [INFO] default - req-body:{}
