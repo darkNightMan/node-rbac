@@ -54,6 +54,10 @@ module.exports = {
     code: 21333,
     msg: '账号不能为空'
   },
+  USER_CAPTCHA_ERR: {
+    code: 21534,
+    msg: '验证码错误'
+  },
   USER_PASSWORD_NULL: {
     code: 21535,
     msg: '密码不能为空'

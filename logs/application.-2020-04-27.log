@@ -1780,3 +1780,229 @@
 [2020-04-27T13:37:44.108] [INFO] default - req-query:{}
 [2020-04-27T13:37:44.109] [INFO] default - req-params:{}
 [2020-04-27T13:37:44.109] [INFO] default - req-body:{}
+[2020-04-27T13:39:07.494] [INFO] default - traceId:1a27fcee-81a3-4d19-a74d-d10c015f256e
+[2020-04-27T13:39:07.503] [INFO] default - traceId:1a27fcee-81a3-4d19-a74d-d10c015f256e
+[2020-04-27T13:39:07.504] [INFO] default - host:localhost
+[2020-04-27T13:39:07.504] [INFO] default - method: [GET] URL: /api/loginOut
+[2020-04-27T13:39:07.505] [INFO] default - req-query:{}
+[2020-04-27T13:39:07.505] [INFO] default - req-params:{}
+[2020-04-27T13:39:07.506] [INFO] default - req-body:{}
+[2020-04-27T13:39:15.091] [INFO] default - traceId:c6ddd690-df36-48dc-9c1a-cf1224e0a5b4
+[2020-04-27T13:39:15.094] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T13:39:15.135] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      'localhost',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'iPadfalse'[39m
+[35m    )[39m
+[2020-04-27T13:39:15.181] [INFO] default - traceId:c6ddd690-df36-48dc-9c1a-cf1224e0a5b4
+[2020-04-27T13:39:15.184] [INFO] default - host:localhost
+[2020-04-27T13:39:15.187] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T13:39:15.188] [INFO] default - req-query:{}
+[2020-04-27T13:39:15.189] [INFO] default - req-params:{}
+[2020-04-27T13:39:15.189] [INFO] default - req-body:{"phone":110,"password":"123","code":"123456"}
+[2020-04-27T13:39:15.276] [INFO] default - traceId:db0fa205-bbbe-48b8-afc0-062a67cd47d0
+[2020-04-27T13:39:15.293] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type < 3 GROUP BY res_id ORDER BY sort ASC[39m
+[2020-04-27T13:39:15.325] [INFO] default - [35msql执行：=> SELECT	sys_resource.perms FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type > 1 GROUP BY perms ORDER BY sort ASC[39m
+[2020-04-27T13:39:15.357] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-27T13:39:15.390] [INFO] default - traceId:db0fa205-bbbe-48b8-afc0-062a67cd47d0
+[2020-04-27T13:39:15.391] [INFO] default - host:localhost
+[2020-04-27T13:39:15.391] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-27T13:39:15.392] [INFO] default - req-query:{}
+[2020-04-27T13:39:15.392] [INFO] default - req-params:{}
+[2020-04-27T13:39:15.392] [INFO] default - req-body:{}
+[2020-04-27T13:39:17.773] [INFO] default - traceId:b130e746-4538-4dcf-9cf8-2dacb97337c0
+[2020-04-27T13:39:17.776] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-04-27T13:39:17.807] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-04-27T13:39:17.837] [INFO] default - [35msql执行：=> SELECT * FROM sys_login_logs  ORDER BY login_time DESC LIMIT 0, 10 [39m
+[2020-04-27T13:39:17.868] [INFO] default - [35msql执行：=> SELECT COUNT(id) AS count FROM sys_login_logs[39m
+[2020-04-27T13:39:17.915] [INFO] default - traceId:b130e746-4538-4dcf-9cf8-2dacb97337c0
+[2020-04-27T13:39:17.916] [INFO] default - host:localhost
+[2020-04-27T13:39:17.917] [INFO] default - method: [GET] URL: /api/loginLogs/list?page=1&pageSize=10
+[2020-04-27T13:39:17.918] [INFO] default - req-query:{}
+[2020-04-27T13:39:17.918] [INFO] default - req-params:{}
+[2020-04-27T13:39:17.918] [INFO] default - req-body:{}
+[2020-04-27T13:39:51.430] [INFO] default - traceId:919ed388-8c91-4677-a070-c2f521eb651a
+[2020-04-27T13:39:51.438] [INFO] default - traceId:919ed388-8c91-4677-a070-c2f521eb651a
+[2020-04-27T13:39:51.438] [INFO] default - host:localhost
+[2020-04-27T13:39:51.438] [INFO] default - method: [GET] URL: /api/loginOut
+[2020-04-27T13:39:51.439] [INFO] default - req-query:{}
+[2020-04-27T13:39:51.439] [INFO] default - req-params:{}
+[2020-04-27T13:39:51.440] [INFO] default - req-body:{}
+[2020-04-27T14:38:24.204] [INFO] default - traceId:b38f357d-fa50-4c9e-946c-0c5549e97fdf
+[2020-04-27T14:38:24.206] [INFO] default - traceId:b38f357d-fa50-4c9e-946c-0c5549e97fdf
+[2020-04-27T14:38:24.208] [INFO] default - host:127.0.0.1
+[2020-04-27T14:38:24.208] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T14:38:24.209] [ERROR] default - req-query:{}
+[2020-04-27T14:38:24.209] [ERROR] default - req-params:{}
+[2020-04-27T14:38:24.210] [ERROR] default - req-body:{}
+[2020-04-27T14:38:42.292] [INFO] default - traceId:ee90f7f5-b8a4-4a96-83ae-9ea4a47e819b
+[2020-04-27T14:40:24.524] [INFO] default - traceId:3cd357e8-c9af-42b4-b926-e6fce144f247
+[2020-04-27T14:40:52.151] [INFO] default - traceId:8e5b7c4c-2bf1-4bb2-b664-23c7219bdc59
+[2020-04-27T14:42:21.936] [INFO] default - traceId:6ee81750-a42d-4344-b7e2-ca004f575a19
+[2020-04-27T14:43:11.200] [INFO] default - traceId:d6c2dab0-3833-4e62-b6aa-117899c53405
+[2020-04-27T14:43:16.848] [INFO] default - traceId:ac8879a2-7afd-4299-aa6d-db2249fc7b6c
+[2020-04-27T14:43:25.889] [INFO] default - traceId:2d3999dc-58fc-47f5-9a4e-230bf4bc3284
+[2020-04-27T14:43:34.097] [INFO] default - traceId:62877e5b-8b65-4a29-9b59-ff22945d1a8b
+[2020-04-27T14:44:29.903] [INFO] default - traceId:7dd92eed-020e-49d4-90db-1a9b832496c4
+[2020-04-27T14:48:25.053] [INFO] default - traceId:f9ad8721-2858-4e3f-8045-2f5ff428409d
+[2020-04-27T14:48:25.058] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T14:48:25.106] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m
+[2020-04-27T14:48:25.154] [INFO] default - traceId:f9ad8721-2858-4e3f-8045-2f5ff428409d
+[2020-04-27T14:48:25.155] [INFO] default - host:127.0.0.1
+[2020-04-27T14:48:25.156] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T14:48:25.157] [INFO] default - req-query:{}
+[2020-04-27T14:48:25.157] [INFO] default - req-params:{}
+[2020-04-27T14:48:25.158] [INFO] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T14:51:37.291] [INFO] default - traceId:e5d0ebf2-9374-4385-9424-9f3df8d8710d
+[2020-04-27T14:55:31.228] [INFO] default - traceId:cb8a82a8-ba8c-4541-83c2-9759dc7e6471
+[2020-04-27T14:59:33.814] [INFO] default - traceId:ceb3e839-beae-4545-bc4d-4f55c7567779
+[2020-04-27T14:59:40.682] [INFO] default - traceId:98f99f72-5bac-47e9-994c-574fe0d25fa3
+[2020-04-27T14:59:40.685] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T14:59:40.729] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m
+[2020-04-27T14:59:40.781] [INFO] default - traceId:98f99f72-5bac-47e9-994c-574fe0d25fa3
+[2020-04-27T14:59:40.782] [INFO] default - host:127.0.0.1
+[2020-04-27T14:59:40.783] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T14:59:40.784] [INFO] default - req-query:{}
+[2020-04-27T14:59:40.784] [INFO] default - req-params:{}
+[2020-04-27T14:59:40.785] [INFO] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T14:59:57.702] [INFO] default - traceId:4e0c11e7-b585-482c-bf8e-cfbd8cd3900c
+[2020-04-27T14:59:57.707] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T14:59:57.748] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m
+[2020-04-27T14:59:57.799] [INFO] default - traceId:4e0c11e7-b585-482c-bf8e-cfbd8cd3900c
+[2020-04-27T14:59:57.802] [INFO] default - host:127.0.0.1
+[2020-04-27T14:59:57.803] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T14:59:57.803] [INFO] default - req-query:{}
+[2020-04-27T14:59:57.803] [INFO] default - req-params:{}
+[2020-04-27T14:59:57.804] [INFO] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T15:00:19.711] [INFO] default - traceId:b7882ae3-4b73-4d54-9e98-3f1a5b8ca377
+[2020-04-27T15:00:19.716] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T15:00:19.755] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m
+[2020-04-27T15:00:19.805] [INFO] default - traceId:b7882ae3-4b73-4d54-9e98-3f1a5b8ca377
+[2020-04-27T15:00:19.806] [INFO] default - host:127.0.0.1
+[2020-04-27T15:00:19.807] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T15:00:19.807] [INFO] default - req-query:{}
+[2020-04-27T15:00:19.808] [INFO] default - req-params:{}
+[2020-04-27T15:00:19.809] [INFO] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T15:00:37.061] [INFO] default - traceId:9d8f7696-98a4-4788-a5f8-831ef98313e1
+[2020-04-27T15:00:37.067] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T15:00:37.103] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m
+[2020-04-27T15:00:37.155] [INFO] default - traceId:9d8f7696-98a4-4788-a5f8-831ef98313e1
+[2020-04-27T15:00:37.157] [INFO] default - host:127.0.0.1
+[2020-04-27T15:00:37.157] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T15:00:37.158] [INFO] default - req-query:{}
+[2020-04-27T15:00:37.159] [INFO] default - req-params:{}
+[2020-04-27T15:00:37.160] [INFO] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T15:03:15.352] [INFO] default - traceId:a4582cb0-42bf-459a-9ae3-ad4273d74cd7
+[2020-04-27T15:03:15.357] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T15:03:15.392] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m
+[2020-04-27T15:03:15.439] [INFO] default - traceId:a4582cb0-42bf-459a-9ae3-ad4273d74cd7
+[2020-04-27T15:03:15.440] [INFO] default - host:127.0.0.1
+[2020-04-27T15:03:15.441] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T15:03:15.442] [INFO] default - req-query:{}
+[2020-04-27T15:03:15.443] [INFO] default - req-params:{}
+[2020-04-27T15:03:15.443] [INFO] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T15:09:21.647] [INFO] default - traceId:b2f9d4fd-9a13-44d4-a240-ededd8727431
+[2020-04-27T15:09:22.747] [INFO] default - traceId:76be47e0-b7be-434a-a449-7a7508480a66
+[2020-04-27T15:09:23.325] [INFO] default - traceId:75ab47af-0fb8-40db-8a12-078c466a353f
+[2020-04-27T15:11:10.856] [INFO] default - traceId:37b5d5b1-a015-4396-bf38-e50f219d85ad
+[2020-04-27T15:11:21.499] [INFO] default - traceId:94548598-30c6-4be3-94e8-cf7f396556fa
+[2020-04-27T15:13:13.940] [INFO] default - traceId:372cbd47-292e-48a1-baf0-3c00f082a697
+[2020-04-27T15:13:31.101] [INFO] default - traceId:4cecff21-52bd-4a8b-9bf6-80d5a01adfd9
+[2020-04-27T15:13:48.831] [INFO] default - traceId:117f72a2-1ab5-4261-b16f-389dec3c5f2a
+[2020-04-27T15:13:52.036] [INFO] default - traceId:7057e360-4eb6-4d5d-8139-ac6918ec7052
+[2020-04-27T15:16:23.439] [INFO] default - traceId:ddb9b389-25d8-480e-9bf9-19a5dd6a4bdd
+[2020-04-27T15:16:24.408] [INFO] default - traceId:da99c86b-d4c7-4c3b-9212-15d1eadd3ae6
+[2020-04-27T15:16:25.348] [INFO] default - traceId:4c63575b-2406-45ce-97d0-d868ff08078d
+[2020-04-27T15:16:26.399] [INFO] default - traceId:ff579b2f-97f1-4472-a889-cd71eb09c876
+[2020-04-27T15:22:01.539] [INFO] default - traceId:447758d7-fc7c-4603-aae0-9bf4b0c81def
+[2020-04-27T15:22:01.544] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T15:22:01.583] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m
+[2020-04-27T15:22:01.627] [INFO] default - traceId:447758d7-fc7c-4603-aae0-9bf4b0c81def
+[2020-04-27T15:22:01.629] [INFO] default - host:127.0.0.1
+[2020-04-27T15:22:01.630] [INFO] default - method: [POST] URL: /api/login
+[2020-04-27T15:22:01.630] [INFO] default - req-query:{}
+[2020-04-27T15:22:01.631] [INFO] default - req-params:{}
+[2020-04-27T15:22:01.631] [INFO] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T15:22:17.614] [INFO] default - traceId:1b26182f-e2db-4a6a-8e3c-b328d1a1afa8
+[2020-04-27T15:22:17.619] [INFO] default - traceId:1b26182f-e2db-4a6a-8e3c-b328d1a1afa8
+[2020-04-27T15:22:17.621] [INFO] default - host:127.0.0.1
+[2020-04-27T15:22:17.621] [ERROR] default - method: [POST] URL: /api/login
+[2020-04-27T15:22:17.622] [ERROR] default - req-query:{}
+[2020-04-27T15:22:17.623] [ERROR] default - req-params:{}
+[2020-04-27T15:22:17.623] [ERROR] default - req-body:{"phone":"110","password":"123"}
+[2020-04-27T15:22:17.629] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T15:22:17.671] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      '127.0.0.1',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'Postman'[39m
+[35m    )[39m

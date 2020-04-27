@@ -10,16 +10,26 @@ const colors = require('colors')
 const errMsg = require('../utils/err-msg')
 const successMsg = require('../utils/success-msg')
 const cryptoAuth = require('../utils/crypto')
+const svgCaptcha = require('svg-captcha')
+
 class UserController {
   // 登入
   async login(req, res) {
+   
     let phone = req.body.phone
     let password = req.body.password  
+    let code = req.body.code
+    // 电话
     if (!phone) {
       res.R.err('USER_PHONE_NULL')
     }
+    // 密码
     if (!password){
       res.R.err('USER_PASSWORD_NULL')
+    }
+    // 验证码
+    if (code != req.cookies.captcha) {
+      res.R.err('USER_CAPTCHA_ERR')
     }
     try {
       let _data = await UserServer.login(phone)
@@ -115,6 +125,29 @@ class UserController {
       userInfo: userInfo,
       perms: getPerms(_perms)
     })
+  }
+  // 验证码
+  captcha (req, res) {
+    var captcha = svgCaptcha.create({ 
+      // 翻转颜色    
+      inverse: false,    
+      // 字体大小    
+      fontSize: 36,    
+      // 噪声线条数    
+      noise: 2,    
+      // 宽度    
+      width: 80,    
+      // 高度    
+      height: 38,    
+     })
+    //  保存到req
+     req.captcha = captcha.text.toLowerCase()
+     console.log(req.captcha); // 生成的验证码
+     //保存到cookie 方便前端调用验证   
+     res.cookie('captcha', req.captcha, { maxAge: 900000, httpOnly: true } )   
+     res.setHeader('Content-Type', 'image/svg+xml')
+     res.write(String(captcha.data))
+     res.end()
   }
 }
 module.exports = new UserController()
