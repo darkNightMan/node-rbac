@@ -1,4 +1,4 @@
-const { JWT_COMF } = require('../conf/db')
+const { JWT_COMF } = require('../conf')
 const jwt = require('jsonwebtoken')
 
 class JwtToken {

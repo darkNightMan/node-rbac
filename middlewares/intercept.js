@@ -1,6 +1,4 @@
-const {
-  JWT_COMF
-} = require('../conf/db')
+const { JWT_COMF} = require('../conf')
 const colors = require('colors')
 const JwtToken = require('../utils/authToken')
 const jwt = require('jsonwebtoken')

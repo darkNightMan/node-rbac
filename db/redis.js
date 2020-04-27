@@ -1,5 +1,5 @@
 const redis = require('redis')
-const { REDIS_CONF } = require('../conf/db')
+const { REDIS_CONF } = require('../conf')
 const colors = require('colors') // https://github.com/Marak/colors.js
 class Redis {
   constructor (redis) {

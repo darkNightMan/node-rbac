@@ -3,9 +3,7 @@ const SysMenuServer = require('../server/SysMenuServer')
 const SysRoleServer = require('../server/SysRoleServer')
 const SysLogServer = require('../server/SysLogServer')
 const http = require('http');
-const {
-  JWT_COMF
-} = require('../conf/db')
+const { JWT_COMF } = require('../conf')
 const redis = require('../db/redis')
 const JwtToken = require('../utils/authToken')
 const colors = require('colors')

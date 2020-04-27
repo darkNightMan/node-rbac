@@ -1,6 +1,6 @@
 
 const mysql = require('mysql')
-const { MYSQL_CONF } = require('../conf/db')
+const { MYSQL_CONF } = require('../conf')
 const colors = require('colors') // https://github.com/Marak/colors.js
 // 创建连接对象
 const connection = mysql.createConnection(MYSQL_CONF)
