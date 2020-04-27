@@ -9,6 +9,7 @@ const JwtToken = require('../utils/authToken')
 const colors = require('colors')
 const errMsg = require('../utils/err-msg')
 const successMsg = require('../utils/success-msg')
+const cryptoAuth = require('../utils/crypto')
 class UserController {
   // 登入
   async login(req, res) {
@@ -32,7 +33,8 @@ class UserController {
         await SysLogServer.insert(dataLog)      
         return res.R.err('USER_NOT_EXITS')
       }
-      if (_data.password !== password) {   
+      // 密码解密
+      if (_data.password !== cryptoAuth.encrypted(password)) {   
         dataLog.login_description = errMsg['USER_PASSWORD_WRONG'].msg   
         await SysLogServer.insert(dataLog)
         return res.R.err('USER_PASSWORD_WRONG')

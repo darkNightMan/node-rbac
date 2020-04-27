@@ -3,7 +3,9 @@
 const SysUserServer = require('../server/SysUserServer')
 const SysRoleServer = require('../server/SysRoleServer')
 const { formatDate } = require('../utils/format')
+const CryptoAuth = require('../utils/crypto')
 const { offsetPage } = require('../utils/offsetPage')
+const { SALTKEY } = require('../conf')
 class SysUserController {
   async test (req, res) {
     let data = await UserServer.testSql()
@@ -66,6 +68,8 @@ class SysUserController {
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
+    // 密码加密
+    userInfo.password = CryptoAuth.encrypted(userInfo.password)
     let _data = await SysUserServer.createUser(userInfo) // 用户表
     if (_data) {
       res.R.ok(_data)
