@@ -2006,3 +2006,119 @@
 [35m      '登录成功！',[39m
 [35m      'Postman'[39m
 [35m    )[39m
+[2020-04-27T15:23:20.049] [INFO] default - traceId:3c4cafd7-8cd7-464b-9ef2-e1f09a3e2257
+[2020-04-27T15:23:20.052] [INFO] default - traceId:3c4cafd7-8cd7-464b-9ef2-e1f09a3e2257
+[2020-04-27T15:23:20.053] [INFO] default - host:localhost
+[2020-04-27T15:23:20.060] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:23:20.061] [ERROR] default - req-query:{}
+[2020-04-27T15:23:20.062] [ERROR] default - req-params:{}
+[2020-04-27T15:23:20.064] [ERROR] default - req-body:{}
+[2020-04-27T15:23:22.882] [INFO] default - traceId:87352ac1-9dc6-4124-b732-50c6e83f7dd2
+[2020-04-27T15:23:22.884] [INFO] default - traceId:87352ac1-9dc6-4124-b732-50c6e83f7dd2
+[2020-04-27T15:23:22.885] [INFO] default - host:localhost
+[2020-04-27T15:23:22.886] [ERROR] default - method: [POST] URL: /api/login
+[2020-04-27T15:23:22.886] [ERROR] default - req-query:{}
+[2020-04-27T15:23:22.887] [ERROR] default - req-params:{}
+[2020-04-27T15:23:22.888] [ERROR] default - req-body:{"phone":110,"password":"123","code":"123456"}
+[2020-04-27T15:23:22.896] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE phone = 110[39m
+[2020-04-27T15:23:22.940] [INFO] default - [35msql执行：=> INSERT INTO sys_login_logs (user_id, user_name, login_time, login_ip, login_address, login_description, login_agent) VALUES([39m
+[35m      1,    [39m
+[35m      '王希平',[39m
+[35m      now(),[39m
+[35m      'localhost',[39m
+[35m      '本地登入',[39m
+[35m      '登录成功！',[39m
+[35m      'iPadfalse'[39m
+[35m    )[39m
+[2020-04-27T15:23:27.164] [INFO] default - traceId:f94ed6fc-a8b1-4b69-a954-a4831efdbeee
+[2020-04-27T15:23:27.165] [INFO] default - traceId:f94ed6fc-a8b1-4b69-a954-a4831efdbeee
+[2020-04-27T15:23:27.166] [INFO] default - host:localhost
+[2020-04-27T15:23:27.167] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:23:27.168] [ERROR] default - req-query:{}
+[2020-04-27T15:23:27.169] [ERROR] default - req-params:{}
+[2020-04-27T15:23:27.169] [ERROR] default - req-body:{}
+[2020-04-27T15:23:36.939] [INFO] default - traceId:337036b1-ee0b-4a22-9d3e-e80625fd47d9
+[2020-04-27T15:23:36.940] [INFO] default - traceId:337036b1-ee0b-4a22-9d3e-e80625fd47d9
+[2020-04-27T15:23:36.945] [INFO] default - host:localhost
+[2020-04-27T15:23:36.946] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:23:36.947] [ERROR] default - req-query:{}
+[2020-04-27T15:23:36.949] [ERROR] default - req-params:{}
+[2020-04-27T15:23:36.949] [ERROR] default - req-body:{}
+[2020-04-27T15:23:53.176] [INFO] default - traceId:4407acfc-9ee1-4a39-aba9-233aa21f408a
+[2020-04-27T15:23:53.177] [INFO] default - traceId:4407acfc-9ee1-4a39-aba9-233aa21f408a
+[2020-04-27T15:23:53.178] [INFO] default - host:localhost
+[2020-04-27T15:23:53.178] [ERROR] default - method: [GET] URL: /api/getCaptcha?d=0.2398609095188593
+[2020-04-27T15:23:53.179] [ERROR] default - req-query:{"d":"0.2398609095188593"}
+[2020-04-27T15:23:53.179] [ERROR] default - req-params:{}
+[2020-04-27T15:23:53.180] [ERROR] default - req-body:{}
+[2020-04-27T15:24:34.212] [INFO] default - traceId:09e864b4-d3c7-4d34-8b69-86fd14a0719a
+[2020-04-27T15:24:34.213] [INFO] default - traceId:09e864b4-d3c7-4d34-8b69-86fd14a0719a
+[2020-04-27T15:24:34.213] [INFO] default - host:localhost
+[2020-04-27T15:24:34.214] [ERROR] default - method: [GET] URL: /api/getCaptcha?d=0.2040109231422942
+[2020-04-27T15:24:34.214] [ERROR] default - req-query:{"d":"0.2040109231422942"}
+[2020-04-27T15:24:34.215] [ERROR] default - req-params:{}
+[2020-04-27T15:24:34.215] [ERROR] default - req-body:{}
+[2020-04-27T15:24:35.597] [INFO] default - traceId:dcab8201-4249-45d2-9446-9c1ac5d5d0ea
+[2020-04-27T15:24:35.598] [INFO] default - traceId:dcab8201-4249-45d2-9446-9c1ac5d5d0ea
+[2020-04-27T15:24:35.598] [INFO] default - host:localhost
+[2020-04-27T15:24:35.599] [ERROR] default - method: [GET] URL: /api/getCaptcha?d=0.2494123687859957
+[2020-04-27T15:24:35.607] [ERROR] default - req-query:{"d":"0.2494123687859957"}
+[2020-04-27T15:24:35.609] [ERROR] default - req-params:{}
+[2020-04-27T15:24:35.611] [ERROR] default - req-body:{}
+[2020-04-27T15:24:36.977] [INFO] default - traceId:7a245c78-1819-42cf-9c1c-da75d37f8c57
+[2020-04-27T15:24:36.978] [INFO] default - traceId:7a245c78-1819-42cf-9c1c-da75d37f8c57
+[2020-04-27T15:24:36.978] [INFO] default - host:localhost
+[2020-04-27T15:24:36.979] [ERROR] default - method: [GET] URL: /api/getCaptcha?d=0.24610609904148895
+[2020-04-27T15:24:36.979] [ERROR] default - req-query:{"d":"0.24610609904148895"}
+[2020-04-27T15:24:36.980] [ERROR] default - req-params:{}
+[2020-04-27T15:24:36.980] [ERROR] default - req-body:{}
+[2020-04-27T15:24:38.916] [INFO] default - traceId:6a00f1f6-b209-4ffc-897d-ecd156f30461
+[2020-04-27T15:24:38.923] [INFO] default - traceId:6a00f1f6-b209-4ffc-897d-ecd156f30461
+[2020-04-27T15:24:38.927] [INFO] default - host:localhost
+[2020-04-27T15:24:38.929] [ERROR] default - method: [GET] URL: /api/getCaptcha?d=0.8546524270191866
+[2020-04-27T15:24:38.929] [ERROR] default - req-query:{"d":"0.8546524270191866"}
+[2020-04-27T15:24:38.930] [ERROR] default - req-params:{}
+[2020-04-27T15:24:38.931] [ERROR] default - req-body:{}
+[2020-04-27T15:26:15.336] [INFO] default - traceId:d7394201-421c-4acf-812f-4c2bd96ccfa8
+[2020-04-27T15:26:15.341] [INFO] default - traceId:d7394201-421c-4acf-812f-4c2bd96ccfa8
+[2020-04-27T15:26:15.342] [INFO] default - host:localhost
+[2020-04-27T15:26:15.342] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:26:15.343] [ERROR] default - req-query:{}
+[2020-04-27T15:26:15.343] [ERROR] default - req-params:{}
+[2020-04-27T15:26:15.344] [ERROR] default - req-body:{}
+[2020-04-27T15:26:17.826] [INFO] default - traceId:36f76e0d-2bec-4c6d-970d-7e525bf81eeb
+[2020-04-27T15:26:17.827] [INFO] default - traceId:36f76e0d-2bec-4c6d-970d-7e525bf81eeb
+[2020-04-27T15:26:17.829] [INFO] default - host:localhost
+[2020-04-27T15:26:17.831] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:26:17.832] [ERROR] default - req-query:{}
+[2020-04-27T15:26:17.832] [ERROR] default - req-params:{}
+[2020-04-27T15:26:17.833] [ERROR] default - req-body:{}
+[2020-04-27T15:27:32.666] [INFO] default - traceId:debd398d-d541-44ae-af80-a0f645c2cd2b
+[2020-04-27T15:27:32.670] [INFO] default - traceId:debd398d-d541-44ae-af80-a0f645c2cd2b
+[2020-04-27T15:27:32.672] [INFO] default - host:localhost
+[2020-04-27T15:27:32.672] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:27:32.673] [ERROR] default - req-query:{}
+[2020-04-27T15:27:32.673] [ERROR] default - req-params:{}
+[2020-04-27T15:27:32.674] [ERROR] default - req-body:{}
+[2020-04-27T15:28:16.837] [INFO] default - traceId:f9e470c7-ff17-467b-991e-b6e85a5f2beb
+[2020-04-27T15:28:16.843] [INFO] default - traceId:f9e470c7-ff17-467b-991e-b6e85a5f2beb
+[2020-04-27T15:28:16.844] [INFO] default - host:localhost
+[2020-04-27T15:28:16.846] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:28:16.847] [ERROR] default - req-query:{}
+[2020-04-27T15:28:16.847] [ERROR] default - req-params:{}
+[2020-04-27T15:28:16.848] [ERROR] default - req-body:{}
+[2020-04-27T15:29:02.476] [INFO] default - traceId:979dbc05-d3c7-4ad1-8a71-fd7b852bc6ba
+[2020-04-27T15:29:02.479] [INFO] default - traceId:979dbc05-d3c7-4ad1-8a71-fd7b852bc6ba
+[2020-04-27T15:29:02.480] [INFO] default - host:127.0.0.1
+[2020-04-27T15:29:02.480] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:29:02.481] [ERROR] default - req-query:{}
+[2020-04-27T15:29:02.481] [ERROR] default - req-params:{}
+[2020-04-27T15:29:02.482] [ERROR] default - req-body:{}
+[2020-04-27T15:29:04.807] [INFO] default - traceId:b118136b-b6e1-4613-9c71-1dcf3ad928c0
+[2020-04-27T15:29:04.808] [INFO] default - traceId:b118136b-b6e1-4613-9c71-1dcf3ad928c0
+[2020-04-27T15:29:04.809] [INFO] default - host:127.0.0.1
+[2020-04-27T15:29:04.810] [ERROR] default - method: [GET] URL: /api/getCaptcha
+[2020-04-27T15:29:04.811] [ERROR] default - req-query:{}
+[2020-04-27T15:29:04.811] [ERROR] default - req-params:{}
+[2020-04-27T15:29:04.812] [ERROR] default - req-body:{}
+[2020-04-27T15:29:19.685] [INFO] default - traceId:ea7758e7-828b-472a-84bb-e3f4b6bdd7df

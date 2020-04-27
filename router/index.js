@@ -11,7 +11,7 @@ const permissions = require('../middlewares/permissions')
 
 module.exports = function (app) {
   app.use(log.setLog) // 日志
-  app.get('/extraapi/getCaptcha', UserController.captcha)
+  app.get('/api/getCaptcha', UserController.captcha)
   app.post('/api/login', UserController.login) // 登入接口
   app.use(InterceptAuth.authToken) // 校验token
   app.post('/api/test', TestController.test) // 测试接口  
