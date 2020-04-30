@@ -97,6 +97,7 @@ class UserController {
     }
     let _menu = await SysMenuServer.getMenu(userid)
     let _perms = await SysMenuServer.getUserPer(userid)
+    console.log(_perms, '---------------------')
     let _data = await UserServer.getUserInfo(userid)
     function getPerms (perms) {
       let permsArr = []

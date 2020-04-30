@@ -2,6 +2,7 @@ const {
   exec
 } = require('../db/mysql.js')
 
+const { SysResourceModel, SysRolePermmisionModel, SysUserRoleModel,Op, SysRoleModel, SysUserModel } = require('../models/TableRelationModel')
 
 // 菜单
 class SysMenuServer {
@@ -37,18 +38,34 @@ class SysMenuServer {
     }
   }
   async selectMenuList () {
-    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource WHERE type < 3 ORDER BY sort ASC;`
-    let data = await exec(sql)
-    return data
+    // let sql = `SELECT res_name, res_id, parent_id FROM sys_resource WHERE type < 3 ORDER BY sort ASC;`
+    let _data = await SysResourceModel.findAll({ 
+      where: {
+        type: {
+           [Op.lt]: 3
+        }
+      },
+      attributes: ['res_id', 'parent_id', 'res_name'],
+      order: [['sort', 'ASC']]
+    })
+    let list = []
+     // 需注意 sequezile 查出来的数据不能对其刷数据进行添加或者删除 需要的数据只能自己组装了
+    _data.map((it) => { list.push({res_id: it.res_id, res_name: it.res_name, parent_id: it.parent_id})})
+    return list
   }
   // 获取所有菜单树
   async getTreeMenu() {
-    let sql = `SELECT	sys_resource.res_id,  sys_resource.parent_id, sys_resource.res_name FROM sys_resource ORDER BY sort ASC;` 
-    let data = await exec(sql)
-    return data
+    let _data = await SysResourceModel.findAll({ 
+      attributes: ['res_id', 'parent_id', 'res_name'],
+      order: [['sort', 'ASC']]
+    })
+    let list = []
+     // 需注意 sequezile 查出来的数据不能对其刷数据进行添加或者删除 需要的数据只能自己组装了
+    _data.map((it) => { list.push({res_id: it.res_id, res_name: it.res_name, parent_id: it.parent_id})})
+    return list
   }
   // 当前用户的菜单
-  async getMenu(userId) {
+  async getMenu(userId) {    
     let sql = `SELECT	sys_resource.*  FROM  sys_user_role
       INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
       INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
@@ -57,12 +74,46 @@ class SysMenuServer {
     return row
   }
   async getUserPer(userId) {
-    let sql = `SELECT	sys_resource.perms FROM  sys_user_role
-      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
-      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} AND type > 1 GROUP BY perms`
-      let row = await exec(sql)
-    return row
+    // 查询角色
+    let role = await SysUserModel.findOne({
+      attributes: [],
+      where: {
+        user_id: 33
+      },
+      include: [
+        {
+          model: SysRoleModel,   
+          attributes: ['role_id'],
+          through: { attributes: [] }, // 排除中间表
+        }
+      ],
+      raw: false
+    })
+    let roleList = []
+    role.toJSON().sys_roles.map((it) => roleList.push(it.role_id))
+    // 查询权限
+    let perms = await  SysRoleModel.findAll({ 
+      attributes: [],
+      where: {
+        role_id: roleList
+      },
+      include: [
+        {
+          model: SysResourceModel,
+          attributes: ['perms',],
+          where: {
+            perms: {
+              [Op.ne]: null, // 不为null 
+              [Op.ne]: '' // 不为空
+            }
+          },
+          through: { attributes: [] }, // 排除中间表
+          required: false,
+        }
+      ],
+      group: 'perms'
+    })
+    return perms
   }
   async insertMenu (data) {
     let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type, perms, state) 

@@ -14,7 +14,7 @@ module.exports = function (app) {
   app.get('/api/getCaptcha', UserController.captcha)
   app.post('/api/login', UserController.login) // 登入接口
   app.use(InterceptAuth.authToken) // 校验token
-  app.post('/api/test', TestController.test) // 测试接口  
+  app.get('/api/test', TestController.test) // 测试接口  
   app.get('/api/loginOut', UserController.loginOut) // 退出 
   app.get('/api/getUserMenuList', UserController.getUserMenuList) // 获取用户信息和菜单
  // 角色

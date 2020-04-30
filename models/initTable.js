@@ -15,16 +15,14 @@ SysRoleModel.hasMany(SysUserRoleModel, {
   foreignKey: 'role_id', //  外键约束
   as: 'roleLits'
 })
-
 // 一对一多  角色对关联表
 SysRoleModel.hasMany(SysRolePermmisionModel, {
   foreignKey: 'role_id'
 }) //  外键约束
 // 一对一多  权限对关联表
 SysResourceModel.hasMany(SysRolePermmisionModel, {
-  foreignKey: 'res_id'
-}) //  外键约束
-
+  foreignKey: 'res_id' //  外键约束
+}) 
 // 用户-角色 多对多
 SysUserModel.belongsToMany(SysRoleModel, {
   through: {

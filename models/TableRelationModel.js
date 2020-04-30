@@ -4,7 +4,8 @@ const SysUserRoleModel = require('../models/SysUserRoleModel') // 用户角色�
 const SysRoleModel = require('../models/SysRoleModel') // 角色表
 const SysRolePermmisionModel = require('../models/SysRolePermmisionModel') // 角色权限关联表
 const SysResourceModel = require('../models/SysResourceModel') // 权限表
-
+const  Sequelize = require('sequelize')
+const Op = Sequelize.Op;//通过Op调用对应操作符
 // 一对一多 用户表对关联表 
 SysUserModel.hasMany(SysUserRoleModel, {
   foreignKey: 'user_id', //  外键约束
@@ -65,5 +66,6 @@ module.exports = {
   SysUserRoleModel,
   SysRoleModel,
   SysRolePermmisionModel,
-  SysResourceModel
+  SysResourceModel,
+  Op
 }
