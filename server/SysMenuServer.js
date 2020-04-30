@@ -60,7 +60,7 @@ class SysMenuServer {
     let sql = `SELECT	sys_resource.perms FROM  sys_user_role
       INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
       INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} AND type > 1 GROUP BY perms ORDER BY sort ASC`
+      WHERE user_id = ${userId} AND type > 1 GROUP BY perms`
       let row = await exec(sql)
     return row
   }

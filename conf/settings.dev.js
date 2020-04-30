@@ -9,7 +9,7 @@ module.exports = {
   MYSQL_CONF: { // 服务器
     host: "127.0.0.1", //数据库的地址 127.0.0.1 106.54.63.174
     user: "root", // 用户的名字
-    password: "csdewang", // 用户密码 ， csdewang
+    password: "root", // 用户密码 ， csdewang
     database: "blog", //数据库名字,
     useConnectionPooling: true
   },

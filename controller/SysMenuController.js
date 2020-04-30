@@ -102,7 +102,6 @@ class SysMenuController {
       res.R.err('MENU_UPDATE_FAILED')
     }
   }
-
   async deleteMenu (req, res) {
     let res_id = req.body.res_id
     let _data = await SysMenuServer.deleteMenu(res_id)

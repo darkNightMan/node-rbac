@@ -2538,3 +2538,28 @@
 [2020-04-27T16:24:46.621] [INFO] default - req-query:{}
 [2020-04-27T16:24:46.622] [INFO] default - req-params:{}
 [2020-04-27T16:24:46.623] [INFO] default - req-body:{}
+[2020-04-27T16:39:46.657] [INFO] default - traceId:5439a853-e674-4fe2-ba89-6bbe6661fd7a
+[2020-04-27T16:39:50.647] [INFO] default - traceId:5cd642fd-d4e6-4ace-94bc-7fe9fc21f515
+[2020-04-27T16:39:50.654] [INFO] default - [35msql执行：=> SELECT	sys_resource.*  FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type < 3 GROUP BY res_id ORDER BY sort ASC[39m
+[2020-04-27T16:39:50.696] [INFO] default - [35msql执行：=> SELECT	sys_resource.perms FROM  sys_user_role[39m
+[35m      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id[39m
+[35m      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id[39m
+[35m      WHERE user_id = 1 AND type > 1 GROUP BY perms ORDER BY sort ASC[39m
+[2020-04-27T16:39:50.726] [INFO] default - [35msql执行：=> SELECT user_id, nick_name, phone, password, avatar, email FROM sys_user WHERE user_id = 1[39m
+[2020-04-27T16:39:50.763] [INFO] default - traceId:5cd642fd-d4e6-4ace-94bc-7fe9fc21f515
+[2020-04-27T16:39:50.763] [INFO] default - host:localhost
+[2020-04-27T16:39:50.764] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-04-27T16:39:50.765] [INFO] default - req-query:{}
+[2020-04-27T16:39:50.770] [INFO] default - req-params:{}
+[2020-04-27T16:39:50.770] [INFO] default - req-body:{}
+[2020-04-27T16:56:36.139] [INFO] default - traceId:a633ec36-a7c3-4401-8a01-44fc48cad457
+[2020-04-27T16:56:36.142] [INFO] default - traceId:a633ec36-a7c3-4401-8a01-44fc48cad457
+[2020-04-27T16:56:36.143] [INFO] default - host:localhost
+[2020-04-27T16:56:36.143] [INFO] default - method: [GET] URL: /api/loginOut
+[2020-04-27T16:56:36.143] [INFO] default - req-query:{}
+[2020-04-27T16:56:36.144] [INFO] default - req-params:{}
+[2020-04-27T16:56:36.144] [INFO] default - req-body:{}
+[2020-04-27T16:56:37.564] [INFO] default - traceId:e356c6d2-d4e8-4a78-b23a-caeb0104577f
