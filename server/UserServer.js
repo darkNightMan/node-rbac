@@ -21,5 +21,4 @@ class UserServer {
     }
   }
 }
-
 module.exports = new UserServer()

@@ -9,7 +9,7 @@ const {
 } = require('../models/TableRelationModel')
 // 角色
 class SysRoleServer {
-  // 获取当前角色的权限
+  // 当前角色的权限集合
   async getRolePer(roleid) {
     let row = await SysRolePermmisionModel.findAll({
       attributes: ['res_id'],
@@ -36,7 +36,7 @@ class SysRoleServer {
     let row = await SysRolePermmisionModel.bulkCreate(role_update)
     return true
   }
-  // 获取所有的角色
+  // 列表
   async list() {
     let rows = await SysRoleModel.findAll()
     return rows
