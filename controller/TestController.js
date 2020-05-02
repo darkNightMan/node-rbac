@@ -1,6 +1,7 @@
 
 
 const SysMenuServer = require('../server/SysMenuServer')
+const SysUserServer = require('../server/SysUserServer')
 const SysMenuController = require('../controller/SysMenuController')
 const { offsetPage } = require('../utils/offsetPage')
 class TestController {
@@ -8,7 +9,7 @@ class TestController {
     console.log()
     const {pageParams, conditions } = offsetPage()
   
-    let data = await SysMenuServer.selectMenuList()    
+    let data = await SysUserServer.list(pageParams, conditions )  
     // let data = await SysMenuController.list()
     // let data = await SysMenuServer.list(pageParams, conditions)
     // res.R.ok({

@@ -2450,3 +2450,1112 @@
 [2020-05-02T17:10:47.456] [INFO] default - req-query:{}
 [2020-05-02T17:10:47.457] [INFO] default - req-params:{}
 [2020-05-02T17:10:47.457] [INFO] default - req-body:{}
+[2020-05-02T17:13:54.115] [INFO] default - traceId:1a9e0f14-b711-42cc-b81c-49ff057213cd
+[2020-05-02T17:13:54.120] [INFO] default - [35msql执行：=> SELECT * FROM sys_user LIMIT 0, 10[39m
+[2020-05-02T17:13:54.123] [INFO] default - [35msql执行：=> SELECT COUNT(user_id) AS count FROM sys_user;[39m
+[2020-05-02T17:13:54.124] [INFO] default - traceId:e02118ac-0fbb-4084-a02d-87c1b09eacf9
+[2020-05-02T17:13:54.126] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:13:54.127] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:13:54.127] [INFO] default - traceId:e02118ac-0fbb-4084-a02d-87c1b09eacf9
+[2020-05-02T17:13:54.128] [INFO] default - host:localhost
+[2020-05-02T17:13:54.128] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:13:54.128] [INFO] default - req-query:{}
+[2020-05-02T17:13:54.128] [INFO] default - req-params:{}
+[2020-05-02T17:13:54.128] [INFO] default - req-body:{}
+[2020-05-02T17:13:54.132] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:13:54.133] [INFO] default - traceId:1a9e0f14-b711-42cc-b81c-49ff057213cd
+[2020-05-02T17:13:54.133] [INFO] default - host:localhost
+[2020-05-02T17:13:54.133] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:13:54.133] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:13:54.133] [INFO] default - req-params:{}
+[2020-05-02T17:13:54.133] [INFO] default - req-body:{}
+[2020-05-02T17:16:10.497] [INFO] default - traceId:6a0d8ab4-1b3a-46af-b842-816e8054eef4
+[2020-05-02T17:16:10.849] [INFO] default - traceId:6a0d8ab4-1b3a-46af-b842-816e8054eef4
+[2020-05-02T17:16:10.853] [INFO] default - host:localhost
+[2020-05-02T17:16:10.861] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:16:10.868] [INFO] default - req-query:{}
+[2020-05-02T17:16:10.869] [INFO] default - req-params:{}
+[2020-05-02T17:16:10.870] [INFO] default - req-body:{}
+[2020-05-02T17:16:11.246] [INFO] default - traceId:d531a4d6-007f-4cfa-98f9-1705beaf3fd1
+[2020-05-02T17:16:11.271] [INFO] default - traceId:fa134258-c969-4b66-b9f6-89aafcd09e5a
+[2020-05-02T17:16:11.274] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:16:11.282] [INFO] default - traceId:fa134258-c969-4b66-b9f6-89aafcd09e5a
+[2020-05-02T17:16:11.282] [INFO] default - host:localhost
+[2020-05-02T17:16:11.282] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:16:11.282] [INFO] default - req-query:{}
+[2020-05-02T17:16:11.282] [INFO] default - req-params:{}
+[2020-05-02T17:16:11.282] [INFO] default - req-body:{}
+[2020-05-02T17:16:45.864] [INFO] default - traceId:3fc20320-639c-4c51-b22e-d14bed12ed06
+[2020-05-02T17:16:45.950] [INFO] default - traceId:3fc20320-639c-4c51-b22e-d14bed12ed06
+[2020-05-02T17:16:45.950] [INFO] default - host:localhost
+[2020-05-02T17:16:45.950] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:16:45.951] [INFO] default - req-query:{}
+[2020-05-02T17:16:45.951] [INFO] default - req-params:{}
+[2020-05-02T17:16:45.951] [INFO] default - req-body:{}
+[2020-05-02T17:16:46.297] [INFO] default - traceId:1e037d31-fd30-44be-8ec1-80220969b313
+[2020-05-02T17:16:46.298] [INFO] default - traceId:88302e58-1c96-4dd0-a021-552bd480ac6a
+[2020-05-02T17:16:46.302] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:16:46.309] [INFO] default - traceId:88302e58-1c96-4dd0-a021-552bd480ac6a
+[2020-05-02T17:16:46.309] [INFO] default - host:localhost
+[2020-05-02T17:16:46.309] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:16:46.309] [INFO] default - req-query:{}
+[2020-05-02T17:16:46.309] [INFO] default - req-params:{}
+[2020-05-02T17:16:46.309] [INFO] default - req-body:{}
+[2020-05-02T17:16:46.318] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:16:46.320] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:17:40.272] [INFO] default - traceId:97464cc0-5605-42b8-af48-77e61e88b8f1
+[2020-05-02T17:17:40.387] [INFO] default - traceId:97464cc0-5605-42b8-af48-77e61e88b8f1
+[2020-05-02T17:17:40.387] [INFO] default - host:localhost
+[2020-05-02T17:17:40.387] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:17:40.388] [INFO] default - req-query:{}
+[2020-05-02T17:17:40.388] [INFO] default - req-params:{}
+[2020-05-02T17:17:40.388] [INFO] default - req-body:{}
+[2020-05-02T17:17:40.805] [INFO] default - traceId:3c86a2f2-7c08-4aa6-947a-d2752d921ff4
+[2020-05-02T17:17:40.824] [INFO] default - traceId:1875aa8a-4aff-4233-9663-ba204e28b7d8
+[2020-05-02T17:17:40.835] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:17:40.836] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:17:40.842] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:17:40.843] [INFO] default - traceId:1875aa8a-4aff-4233-9663-ba204e28b7d8
+[2020-05-02T17:17:40.844] [INFO] default - host:localhost
+[2020-05-02T17:17:40.845] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:17:40.845] [INFO] default - req-query:{}
+[2020-05-02T17:17:40.845] [INFO] default - req-params:{}
+[2020-05-02T17:17:40.846] [INFO] default - req-body:{}
+[2020-05-02T17:19:36.018] [INFO] default - traceId:efb88f6d-5036-4d8b-976a-cdd6e959c541
+[2020-05-02T17:19:36.103] [INFO] default - traceId:efb88f6d-5036-4d8b-976a-cdd6e959c541
+[2020-05-02T17:19:36.103] [INFO] default - host:localhost
+[2020-05-02T17:19:36.103] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:19:36.104] [INFO] default - req-query:{}
+[2020-05-02T17:19:36.105] [INFO] default - req-params:{}
+[2020-05-02T17:19:36.105] [INFO] default - req-body:{}
+[2020-05-02T17:19:36.482] [INFO] default - traceId:4038f482-9ebb-4ebe-b1c9-0a719125523f
+[2020-05-02T17:19:36.483] [INFO] default - traceId:485aa07b-4e2a-4369-895c-01c893c89a86
+[2020-05-02T17:19:36.491] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:19:36.500] [INFO] default - traceId:485aa07b-4e2a-4369-895c-01c893c89a86
+[2020-05-02T17:19:36.501] [INFO] default - host:localhost
+[2020-05-02T17:19:36.501] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:19:36.501] [INFO] default - req-query:{}
+[2020-05-02T17:19:36.501] [INFO] default - req-params:{}
+[2020-05-02T17:19:36.501] [INFO] default - req-body:{}
+[2020-05-02T17:19:36.516] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:19:36.517] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:19:36.519] [INFO] default - traceId:4038f482-9ebb-4ebe-b1c9-0a719125523f
+[2020-05-02T17:19:36.520] [INFO] default - host:localhost
+[2020-05-02T17:19:36.520] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:19:36.520] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:19:36.520] [INFO] default - req-params:{}
+[2020-05-02T17:19:36.520] [INFO] default - req-body:{}
+[2020-05-02T17:26:54.138] [INFO] default - traceId:21811de5-2293-442c-b58b-b61780026eb6
+[2020-05-02T17:27:13.124] [INFO] default - traceId:5642471d-18e1-4ff5-b905-c90d151dc0dc
+[2020-05-02T17:28:04.858] [INFO] default - traceId:7800b1b6-6389-405f-8250-4ea0024d035c
+[2020-05-02T17:28:04.889] [INFO] default - traceId:7800b1b6-6389-405f-8250-4ea0024d035c
+[2020-05-02T17:28:04.890] [INFO] default - host:127.0.0.1
+[2020-05-02T17:28:04.890] [INFO] default - method: [GET] URL: /api/test
+[2020-05-02T17:28:04.890] [INFO] default - req-query:{}
+[2020-05-02T17:28:04.890] [INFO] default - req-params:{}
+[2020-05-02T17:28:04.890] [INFO] default - req-body:{}
+[2020-05-02T17:28:19.914] [INFO] default - traceId:406260c1-02c6-448f-8de6-93c66cb62bdd
+[2020-05-02T17:28:19.961] [INFO] default - traceId:406260c1-02c6-448f-8de6-93c66cb62bdd
+[2020-05-02T17:28:19.962] [INFO] default - host:127.0.0.1
+[2020-05-02T17:28:19.962] [INFO] default - method: [GET] URL: /api/test
+[2020-05-02T17:28:19.962] [INFO] default - req-query:{}
+[2020-05-02T17:28:19.962] [INFO] default - req-params:{}
+[2020-05-02T17:28:19.962] [INFO] default - req-body:{}
+[2020-05-02T17:29:19.686] [INFO] default - traceId:6a1da174-e700-4276-aad8-c312bbfe3b55
+[2020-05-02T17:29:19.743] [INFO] default - traceId:6a1da174-e700-4276-aad8-c312bbfe3b55
+[2020-05-02T17:29:19.744] [INFO] default - host:localhost
+[2020-05-02T17:29:19.744] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:29:19.744] [INFO] default - req-query:{}
+[2020-05-02T17:29:19.744] [INFO] default - req-params:{}
+[2020-05-02T17:29:19.744] [INFO] default - req-body:{}
+[2020-05-02T17:29:20.192] [INFO] default - traceId:0ba5f983-ac7d-4120-b406-11283b14732d
+[2020-05-02T17:29:20.194] [INFO] default - traceId:1d679cf2-e6e7-4784-9704-c8454076f632
+[2020-05-02T17:29:20.199] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:29:20.206] [INFO] default - traceId:1d679cf2-e6e7-4784-9704-c8454076f632
+[2020-05-02T17:29:20.206] [INFO] default - host:localhost
+[2020-05-02T17:29:20.206] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:29:20.207] [INFO] default - req-query:{}
+[2020-05-02T17:29:20.207] [INFO] default - req-params:{}
+[2020-05-02T17:29:20.207] [INFO] default - req-body:{}
+[2020-05-02T17:29:20.223] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:29:20.224] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:29:20.225] [INFO] default - traceId:0ba5f983-ac7d-4120-b406-11283b14732d
+[2020-05-02T17:29:20.225] [INFO] default - host:localhost
+[2020-05-02T17:29:20.225] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:29:20.225] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:29:20.225] [INFO] default - req-params:{}
+[2020-05-02T17:29:20.225] [INFO] default - req-body:{}
+[2020-05-02T17:31:37.994] [INFO] default - traceId:820f1629-dadb-452e-9bca-3f05542dbaa8
+[2020-05-02T17:31:38.051] [INFO] default - traceId:820f1629-dadb-452e-9bca-3f05542dbaa8
+[2020-05-02T17:31:38.051] [INFO] default - host:127.0.0.1
+[2020-05-02T17:31:38.051] [INFO] default - method: [GET] URL: /api/test
+[2020-05-02T17:31:38.052] [INFO] default - req-query:{}
+[2020-05-02T17:31:38.052] [INFO] default - req-params:{}
+[2020-05-02T17:31:38.052] [INFO] default - req-body:{}
+[2020-05-02T17:31:44.352] [INFO] default - traceId:0b20208a-13ac-40c6-ae71-2d37a63431b6
+[2020-05-02T17:31:44.407] [INFO] default - traceId:0b20208a-13ac-40c6-ae71-2d37a63431b6
+[2020-05-02T17:31:44.407] [INFO] default - host:localhost
+[2020-05-02T17:31:44.407] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:31:44.408] [INFO] default - req-query:{}
+[2020-05-02T17:31:44.408] [INFO] default - req-params:{}
+[2020-05-02T17:31:44.408] [INFO] default - req-body:{}
+[2020-05-02T17:31:45.267] [INFO] default - traceId:1f8a0c59-53bf-4c73-85dd-813bf5703f16
+[2020-05-02T17:31:45.268] [INFO] default - traceId:1461d0bc-1c35-4a0a-90de-0f319f70de8e
+[2020-05-02T17:31:45.272] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:31:45.278] [INFO] default - traceId:1461d0bc-1c35-4a0a-90de-0f319f70de8e
+[2020-05-02T17:31:45.278] [INFO] default - host:localhost
+[2020-05-02T17:31:45.278] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:31:45.279] [INFO] default - req-query:{}
+[2020-05-02T17:31:45.279] [INFO] default - req-params:{}
+[2020-05-02T17:31:45.279] [INFO] default - req-body:{}
+[2020-05-02T17:31:45.292] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:31:45.293] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:31:45.294] [INFO] default - traceId:1f8a0c59-53bf-4c73-85dd-813bf5703f16
+[2020-05-02T17:31:45.294] [INFO] default - host:localhost
+[2020-05-02T17:31:45.294] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:31:45.294] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:31:45.294] [INFO] default - req-params:{}
+[2020-05-02T17:31:45.294] [INFO] default - req-body:{}
+[2020-05-02T17:33:00.342] [INFO] default - traceId:a5d0ca0e-e272-4d4e-9764-71ed4bf29808
+[2020-05-02T17:33:00.378] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:33:00.381] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:33:00.384] [INFO] default - traceId:a5d0ca0e-e272-4d4e-9764-71ed4bf29808
+[2020-05-02T17:33:00.385] [INFO] default - host:localhost
+[2020-05-02T17:33:00.385] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:33:00.385] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:33:00.386] [INFO] default - req-params:{}
+[2020-05-02T17:33:00.386] [INFO] default - req-body:{}
+[2020-05-02T17:36:41.314] [INFO] default - traceId:59af0561-c0f5-445f-9ed3-ef9f93654245
+[2020-05-02T17:36:41.527] [INFO] default - traceId:59af0561-c0f5-445f-9ed3-ef9f93654245
+[2020-05-02T17:36:41.528] [INFO] default - host:localhost
+[2020-05-02T17:36:41.528] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:36:41.529] [INFO] default - req-query:{}
+[2020-05-02T17:36:41.529] [INFO] default - req-params:{}
+[2020-05-02T17:36:41.529] [INFO] default - req-body:{}
+[2020-05-02T17:36:42.000] [INFO] default - traceId:bb129872-a22f-46e1-8fe9-8fad0e2f3b56
+[2020-05-02T17:36:42.043] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:36:42.050] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:36:42.053] [INFO] default - traceId:bb129872-a22f-46e1-8fe9-8fad0e2f3b56
+[2020-05-02T17:36:42.053] [INFO] default - host:localhost
+[2020-05-02T17:36:42.053] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:36:42.053] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:36:42.054] [INFO] default - req-params:{}
+[2020-05-02T17:36:42.054] [INFO] default - req-body:{}
+[2020-05-02T17:36:42.069] [INFO] default - traceId:db4ab0a1-5bc5-4bfb-bcc7-740f35bed600
+[2020-05-02T17:36:42.073] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:36:42.074] [INFO] default - traceId:db4ab0a1-5bc5-4bfb-bcc7-740f35bed600
+[2020-05-02T17:36:42.075] [INFO] default - host:localhost
+[2020-05-02T17:36:42.075] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:36:42.075] [INFO] default - req-query:{}
+[2020-05-02T17:36:42.075] [INFO] default - req-params:{}
+[2020-05-02T17:36:42.075] [INFO] default - req-body:{}
+[2020-05-02T17:36:44.074] [INFO] default - traceId:d531af4b-0e7a-4fc1-a864-1de1f4f0f2ec
+[2020-05-02T17:36:44.086] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:36:44.087] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:36:44.094] [INFO] default - traceId:d531af4b-0e7a-4fc1-a864-1de1f4f0f2ec
+[2020-05-02T17:36:44.094] [INFO] default - host:localhost
+[2020-05-02T17:36:44.095] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:36:44.095] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:36:44.095] [INFO] default - req-params:{}
+[2020-05-02T17:36:44.095] [INFO] default - req-body:{}
+[2020-05-02T17:37:25.092] [INFO] default - traceId:72c95683-c980-4404-a4b7-ea6865ff6a32
+[2020-05-02T17:37:25.147] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:37:25.150] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:37:25.152] [INFO] default - traceId:72c95683-c980-4404-a4b7-ea6865ff6a32
+[2020-05-02T17:37:25.152] [INFO] default - host:localhost
+[2020-05-02T17:37:25.152] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:37:25.152] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:37:25.152] [INFO] default - req-params:{}
+[2020-05-02T17:37:25.153] [INFO] default - req-body:{}
+[2020-05-02T17:37:26.711] [INFO] default - traceId:e6a3bcc6-b300-4dfc-935f-c56e91c49e3c
+[2020-05-02T17:37:26.728] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:37:26.729] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:37:26.739] [INFO] default - traceId:e6a3bcc6-b300-4dfc-935f-c56e91c49e3c
+[2020-05-02T17:37:26.739] [INFO] default - host:localhost
+[2020-05-02T17:37:26.739] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:37:26.739] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:37:26.739] [INFO] default - req-params:{}
+[2020-05-02T17:37:26.739] [INFO] default - req-body:{}
+[2020-05-02T17:37:28.761] [INFO] default - traceId:fa7b9e9c-c06c-4ec3-a6d2-a9434ea5c34c
+[2020-05-02T17:37:28.776] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:37:28.777] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:37:28.777] [INFO] default - traceId:fa7b9e9c-c06c-4ec3-a6d2-a9434ea5c34c
+[2020-05-02T17:37:28.777] [INFO] default - host:localhost
+[2020-05-02T17:37:28.777] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:37:28.778] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:37:28.778] [INFO] default - req-params:{}
+[2020-05-02T17:37:28.778] [INFO] default - req-body:{}
+[2020-05-02T17:37:35.879] [INFO] default - traceId:0d5e562d-ceab-450b-b066-27823d66c30b
+[2020-05-02T17:37:35.891] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:37:35.893] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:37:35.897] [INFO] default - traceId:0d5e562d-ceab-450b-b066-27823d66c30b
+[2020-05-02T17:37:35.897] [INFO] default - host:localhost
+[2020-05-02T17:37:35.898] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:37:35.898] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:37:35.898] [INFO] default - req-params:{}
+[2020-05-02T17:37:35.898] [INFO] default - req-body:{}
+[2020-05-02T17:37:37.234] [INFO] default - traceId:3d1ce677-e090-4154-8bc7-583b2cd4e650
+[2020-05-02T17:37:37.253] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:37:37.254] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:37:37.255] [INFO] default - traceId:3d1ce677-e090-4154-8bc7-583b2cd4e650
+[2020-05-02T17:37:37.255] [INFO] default - host:localhost
+[2020-05-02T17:37:37.256] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:37:37.256] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:37:37.256] [INFO] default - req-params:{}
+[2020-05-02T17:37:37.256] [INFO] default - req-body:{}
+[2020-05-02T17:38:34.717] [INFO] default - traceId:11387ee7-5a7b-434b-ae60-71c5f8ead3f2
+[2020-05-02T17:38:34.754] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:38:34.756] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:38:34.763] [INFO] default - traceId:11387ee7-5a7b-434b-ae60-71c5f8ead3f2
+[2020-05-02T17:38:34.763] [INFO] default - host:localhost
+[2020-05-02T17:38:34.763] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:38:34.763] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:38:34.763] [INFO] default - req-params:{}
+[2020-05-02T17:38:34.763] [INFO] default - req-body:{}
+[2020-05-02T17:38:35.492] [INFO] default - traceId:805301bf-f544-4ac6-bb6e-a8fd209ce8b8
+[2020-05-02T17:38:35.505] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:38:35.506] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:38:35.506] [INFO] default - traceId:805301bf-f544-4ac6-bb6e-a8fd209ce8b8
+[2020-05-02T17:38:35.507] [INFO] default - host:localhost
+[2020-05-02T17:38:35.507] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:38:35.507] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:38:35.507] [INFO] default - req-params:{}
+[2020-05-02T17:38:35.507] [INFO] default - req-body:{}
+[2020-05-02T17:38:52.810] [INFO] default - traceId:6d221619-2848-4c79-84df-aaa8f8f20b8f
+[2020-05-02T17:38:52.866] [INFO] default - traceId:6d221619-2848-4c79-84df-aaa8f8f20b8f
+[2020-05-02T17:38:52.867] [INFO] default - host:localhost
+[2020-05-02T17:38:52.867] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:38:52.867] [INFO] default - req-query:{}
+[2020-05-02T17:38:52.867] [INFO] default - req-params:{}
+[2020-05-02T17:38:52.867] [INFO] default - req-body:{}
+[2020-05-02T17:38:53.650] [INFO] default - traceId:d4a87c48-5044-4a35-a651-b2dd0ba28680
+[2020-05-02T17:38:53.651] [INFO] default - traceId:39463067-73c0-4e29-8761-980b86f25bab
+[2020-05-02T17:38:53.653] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:38:53.656] [INFO] default - traceId:39463067-73c0-4e29-8761-980b86f25bab
+[2020-05-02T17:38:53.657] [INFO] default - host:localhost
+[2020-05-02T17:38:53.657] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:38:53.658] [INFO] default - req-query:{}
+[2020-05-02T17:38:53.658] [INFO] default - req-params:{}
+[2020-05-02T17:38:53.658] [INFO] default - req-body:{}
+[2020-05-02T17:38:53.670] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:38:53.671] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:38:53.672] [INFO] default - traceId:d4a87c48-5044-4a35-a651-b2dd0ba28680
+[2020-05-02T17:38:53.672] [INFO] default - host:localhost
+[2020-05-02T17:38:53.672] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:38:53.672] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:38:53.672] [INFO] default - req-params:{}
+[2020-05-02T17:38:53.672] [INFO] default - req-body:{}
+[2020-05-02T17:38:58.973] [INFO] default - traceId:14430a16-fd16-4b7b-80db-d1b5c0bca8c1
+[2020-05-02T17:38:58.988] [INFO] default - [35msql执行：=> SELECT * FROM sys_user_role[39m
+[2020-05-02T17:38:58.989] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:38:58.990] [INFO] default - traceId:14430a16-fd16-4b7b-80db-d1b5c0bca8c1
+[2020-05-02T17:38:58.990] [INFO] default - host:localhost
+[2020-05-02T17:38:58.991] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:38:58.991] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:38:58.991] [INFO] default - req-params:{}
+[2020-05-02T17:38:58.991] [INFO] default - req-body:{}
+[2020-05-02T17:39:35.283] [INFO] default - traceId:e750f0ce-4faa-43d2-9e7e-c3eef4dc168e
+[2020-05-02T17:39:35.470] [INFO] default - traceId:e750f0ce-4faa-43d2-9e7e-c3eef4dc168e
+[2020-05-02T17:39:35.471] [INFO] default - host:localhost
+[2020-05-02T17:39:35.471] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:39:35.472] [INFO] default - req-query:{}
+[2020-05-02T17:39:35.472] [INFO] default - req-params:{}
+[2020-05-02T17:39:35.472] [INFO] default - req-body:{}
+[2020-05-02T17:39:35.806] [INFO] default - traceId:54b898b8-7afa-4247-b07f-b74eebf751da
+[2020-05-02T17:39:35.811] [INFO] default - traceId:929cbba9-0ceb-45f2-b22b-74940150ab71
+[2020-05-02T17:39:35.818] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:39:35.831] [INFO] default - traceId:54b898b8-7afa-4247-b07f-b74eebf751da
+[2020-05-02T17:39:35.831] [INFO] default - host:localhost
+[2020-05-02T17:39:35.831] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:39:35.832] [INFO] default - req-query:{}
+[2020-05-02T17:39:35.832] [INFO] default - req-params:{}
+[2020-05-02T17:39:35.833] [INFO] default - req-body:{}
+[2020-05-02T17:39:44.881] [INFO] default - traceId:8535ea4f-efab-4f08-9636-cb076adc91ae
+[2020-05-02T17:39:44.971] [INFO] default - traceId:8535ea4f-efab-4f08-9636-cb076adc91ae
+[2020-05-02T17:39:44.971] [INFO] default - host:localhost
+[2020-05-02T17:39:44.972] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:39:44.972] [INFO] default - req-query:{}
+[2020-05-02T17:39:44.972] [INFO] default - req-params:{}
+[2020-05-02T17:39:44.972] [INFO] default - req-body:{}
+[2020-05-02T17:39:45.379] [INFO] default - traceId:8da728c7-82b8-4857-a3b9-34abf6a165ee
+[2020-05-02T17:39:45.382] [INFO] default - traceId:1580e094-747a-4a03-af1c-f8a5be6d1daf
+[2020-05-02T17:39:45.394] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:39:45.406] [INFO] default - traceId:1580e094-747a-4a03-af1c-f8a5be6d1daf
+[2020-05-02T17:39:45.406] [INFO] default - host:localhost
+[2020-05-02T17:39:45.406] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:39:45.406] [INFO] default - req-query:{}
+[2020-05-02T17:39:45.406] [INFO] default - req-params:{}
+[2020-05-02T17:39:45.406] [INFO] default - req-body:{}
+[2020-05-02T17:39:45.440] [INFO] default - traceId:8da728c7-82b8-4857-a3b9-34abf6a165ee
+[2020-05-02T17:39:45.440] [INFO] default - host:localhost
+[2020-05-02T17:39:45.440] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:39:45.440] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:39:45.440] [INFO] default - req-params:{}
+[2020-05-02T17:39:45.440] [INFO] default - req-body:{}
+[2020-05-02T17:40:44.163] [INFO] default - traceId:4759e1b8-b442-4ce5-b135-c6d9cdcc5b6c
+[2020-05-02T17:40:44.220] [INFO] default - traceId:4759e1b8-b442-4ce5-b135-c6d9cdcc5b6c
+[2020-05-02T17:40:44.220] [INFO] default - host:localhost
+[2020-05-02T17:40:44.220] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:40:44.220] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:40:44.220] [INFO] default - req-params:{}
+[2020-05-02T17:40:44.220] [INFO] default - req-body:{}
+[2020-05-02T17:40:46.686] [INFO] default - traceId:38fa11c8-6f3c-449c-be4e-b43bb8e29c2f
+[2020-05-02T17:40:46.704] [INFO] default - traceId:38fa11c8-6f3c-449c-be4e-b43bb8e29c2f
+[2020-05-02T17:40:46.704] [INFO] default - host:localhost
+[2020-05-02T17:40:46.704] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:40:46.704] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:40:46.704] [INFO] default - req-params:{}
+[2020-05-02T17:40:46.704] [INFO] default - req-body:{}
+[2020-05-02T17:50:40.645] [INFO] default - traceId:925b6280-bb69-48f1-9b8b-f6ea5b283cc9
+[2020-05-02T17:50:40.745] [INFO] default - traceId:925b6280-bb69-48f1-9b8b-f6ea5b283cc9
+[2020-05-02T17:50:40.745] [INFO] default - host:localhost
+[2020-05-02T17:50:40.746] [INFO] default - method: [POST] URL: /api/user/createUser
+[2020-05-02T17:50:40.746] [INFO] default - req-query:{}
+[2020-05-02T17:50:40.746] [INFO] default - req-params:{}
+[2020-05-02T17:50:40.746] [INFO] default - req-body:{"user_id":1,"nick_name":"ctest","password":"1","email":"1","phone":"123131222222","avatar":"1","role_id":[3,5]}
+[2020-05-02T17:50:40.801] [INFO] default - traceId:6df34cd4-b17b-49f1-b5df-57417a6c0798
+[2020-05-02T17:50:40.862] [INFO] default - traceId:6df34cd4-b17b-49f1-b5df-57417a6c0798
+[2020-05-02T17:50:40.863] [INFO] default - host:localhost
+[2020-05-02T17:50:40.863] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:50:40.863] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:50:40.863] [INFO] default - req-params:{}
+[2020-05-02T17:50:40.863] [INFO] default - req-body:{}
+[2020-05-02T17:51:08.533] [INFO] default - traceId:336f8fa9-4545-4c85-bd3d-2c8ec61fa33a
+[2020-05-02T17:51:08.553] [INFO] default - traceId:336f8fa9-4545-4c85-bd3d-2c8ec61fa33a
+[2020-05-02T17:51:08.553] [INFO] default - host:localhost
+[2020-05-02T17:51:08.553] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:51:08.553] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:51:08.553] [INFO] default - req-params:{}
+[2020-05-02T17:51:08.553] [INFO] default - req-body:{}
+[2020-05-02T17:54:58.097] [INFO] default - traceId:b560fc04-1fb4-4245-a823-455c34c77489
+[2020-05-02T17:54:58.186] [INFO] default - traceId:b560fc04-1fb4-4245-a823-455c34c77489
+[2020-05-02T17:54:58.187] [INFO] default - host:localhost
+[2020-05-02T17:54:58.187] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:54:58.187] [INFO] default - req-query:{}
+[2020-05-02T17:54:58.187] [INFO] default - req-params:{}
+[2020-05-02T17:54:58.187] [INFO] default - req-body:{}
+[2020-05-02T17:54:58.713] [INFO] default - traceId:29855bb1-c820-4c0a-83dd-bd0f9d5d6bdb
+[2020-05-02T17:54:58.714] [INFO] default - traceId:ccfc94e1-de73-49cb-a1ac-6b65d286718c
+[2020-05-02T17:54:58.720] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:54:58.730] [INFO] default - traceId:ccfc94e1-de73-49cb-a1ac-6b65d286718c
+[2020-05-02T17:54:58.730] [INFO] default - host:localhost
+[2020-05-02T17:54:58.730] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:54:58.730] [INFO] default - req-query:{}
+[2020-05-02T17:54:58.730] [INFO] default - req-params:{}
+[2020-05-02T17:54:58.730] [INFO] default - req-body:{}
+[2020-05-02T17:54:58.751] [INFO] default - traceId:29855bb1-c820-4c0a-83dd-bd0f9d5d6bdb
+[2020-05-02T17:54:58.752] [INFO] default - host:localhost
+[2020-05-02T17:54:58.752] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:54:58.752] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:54:58.752] [INFO] default - req-params:{}
+[2020-05-02T17:54:58.752] [INFO] default - req-body:{}
+[2020-05-02T17:55:01.058] [INFO] default - traceId:ca64a808-8e9c-48bf-a453-b12bec681f7b
+[2020-05-02T17:55:01.097] [INFO] default - traceId:ca64a808-8e9c-48bf-a453-b12bec681f7b
+[2020-05-02T17:55:01.097] [INFO] default - host:localhost
+[2020-05-02T17:55:01.097] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:55:01.098] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:55:01.098] [INFO] default - req-params:{}
+[2020-05-02T17:55:01.098] [INFO] default - req-body:{}
+[2020-05-02T17:55:55.902] [INFO] default - traceId:07984f77-a805-4440-b868-183249c1f157
+[2020-05-02T17:55:55.903] [INFO] default - traceId:ed8a6578-6b04-47a8-8b0d-28406f9127ce
+[2020-05-02T17:55:55.910] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:55:55.914] [INFO] default - traceId:ed8a6578-6b04-47a8-8b0d-28406f9127ce
+[2020-05-02T17:55:55.916] [INFO] default - host:localhost
+[2020-05-02T17:55:55.916] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:55:55.916] [INFO] default - req-query:{}
+[2020-05-02T17:55:55.917] [INFO] default - req-params:{}
+[2020-05-02T17:55:55.917] [INFO] default - req-body:{}
+[2020-05-02T17:55:55.930] [INFO] default - traceId:07984f77-a805-4440-b868-183249c1f157
+[2020-05-02T17:55:55.931] [INFO] default - host:localhost
+[2020-05-02T17:55:55.931] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:55:55.931] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:55:55.931] [INFO] default - req-params:{}
+[2020-05-02T17:55:55.931] [INFO] default - req-body:{}
+[2020-05-02T17:55:56.108] [INFO] default - traceId:1ecfe099-409e-48f9-92d7-5472563eb20f
+[2020-05-02T17:55:56.109] [INFO] default - traceId:953aca06-81b1-496b-b432-878194eeb37e
+[2020-05-02T17:55:56.111] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:55:56.115] [INFO] default - traceId:953aca06-81b1-496b-b432-878194eeb37e
+[2020-05-02T17:55:56.116] [INFO] default - host:localhost
+[2020-05-02T17:55:56.116] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:55:56.116] [INFO] default - req-query:{}
+[2020-05-02T17:55:56.117] [INFO] default - req-params:{}
+[2020-05-02T17:55:56.117] [INFO] default - req-body:{}
+[2020-05-02T17:55:56.127] [INFO] default - traceId:1ecfe099-409e-48f9-92d7-5472563eb20f
+[2020-05-02T17:55:56.127] [INFO] default - host:localhost
+[2020-05-02T17:55:56.127] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:55:56.127] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:55:56.127] [INFO] default - req-params:{}
+[2020-05-02T17:55:56.128] [INFO] default - req-body:{}
+[2020-05-02T17:56:00.556] [INFO] default - traceId:8a8eccdb-bcbd-4829-b7bc-bed4e4543bf1
+[2020-05-02T17:56:00.567] [INFO] default - traceId:8a8eccdb-bcbd-4829-b7bc-bed4e4543bf1
+[2020-05-02T17:56:00.568] [INFO] default - host:localhost
+[2020-05-02T17:56:00.568] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:56:00.568] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:56:00.568] [INFO] default - req-params:{}
+[2020-05-02T17:56:00.568] [INFO] default - req-body:{}
+[2020-05-02T17:56:10.415] [INFO] default - traceId:d1316ecf-0d89-4827-87ed-8ef8a4b5f29a
+[2020-05-02T17:56:10.416] [INFO] default - traceId:fd057a0e-8e3b-4c96-b94c-35ab2c4afc9c
+[2020-05-02T17:56:10.423] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:56:10.424] [INFO] default - traceId:fd057a0e-8e3b-4c96-b94c-35ab2c4afc9c
+[2020-05-02T17:56:10.425] [INFO] default - host:localhost
+[2020-05-02T17:56:10.425] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:56:10.425] [INFO] default - req-query:{}
+[2020-05-02T17:56:10.425] [INFO] default - req-params:{}
+[2020-05-02T17:56:10.425] [INFO] default - req-body:{}
+[2020-05-02T17:56:10.432] [INFO] default - traceId:d1316ecf-0d89-4827-87ed-8ef8a4b5f29a
+[2020-05-02T17:56:10.432] [INFO] default - host:localhost
+[2020-05-02T17:56:10.432] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:56:10.432] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:56:10.432] [INFO] default - req-params:{}
+[2020-05-02T17:56:10.432] [INFO] default - req-body:{}
+[2020-05-02T17:56:19.365] [INFO] default - traceId:f3f7b27f-f1c1-4cfa-a11c-b2b1cb20e3a3
+[2020-05-02T17:56:19.367] [INFO] default - traceId:ea2fa1e3-b0bf-434e-be6c-ab9a75639ecc
+[2020-05-02T17:56:19.371] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:56:19.373] [INFO] default - traceId:ea2fa1e3-b0bf-434e-be6c-ab9a75639ecc
+[2020-05-02T17:56:19.373] [INFO] default - host:localhost
+[2020-05-02T17:56:19.373] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:56:19.373] [INFO] default - req-query:{}
+[2020-05-02T17:56:19.373] [INFO] default - req-params:{}
+[2020-05-02T17:56:19.374] [INFO] default - req-body:{}
+[2020-05-02T17:56:19.379] [INFO] default - traceId:f3f7b27f-f1c1-4cfa-a11c-b2b1cb20e3a3
+[2020-05-02T17:56:19.379] [INFO] default - host:localhost
+[2020-05-02T17:56:19.379] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:56:19.379] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:56:19.380] [INFO] default - req-params:{}
+[2020-05-02T17:56:19.380] [INFO] default - req-body:{}
+[2020-05-02T17:56:38.125] [INFO] default - traceId:1fba3443-1640-4785-b395-8eef81a4e09b
+[2020-05-02T17:56:38.136] [INFO] default - traceId:f7664217-88bf-4af3-a99a-4970e8b2b20f
+[2020-05-02T17:56:38.139] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:56:38.141] [INFO] default - traceId:f7664217-88bf-4af3-a99a-4970e8b2b20f
+[2020-05-02T17:56:38.141] [INFO] default - host:localhost
+[2020-05-02T17:56:38.141] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:56:38.141] [INFO] default - req-query:{}
+[2020-05-02T17:56:38.141] [INFO] default - req-params:{}
+[2020-05-02T17:56:38.141] [INFO] default - req-body:{}
+[2020-05-02T17:56:38.152] [INFO] default - traceId:1fba3443-1640-4785-b395-8eef81a4e09b
+[2020-05-02T17:56:38.152] [INFO] default - host:localhost
+[2020-05-02T17:56:38.152] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:56:38.152] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:56:38.152] [INFO] default - req-params:{}
+[2020-05-02T17:56:38.153] [INFO] default - req-body:{}
+[2020-05-02T17:56:44.140] [INFO] default - traceId:bf25c002-899a-43f9-99c6-54f1b91c2507
+[2020-05-02T17:56:44.173] [INFO] default - traceId:bf25c002-899a-43f9-99c6-54f1b91c2507
+[2020-05-02T17:56:44.173] [INFO] default - host:localhost
+[2020-05-02T17:56:44.173] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T17:56:44.173] [INFO] default - req-query:{}
+[2020-05-02T17:56:44.173] [INFO] default - req-params:{}
+[2020-05-02T17:56:44.173] [INFO] default - req-body:{}
+[2020-05-02T17:56:44.501] [INFO] default - traceId:9027f62d-e290-48a3-979d-9934ffa72621
+[2020-05-02T17:56:44.502] [INFO] default - traceId:d555b902-f254-4c23-8612-9ae583f8b04a
+[2020-05-02T17:56:44.505] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:56:44.508] [INFO] default - traceId:d555b902-f254-4c23-8612-9ae583f8b04a
+[2020-05-02T17:56:44.508] [INFO] default - host:localhost
+[2020-05-02T17:56:44.508] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:56:44.508] [INFO] default - req-query:{}
+[2020-05-02T17:56:44.508] [INFO] default - req-params:{}
+[2020-05-02T17:56:44.508] [INFO] default - req-body:{}
+[2020-05-02T17:56:44.513] [INFO] default - traceId:9027f62d-e290-48a3-979d-9934ffa72621
+[2020-05-02T17:56:44.513] [INFO] default - host:localhost
+[2020-05-02T17:56:44.513] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:56:44.514] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:56:44.514] [INFO] default - req-params:{}
+[2020-05-02T17:56:44.514] [INFO] default - req-body:{}
+[2020-05-02T17:57:01.556] [INFO] default - traceId:3ab6b5c3-eaa6-4f9a-ba9a-302f745019ab
+[2020-05-02T17:57:01.557] [INFO] default - traceId:667d568d-bc48-4960-a808-a90420636220
+[2020-05-02T17:57:01.562] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T17:57:01.564] [INFO] default - traceId:667d568d-bc48-4960-a808-a90420636220
+[2020-05-02T17:57:01.565] [INFO] default - host:localhost
+[2020-05-02T17:57:01.565] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T17:57:01.565] [INFO] default - req-query:{}
+[2020-05-02T17:57:01.565] [INFO] default - req-params:{}
+[2020-05-02T17:57:01.565] [INFO] default - req-body:{}
+[2020-05-02T17:57:01.578] [INFO] default - traceId:3ab6b5c3-eaa6-4f9a-ba9a-302f745019ab
+[2020-05-02T17:57:01.578] [INFO] default - host:localhost
+[2020-05-02T17:57:01.578] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T17:57:01.579] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:57:01.579] [INFO] default - req-params:{}
+[2020-05-02T17:57:01.579] [INFO] default - req-body:{}
+[2020-05-02T17:57:22.274] [INFO] default - traceId:f2b79dae-fe70-40fa-9fcf-fc6aeff8569d
+[2020-05-02T17:57:22.284] [INFO] default - traceId:f2b79dae-fe70-40fa-9fcf-fc6aeff8569d
+[2020-05-02T17:57:22.284] [INFO] default - host:localhost
+[2020-05-02T17:57:22.284] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T17:57:22.284] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T17:57:22.284] [INFO] default - req-params:{}
+[2020-05-02T17:57:22.284] [INFO] default - req-body:{}
+[2020-05-02T18:03:40.213] [INFO] default - traceId:709e0d52-862d-4ce6-ab94-6eb163a125d5
+[2020-05-02T18:04:21.114] [INFO] default - traceId:06ce0e21-e448-46c3-b9d8-bade8b84bd69
+[2020-05-02T18:06:45.011] [INFO] default - traceId:fa4b9847-d06f-4c23-a614-1d3ec67102be
+[2020-05-02T18:06:54.467] [INFO] default - traceId:fa4b9847-d06f-4c23-a614-1d3ec67102be
+[2020-05-02T18:06:54.469] [INFO] default - host:localhost
+[2020-05-02T18:06:54.470] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T18:06:54.470] [INFO] default - req-query:{}
+[2020-05-02T18:06:54.471] [INFO] default - req-params:{}
+[2020-05-02T18:06:54.471] [INFO] default - req-body:{}
+[2020-05-02T18:06:54.851] [INFO] default - traceId:780921cf-4fea-445b-9175-0d0a8848741d
+[2020-05-02T18:06:54.855] [INFO] default - traceId:65756f90-186f-4d34-80fe-83e18b254250
+[2020-05-02T18:06:54.869] [INFO] default - sql执行：=> SELECT * FROM sys_role
+[2020-05-02T18:06:54.880] [INFO] default - traceId:65756f90-186f-4d34-80fe-83e18b254250
+[2020-05-02T18:06:54.881] [INFO] default - host:localhost
+[2020-05-02T18:06:54.881] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T18:06:54.882] [INFO] default - req-query:{}
+[2020-05-02T18:06:54.882] [INFO] default - req-params:{}
+[2020-05-02T18:06:54.882] [INFO] default - req-body:{}
+[2020-05-02T18:06:54.930] [INFO] default - traceId:780921cf-4fea-445b-9175-0d0a8848741d
+[2020-05-02T18:06:54.933] [INFO] default - host:localhost
+[2020-05-02T18:06:54.933] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T18:06:54.934] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:06:54.935] [INFO] default - req-params:{}
+[2020-05-02T18:06:54.935] [INFO] default - req-body:{}
+[2020-05-02T18:06:57.771] [INFO] default - traceId:bc57b9d3-b19f-4f82-b7f9-5044f8c76da5
+[2020-05-02T18:06:57.793] [INFO] default - traceId:bc57b9d3-b19f-4f82-b7f9-5044f8c76da5
+[2020-05-02T18:06:57.794] [INFO] default - host:localhost
+[2020-05-02T18:06:57.794] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T18:06:57.794] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:06:57.794] [INFO] default - req-params:{}
+[2020-05-02T18:06:57.794] [INFO] default - req-body:{}
+[2020-05-02T18:07:18.616] [INFO] default - traceId:92150f18-712b-4dfd-b36e-b5d4930479a6
+[2020-05-02T18:20:04.111] [INFO] default - traceId:802ea995-9a35-4e5a-aadf-f9b927de40ad
+[2020-05-02T18:20:04.244] [INFO] default - traceId:802ea995-9a35-4e5a-aadf-f9b927de40ad
+[2020-05-02T18:20:04.245] [INFO] default - host:localhost
+[2020-05-02T18:20:04.245] [INFO] default - method: [PUT] URL: /api/user/updateUser
+[2020-05-02T18:20:04.245] [INFO] default - req-query:{}
+[2020-05-02T18:20:04.245] [INFO] default - req-params:{}
+[2020-05-02T18:20:04.245] [INFO] default - req-body:{"user_id":44,"nick_name":"ctest","password":"1bd94db0ac601eb1","email":"1","phone":"123131222222","avatar":"1","role_id":[3]}
+[2020-05-02T18:20:04.312] [INFO] default - traceId:0ecd1056-c8f2-4216-8599-34217cc966bd
+[2020-05-02T18:20:04.365] [INFO] default - traceId:0ecd1056-c8f2-4216-8599-34217cc966bd
+[2020-05-02T18:20:04.365] [INFO] default - host:localhost
+[2020-05-02T18:20:04.365] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T18:20:04.365] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:20:04.365] [INFO] default - req-params:{}
+[2020-05-02T18:20:04.365] [INFO] default - req-body:{}
+[2020-05-02T18:20:55.537] [INFO] default - traceId:cd27c249-118d-4e9c-848f-aadc0f1fcf55
+[2020-05-02T18:20:55.591] [INFO] default - traceId:cd27c249-118d-4e9c-848f-aadc0f1fcf55
+[2020-05-02T18:20:55.592] [INFO] default - host:localhost
+[2020-05-02T18:20:55.592] [INFO] default - method: [PUT] URL: /api/user/updateUser
+[2020-05-02T18:20:55.592] [INFO] default - req-query:{}
+[2020-05-02T18:20:55.592] [INFO] default - req-params:{}
+[2020-05-02T18:20:55.592] [INFO] default - req-body:{"user_id":44,"nick_name":"ctest","password":"1bd94db0ac601eb1","email":"1","phone":"123131222222","avatar":"1","role_id":[3,5]}
+[2020-05-02T18:20:55.624] [INFO] default - traceId:ea22fdaf-c17a-4a79-8147-452830e575e6
+[2020-05-02T18:20:55.648] [INFO] default - traceId:ea22fdaf-c17a-4a79-8147-452830e575e6
+[2020-05-02T18:20:55.648] [INFO] default - host:localhost
+[2020-05-02T18:20:55.648] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T18:20:55.649] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:20:55.649] [INFO] default - req-params:{}
+[2020-05-02T18:20:55.649] [INFO] default - req-body:{}
+[2020-05-02T18:24:09.213] [INFO] default - traceId:01f007ef-2c38-4c50-9fb3-183128b5e869
+[2020-05-02T18:28:15.751] [INFO] default - traceId:9ad8eedc-4803-4e88-9c12-26d193a2a215
+[2020-05-02T18:28:15.876] [INFO] default - traceId:01f007ef-2c38-4c50-9fb3-183128b5e869
+[2020-05-02T18:28:15.877] [INFO] default - host:localhost
+[2020-05-02T18:28:15.877] [INFO] default - method: [PUT] URL: /api/user/updateUser
+[2020-05-02T18:28:15.877] [INFO] default - req-query:{}
+[2020-05-02T18:28:15.877] [INFO] default - req-params:{}
+[2020-05-02T18:28:15.877] [INFO] default - req-body:{"user_id":44,"nick_name":"ctest","password":"1bd94db0ac601eb1","email":"1","phone":"123131222222","avatar":"1","role_id":[3]}
+[2020-05-02T18:28:16.843] [INFO] default - traceId:9ad8eedc-4803-4e88-9c12-26d193a2a215
+[2020-05-02T18:28:16.844] [INFO] default - host:localhost
+[2020-05-02T18:28:16.844] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T18:28:16.844] [INFO] default - req-query:{}
+[2020-05-02T18:28:16.844] [INFO] default - req-params:{}
+[2020-05-02T18:28:16.845] [INFO] default - req-body:{}
+[2020-05-02T18:28:17.245] [INFO] default - traceId:1187e23f-c8f9-42ca-8a27-74874c574789
+[2020-05-02T18:28:17.256] [INFO] default - traceId:0c167f53-3521-45aa-8fc3-3fe14a517d38
+[2020-05-02T18:28:17.280] [INFO] default - sql执行：=> SELECT * FROM sys_role
+[2020-05-02T18:28:17.293] [INFO] default - traceId:0c167f53-3521-45aa-8fc3-3fe14a517d38
+[2020-05-02T18:28:17.294] [INFO] default - host:localhost
+[2020-05-02T18:28:17.294] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T18:28:17.294] [INFO] default - req-query:{}
+[2020-05-02T18:28:17.294] [INFO] default - req-params:{}
+[2020-05-02T18:28:17.295] [INFO] default - req-body:{}
+[2020-05-02T18:28:17.301] [INFO] default - traceId:1187e23f-c8f9-42ca-8a27-74874c574789
+[2020-05-02T18:28:17.301] [INFO] default - host:localhost
+[2020-05-02T18:28:17.302] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-02T18:28:17.302] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:28:17.302] [INFO] default - req-params:{}
+[2020-05-02T18:28:17.302] [INFO] default - req-body:{}
+[2020-05-02T18:28:20.783] [INFO] default - traceId:8aa8ab64-88b4-4454-8ac0-5a236d2cecc6
+[2020-05-02T18:28:20.795] [INFO] default - traceId:8aa8ab64-88b4-4454-8ac0-5a236d2cecc6
+[2020-05-02T18:28:20.795] [INFO] default - host:localhost
+[2020-05-02T18:28:20.795] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T18:28:20.796] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:28:20.796] [INFO] default - req-params:{}
+[2020-05-02T18:28:20.796] [INFO] default - req-body:{}
+[2020-05-02T18:29:08.489] [INFO] default - traceId:d9effab5-1ca0-4456-9e2b-435f952f92de
+[2020-05-02T18:29:08.499] [INFO] default - sql执行：=> DELETE FROM sys_user_role WHERE user_id = 44
+[2020-05-02T18:29:08.550] [INFO] default - sql执行：=> DELETE FROM sys_user  WHERE user_id = 44
+[2020-05-02T18:29:08.553] [INFO] default - traceId:d9effab5-1ca0-4456-9e2b-435f952f92de
+[2020-05-02T18:29:08.554] [INFO] default - host:localhost
+[2020-05-02T18:29:08.554] [INFO] default - method: [DELETE] URL: /api/user/deleteUser
+[2020-05-02T18:29:08.554] [INFO] default - req-query:{}
+[2020-05-02T18:29:08.554] [INFO] default - req-params:{}
+[2020-05-02T18:29:08.554] [INFO] default - req-body:{"user_id":44}
+[2020-05-02T18:29:08.567] [INFO] default - traceId:fc0f5ce0-c16e-40fb-9821-d22ee4af6c36
+[2020-05-02T18:29:08.586] [INFO] default - traceId:fc0f5ce0-c16e-40fb-9821-d22ee4af6c36
+[2020-05-02T18:29:08.586] [INFO] default - host:localhost
+[2020-05-02T18:29:08.587] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T18:29:08.587] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:29:08.587] [INFO] default - req-params:{}
+[2020-05-02T18:29:08.587] [INFO] default - req-body:{}
+[2020-05-02T18:31:20.022] [INFO] default - traceId:08886e47-53dd-49c4-bc68-c37d1802284d
+[2020-05-02T18:31:20.062] [INFO] default - traceId:08886e47-53dd-49c4-bc68-c37d1802284d
+[2020-05-02T18:31:20.063] [INFO] default - host:localhost
+[2020-05-02T18:31:20.063] [INFO] default - method: [PUT] URL: /api/user/updateUser
+[2020-05-02T18:31:20.063] [INFO] default - req-query:{}
+[2020-05-02T18:31:20.063] [INFO] default - req-params:{}
+[2020-05-02T18:31:20.063] [INFO] default - req-body:{"user_id":43,"nick_name":"甄姬","password":"1d7f33f8216eca12","email":"12","phone":"1154789","avatar":"123","role_id":[3,5]}
+[2020-05-02T18:31:20.090] [INFO] default - traceId:c11333d0-c441-4346-8193-f7ef177e2c74
+[2020-05-02T18:31:20.118] [INFO] default - traceId:c11333d0-c441-4346-8193-f7ef177e2c74
+[2020-05-02T18:31:20.119] [INFO] default - host:localhost
+[2020-05-02T18:31:20.119] [INFO] default - method: [GET] URL: /api/user/list?page=2&pageSize=10&currentPage=1
+[2020-05-02T18:31:20.120] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-02T18:31:20.120] [INFO] default - req-params:{}
+[2020-05-02T18:31:20.120] [INFO] default - req-body:{}
+[2020-05-02T18:41:58.306] [INFO] default - traceId:cef8c46a-6443-4d2f-bd8d-17959eeaf40e
+[2020-05-02T18:41:58.326] [INFO] default - sql执行：=> SELECT * FROM sys_role
+[2020-05-02T18:41:58.329] [INFO] default - traceId:cef8c46a-6443-4d2f-bd8d-17959eeaf40e
+[2020-05-02T18:41:58.329] [INFO] default - host:localhost
+[2020-05-02T18:41:58.329] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T18:41:58.329] [INFO] default - req-query:{}
+[2020-05-02T18:41:58.329] [INFO] default - req-params:{}
+[2020-05-02T18:41:58.330] [INFO] default - req-body:{}
+[2020-05-02T18:43:25.515] [INFO] default - traceId:1bd02e2f-888e-4a79-890e-4edb2871e7f5
+[2020-05-02T18:43:25.522] [INFO] default - traceId:11e9d125-0b48-4579-afc8-dd290ad14c07
+[2020-05-02T18:43:25.525] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-05-02T18:43:25.540] [INFO] default - traceId:1bd02e2f-888e-4a79-890e-4edb2871e7f5
+[2020-05-02T18:43:25.540] [INFO] default - host:localhost
+[2020-05-02T18:43:25.540] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=1
+[2020-05-02T18:43:25.540] [INFO] default - req-query:{"role_id":"1"}
+[2020-05-02T18:43:25.541] [INFO] default - req-params:{}
+[2020-05-02T18:43:25.541] [INFO] default - req-body:{}
+[2020-05-02T18:43:29.810] [INFO] default - traceId:ce8fad5b-9cc8-4d1a-bde4-c3fb899818b0
+[2020-05-02T18:43:29.812] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-05-02T18:43:29.813] [INFO] default - traceId:ce8fad5b-9cc8-4d1a-bde4-c3fb899818b0
+[2020-05-02T18:43:29.813] [INFO] default - host:localhost
+[2020-05-02T18:43:29.813] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=1
+[2020-05-02T18:43:29.813] [INFO] default - req-query:{"role_id":"1"}
+[2020-05-02T18:43:29.813] [INFO] default - req-params:{}
+[2020-05-02T18:43:29.813] [INFO] default - req-body:{}
+[2020-05-02T18:43:39.134] [INFO] default - traceId:92736f33-2e71-4dc9-94a0-c7866b6e36e9
+[2020-05-02T18:43:46.958] [INFO] default - traceId:2e178bed-ed37-4700-a7a2-d6962494141b
+[2020-05-02T18:43:46.959] [INFO] default - traceId:3cc832ff-7d46-4279-b0ba-3c2e5d83ab4d
+[2020-05-02T18:43:46.968] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-05-02T18:43:46.971] [INFO] default - traceId:3cc832ff-7d46-4279-b0ba-3c2e5d83ab4d
+[2020-05-02T18:43:46.972] [INFO] default - host:localhost
+[2020-05-02T18:43:46.972] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=1
+[2020-05-02T18:43:46.972] [INFO] default - req-query:{"role_id":"1"}
+[2020-05-02T18:43:46.972] [INFO] default - req-params:{}
+[2020-05-02T18:43:46.972] [INFO] default - req-body:{}
+[2020-05-02T18:44:39.777] [INFO] default - traceId:bde3c908-9fd2-4898-920f-b6da983bce3e
+[2020-05-02T18:44:39.784] [INFO] default - traceId:ab27193f-a626-4baa-adfd-2a4dc2c08149
+[2020-05-02T18:44:39.800] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 5;[39m
+[2020-05-02T18:44:39.821] [INFO] default - traceId:bde3c908-9fd2-4898-920f-b6da983bce3e
+[2020-05-02T18:44:39.822] [INFO] default - host:localhost
+[2020-05-02T18:44:39.823] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T18:44:39.823] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T18:44:39.823] [INFO] default - req-params:{}
+[2020-05-02T18:44:39.823] [INFO] default - req-body:{}
+[2020-05-02T18:46:01.524] [INFO] default - traceId:1891a1a0-248e-478b-9b72-019a3fe8135b
+[2020-05-02T18:46:01.532] [INFO] default - traceId:1bb41f3a-d2d4-4cea-8988-7dfc23e16043
+[2020-05-02T18:46:01.533] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 5;[39m
+[2020-05-02T18:46:01.546] [INFO] default - traceId:1891a1a0-248e-478b-9b72-019a3fe8135b
+[2020-05-02T18:46:01.547] [INFO] default - host:localhost
+[2020-05-02T18:46:01.547] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T18:46:01.547] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T18:46:01.547] [INFO] default - req-params:{}
+[2020-05-02T18:46:01.547] [INFO] default - req-body:{}
+[2020-05-02T18:46:01.603] [INFO] default - traceId:1bb41f3a-d2d4-4cea-8988-7dfc23e16043
+[2020-05-02T18:46:01.603] [INFO] default - host:localhost
+[2020-05-02T18:46:01.603] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T18:46:01.603] [INFO] default - req-query:{}
+[2020-05-02T18:46:01.603] [INFO] default - req-params:{}
+[2020-05-02T18:46:01.603] [INFO] default - req-body:{}
+[2020-05-02T18:46:08.577] [INFO] default - traceId:af3cf3ec-42a0-4a6a-a370-14d9c3188da6
+[2020-05-02T18:46:08.590] [INFO] default - traceId:af3cf3ec-42a0-4a6a-a370-14d9c3188da6
+[2020-05-02T18:46:08.590] [INFO] default - host:localhost
+[2020-05-02T18:46:08.590] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T18:46:08.590] [INFO] default - req-query:{}
+[2020-05-02T18:46:08.590] [INFO] default - req-params:{}
+[2020-05-02T18:46:08.590] [INFO] default - req-body:{}
+[2020-05-02T18:46:08.592] [INFO] default - traceId:ab9e4815-e6b3-41e3-b34d-ebb6d4ec3748
+[2020-05-02T18:46:08.596] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 3;[39m
+[2020-05-02T18:46:08.600] [INFO] default - traceId:ab9e4815-e6b3-41e3-b34d-ebb6d4ec3748
+[2020-05-02T18:46:08.601] [INFO] default - host:localhost
+[2020-05-02T18:46:08.601] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=3
+[2020-05-02T18:46:08.601] [INFO] default - req-query:{"role_id":"3"}
+[2020-05-02T18:46:08.601] [INFO] default - req-params:{}
+[2020-05-02T18:46:08.601] [INFO] default - req-body:{}
+[2020-05-02T18:46:10.910] [INFO] default - traceId:e22c8996-8582-4552-9bd1-be1dab984535
+[2020-05-02T18:46:10.912] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 3;[39m
+[2020-05-02T18:46:10.914] [INFO] default - traceId:e22c8996-8582-4552-9bd1-be1dab984535
+[2020-05-02T18:46:10.914] [INFO] default - host:localhost
+[2020-05-02T18:46:10.914] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=3
+[2020-05-02T18:46:10.914] [INFO] default - req-query:{"role_id":"3"}
+[2020-05-02T18:46:10.915] [INFO] default - req-params:{}
+[2020-05-02T18:46:10.915] [INFO] default - req-body:{}
+[2020-05-02T18:46:10.916] [INFO] default - traceId:d6b16733-7cb2-4e3d-bc04-9a5b6bf74991
+[2020-05-02T18:46:10.923] [INFO] default - traceId:d6b16733-7cb2-4e3d-bc04-9a5b6bf74991
+[2020-05-02T18:46:10.924] [INFO] default - host:localhost
+[2020-05-02T18:46:10.924] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T18:46:10.924] [INFO] default - req-query:{}
+[2020-05-02T18:46:10.924] [INFO] default - req-params:{}
+[2020-05-02T18:46:10.924] [INFO] default - req-body:{}
+[2020-05-02T18:46:12.467] [INFO] default - traceId:020045ba-3470-42d5-8ff4-77a3f81ef9f7
+[2020-05-02T18:46:12.468] [INFO] default - traceId:8ef8d907-8a71-4cff-bd3c-e42716895df2
+[2020-05-02T18:46:12.471] [INFO] default - [35msql执行：=> SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = 1;[39m
+[2020-05-02T18:46:12.473] [INFO] default - traceId:020045ba-3470-42d5-8ff4-77a3f81ef9f7
+[2020-05-02T18:46:12.473] [INFO] default - host:localhost
+[2020-05-02T18:46:12.474] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=1
+[2020-05-02T18:46:12.474] [INFO] default - req-query:{"role_id":"1"}
+[2020-05-02T18:46:12.474] [INFO] default - req-params:{}
+[2020-05-02T18:46:12.474] [INFO] default - req-body:{}
+[2020-05-02T18:46:12.481] [INFO] default - traceId:8ef8d907-8a71-4cff-bd3c-e42716895df2
+[2020-05-02T18:46:12.481] [INFO] default - host:localhost
+[2020-05-02T18:46:12.481] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T18:46:12.482] [INFO] default - req-query:{}
+[2020-05-02T18:46:12.483] [INFO] default - req-params:{}
+[2020-05-02T18:46:12.483] [INFO] default - req-body:{}
+[2020-05-02T18:50:08.897] [INFO] default - traceId:80d3e19a-0765-4404-9d29-79c779bf42d8
+[2020-05-02T18:50:08.905] [INFO] default - traceId:ea34948e-cb70-4e33-b560-a737bbab9aa8
+[2020-05-02T18:50:08.935] [INFO] default - traceId:ea34948e-cb70-4e33-b560-a737bbab9aa8
+[2020-05-02T18:50:08.936] [INFO] default - host:localhost
+[2020-05-02T18:50:08.938] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T18:50:08.938] [INFO] default - req-query:{}
+[2020-05-02T18:50:08.938] [INFO] default - req-params:{}
+[2020-05-02T18:50:08.939] [INFO] default - req-body:{}
+[2020-05-02T18:50:08.955] [INFO] default - traceId:80d3e19a-0765-4404-9d29-79c779bf42d8
+[2020-05-02T18:50:08.955] [INFO] default - host:localhost
+[2020-05-02T18:50:08.955] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=1
+[2020-05-02T18:50:08.955] [INFO] default - req-query:{"role_id":"1"}
+[2020-05-02T18:50:08.955] [INFO] default - req-params:{}
+[2020-05-02T18:50:08.956] [INFO] default - req-body:{}
+[2020-05-02T18:54:16.902] [INFO] default - traceId:ad4a6384-f636-4cdd-a679-c8a170ad54ac
+[2020-05-02T18:54:16.913] [INFO] default - traceId:59b7a805-05d5-4918-b357-f6c2e7a3dcb3
+[2020-05-02T18:54:16.947] [INFO] default - traceId:ad4a6384-f636-4cdd-a679-c8a170ad54ac
+[2020-05-02T18:54:16.947] [INFO] default - host:localhost
+[2020-05-02T18:54:16.947] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T18:54:16.947] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T18:54:16.948] [INFO] default - req-params:{}
+[2020-05-02T18:54:16.948] [INFO] default - req-body:{}
+[2020-05-02T18:54:16.960] [INFO] default - traceId:59b7a805-05d5-4918-b357-f6c2e7a3dcb3
+[2020-05-02T18:54:16.960] [INFO] default - host:localhost
+[2020-05-02T18:54:16.960] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T18:54:16.960] [INFO] default - req-query:{}
+[2020-05-02T18:54:16.960] [INFO] default - req-params:{}
+[2020-05-02T18:54:16.960] [INFO] default - req-body:{}
+[2020-05-02T18:55:16.835] [INFO] default - traceId:04cdca84-eafa-4c12-94ab-99c33779edb5
+[2020-05-02T18:57:34.478] [INFO] default - traceId:143c43d3-b5cc-4bab-8859-ce7e10064800
+[2020-05-02T18:57:43.485] [INFO] default - traceId:8596c65d-845a-4b59-89f9-c46d6d62d315
+[2020-05-02T18:59:11.277] [INFO] default - traceId:905a1445-63f2-434f-8618-7fc710da6dac
+[2020-05-02T18:59:11.617] [INFO] default - traceId:905a1445-63f2-434f-8618-7fc710da6dac
+[2020-05-02T18:59:11.617] [INFO] default - host:localhost
+[2020-05-02T18:59:11.618] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T18:59:11.618] [INFO] default - req-query:{}
+[2020-05-02T18:59:11.618] [INFO] default - req-params:{}
+[2020-05-02T18:59:11.618] [INFO] default - req-body:{}
+[2020-05-02T18:59:12.291] [INFO] default - traceId:cc80efc6-9522-48c7-919d-299e68c7a4c2
+[2020-05-02T18:59:12.295] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T18:59:12.299] [INFO] default - traceId:cc80efc6-9522-48c7-919d-299e68c7a4c2
+[2020-05-02T18:59:12.300] [INFO] default - host:localhost
+[2020-05-02T18:59:12.300] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T18:59:12.300] [INFO] default - req-query:{}
+[2020-05-02T18:59:12.300] [INFO] default - req-params:{}
+[2020-05-02T18:59:12.300] [INFO] default - req-body:{}
+[2020-05-02T18:59:13.982] [INFO] default - traceId:16152257-dbfb-49b6-ab0a-0f4b4edc822f
+[2020-05-02T18:59:13.984] [INFO] default - traceId:3b60c0cc-673f-4c09-bdcb-bf996b3410e6
+[2020-05-02T18:59:14.003] [INFO] default - traceId:16152257-dbfb-49b6-ab0a-0f4b4edc822f
+[2020-05-02T18:59:14.004] [INFO] default - host:localhost
+[2020-05-02T18:59:14.004] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T18:59:14.004] [INFO] default - req-query:{}
+[2020-05-02T18:59:14.004] [INFO] default - req-params:{}
+[2020-05-02T18:59:14.005] [INFO] default - req-body:{}
+[2020-05-02T18:59:14.010] [INFO] default - traceId:3b60c0cc-673f-4c09-bdcb-bf996b3410e6
+[2020-05-02T18:59:14.012] [INFO] default - host:localhost
+[2020-05-02T18:59:14.013] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T18:59:14.013] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T18:59:14.013] [INFO] default - req-params:{}
+[2020-05-02T18:59:14.013] [INFO] default - req-body:{}
+[2020-05-02T18:59:23.440] [INFO] default - traceId:f0337df5-7f9c-4ded-ad74-be6a9f06b32d
+[2020-05-02T19:02:07.227] [INFO] default - traceId:046be192-594d-40e7-8f10-db3dcaaf3668
+[2020-05-02T19:04:57.962] [INFO] default - traceId:f90f33c9-6291-4b30-879e-fa4ce7426cc0
+[2020-05-02T19:11:06.153] [INFO] default - traceId:0df98d82-1e75-494c-99f9-897d12df668d
+[2020-05-02T19:22:15.521] [INFO] default - traceId:bf9cbcda-3e0b-48a8-8fd6-c6a0f0f88e3d
+[2020-05-02T19:22:15.598] [INFO] default - traceId:bf9cbcda-3e0b-48a8-8fd6-c6a0f0f88e3d
+[2020-05-02T19:22:15.599] [INFO] default - host:localhost
+[2020-05-02T19:22:15.599] [INFO] default - method: [POST] URL: /api/role/setRoleTreePer/
+[2020-05-02T19:22:15.599] [INFO] default - req-query:{}
+[2020-05-02T19:22:15.600] [INFO] default - req-params:{}
+[2020-05-02T19:22:15.600] [INFO] default - req-body:{"res_idArr":[1,5,4,8],"role_id":5}
+[2020-05-02T19:22:34.428] [INFO] default - traceId:f731008c-68ff-4684-a76b-edd034e57b92
+[2020-05-02T19:22:34.430] [INFO] default - traceId:a9ad40ca-b016-4902-be46-d7fbbe455688
+[2020-05-02T19:22:34.473] [INFO] default - traceId:a9ad40ca-b016-4902-be46-d7fbbe455688
+[2020-05-02T19:22:34.473] [INFO] default - host:localhost
+[2020-05-02T19:22:34.473] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:22:34.473] [INFO] default - req-query:{}
+[2020-05-02T19:22:34.474] [INFO] default - req-params:{}
+[2020-05-02T19:22:34.474] [INFO] default - req-body:{}
+[2020-05-02T19:22:34.476] [INFO] default - traceId:f731008c-68ff-4684-a76b-edd034e57b92
+[2020-05-02T19:22:34.476] [INFO] default - host:localhost
+[2020-05-02T19:22:34.476] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T19:22:34.477] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T19:22:34.477] [INFO] default - req-params:{}
+[2020-05-02T19:22:34.477] [INFO] default - req-body:{}
+[2020-05-02T19:22:40.904] [INFO] default - traceId:06371f50-f2d6-4ece-9c22-27243543530b
+[2020-05-02T19:22:41.017] [INFO] default - traceId:06371f50-f2d6-4ece-9c22-27243543530b
+[2020-05-02T19:22:41.017] [INFO] default - host:localhost
+[2020-05-02T19:22:41.018] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T19:22:41.117] [INFO] default - req-query:{}
+[2020-05-02T19:22:41.118] [INFO] default - req-params:{}
+[2020-05-02T19:22:41.118] [INFO] default - req-body:{}
+[2020-05-02T19:22:41.533] [INFO] default - traceId:d687c2df-0773-4a1c-bd6f-a60369a157e0
+[2020-05-02T19:22:41.539] [INFO] default - [35msql执行：=> SELECT * FROM sys_role[39m
+[2020-05-02T19:22:41.541] [INFO] default - traceId:d687c2df-0773-4a1c-bd6f-a60369a157e0
+[2020-05-02T19:22:41.542] [INFO] default - host:localhost
+[2020-05-02T19:22:41.542] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:22:41.542] [INFO] default - req-query:{}
+[2020-05-02T19:22:41.542] [INFO] default - req-params:{}
+[2020-05-02T19:22:41.542] [INFO] default - req-body:{}
+[2020-05-02T19:22:42.991] [INFO] default - traceId:b8be2bf3-3b8f-4ef5-b8ad-1c1ba131db7f
+[2020-05-02T19:22:42.994] [INFO] default - traceId:e3edf872-af24-4b69-9290-5e858f75eb8c
+[2020-05-02T19:22:43.005] [INFO] default - traceId:b8be2bf3-3b8f-4ef5-b8ad-1c1ba131db7f
+[2020-05-02T19:22:43.005] [INFO] default - host:localhost
+[2020-05-02T19:22:43.005] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T19:22:43.005] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T19:22:43.005] [INFO] default - req-params:{}
+[2020-05-02T19:22:43.005] [INFO] default - req-body:{}
+[2020-05-02T19:22:43.009] [INFO] default - traceId:e3edf872-af24-4b69-9290-5e858f75eb8c
+[2020-05-02T19:22:43.009] [INFO] default - host:localhost
+[2020-05-02T19:22:43.009] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:22:43.009] [INFO] default - req-query:{}
+[2020-05-02T19:22:43.009] [INFO] default - req-params:{}
+[2020-05-02T19:22:43.009] [INFO] default - req-body:{}
+[2020-05-02T19:22:44.626] [INFO] default - traceId:f75e4c5d-6b56-452f-8fc0-5fe4360aa032
+[2020-05-02T19:22:44.627] [INFO] default - traceId:1f67d524-6482-4bd5-b79a-a1ede61ad133
+[2020-05-02T19:22:44.636] [INFO] default - traceId:1f67d524-6482-4bd5-b79a-a1ede61ad133
+[2020-05-02T19:22:44.636] [INFO] default - host:localhost
+[2020-05-02T19:22:44.636] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:22:44.636] [INFO] default - req-query:{}
+[2020-05-02T19:22:44.636] [INFO] default - req-params:{}
+[2020-05-02T19:22:44.636] [INFO] default - req-body:{}
+[2020-05-02T19:22:44.638] [INFO] default - traceId:f75e4c5d-6b56-452f-8fc0-5fe4360aa032
+[2020-05-02T19:22:44.638] [INFO] default - host:localhost
+[2020-05-02T19:22:44.639] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T19:22:44.639] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T19:22:44.639] [INFO] default - req-params:{}
+[2020-05-02T19:22:44.639] [INFO] default - req-body:{}
+[2020-05-02T19:22:48.980] [INFO] default - traceId:7226d624-89df-4f52-91d2-58e4fc316b32
+[2020-05-02T19:22:49.009] [INFO] default - traceId:7226d624-89df-4f52-91d2-58e4fc316b32
+[2020-05-02T19:22:49.010] [INFO] default - host:localhost
+[2020-05-02T19:22:49.010] [INFO] default - method: [POST] URL: /api/role/setRoleTreePer/
+[2020-05-02T19:22:49.010] [INFO] default - req-query:{}
+[2020-05-02T19:22:49.010] [INFO] default - req-params:{}
+[2020-05-02T19:22:49.010] [INFO] default - req-body:{"res_idArr":[1,5,4,8],"role_id":5}
+[2020-05-02T19:23:58.764] [INFO] default - traceId:03f36565-3a54-4d62-a8be-819743182f8a
+[2020-05-02T19:23:58.767] [INFO] default - traceId:aa94118f-cf83-4844-8a2f-0113b517597e
+[2020-05-02T19:23:58.782] [INFO] default - traceId:03f36565-3a54-4d62-a8be-819743182f8a
+[2020-05-02T19:23:58.783] [INFO] default - host:localhost
+[2020-05-02T19:23:58.783] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T19:23:58.783] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T19:23:58.783] [INFO] default - req-params:{}
+[2020-05-02T19:23:58.783] [INFO] default - req-body:{}
+[2020-05-02T19:23:58.787] [INFO] default - traceId:aa94118f-cf83-4844-8a2f-0113b517597e
+[2020-05-02T19:23:58.787] [INFO] default - host:localhost
+[2020-05-02T19:23:58.788] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:23:58.788] [INFO] default - req-query:{}
+[2020-05-02T19:23:58.788] [INFO] default - req-params:{}
+[2020-05-02T19:23:58.789] [INFO] default - req-body:{}
+[2020-05-02T19:26:35.271] [INFO] default - traceId:e003faa8-c1f5-4dcd-b067-9dca981919a5
+[2020-05-02T19:26:35.330] [INFO] default - traceId:e003faa8-c1f5-4dcd-b067-9dca981919a5
+[2020-05-02T19:26:35.330] [INFO] default - host:localhost
+[2020-05-02T19:26:35.330] [INFO] default - method: [POST] URL: /api/role/setRoleTreePer/
+[2020-05-02T19:26:35.330] [INFO] default - req-query:{}
+[2020-05-02T19:26:35.331] [INFO] default - req-params:{}
+[2020-05-02T19:26:35.331] [INFO] default - req-body:{"res_idArr":[1,5,4,8],"role_id":5}
+[2020-05-02T19:27:10.541] [INFO] default - traceId:fe3845fc-cc0f-4184-8331-337a48aa4f72
+[2020-05-02T19:27:10.543] [INFO] default - traceId:f217f38e-01b6-4c4b-bee2-c62734dad505
+[2020-05-02T19:27:10.583] [INFO] default - traceId:f217f38e-01b6-4c4b-bee2-c62734dad505
+[2020-05-02T19:27:10.583] [INFO] default - host:localhost
+[2020-05-02T19:27:10.584] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:27:10.584] [INFO] default - req-query:{}
+[2020-05-02T19:27:10.584] [INFO] default - req-params:{}
+[2020-05-02T19:27:10.584] [INFO] default - req-body:{}
+[2020-05-02T19:27:10.586] [INFO] default - traceId:fe3845fc-cc0f-4184-8331-337a48aa4f72
+[2020-05-02T19:27:10.586] [INFO] default - host:localhost
+[2020-05-02T19:27:10.586] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T19:27:10.587] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T19:27:10.587] [INFO] default - req-params:{}
+[2020-05-02T19:27:10.587] [INFO] default - req-body:{}
+[2020-05-02T19:30:59.671] [INFO] default - traceId:5fbe95bc-126b-4918-9a9f-c1d085371e5a
+[2020-05-02T19:30:59.800] [INFO] default - traceId:5fbe95bc-126b-4918-9a9f-c1d085371e5a
+[2020-05-02T19:30:59.800] [INFO] default - host:localhost
+[2020-05-02T19:30:59.800] [INFO] default - method: [POST] URL: /api/role/setRoleTreePer/
+[2020-05-02T19:30:59.800] [INFO] default - req-query:{}
+[2020-05-02T19:30:59.800] [INFO] default - req-params:{}
+[2020-05-02T19:30:59.800] [INFO] default - req-body:{"res_idArr":[1,5,4,8],"role_id":5}
+[2020-05-02T19:31:14.442] [INFO] default - traceId:8d268bca-269a-47cc-9c35-b8f670e42d25
+[2020-05-02T19:31:14.452] [INFO] default - traceId:843ca1e8-844b-4c19-8868-4f818c0bce97
+[2020-05-02T19:31:14.495] [INFO] default - traceId:8d268bca-269a-47cc-9c35-b8f670e42d25
+[2020-05-02T19:31:14.496] [INFO] default - host:localhost
+[2020-05-02T19:31:14.496] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T19:31:14.497] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T19:31:14.497] [INFO] default - req-params:{}
+[2020-05-02T19:31:14.498] [INFO] default - req-body:{}
+[2020-05-02T19:31:14.562] [INFO] default - traceId:843ca1e8-844b-4c19-8868-4f818c0bce97
+[2020-05-02T19:31:14.562] [INFO] default - host:localhost
+[2020-05-02T19:31:14.562] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:31:14.562] [INFO] default - req-query:{}
+[2020-05-02T19:31:14.563] [INFO] default - req-params:{}
+[2020-05-02T19:31:14.563] [INFO] default - req-body:{}
+[2020-05-02T19:33:57.464] [INFO] default - traceId:85ef93ee-3432-4d00-afb4-09f95a3f1837
+[2020-05-02T19:33:57.772] [INFO] default - traceId:85ef93ee-3432-4d00-afb4-09f95a3f1837
+[2020-05-02T19:33:57.774] [INFO] default - host:localhost
+[2020-05-02T19:33:57.774] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T19:33:57.774] [INFO] default - req-query:{}
+[2020-05-02T19:33:57.775] [INFO] default - req-params:{}
+[2020-05-02T19:33:57.775] [INFO] default - req-body:{}
+[2020-05-02T19:33:58.118] [INFO] default - traceId:d7420c4a-cf6d-4f4d-bba1-e5a2652e56ac
+[2020-05-02T19:33:58.128] [INFO] default - traceId:d7420c4a-cf6d-4f4d-bba1-e5a2652e56ac
+[2020-05-02T19:33:58.129] [INFO] default - host:localhost
+[2020-05-02T19:33:58.129] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:33:58.130] [INFO] default - req-query:{}
+[2020-05-02T19:33:58.130] [INFO] default - req-params:{}
+[2020-05-02T19:33:58.131] [INFO] default - req-body:{}
+[2020-05-02T19:34:53.237] [INFO] default - traceId:8b5c070d-7d6b-47c6-aa42-8c925f42a21c
+[2020-05-02T19:34:53.447] [INFO] default - traceId:8b5c070d-7d6b-47c6-aa42-8c925f42a21c
+[2020-05-02T19:34:53.447] [INFO] default - host:localhost
+[2020-05-02T19:34:53.447] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T19:34:53.447] [INFO] default - req-query:{}
+[2020-05-02T19:34:53.447] [INFO] default - req-params:{}
+[2020-05-02T19:34:53.447] [INFO] default - req-body:{}
+[2020-05-02T19:34:53.727] [INFO] default - traceId:4e1b6110-226e-4873-94c5-c5d7b0846381
+[2020-05-02T19:34:53.735] [INFO] default - traceId:4e1b6110-226e-4873-94c5-c5d7b0846381
+[2020-05-02T19:34:53.735] [INFO] default - host:localhost
+[2020-05-02T19:34:53.735] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:34:53.736] [INFO] default - req-query:{}
+[2020-05-02T19:34:53.736] [INFO] default - req-params:{}
+[2020-05-02T19:34:53.736] [INFO] default - req-body:{}
+[2020-05-02T19:36:25.980] [INFO] default - traceId:1848ed47-f522-4087-848a-c64863abdd1b
+[2020-05-02T19:36:25.990] [INFO] default - traceId:5c64e285-a33a-4310-9e50-e1a995fa939a
+[2020-05-02T19:36:26.022] [INFO] default - traceId:5c64e285-a33a-4310-9e50-e1a995fa939a
+[2020-05-02T19:36:26.023] [INFO] default - host:localhost
+[2020-05-02T19:36:26.023] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:36:26.024] [INFO] default - req-query:{}
+[2020-05-02T19:36:26.025] [INFO] default - req-params:{}
+[2020-05-02T19:36:26.026] [INFO] default - req-body:{}
+[2020-05-02T19:36:26.036] [INFO] default - traceId:1848ed47-f522-4087-848a-c64863abdd1b
+[2020-05-02T19:36:26.037] [INFO] default - host:localhost
+[2020-05-02T19:36:26.037] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=5
+[2020-05-02T19:36:26.037] [INFO] default - req-query:{"role_id":"5"}
+[2020-05-02T19:36:26.037] [INFO] default - req-params:{}
+[2020-05-02T19:36:26.037] [INFO] default - req-body:{}
+[2020-05-02T19:36:30.318] [INFO] default - traceId:06a2f67a-4b6d-4ee9-a221-49afd84b047a
+[2020-05-02T19:36:30.320] [INFO] default - [35msql执行：=> UPDATE sys_role SET role_code='hy12', role_name='会员' WHERE role_id=5[39m
+[2020-05-02T19:36:30.405] [INFO] default - traceId:06a2f67a-4b6d-4ee9-a221-49afd84b047a
+[2020-05-02T19:36:30.405] [INFO] default - host:localhost
+[2020-05-02T19:36:30.405] [INFO] default - method: [PUT] URL: /api/role/updateRole
+[2020-05-02T19:36:30.405] [INFO] default - req-query:{}
+[2020-05-02T19:36:30.405] [INFO] default - req-params:{}
+[2020-05-02T19:36:30.406] [INFO] default - req-body:{"role_id":5,"role_name":"会员","role_code":"hy12"}
+[2020-05-02T19:36:30.429] [INFO] default - traceId:2837e275-8c76-4eb9-9bd0-ad591f39cc37
+[2020-05-02T19:36:30.452] [INFO] default - traceId:2837e275-8c76-4eb9-9bd0-ad591f39cc37
+[2020-05-02T19:36:30.454] [INFO] default - host:localhost
+[2020-05-02T19:36:30.454] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:36:30.454] [INFO] default - req-query:{}
+[2020-05-02T19:36:30.454] [INFO] default - req-params:{}
+[2020-05-02T19:36:30.455] [INFO] default - req-body:{}
+[2020-05-02T19:36:56.433] [INFO] default - traceId:448366ec-ffb2-48fb-9a7e-954356176531
+[2020-05-02T19:37:42.664] [INFO] default - traceId:06f0ce61-9be8-4821-9a01-ac4e4673543f
+[2020-05-02T19:37:42.713] [INFO] default - traceId:06f0ce61-9be8-4821-9a01-ac4e4673543f
+[2020-05-02T19:37:42.714] [INFO] default - host:localhost
+[2020-05-02T19:37:42.714] [INFO] default - method: [POST] URL: /api/role/createRole
+[2020-05-02T19:37:42.715] [INFO] default - req-query:{}
+[2020-05-02T19:37:42.716] [INFO] default - req-params:{}
+[2020-05-02T19:37:42.716] [INFO] default - req-body:{"role_name":"youke","role_code":"yok"}
+[2020-05-02T19:37:42.751] [INFO] default - traceId:8ac46e7e-0a64-4e46-907d-f553e69fdcfc
+[2020-05-02T19:37:42.791] [INFO] default - traceId:8ac46e7e-0a64-4e46-907d-f553e69fdcfc
+[2020-05-02T19:37:42.791] [INFO] default - host:localhost
+[2020-05-02T19:37:42.791] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:37:42.791] [INFO] default - req-query:{}
+[2020-05-02T19:37:42.791] [INFO] default - req-params:{}
+[2020-05-02T19:37:42.792] [INFO] default - req-body:{}
+[2020-05-02T19:39:39.486] [INFO] default - traceId:c5cbbb8c-77d1-4d10-80d0-006cc8b6f894
+[2020-05-02T19:39:39.496] [INFO] default - traceId:5c77f9c8-822a-4d72-99ef-a8d5530a64c6
+[2020-05-02T19:39:39.525] [INFO] default - traceId:c5cbbb8c-77d1-4d10-80d0-006cc8b6f894
+[2020-05-02T19:39:39.526] [INFO] default - host:localhost
+[2020-05-02T19:39:39.526] [INFO] default - method: [GET] URL: /api/menu/sysMenutree/
+[2020-05-02T19:39:39.526] [INFO] default - req-query:{}
+[2020-05-02T19:39:39.526] [INFO] default - req-params:{}
+[2020-05-02T19:39:39.527] [INFO] default - req-body:{}
+[2020-05-02T19:39:39.537] [INFO] default - traceId:5c77f9c8-822a-4d72-99ef-a8d5530a64c6
+[2020-05-02T19:39:39.538] [INFO] default - host:localhost
+[2020-05-02T19:39:39.538] [INFO] default - method: [GET] URL: /api/role/getRoleTreePer/?role_id=6
+[2020-05-02T19:39:39.538] [INFO] default - req-query:{"role_id":"6"}
+[2020-05-02T19:39:39.538] [INFO] default - req-params:{}
+[2020-05-02T19:39:39.539] [INFO] default - req-body:{}
+[2020-05-02T19:39:43.314] [INFO] default - traceId:f517a555-09d0-4480-80f7-2c075a5694ba
+[2020-05-02T19:39:43.422] [INFO] default - traceId:f517a555-09d0-4480-80f7-2c075a5694ba
+[2020-05-02T19:39:43.423] [INFO] default - host:localhost
+[2020-05-02T19:39:43.423] [INFO] default - method: [PUT] URL: /api/role/updateRole
+[2020-05-02T19:39:43.424] [INFO] default - req-query:{}
+[2020-05-02T19:39:43.424] [INFO] default - req-params:{}
+[2020-05-02T19:39:43.424] [INFO] default - req-body:{"role_id":6,"role_name":"youke","role_code":"yok1"}
+[2020-05-02T19:39:43.480] [INFO] default - traceId:62355628-e32e-4631-a8a1-1249e53986e0
+[2020-05-02T19:39:43.494] [INFO] default - traceId:62355628-e32e-4631-a8a1-1249e53986e0
+[2020-05-02T19:39:43.494] [INFO] default - host:localhost
+[2020-05-02T19:39:43.494] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:39:43.494] [INFO] default - req-query:{}
+[2020-05-02T19:39:43.494] [INFO] default - req-params:{}
+[2020-05-02T19:39:43.494] [INFO] default - req-body:{}
+[2020-05-02T19:39:50.603] [INFO] default - traceId:79e9bf03-0a67-4a5b-9d56-15a47efd261a
+[2020-05-02T19:39:50.702] [INFO] default - traceId:79e9bf03-0a67-4a5b-9d56-15a47efd261a
+[2020-05-02T19:39:50.702] [INFO] default - host:localhost
+[2020-05-02T19:39:50.702] [INFO] default - method: [PUT] URL: /api/role/updateRole
+[2020-05-02T19:39:50.702] [INFO] default - req-query:{}
+[2020-05-02T19:39:50.702] [INFO] default - req-params:{}
+[2020-05-02T19:39:50.703] [INFO] default - req-body:{"role_id":6,"role_name":"youke","role_code":"yok122"}
+[2020-05-02T19:39:50.723] [INFO] default - traceId:e9ad27a6-3069-44fb-8fa7-97e9a6618bc6
+[2020-05-02T19:39:50.730] [INFO] default - traceId:e9ad27a6-3069-44fb-8fa7-97e9a6618bc6
+[2020-05-02T19:39:50.730] [INFO] default - host:localhost
+[2020-05-02T19:39:50.731] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:39:50.731] [INFO] default - req-query:{}
+[2020-05-02T19:39:50.731] [INFO] default - req-params:{}
+[2020-05-02T19:39:50.731] [INFO] default - req-body:{}
+[2020-05-02T19:39:53.308] [INFO] default - traceId:d88e83f2-94d2-43c6-ae7d-805a69b643db
+[2020-05-02T19:39:53.482] [INFO] default - traceId:d88e83f2-94d2-43c6-ae7d-805a69b643db
+[2020-05-02T19:39:53.482] [INFO] default - host:localhost
+[2020-05-02T19:39:53.482] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T19:39:53.482] [INFO] default - req-query:{}
+[2020-05-02T19:39:53.482] [INFO] default - req-params:{}
+[2020-05-02T19:39:53.482] [INFO] default - req-body:{}
+[2020-05-02T19:39:53.849] [INFO] default - traceId:5ceafa04-6680-418b-87c1-ab53e238192b
+[2020-05-02T19:39:53.854] [INFO] default - traceId:5ceafa04-6680-418b-87c1-ab53e238192b
+[2020-05-02T19:39:53.854] [INFO] default - host:localhost
+[2020-05-02T19:39:53.854] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:39:53.855] [INFO] default - req-query:{}
+[2020-05-02T19:39:53.855] [INFO] default - req-params:{}
+[2020-05-02T19:39:53.856] [INFO] default - req-body:{}
+[2020-05-02T19:41:36.207] [INFO] default - traceId:e5f5bf0b-740c-4e44-80bd-0cfffae87f11
+[2020-05-02T19:41:36.246] [INFO] default - traceId:e5f5bf0b-740c-4e44-80bd-0cfffae87f11
+[2020-05-02T19:41:36.249] [INFO] default - host:localhost
+[2020-05-02T19:41:36.249] [INFO] default - method: [DELETE] URL: /api/role/deleteRole
+[2020-05-02T19:41:36.250] [INFO] default - req-query:{}
+[2020-05-02T19:41:36.250] [INFO] default - req-params:{}
+[2020-05-02T19:41:36.251] [INFO] default - req-body:{"role_id":6}
+[2020-05-02T19:41:36.285] [INFO] default - traceId:231789ad-783f-4595-8ee6-fbd3c1be7231
+[2020-05-02T19:41:36.295] [INFO] default - traceId:231789ad-783f-4595-8ee6-fbd3c1be7231
+[2020-05-02T19:41:36.296] [INFO] default - host:localhost
+[2020-05-02T19:41:36.297] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:41:36.297] [INFO] default - req-query:{}
+[2020-05-02T19:41:36.298] [INFO] default - req-params:{}
+[2020-05-02T19:41:36.298] [INFO] default - req-body:{}
+[2020-05-02T19:41:39.392] [INFO] default - traceId:b23bf9f7-d137-4e58-8be9-5b6a88eeb13e
+[2020-05-02T19:41:39.469] [INFO] default - traceId:b23bf9f7-d137-4e58-8be9-5b6a88eeb13e
+[2020-05-02T19:41:39.469] [INFO] default - host:localhost
+[2020-05-02T19:41:39.469] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-02T19:41:39.469] [INFO] default - req-query:{}
+[2020-05-02T19:41:39.469] [INFO] default - req-params:{}
+[2020-05-02T19:41:39.470] [INFO] default - req-body:{}
+[2020-05-02T19:41:39.869] [INFO] default - traceId:b57c9a47-b671-49f1-81c8-0cda29b883c2
+[2020-05-02T19:41:39.873] [INFO] default - traceId:b57c9a47-b671-49f1-81c8-0cda29b883c2
+[2020-05-02T19:41:39.873] [INFO] default - host:localhost
+[2020-05-02T19:41:39.873] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-02T19:41:39.874] [INFO] default - req-query:{}
+[2020-05-02T19:41:39.874] [INFO] default - req-params:{}
+[2020-05-02T19:41:39.874] [INFO] default - req-body:{}

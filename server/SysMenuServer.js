@@ -67,7 +67,6 @@ class SysMenuServer {
       order: [
         ['sort', 'ASC']
       ],
-      plain: true
     })
     let list = []
     // 需注意 sequezile 查出来的数据不能对其刷数据进行添加或者删除 需要的数据只能自己组装了
@@ -117,7 +116,7 @@ class SysMenuServer {
         }, // 排除中间表
         required: false,
       }],
-      group: 'sys_resources.res_id', // 不只为什么 不个以主建res_id作分组 非要用主键需要加上表明 搞不懂    
+      group: 'sys_resources.res_id', // 不只为什么 不个以主建res_id作分组 非要用主键需要加上表名 搞不懂    
       order: [
         [{
           model: SysResourceModel

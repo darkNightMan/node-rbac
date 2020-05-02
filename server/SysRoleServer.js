@@ -1,61 +1,78 @@
-
 const {
   exec
 } = require('../db/mysql.js')
+const {
+  Op,
+  SysRoleModel,
+  SysUserModel,
+  SysRolePermmisionModel
+} = require('../models/TableRelationModel')
 // 角色
 class SysRoleServer {
   // 获取当前角色的权限
-  async getRolePer (role_id){   
-    let sql = `SELECT sys_role_permmision.res_id FROM sys_role_permmision WHERE role_id = ${role_id};`
-    let row = await exec(sql)
+  async getRolePer(roleid) {
+    let row = await SysRolePermmisionModel.findAll({
+      attributes: ['res_id'],
+      where: {
+        role_id: roleid
+      }
+    })
     return row
   }
   // 给角色设置权限
-  async setRolePer (roleid, residArr) {
-    function getValues(params) {
-      let values = ''
-      residArr.forEach((res_id) => {
-        values+=`(${roleid},${res_id}),`
+  async setRolePer(roleid, residArr) {
+    let role_update = []
+    residArr.map((i) => {
+      role_update.push({
+        res_id: i,
+        role_id: roleid
       })
-      return values.replace(/,$/gi, '')
-    }
-    let deletSql = `DELETE FROM sys_role_permmision WHERE role_id = ${roleid};`
-    let insertSql = `INSERT INTO sys_role_permmision (role_id, res_id) VALUES ${getValues(residArr)}`
-    let isDelete = await exec(deletSql) // 先将所有的删除
-    if (isDelete && residArr.length > 0) {
-      let isInsert = await exec(insertSql)// 再插入数据
-    }
-    if (isDelete) {
-      return true
-    }
+    })
+    let del = await SysRolePermmisionModel.destroy({
+      where: {
+        role_id: roleid
+      }
+    })
+    let row = await SysRolePermmisionModel.bulkCreate(role_update)
+    return true
   }
   // 获取所有的角色
   async list() {
-    let sql = `SELECT * FROM sys_role`
-    let row = await exec(sql)
-    return row
+    let rows = await SysRoleModel.findAll()
+    return rows
   }
   // 创建角色
-  async createRole (name, code) {
-    let sql = `INSERT INTO sys_role (role_name, role_code) VALUES ('${name}', '${code}')` 
-    let data = await exec(sql) 
+  async createRole(name, code) {
+    let data = await SysRoleModel.create({
+      role_name: name,
+      role_code: code,
+    })
     return data
   }
   // 更新角色
-  async updateRole (roleId, name, code) {
-    let sql = `UPDATE sys_role SET role_code='${code}', role_name='${name}' WHERE role_id=${roleId}` 
-    let data = await exec(sql) 
+  async updateRole(roleId, name, code) {
+    let data = await SysRoleModel.update({
+      role_name: name,
+      role_code: code,
+    }, {
+      where: {
+        role_id: roleId
+      }
+    })
     return data
   }
   // 删除角色
-  async daleteRole (roleId) {
-    let sql = `DELETE FROM sys_role WHERE role_id = ${roleId}`   
-    let data = await exec(sql) 
+  async daleteRole(roleId) {
+    let data = await SysRoleModel.destroy({
+      where: {
+        role_id: roleId
+      }
+    })
     return data
   }
-  async findRoles (userid) {
+  async findRoles(userid) {
     let sql = userid ? `SELECT role_id, user_id FROM sys_user_role WHERE user_id =${userid}` : `SELECT * FROM sys_user_role`
-    let data = await exec(sql) 
+    let data = await exec(sql)
     return data
   }
 }
