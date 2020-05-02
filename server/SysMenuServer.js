@@ -101,7 +101,7 @@ class SysMenuServer {
     let menu = await SysRoleModel.findAll({
       attributes: [],
       where: {
-        role_id: [1, 2, 3]
+        role_id: roleList
       },
       include: [{
         model: SysResourceModel,
@@ -132,7 +132,7 @@ class SysMenuServer {
     let role = await SysUserModel.findOne({
       attributes: [],
       where: {
-        user_id: 33
+        user_id: userId
       },
       include: [{
         model: SysRoleModel,

@@ -4,6 +4,7 @@ let db = new Sequelize(MYSQL_CONF.database, MYSQL_CONF.user, MYSQL_CONF.password
   {
   host: MYSQL_CONF.host,
   dialect: 'mysql',
+  timezone: '+08:00',
   pool: {
     max: 10,
     min: 0,

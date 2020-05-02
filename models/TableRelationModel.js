@@ -4,8 +4,40 @@ const SysUserRoleModel = require('../models/SysUserRoleModel') // 用户角色�
 const SysRoleModel = require('../models/SysRoleModel') // 角色表
 const SysRolePermmisionModel = require('../models/SysRolePermmisionModel') // 角色权限关联表
 const SysResourceModel = require('../models/SysResourceModel') // 权限表
+const SysLoginLogsModel = require('../models/SysLoginLogsModel')
 const  Sequelize = require('sequelize')
-const Op = Sequelize.Op;//通过Op调用对应操作符
+const Op = Sequelize.Op;//
+
+
+
+
+SysLoginLogsModel.hasMany(SysUserRoleModel, { foreignKey: 'user_id',}) //  外键约束})
+
+// SysUserRoleModel.belongsTo(SysLoginLogsModel, {foreignKey: 'user_id' ,})
+
+// 用户-日志 多对多
+SysLoginLogsModel.belongsToMany(SysRoleModel, {
+  through: {
+    model: SysUserRoleModel,
+    unique: false, // 取消联合主键的约定
+    // as: 'user'
+  },
+  foreignKey: 'user_id', //通过外键user_id
+  // constraints: false
+})
+
+SysRoleModel.belongsToMany(SysLoginLogsModel, {
+  through: {
+    model: SysUserRoleModel,
+    unique: false, // 取消联合主键的约定
+    // as: 'user'
+  },
+  foreignKey: 'role_id', // 通过外键user_id
+  // constraints: false
+})
+
+
+
 // 一对一多 用户表对关联表 
 SysUserModel.hasMany(SysUserRoleModel, {
   foreignKey: 'user_id', //  外键约束
@@ -26,6 +58,9 @@ SysResourceModel.hasMany(SysRolePermmisionModel, {
   foreignKey: 'res_id'
 }) //  外键约束
 
+
+
+// -----------------------------------
 // 用户-角色 多对多
 SysUserModel.belongsToMany(SysRoleModel, {
   through: {
@@ -43,6 +78,7 @@ SysRoleModel.belongsToMany(SysUserModel, {
   foreignKey: 'role_id', //通过外键role_id
   constraints: false
 })
+// ------------------------------------------------------
 // 角色-权限 多对多
 SysRoleModel.belongsToMany(SysResourceModel, {
   through: {
@@ -52,6 +88,7 @@ SysRoleModel.belongsToMany(SysResourceModel, {
   foreignKey: 'role_id', //通过外键user_id
   constraints: false
 })
+
 SysResourceModel.belongsToMany(SysRoleModel, {
   through: {
     model: SysRolePermmisionModel,
@@ -67,5 +104,6 @@ module.exports = {
   SysRoleModel,
   SysRolePermmisionModel,
   SysResourceModel,
+  SysLoginLogsModel,
   Op
 }

@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize')
 const db = require('../db/mysql.db')
-const SysUserRoleModel = require('./SysUserRoleModel')
 let SysRoleModel = db.define('sys_resource', {
   res_id: {
     type: Sequelize.INTEGER, //字段类型

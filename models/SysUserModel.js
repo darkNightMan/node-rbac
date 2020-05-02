@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db/mysql.db')
 const SysUserRoleModel = require('./SysUserRoleModel')
-const {  formatDate } = require('../utils/format')
+const { formatDate } = require('../utils/format')
 
 let SysUserModel = db.define('sys_user', {
   user_id: {
