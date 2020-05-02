@@ -6,7 +6,8 @@ class TestController {
   async test (req, res) {
     console.log()
     // const {pageParams, conditions } = offsetPage(req.query)
-    let data = await SysMenuServer.getUserPer(1)
+    // let data = await SysMenuServer.getUserPer(1)    
+    let data = await SysMenuServer.getUserMenu(1)
     // let data = await SysMenuServer.list(pageParams, conditions)
     // res.R.ok({
     //   list: data.list,

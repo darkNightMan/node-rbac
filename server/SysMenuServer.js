@@ -48,7 +48,7 @@ class SysMenuServer {
       attributes: ['res_id', 'parent_id', 'res_name'],
       order: [['sort', 'ASC']]
     })
-    let list = []
+    let list = []   
      // 需注意 sequezile 查出来的数据不能对其刷数据进行添加或者删除 需要的数据只能自己组装了
     _data.map((it) => { list.push({res_id: it.res_id, res_name: it.res_name, parent_id: it.parent_id})})
     return list
@@ -65,14 +65,51 @@ class SysMenuServer {
     return list
   }
   // 当前用户的菜单
-  async getMenu(userId) {    
-    let sql = `SELECT	sys_resource.*  FROM  sys_user_role
-      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
-      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} AND type < 3 GROUP BY res_id ORDER BY sort ASC`
-      let row = await exec(sql)
-    return row
+  async getUserMenu(userId) {
+    // 查询角色
+    let role = await SysUserModel.findOne({
+      attributes: [],
+      where: {
+        user_id: userId
+      },
+      include: [
+        {
+          model: SysRoleModel,   
+          attributes: ['role_id'],
+          through: { attributes: [] }, // 排除中间表
+        }
+      ]
+    })
+    let roleList = []
+    role.toJSON().sys_roles.map((it) => roleList.push(it.role_id))
+    // 查询权限
+    let menu = await SysRoleModel.findAll({ 
+      attributes: [],
+      where: {
+        role_id: [1,2,3]
+      },
+      include: [
+        {
+          model: SysResourceModel,
+          // attributes: [],
+          where: {
+            type: {
+              [Op.lt]: 3
+            },
+          },
+          through: { attributes: [] }, // 排除中间表
+          required: false,
+        }
+      ],
+      group: 'sys_resources.res_id',  // 不只为什么 不个以主建res_id作分组 非要用主键需要加上表明 搞不懂    
+      order: [[  {
+        model: SysResourceModel },'sort', 'ASC']    //  嵌套关联模型的 sys_resources sort联对象排序  
+      ], 
+      plain: true
+    })
+    return menu.toJSON().sys_resources
   }
+  // 获取用户权限标识
   async getUserPer(userId) {
     // 查询角色
     let role = await SysUserModel.findOne({
@@ -86,13 +123,12 @@ class SysMenuServer {
           attributes: ['role_id'],
           through: { attributes: [] }, // 排除中间表
         }
-      ],
-      raw: false
+      ]
     })
     let roleList = []
     role.toJSON().sys_roles.map((it) => roleList.push(it.role_id))
     // 查询权限
-    let perms = await  SysRoleModel.findAll({ 
+    let perms = await SysRoleModel.findAll({ 
       attributes: [],
       where: {
         role_id: roleList
@@ -100,7 +136,7 @@ class SysMenuServer {
       include: [
         {
           model: SysResourceModel,
-          attributes: ['perms',],
+          attributes: ['perms'],
           where: {
             perms: {
               [Op.ne]: null, // 不为null 
@@ -111,9 +147,10 @@ class SysMenuServer {
           required: false,
         }
       ],
-      group: 'perms'
+      group: 'perms',     
+      plain:true
     })
-    return perms
+    return perms.toJSON().sys_resources
   }
   async insertMenu (data) {
     let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type, perms, state) 

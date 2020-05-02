@@ -1,6 +1,7 @@
 let Sequelize = require('sequelize')
 const { MYSQL_CONF } = require('../conf/index')
-let db = new Sequelize(MYSQL_CONF.database, MYSQL_CONF.user, MYSQL_CONF.password, {
+let db = new Sequelize(MYSQL_CONF.database, MYSQL_CONF.user, MYSQL_CONF.password, 
+  {
   host: MYSQL_CONF.host,
   dialect: 'mysql',
   pool: {
