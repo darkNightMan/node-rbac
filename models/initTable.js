@@ -58,27 +58,11 @@ SysResourceModel.belongsToMany(SysRoleModel, {
   constraints: false
 })
 
+// --------------日志-----
+SysUserModel.hasMany(SysLoginLogsModel, { foreignKey: 'user_id',} )
+SysLoginLogsModel.belongsTo(SysUserModel, { foreignKey: 'user_id', as: 'userInfo'})
 
-// 用户-日志 多对多
-SysLoginLogsModel.belongsToMany(SysRoleModel, {
-  through: {
-    model: SysUserRoleModel,
-    unique: false, // 取消联合主键的约定
-    // as: 'user'
-  },
-  foreignKey: 'user_id', //通过外键user_id
-  // constraints: false
-})
 
-SysRoleModel.belongsToMany(SysLoginLogsModel, {
-  through: {
-    model: SysUserRoleModel,
-    unique: false, // 取消联合主键的约定
-    // as: 'user'
-  },
-  foreignKey: 'role_id', // 通过外键user_id
-  // constraints: false
-})
 // db.sync({  
 //   force: true // 强制同步
 // });

@@ -2621,3 +2621,291 @@
 [2020-05-03T14:40:52.932] [INFO] default - req-query:{}
 [2020-05-03T14:40:52.933] [INFO] default - req-params:{}
 [2020-05-03T14:40:52.933] [INFO] default - req-body:{}
+[2020-05-03T14:41:47.978] [INFO] default - traceId:915da8a3-055a-4793-a587-7f0f1d076d02
+[2020-05-03T14:41:48.064] [INFO] default - traceId:915da8a3-055a-4793-a587-7f0f1d076d02
+[2020-05-03T14:41:48.065] [INFO] default - host:localhost
+[2020-05-03T14:41:48.065] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-03T14:41:48.066] [INFO] default - req-query:{}
+[2020-05-03T14:41:48.066] [INFO] default - req-params:{}
+[2020-05-03T14:41:48.067] [INFO] default - req-body:{}
+[2020-05-03T14:41:48.403] [INFO] default - traceId:27f04d0d-6b0f-49dd-a990-ba494e895cff
+[2020-05-03T14:41:48.445] [INFO] default - traceId:27f04d0d-6b0f-49dd-a990-ba494e895cff
+[2020-05-03T14:41:48.446] [INFO] default - host:localhost
+[2020-05-03T14:41:48.446] [INFO] default - method: [GET] URL: /api/loginLogs/list?page=1&pageSize=10
+[2020-05-03T14:41:48.447] [INFO] default - req-query:{}
+[2020-05-03T14:41:48.447] [INFO] default - req-params:{}
+[2020-05-03T14:41:48.448] [INFO] default - req-body:{}
+[2020-05-03T14:44:21.379] [INFO] default - traceId:c2944d66-f970-494e-aa39-cbd42a93d3f8
+[2020-05-03T14:44:21.382] [INFO] default - traceId:616b19fa-b294-4b36-9e2a-3b1c88880a68
+[2020-05-03T14:44:21.386] [INFO] default - traceId:c2944d66-f970-494e-aa39-cbd42a93d3f8
+[2020-05-03T14:44:21.386] [INFO] default - host:localhost
+[2020-05-03T14:44:21.387] [ERROR] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-03T14:44:21.388] [ERROR] default - req-query:{"page":"1","pageSize":"10","currentPage":"1"}
+[2020-05-03T14:44:21.388] [ERROR] default - req-params:{}
+[2020-05-03T14:44:21.390] [ERROR] default - req-body:{}
+[2020-05-03T14:44:21.408] [INFO] default - traceId:616b19fa-b294-4b36-9e2a-3b1c88880a68
+[2020-05-03T14:44:21.409] [INFO] default - host:localhost
+[2020-05-03T14:44:21.410] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-03T14:44:21.411] [INFO] default - req-query:{}
+[2020-05-03T14:44:21.411] [INFO] default - req-params:{}
+[2020-05-03T14:44:21.412] [INFO] default - req-body:{}
+[2020-05-03T14:45:08.617] [INFO] default - traceId:4e30b5c6-665d-41bd-88ee-60dcd375f403
+[2020-05-03T14:45:08.627] [INFO] default - traceId:4e30b5c6-665d-41bd-88ee-60dcd375f403
+[2020-05-03T14:45:08.634] [INFO] default - host:localhost
+[2020-05-03T14:45:08.636] [INFO] default - method: [GET] URL: /api/loginOut
+[2020-05-03T14:45:08.637] [INFO] default - req-query:{}
+[2020-05-03T14:45:08.638] [INFO] default - req-params:{}
+[2020-05-03T14:45:08.639] [INFO] default - req-body:{}
+[2020-05-03T14:45:09.440] [INFO] default - traceId:77f99c64-01ea-4311-93c9-4f09d6fd3705
+[2020-05-03T14:45:16.460] [INFO] default - traceId:0db32575-faf6-4772-ba48-3e0672b01cfe
+[2020-05-03T14:45:16.528] [INFO] default - traceId:0db32575-faf6-4772-ba48-3e0672b01cfe
+[2020-05-03T14:45:16.529] [INFO] default - host:localhost
+[2020-05-03T14:45:16.530] [INFO] default - method: [POST] URL: /api/login
+[2020-05-03T14:45:16.531] [INFO] default - req-query:{}
+[2020-05-03T14:45:16.531] [INFO] default - req-params:{}
+[2020-05-03T14:45:16.532] [INFO] default - req-body:{"phone":110,"password":"123","code":"a4pi"}
+[2020-05-03T14:45:16.962] [INFO] default - traceId:467ee12a-80ca-4fa0-9b38-6fdb70d7a487
+[2020-05-03T14:45:17.009] [INFO] default - traceId:467ee12a-80ca-4fa0-9b38-6fdb70d7a487
+[2020-05-03T14:45:17.011] [INFO] default - host:localhost
+[2020-05-03T14:45:17.012] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-03T14:45:17.014] [INFO] default - req-query:{}
+[2020-05-03T14:45:17.014] [INFO] default - req-params:{}
+[2020-05-03T14:45:17.015] [INFO] default - req-body:{}
+[2020-05-03T14:46:44.123] [INFO] default - traceId:4c38ddfd-21cf-4056-ba5f-d61a52503474
+[2020-05-03T14:46:44.161] [INFO] default - traceId:4c38ddfd-21cf-4056-ba5f-d61a52503474
+[2020-05-03T14:46:44.165] [INFO] default - host:localhost
+[2020-05-03T14:46:44.166] [INFO] default - method: [GET] URL: /api/getUserMenuList
+[2020-05-03T14:46:44.174] [INFO] default - req-query:{}
+[2020-05-03T14:46:44.174] [INFO] default - req-params:{}
+[2020-05-03T14:46:44.175] [INFO] default - req-body:{}
+[2020-05-03T14:46:47.638] [INFO] default - traceId:9c88bfe5-ce86-42a7-8b52-d7855acaba9d
+[2020-05-03T14:46:47.658] [INFO] default - traceId:9c88bfe5-ce86-42a7-8b52-d7855acaba9d
+[2020-05-03T14:46:47.660] [INFO] default - host:localhost
+[2020-05-03T14:46:47.660] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10
+[2020-05-03T14:46:47.661] [INFO] default - req-query:{}
+[2020-05-03T14:46:47.662] [INFO] default - req-params:{}
+[2020-05-03T14:46:47.662] [INFO] default - req-body:{}
+[2020-05-03T14:46:47.669] [INFO] default - traceId:eceb57a1-4e4f-4612-b030-0f32ddb2ce52
+[2020-05-03T14:46:47.674] [INFO] default - traceId:eceb57a1-4e4f-4612-b030-0f32ddb2ce52
+[2020-05-03T14:46:47.675] [INFO] default - host:localhost
+[2020-05-03T14:46:47.676] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:46:47.676] [INFO] default - req-query:{}
+[2020-05-03T14:46:47.676] [INFO] default - req-params:{}
+[2020-05-03T14:46:47.677] [INFO] default - req-body:{}
+[2020-05-03T14:47:00.347] [INFO] default - traceId:a5340c00-c738-498f-b095-0af186bb5969
+[2020-05-03T14:47:00.394] [INFO] default - traceId:a5340c00-c738-498f-b095-0af186bb5969
+[2020-05-03T14:47:00.397] [INFO] default - host:localhost
+[2020-05-03T14:47:00.415] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=9
+[2020-05-03T14:47:00.419] [INFO] default - req-query:{"treeId":"9"}
+[2020-05-03T14:47:00.420] [INFO] default - req-params:{}
+[2020-05-03T14:47:00.421] [INFO] default - req-body:{}
+[2020-05-03T14:47:00.597] [INFO] default - traceId:1a2bd19d-d9e1-451a-9883-e7a174497b96
+[2020-05-03T14:47:00.607] [INFO] default - traceId:1a2bd19d-d9e1-451a-9883-e7a174497b96
+[2020-05-03T14:47:00.608] [INFO] default - host:localhost
+[2020-05-03T14:47:00.609] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:00.610] [INFO] default - req-query:{}
+[2020-05-03T14:47:00.611] [INFO] default - req-params:{}
+[2020-05-03T14:47:00.612] [INFO] default - req-body:{}
+[2020-05-03T14:47:03.422] [INFO] default - traceId:6f71135a-ff35-4c91-84f9-acbedd99280b
+[2020-05-03T14:47:03.437] [INFO] default - traceId:6f71135a-ff35-4c91-84f9-acbedd99280b
+[2020-05-03T14:47:03.439] [INFO] default - host:localhost
+[2020-05-03T14:47:03.440] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=7
+[2020-05-03T14:47:03.441] [INFO] default - req-query:{"treeId":"7"}
+[2020-05-03T14:47:03.441] [INFO] default - req-params:{}
+[2020-05-03T14:47:03.442] [INFO] default - req-body:{}
+[2020-05-03T14:47:03.758] [INFO] default - traceId:c79189e4-2db5-4aeb-9e1e-6ca0ec1df9d6
+[2020-05-03T14:47:03.764] [INFO] default - traceId:c79189e4-2db5-4aeb-9e1e-6ca0ec1df9d6
+[2020-05-03T14:47:03.777] [INFO] default - host:localhost
+[2020-05-03T14:47:03.778] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:03.778] [INFO] default - req-query:{}
+[2020-05-03T14:47:03.779] [INFO] default - req-params:{}
+[2020-05-03T14:47:03.779] [INFO] default - req-body:{}
+[2020-05-03T14:47:05.288] [INFO] default - traceId:685c999e-3dd3-446c-a284-da404bfbe491
+[2020-05-03T14:47:05.302] [INFO] default - traceId:685c999e-3dd3-446c-a284-da404bfbe491
+[2020-05-03T14:47:05.304] [INFO] default - host:localhost
+[2020-05-03T14:47:05.305] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=10
+[2020-05-03T14:47:05.305] [INFO] default - req-query:{"treeId":"10"}
+[2020-05-03T14:47:05.306] [INFO] default - req-params:{}
+[2020-05-03T14:47:05.306] [INFO] default - req-body:{}
+[2020-05-03T14:47:05.624] [INFO] default - traceId:018313cc-ad5f-4c01-bc01-d6d2aecf26b1
+[2020-05-03T14:47:05.631] [INFO] default - traceId:018313cc-ad5f-4c01-bc01-d6d2aecf26b1
+[2020-05-03T14:47:05.642] [INFO] default - host:localhost
+[2020-05-03T14:47:05.646] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:05.646] [INFO] default - req-query:{}
+[2020-05-03T14:47:05.647] [INFO] default - req-params:{}
+[2020-05-03T14:47:05.663] [INFO] default - req-body:{}
+[2020-05-03T14:47:10.860] [INFO] default - traceId:44543abd-cf2f-4080-b39b-9bcf2e255238
+[2020-05-03T14:47:10.887] [INFO] default - traceId:44543abd-cf2f-4080-b39b-9bcf2e255238
+[2020-05-03T14:47:10.888] [INFO] default - host:localhost
+[2020-05-03T14:47:10.889] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=2
+[2020-05-03T14:47:10.890] [INFO] default - req-query:{"treeId":"2"}
+[2020-05-03T14:47:10.891] [INFO] default - req-params:{}
+[2020-05-03T14:47:10.892] [INFO] default - req-body:{}
+[2020-05-03T14:47:11.203] [INFO] default - traceId:e1501c45-e3d5-4e82-806e-7826304905fe
+[2020-05-03T14:47:11.209] [INFO] default - traceId:e1501c45-e3d5-4e82-806e-7826304905fe
+[2020-05-03T14:47:11.210] [INFO] default - host:localhost
+[2020-05-03T14:47:11.211] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:11.211] [INFO] default - req-query:{}
+[2020-05-03T14:47:11.212] [INFO] default - req-params:{}
+[2020-05-03T14:47:11.212] [INFO] default - req-body:{}
+[2020-05-03T14:47:12.697] [INFO] default - traceId:9fe3670f-c09f-4bdd-951c-8f077c6fe25b
+[2020-05-03T14:47:12.712] [INFO] default - traceId:9fe3670f-c09f-4bdd-951c-8f077c6fe25b
+[2020-05-03T14:47:12.724] [INFO] default - host:localhost
+[2020-05-03T14:47:12.728] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=9
+[2020-05-03T14:47:12.729] [INFO] default - req-query:{"treeId":"9"}
+[2020-05-03T14:47:12.729] [INFO] default - req-params:{}
+[2020-05-03T14:47:12.730] [INFO] default - req-body:{}
+[2020-05-03T14:47:13.040] [INFO] default - traceId:35ea5a70-bcdf-4d5d-86e3-5523337bac7a
+[2020-05-03T14:47:13.048] [INFO] default - traceId:35ea5a70-bcdf-4d5d-86e3-5523337bac7a
+[2020-05-03T14:47:13.062] [INFO] default - host:localhost
+[2020-05-03T14:47:13.063] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:13.066] [INFO] default - req-query:{}
+[2020-05-03T14:47:13.068] [INFO] default - req-params:{}
+[2020-05-03T14:47:13.069] [INFO] default - req-body:{}
+[2020-05-03T14:47:14.307] [INFO] default - traceId:e6ef0f74-3240-4cf0-9e7c-3d23d2135db9
+[2020-05-03T14:47:14.324] [INFO] default - traceId:e6ef0f74-3240-4cf0-9e7c-3d23d2135db9
+[2020-05-03T14:47:14.327] [INFO] default - host:localhost
+[2020-05-03T14:47:14.329] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=7
+[2020-05-03T14:47:14.330] [INFO] default - req-query:{"treeId":"7"}
+[2020-05-03T14:47:14.347] [INFO] default - req-params:{}
+[2020-05-03T14:47:14.350] [INFO] default - req-body:{}
+[2020-05-03T14:47:14.658] [INFO] default - traceId:4c1f1970-a471-462c-b222-2e7186a7d13b
+[2020-05-03T14:47:14.685] [INFO] default - traceId:4c1f1970-a471-462c-b222-2e7186a7d13b
+[2020-05-03T14:47:14.686] [INFO] default - host:localhost
+[2020-05-03T14:47:14.686] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:14.688] [INFO] default - req-query:{}
+[2020-05-03T14:47:14.689] [INFO] default - req-params:{}
+[2020-05-03T14:47:14.689] [INFO] default - req-body:{}
+[2020-05-03T14:47:15.751] [INFO] default - traceId:4b87a8cd-932a-4ea4-936a-8d100f644922
+[2020-05-03T14:47:15.780] [INFO] default - traceId:4b87a8cd-932a-4ea4-936a-8d100f644922
+[2020-05-03T14:47:15.782] [INFO] default - host:localhost
+[2020-05-03T14:47:15.783] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=10
+[2020-05-03T14:47:15.784] [INFO] default - req-query:{"treeId":"10"}
+[2020-05-03T14:47:15.784] [INFO] default - req-params:{}
+[2020-05-03T14:47:15.785] [INFO] default - req-body:{}
+[2020-05-03T14:47:16.092] [INFO] default - traceId:9d22ef85-9b7d-46e0-a06a-b6121f62fc14
+[2020-05-03T14:47:16.097] [INFO] default - traceId:9d22ef85-9b7d-46e0-a06a-b6121f62fc14
+[2020-05-03T14:47:16.115] [INFO] default - host:localhost
+[2020-05-03T14:47:16.116] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:16.117] [INFO] default - req-query:{}
+[2020-05-03T14:47:16.117] [INFO] default - req-params:{}
+[2020-05-03T14:47:16.117] [INFO] default - req-body:{}
+[2020-05-03T14:47:22.669] [INFO] default - traceId:c9017425-325e-444b-9670-668e7d955550
+[2020-05-03T14:47:22.687] [INFO] default - traceId:c9017425-325e-444b-9670-668e7d955550
+[2020-05-03T14:47:22.690] [INFO] default - host:localhost
+[2020-05-03T14:47:22.691] [INFO] default - method: [PUT] URL: /api/menu/updatedMenu
+[2020-05-03T14:47:22.692] [INFO] default - req-query:{}
+[2020-05-03T14:47:22.695] [INFO] default - req-params:{}
+[2020-05-03T14:47:22.698] [INFO] default - req-body:{"type":2,"res_id":10,"res_name":"角色列表","parent_id":2,"component":"roleList","description":"null","res_code":"xt","res_icon":"el-icon-user-solid","sort":"0","state":1,"perms":""}
+[2020-05-03T14:47:23.017] [INFO] default - traceId:1fca8298-d6d2-4f47-ace1-e44e74cf0d69
+[2020-05-03T14:47:23.031] [INFO] default - traceId:1fca8298-d6d2-4f47-ace1-e44e74cf0d69
+[2020-05-03T14:47:23.049] [INFO] default - host:localhost
+[2020-05-03T14:47:23.054] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=10
+[2020-05-03T14:47:23.055] [INFO] default - req-query:{"treeId":"10"}
+[2020-05-03T14:47:23.056] [INFO] default - req-params:{}
+[2020-05-03T14:47:23.057] [INFO] default - req-body:{}
+[2020-05-03T14:47:23.269] [INFO] default - traceId:73e03414-b0b9-427c-98fd-89425f5048e0
+[2020-05-03T14:47:23.277] [INFO] default - traceId:73e03414-b0b9-427c-98fd-89425f5048e0
+[2020-05-03T14:47:23.278] [INFO] default - host:localhost
+[2020-05-03T14:47:23.279] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:23.282] [INFO] default - req-query:{}
+[2020-05-03T14:47:23.282] [INFO] default - req-params:{}
+[2020-05-03T14:47:23.283] [INFO] default - req-body:{}
+[2020-05-03T14:47:25.099] [INFO] default - traceId:e89c6316-d0e3-4fad-b729-4e809794afde
+[2020-05-03T14:47:25.110] [INFO] default - traceId:e89c6316-d0e3-4fad-b729-4e809794afde
+[2020-05-03T14:47:25.111] [INFO] default - host:localhost
+[2020-05-03T14:47:25.112] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1
+[2020-05-03T14:47:25.112] [INFO] default - req-query:{"treeId":"1"}
+[2020-05-03T14:47:25.113] [INFO] default - req-params:{}
+[2020-05-03T14:47:25.114] [INFO] default - req-body:{}
+[2020-05-03T14:47:25.423] [INFO] default - traceId:afeeaf48-086b-44ba-8bd9-c732e94eea81
+[2020-05-03T14:47:25.429] [INFO] default - traceId:afeeaf48-086b-44ba-8bd9-c732e94eea81
+[2020-05-03T14:47:25.444] [INFO] default - host:localhost
+[2020-05-03T14:47:25.444] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:25.445] [INFO] default - req-query:{}
+[2020-05-03T14:47:25.461] [INFO] default - req-params:{}
+[2020-05-03T14:47:25.462] [INFO] default - req-body:{}
+[2020-05-03T14:47:33.898] [INFO] default - traceId:dd291fcf-47c2-442a-8c80-989694292257
+[2020-05-03T14:47:33.910] [INFO] default - traceId:dd291fcf-47c2-442a-8c80-989694292257
+[2020-05-03T14:47:33.914] [INFO] default - host:localhost
+[2020-05-03T14:47:33.916] [INFO] default - method: [PUT] URL: /api/menu/updatedMenu
+[2020-05-03T14:47:33.917] [INFO] default - req-query:{}
+[2020-05-03T14:47:33.918] [INFO] default - req-params:{}
+[2020-05-03T14:47:33.919] [INFO] default - req-body:{"type":1,"res_id":1,"res_name":"文章管理","parent_id":0,"component":"null","description":"null","res_code":"wz","res_icon":"el-icon-document","sort":"0","state":1,"perms":""}
+[2020-05-03T14:47:34.236] [INFO] default - traceId:a8cd1807-6c57-4dd3-8d31-2ad2ba64c01f
+[2020-05-03T14:47:34.246] [INFO] default - traceId:a8cd1807-6c57-4dd3-8d31-2ad2ba64c01f
+[2020-05-03T14:47:34.251] [INFO] default - host:localhost
+[2020-05-03T14:47:34.252] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1
+[2020-05-03T14:47:34.253] [INFO] default - req-query:{"treeId":"1"}
+[2020-05-03T14:47:34.254] [INFO] default - req-params:{}
+[2020-05-03T14:47:34.255] [INFO] default - req-body:{}
+[2020-05-03T14:47:34.486] [INFO] default - traceId:0e65da13-5d65-4d0b-9c51-203659e7260a
+[2020-05-03T14:47:34.490] [INFO] default - traceId:0e65da13-5d65-4d0b-9c51-203659e7260a
+[2020-05-03T14:47:34.491] [INFO] default - host:localhost
+[2020-05-03T14:47:34.492] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:34.492] [INFO] default - req-query:{}
+[2020-05-03T14:47:34.493] [INFO] default - req-params:{}
+[2020-05-03T14:47:34.493] [INFO] default - req-body:{}
+[2020-05-03T14:47:43.084] [INFO] default - traceId:f021fd21-cd26-482f-8c56-b7f5a0ca8790
+[2020-05-03T14:47:43.095] [INFO] default - traceId:f021fd21-cd26-482f-8c56-b7f5a0ca8790
+[2020-05-03T14:47:43.113] [INFO] default - host:localhost
+[2020-05-03T14:47:43.114] [INFO] default - method: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1
+[2020-05-03T14:47:43.115] [INFO] default - req-query:{"currentPage":"1"}
+[2020-05-03T14:47:43.116] [INFO] default - req-params:{}
+[2020-05-03T14:47:43.117] [INFO] default - req-body:{}
+[2020-05-03T14:47:43.390] [INFO] default - traceId:5ae4c43a-0e49-4b2b-af05-1ffc0c4f31a6
+[2020-05-03T14:47:43.425] [INFO] default - traceId:5ae4c43a-0e49-4b2b-af05-1ffc0c4f31a6
+[2020-05-03T14:47:43.427] [INFO] default - host:localhost
+[2020-05-03T14:47:43.430] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-03T14:47:43.432] [INFO] default - req-query:{}
+[2020-05-03T14:47:43.433] [INFO] default - req-params:{}
+[2020-05-03T14:47:43.434] [INFO] default - req-body:{}
+[2020-05-03T14:47:44.298] [INFO] default - traceId:6f85e9f4-2e53-4357-ae8f-6e6e4314cb8d
+[2020-05-03T14:47:44.305] [INFO] default - traceId:6f85e9f4-2e53-4357-ae8f-6e6e4314cb8d
+[2020-05-03T14:47:44.305] [INFO] default - host:localhost
+[2020-05-03T14:47:44.306] [INFO] default - method: [GET] URL: /api/role/list
+[2020-05-03T14:47:44.306] [INFO] default - req-query:{}
+[2020-05-03T14:47:44.307] [INFO] default - req-params:{}
+[2020-05-03T14:47:44.307] [INFO] default - req-body:{}
+[2020-05-03T14:47:52.580] [INFO] default - traceId:205d2fca-250a-4cd2-ade4-9bf4526fc40a
+[2020-05-03T14:47:52.593] [INFO] default - traceId:205d2fca-250a-4cd2-ade4-9bf4526fc40a
+[2020-05-03T14:47:52.594] [INFO] default - host:localhost
+[2020-05-03T14:47:52.595] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=4
+[2020-05-03T14:47:52.596] [INFO] default - req-query:{"treeId":"4"}
+[2020-05-03T14:47:52.599] [INFO] default - req-params:{}
+[2020-05-03T14:47:52.600] [INFO] default - req-body:{}
+[2020-05-03T14:47:52.918] [INFO] default - traceId:6c24f5da-7e62-41fc-bb09-b60e65bd0687
+[2020-05-03T14:47:52.924] [INFO] default - traceId:6c24f5da-7e62-41fc-bb09-b60e65bd0687
+[2020-05-03T14:47:52.925] [INFO] default - host:localhost
+[2020-05-03T14:47:52.926] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:52.926] [INFO] default - req-query:{}
+[2020-05-03T14:47:52.927] [INFO] default - req-params:{}
+[2020-05-03T14:47:52.927] [INFO] default - req-body:{}
+[2020-05-03T14:47:58.315] [INFO] default - traceId:62545fc7-234e-4b45-8e43-9192c25b540f
+[2020-05-03T14:47:58.327] [INFO] default - traceId:62545fc7-234e-4b45-8e43-9192c25b540f
+[2020-05-03T14:47:58.329] [INFO] default - host:localhost
+[2020-05-03T14:47:58.333] [INFO] default - method: [PUT] URL: /api/menu/updatedMenu
+[2020-05-03T14:47:58.334] [INFO] default - req-query:{}
+[2020-05-03T14:47:58.336] [INFO] default - req-params:{}
+[2020-05-03T14:47:58.339] [INFO] default - req-body:{"type":1,"res_id":4,"res_name":"日志管理","parent_id":0,"component":"null","description":"null","res_code":"rz","res_icon":"el-icon-user ","sort":"0","state":1,"perms":""}
+[2020-05-03T14:47:58.657] [INFO] default - traceId:9722db77-d33d-4c3f-92dc-aa828dcb7fcf
+[2020-05-03T14:47:58.675] [INFO] default - traceId:9722db77-d33d-4c3f-92dc-aa828dcb7fcf
+[2020-05-03T14:47:58.676] [INFO] default - host:localhost
+[2020-05-03T14:47:58.676] [INFO] default - method: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=4
+[2020-05-03T14:47:58.677] [INFO] default - req-query:{"treeId":"4"}
+[2020-05-03T14:47:58.678] [INFO] default - req-params:{}
+[2020-05-03T14:47:58.685] [INFO] default - req-body:{}
+[2020-05-03T14:47:58.909] [INFO] default - traceId:02ae9c57-2f95-494d-8902-ddfa6ecc3b79
+[2020-05-03T14:47:58.919] [INFO] default - traceId:02ae9c57-2f95-494d-8902-ddfa6ecc3b79
+[2020-05-03T14:47:58.920] [INFO] default - host:localhost
+[2020-05-03T14:47:58.920] [INFO] default - method: [GET] URL: /api/menu/selectMenuList
+[2020-05-03T14:47:58.921] [INFO] default - req-query:{}
+[2020-05-03T14:47:58.922] [INFO] default - req-params:{}
+[2020-05-03T14:47:58.922] [INFO] default - req-body:{}
+[2020-05-03T14:48:09.434] [INFO] default - traceId:e73f89f8-2f47-4758-82ed-4108ca23e726
+[2020-05-03T14:48:09.462] [INFO] default - traceId:e73f89f8-2f47-4758-82ed-4108ca23e726
+[2020-05-03T14:48:09.463] [INFO] default - host:localhost
+[2020-05-03T14:48:09.464] [INFO] default - method: [GET] URL: /api/loginLogs/list?page=1&pageSize=10
+[2020-05-03T14:48:09.464] [INFO] default - req-query:{}
+[2020-05-03T14:48:09.465] [INFO] default - req-params:{}
+[2020-05-03T14:48:09.465] [INFO] default - req-body:{}
