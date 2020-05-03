@@ -1,7 +1,5 @@
 const {
   SysResourceModel,
-  SysRolePermmisionModel,
-  SysUserRoleModel,
   Op,
   SysRoleModel,
   SysUserModel

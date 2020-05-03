@@ -1,11 +1,7 @@
+
 const {
-  exec
-} = require('../db/mysql.js')
-const {
-  Op, 
   SysRoleModel,
   SysUserModel,
-  SysUserRoleModel,
   SysLoginLogsModel
 } = require('../models/TableRelationModel')
 // 登入1

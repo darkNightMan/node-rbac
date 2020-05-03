@@ -1,10 +1,6 @@
+
 const {
-  exec
-} = require('../db/mysql.js')
-const {
-  Op,
   SysRoleModel,
-  SysUserModel,
   SysUserRoleModel,
   SysRolePermmisionModel
 } = require('../models/TableRelationModel')
