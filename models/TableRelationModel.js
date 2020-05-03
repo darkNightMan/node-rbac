@@ -1,42 +1,12 @@
 const db = require('../db/mysql.db')
-const SysUserModel = require('../models/SysUserModel') // 用户表
-const SysUserRoleModel = require('../models/SysUserRoleModel') // 用户角色关联表
-const SysRoleModel = require('../models/SysRoleModel') // 角色表
-const SysRolePermmisionModel = require('../models/SysRolePermmisionModel') // 角色权限关联表
-const SysResourceModel = require('../models/SysResourceModel') // 权限表
-const SysLoginLogsModel = require('../models/SysLoginLogsModel')
+const SysUserModel = require('./SysUserModel') // 用户表
+const SysUserRoleModel = require('./SysUserRoleModel') // 用户角色关联表
+const SysRoleModel = require('./SysRoleModel') // 角色表
+const SysRolePermmisionModel = require('./SysRolePermmisionModel') // 角色权限关联表
+const SysResourceModel = require('./SysResourceModel') // 权限表
+const SysLoginLogsModel = require('./SysLoginLogsModel')
 const  Sequelize = require('sequelize')
-const Op = Sequelize.Op;//
-
-
-
-
-SysLoginLogsModel.hasMany(SysUserRoleModel, { foreignKey: 'user_id',}) //  外键约束})
-
-// SysUserRoleModel.belongsTo(SysLoginLogsModel, {foreignKey: 'user_id' ,})
-
-// 用户-日志 多对多
-SysLoginLogsModel.belongsToMany(SysRoleModel, {
-  through: {
-    model: SysUserRoleModel,
-    unique: false, // 取消联合主键的约定
-    // as: 'user'
-  },
-  foreignKey: 'user_id', //通过外键user_id
-  // constraints: false
-})
-
-SysRoleModel.belongsToMany(SysLoginLogsModel, {
-  through: {
-    model: SysUserRoleModel,
-    unique: false, // 取消联合主键的约定
-    // as: 'user'
-  },
-  foreignKey: 'role_id', // 通过外键user_id
-  // constraints: false
-})
-
-
+const Op = Sequelize.Op
 
 // 一对一多 用户表对关联表 
 SysUserModel.hasMany(SysUserRoleModel, {
@@ -48,17 +18,6 @@ SysRoleModel.hasMany(SysUserRoleModel, {
   foreignKey: 'role_id', //  外键约束
   as: 'roleLits'
 })
-
-// 一对一多  角色对关联表
-SysRoleModel.hasMany(SysRolePermmisionModel, {
-  foreignKey: 'role_id'
-}) //  外键约束
-// 一对一多  权限对关联表
-SysResourceModel.hasMany(SysRolePermmisionModel, {
-  foreignKey: 'res_id'
-}) //  外键约束
-
-
 
 // -----------------------------------
 // 用户-角色 多对多
@@ -78,6 +37,16 @@ SysRoleModel.belongsToMany(SysUserModel, {
   foreignKey: 'role_id', //通过外键role_id
   constraints: false
 })
+
+
+// 一对一多  角色对关联表
+SysRoleModel.hasMany(SysRolePermmisionModel, {
+  foreignKey: 'role_id' //  外键约束
+}) 
+// 一对一多  权限对关联表
+SysResourceModel.hasMany(SysRolePermmisionModel, {
+  foreignKey: 'res_id' //  外键约束
+}) 
 // ------------------------------------------------------
 // 角色-权限 多对多
 SysRoleModel.belongsToMany(SysResourceModel, {
@@ -97,6 +66,11 @@ SysResourceModel.belongsToMany(SysRoleModel, {
   foreignKey: 'res_id', //通过外键role_id
   constraints: false
 })
+
+// --------------日志-----
+SysUserModel.hasMany(SysLoginLogsModel, { foreignKey: 'user_id',} )
+SysLoginLogsModel.belongsTo(SysUserModel, { foreignKey: 'user_id', as: 'userInfo'})
+
 
 module.exports = {
   SysUserModel,

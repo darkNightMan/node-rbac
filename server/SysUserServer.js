@@ -22,6 +22,10 @@ class SysUserServer {
     }
     let _data = await SysUserModel.findAndCountAll({
       where,
+      attributes: {
+        exclude: ['password'],
+      },
+      distinct:true,
       include: [{
         model: SysRoleModel,
         through: {

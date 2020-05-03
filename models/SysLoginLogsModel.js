@@ -29,7 +29,7 @@ let SysLoginLogsModel = db.define('sys_login_logs', {
 }, {
   tableName: 'sys_login_logs',
   timestamps: true, // 是否需要增加createdAt、updatedAt字段
-  createdAt: false, // 不需要createdAt字段
+  createdAt: 'login_time', // 不需要createdAt字段
   updatedAt: false, //修改updatedAt字段名称为endtime
   freezeTableName: true, // 禁用修改表名; 默认情况下,sequelize将自动将所有传递的模型名称(define的第一个参数)转换为复数. 如果你不想这样,请设置为true
 })
