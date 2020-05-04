@@ -1934,3 +1934,733 @@
 [2020-05-04T12:47:55.618] [INFO] default - [35mmethod: [GET] URL: /api/loginLogs/list?page=1&pageSize=10[39m
 [2020-05-04T12:47:55.619] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
 [2020-05-04T12:47:55.620] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:48:43.209] [INFO] default - [35mtraceId:bf4755ac-35d3-4db9-a88f-41c9dfe2a226[39m
+[2020-05-04T12:48:43.213] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:48:43.215] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T12:48:43.216] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T12:48:43.218] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:48:43.677] [INFO] default - [35mtraceId:b449d818-741b-4405-a2a2-09ac233b4fe5[39m
+[2020-05-04T12:48:43.682] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:48:43.688] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T12:48:43.708] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T12:48:43.714] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:50:02.475] [INFO] default - [35mtraceId:15c900d5-5197-4a95-bee7-847d1102e552[39m
+[2020-05-04T12:50:02.479] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:50:02.481] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T12:50:02.482] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T12:50:02.483] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:50:03.075] [INFO] default - [35mtraceId:29259388-c696-4078-aad5-85e0bd552589[39m
+[2020-05-04T12:50:03.079] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:50:03.081] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T12:50:03.083] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T12:50:03.103] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:57:47.997] [INFO] default - [35mtraceId:47816f7b-0595-4338-a499-b78ee35af0c8[39m
+[2020-05-04T12:57:48.023] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:57:48.024] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T12:57:48.025] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T12:57:48.027] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:57:48.042] [INFO] default - [35mtraceId:2ff6a398-f516-4ec8-8906-5a53037ec985[39m
+[2020-05-04T12:57:48.043] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:57:48.043] [INFO] default - [35mmethod: [GET] URL: /api/getCaptcha[39m
+[2020-05-04T12:57:48.044] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T12:57:48.045] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:57:48.697] [INFO] default - [35mtraceId:472b9a16-42a4-43d3-9c74-ff9e96553318[39m
+[2020-05-04T12:57:48.747] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:57:48.757] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T12:57:48.759] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T12:57:48.762] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T12:58:52.708] [INFO] default - [35mtraceId:4ec8e673-5326-48a3-86d6-b3e4f91ae45a[39m
+[2020-05-04T12:58:52.716] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T12:58:52.717] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T12:58:52.718] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T12:58:52.719] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:02:36.459] [INFO] default - [35mtraceId:1b861875-7a8f-418a-8f4c-a0624b8a46e9[39m
+[2020-05-04T13:02:36.461] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:02:36.463] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:02:36.464] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:02:36.470] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:03:54.234] [INFO] default - [35mtraceId:cdf63ca7-e826-4dfd-aba8-7f592e1d40d3[39m
+[2020-05-04T13:03:54.236] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:03:54.238] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:03:54.239] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:03:54.241] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:03:54.881] [INFO] default - [35mtraceId:1f4c7ca9-4878-420d-bd86-0032c6887498[39m
+[2020-05-04T13:03:54.886] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:03:54.888] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:03:54.889] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:03:54.890] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:04:33.012] [INFO] default - [35mtraceId:ddc04da6-175a-4de8-8178-97bb686816ff[39m
+[2020-05-04T13:04:33.015] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:04:33.021] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:04:33.022] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:04:33.024] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:04:33.656] [INFO] default - [35mtraceId:02d8777b-abf3-4c44-b9eb-3c1d6257a40e[39m
+[2020-05-04T13:04:33.657] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:04:33.666] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:04:33.667] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:04:33.668] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:05:04.978] [INFO] default - [35mtraceId:d0dc2019-b9a4-4bea-b561-e1fc30839822[39m
+[2020-05-04T13:05:04.980] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:05:04.982] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:05:04.983] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:05:04.990] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:05:33.439] [INFO] default - [35mtraceId:00c52ef2-2997-48c2-92f6-08b9d78a7978[39m
+[2020-05-04T13:05:33.493] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:05:33.498] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:05:33.501] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:05:33.502] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:05:34.071] [INFO] default - [35mtraceId:9cf2cb2b-615a-478e-98f6-bbb8796a3974[39m
+[2020-05-04T13:05:34.077] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:05:34.078] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:05:34.079] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:05:34.080] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:06:55.096] [INFO] default - [35mtraceId:be7d04ff-79e7-4ccf-be26-87cb77375025[39m
+[2020-05-04T13:06:55.105] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:06:55.106] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:06:55.107] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:06:55.108] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:06:55.747] [INFO] default - [35mtraceId:9adda3b1-7027-4076-82a7-a33132fdc049[39m
+[2020-05-04T13:06:55.748] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:06:55.749] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:06:55.750] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:06:55.751] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:07:25.661] [INFO] default - [35mtraceId:cd616624-5439-4123-bf4c-4c665e5d05ce[39m
+[2020-05-04T13:07:25.677] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:07:25.684] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:07:25.685] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:07:25.685] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:07:44.305] [INFO] default - [35mtraceId:edf1147f-0bd5-4470-8765-8904b66fa74f[39m
+[2020-05-04T13:07:44.307] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:07:44.308] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:07:44.319] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:07:44.329] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:08:17.018] [INFO] default - [35mtraceId:8067050d-5fc5-4e2a-915f-9e3ec5825a53[39m
+[2020-05-04T13:08:17.022] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:08:17.023] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:08:17.023] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:08:17.024] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:08:17.585] [INFO] default - [35mtraceId:c3b87540-08c6-47e5-8a49-cb7b3479d6f8[39m
+[2020-05-04T13:08:17.586] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:08:17.587] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:08:17.588] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:08:17.589] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:08:27.030] [INFO] default - [35mtraceId:2deeca89-491d-489f-bb52-fd0f1445ae4e[39m
+[2020-05-04T13:08:27.087] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:08:27.102] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:08:27.106] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:08:27.108] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:08:27.626] [INFO] default - [35mtraceId:5ee994c9-8211-415e-bd81-d8eea43b70e5[39m
+[2020-05-04T13:08:27.628] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:08:27.631] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:08:27.632] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:08:27.633] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:08:43.455] [INFO] default - [35mtraceId:3f35c410-696e-4380-8200-a65ec8438ece[39m
+[2020-05-04T13:08:43.457] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:08:43.459] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:08:43.460] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:08:43.462] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:09:10.785] [INFO] default - [35mtraceId:3cad5c36-b463-4062-a1cf-ae2ff60faf69[39m
+[2020-05-04T13:09:10.786] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:09:10.788] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:09:10.789] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:09:10.790] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:09:11.382] [INFO] default - [35mtraceId:9a4535b4-0c4f-4c20-a351-bd94f3e701d8[39m
+[2020-05-04T13:09:11.384] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:09:11.385] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:09:11.386] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:09:11.387] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:09:40.890] [INFO] default - [35mtraceId:d8c204d7-d18a-4d87-abd8-57f99948b3fd[39m
+[2020-05-04T13:09:40.892] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:09:40.895] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:09:40.898] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:09:40.902] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:09:41.508] [INFO] default - [35mtraceId:ad4b2626-696f-4d8f-b03b-01ff3fcba124[39m
+[2020-05-04T13:09:41.511] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:09:41.513] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:09:41.514] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:09:41.514] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:10:06.652] [INFO] default - [35mtraceId:915df332-6b8e-44e6-95ba-29ef2b8db2a3[39m
+[2020-05-04T13:10:06.699] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:10:06.701] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:10:06.702] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:10:06.704] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:10:07.258] [INFO] default - [35mtraceId:2c54390b-8e29-4a99-9561-b93beb017e51[39m
+[2020-05-04T13:10:07.265] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:10:07.265] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:10:07.267] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:10:07.269] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:25.615] [INFO] default - [35mtraceId:4b44b2d9-c0c6-48c0-9784-409efe10f950[39m
+[2020-05-04T13:11:25.617] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:25.618] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:11:25.619] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:11:25.620] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:26.113] [INFO] default - [35mtraceId:c0de0a51-42b1-45b7-b083-bcae9dff5e25[39m
+[2020-05-04T13:11:26.114] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:26.116] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:11:26.117] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:11:26.118] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:39.138] [INFO] default - [35mtraceId:a3c2b116-6d75-44f5-9c4f-bb7919cedaa6[39m
+[2020-05-04T13:11:39.141] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:39.142] [INFO] default - [35mmethod: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1[39m
+[2020-05-04T13:11:39.143] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","currentPage":"1"}[39m
+[2020-05-04T13:11:39.144] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:39.150] [INFO] default - [35mtraceId:00550d61-8aac-4f70-a379-b49d73ed1cbf[39m
+[2020-05-04T13:11:39.151] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:39.152] [INFO] default - [35mmethod: [GET] URL: /api/role/list[39m
+[2020-05-04T13:11:39.153] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:11:39.154] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:44.027] [INFO] default - [35mtraceId:e016a56a-7504-4549-818d-1bf9977d1f6b[39m
+[2020-05-04T13:11:44.030] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:44.032] [INFO] default - [35mmethod: [PUT] URL: /api/user/updateUser[39m
+[2020-05-04T13:11:44.033] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:11:44.035] [INFO] default - [35mreq-body:{"user_id":9,"nick_name":"王者12","password":"12","email":"22223","phone":"123123123123112322","avatar":"123123","role_id":[3,5]}[39m
+[2020-05-04T13:11:44.318] [INFO] default - [35mtraceId:217b2456-01ac-4163-a183-3302b9773a5a[39m
+[2020-05-04T13:11:44.320] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:44.321] [INFO] default - [35mmethod: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1[39m
+[2020-05-04T13:11:44.322] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","currentPage":"1"}[39m
+[2020-05-04T13:11:44.323] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:50.384] [INFO] default - [35mtraceId:d9caed5a-76c2-4109-8b8f-fd49948a04d9[39m
+[2020-05-04T13:11:50.389] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:50.391] [INFO] default - [35mmethod: [GET] URL: /api/role/list[39m
+[2020-05-04T13:11:50.394] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:11:50.396] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:51.835] [INFO] default - [35mtraceId:c06375f9-f15f-4246-9c9a-db1c9b8d54ef[39m
+[2020-05-04T13:11:51.838] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:51.840] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:11:51.842] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:11:51.845] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:52.284] [INFO] default - [35mtraceId:11ecc68b-a0c1-4120-83fe-5ab07c39acc7[39m
+[2020-05-04T13:11:52.291] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:52.292] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:11:52.293] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:11:52.294] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:56.786] [INFO] default - [35mtraceId:6ee66174-24e1-4c65-ad84-ba17e55685c9[39m
+[2020-05-04T13:11:56.789] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:56.791] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=2[39m
+[2020-05-04T13:11:56.795] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"2"}[39m
+[2020-05-04T13:11:56.797] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:11:57.255] [INFO] default - [35mtraceId:2b1d5e21-2564-4374-9bb0-416c66589408[39m
+[2020-05-04T13:11:57.258] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:11:57.266] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:11:57.271] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:11:57.274] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:12:16.383] [INFO] default - [35mtraceId:66a002c5-ae2d-492f-8c1f-801cc0fa9fbe[39m
+[2020-05-04T13:12:16.392] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:12:16.395] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:12:16.399] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:12:16.402] [INFO] default - [35mreq-body:{"type":2,"res_id":9,"res_name":"菜单列表","parent_id":2,"component":"menuList","description":"null","res_code":"","res_icon":"fa fa-reorder","sort":"0","state":1,"perms":""}[39m
+[2020-05-04T13:12:16.723] [INFO] default - [35mtraceId:90f4da0d-1fab-49f8-a492-4f9e95a5fefb[39m
+[2020-05-04T13:12:16.728] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:12:16.730] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=2[39m
+[2020-05-04T13:12:16.731] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"2"}[39m
+[2020-05-04T13:12:16.732] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:12:17.197] [INFO] default - [35mtraceId:edc65527-161b-4554-b974-13326fca38bb[39m
+[2020-05-04T13:12:17.204] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:12:17.206] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:12:17.207] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:12:17.208] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:12:24.020] [INFO] default - [35mtraceId:ac7305a6-1387-463e-a69d-d5e00b86d565[39m
+[2020-05-04T13:12:24.021] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:12:24.022] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:12:24.024] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:12:24.025] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:14:08.849] [INFO] default - [35mtraceId:75153b27-de73-4589-a372-2a386744e295[39m
+[2020-05-04T13:14:08.851] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:14:08.852] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:14:08.854] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:14:08.857] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:14:09.566] [INFO] default - [35mtraceId:b93fe91b-c6ef-4bf7-b19b-a0213be64b83[39m
+[2020-05-04T13:14:09.570] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:14:09.571] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:14:09.573] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:14:09.574] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:17:14.275] [INFO] default - [35mtraceId:31fd89ce-8640-416d-8da0-89f45fd56ac3[39m
+[2020-05-04T13:17:14.284] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:17:14.286] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:17:14.290] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:17:14.291] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:17:14.897] [INFO] default - [35mtraceId:5162303d-0414-4b83-a4e6-6dc19e06baae[39m
+[2020-05-04T13:17:14.899] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:17:14.900] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:17:14.901] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:17:14.902] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:17:16.403] [INFO] default - [35mtraceId:373e7982-f36d-4986-9d26-cec81ccaa471[39m
+[2020-05-04T13:17:16.405] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:17:16.407] [INFO] default - [35mmethod: [GET] URL: /api/loginLogs/list?page=1&pageSize=10[39m
+[2020-05-04T13:17:16.408] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:17:16.409] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:24:40.470] [INFO] default - [35mtraceId:166284c2-11ee-4c27-9245-552333247acc[39m
+[2020-05-04T13:24:40.479] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:24:40.491] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=6&pageSize=10[39m
+[2020-05-04T13:24:40.495] [INFO] default - [35mreq-query: {"page":"6","pageSize":"10"}[39m
+[2020-05-04T13:24:40.509] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:24:42.754] [INFO] default - [35mtraceId:c9cf6fc9-0a7c-46c8-85ee-1907e5815d3d[39m
+[2020-05-04T13:24:42.764] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:24:42.769] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:24:42.772] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:24:42.774] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:27.162] [INFO] default - [35mtraceId:eed9b865-5cdf-42f7-9cda-afe2ea0450d4[39m
+[2020-05-04T13:25:27.165] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:27.166] [INFO] default - [35mmethod: [GET] URL: /api/role/list[39m
+[2020-05-04T13:25:27.168] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:27.171] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:27.172] [INFO] default - [35mtraceId:28722a46-38cf-4965-ac09-380826a74fcf[39m
+[2020-05-04T13:25:27.173] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:27.184] [INFO] default - [35mmethod: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1[39m
+[2020-05-04T13:25:27.186] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","currentPage":"1"}[39m
+[2020-05-04T13:25:27.188] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:29.915] [INFO] default - [35mtraceId:0ffd1cae-39b0-4a6b-830b-f6467bd0d720[39m
+[2020-05-04T13:25:29.918] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:29.920] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:25:29.921] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:25:29.922] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:30.122] [INFO] default - [35mtraceId:0ef2bced-3832-4c89-bb25-7ef001c78778[39m
+[2020-05-04T13:25:30.128] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:30.130] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:25:30.132] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:30.133] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:31.857] [INFO] default - [35mtraceId:41ccc5fa-1795-4288-ba55-3cdbff84421a[39m
+[2020-05-04T13:25:31.863] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:31.866] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=2[39m
+[2020-05-04T13:25:31.869] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"2"}[39m
+[2020-05-04T13:25:31.871] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:32.345] [INFO] default - [35mtraceId:a95e5278-cd9c-41ce-a94f-2f9f28d34892[39m
+[2020-05-04T13:25:32.351] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:32.358] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:25:32.363] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:32.368] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:34.156] [INFO] default - [35mtraceId:f6a374ed-675e-4511-8f9e-739518e30178[39m
+[2020-05-04T13:25:34.159] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:34.161] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1[39m
+[2020-05-04T13:25:34.163] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"1"}[39m
+[2020-05-04T13:25:34.165] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:34.610] [INFO] default - [35mtraceId:f01b32bd-3152-4b53-b47a-1a422b0f56ed[39m
+[2020-05-04T13:25:34.612] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:34.614] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:25:34.616] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:34.619] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:40.237] [INFO] default - [35mtraceId:d58d0fde-d035-499b-be7a-ae607d9e736a[39m
+[2020-05-04T13:25:40.244] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:40.249] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:25:40.251] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:40.253] [INFO] default - [35mreq-body:{"type":1,"res_id":1,"res_name":"文章管理","parent_id":0,"component":"null","description":"null","res_code":"wz","res_icon":"el-icon-document","sort":"0","state":1,"perms":""}[39m
+[2020-05-04T13:25:40.735] [INFO] default - [35mtraceId:afd4dbd3-4497-41a5-8979-333e92edd35a[39m
+[2020-05-04T13:25:40.744] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:40.754] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1[39m
+[2020-05-04T13:25:40.758] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"1"}[39m
+[2020-05-04T13:25:40.778] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:40.984] [INFO] default - [35mtraceId:40ad8344-557e-40ac-804c-fba9400291c0[39m
+[2020-05-04T13:25:40.986] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:40.988] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:25:40.990] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:40.995] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:46.495] [INFO] default - [35mtraceId:3cccbae4-ae5c-4fd6-ae78-f0b516fa5085[39m
+[2020-05-04T13:25:46.501] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:46.505] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:25:46.527] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:46.529] [INFO] default - [35mreq-body:{"type":2,"res_id":5,"res_name":"文章列表","parent_id":1,"component":null,"description":null,"res_code":null,"res_icon":"","sort":"0","state":1,"perms":null}[39m
+[2020-05-04T13:25:46.957] [INFO] default - [35mtraceId:1cea752b-e087-48ce-989a-84c8b36f1fe4[39m
+[2020-05-04T13:25:46.985] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:46.989] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1[39m
+[2020-05-04T13:25:47.003] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"1"}[39m
+[2020-05-04T13:25:47.007] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:25:47.203] [INFO] default - [35mtraceId:5534ea99-76b1-4b2b-9b5e-4d14101877ef[39m
+[2020-05-04T13:25:47.205] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:25:47.207] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:25:47.210] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:25:47.212] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:04.947] [INFO] default - [35mtraceId:cb1aac18-e105-45ac-94c9-71d10d8d05c5[39m
+[2020-05-04T13:26:04.967] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:04.971] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=4[39m
+[2020-05-04T13:26:04.974] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"4"}[39m
+[2020-05-04T13:26:04.976] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:05.301] [INFO] default - [35mtraceId:1810aaec-bf68-4809-8fe7-99a34d13f86a[39m
+[2020-05-04T13:26:05.305] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:05.310] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:26:05.314] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:05.318] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:09.868] [INFO] default - [35mtraceId:0d451874-757a-4db5-b4e2-c675868801e8[39m
+[2020-05-04T13:26:09.870] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:09.872] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:26:09.874] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:09.876] [INFO] default - [35mreq-body:{"type":1,"res_id":4,"res_name":"日志管理","parent_id":0,"component":"null","description":"null","res_code":"rz","res_icon":"el-icon-user ","sort":"0","state":1,"perms":""}[39m
+[2020-05-04T13:26:10.123] [INFO] default - [35mtraceId:10086a1a-4301-4e3a-9d63-c9a1eb2bc2bc[39m
+[2020-05-04T13:26:10.148] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:10.150] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=4[39m
+[2020-05-04T13:26:10.151] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"4"}[39m
+[2020-05-04T13:26:10.153] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:10.327] [INFO] default - [35mtraceId:0cd8854f-b0fe-4441-bee0-fb54586b6da6[39m
+[2020-05-04T13:26:10.338] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:10.353] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:26:10.367] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:10.384] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:13.566] [INFO] default - [35mtraceId:1c2d2e59-ef24-44cc-a95f-488095305eb6[39m
+[2020-05-04T13:26:13.570] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:13.573] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=2[39m
+[2020-05-04T13:26:13.576] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"2"}[39m
+[2020-05-04T13:26:13.579] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:14.023] [INFO] default - [35mtraceId:ba11d81c-ebf0-4e4a-9551-e620a89f3ba7[39m
+[2020-05-04T13:26:14.028] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:14.031] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:26:14.033] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:14.037] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:15.572] [INFO] default - [35mtraceId:b81424b5-74ed-40be-a4d6-98d94ae12450[39m
+[2020-05-04T13:26:15.576] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:15.578] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1[39m
+[2020-05-04T13:26:15.585] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"1"}[39m
+[2020-05-04T13:26:15.588] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:16.039] [INFO] default - [35mtraceId:2c933045-4a09-4d65-b5f1-4d0b85cbe3b5[39m
+[2020-05-04T13:26:16.041] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:16.042] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:26:16.043] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:16.045] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:17.249] [INFO] default - [35mtraceId:0bce03da-1f84-4480-9887-4cbac7e3fc2f[39m
+[2020-05-04T13:26:17.251] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:17.253] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=0[39m
+[2020-05-04T13:26:17.254] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"0"}[39m
+[2020-05-04T13:26:17.255] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:17.691] [INFO] default - [35mtraceId:7abf9b6a-694c-4ef4-9530-d9e35f687fe5[39m
+[2020-05-04T13:26:17.695] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:17.698] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:26:17.703] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:17.707] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:40.289] [INFO] default - [35mtraceId:c2b1cf98-e2c2-4f67-b59b-eba546944616[39m
+[2020-05-04T13:26:40.298] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:40.301] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=41[39m
+[2020-05-04T13:26:40.316] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"41"}[39m
+[2020-05-04T13:26:40.318] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:40.721] [INFO] default - [35mtraceId:3989e7b5-7faa-4021-a1e1-78cc574e5de4[39m
+[2020-05-04T13:26:40.724] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:40.725] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:26:40.727] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:40.728] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:45.295] [INFO] default - [35mtraceId:3960737f-1c66-44c3-b40f-ef2ce97b19ae[39m
+[2020-05-04T13:26:45.302] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:45.304] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=35[39m
+[2020-05-04T13:26:45.336] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"35"}[39m
+[2020-05-04T13:26:45.338] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:26:45.548] [INFO] default - [35mtraceId:b7f99d64-6cb6-48be-8078-84f054a6c0d2[39m
+[2020-05-04T13:26:45.552] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:26:45.557] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:26:45.563] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:26:45.565] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:03.972] [INFO] default - [35mtraceId:9b92f1e5-57bb-4ce5-b277-0b551932a662[39m
+[2020-05-04T13:28:03.973] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:03.974] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:28:03.975] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:28:03.976] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:04.549] [INFO] default - [35mtraceId:f1fe2610-9ffb-4ac3-bebd-aedb61b68b5a[39m
+[2020-05-04T13:28:04.552] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:04.553] [INFO] default - [35mmethod: [GET] URL: /api/user/list?page=1&pageSize=10&currentPage=1[39m
+[2020-05-04T13:28:04.554] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","currentPage":"1"}[39m
+[2020-05-04T13:28:04.555] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:04.763] [INFO] default - [35mtraceId:9fe2900b-02e4-4391-91cc-a248c44bf5bc[39m
+[2020-05-04T13:28:04.766] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:04.767] [INFO] default - [35mmethod: [GET] URL: /api/role/list[39m
+[2020-05-04T13:28:04.774] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:28:04.775] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:08.944] [INFO] default - [35mtraceId:4c22b20c-c43d-4622-a8d6-883a894d085a[39m
+[2020-05-04T13:28:08.945] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:08.947] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:28:08.948] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:28:08.949] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:09.075] [INFO] default - [35mtraceId:9261bb89-8eed-4e8c-9fd1-119940a49a1f[39m
+[2020-05-04T13:28:09.076] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:09.077] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:28:09.078] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:28:09.079] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:41.851] [INFO] default - [35mtraceId:3323c8d8-409a-4c3f-92bf-29cc31022885[39m
+[2020-05-04T13:28:41.853] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:41.854] [INFO] default - [35mmethod: [GET] URL: /api/role/list[39m
+[2020-05-04T13:28:41.855] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:28:41.856] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:51.182] [INFO] default - [35mtraceId:db424fc3-1efc-4f3e-8c3e-39d34d047fd1[39m
+[2020-05-04T13:28:51.185] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:51.187] [INFO] default - [35mmethod: [GET] URL: /api/loginLogs/list?page=1&pageSize=10[39m
+[2020-05-04T13:28:51.189] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:28:51.190] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:28:53.063] [INFO] default - [35mtraceId:ac5690eb-08a6-4f33-afca-1f3546dbd7f1[39m
+[2020-05-04T13:28:53.065] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:28:53.067] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:28:53.068] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:28:53.069] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:29:50.381] [INFO] default - [35mtraceId:20abb312-583a-4d81-b03a-0c748d44a33e[39m
+[2020-05-04T13:29:50.390] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:29:50.391] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=2&pageSize=10[39m
+[2020-05-04T13:29:50.392] [INFO] default - [35mreq-query: {"page":"2","pageSize":"10"}[39m
+[2020-05-04T13:29:50.404] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:29:51.884] [INFO] default - [35mtraceId:de396364-f93a-40d4-bd12-e0526c31f4f7[39m
+[2020-05-04T13:29:51.890] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:29:51.892] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=3&pageSize=10[39m
+[2020-05-04T13:29:51.894] [INFO] default - [35mreq-query: {"page":"3","pageSize":"10"}[39m
+[2020-05-04T13:29:51.895] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:46:31.824] [INFO] default - [35mtraceId:97668534-fcf1-4080-948c-5af639c0294f[39m
+[2020-05-04T13:46:31.831] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:46:31.832] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=2&pageSize=10[39m
+[2020-05-04T13:46:31.834] [INFO] default - [35mreq-query: {"page":"2","pageSize":"10"}[39m
+[2020-05-04T13:46:31.835] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:46:58.659] [INFO] default - [35mtraceId:869ee458-a4c0-4d4a-8c1f-6ec96815218e[39m
+[2020-05-04T13:46:58.667] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:46:58.668] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1[39m
+[2020-05-04T13:46:58.670] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"1"}[39m
+[2020-05-04T13:46:58.671] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:46:58.999] [INFO] default - [35mtraceId:0623fe43-2d3f-4c86-8454-a9a2dfb3e47f[39m
+[2020-05-04T13:46:59.001] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:46:59.002] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:46:59.003] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:46:59.004] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:02.159] [INFO] default - [35mtraceId:6c24cfb8-d89c-4b8e-822d-491d5d56fa18[39m
+[2020-05-04T13:49:02.161] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:02.162] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:49:02.164] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:02.169] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:02.834] [INFO] default - [35mtraceId:8bd79298-4895-427c-a3e0-d13ba8d010ae[39m
+[2020-05-04T13:49:02.838] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:02.839] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:49:02.841] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:49:02.845] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:03.043] [INFO] default - [35mtraceId:a0e16a83-56df-4da4-8c32-f5737a288220[39m
+[2020-05-04T13:49:03.044] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:03.045] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:03.046] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:03.048] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:09.975] [INFO] default - [35mtraceId:dd278836-bf0f-4724-acd5-51517e74a70b[39m
+[2020-05-04T13:49:09.981] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:09.983] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=1[39m
+[2020-05-04T13:49:09.984] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"1"}[39m
+[2020-05-04T13:49:09.986] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:10.423] [INFO] default - [35mtraceId:5281cf0a-2c93-4452-8d6f-a887a302b361[39m
+[2020-05-04T13:49:10.428] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:10.431] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:10.433] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:10.434] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:14.109] [INFO] default - [35mtraceId:337e878f-937d-496f-a274-6b0acfd6dffe[39m
+[2020-05-04T13:49:14.112] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:14.115] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=2[39m
+[2020-05-04T13:49:14.117] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"2"}[39m
+[2020-05-04T13:49:14.119] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:14.585] [INFO] default - [35mtraceId:50ef5a1c-d2ba-4dac-aef0-11f0fc1d906a[39m
+[2020-05-04T13:49:14.590] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:14.594] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:14.606] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:14.613] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:21.679] [INFO] default - [35mtraceId:fe8fe9ac-5d38-4705-b86b-20d1b3290a59[39m
+[2020-05-04T13:49:21.682] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:21.683] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=0[39m
+[2020-05-04T13:49:21.684] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"0"}[39m
+[2020-05-04T13:49:21.685] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:22.132] [INFO] default - [35mtraceId:5e360433-4152-453d-ac9b-3b43c291cbd9[39m
+[2020-05-04T13:49:22.136] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:22.138] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:22.139] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:22.140] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:34.452] [INFO] default - [35mtraceId:7a2839ae-c441-4040-8d94-8545e52c9017[39m
+[2020-05-04T13:49:34.456] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:34.460] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:49:34.462] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:34.463] [INFO] default - [35mreq-body:{"type":1,"res_id":1,"res_name":"文章管理","parent_id":0,"component":"null","description":"null","res_code":"wz","res_icon":"el-icon-document","sort":"1","state":1,"perms":""}[39m
+[2020-05-04T13:49:34.815] [INFO] default - [35mtraceId:bdcf4973-ec68-4f04-a3a1-74f29010073b[39m
+[2020-05-04T13:49:34.818] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:34.820] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=0[39m
+[2020-05-04T13:49:34.821] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"0"}[39m
+[2020-05-04T13:49:34.822] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:35.314] [INFO] default - [35mtraceId:0af4df64-5b77-4cf4-861b-4ce9ae1cb3c9[39m
+[2020-05-04T13:49:35.316] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:35.317] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:35.319] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:35.320] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:37.211] [INFO] default - [35mtraceId:9d2699b7-dcc3-4e5a-a78a-513e6108fd26[39m
+[2020-05-04T13:49:37.213] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:37.216] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:49:37.217] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:37.219] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:37.765] [INFO] default - [35mtraceId:658a84e3-e9d5-4403-bc96-e666861e4df7[39m
+[2020-05-04T13:49:37.798] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:37.799] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:49:37.801] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:49:37.807] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:37.964] [INFO] default - [35mtraceId:92077527-08f9-4f24-a9b5-406f291d0f9d[39m
+[2020-05-04T13:49:38.028] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:38.048] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:38.050] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:38.051] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:47.476] [INFO] default - [35mtraceId:f6768776-1de7-451d-bddf-b8bba1fc3840[39m
+[2020-05-04T13:49:47.482] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:47.484] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=2[39m
+[2020-05-04T13:49:47.485] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"2"}[39m
+[2020-05-04T13:49:47.486] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:47.728] [INFO] default - [35mtraceId:3b307770-028f-4ecb-8341-845af42fe275[39m
+[2020-05-04T13:49:47.732] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:47.735] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:47.737] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:47.739] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:48.447] [INFO] default - [35mtraceId:cd1b52b9-ff4c-4c59-ac46-b6b0dad7c150[39m
+[2020-05-04T13:49:48.450] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:48.453] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=7[39m
+[2020-05-04T13:49:48.455] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"7"}[39m
+[2020-05-04T13:49:48.457] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:49:48.905] [INFO] default - [35mtraceId:a97e0365-3b6c-48e2-857b-a8f95ce982df[39m
+[2020-05-04T13:49:48.908] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:49:48.909] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:49:48.910] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:49:48.912] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:01.706] [INFO] default - [35mtraceId:66dfe49d-ed01-4897-a20b-692f4c6d1b34[39m
+[2020-05-04T13:50:01.709] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:01.712] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:50:01.714] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:01.715] [INFO] default - [35mreq-body:{"type":2,"res_id":7,"res_name":"用户管理","parent_id":2,"component":"userList","description":"null","res_code":"","res_icon":"fa fa-user-o","sort":0,"state":1,"perms":""}[39m
+[2020-05-04T13:50:02.047] [INFO] default - [35mtraceId:f71e0f96-c6f7-408d-ad1c-f2e6fb956ca4[39m
+[2020-05-04T13:50:02.051] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:02.054] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=7[39m
+[2020-05-04T13:50:02.056] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"7"}[39m
+[2020-05-04T13:50:02.057] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:02.578] [INFO] default - [35mtraceId:066e9792-9397-4613-95f3-81e4a3cbbe89[39m
+[2020-05-04T13:50:02.590] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:02.594] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:50:02.601] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:02.602] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:03.961] [INFO] default - [35mtraceId:f4589a9e-c0fa-4365-b1a5-bcf835ae3bd1[39m
+[2020-05-04T13:50:03.964] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:03.966] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=9[39m
+[2020-05-04T13:50:03.967] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"9"}[39m
+[2020-05-04T13:50:03.969] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:04.431] [INFO] default - [35mtraceId:ef80f86e-fd54-480d-b78c-b73561efbd4a[39m
+[2020-05-04T13:50:04.432] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:04.433] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:50:04.434] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:04.435] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:11.448] [INFO] default - [35mtraceId:a1b844f7-cf33-46db-a025-f4acdf709b42[39m
+[2020-05-04T13:50:11.451] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:11.452] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:50:11.453] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:11.454] [INFO] default - [35mreq-body:{"type":2,"res_id":9,"res_name":"资源管理","parent_id":2,"component":"menuList","description":"null","res_code":"","res_icon":"fa fa-reorder","sort":0,"state":1,"perms":""}[39m
+[2020-05-04T13:50:11.873] [INFO] default - [35mtraceId:5e38c5aa-84b1-4ebd-a470-0768aa234502[39m
+[2020-05-04T13:50:11.893] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:11.909] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=9[39m
+[2020-05-04T13:50:11.933] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"9"}[39m
+[2020-05-04T13:50:11.935] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:12.123] [INFO] default - [35mtraceId:e2df9a73-1890-4db9-803d-25592ca94424[39m
+[2020-05-04T13:50:12.125] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:12.127] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:50:12.128] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:12.131] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:12.910] [INFO] default - [35mtraceId:1ca09018-217c-483a-94c6-aaf9f308c121[39m
+[2020-05-04T13:50:12.919] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:12.922] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=10[39m
+[2020-05-04T13:50:12.924] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"10"}[39m
+[2020-05-04T13:50:12.926] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:13.361] [INFO] default - [35mtraceId:d45989eb-0c62-4161-893c-49b12179a3c9[39m
+[2020-05-04T13:50:13.366] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:13.367] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:50:13.368] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:13.370] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:20.862] [INFO] default - [35mtraceId:63bcdefd-3668-4a87-9d47-71482380ee93[39m
+[2020-05-04T13:50:20.875] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:20.881] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:50:20.886] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:20.890] [INFO] default - [35mreq-body:{"type":2,"res_id":10,"res_name":"角色管理","parent_id":2,"component":"roleList","description":"null","res_code":"xt","res_icon":"el-icon-user-solid","sort":0,"state":1,"perms":""}[39m
+[2020-05-04T13:50:21.310] [INFO] default - [35mtraceId:7da9a4aa-0da8-4f05-929b-ad300c1ece64[39m
+[2020-05-04T13:50:21.334] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:21.337] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=10[39m
+[2020-05-04T13:50:21.340] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"10"}[39m
+[2020-05-04T13:50:21.342] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:21.559] [INFO] default - [35mtraceId:4b0d82e9-0d71-4d1b-b366-1c413f6a032b[39m
+[2020-05-04T13:50:21.561] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:21.563] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:50:21.564] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:21.565] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:28.395] [INFO] default - [35mtraceId:7fc7c6f1-dbcc-41fc-9f91-ed5ff9086036[39m
+[2020-05-04T13:50:28.418] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:28.420] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:50:28.424] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:28.425] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:28.921] [INFO] default - [35mtraceId:bfb3b45f-f7cf-4531-8df0-c157952f6033[39m
+[2020-05-04T13:50:28.922] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:28.924] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:50:28.925] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:50:28.926] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:29.147] [INFO] default - [35mtraceId:9d4c704d-f496-457e-a241-cbe000f3cfcb[39m
+[2020-05-04T13:50:29.165] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:29.167] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:50:29.172] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:29.173] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:46.174] [INFO] default - [35mtraceId:35423f2f-691c-4104-a2e8-a5d2481684aa[39m
+[2020-05-04T13:50:46.176] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:46.177] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=35[39m
+[2020-05-04T13:50:46.178] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"35"}[39m
+[2020-05-04T13:50:46.179] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:50:46.453] [INFO] default - [35mtraceId:2a05b4e3-5bdf-410b-86f7-7f90b5463b86[39m
+[2020-05-04T13:50:46.454] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:50:46.455] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:50:46.456] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:50:46.457] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:51:32.520] [INFO] default - [35mtraceId:535c99ad-ef21-4d8f-81d0-367f3685ccda[39m
+[2020-05-04T13:51:32.523] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:51:32.524] [INFO] default - [35mmethod: [GET] URL: /api/loginLogs/list?page=1&pageSize=10[39m
+[2020-05-04T13:51:32.525] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:51:32.526] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:51:34.751] [INFO] default - [35mtraceId:be58499e-dd88-419e-bef4-1e03239f3482[39m
+[2020-05-04T13:51:34.754] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:51:34.756] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:51:34.757] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:51:34.758] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:51:58.709] [INFO] default - [35mtraceId:8ba74906-6191-4752-8e6a-a30b21cbbba9[39m
+[2020-05-04T13:51:58.722] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:51:58.738] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=38[39m
+[2020-05-04T13:51:58.756] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"38"}[39m
+[2020-05-04T13:51:58.775] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:51:59.101] [INFO] default - [35mtraceId:de3f1251-c877-4ac8-894a-9aa2ba5acd71[39m
+[2020-05-04T13:51:59.108] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:51:59.111] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:51:59.113] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:51:59.115] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:13.243] [INFO] default - [35mtraceId:884cdefe-5640-4819-ac86-46d523ce80d7[39m
+[2020-05-04T13:52:13.247] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:13.252] [INFO] default - [35mmethod: [PUT] URL: /api/menu/updatedMenu[39m
+[2020-05-04T13:52:13.254] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:52:13.256] [INFO] default - [35mreq-body:{"type":2,"res_id":38,"res_name":"请求日志","parent_id":4,"component":"operationLogs","description":"","res_code":"action","res_icon":"","sort":0,"state":1,"perms":null}[39m
+[2020-05-04T13:52:13.579] [INFO] default - [35mtraceId:be9a492d-e062-482e-a900-34450fd2c37f[39m
+[2020-05-04T13:52:13.580] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:13.581] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10&treeId=38[39m
+[2020-05-04T13:52:13.582] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10","treeId":"38"}[39m
+[2020-05-04T13:52:13.583] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:14.110] [INFO] default - [35mtraceId:43596d6a-a21e-48ef-8e86-d708e57d5d19[39m
+[2020-05-04T13:52:14.114] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:14.118] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:52:14.121] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:52:14.129] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:16.107] [INFO] default - [35mtraceId:5d2cf1a0-c8b3-49b8-9884-74cb16674101[39m
+[2020-05-04T13:52:16.112] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:16.114] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:52:16.116] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:52:16.117] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:16.533] [INFO] default - [35mtraceId:ba9a2289-8f8c-4971-90c3-59f2d363b25a[39m
+[2020-05-04T13:52:16.534] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:16.535] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:52:16.536] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:52:16.537] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:16.730] [INFO] default - [35mtraceId:67f58569-4d6e-4651-90a2-90d75a0b596e[39m
+[2020-05-04T13:52:16.734] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:16.736] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:52:16.737] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:52:16.750] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:20.979] [INFO] default - [35mtraceId:7d2d3dd8-1247-44c2-b834-71cd83128a65[39m
+[2020-05-04T13:52:20.981] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:20.983] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T13:52:20.985] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:52:21.005] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:21.412] [INFO] default - [35mtraceId:d91a6b7b-572f-41a0-864d-97dc6a4ac1ce[39m
+[2020-05-04T13:52:21.414] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:21.415] [INFO] default - [35mmethod: [GET] URL: /api/menu/list/?page=1&pageSize=10[39m
+[2020-05-04T13:52:21.416] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:52:21.417] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:21.618] [INFO] default - [35mtraceId:44b1ca8a-4793-4f25-9466-a3206fbffeed[39m
+[2020-05-04T13:52:21.626] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:21.629] [INFO] default - [35mmethod: [GET] URL: /api/menu/selectMenuList[39m
+[2020-05-04T13:52:21.630] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T13:52:21.631] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T13:52:34.024] [INFO] default - [35mtraceId:681447ef-3323-4634-a17e-56b095c3d78e[39m
+[2020-05-04T13:52:34.026] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T13:52:34.028] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T13:52:34.029] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T13:52:34.030] [INFO] default - [35mreq-body:{}[39m
