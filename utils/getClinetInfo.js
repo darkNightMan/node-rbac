@@ -1,5 +1,4 @@
 module.exports = (ua) => {
-  console.log(ua)
     let agent = ''
     if (/like Mac OS X/.test(ua)) {  
       agent = `iOS${(/CPU( iPhone)? OS ([0-9\._]+) like Mac OS X/.exec(ua)[2].replace(/_/g, '.'))}`

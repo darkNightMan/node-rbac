@@ -5,6 +5,7 @@ const SysRoleModel = require('./SysRoleModel') // 角色表
 const SysRolePermmisionModel = require('./SysRolePermmisionModel') // 角色权限关联表
 const SysResourceModel = require('./SysResourceModel') // 权限表
 const SysLoginLogsModel = require('./SysLoginLogsModel')
+const SysOperationModel = require('./SysOperationModel')
 const  Sequelize = require('sequelize')
 const Op = Sequelize.Op
 
@@ -79,5 +80,6 @@ module.exports = {
   SysRolePermmisionModel,
   SysResourceModel,
   SysLoginLogsModel,
+  SysOperationModel,
   Op
 }

@@ -2,20 +2,14 @@
 const {
   SysRoleModel,
   SysUserModel,
-  SysLoginLogsModel
+  SysOperationModel
 } = require('../models/TableRelationModel')
 // 登入1
 class SysOperationServer {
   // 插入
-  async insert (data) {  
-    let inserData = Object.assign({
-      user_id: null,
-      user_name: '',     
-      login_ip: '',
-      login_address: '',
-      login_description: ''
-    }, data) 
-    let rows = await SysLoginLogsModel.create(inserData)
+  async insert (data) {
+    console.log(data)
+    let rows = await SysOperationModel.create(data)
     return rows
   }
   // 列表
@@ -26,22 +20,22 @@ class SysOperationServer {
           where.user_id= conditions.user_id
       }
     } 
-    let data = await SysLoginLogsModel.findAndCountAll({
+    let data = await SysOperationModel.findAndCountAll({
       where,
       distinct:true, //  include 关联会出现重复条数 去重
-      include: [{
-        model: SysUserModel,
-        attributes: ['user_id'],
-        as: 'userInfo',
-        include: [{
-          model: SysRoleModel,
-          through: {
-            attributes: []
-          },
-        }]
-      }],
+      // include: [{
+      //   model: SysUserModel,
+      //   attributes: ['user_id'],
+      //   as: 'userInfo',
+      //   include: [{
+      //     model: SysRoleModel,
+      //     through: {
+      //       attributes: []
+      //     },
+      //   }]
+      // }],
       order: [
-        ['login_time', 'DESC']
+        ['action_time', 'DESC']
       ],
       limit: pageParmas.pageSize,
       offset: pageParmas.limitStart
@@ -52,4 +46,5 @@ class SysOperationServer {
     } 
   }
 }
-module.exports = new SysLogServer()
+
+module.exports = new SysOperationServer()
