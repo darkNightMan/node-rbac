@@ -35,7 +35,7 @@
       },
       application: {
         type: 'dateFile',
-        filename: './syslogs//application',
+        filename: './syslogs/application',
         pattern: '-yyyy-MM-dd.log',
         maxLogSize: 10485760, // 10mb,日志文件大小,超过该size则自动创建新的日志文件
         backups: 20,  // 仅保留最新的20个日志文件
@@ -44,7 +44,7 @@
       },
       err: {
         type: 'stderr',
-        filename: './syslogs/errors',
+        filename: './syslogs/error',
         pattern: '-yyyy-MM-dd.log',
         alwaysIncludePattern: true
       }

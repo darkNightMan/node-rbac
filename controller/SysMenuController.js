@@ -16,7 +16,7 @@ class SysMenuController {
     })
     res.R.ok({
       list: _data.list,
-      totalCount: _data.total[0].count,
+      totalCount: _data.count,
       currentPage: pageParams.page,
       pageSize: pageParams.pageSize
     })
@@ -86,7 +86,7 @@ class SysMenuController {
   }
   async createMenu (req, res) {    
     let data = req.body
-    let _data = await SysMenuServer.insertMenu(data)
+    let _data = await SysMenuServer.createMenu(data)
     if(_data) {
       res.R.ok(_data)
     } else {
@@ -102,7 +102,6 @@ class SysMenuController {
       res.R.err('MENU_UPDATE_FAILED')
     }
   }
-
   async deleteMenu (req, res) {
     let res_id = req.body.res_id
     let _data = await SysMenuServer.deleteMenu(res_id)

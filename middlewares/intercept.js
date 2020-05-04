@@ -19,7 +19,7 @@ class InterceptAuth {
         // 当前的token 是否和 redis中的一致 token 反则 用户可能重新登入或者在林外一台机子登入了1
         if (token === redisToken) {
           req.userInfo = decoded.userInfo
-          redis.set(`token_${decoded.userInfo.user_id}`, token, JWT_COMF.JWTEXP) // 继续激活当前token
+          redis.set(`token_${decoded.userInfo.user_id}`, token, JWT_COMF.JWTEXP) // 继续激活当前token1
           next() // 跳转下一个路由
         } else {
           // res.status(401).send()

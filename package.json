@@ -28,7 +28,9 @@
     "lodash": "^4.17.15",
     "log4js": "^6.1.2",
     "moment": "^2.24.0",
+    "mysql2": "^2.1.0",
     "redis": "^3.0.2",
+    "sequelize": "^5.21.7",
     "svg-captcha": "^1.4.0",
     "uuidv4": "^6.0.7",
     "web-push": "^3.4.0"

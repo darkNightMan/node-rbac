@@ -4,17 +4,19 @@ const SysRoleController = require('../controller/SysRoleController')
 const SysUserController = require('../controller/SysUserController')
 const TestController = require('../controller/TestController')
 const SysLoginLogsController = require('../controller/SysLoginLogsController')
+const SysOperationController = require('../controller/SysOperationController')
 const InterceptAuth = require('../middlewares/intercept')
 const log = require('../middlewares/log')
 const NotFind = require('../middlewares/notFind')
 const permissions = require('../middlewares/permissions')
 
 module.exports = function (app) {
-  app.use(log.setLog) // 日志
+  app.use(log.setLog)
   app.get('/api/getCaptcha', UserController.captcha)
   app.post('/api/login', UserController.login) // 登入接口
   app.use(InterceptAuth.authToken) // 校验token
-  app.post('/api/test', TestController.test) // 测试接口  
+  app.use(log.operatioLogs)
+  app.get('/api/test', TestController.test) // 测试接口  
   app.get('/api/loginOut', UserController.loginOut) // 退出 
   app.get('/api/getUserMenuList', UserController.getUserMenuList) // 获取用户信息和菜单
  // 角色
@@ -36,8 +38,7 @@ module.exports = function (app) {
   app.post('/api/menu/createMenu', permissions.hasPerms('sys:menu:create'), SysMenuController.createMenu) // 新增菜单 
   app.put('/api/menu/updatedMenu', permissions.hasPerms('sys:menu:update'), SysMenuController.updatedMenu) // 更新菜单 
   app.delete('/api/menu/deleteMenu', permissions.hasPerms('sys:menu:delete'), SysMenuController.deleteMenu) // 删除菜单  
-
-  app.get('/api/loginLogs/list', permissions.hasPerms('sys:logs:list'), SysLoginLogsController.list) // logs列表  
-
+  app.get('/api/loginLogs/list', permissions.hasPerms('sys:logs:list'), SysLoginLogsController.list) // logs列表    
+  app.get('/api/operationLos/list', SysOperationController.list) // logs列表  
   app.use(NotFind.notApi) // 访问的路由不存在  
 }

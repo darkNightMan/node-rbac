@@ -1,71 +1,92 @@
 const {
-  exec
-} = require('../db/mysql.js')
-
+  Op,
+  SysUserModel,
+  SysRoleModel
+} = require('../models/TableRelationModel')
 
 // 用户
 class SysUserServer {
-   // 获取的用户
-   async list(pageParmas, conditions) {
-    let sql = `SELECT * FROM sys_user LIMIT ?, ?`
-    let sqltotal = `SELECT COUNT(user_id) AS count FROM sys_user;`
-    if (conditions) { // 如果存在条件查询
-     
+  // 获取的用户
+  async list(pageParmas, conditions) {
+    let where = {}
+    if (conditions) {
+      if (conditions.treeId) {
+        where[Op.or] = [{
+            parent_id: conditions.treeId
+          },
+          {
+            res_id: conditions.treeId
+          },
+        ]
+      }
     }
-    let list = await exec(sql, [pageParmas.limitStart, pageParmas.pageSize])
-    let total = await exec(sqltotal)
-    return {   
-      list,
-      total
+    let _data = await SysUserModel.findAndCountAll({
+      where,
+      attributes: {
+        exclude: ['password'],
+      },
+      distinct:true,
+      include: [{
+        model: SysRoleModel,
+        through: {
+          attributes: []
+        }, // 排除中间表
+      }],
+      limit: pageParmas.pageSize,
+      offset: pageParmas.limitStart
+    })
+    return {
+      list: _data.rows,
+      count: _data.count
     }
   }
-  async createUser (userInfo) {
-    function getValues(id, arr) {
-      let values = ''
-      arr.forEach((roleid) => {
-        values+=`(${id},${roleid}),`
-      })
-      return values.replace(/,$/gi, '')
-    }
-    let sql = `INSERT INTO sys_user (nick_name, password, email, phone, avatar, create_time, update_id) 
-    VALUES ('${userInfo.nick_name}','${userInfo.password}','${userInfo.email}','${userInfo.phone}','${userInfo.avatar}',now(),${userInfo.user_id})`  
-    let row = await exec(sql)     
-    let updateRole = await SysUserServer.setUserRole(row.insertId, userInfo.role_id)
-    return true 
-  }
-  // 更新用户
-  async updateUser (data) {
-    let usersql = `UPDATE sys_user SET 
-      nick_name = '${data.nick_name}', 
-      password = '${data.password}', 
-      email = '${data.email}', 
-      phone = '${data.phone}', 
-      avatar = '${data.avatar}' WHERE user_id = ${data.user_id}`
-      let sqlRole = `DELETE FROM sys_user_role WHERE user_id = ${data.user_id}`
-      let dataUser = await exec(usersql)
-      let delrole = await exec(sqlRole)
-      let updateRole = await SysUserServer.setUserRole(data.user_id, data.role_id)
-      return true
-  }
-  // 删除用户
-  async deleteUser (user_id) {
-    let sqluser = `DELETE FROM sys_user  WHERE user_id = ${user_id}`
-    let sqlRole = `DELETE FROM sys_user_role WHERE user_id = ${user_id}`
-    let delrole = await exec(sqlRole)
-    let deluser = await exec(sqluser)
+  // 添加用户
+  async createUser(userInfo) {
+    let user = await SysUserModel.create({
+      nick_name: userInfo.nick_name,
+      password: userInfo.password,
+      email: userInfo.email,
+      phone: userInfo.phone,
+      avatar: userInfo.avatar,
+      create_time: userInfo.create_time,
+      update_id: userInfo.update_id,
+    })
+    let roles = await SysRoleModel.findAll({
+      where: {
+        role_id: userInfo.role_id
+      }
+    })
+    let row = await user.addSys_roles(roles)
     return true
   }
-  // 更新用户角色
-  static setUserRole(userid, roleArr) {
-    function getValues(id, arr) {
-      let values = ''
-      arr.forEach((roleid) => {
-        values+=`(${id},${roleid}),`
-      })
-      return values.replace(/,$/gi, '')
-    }
-    let insertSql = `INSERT INTO sys_user_role (user_id, role_id) VALUES ${getValues(userid, roleArr)}`  
-    return exec(insertSql)
+  // 更新用户
+  async updateUser(data) {
+    let roles = await SysRoleModel.findAll({
+      where: {
+        role_id: data.role_id
+      }
+    })
+    let user = await SysUserModel.findByPk(data.user_id) //  通过主键查询
+    await user.update({
+      nick_name: data.nick_name,
+      password: data.password,
+      email: data.email,
+      phone: data.phone,
+      avatar: data.avatar,
+      create_time: data.create_time,
+      update_id: data.update_id,
+    })
+    let row = await user.setSys_roles(roles)
+    return true
+  }
+  // 删除用户
+  async deleteUser(user_id) {
+    let row = await SysUserModel.destroy({
+      where: {
+        user_id: user_id
+      }
+    })
+    return true
   }
 }
 module.exports = new SysUserServer()

@@ -15,7 +15,6 @@ const svgCaptcha = require('svg-captcha')
 class UserController {
   // 登入
   async login(req, res) {
-   
     let phone = req.body.phone
     let password = req.body.password  
     let code = req.body.code
@@ -96,10 +95,9 @@ class UserController {
       })
       return parentMenu
     }
-    let _menu = await SysMenuServer.getMenu(userid)
-    let _perms = await SysMenuServer.getUserPer(userid)
+    let _menu = await SysMenuServer.getUserMenu(userid)
+    let _perms = await SysMenuServer.getUserPer(userid)  
     let _data = await UserServer.getUserInfo(userid)
-
     function getPerms (perms) {
       let permsArr = []
       perms.map((it) => {

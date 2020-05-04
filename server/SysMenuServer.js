@@ -1,93 +1,221 @@
 const {
-  exec
-} = require('../db/mysql.js')
-
+  SysResourceModel,
+  Op,
+  SysRoleModel,
+  SysUserModel
+} = require('../models/TableRelationModel')
 
 // 菜单
 class SysMenuServer {
   // 获取菜单列表
   async list(pageParmas, conditions) {
-    let sqlist = `SELECT * FROM sys_resource where 1=1 `
-    let sqltotal = `SELECT COUNT(res_id) AS count FROM sys_resource where 1=1 `
-    let sqlArr = [] 
-    let sqltotalArr = []
-    if (conditions) { // 如果存在条件查询
-      if (conditions.treeId) {  //  树查询
-        let tree = parseInt(conditions.treeId)        
-        sqlist+= ` and parent_id = ? `
-        sqlArr.push(tree)
-        sqlist+= `or res_id = ?`
-        sqlArr.push(tree)
-       
-        sqltotal+= ` and  parent_id = ?  `
-        sqltotalArr.push(tree)
-        sqltotal+= ` or res_id = ? `
-        sqltotalArr.push(tree)
+    let where = {}
+    if (conditions) {
+      if (conditions.treeId) {
+        where[Op.or] = [{
+            parent_id: conditions.treeId
+          },
+          {
+            res_id: conditions.treeId
+          },
+        ]
       }
     }
-    sqlist+= ` LIMIT ?, ? `
-    sqlArr.push(pageParmas.limitStart, pageParmas.pageSize)
-    
-    sqltotalArr.push(pageParmas.limitStart, pageParmas.pageSize)
-    let list = await exec(sqlist, sqlArr)
-    let total = await exec(sqltotal, sqlArr)
-    return {   
-      list,
-      total
+    let rescource = await SysResourceModel.findAndCountAll({
+      where,
+      order: [
+        ['sort', 'ASC']
+      ],
+      limit: pageParmas.pageSize,
+      offset: pageParmas.limitStart
+    })
+    return {
+      list: rescource.rows,
+      count: rescource.count
     }
   }
-  async selectMenuList () {
-    let sql = `SELECT res_name, res_id, parent_id FROM sys_resource WHERE type < 3 ORDER BY sort ASC;`
-    let data = await exec(sql)
-    return data
+  // 查询非按钮菜单
+  async selectMenuList() {
+    let _data = await SysResourceModel.findAll({
+      where: {
+        type: {
+          [Op.lt]: 3
+        }
+      },
+      attributes: ['res_id', 'parent_id', 'res_name'],
+      order: [
+        ['sort', 'ASC']
+      ]
+    })
+    let list = []
+    // 需注意 sequezile 查出来的数据不能对其刷数据进行添加或者删除 需要的数据只能自己组装了
+    _data.map((it) => {
+      list.push({
+        res_id: it.res_id,
+        res_name: it.res_name,
+        parent_id: it.parent_id
+      })
+    })
+    return list
   }
   // 获取所有菜单树
   async getTreeMenu() {
-    let sql = `SELECT	sys_resource.res_id,  sys_resource.parent_id, sys_resource.res_name FROM sys_resource ORDER BY sort ASC;` 
-    let data = await exec(sql)
-    return data
+    let _data = await SysResourceModel.findAll({
+      attributes: ['res_id', 'parent_id', 'res_name'],
+      order: [
+        ['sort', 'ASC']
+      ],
+    })
+    let list = []
+    // 需注意 sequezile 查出来的数据不能对其刷数据进行添加或者删除 需要的数据只能自己组装了
+    _data.map((it) => {
+      list.push({
+        res_id: it.res_id,
+        res_name: it.res_name,
+        parent_id: it.parent_id
+      })
+    })
+    return list
   }
   // 当前用户的菜单
-  async getMenu(userId) {
-    let sql = `SELECT	sys_resource.*  FROM  sys_user_role
-      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
-      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} AND type < 3 GROUP BY res_id ORDER BY sort ASC`
-      let row = await exec(sql)
-    return row
+  async getUserMenu(userId) {
+    // 查询角色
+    let role = await SysUserModel.findOne({
+      attributes: [],
+      where: {
+        user_id: userId
+      },
+      include: [{
+        model: SysRoleModel,
+        attributes: ['role_id'],
+        through: {
+          attributes: []
+        }, // 排除中间表
+      }]
+    })
+    let roleList = []
+    role.toJSON().sys_roles.map((it) => roleList.push(it.role_id))
+    // 查询权限
+    let menu = await SysRoleModel.findAll({
+      attributes: [],
+      where: {
+        role_id: roleList
+      },
+      include: [{
+        model: SysResourceModel,
+        // attributes: [],
+        where: {
+          type: {
+            [Op.lt]: 3
+          },
+        },
+        through: {
+          attributes: []
+        }, // 排除中间表
+        required: false,
+      }],
+      group: 'sys_resources.res_id', // 不只为什么 不个以主建res_id作分组 非要用主键需要加上表名 搞不懂    
+      order: [
+        [{
+          model: SysResourceModel
+        }, 'sort', 'ASC'] //  嵌套关联模型的 sys_resources sort联对象排序  
+      ],
+      plain: true
+    })
+    return menu.toJSON().sys_resources
   }
+  // 获取用户权限标识
   async getUserPer(userId) {
-    let sql = `SELECT	sys_resource.perms FROM  sys_user_role
-      INNER JOIN sys_role_permmision ON sys_user_role.role_id = sys_role_permmision.role_id
-      INNER JOIN sys_resource ON sys_role_permmision.res_id = sys_resource.res_id
-      WHERE user_id = ${userId} AND type > 1 GROUP BY perms ORDER BY sort ASC`
-      let row = await exec(sql)
+    // 查询角色
+    let role = await SysUserModel.findOne({
+      attributes: [],
+      where: {
+        user_id: userId
+      },
+      include: [{
+        model: SysRoleModel,
+        attributes: ['role_id'],
+        through: {
+          attributes: []
+        }, // 排除中间表
+      }]
+    })
+    let roleList = []
+    role.toJSON().sys_roles.map((it) => roleList.push(it.role_id))
+    // 查询权限
+    let perms = await SysRoleModel.findAll({
+      attributes: [],
+      where: {
+        role_id: roleList
+      },
+      include: [{
+        model: SysResourceModel,
+        attributes: ['perms'],
+        where: {
+          perms: {
+            [Op.ne]: null, // 不为null 
+            [Op.ne]: '' // 不为空
+          }
+        },
+        through: {
+          attributes: []
+        }, // 排除中间表
+        required: false,
+      }],
+      group: 'perms',
+      plain: true
+    })
+    return perms.toJSON().sys_resources
+  }
+  // 添加菜单
+  async createMenu(data) {
+    let row = await SysResourceModel.create({
+      parent_id: data.parent_id,
+      res_name: data.res_name,
+      res_code: data.res_code,
+      component: data.component,
+      description: data.description,
+      res_icon: data.res_icon,
+      sort: data.sort,
+      perms: data.perms,
+      state: data.state,
+      type: data.type
+    })
     return row
   }
-  async insertMenu (data) {
-    let sql = `INSERT INTO sys_resource (parent_id, res_name, res_code, component, description, create_time, res_icon, sort, type, perms, state) 
-    VALUES (${data.parent_id},'${data.res_name}','${data.res_code}','${data.component}','${data.description}',now(),'${data.res_icon}', ${data.sort}, ${data.type}, '${data.perms}', ${data.state}
-    )`
-    let row = await exec(sql)
-    return row
-  }
-  async updatedMenu (data) {
-    let sql = `UPDATE sys_resource SET sort = ${data.sort}, type = ${data.type}, state = ${data.state}, parent_id= ${data.parent_id}, res_name = '${data.res_name}', res_code= '${data.res_code}', res_icon= '${data.res_icon}', description = '${data.description}', component= '${data.component}', perms='${data.perms}' WHERE res_id = ${data.res_id}`
-    let row = await exec(sql)
+  // 更新菜单
+  async updatedMenu(data) {
+    let row = await SysResourceModel.update({
+      parent_id: data.parent_id,
+      res_name: data.res_name,
+      res_code: data.res_code,
+      component: data.component,
+      description: data.description,
+      res_icon: data.res_icon,
+      sort: data.sort,
+      perms: data.perms,
+      state: data.state,
+      type: data.type,
+    }, {
+      where: {
+        res_id: data.res_id
+      }
+    })
     return row
   }
   // 删除菜单
-  async deleteMenu (res_id) {
-    const del = async(resid) => {
-      let row = await exec(`SELECT * FROM sys_resource WHERE parent_id = ${resid}`) // 查询是否有关联的子菜单
-      if (row.length > 0) { // 如果存在子子菜单递归删除
-        await exec(`DELETE FROM sys_resource WHERE parent_id = ${resid}`)
-        return del(resid)
-      } else { // 如果没有子菜单则删除当前菜单
-        return await exec(`DELETE FROM sys_resource WHERE res_id = ${resid}`)
+  async deleteMenu(resId) {
+    let row = await SysResourceModel.destroy({
+      where: {
+        [Op.or]: [{
+            parent_id: resId
+          },
+          {
+            res_id: resId
+          },
+        ]
       }
-    }   
-    let row = await del(res_id)
+    })
     return row
   }
 }
