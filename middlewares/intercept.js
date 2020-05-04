@@ -16,7 +16,7 @@ class InterceptAuth {
       if (decoded.userInfo.user_id) {
         // 获取redis中的token1
         let redisToken = await redis.get(`token_${decoded.userInfo.user_id}`)
-        // 当前的token 是否和 redis中的一致 token 反则 用户可能重新登入或者在林外一台机子登入了
+        // 当前的token 是否和 redis中的一致 token 反则 用户可能重新登入或者在林外一台机子登入了1
         if (token === redisToken) {
           req.userInfo = decoded.userInfo
           redis.set(`token_${decoded.userInfo.user_id}`, token, JWT_COMF.JWTEXP) // 继续激活当前token
