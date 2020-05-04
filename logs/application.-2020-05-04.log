@@ -2664,3 +2664,13 @@
 [2020-05-04T13:52:34.028] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
 [2020-05-04T13:52:34.029] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
 [2020-05-04T13:52:34.030] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T17:49:53.808] [INFO] default - [35mtraceId:8a25829c-da11-4ed9-9e64-a9fa336ed3d1[39m
+[2020-05-04T17:49:53.812] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T17:49:53.821] [INFO] default - [35mmethod: [GET] URL: /api/getUserMenuList[39m
+[2020-05-04T17:49:53.827] [INFO] default - [35mreq-query: {}[39m
+[2020-05-04T17:49:53.828] [INFO] default - [35mreq-body:{}[39m
+[2020-05-04T17:49:54.402] [INFO] default - [35mtraceId:6050a615-5065-4dd4-80cf-89cec3b6a30d[39m
+[2020-05-04T17:49:54.403] [INFO] default - [35mhost:localhost[39m
+[2020-05-04T17:49:54.422] [INFO] default - [35mmethod: [GET] URL: /api/operationLos/list?page=1&pageSize=10[39m
+[2020-05-04T17:49:54.424] [INFO] default - [35mreq-query: {"page":"1","pageSize":"10"}[39m
+[2020-05-04T17:49:54.427] [INFO] default - [35mreq-body:{}[39m
