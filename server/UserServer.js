@@ -6,7 +6,6 @@ class UserServer {
   async login(phone) {
     try {
       let data = await SysUserModel.findOne({ where: { phone: phone }})
-      console.log(data)
       return data
     } catch (ex) {
       throw new Error(ex)
