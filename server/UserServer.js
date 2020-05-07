@@ -6,7 +6,8 @@ class UserServer {
   async login(phone) {
     try {
       let data = await SysUserModel.findOne({ where: { phone: phone }})
-      return data.dataValues
+      console.log(data)
+      return data
     } catch (ex) {
       throw new Error(ex)
     }
@@ -15,7 +16,7 @@ class UserServer {
   async getUserInfo(userId) {
     try {
       let data = await SysUserModel.findOne({ where: { user_id: userId }})
-      return data.dataValues
+      return data
     } catch (ex) {
       throw new Error(ex)
     }
