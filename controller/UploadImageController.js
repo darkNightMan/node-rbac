@@ -1,7 +1,7 @@
 
 class UploadImageController {
-  upload (req, res) {
-    res.R.ok({a:1})
+  uploadAvatar (req, res) {
+    res.R.ok({file:req.file})
   }
 }
 
