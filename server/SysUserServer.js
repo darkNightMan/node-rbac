@@ -32,6 +32,9 @@ class SysUserServer {
           attributes: []
         }, // 排除中间表
       }],
+      order: [
+        ['create_time', 'DESC']
+      ],
       limit: pageParmas.pageSize,
       offset: pageParmas.limitStart
     })

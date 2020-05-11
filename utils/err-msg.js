@@ -50,6 +50,10 @@ module.exports = {
     code: 20101,
     msg: '该用户不存在'
   },
+  USER_NOT_DISABLE: {
+    code: 20102,
+    msg: '该用户已经被禁用请联系管理员!'
+  },
   USER_PHONE_NULL: {
     code: 21333,
     msg: '账号不能为空'

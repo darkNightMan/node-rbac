@@ -42,7 +42,13 @@ class UserController {
         await SysLogServer.insert(dataLog)      
         return res.R.err('USER_NOT_EXITS')
       }
-      // 密码解密
+      // 用户被禁用
+      if (!_data.state) {
+        dataLog.login_description = errMsg['USER_NOT_DISABLE'].msg
+        await SysLogServer.insert(dataLog)      
+        return res.R.err('USER_NOT_DISABLE')
+      }
+      // 校验密码
       if (_data.password !== cryptoAuth.encrypted(password)) {   
         dataLog.login_description = errMsg['USER_PASSWORD_WRONG'].msg   
         await SysLogServer.insert(dataLog)
