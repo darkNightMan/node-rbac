@@ -45,7 +45,8 @@ class SysMenuServer {
           component:row.component,
           description:row.description,
           sort:row.sort,
-          create_time: row.create_time 
+          create_time: row.create_time,
+          perms: row.perms
         }
       )
     })
