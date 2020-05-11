@@ -25,7 +25,8 @@ class SysMenuServer {
     let rescource = await SysResourceModel.findAndCountAll({
       where,
       order: [
-        ['sort', 'ASC']
+        // [conditions.treeId ? 'parent_id' : 'sort', 'ASC']
+        ['parent_id' , 'ASC']
       ],
       limit: pageParmas.pageSize,
       offset: pageParmas.limitStart
@@ -117,6 +118,7 @@ class SysMenuServer {
     // 查询权限
     let menu = await SysRoleModel.findAll({
       attributes: [],
+      // distinct:true,
       where: {
         role_id: roleList
       },

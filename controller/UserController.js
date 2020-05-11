@@ -79,9 +79,9 @@ class UserController {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     // 遍历菜单
     function menuEach(menu) {
-      // let root = menu.filter((it, index) => it.parent_id == null) //  获取根级
-      let parentMenu = menu.filter((it, index) => !it.parent_id)  //  获取根父级
-      parentMenu.map((p, i1) => {
+      let root = menu.filter((it, index) => it.parent_id == 0) //  获取根级
+      // let parentMenu = menu.filter((it, index) => !it.parent_id)  //  获取根父级
+      root.map((p, i1) => {
         menu.map((c, i2) => {
           if (p.res_id == c.parent_id) {
             if (Object.prototype.toString.call(p.children) == '[object Array]') {
@@ -93,7 +93,7 @@ class UserController {
           }
         })
       })
-      return parentMenu
+      return root
     }
     let _menu = await SysMenuServer.getUserMenu(userid)
     let _perms = await SysMenuServer.getUserPer(userid)  
