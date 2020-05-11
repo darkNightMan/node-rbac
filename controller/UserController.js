@@ -117,7 +117,7 @@ class UserController {
       login_time: _data.login_time,
       email: _data.email,
       avatar: _data.avatar,
-      roleList: roleArr
+      role_id: roleArr
     }
     if (!_menu) return res.R.err('USER_NOT_EXITS')
     redis.set(`user_perms_${userid}`, getPerms(_perms).toString(), JWT_COMF.JWTEXP) //  将权限存储到reids
