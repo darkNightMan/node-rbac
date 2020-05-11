@@ -3,7 +3,7 @@ const {
   SysUserModel,
   SysRoleModel
 } = require('../models/TableRelationModel')
-
+const CryptoAuth = require('../utils/crypto')
 // 用户
 class SysUserServer {
   // 获取的用户
@@ -69,7 +69,7 @@ class SysUserServer {
     let user = await SysUserModel.findByPk(data.user_id) //  通过主键查询
     await user.update({
       nick_name: data.nick_name,
-      password: data.password,
+      password: CryptoAuth.encrypted(data.password), // 密码加密data.password,
       email: data.email,
       phone: data.phone,
       avatar: data.avatar,
