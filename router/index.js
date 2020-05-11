@@ -9,6 +9,8 @@ const InterceptAuth = require('../middlewares/intercept')
 const log = require('../middlewares/log')
 const NotFind = require('../middlewares/notFind')
 const permissions = require('../middlewares/permissions')
+const UploadImageController = require('../controller/UploadImageController')
+const upload = require('../utils/upload')
 
 module.exports = function (app) {
   app.use(log.setLog)
@@ -40,5 +42,6 @@ module.exports = function (app) {
   app.delete('/api/menu/deleteMenu', permissions.hasPerms('sys:menu:delete'), SysMenuController.deleteMenu) // 删除菜单  
   app.get('/api/loginLogs/list', permissions.hasPerms('sys:logs:list'), SysLoginLogsController.list) // logs列表    
   app.get('/api/operationLos/list', SysOperationController.list) // logs列表  
+  app.post('/api/uploadAvatar/', upload.single('userAvatar'), UploadImageController.uploadAvatar)
   app.use(NotFind.notApi) // 访问的路由不存在  
 }

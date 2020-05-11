@@ -10,6 +10,7 @@ class SysMenuServer {
   // 获取菜单列表
   async list(pageParmas, conditions) {
     let where = {}
+    let listMenu = []
     if (conditions) {
       if (conditions.treeId) {
         where[Op.or] = [{
@@ -29,8 +30,26 @@ class SysMenuServer {
       limit: pageParmas.pageSize,
       offset: pageParmas.limitStart
     })
+    // 列表
+    rescource.rows.map((row) => { 
+      listMenu.push(
+        {
+          res_id: row.res_id,
+          parent_id:row.parent_id,
+          res_name:row.res_name,
+          res_icon:row.res_icon,
+          state: row.state,
+          res_code:row.res_code,
+          type:row.type,
+          component:row.component,
+          description:row.description,
+          sort:row.sort,
+          create_time: row.create_time 
+        }
+      )
+    })
     return {
-      list: rescource.rows,
+      list: listMenu,
       count: rescource.count
     }
   }
@@ -42,7 +61,7 @@ class SysMenuServer {
           [Op.lt]: 3
         }
       },
-      attributes: ['res_id', 'parent_id', 'res_name'],
+      attributes: ['res_id', 'parent_id', 'res_name', 'sort'],
       order: [
         ['sort', 'ASC']
       ]

@@ -56,7 +56,8 @@ class SysUserController {
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    let data = req.body  
+    let data = req.body
+    data.update_id = userid
     let _data = await SysUserServer.updateUser(data) // 更新
     res.R.ok(_data)
   }
