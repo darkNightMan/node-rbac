@@ -3,7 +3,7 @@ const multer = require('multer')
 const date = new Date()
 
 const storage = multer.diskStorage({
-  destination: './views/public/upload/',
+  destination: './views/public/uploads/',
   // 给上传文件重命名，获取添加后缀名
   filename: function (req, file, cb) {
     console.log("后台文件");
