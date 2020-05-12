@@ -33,6 +33,8 @@ class UserController {
     try {
       let _data = await UserServer.login(phone)
       let dataLog = {
+        user_id: _data.user_id,
+        user_name: _data.nick_name,
         login_ip: env === 'dev'? req.hostname : req.headers.remoteIP,
         login_address: env === 'dev' ? '本地登入' : '未知',
         login_agent: req.agent
@@ -59,8 +61,6 @@ class UserController {
         admin: true,
       }
       dataLog.login_description = successMsg['LOGING_SUCCESS']
-      dataLog.user_id = _data.user_id
-      dataLog.user_name = _data.nick_name
       let logrow = await SysLogServer.insert(dataLog)
       let token = JwtToken.createToken(payload) // 签发
       redis.set(`token_${_data.user_id}`, token, JWT_COMF.JWTEXP) //  同步到redis
