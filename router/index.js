@@ -47,7 +47,7 @@ module.exports = function (app) {
   app.post('/api/uploadAvatar/', upload.single('userAvatar'), UploadImageController.uploadAvatar)
 
 // ------------------------------------------blog-------------------------------------------------------
-  app.get('/api/blogs/articleList', BlogArticleController.list) // logs列表  
+  app.get('/api/blogs/articleList', BlogArticleController.list) // 列表  
 
   app.use(NotFind.notApi) // 访问的路由不存在  
 }

@@ -1,12 +1,12 @@
 
 
 const SysUserServer = require('../server/SysUserServer')
-const blogArticleServer = require('../server/blogArticleServer')
+const BlogArticleServer = require('../server/BlogArticleServer')
 const { formatDate } = require('../utils/format')
 const CryptoAuth = require('../utils/crypto')
 const { offsetPage } = require('../utils/offsetPage')
 const { SALTKEY } = require('../conf')
-class SysUserController {
+class BlogArticleController {
   async test (req, res) {
     let data = await UserServer.testSql()
     res.R.ok(data)
@@ -18,7 +18,7 @@ class SysUserController {
       res.R.err('USER_ID_NULL')
     }
     const { pageParams, conditions } = offsetPage(req.query)
-    let _data = await blogArticleServer.list(pageParams, Object.assign({ user_id: userid}, conditions)) // 用户表  
+    let _data = await BlogArticleServer.list(pageParams, Object.assign({ user_id: userid}, conditions)) // 用户表  
     if (_data) {
       res.R.ok({
         list: _data.list,
@@ -73,4 +73,4 @@ class SysUserController {
     }
   }
 }
-module.exports = new SysUserController()
+module.exports = new BlogArticleController()

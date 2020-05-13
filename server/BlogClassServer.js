@@ -6,7 +6,7 @@ const {
 } = require('../models/TableBlogRelationModel')
 const CryptoAuth = require('../utils/crypto')
 // 用户
-class BlogArticleServer {
+class BlogClassServer {
   // 获取的用户
   async list(pageParmas, conditions) {
     let where = {}
@@ -85,4 +85,4 @@ class BlogArticleServer {
     return true
   }
 }
-module.exports = new BlogArticleServer()
+module.exports = new BlogClassServer()
