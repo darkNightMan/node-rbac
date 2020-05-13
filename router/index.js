@@ -12,6 +12,8 @@ const permissions = require('../middlewares/permissions')
 const UploadImageController = require('../controller/UploadImageController')
 const upload = require('../utils/upload')
 
+const BlogArticleController = require('../controller/BlogArticleController')
+
 module.exports = function (app) {
   app.use(log.setLog)
   app.get('/api/getCaptcha', UserController.captcha)
@@ -43,5 +45,9 @@ module.exports = function (app) {
   app.get('/api/loginLogs/list', permissions.hasPerms('sys:logs:list'), SysLoginLogsController.list) // logs列表    
   app.get('/api/operationLos/list', SysOperationController.list) // logs列表  
   app.post('/api/uploadAvatar/', upload.single('userAvatar'), UploadImageController.uploadAvatar)
+
+// ------------------------------------------blog-------------------------------------------------------
+  app.get('/api/blogs/articleList', BlogArticleController.list) // logs列表  
+
   app.use(NotFind.notApi) // 访问的路由不存在  
 }
