@@ -28,9 +28,7 @@ class Log {
       action_method: `[${req.method}] ${URL.parse(req.url, true).pathname}`,
       action_params: (`${JSON.stringify(req.query) === '{}' ? '':JSON.stringify(req.query)}${JSON.stringify(req.body) === '{}' ? '' : JSON.stringify(req.body)}`).replace(/\s+/g, '')
     }
-    if (env !== 'dev') {
-      await SysOperationServer.insert(operatioObject)
-    }
+    await SysOperationServer.insert(operatioObject)
     next()
   }
 }
