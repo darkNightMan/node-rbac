@@ -8,7 +8,7 @@ let BlogTagsModel = db.define('b_tags', {
     allowNull: false, // 不为空
     autoIncrement: true
   },
-  tas_name: Sequelize.CHAR(255)
+  tags_name: Sequelize.CHAR(255)
 }, {
   tableName: 'b_tags',
   timestamps: true, // 是否需要增加createdAt、updatedAt字段

@@ -1,6 +1,6 @@
 const {
   Op,
-  BlogClassModel
+  BlogTagsModel
 } = require('../models/TableBlogRelationModel')
 const CryptoAuth = require('../utils/crypto')
 // 用户
@@ -15,7 +15,7 @@ class BlogClassServer {
         }
       }
     }
-    let _data = await BlogClassModel.findAndCountAll({
+    let _data = await BlogTagsModel.findAndCountAll({
       limit: pageParmas.pageSize,
       offset: pageParmas.limitStart
     })
@@ -26,7 +26,7 @@ class BlogClassServer {
   }
   // 添加用户
   async createUser(userInfo) {
-    let user = await SysUserModel.create({
+    let user = await BlogTagsModel.create({
       nick_name: userInfo.nick_name,
       password: userInfo.password,
       email: userInfo.email,
@@ -45,7 +45,7 @@ class BlogClassServer {
   }
   // 更新用户
   async updateUser(data) {
-    let roles = await SysRoleModel.findAll({
+    let roles = await BlogTagsModel.findAll({
       where: {
         role_id: data.role_id
       }
@@ -65,7 +65,7 @@ class BlogClassServer {
   }
   // 删除用户
   async deleteUser(user_id) {
-    let row = await SysUserModel.destroy({
+    let row = await BlogTagsModel.destroy({
       where: {
         user_id: user_id
       }

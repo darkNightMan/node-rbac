@@ -13,6 +13,8 @@ const UploadImageController = require('../controller/UploadImageController')
 const upload = require('../utils/upload')
 
 const BlogArticleController = require('../controller/BlogArticleController')
+const BlogClassController = require('../controller/BlogClassController')
+const BlogTagsController = require('../controller/BlogTagsController')
 
 module.exports = function (app) {
   app.use(log.setLog)
@@ -49,5 +51,7 @@ module.exports = function (app) {
 // ------------------------------------------blog-------------------------------------------------------
   app.get('/api/blogs/articleList', BlogArticleController.list) // 列表  
 
+  app.get('/api/blogs/articleClassList', BlogClassController.list) // 列表  
+  app.get('/api/blogs/articleTagsList', BlogTagsController.list) // 列表  
   app.use(NotFind.notApi) // 访问的路由不存在  
 }
