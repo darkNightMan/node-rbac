@@ -1,6 +1,7 @@
 const {
   Op,
   BlogArticleModel,
+  BlogArticleDetailModel,
   BlogClassModel
 } = require('../models/TableBlogRelationModel')
 const CryptoAuth = require('../utils/crypto')
