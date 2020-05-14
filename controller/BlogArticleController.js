@@ -1,6 +1,5 @@
 
 
-const SysUserServer = require('../server/SysUserServer')
 const BlogArticleServer = require('../server/BlogArticleServer')
 const { formatDate } = require('../utils/format')
 const CryptoAuth = require('../utils/crypto')
@@ -28,30 +27,30 @@ class BlogArticleController {
       })
     }
   }
-  // 创建用户
-  async createUser (req, res) {
+  // 新建文章
+  async create (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    let userInfo = {
-      nick_name: req.body.nick_name,
-      password: req.body.password,
-      phone: req.body.phone,
-      email: req.body.email || '',
-      avatar: req.body.avatar || '',
-      role_id: req.body.role_id,
-      user_id: userid
+    let data = req.body
+    let post = {
+      title: data.title,
+      user_id: userid,
+      cover_url: data.cover_url,
+      class_id: data.class_id,
+      tagsArr: data.tagsArr,
+      is_top: data.is_top,
+      content: data.content,
     } 
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
-    // 密码加密
-    userInfo.password = CryptoAuth.encrypted(userInfo.password)
-    let _data = await SysUserServer.createUser(userInfo) // 用户表
+    //     
+    let _data = await BlogArticleServer.create(post) // 用户表
     if (_data) {
       res.R.ok(_data)
     }
   }
   // 更新用户
-  async updateUser (req, res) {
+  async update (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')
@@ -61,7 +60,7 @@ class BlogArticleController {
     let _data = await SysUserServer.updateUser(data) // 更新
     res.R.ok(_data)
   }
-  async deleteUser (req, res) {
+  async delete (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')

@@ -46,11 +46,11 @@ module.exports = function (app) {
   app.delete('/api/menu/deleteMenu', permissions.hasPerms('sys:menu:delete'), SysMenuController.deleteMenu) // 删除菜单  
   app.get('/api/loginLogs/list', permissions.hasPerms('sys:logs:list'), SysLoginLogsController.list) // logs列表    
   app.get('/api/operationLos/list', SysOperationController.list) // logs列表  
-  app.post('/api/uploadAvatar/', upload.single('userAvatar'), UploadImageController.uploadAvatar)
+  app.post('/api/single/uploadImage/', upload.single('images'), UploadImageController.uploadImage)
 
 // ------------------------------------------blog-------------------------------------------------------
   app.get('/api/blogs/articleList', BlogArticleController.list) // 列表  
-
+  app.post('/api/blogs/create', BlogArticleController.create) // 列表  
   app.get('/api/blogs/articleClassList', BlogClassController.list) // 列表  
   app.get('/api/blogs/articleTagsList', BlogTagsController.list) // 列表  
   app.use(NotFind.notApi) // 访问的路由不存在  

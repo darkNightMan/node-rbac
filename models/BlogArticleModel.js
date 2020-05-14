@@ -17,8 +17,14 @@ let BlogArticleModel = db.define('b_article', {
     type: Sequelize.BOOLEAN,
     defaultValue: 0
   },
-  read_count: Sequelize.INTEGER,
-  poll_count: Sequelize.INTEGER,
+  read_count: {
+    type:Sequelize.INTEGER,
+    defaultValue: 0
+  },
+  poll_count: {
+    type: Sequelize.INTEGER,
+    defaultValue: 0
+  },
   cover_url: Sequelize.CHAR(255),
   create_time: {
     type: Sequelize.DATE,

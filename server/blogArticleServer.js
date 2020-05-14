@@ -2,6 +2,7 @@ const {
   Op,
   BlogArticleModel,
   BlogArticleDetailModel,
+  BlogTagsModel,
   BlogClassModel
 } = require('../models/TableBlogRelationModel')
 const CryptoAuth = require('../utils/crypto')
@@ -36,26 +37,20 @@ class BlogArticleServer {
       count: _data.count
     }
   }
-  // 添加用户
-  async createUser(userInfo) {
-    let user = await SysUserModel.create({
-      nick_name: userInfo.nick_name,
-      password: userInfo.password,
-      email: userInfo.email,
-      phone: userInfo.phone,
-      avatar: userInfo.avatar,
-      create_time: userInfo.create_time,
-      update_id: userInfo.update_id,
+  // 添加
+  async create(data) {
+    let articles = await BlogArticleModel.create({
+      title: data.title,
+      cover_url: data.cover_url,
+      is_top: data.is_top,
+      class_id: data.class_id,
+      user_id: data.user_id
     })
-    let roles = await SysRoleModel.findAll({
-      where: {
-        role_id: userInfo.role_id
-      }
-    })
-    let row = await user.addSys_roles(roles)
+    await articles.addB_tags(data.tagsArr)
+    await articles.createDetail({article_id: articles.article_id, content: data.content})
     return true
   }
-  // 更新用户
+  // 更新
   async updateUser(data) {
     let roles = await SysRoleModel.findAll({
       where: {
@@ -75,7 +70,7 @@ class BlogArticleServer {
     let row = await user.setSys_roles(roles)
     return true
   }
-  // 删除用户
+  // 删除
   async deleteUser(user_id) {
     let row = await SysUserModel.destroy({
       where: {
