@@ -30,16 +30,17 @@ BlogTagsModel.hasMany(BlogArticleTagsModel, { foreignKey: 'tags_id', as: 'articl
 // 文章-标签 多对多
 BlogArticleModel.belongsToMany(BlogTagsModel, {
   through: {
-    model: BlogArticleTagsModel,
+    model: BlogArticleTagsModel,   
     unique: false // 取消联合主键的约定
   },
+  as: 'tagsArr',
   foreignKey: 'article_id', //id
   constraints: false
 })
 // 文章-标签 多对多
 BlogTagsModel.belongsToMany(BlogArticleModel, {
   through: {
-    model: BlogArticleTagsModel,
+    model: BlogArticleTagsModel,    
     unique: false // 取消联合主键的约定
   },
   foreignKey: 'tags_id', //id
@@ -57,5 +58,6 @@ module.exports = {
   BlogArticleTagsModel,
   BlogClassModel,
   BlogTagsModel,
+  Sequelize,
   Op
 }

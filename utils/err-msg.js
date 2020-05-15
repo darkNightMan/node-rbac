@@ -140,6 +140,10 @@ module.exports = {
     code: 20403,
     msg: '文章标题不能为空'
   },
+  ARTICLE_IS_EMPTY: {
+    code: 204032,
+    msg: '文章ID不能为空'
+  },
   CONTENT_IS_EMPTY: {
     code: 20404,
     msg: '文章内容不能为空'

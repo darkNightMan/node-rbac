@@ -1,5 +1,6 @@
 const {
   Op,
+  Sequelize,
   BlogArticleModel,
   BlogArticleDetailModel,
   BlogTagsModel,
@@ -50,24 +51,47 @@ class BlogArticleServer {
     await articles.createDetail({article_id: articles.article_id, content: data.content})
     return true
   }
-  // 更新
-  async updateUser(data) {
-    let roles = await SysRoleModel.findAll({
+  // 查询一篇博客
+  async findOne(article_id) {
+    let data = await BlogArticleModel.findOne({
       where: {
-        role_id: data.role_id
+        article_id: article_id
+      },
+      attributes: [[Sequelize.col('content'), 'content'], 'title', 'cover_url', 'class_id', 'is_top'],
+      include: [
+        {
+          model:BlogArticleDetailModel,
+          as: 'detail',
+          attributes: []
+        },
+        {
+          model: BlogTagsModel,
+          as: 'tagsArr',
+          through: {
+            attributes: [] // 排除中间表
+          }, 
+        }
+      ]
+    })
+    return data
+  }
+  // 更新
+  async update(data) {
+    let tags = await BlogTagsModel.findAll({
+      where: {
+        tags_id: data.tagsArr
       }
     })
-    let user = await SysUserModel.findByPk(data.user_id) //  通过主键查询
-    await user.update({
-      nick_name: data.nick_name,
-      password: CryptoAuth.encrypted(data.password), // 密码加密data.password,
-      email: data.email,
-      phone: data.phone,
-      avatar: data.avatar,
-      create_time: data.create_time,
-      update_id: data.update_id,
-    })
-    let row = await user.setSys_roles(roles)
+    console.log(tags)
+    // let articles = await BlogArticleModel.findByPk(data.article_id) //  通过主键查询
+    // await articles.update({
+    //   title: data.title,
+    //   cover_url: data.cover_url,
+    //   is_top: data.is_top,
+    //   class_id: data.class_id,
+    //   user_id: data.user_id
+    // })
+    // let row = await articles.setTags(roles)
     return true
   }
   // 删除

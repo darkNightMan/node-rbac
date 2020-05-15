@@ -41,24 +41,31 @@ class BlogArticleController {
       content: data.content,
     } 
     if (!userid) {
-      res.R.err('USER_ID_NULL')
+      return res.R.err('USER_ID_NULL')
+    }
+    if (!post.title) {
+      return res.R.err('TITLE_IS_EMPTY')
     }
     //     
     let _data = await BlogArticleServer.create(post) // 用户表
     if (_data) {
-      res.R.ok(_data)
+      return res.R.ok(_data)
     }
+  }
+  // 查询一篇博客
+  async findOne (req, res) {
+    let articleId = req.query.article_id
+    if (!articleId) {
+      return res.R.err('ARTICLE_IS_EMPTY')
+    }
+    let data = await BlogArticleServer.findOne(articleId)
+    return res.R.ok(data)
   }
   // 更新用户
   async update (req, res) {
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
     let data = req.body
-    data.update_id = userid
-    let _data = await SysUserServer.updateUser(data) // 更新
-    res.R.ok(_data)
+    let _data = await BlogArticleServer.update(data) // 更新
+    return res.R.ok(_data)
   }
   async delete (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
