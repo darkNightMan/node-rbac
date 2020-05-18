@@ -47,7 +47,7 @@ class BlogArticleServer {
       class_id: data.class_id,
       user_id: data.user_id
     })
-    await articles.addB_tags(data.tagsArr)
+    await articles.addTagsArr(data.tagsArr)
     await articles.createDetail({article_id: articles.article_id, content: data.content})
     return true
   }
