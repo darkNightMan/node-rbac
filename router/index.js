@@ -50,9 +50,10 @@ module.exports = function (app) {
 
 // ------------------------------------------blog-------------------------------------------------------
   app.get('/api/blogs/articleList', BlogArticleController.list) // 列表  
-  app.get('/api/blogs/articleDetail', BlogArticleController.findOne) // 列表  
-  app.post('/api/blogs/createArticle', BlogArticleController.create) // 列表  
-  app.post('/api/blogs/updateArticle', BlogArticleController.update) // 列表  
+  app.get('/api/blogs/articleDetail', BlogArticleController.findOne) // 获取一条  
+  app.post('/api/blogs/createArticle', BlogArticleController.create) // 新增列表    
+  app.put('/api/blogs/updateArticle', BlogArticleController.update) // 列表
+  app.delete('/api/blogs/deleteArticle', BlogArticleController.delete) // 删除列表   
   app.get('/api/blogs/articleClassList', BlogClassController.list) // 列表  
   app.get('/api/blogs/articleTagsList', BlogTagsController.list) // 列表  
   app.use(NotFind.notApi) // 访问的路由不存在  

@@ -9,7 +9,7 @@ const {
 const CryptoAuth = require('../utils/crypto')
 // 用户
 class BlogArticleServer {
-  // 获取的用户
+  // 列表
   async list(pageParmas, conditions) {
     let where = {}
     if (conditions) {
@@ -95,10 +95,10 @@ class BlogArticleServer {
     return true
   }
   // 删除
-  async deleteUser(user_id) {
-    let row = await SysUserModel.destroy({
+  async delete(article_id) {
+    let row = await BlogArticleModel.destroy({
       where: {
-        user_id: user_id
+        article_id: article_id
       }
     })
     return true

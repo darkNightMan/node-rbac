@@ -68,14 +68,10 @@ class BlogArticleController {
     return res.R.ok(_data)
   }
   async delete (req, res) {
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
-    let user_id = req.body.user_id
-    let _data = await SysUserServer.deleteUser(user_id) // 删除
+    let articleId = req.body.article_id
+    let _data = await BlogArticleServer.delete(articleId) // 删除
     if (_data) {
-      res.R.ok(_data)
+      res.R.ok()
     }
   }
 }
