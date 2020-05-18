@@ -24,6 +24,7 @@ module.exports = function (app) {
   app.use(log.operatioLogs)
   app.get('/api/test', TestController.test) // 测试接口  
   app.get('/api/loginOut', UserController.loginOut) // 退出 
+
   app.get('/api/getUserMenuList', UserController.getUserMenuList) // 获取用户信息和菜单
  // 角色
   app.get('/api/role/getRoleTreePer/',permissions.hasPerms('sys:role:lookPerms'), SysRoleController.getRoleTreePer) // 获取当前角色下的权限 
