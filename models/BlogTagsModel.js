@@ -8,6 +8,7 @@ let BlogTagsModel = db.define('b_tags', {
     allowNull: false, // 不为空
     autoIncrement: true
   },
+  user_id: Sequelize.INTEGER,
   tags_name: Sequelize.CHAR(255)
 }, {
   tableName: 'b_tags',

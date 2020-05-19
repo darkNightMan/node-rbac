@@ -18,7 +18,6 @@ class BlogClassController {
       res.R.err('USER_ID_NULL')
     }
     const { pageParams, conditions } = offsetPage(req.query)
-    console.log(Object.assign({ user_id: userid}, conditions),'useriduseriduseriduseriduseriduseriduseriduserid')
     let _data = await BlogClassServer.list(pageParams, Object.assign({ user_id: userid}, conditions)) // 用户表  
     if (_data) {
       res.R.ok({
@@ -30,45 +29,29 @@ class BlogClassController {
     }
   }
   // 创建用户
-  async createUser (req, res) {
+  async create (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    let userInfo = {
-      nick_name: req.body.nick_name,
-      password: req.body.password,
-      phone: req.body.phone,
-      email: req.body.email || '',
-      avatar: req.body.avatar || '',
-      role_id: req.body.role_id,
+    let classInfo = {
+      class_name: req.body.class_name,
       user_id: userid
-    } 
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
     }
-    // 密码加密
-    userInfo.password = CryptoAuth.encrypted(userInfo.password)
-    let _data = await SysUserServer.createUser(userInfo) // 用户表
+    let _data = await BlogClassServer.create(classInfo) // 用户表
     if (_data) {
       res.R.ok(_data)
     }
   }
   // 更新用户
-  async updateUser (req, res) {
+  async update (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
     let data = req.body
-    data.update_id = userid
-    let _data = await SysUserServer.updateUser(data) // 更新
+    let _data = await BlogClassServer.update(data) // 更新
     res.R.ok(_data)
   }
-  async deleteUser (req, res) {
+  async delete (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
-    let user_id = req.body.user_id
-    let _data = await SysUserServer.deleteUser(user_id) // 删除
+   
+    let id = req.body.id
+    let _data = await BlogClassServer.delete(id) // 删除
     if (_data) {
       res.R.ok(_data)
     }

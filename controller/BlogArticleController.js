@@ -64,7 +64,8 @@ class BlogArticleController {
   // 更新用户
   async update (req, res) {
     let data = req.body
-    let _data = await BlogArticleServer.update(data) // 更新
+    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
+    let _data = await BlogArticleServer.update(Object.assign(data, {user_id: userid})) // 更新
     return res.R.ok(_data)
   }
   async delete (req, res) {

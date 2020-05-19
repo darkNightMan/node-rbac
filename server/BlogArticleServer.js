@@ -67,6 +67,7 @@ class BlogArticleServer {
         },
         {
           model: BlogTagsModel,
+          attributes: ['tags_id'],
           as: 'tagsArr',
           through: {
             attributes: [] // 排除中间表
@@ -74,7 +75,7 @@ class BlogArticleServer {
         }
       ]
     })
-    return data
+    return data.toJSON()
   }
   // 更新
   async update(data) {
@@ -83,16 +84,21 @@ class BlogArticleServer {
         tags_id: data.tagsArr
       }
     })
-    console.log(tags)
-    // let articles = await BlogArticleModel.findByPk(data.article_id) //  通过主键查询
-    // await articles.update({
-    //   title: data.title,
-    //   cover_url: data.cover_url,
-    //   is_top: data.is_top,
-    //   class_id: data.class_id,
-    //   user_id: data.user_id
-    // })
-    // let row = await articles.setTags(roles)
+    let articles = await BlogArticleModel.findByPk(data.article_id) //  通过主键查询
+    await articles.update({
+      title: data.title,
+      cover_url: data.cover_url,
+      is_top: data.is_top,
+      class_id: data.class_id,
+      user_id: data.user_id
+    },{
+      where: {
+        article_id: data.article_id
+      }
+    }
+    )
+    let row = await articles.setTagsArr(tags)
+    let constent = await BlogArticleDetailModel.update({content: data.content}, { where: {article_id: data.article_id}})
     return true
   }
   // 删除

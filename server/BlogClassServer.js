@@ -25,53 +25,33 @@ class BlogClassServer {
       count: _data.count
     }
   }
-  // 添加用户
-  async createUser(userInfo) {
-    let user = await SysUserModel.create({
-      nick_name: userInfo.nick_name,
-      password: userInfo.password,
-      email: userInfo.email,
-      phone: userInfo.phone,
-      avatar: userInfo.avatar,
-      create_time: userInfo.create_time,
-      update_id: userInfo.update_id,
+  // 添加
+  async create(data) {
+    let classArticle = await BlogClassModel.create({
+      class_name: data.class_name,
+      user_id: data.user_id
     })
-    let roles = await SysRoleModel.findAll({
-      where: {
-        role_id: userInfo.role_id
-      }
-    })
-    let row = await user.addSys_roles(roles)
-    return true
+    return classArticle
   }
-  // 更新用户
-  async updateUser(data) {
-    let roles = await SysRoleModel.findAll({
+  // 更新
+  async update(data) {
+    let classArticle = await BlogClassModel.update({
+      class_name: data.class_name
+    },{
       where: {
-        role_id: data.role_id
+        id: data.id
       }
     })
-    let user = await SysUserModel.findByPk(data.user_id) //  通过主键查询
-    await user.update({
-      nick_name: data.nick_name,
-      password: CryptoAuth.encrypted(data.password), // 密码加密data.password,
-      email: data.email,
-      phone: data.phone,
-      avatar: data.avatar,
-      create_time: data.create_time,
-      update_id: data.update_id,
-    })
-    let row = await user.setSys_roles(roles)
-    return true
+    return classArticle
   }
-  // 删除用户
-  async deleteUser(user_id) {
-    let row = await SysUserModel.destroy({
+  // 删除
+  async delete(id) {
+    let row = await BlogClassModel.destroy({
       where: {
-        user_id: user_id
+        id: id
       }
     })
-    return true
+    return row
   }
 }
 module.exports = new BlogClassServer()
