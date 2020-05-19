@@ -34,6 +34,19 @@
     "title": "获取用户信息",
     "description": "<p>获取用户信息和菜单</p>",
     "name": "getUserMenuList",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "optional": false,
+            "field": "token",
+            "defaultValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJjcmVhdG",
+            "description": ""
+          }
+        ]
+      }
+    },
     "group": "User",
     "success": {
       "fields": {
@@ -176,6 +189,19 @@
     "description": "<p>用户新增的接口</p>",
     "name": "create_a_user",
     "group": "sysUser",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "optional": false,
+            "field": "token",
+            "defaultValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJjcmVhdG",
+            "description": ""
+          }
+        ]
+      }
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -230,7 +256,7 @@
       }
     ],
     "version": "1.0.0",
-    "filename": "router/api/sysUser.js",
+    "filename": "router/api/sysuser.js",
     "groupTitle": "sysUser"
   },
   {
@@ -238,18 +264,24 @@
     "url": "/api/user/deleteUser",
     "title": "删除用户",
     "description": "<p>用户删除的接口</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "optional": false,
+            "field": "token",
+            "defaultValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJjcmVhdG",
+            "description": ""
+          }
+        ]
+      }
+    },
     "name": "delete_a_user",
     "group": "sysUser",
     "parameter": {
       "fields": {
         "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "token",
-            "description": "<p>令牌</p>"
-          },
           {
             "group": "Parameter",
             "type": "string",
@@ -266,7 +298,7 @@
       }
     ],
     "version": "1.0.0",
-    "filename": "router/api/sysUser.js",
+    "filename": "router/api/sysuser.js",
     "groupTitle": "sysUser"
   },
   {
@@ -276,6 +308,19 @@
     "description": "<p>查看用户列表的接口</p>",
     "name": "get_userList",
     "group": "sysUser",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "optional": false,
+            "field": "token",
+            "defaultValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJjcmVhdG",
+            "description": ""
+          }
+        ]
+      }
+    },
     "sampleRequest": [
       {
         "url": "http://localhost:10086/api/user/list"
@@ -308,7 +353,7 @@
       }
     },
     "version": "1.0.0",
-    "filename": "router/api/sysUser.js",
+    "filename": "router/api/sysuser.js",
     "groupTitle": "sysUser"
   },
   {
@@ -318,16 +363,22 @@
     "description": "<p>更新用户信息的接口</p>",
     "name": "update_a_user",
     "group": "sysUser",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "optional": false,
+            "field": "token",
+            "defaultValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJjcmVhdG",
+            "description": ""
+          }
+        ]
+      }
+    },
     "parameter": {
       "fields": {
         "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "token",
-            "description": "<p>令牌</p>"
-          },
           {
             "group": "Parameter",
             "type": "string",
@@ -372,7 +423,69 @@
       }
     ],
     "version": "1.0.0",
-    "filename": "router/api/sysUser.js",
+    "filename": "router/api/sysuser.js",
     "groupTitle": "sysUser"
+  },
+  {
+    "type": "post",
+    "url": "/api/single/uploadImage/",
+    "title": "上传图片",
+    "description": "<p>上传单张图片</p>",
+    "name": "upload",
+    "group": "upload",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "optional": false,
+            "field": "token",
+            "defaultValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJjcmVhdG",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "images",
+            "description": "<p>图片key</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "result",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": " {\n \"data\": {\n     \"path\"\": \"url\"\n  },\n \"msg\": \"成功\",\n \"code\": 200\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:10086/api/single/uploadImage/"
+      }
+    ],
+    "version": "1.0.0",
+    "filename": "router/api/uploadimage.js",
+    "groupTitle": "upload"
   }
 ]

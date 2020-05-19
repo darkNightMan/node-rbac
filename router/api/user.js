@@ -38,6 +38,7 @@
  * @api {post} /api/getUserMenuList 获取用户信息
  * @apiDescription 获取用户信息和菜单
  * @apiName getUserMenuList
+ * @apiHeader token= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJjcmVhdG 
  * @apiGroup User
  * @apiSuccess {json} result
  * @apiSuccessExample {json} Success-Response:
