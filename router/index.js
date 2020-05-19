@@ -60,6 +60,10 @@ module.exports = function (app) {
   app.post('/api/blogs/createClassList', BlogClassController.create) // 新增  
   app.put('/api/blogs/updateClassList', BlogClassController.update) // 更新 
   app.delete('/api/blogs/deleteClassList', BlogClassController.delete) // 更新 
+
   app.get('/api/blogs/articleTagsList', BlogTagsController.list) // 列表  
+  app.post('/api/blogs/createTagsList', BlogTagsController.create) // 添加
+  app.put('/api/blogs/updateTagsList', BlogTagsController.update) // 更新
+  app.delete('/api/blogs/deleteTagsList', BlogTagsController.delete) // 更新
   app.use(NotFind.notApi) // 访问的路由不存在  
 }
