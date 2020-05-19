@@ -5,19 +5,20 @@ const {
 const CryptoAuth = require('../utils/crypto')
 // 用户
 class BlogClassServer {
-  // 获取的用户
+  // 获取
   async list(pageParmas, conditions) {
+    let { user_id } = conditions
+    let { pageSize, limitStart } = pageParmas
     let where = {}
     if (conditions) {
-      if (conditions.user_id) {
-        where: {
-          user_id: conditions.user_id
-        }
+      if (user_id) {
+        where['user_id']= conditions.user_id
       }
     }
     let _data = await BlogTagsModel.findAndCountAll({
-      limit: pageParmas.pageSize,
-      offset: pageParmas.limitStart
+      where: where,
+      limit: pageSize,
+      offset: limitStart
     })
     return {
       list: _data.rows,

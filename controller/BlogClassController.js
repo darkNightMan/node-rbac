@@ -18,6 +18,7 @@ class BlogClassController {
       res.R.err('USER_ID_NULL')
     }
     const { pageParams, conditions } = offsetPage(req.query)
+    console.log(Object.assign({ user_id: userid}, conditions),'useriduseriduseriduseriduseriduseriduseriduserid')
     let _data = await BlogClassServer.list(pageParams, Object.assign({ user_id: userid}, conditions)) // 用户表  
     if (_data) {
       res.R.ok({

@@ -8,6 +8,7 @@ let BlogClassModel = db.define('b_class', {
     allowNull: false, // 不为空
     autoIncrement: true
   },
+  user_id: Sequelize.INTEGER,
   class_name: Sequelize.CHAR(255)
 }, {
   tableName: 'b_class',

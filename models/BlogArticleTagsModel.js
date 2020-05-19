@@ -8,6 +8,7 @@ let BlogArticleTagsModel = db.define('b_article_tags', {
     allowNull: false, // 不为空
     autoIncrement: true
   },
+  user_id: Sequelize.INTEGER,
   article_id: {
     type: Sequelize.INTEGER, //字段类型
     allowNull: false, // 不为空
