@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50719
 File Encoding         : 65001
 
-Date: 2020-05-19 19:28:59
+Date: 2020-05-20 17:04:57
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -156,6 +156,28 @@ INSERT INTO `b_class` VALUES ('5', 'Nginx', '44');
 INSERT INTO `b_class` VALUES ('6', 'React', '44');
 INSERT INTO `b_class` VALUES ('7', 'Vue', '44');
 INSERT INTO `b_class` VALUES ('14', '键盘侠', '44');
+
+-- ----------------------------
+-- Table structure for b_comments
+-- ----------------------------
+DROP TABLE IF EXISTS `b_comments`;
+CREATE TABLE `b_comments` (
+  `comment_id` int(11) NOT NULL AUTO_INCREMENT,
+  `article_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `parent_id` int(11) DEFAULT '0',
+  `comment_authot` char(255) DEFAULT NULL,
+  `comment_authot_email` char(255) DEFAULT NULL,
+  `comment_content` text,
+  `comment_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`comment_id`),
+  KEY `article_id` (`article_id`),
+  CONSTRAINT `b_comments_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `b_article` (`article_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of b_comments
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for b_tags
@@ -304,7 +326,7 @@ CREATE TABLE `sys_operation_logs` (
   `action_params` char(255) DEFAULT NULL,
   `action_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4533 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4572 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_operation_logs
@@ -4841,6 +4863,45 @@ INSERT INTO `sys_operation_logs` VALUES ('4529', '44', '王希平', '[GET] /api/
 INSERT INTO `sys_operation_logs` VALUES ('4530', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-19 19:26:47');
 INSERT INTO `sys_operation_logs` VALUES ('4531', '44', '王希平', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-19 19:26:47');
 INSERT INTO `sys_operation_logs` VALUES ('4532', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-19 19:26:47');
+INSERT INTO `sys_operation_logs` VALUES ('4533', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-20 17:01:30');
+INSERT INTO `sys_operation_logs` VALUES ('4534', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:01:30');
+INSERT INTO `sys_operation_logs` VALUES ('4535', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-20 17:01:35');
+INSERT INTO `sys_operation_logs` VALUES ('4536', '44', '王希平', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:01:35');
+INSERT INTO `sys_operation_logs` VALUES ('4537', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-20 17:01:36');
+INSERT INTO `sys_operation_logs` VALUES ('4538', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-20 17:01:36');
+INSERT INTO `sys_operation_logs` VALUES ('4539', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"1\"}', '2020-05-20 17:01:37');
+INSERT INTO `sys_operation_logs` VALUES ('4540', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-20 17:01:38');
+INSERT INTO `sys_operation_logs` VALUES ('4541', '44', '王希平', '[POST] /api/menu/createMenu', '127.0.0.1', '{\"type\":2,\"res_id\":\"\",\"res_name\":\"评论管理\",\"parent_id\":1,\"component\":\"blogCommentsList\",\"description\":\"\",\"res_code\":\"pl\",\"res_icon\":\"el-icon-chat-dot-round\",\"sort\":\"34\",\"state\":1,\"perms\":\"\"}', '2020-05-20 17:02:28');
+INSERT INTO `sys_operation_logs` VALUES ('4542', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"1\"}', '2020-05-20 17:02:28');
+INSERT INTO `sys_operation_logs` VALUES ('4543', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-20 17:02:28');
+INSERT INTO `sys_operation_logs` VALUES ('4544', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-20 17:02:30');
+INSERT INTO `sys_operation_logs` VALUES ('4545', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-20 17:02:30');
+INSERT INTO `sys_operation_logs` VALUES ('4546', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-20 17:02:30');
+INSERT INTO `sys_operation_logs` VALUES ('4547', '44', '王希平', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:02:49');
+INSERT INTO `sys_operation_logs` VALUES ('4548', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-20 17:02:49');
+INSERT INTO `sys_operation_logs` VALUES ('4549', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-20 17:02:50');
+INSERT INTO `sys_operation_logs` VALUES ('4550', '44', '王希平', '[GET] /api/role/getRoleTreePer/', '127.0.0.1', '{\"role_id\":\"1\"}', '2020-05-20 17:02:51');
+INSERT INTO `sys_operation_logs` VALUES ('4551', '44', '王希平', '[GET] /api/menu/sysMenutree/', '127.0.0.1', '', '2020-05-20 17:02:51');
+INSERT INTO `sys_operation_logs` VALUES ('4552', '44', '王希平', '[GET] /api/role/getRoleTreePer/', '127.0.0.1', '{\"role_id\":\"1\"}', '2020-05-20 17:02:55');
+INSERT INTO `sys_operation_logs` VALUES ('4553', '44', '王希平', '[GET] /api/menu/sysMenutree/', '127.0.0.1', '', '2020-05-20 17:02:55');
+INSERT INTO `sys_operation_logs` VALUES ('4554', '44', '王希平', '[POST] /api/role/setRoleTreePer/', '127.0.0.1', '{\"res_idArr\":[2,7,83,84,85,96,9,90,89,95,93,10,86,97,87,88,92,94,4,8,98,38,1,5,40,99,108,101,102,104,103,35,41,80,82],\"role_id\":1}', '2020-05-20 17:02:59');
+INSERT INTO `sys_operation_logs` VALUES ('4555', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-20 17:03:03');
+INSERT INTO `sys_operation_logs` VALUES ('4556', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-20 17:03:03');
+INSERT INTO `sys_operation_logs` VALUES ('4557', '44', '王希平', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:03:04');
+INSERT INTO `sys_operation_logs` VALUES ('4558', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-20 17:03:05');
+INSERT INTO `sys_operation_logs` VALUES ('4559', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:03:07');
+INSERT INTO `sys_operation_logs` VALUES ('4560', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:03:08');
+INSERT INTO `sys_operation_logs` VALUES ('4561', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-20 17:03:32');
+INSERT INTO `sys_operation_logs` VALUES ('4562', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-20 17:03:32');
+INSERT INTO `sys_operation_logs` VALUES ('4563', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-20 17:03:34');
+INSERT INTO `sys_operation_logs` VALUES ('4564', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-20 17:03:34');
+INSERT INTO `sys_operation_logs` VALUES ('4565', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-20 17:03:35');
+INSERT INTO `sys_operation_logs` VALUES ('4566', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"1\"}', '2020-05-20 17:03:36');
+INSERT INTO `sys_operation_logs` VALUES ('4567', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-20 17:03:36');
+INSERT INTO `sys_operation_logs` VALUES ('4568', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:03:44');
+INSERT INTO `sys_operation_logs` VALUES ('4569', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:03:45');
+INSERT INTO `sys_operation_logs` VALUES ('4570', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:03:46');
+INSERT INTO `sys_operation_logs` VALUES ('4571', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-20 17:03:46');
 
 -- ----------------------------
 -- Table structure for sys_resource
@@ -4860,7 +4921,7 @@ CREATE TABLE `sys_resource` (
   `sort` bigint(20) DEFAULT NULL,
   `perms` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`res_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_resource
@@ -4901,6 +4962,7 @@ INSERT INTO `sys_resource` VALUES ('102', '101', '友情链接', 'fa fa-chain', 
 INSERT INTO `sys_resource` VALUES ('103', '101', '留言管理', '', '2020-05-13 19:09:14', '1', '', '2', '', '', '0', '');
 INSERT INTO `sys_resource` VALUES ('104', '101', '广告管理', '', '2020-05-13 19:09:39', '1', '', '2', '', '', '0', '');
 INSERT INTO `sys_resource` VALUES ('106', '5', '添加文章', '', '2020-05-14 16:00:43', '1', '', '3', 'blogArticleDetail', '', '0', 'add');
+INSERT INTO `sys_resource` VALUES ('108', '1', '评论管理', 'el-icon-chat-dot-round', '2020-05-20 17:02:28', '1', 'pl', '2', 'blogCommentsList', '', '34', '');
 
 -- ----------------------------
 -- Table structure for sys_role
@@ -4935,7 +4997,7 @@ CREATE TABLE `sys_role_permmision` (
   KEY `res_id` (`res_id`),
   CONSTRAINT `FK_sys_res` FOREIGN KEY (`res_id`) REFERENCES `sys_resource` (`res_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_sys_role` FOREIGN KEY (`role_id`) REFERENCES `sys_role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=763 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=798 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_role_permmision
@@ -4954,40 +5016,41 @@ INSERT INTO `sys_role_permmision` VALUES ('662', '2', '97', null);
 INSERT INTO `sys_role_permmision` VALUES ('664', '2', '4', null);
 INSERT INTO `sys_role_permmision` VALUES ('665', '2', '8', null);
 INSERT INTO `sys_role_permmision` VALUES ('666', '2', '98', null);
-INSERT INTO `sys_role_permmision` VALUES ('729', '1', '2', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('730', '1', '7', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('731', '1', '83', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('732', '1', '84', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('733', '1', '85', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('734', '1', '96', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('735', '1', '9', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('736', '1', '90', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('737', '1', '89', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('738', '1', '95', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('739', '1', '93', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('740', '1', '10', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('741', '1', '86', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('742', '1', '97', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('743', '1', '87', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('744', '1', '88', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('745', '1', '92', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('746', '1', '94', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('747', '1', '4', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('748', '1', '38', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('749', '1', '8', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('750', '1', '98', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('751', '1', '1', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('752', '1', '5', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('753', '1', '40', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('754', '1', '99', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('755', '1', '35', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('756', '1', '41', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('757', '1', '80', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('758', '1', '82', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('759', '1', '101', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('760', '1', '104', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('761', '1', '102', '2020-05-13 19:09:49');
-INSERT INTO `sys_role_permmision` VALUES ('762', '1', '103', '2020-05-13 19:09:49');
+INSERT INTO `sys_role_permmision` VALUES ('763', '1', '2', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('764', '1', '7', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('765', '1', '83', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('766', '1', '84', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('767', '1', '85', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('768', '1', '96', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('769', '1', '9', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('770', '1', '90', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('771', '1', '89', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('772', '1', '95', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('773', '1', '93', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('774', '1', '10', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('775', '1', '86', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('776', '1', '97', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('777', '1', '87', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('778', '1', '88', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('779', '1', '92', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('780', '1', '94', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('781', '1', '4', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('782', '1', '8', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('783', '1', '98', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('784', '1', '38', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('785', '1', '1', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('786', '1', '5', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('787', '1', '40', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('788', '1', '99', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('789', '1', '108', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('790', '1', '101', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('791', '1', '102', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('792', '1', '104', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('793', '1', '103', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('794', '1', '35', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('795', '1', '41', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('796', '1', '80', '2020-05-20 17:02:59');
+INSERT INTO `sys_role_permmision` VALUES ('797', '1', '82', '2020-05-20 17:02:59');
 
 -- ----------------------------
 -- Table structure for sys_user

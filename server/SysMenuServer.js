@@ -136,7 +136,7 @@ class SysMenuServer {
         }, // 排除中间表
         required: false,
       }],
-      group: 'sys_resources.res_id', // 不只为什么 不个以主建res_id作分组 非要用主键需要加上表名 搞不懂    
+      group: 'sys_resources.res_id', //  
       order: [
         [{
           model: SysResourceModel

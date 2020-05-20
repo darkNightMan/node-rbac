@@ -5,6 +5,7 @@ const BlogArticleDetailModel = require('./BlogArticleDetailModel') // 博客详�
 const BlogArticleTagsModel = require('./BlogArticleTagsModel') // 博客标签文章关联
 const BlogClassModel = require('./BlogClassModel') // 博客分类
 const BlogTagsModel = require('./BlogTagsModel') // 博客标签
+const BlogCommentModel = require('./BlogCommentModel') // 博客标签 
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op
 
@@ -23,7 +24,10 @@ BlogArticleModel.belongsTo(BlogClassModel, {
 // 一对一 博客对博客详情 而hasOne方法暴露的是BlogArticleDetailModel表的‘article_id’作为外键查询
 BlogArticleModel.hasOne(BlogArticleDetailModel,  { foreignKey: 'article_id', as: 'detail' })
 // BlogArticleDetailModel.belongsTo(BlogArticleModel,  { foreignKey: 'acticle_id'})
-// -----------------------------------
+// -----------文章评论一对多--------------------
+BlogArticleModel.hasMany(BlogCommentModel, { foreignKey: 'article_id', as: 'comments'} )//  外键约束)
+BlogCommentModel.belongsTo(BlogArticleModel, {  foreignKey: 'article_id', as: 'articles' }) 
+
 BlogArticleModel.hasMany(BlogArticleTagsModel, { foreignKey: 'article_id', as: 'tagsList'} )//  外键约束)
 BlogTagsModel.hasMany(BlogArticleTagsModel, { foreignKey: 'tags_id', as: 'articleList'} )//  外键约束)
 
@@ -47,17 +51,16 @@ BlogTagsModel.belongsToMany(BlogArticleModel, {
   constraints: false
 })
 
-
 // db.sync({  
 //   force: true // 强制同步
 // });
-
 module.exports = {
   BlogArticleModel,
   BlogArticleDetailModel,
   BlogArticleTagsModel,
   BlogClassModel,
   BlogTagsModel,
+  BlogCommentModel,
   Sequelize,
   Op
 }
