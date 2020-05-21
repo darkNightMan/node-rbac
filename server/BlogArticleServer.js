@@ -1,10 +1,11 @@
 const {
   Op,
+  SysUserModel,
   Sequelize,
   BlogArticleModel,
   BlogArticleDetailModel,
   BlogTagsModel,
-  BlogClassModel
+  BlogClassModel,
 } = require('../models/TableBlogRelationModel')
 const CryptoAuth = require('../utils/crypto')
 // 用户
@@ -58,7 +59,7 @@ class BlogArticleServer {
       where: {
         article_id: article_id
       },
-      attributes: [[Sequelize.col('content'), 'content'], 'title', 'cover_url', 'class_id', 'is_top'],
+      attributes: [[Sequelize.col('content'), 'content'], [Sequelize.col('nick_name'), 'authorName'],  [Sequelize.col('class_name'), 'authorName'], 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time'],
       include: [
         {
           model:BlogArticleDetailModel,
@@ -66,8 +67,16 @@ class BlogArticleServer {
           attributes: []
         },
         {
+          model: BlogClassModel,
+          attributes: []
+        },
+        {
+          model:SysUserModel,
+          as: 'userInfo',
+          attributes: []
+        },
+        {
           model: BlogTagsModel,
-          attributes: ['tags_id'],
           as: 'tagsArr',
           through: {
             attributes: [] // 排除中间表

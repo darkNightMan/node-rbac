@@ -1,5 +1,5 @@
 const db = require('../db/mysql.db')
-// const SysUserModel = require('./SysUserModel') // 用户表
+const SysUserModel = require('./SysUserModel') // 用户表
 const BlogArticleModel = require('./BlogArticleModel') // 文章表
 const BlogArticleDetailModel = require('./BlogArticleDetailModel') // 博客详情表
 const BlogArticleTagsModel = require('./BlogArticleTagsModel') // 博客标签文章关联
@@ -14,13 +14,11 @@ const Op = Sequelize.Op
 //   foreignKey: 'user_id', //  外键约束
 //   as: 'roleLits'
 // }) 
-BlogClassModel.hasMany(BlogArticleModel, {
-  foreignKey: 'class_id', //  外键约束
-}) 
+BlogClassModel.hasMany(BlogArticleModel, {  foreignKey: 'class_id',})   //  外键约束
 //多对一  分类表对关联文章 belongsTo暴露出的是BlogArticleModel表的‘class_id’字段作为外键去查询BlogClassModel表 
-BlogArticleModel.belongsTo(BlogClassModel, {
-  foreignKey: 'class_id', //  外键约束
-}) 
+BlogArticleModel.belongsTo(BlogClassModel, {  foreignKey: 'class_id', })  //  外键约束
+
+BlogArticleModel.belongsTo(SysUserModel, { foreignKey: 'user_id', as: 'userInfo' }) 
 // 一对一 博客对博客详情 而hasOne方法暴露的是BlogArticleDetailModel表的‘article_id’作为外键查询
 BlogArticleModel.hasOne(BlogArticleDetailModel,  { foreignKey: 'article_id', as: 'detail' })
 // BlogArticleDetailModel.belongsTo(BlogArticleModel,  { foreignKey: 'acticle_id'})
@@ -62,5 +60,6 @@ module.exports = {
   BlogTagsModel,
   BlogCommentModel,
   Sequelize,
+  SysUserModel,
   Op
 }
