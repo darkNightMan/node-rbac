@@ -14,8 +14,8 @@ let BlogCommentModel = db.define('b_comments', {
     type: Sequelize.INTEGER,
     defaultValue: 0
   },
-  comment_authot: Sequelize.CHAR(255),
-  comment_authot_email: Sequelize.CHAR(255),
+  comment_author: Sequelize.CHAR(255),
+  comment_author_email: Sequelize.CHAR(255),
   comment_content: Sequelize.TEXT,
   comment_time: {
     type: Sequelize.DATE,

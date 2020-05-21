@@ -21,10 +21,11 @@ BlogArticleModel.belongsTo(BlogClassModel, {  foreignKey: 'class_id', })  //  �
 BlogArticleModel.belongsTo(SysUserModel, { foreignKey: 'user_id', as: 'userInfo' }) 
 // 一对一 博客对博客详情 而hasOne方法暴露的是BlogArticleDetailModel表的‘article_id’作为外键查询
 BlogArticleModel.hasOne(BlogArticleDetailModel,  { foreignKey: 'article_id', as: 'detail' })
-// BlogArticleDetailModel.belongsTo(BlogArticleModel,  { foreignKey: 'acticle_id'})
+// 评论-用户
+BlogCommentModel.belongsTo(SysUserModel, {  foreignKey: 'article_id', as: 'userInfo' })
 // -----------文章评论一对多--------------------
-BlogArticleModel.hasMany(BlogCommentModel, { foreignKey: 'article_id', as: 'comments'} )//  外键约束)
-BlogCommentModel.belongsTo(BlogArticleModel, {  foreignKey: 'article_id', as: 'articles' }) 
+BlogArticleModel.hasMany(BlogCommentModel, { foreignKey: 'article_id', as: 'articles'} )//  外键约束)
+BlogCommentModel.belongsTo(BlogArticleModel, {  foreignKey: 'article_id', as: 'comments' }) 
 
 BlogArticleModel.hasMany(BlogArticleTagsModel, { foreignKey: 'article_id', as: 'tagsList'} )//  外键约束)
 BlogTagsModel.hasMany(BlogArticleTagsModel, { foreignKey: 'tags_id', as: 'articleList'} )//  外键约束)

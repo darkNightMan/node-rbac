@@ -18,6 +18,11 @@ class BlogCommentsController {
       })
     }
   }
+  async findArticleComment (req, res) {
+    let articleId = req.query.article_id
+    let data = await BlogCommentsServer.findArticleComment(articleId)
+    res.R.ok(data)
+  }
   // 创建
   async create (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户

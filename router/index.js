@@ -68,7 +68,8 @@ module.exports = function (app) {
   app.put('/api/blogs/updateTagsList', BlogTagsController.update) // 更新
   app.delete('/api/blogs/deleteTagsList', BlogTagsController.delete) // 更新
 
-  app.get('/api/blogs/articleCommentsList', BlogCommentsController.list) // 列表  
+  app.get('/api/blogs/commentsList', BlogCommentsController.list) // 列表  
+  app.get('/api/blogs/articleCommentsList', BlogCommentsController.findArticleComment) // 列表 
   app.post('/api/blogs/createCommentsList', BlogCommentsController.create) // 添加
   app.put('/api/blogs/updateCommentsList', BlogCommentsController.update) // 更新
   app.delete('/api/blogs/deleteCommentsList', BlogCommentsController.delete) // 更新

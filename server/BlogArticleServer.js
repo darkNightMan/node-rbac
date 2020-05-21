@@ -6,6 +6,7 @@ const {
   BlogArticleDetailModel,
   BlogTagsModel,
   BlogClassModel,
+  BlogCommentModel,
 } = require('../models/TableBlogRelationModel')
 const CryptoAuth = require('../utils/crypto')
 // 用户
@@ -59,7 +60,7 @@ class BlogArticleServer {
       where: {
         article_id: article_id
       },
-      attributes: [[Sequelize.col('content'), 'content'], [Sequelize.col('nick_name'), 'authorName'],  [Sequelize.col('class_name'), 'authorName'], 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time'],
+      attributes: [[Sequelize.col('content'), 'content'], [Sequelize.col('nick_name'), 'authorName'],  [Sequelize.col('class_name'), 'class_name'], 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time'],
       include: [
         {
           model:BlogArticleDetailModel,
