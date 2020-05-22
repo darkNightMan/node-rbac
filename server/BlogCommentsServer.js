@@ -8,7 +8,7 @@ const {
 const CryptoAuth = require('../utils/crypto')
 // 用户
 class BlogCommentsServer {
-  // 获取的用户 
+  // 获取
   async list(pageParmas, conditions) {
     let {pageSize, limitStart } = pageParmas
     let where = {}
@@ -103,7 +103,7 @@ class BlogCommentsServer {
       comment_content: data.comment_content
     },{
       where: {
-        comment_id: data.comment_id
+        comment_id: data.parent_id
       }
     })
     return classArticle
