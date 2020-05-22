@@ -25,12 +25,15 @@ class BlogCommentsController {
   }
   // 创建
   async create (req, res) {
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    let classInfo = {
-      class_name: req.body.class_name,
-      user_id: userid
+    let commentsInfo = {
+      parent_id: req.body.parent_id || 0,
+      user_id: req.userInfo.user_id,
+      article_id: req.body.article_id,
+      comment_author_email: req.body.comment_author_email,
+      comment_content: req.body.comment_content,
+      comment_author: req.body.comment_author,
     }
-    let _data = await BlogCommentsServer.create(classInfo) // 用户表
+    let _data = await BlogCommentsServer.create(commentsInfo) // 用户表
     if (_data) {
       res.R.ok(_data)
     }
@@ -45,9 +48,8 @@ class BlogCommentsController {
   // 删除
   async delete (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-   
-    let id = req.body.id
-    let _data = await BlogCommentsServer.delete(id) // 删除
+    let commentId = req.body.commentId
+    let _data = await BlogCommentsServer.delete(commentId) // 删除
     if (_data) {
       res.R.ok(_data)
     }

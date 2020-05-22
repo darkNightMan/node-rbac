@@ -22,6 +22,9 @@ class BlogCommentsServer {
         model: BlogArticleModel,
         as: 'articles'
       }],
+      order: [
+        ['comment_time', 'DESC']
+      ],
       limit: pageSize,
       offset: limitStart
     })
@@ -84,28 +87,32 @@ class BlogCommentsServer {
   }
   // 添加
   async create(data) {
-    let classArticle = await BlogCommentModel.create({
-      class_name: data.class_name,
-      user_id: data.user_id
+    let comments = await BlogCommentModel.create({
+      parent_id: data.parent_id,
+      user_id: data.user_id,
+      article_id: data.article_id,
+      comment_author_email: data.comment_author_email,
+      comment_content: data.comment_content,
+      comment_author: data.comment_author,
     })
-    return classArticle
+    return comments
   }
   // 更新
   async update(data) {
     let classArticle = await BlogCommentModel.update({
-      class_name: data.class_name
+      comment_content: data.comment_content
     },{
       where: {
-        id: data.id
+        comment_id: data.comment_id
       }
     })
     return classArticle
   }
   // 删除
-  async delete(id) {
+  async delete(commentId) {
     let row = await BlogCommentModel.destroy({
       where: {
-        id: id
+        comment_id: commentId
       }
     })
     return row
