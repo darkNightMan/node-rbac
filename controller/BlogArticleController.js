@@ -75,5 +75,13 @@ class BlogArticleController {
       res.R.ok()
     }
   }
+  async articleRecommenda (req, res) {
+    let data = await BlogArticleServer.articleRecommenda()
+    res.R.ok(data)
+  }
+  async articlesNew (req, res) {
+    let data = await BlogArticleServer.articlesNew()
+    res.R.ok(data)
+  }
 }
 module.exports = new BlogArticleController()

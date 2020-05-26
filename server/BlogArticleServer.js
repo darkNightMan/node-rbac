@@ -120,5 +120,36 @@ class BlogArticleServer {
     })
     return true
   }
+  async articleRecommenda () {
+    let data = await BlogArticleModel.findAll({
+      where: {
+        is_top: 1,
+      },
+      attributes: [[Sequelize.col('class_name'), 'class_name'], 'article_id', 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time'],
+      include: [
+        {
+          model: BlogClassModel,
+          attributes: []
+        },
+      ],
+      // order: [['update_time']],
+      limit: 5,
+    })
+    return data
+  }
+  async articlesNew () {
+    let data = await BlogArticleModel.findAll({
+      attributes: [[Sequelize.col('class_name'), 'class_name'],'article_id', 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time'],
+      include: [
+        {
+          model: BlogClassModel,
+          attributes: []
+        },
+      ],
+      order: [['create_time']],
+      limit: 8,
+    })
+    return data
+  }
 }
 module.exports = new BlogArticleServer()
