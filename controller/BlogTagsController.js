@@ -11,12 +11,9 @@ class BlogClassController {
     let data = await UserServer.testSql()
     res.R.ok(data)
   }
-   // 获取所有用户列表
+   // 列表
   async list (req, res){
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
+    let userid = req.userInfo ? req.userInfo.user_id : ''// 获取存在通过token校验的用户
     const { pageParams, conditions } = offsetPage(req.query)
     let _data = await BlogtagsServer.list(pageParams, Object.assign({ user_id: userid}, conditions)) // 用户表  
     if (_data) {

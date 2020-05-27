@@ -1,22 +1,28 @@
 const {
   Op,
-  BlogClassModel
+  BlogClassModel,
+  BlogArticleModel
 } = require('../models/TableBlogRelationModel')
 const CryptoAuth = require('../utils/crypto')
 // 用户
 class BlogClassServer {
   // 获取的用户
   async list(pageParmas, conditions) {
-    let { user_id } = conditions
+    let { user_id = '' } = conditions
     let {pageSize, limitStart } = pageParmas
     let where = {}
     if (conditions) {
       if (user_id) {
-        where['user_id']= conditions.user_id
+        where['user_id']= user_id
       }
     }
     let _data = await BlogClassModel.findAndCountAll({
       where: where,
+      distinct: true,  // 关联数据去重
+      include:[{
+        model: BlogArticleModel,
+        as: 'article'
+      }],
       limit: pageSize,
       offset: limitStart
     })

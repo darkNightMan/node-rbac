@@ -10,15 +10,9 @@ const  Sequelize = require('sequelize')
 const Op = Sequelize.Op
 
 // 一对一多 用户表对关联表 
-SysUserModel.hasMany(SysUserRoleModel, {
-  foreignKey: 'user_id', //  外键约束
-  as: 'roleLits'
-}) 
+SysUserModel.hasMany(SysUserRoleModel, { foreignKey: 'user_id',   as: 'roleLits' })  // 外键约束
 // 一对一多 角色对关联表
-SysRoleModel.hasMany(SysUserRoleModel, {
-  foreignKey: 'role_id', //  外键约束
-  as: 'roleLits'
-})
+SysRoleModel.hasMany(SysUserRoleModel, {  foreignKey: 'role_id',  as: 'roleLits' })  // 外键约束
 
 // -----------------------------------
 // 用户-角色 多对多

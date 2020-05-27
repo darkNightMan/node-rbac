@@ -6,16 +6,12 @@ const CryptoAuth = require('../utils/crypto')
 const { offsetPage } = require('../utils/offsetPage')
 const { SALTKEY } = require('../conf')
 class BlogArticleController {
-  async test (req, res) {
-    let data = await UserServer.testSql()
-    res.R.ok(data)
-  }
    // 获取所有用户列表
   async list (req, res){
-    let userid = req.userInfo.user_id // 获取存在通过token校验的用户
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
-    }
+    let userid = req.userInfo ? req.userInfo.user_id : ''// 获取存在通过token校验的用户
+    // if (!req.userInfo) {
+    //   res.R.err('USER_ID_NULL')
+    // }
     const { pageParams, conditions } = offsetPage(req.query)
     let _data = await BlogArticleServer.list(pageParams, Object.assign({ user_id: userid}, conditions)) // 用户表  
     if (_data) {

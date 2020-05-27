@@ -1,8 +1,8 @@
 
-const home = require('./home.js') 
+const blog = require('./blog.js') 
 const admin = require('./admin.js') 
 module.exports = function (app) {
-  home(app)
+  blog(app)
   admin(app)
 }
 

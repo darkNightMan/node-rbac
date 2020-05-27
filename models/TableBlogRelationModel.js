@@ -14,9 +14,9 @@ const Op = Sequelize.Op
 //   foreignKey: 'user_id', //  外键约束
 //   as: 'roleLits'
 // }) 
-BlogClassModel.hasMany(BlogArticleModel, {  foreignKey: 'class_id',})   //  外键约束
+BlogClassModel.hasMany(BlogArticleModel, {  foreignKey: 'class_id', as: 'article'})   //  外键约束
 //多对一  分类表对关联文章 belongsTo暴露出的是BlogArticleModel表的‘class_id’字段作为外键去查询BlogClassModel表 
-BlogArticleModel.belongsTo(BlogClassModel, {  foreignKey: 'class_id', })  //  外键约束
+BlogArticleModel.belongsTo(BlogClassModel, {  foreignKey: 'class_id', as: 'article_class' })  //  外键约束
 
 BlogArticleModel.belongsTo(SysUserModel, { foreignKey: 'user_id', as: 'userInfo' }) 
 // 一对一 博客对博客详情 而hasOne方法暴露的是BlogArticleDetailModel表的‘article_id’作为外键查询

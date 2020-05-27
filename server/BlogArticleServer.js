@@ -13,22 +13,32 @@ const CryptoAuth = require('../utils/crypto')
 class BlogArticleServer {
   // 列表
   async list(pageParmas, conditions) {
-    let { user_id } = conditions
+    let { user_id = '', class_id, tags_id } = conditions
     let {pageSize, limitStart } = pageParmas
     let where = {}
     if (conditions) {
       if (user_id) {
-        where['user_id']= conditions.user_id
+        where['user_id']= user_id
+      }
+      if(class_id) {
+        where['class_id'] = class_id
       }
     }
     let _data = await BlogArticleModel.findAndCountAll({
       where: where,
+      distinct: true,  // 关联数据去重
+      attributes: [ 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time'],
       include: [{
         model: BlogClassModel,
-        // as: 'detail'
-        // through: {
-        //   attributes: [] // 排除中间表
-        // }, 
+        attributes: ['class_name'],
+        as: 'article_class'
+      },
+      {
+        model: BlogTagsModel,
+        as: 'tagsArr',
+        through: {
+          attributes: [] // 排除中间表
+        }, 
       }],
       // order: [
       //   ['create_time', 'DESC']
@@ -129,7 +139,8 @@ class BlogArticleServer {
       include: [
         {
           model: BlogClassModel,
-          attributes: []
+          attributes: [],
+          as: 'article_class'
         },
       ],
       // order: [['update_time']],
@@ -143,7 +154,8 @@ class BlogArticleServer {
       include: [
         {
           model: BlogClassModel,
-          attributes: []
+          attributes: [],
+          as: 'article_class'
         },
       ],
       order: [['create_time']],
