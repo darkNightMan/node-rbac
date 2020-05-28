@@ -27,7 +27,7 @@ class BlogArticleServer {
     let _data = await BlogArticleModel.findAndCountAll({
       where: where,
       distinct: true,  // 关联数据去重
-      attributes: [ 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time'],
+      attributes: [ 'title', 'cover_url', 'class_id', 'is_top', 'create_time', 'read_count', 'poll_count', 'update_time', 'article_id'],
       include: [{
         model: BlogClassModel,
         attributes: ['class_name'],
@@ -79,6 +79,7 @@ class BlogArticleServer {
         },
         {
           model: BlogClassModel,
+          as: 'article_class',
           attributes: []
         },
         {
