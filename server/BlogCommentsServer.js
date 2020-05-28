@@ -45,7 +45,7 @@ class BlogCommentsServer {
       order: [
         ['comment_time', 'DESC']
       ]
-    }) // 获取所有根级评论
+    }) // 获取所有根级评论 
     let _dataAllComment = await BlogCommentModel.findAll({
        where: { article_id: article_id},
        include:[{
