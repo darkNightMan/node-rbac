@@ -6,6 +6,7 @@ const BlogArticleTagsModel = require('./BlogArticleTagsModel') // 博客标签�
 const BlogClassModel = require('./BlogClassModel') // 博客分类
 const BlogTagsModel = require('./BlogTagsModel') // 博客标签
 const BlogCommentModel = require('./BlogCommentModel') // 博客标签 
+const BlogRelatedLinksModel = require('./BlogRelatedLinksModel') // 友情链接 
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op
 
@@ -14,6 +15,7 @@ const Op = Sequelize.Op
 //   foreignKey: 'user_id', //  外键约束
 //   as: 'roleLits'
 // }) 
+SysUserModel.hasMany(BlogRelatedLinksModel, {foreignKey: 'user_id', as: 'links'})
 BlogClassModel.hasMany(BlogArticleModel, {  foreignKey: 'class_id', as: 'article'})   //  外键约束
 //多对一  分类表对关联文章 belongsTo暴露出的是BlogArticleModel表的‘class_id’字段作为外键去查询BlogClassModel表 
 BlogArticleModel.belongsTo(BlogClassModel, {  foreignKey: 'class_id', as: 'article_class' })  //  外键约束
@@ -60,6 +62,7 @@ module.exports = {
   BlogClassModel,
   BlogTagsModel,
   BlogCommentModel,
+  BlogRelatedLinksModel,
   Sequelize,
   SysUserModel,
   Op

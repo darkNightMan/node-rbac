@@ -1,11 +1,11 @@
 const {
   Op,
-  BlogClassModel,
-  BlogArticleModel
+  SysUserModel,
+  BlogRelatedLinksModel
 } = require('../models/TableBlogRelationModel')
-const CryptoAuth = require('../utils/crypto')
+
 // 用户
-class BlogClassServer {
+class BlogRelatedLinksServer {
   // 获取
   async list(pageParmas, conditions) {
     let { user_id = '' } = conditions
@@ -16,7 +16,7 @@ class BlogClassServer {
         where['user_id']= user_id
       }
     }
-    let _data = await BlogClassModel.findAndCountAll({
+    let _data = await BlogRelatedLinksModel.findAndCountAll({
       where: where,
       distinct: true,  // 关联数据去重
       include:[{
@@ -33,7 +33,7 @@ class BlogClassServer {
   }
   // 添加
   async create(data) {
-    let classArticle = await BlogClassModel.create({
+    let classArticle = await BlogRelatedLinksModel.create({
       class_name: data.class_name,
       user_id: data.user_id
     })
@@ -41,7 +41,7 @@ class BlogClassServer {
   }
   // 更新
   async update(data) {
-    let classArticle = await BlogClassModel.update({
+    let classArticle = await BlogRelatedLinksModel.update({
       class_name: data.class_name
     },{
       where: {
@@ -52,7 +52,7 @@ class BlogClassServer {
   }
   // 删除
   async delete(id) {
-    let row = await BlogClassModel.destroy({
+    let row = await BlogRelatedLinksModel.destroy({
       where: {
         id: id
       }
@@ -60,4 +60,4 @@ class BlogClassServer {
     return row
   }
 }
-module.exports = new BlogClassServer()
+module.exports = new BlogRelatedLinksServer()

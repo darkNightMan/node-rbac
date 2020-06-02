@@ -8,7 +8,6 @@ let SysUserModel = db.define('sys_user', {
     type: Sequelize.INTEGER, //字段类型
     primaryKey: true,
     allowNull: false, // 不为空
-    autoIncrement: true
   },
   nick_name: Sequelize.CHAR(255), //如果只有类型，可以直接这么设置
   password: Sequelize.CHAR(255),

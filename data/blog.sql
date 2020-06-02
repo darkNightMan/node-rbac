@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50719
 File Encoding         : 65001
 
-Date: 2020-05-22 13:00:27
+Date: 2020-06-01 16:28:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,20 +41,19 @@ CREATE TABLE `b_article` (
 INSERT INTO `b_article` VALUES ('9', 'nodejs 全栈开发你值得拥有1', '33', '1', '0', '1212', '2020-05-13 15:54:02', '2020-05-13 15:54:04', '1231', 'https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg');
 INSERT INTO `b_article` VALUES ('10', 'nodejs 全栈开发你值得拥有2', '33', '1', '0', '1212', '2020-05-13 15:54:02', '2020-05-13 15:54:04', '1231', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
 INSERT INTO `b_article` VALUES ('16', 'nodejs 全栈开发你值得拥有3', '44', '2', '1', '12', '2020-05-14 19:56:42', '2020-05-21 10:27:42', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('17', '123123', '44', '2', '0', '0', '2020-05-14 19:59:25', '2020-05-20 18:51:34', '0', 'public/uploads/d1131a6abc9f4ae7f3d2cd92b25c98bd.png');
-INSERT INTO `b_article` VALUES ('18', '你好毒', '44', '1', '0', '0', '2020-05-15 12:04:04', '2020-05-15 12:04:04', '0', 'https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg');
-INSERT INTO `b_article` VALUES ('19', '12312', '44', '1', '0', '0', '2020-05-15 12:05:03', '2020-05-15 12:05:03', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('20', '12', '44', '1', '0', '0', '2020-05-15 12:06:29', '2020-05-15 12:06:29', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('21', '12', '44', '6', '0', '0', '2020-05-15 12:23:14', '2020-05-15 12:23:14', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('22', '12', '44', '1', '0', '0', '2020-05-15 12:25:57', '2020-05-15 12:25:57', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('23', '1212', '44', '1', '0', '0', '2020-05-15 12:26:55', '2020-05-15 12:26:55', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('24', 'vuex', '44', '1', '0', '0', '2020-05-15 13:11:52', '2020-05-15 13:11:52', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
+INSERT INTO `b_article` VALUES ('18', 'Vuex辅助函数', '44', '1', '1', '0', '2020-05-15 12:04:04', '2020-05-28 12:33:30', '0', 'https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg');
+INSERT INTO `b_article` VALUES ('19', '链表结构', '44', '1', '1', '0', '2020-05-15 12:05:03', '2020-05-28 12:35:12', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('20', 'js弹力器', '44', '1', '1', '0', '2020-05-15 12:06:29', '2020-05-28 12:34:53', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('21', 'Push API实现消息推送', '44', '1', '1', '0', '2020-05-15 12:23:14', '2020-05-28 12:36:16', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('22', 'vue-bus 组件实现非父子组件通信(及需注意地方)', '44', '1', '1', '0', '2020-05-15 12:25:57', '2020-05-28 12:38:54', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('23', 'js 观察者模式', '44', '1', '0', '0', '2020-05-15 12:26:55', '2020-05-28 12:39:33', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('24', 'vuex', '44', '1', '1', '0', '2020-05-15 13:11:52', '2020-05-26 11:31:00', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
 INSERT INTO `b_article` VALUES ('25', 'vue', '44', '1', '0', '0', '2020-05-15 13:12:24', '2020-05-15 13:12:24', '0', 'public/uploads/d1131a6abc9f4ae7f3d2cd92b25c98bd.png');
-INSERT INTO `b_article` VALUES ('26', ' 哈哈阿萨德', '44', '1', '0', '0', '2020-05-15 13:16:50', '2020-05-15 13:16:50', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('28', '12312', '44', '1', '0', '0', '2020-05-18 17:44:32', '2020-05-18 17:44:32', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
+INSERT INTO `b_article` VALUES ('26', 'node代理配置', '44', '2', '0', '0', '2020-05-15 13:16:50', '2020-05-28 12:40:13', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('28', '12312', '44', '1', '1', '0', '2020-05-18 17:44:32', '2020-05-26 11:40:11', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
 INSERT INTO `b_article` VALUES ('32', '以父之名', '44', '1', '0', '0', '2020-05-18 17:57:14', '2020-05-18 17:57:14', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
 INSERT INTO `b_article` VALUES ('35', '武神主宰', '44', '2', '1', '0', '2020-05-19 16:15:32', '2020-05-19 16:15:32', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
-INSERT INTO `b_article` VALUES ('36', '老王', '44', '1', '1', '0', '2020-05-20 18:48:14', '2020-05-20 18:48:14', '0', 'public/uploads/d1131a6abc9f4ae7f3d2cd92b25c98bd.png');
+INSERT INTO `b_article` VALUES ('36', '老王', '44', '1', '0', '0', '2020-05-20 18:48:14', '2020-05-26 11:40:01', '0', 'public/uploads/d1131a6abc9f4ae7f3d2cd92b25c98bd.png');
 
 -- ----------------------------
 -- Table structure for b_article_detail
@@ -74,16 +73,15 @@ CREATE TABLE `b_article_detail` (
 -- Records of b_article_detail
 -- ----------------------------
 INSERT INTO `b_article_detail` VALUES ('7', '16', '```\n// 和自定义过滤器一样,我们这里定义的是全局指令\nVue.directive(\'focus\',{\n    inserted(el) {\n      el.focus()\n    }\n})\n```\n\n```\n<div id=\'app\'>\n    <input type=\"text\">\n    <input type=\"text\" v-focus placeholder=\"我有v-focus,所以,我获取了焦点\">\n  </div>\n  \n  ```\n  \n ---\n  先总结几个点:\n\n- 使用 Vue.directive()来新建一个全局指令,(指令使用在HTML元素属性上的)\n - Vue.directive第一个参数focus是指令名,指令名在声明的时候,不-需要加 v-\n- 在使用指令的HTML元素上,<input type=\"text\" v-focus  placeholder=\"我有v-focus,所以,我获取了焦点\"/> 我们需要加上 v-.\nVue.directive(\'focus\',{}) 第二个参数是一个对象,对象内部有个 inserted() 的函数,函数有 el 这个参数.\nel 这个参数表示了绑定这个指令的 DOM元素,在这里就是后面那个有 placeholder 的 input\nel 就等价于 document.getElementById(\'el.id\')....\n可以利用 $(el) 无缝连接 jQuery\n\n---\n\n### Vue 指令的声明周期函数\n```\nVue.directive(\'gqs\',{\n    bind() {\n      // 当指令绑定到 HTML 元素上时触发.**只调用一次**\n      console.log(\'bind triggerd\')\n    },\n    inserted() {\n      // 当绑定了指令的这个HTML元素插入到父元素上时触发(在这里父元素是 `div#app`)**.但不保证,父元素已经插入了 DOM 文档.**\n      console.log(\'inserted triggerd\')\n    },\n    updated() {\n      // 所在组件的`VNode`更新时调用.\n      console.log(\'updated triggerd\')\n    },\n    componentUpdated() {\n      // 指令所在组件的 VNode 及其子 VNode 全部更新后调用。\n      console.log(\'componentUpdated triggerd\')\n      \n    },\n    unbind() {\n      // 只调用一次，指令与元素解绑时调用.\n      console.log(\'unbind triggerd\')\n    }\n  })\n  ```', null);
-INSERT INTO `b_article_detail` VALUES ('8', '17', '牛肉干', null);
-INSERT INTO `b_article_detail` VALUES ('9', '18', '123123123', null);
-INSERT INTO `b_article_detail` VALUES ('10', '19', '12312', null);
-INSERT INTO `b_article_detail` VALUES ('11', '20', '1', null);
-INSERT INTO `b_article_detail` VALUES ('12', '21', '1212', null);
-INSERT INTO `b_article_detail` VALUES ('13', '22', '12', null);
-INSERT INTO `b_article_detail` VALUES ('14', '23', '1212', null);
+INSERT INTO `b_article_detail` VALUES ('9', '18', '#### mapActions\n\n#### 将组件的 methods 映射为 store.dispatch 调用（需要先在根节点注入 store）：\n\n组件中引入：\n```\nimport { mapActions } from \'vuex\'\n\nmethods: {\n\n    ...mapActions([\n\n    \'increment\', // 将 `this.increment()` 映射为 `this.$store.dispatch(\'increment\')`\n    // `mapActions` 也支持载荷：\n    \'incrementBy\' // 将 `this.incrementBy(amount)` 映射为 `this.$store.dispatch(\'incrementBy\', amount)`\n    ]),\n\n    ...mapActions({\n\n        add: \'increment\' // 将 `this.add()` 映射为 `this.$store.dispatch(\'increment\')`\n    })\n\n}\n```\n\n\n#### mapMutations\n#### 将组件中的 methods 映射为 store.commit 调用（需要在根节点注入store）。\n\n组件中引入：\n```\nimport { mapMutations } from \'vuex\'\nmethods: {\n\n    ...mapMutations([\n\n    \'increment\', // 将 `this.increment()` 映射为 `this.$store.commit(\'increment\')`\n    // `mapMutations` 也支持载荷：\n    \'incrementBy\' // 将 `this.incrementBy(amount)` 映射为 `this.$store.commit(\'incrementBy\', amount)`\n    ]),\n\n    ...mapMutations({\n\n        add: \'increment\' // 将 `this.add()` 映射为 `this.$store.commit(\'increment\')`\n    })\n\n}\n```\n\n在computed中使用mapState：\n\n```\ncomputed: {\n  ...mapState([\'a\', \'b\']),\n}\n```\n\n就可以代替这段代码\n```\ncomputed: {\n  a() {\n    return this.$store.state.a\n  },\n  b() {\n    return this.$store.state.b\n  },\n}\n```\n---\nmapActions的使用\n```\nmethods: {\n  ...mapActions([\'addA\', \'addB\']),\n},\n```\n等价\n```\nmethods: {\n  addA(n) {\n    this.$store.dispatch(\'addA\', n)\n  },\n  addB(n) {\n    this.$store.dispatch(\'addA\', n)\n  },\n}\n```\n\n---\n在computed中添加count的映射：\n\n```\ncomputed: {\n  ...mapGetters([\'count\'])\n}\n```\n等价于：\n```\ncomputed: {\n  count() {\n    return this.$store.getters.count\n  }\n}\n```\n\n\n\n\n\n\n\n\n\n\n\n\n\n---\n\n```\nindex.js如下：\n\nimport Vue from \'vue\';\nimport Vuex from \'vuex\';\nVue.use(Vuex);\n\nconst state={//要设置的全局访问的state对象\n  showFooter: true,\n  changableNum:0\n  count: 0\n  //要设置的初始属性值\n};\n\nconst getters = {   //实时监听state值的变化(最新状态)\n  isShow(state) {  //方法名随意,主要是来承载变化的showFooter的值\n    return state.showFooter\n  },\n  getChangedNum(){  //方法名随意,主要是用来承载变化的changableNum的值\n    return state.changebleNum\n  }\n};\n\nconst mutations = {\n  show(state) {   //自定义改变state初始值的方法，这里面的参数除了state之外还可以再传额外的参数(变量或对象);\n    state.showFooter = true;\n  },\n  hide(state) {  //同上\n    state.showFooter = false;\n  },\n  newNum(state,sum){ //同上，这里面的参数除了state之外还传了需要增加的值sum\n    state.changableNum+=sum;\n  }\n};\n\nconst actions = {\n  hideFooter(context) {  //自定义触发mutations里函数的方法，context与store 实例具有相同方法和属性\n    context.commit(\'hide\');\n  },\n  showFooter(context) {  //同上注释\n    context.commit(\'show\');\n  },\n  getNewNum(context,num){   //同上注释，num为要变化的形参\n    context.commit(\'newNum\',num)\n  }\n};\n\nconst store = new Vuex.Store({\n  state,\n  getters,\n  mutations\n});\n\nexport default store;\n\nvue提供了注入机制，就是把我们的store 对象注入到根实例中。vue的根实例就是 new Vue构造函数，然后在所有的子组件中this.$store 来指向store 对象。在index.js 中，我们用export store把store已经暴露出去了，然后直接在main.js中引入store并注入store即可。\n\n// The Vue build version to load with the `import` command\n// (runtime-only or standalone) has been set in webpack.base.conf with an alias.\nimport Vue from \'vue\'\nimport ElementUI from \'element-ui\'\nimport \'element-ui/lib/theme-chalk/index.css\'\nimport App from \'./App\'\nimport router from \'./router/router.js\'\nimport store from \'./store\'\nimport echarts from \'echarts\'\n\nVue.config.productionTip = false\nVue.use(ElementUI)\nVue.use(echarts)\nVue.prototype.$echarts = echarts\n\n/* eslint-disable no-new */\nnew Vue({\n  el: \'#app\',\n  router,\n  store,\n  components: { App },\n  template: \'<App/>\'\n})\n\n子组件中的computed属性是根据它的依赖自动更新的，所以只要store中的state发生变化，它就会自动变化，在一般情况下子组件中获取store中属性的方式如下：\n\n<template>\n <div>\n  <h3>Count is {{某属性}}</h3>\n </div>\n</template>\n<script>\n export default {\n  computed: {\n   count () {\n    return this.$store.state.某属性\n   }\n  }\n }\n</script>\n\n通过computed属性可以获取到状态值，但是组件中每一个属性（如：count）都是函数，如果有10个，那么就要写10个函数，且重复写10遍return this.$store.state不是很方便。vue 提供了mapState函数，它把state直接映射到我们的组件中。\n\n当然使用mapState之前要先引入它，它两种用法，或接受一个对象，或接受一个数组，其中使用对象的方式又有三种方法。\n\n对象用法如下：\n\n<script>\n import {mapState} from \"vuex\"; // 引入mapState \n export default {\n　　// 下面这三种写法都可以\n  computed: mapState({\n   // 箭头函数可使代码更简练\n    count: state => state.count,\n\n    // 传字符串参数 \'count\' 等同于 `state => state.count`\n    countAlias: \'count\',\n\n    // 为了能够使用 `this` 获取局部状态，必须使用常规函数\n    countPlusLocalState (state) {\n      return state.count + this.localCount\n    }\n  })\n }\n</script>\n\n当映射的计算属性的名称与state的子节点名称相同时，我们也可以给 mapState传一个字符串数组。\n\n<script>\n import {mapState} from \"vuex\";\n \n export default {\n  computed: mapState([ // 数组\n   \"count\"\n  ])\n }\n</script>\n\n如果我们组件内部也有computed属性怎么办？它又不属于mapState，我们可以使用es6中的对象分割语法，把mapState函数生成的对象再分割成一个个的，就像最开始的时候我们一个一个罗列计算属性，有10个属性，我们就写10个函数。\n\n<script>\n import {mapState} from \"vuex\";\n \n export default {\n  computed: {\n       ...mapState([\n           \"count\"\n       ]),\n       getValue(){\n           return 1;\n        }\n    }\n }\n</script>\n\n二、Module中使用mapState、mapGetters、mapActions辅助函数：\n\n在src目录下建立store文件夹：\n\n​\n\n其中：\n\ncollection.js\n\n//collection.js\n\nconst state={\n  collects:[\'hi\'],  //初始化一个colects数组\n  field: \'空天作战任务规划\'\n};\n\nconst getters={\n\n};\n\nconst mutations={\n\n};\n\nconst actions={\n\n};\n\nexport default {\n  namespaced:true,//用于在全局引用此文件里的方法时标识这一个的文件名\n  state,\n  getters,\n  mutations,\n  actions\n}\n\nfooterStatus.js：\n\n//footerStatus.js\n\nconst state={   //要设置的全局访问的state对象\n  name: \'beautiful\',\n  address: \'Hunan Changsha\',\n  school: \'国防科大\',\n  showFooter: true,\n  changableNum:0\n  //要设置的初始属性值\n};\n\nconst getters = {   //实时监听state值的变化(最新状态)\n\n};\n\nconst mutations = {\n  changeSchool(state, value){\n    state.school = value;\n  }\n};\n\nconst actions = {\n  _changeSchool(context, value){\n    context.commit(\'changeSchool\', value)\n  }\n};\n\nexport default {\n  namespaced: true, //用于在全局引用此文里的方法时标识这一个的文件名\n  state,\n  getters,\n  mutations,\n  actions\n}\n\nindex.js：\n\nimport Vue from \'vue\'\nimport Vuex from \'vuex\'\nimport collection from \'./modules/collection\'\nimport footerStatus from \'./modules/footerStatus\'\n\nVue.use(Vuex)\n\nexport default new Vuex.Store({\n  modules: {\n    collection,\n    footerStatus\n  }\n})\n\n假如我们想在组件中使用module中的state、getters、mutations、actions，那该如何使用呢？\n\n除了和普通store一样需要在main.js中注入store外，具体方法如下：\n\n<template>\n  <div>\n    <p>name: {{name}}</p>\n    <p>school: {{school}}</p>\n    <p>address: {{address}}</p>\n    <p>field: {{field}}</p>\n    <p>arrList: {{arrList}}</p>\n    <div><button @click=\"changeSchool()\">改变值</button></div>\n  </div>\n</template>\n\n<script>\n  import {mapState, mapGetters} from \'vuex\'\n  export default {\n    data(){\n      return {\n        use: \'vuex高级使用方法\'\n      }\n    },\n    computed: {\n      ...mapState({\n        name: state => state.footerStatus.name,\n        address(state){\n          return state.footerStatus.address;\n        }\n      }),\n      ...mapState(\'footerStatus\', {\n        school: \'school\'\n      }),\n      ...mapState(\'collection\', [\'field\']),\n      _use(){\n        this.use;\n      },\n      ...mapGetters(\'collection\', {\n        arrList: \'renderCollects\'\n      })\n    },\n    methods: {\n      changeSchool(){\n        this.$store.dispatch(\"footerStatus/_changeSchool\", \'北大\');\n      }\n    }\n  }\n</script>\n\n<style scoped>\n\n</style>\n```', null);
+INSERT INTO `b_article_detail` VALUES ('10', '19', '```\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>Document</title>\n</head>\n<body>\n  \n  <script>\n    // 节点模型\nclass LinkNode {\n  constructor(element, next) {\n    this.element = element;\n    this.next = next;\n  }\n}\n\nclass LinkedList {\n  constructor() {\n    this._head = null;\n    this._size = 0;\n    this._errorBoundary = this._errorBoundary.bind(this);\n    this._getNodeByIndex = this._getNodeByIndex.bind(this);\n    this.append = this.append.bind(this);\n    this.insert = this.insert.bind(this);\n    this.remove = this.remove.bind(this);\n    this.removeAt = this.removeAt.bind(this);\n    this.removeAll = this.removeAll.bind(this);\n    this.getElement = this.getElement.bind(this);\n    this.setIndex = this.setIndex.bind(this);\n    this.indexOf = this.indexOf.bind(this);\n    this.clear = this.clear.bind(this);\n    this.length = this.length.bind(this);\n    this.printf = this.printf.bind(this);\n  }\n\n  // 边界检验\n  _errorBoundary(index) {\n    if (index < 0 || index >= this._size) {\n      throw `超出边界(${0}~${this._size})，目标位置${index}不存在！`;\n    }\n  }\n  // 根据索引获取目标对象\n  _getNodeByIndex(index) {\n    this._errorBoundary(index);\n    debugger\n    let obj = this._head;\n    for (let i = 0; i < index; i++) {\n      debugger\n      obj = obj.next;\n    }\n    return obj;\n  }\n  // 追加节点\n  append(element) {\n    if (this._size === 0) {\n      this._head = new LinkNode(element, null);\n    } else {\n      debugger\n      let obj = this._getNodeByIndex(this._size - 1);\n      obj.next = new LinkNode(element, null);\n    }\n    this._size++;\n  }\n  // 在索引位置插入节点\n  insert(element, index) {\n    debugger\n    if (index === 0) {\n      this._head = new LinkNode(element, this._head);\n    } else {\n      debugger\n      let obj = this._getNodeByIndex(index - 1);\n      obj.next = new LinkNode(element, obj.next);\n    }\n    this._size++;\n  }\n  // 删除第一个匹配到的节点\n  remove(element) {\n    if (this._size < 1) return null;\n\n    if (this._head.element == element) {\n      this._head.element = this._head.next;\n      this._size--;\n      return element;\n    } else {\n      let temp = this._head;\n      while (temp.next) {\n        if (temp.next.element == element) {\n          temp.next = temp.next.next;\n          this._size--;\n          return element;\n        } else {\n          temp = temp.next;\n        }\n      }\n    }\n    return null;\n  }\n  // 删除指定索引节点\n  removeAt(index) {\n    this._errorBoundary(index);\n    let element = null;\n    if (index === 0) {\n      element = this._head.element;\n      this._head = this._head.next;\n    } else {\n      let prev = this._getNodeByIndex(index - 1);\n      element = prev.next.element;\n      prev.next = prev.next.next;\n    }\n    this._size--;\n    return element;\n  }\n  // 删除所有匹配的节点\n  removeAll(element) {\n    // 创建虚拟头节点，\n    let v_head = new LinkNode(null, this._head);\n    let tempNode = v_head;\n    // let tempEle = null;\n    while (tempNode.next) {\n      if (tempNode.next.element == element) {\n        tempNode.next = tempNode.next.next;\n        this._size--;\n        // tempEle = element;\n      } else {\n        tempNode = tempNode.next;\n      }\n    }\n    this._head = v_head.next;\n  }\n  // 获取指定索引的节点信息\n  getElement(index) {\n    return this._getNodeByIndex(index).element;\n  }\n  // 修改指定索引的节点值\n  setIndex(element, index) {\n    this._errorBoundary(index);\n    let obj = this._getNodeByIndex(index);\n    obj.element = element;\n  }\n  // 获取某节点的索引位置\n  indexOf(element) {\n    let obj = this._head;\n    let index = -1;\n    for (let i = 0; i < this._size; i++) {\n      if (obj.element == element) {\n        index = i;\n        break;\n      }\n      obj = obj.next;\n    }\n    return index;\n  }\n  // 清除所有节点\n  clear() {\n    this._head = null;\n    this._size = 0;\n  }\n  // 返回节点长度\n  length() {\n    return this._size;\n  }\n  // 打印节点信息\n  printf() {\n    let obj = this._head;\n    const arr = [];\n    while (obj != null) {\n      arr.push(obj.element);\n      obj = obj.next;\n    }\n    const str = arr;\n    return str || null;\n  }\n}\n  let linkMode = new LinkedList(1)\n  linkMode.append(0)\n  linkMode.append(1)\n  linkMode.append(2)\n  linkMode.append(3)\n  linkMode.insert(\'1000000000000000000\', 1)\n\n  console.log(linkMode.printf())\n  debugger\n    </script>\n</body>\n</html>\n```', null);
+INSERT INTO `b_article_detail` VALUES ('11', '20', '弹力球关键逻辑在于当小球当前运动的坐标值到达临界点时再改变递增正负值来改变运动方向\n```\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>弹力球</title>\n</head>\n<body>\n  <div class=\"ball\"></div>\n  <script>\n   \n    let  ball = document.querySelector(\'.ball\')\n    let  ballX = 0;\n    let  ballY = 0\n    let  yv = 10 // 每次运动的X距离\n    let  xv = 20 // 每次运动的Y距离\n    let  WinH = document.documentElement.clientHeight - 100\n    let  WinW = document.documentElement.clientWidth - 100\n    function move () {\n      ballY+= yv\n      ballX+= xv\n       if(ballY >= WinH) {\n        yv=-yv // 关键点将原来的递增值改变为递减\n       }\n       if (ballY <=0) {\n         yv=-yv // 再关键点将原来的递增值改变为递增 负负就是正\n       }\n       if (ballX > WinW) {\n         xv =-xv\n       }\n       if (ballX <= 0) {\n         xv=-xv\n       }\n      ball.style.left = ballX + \'px\'\n      ball.style.top = ballY + \'px\'\n      requestAnimationFrame(move)\n     }\n     requestAnimationFrame(move)\n  </script>\n\n  <style>\n    *{\n      margin: 0;\n      padding: 0;\n    }\n    .ball {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: rgb(219, 22, 22);\n      border-radius: 50%;\n    }\n  </style>\n</body>\n</html>\n```\n', null);
+INSERT INTO `b_article_detail` VALUES ('12', '21', '\n\n\n## PWA web Push 消息推送\n\ngit仓库：https://gitee.com/BlockShow/PWA-web-push.git\n\n##### web push 可以用来做什么？\n就是用户订阅了一个站点的 Web Push 服务后 可以做一些跨平台的消息推送，即使用户关闭了浏览器，一旦站点主动发送推送消息，用户都能收到，只要你的电脑是开着的。\n\n\n**PS:在使用webpush的时候 由于受GCM服务的问题，所以在国内使用webpush 基本上无法订阅到推送消息，用户必须翻墙才能发送订阅。**\n\n###### [链接 什么是GCM？](https://firebase.google.com/docs/cloud-messaging) \n----\n\n#### webpush 推送图解：\n\n![image](EE42977C3CE04DDEB8D174857F187F1F)\n\n![image](F1EB138231F84D2A9C1AD127DD094BFB)\n\n\n```\n---\n大致意思就是 先询问用户是否允许发送消息通知用户同意后又客户端发起订阅\n不同的浏览器返回不同PushSubscription对象叫做endpoint每个发起订阅的\n浏览器生成一个唯一的URL，然后将PushSubscription信息存储在自己的数据库中\n最后在发送消息的时候会刚获取到PushSubscription推送给GCM服务端 然后推送给指定客户端浏览器。\n---\n```\n### Push的安全性\n\n```\n在Web Push中服务端会有一对公钥与私钥。客户端持有公钥用来订阅，\n而服务端持有私钥。客户端在订阅时，会将公钥发送给 Push Service\n之后会在代码中演示\n```\n\n#### 实现此功能的的主要2个 API\n\n- Notifications  (**客户端弹框提示**)\n\n```\n语法：\nlet myNotification = new Notification(title, options);\n```\noptions 可选 options对象包含应用于通知的任何自定义设置选项\n\n```\ndir: 显示通知的方向。默认是auto，跟随浏览器语言设置行为，你也可以通过设置ltr和rtl的值来覆盖该行为（虽然大多数浏览器似乎忽略这些设置）\nlang: 通知的语言，如使用代表一个BCP 47语言标签的  DOMString 指定的。请参阅Sitepoint ISO 2字母语言代码页面，以获得简单的参考。\nbadge: 一个 USVString 包含用于表示通知的图像的URL, 当没有足够的空间来显示通知本身时。\nbody: 一个 DOMString 表示通知的正文，将显示在标题下方。\ntag:  一个 DOMString 代表通知的 一个识别标签。\nicon:  一个 USVString 包含要在通知中显示的图标的URL。\nimage: 一个 USVSTring包含要在通知中显示的图像的URL。\ndata: 您想要与通知相关联的任意数据。这可以是任何数据类型。\nvibrate: 一个振动模式 vibration pattern 设备的振动硬件在通知触发时发出。\nrenotify: 一个 Boolean 指定在新通知替换旧通知后是否应通知用户。默认值为false，这意味着它们不会被通知。\nrequireInteraction: 表示通知应保持有效，直到用户点击或关闭它，而不是自动关闭。默认值为false。\n```\n\n\n##### https://developer.mozilla.org/en-US/docs/Web/API/notification/Notification\n\n---\n- Push  (**监听服务端推送事件**)\n    - PushManager // 接口用于操作推送订阅第三方服务器接收通知以及推送通知的请求URL的方法\n    - PushEvent   // ...\n    - PushMessageData // ...\n    - PushSubscription // ...\n    - PushSubscriptionOptions // ...\n\n ##### https://developer.mozilla.org/en-US/docs/Web/API/Push_API 具体用法可以参考 MDN\n\n    \n\nsubscribe() \n用于订阅推送服务。返回一个 Promise 形式的 PushSubscription 对象，\n该对象包含了推送订阅详情。如果当前serviceworker没有已存在的订阅，\n则会创建一个新的推送订阅。\n\n```\n语法：\nPushManager.subscribe(options).then(function(pushSubscription) { ... } );\n\n```\n\n\noptions 参数设置\n\nuserVisibleOnly：布尔值，表示返回的推送订阅将只能被用于对用户可见的消息。在订阅时必须把此项设置为 true，这样当有消息推送给用户时，浏览器会展示一个消息通知，也就是说不存在静默推送。为了让用户可知\n\napplicationServerKey：推送服务器用来向客户端应用发送消息的公钥。该值是应用程序服务器生成的签名密钥对的一部分，可使用在 P-256 曲线上实现的椭圆曲线数字签名（ECDSA）。这里使用的是 VAPID 协议，VAPID 是 Voluntary Application Server Identification （自主应用服务器标识） 的简称。所以需要将 Base64 的公钥转为 Uint8 的数组\n\n---\n\n#### 接下来以实际项目案例来做一个前后端完整的webpush 消息推送开发流程实现细节\n\n项目结构：\n\n```\n.\n├── README.md\n├── app.js      // 程序入口\n├── conf        // 数据配置\n│   └── db.js   \n├── controller  // 控制器\n│   └── saveSub.js  \n├── db\n│   └── mysql.js   //  mysql 连接池\n├── package-lock.json\n├── package.json \n├── router    //  路由\n│   └── index.js\n└── views    // 前端页面\n    ├── getKey.html\n    ├── index.html\n    ├── listpub.html\n    ├── listsub.html\n    ├── public\n    │   └── push.js  // 推送逻辑\n    └── sw.js        //  serverce worker \n```\n---\n首先去firebase 上注册一个开发账号 https://console.firebase.google.com/\n到时候发送推送消息的时候需要一个APP key\n![image](CEBFA77FCF254686B6A4E08A99CEE90B)\n\n\n##### 创建成功以后打开项目设置选项\n![image](FA8673F2C02645D88D9391FE43B98677)\n##### 点击tabs云消息传递 红色的就是你的app Key 到时候会用到\n![image](14D946287F19462D87E1555A3ECADCE0)\n\n\n### 前端部分\n\n---\n 一个是订阅 \n\n![image](713ADACE26A74B97A20E4DAF131C267D)\n---\n一个是发布\n![image](FA10AD6B67674CEC9AE8D1DC3FB60E86)\n\n---\n首先注册sw \n![image](42BE764C6AF64C75915895B7C1382F07)\n\n检查当前检测当前运行环境时候支持 serversworker 和 PushMannage\nPushMannage是检测当前浏览器是否支持第三方服务器接收消息通知的能力。\n注册成功以后询问客户消息通知权限\n---\n- 初始化对话框\n![image](9C97EF2FEE8B4CCAAABB9C26FDF46F0B)\n\n\n\n```\nNotification.requestPermission().then(function(result) { ... });\n```\n![image](B25F527A71F741BF9ED4BDE94E0D4604)\n- 此方法请求用户当前来源的权限以显示通知 返回的result\n    - denied：用户拒绝了通知的显示\n    - granted：用户允许了通知的显示\n    - default：因为不知道用户的选择，所以浏览器的行为与denied时相同\n\n![image](3A05EA000B4B445D95685EE6040C04C5)\n\n\n- 授权成功以后调用pushManager.getSubscription() 用于获取已经存在的push订阅。返回一个Promise，这个Promise包装着push订阅信息的PushSubscription对象。如果没有已经存在的订阅，则返回null\n```\npushManager.getSubscription()\n```\n\n- 当用户点击允许后才能订阅消息推送\n![image](713ADACE26A74B97A20E4DAF131C267D)\n\n- 点击同意发起订阅\n![image](6923356936594FBCB7B98031EBE0E693)\n\n- 这里的this.registration是前面注册 sw 已经挂载到vue对象下所以直接调用this\n```\npushManager.subscribe()\n```\n这个方法中的两个配置参数：userVisibleOnly 和applicationServerKey。\n- userVisibleOnly表明该推送是否需要显性地展示给用户，即推送时是否会有消息提醒。如果没有消息提醒就表明是进行“静默”推送。在Chrome中，必须要将其设置为true，否则浏览器就会在控制台报错\n![image](78EAD692D10747A1A1906C2FE96BC550)\n- applicationServerKey该参数需要Unit8Array类型。因此定义了一个urlBase64ToUint8Array方法将base64的公钥字符串转为Unit8Array这个方法一般都是固定的写法\n- ![image](88B4E7538BD7498AB3C78FB9F077CCF5)\n\n- 向push服务器（即第三方push server）发起订阅。返回一个Promise，这个Promise包装着push订阅信息的PushSubscription对象。如果当前的service worke没有已经存在的订阅，则会创建一个新的push订阅。\n\n- 这里的applicationServerKey  是服务端生成的公钥一般在页面初始化的时候会获取到可以通过后端web-push库来生成稍后会介绍\n\n- 还有一点当调用pushManager.subscribe()这个方法的时候一定要确保当前自己的网络是否已经翻墙否则无法订阅推送\n- 对于消息推送如何在浏览器上调试查看\nChrome 环境下，地址栏输入chrome://gcm-internals/\n---\n- 未翻墙的情况 details 是没有响应的\n![image](66258AFA07C74FF7944D7C10EB726590)\n\n- 翻墙以后\n![image](41D260E27E714DBFA9D92905C50336B6)\n\n- 所以这也是为何在国内webpush 使用的比较少的原因之一\n---\n\n当订阅成功以后promise在then中我们可以得到订阅的相关信息——一个PushSubscription对象 \n![image](6B8C06E8FCA14413BA6DE46ECB59F27C)\n\n- 拿到这个endpoint 之后将发送到服务端进行存储接下来后然后拿到这个订阅信息推送到不同的用户浏览器\n- ![image](7008FB97325040F2873D216CE360C2F2)\n\n在sw中 监听服务端的push事件\n\n![image](63C72F78BE1446B4A1D2AB492E9E06BF)\n\n![image](51E5CB067560421D8CEEFAE8D9817AE1)\n\n### 后端部分\n\n后端开发逻辑\n首先生成公钥和私钥  使用 web-push\n![image](DC4525368DB9410C97B67A2A18E62943)\n![image](D28F5C1D769D4CB491E0C509263751A9)\n\n- 当访问首页服务端生成公钥和私钥 公钥放到客户端 私钥放在服务端\n这里每次访问的时候去生成同步到数据库当中以保证每次订阅的时候私钥和公钥匹配我将公钥直接输显示出来便于查看\n![image](D4C8B27C262845F7A0B3B5583DA78607)\n- 因为假定当前只有一个用户 所以在每次刷新页面的时候都会更新 公钥和秘钥\n\n- 前面提到的当用户同意订阅之后保存当前的的Subscription存储在服务端\n![image](5E69AC9B15214249A6C3B6A604213EAB)\n\n- 这个是数据库中endpint 到时候推送的时候就是这个来识别用户浏览器的\n![image](A2AC37CB26E14E35B6CCCCB76C044F88)\n\n\n- 最后是推送部分了提交到这个接口\n\n![image](C07AFB5DE47E4EF58AAA9BDA0054B959)\n\n这里直接使用web-push 提供的接口方法发起推送值得注意的是 这里需要你的谷歌api key  就是前面提到 firebase 申请到的GCMApiKey\n\n![image](14D946287F19462D87E1555A3ECADCE0)\n```\nwebpush.setGCMAPIKey(\'<Your GCM API Key Here>\');\n```\n- 配置完成后使用web-push的sendNotification接口进行推送了\n- \n![image](A33F9CFF26C24BE290395D89D681BCC0)\n\n此时就会收到服务端的推送了\n![image](5527AF99D63D4016981DB7AFFEA4075D)\n\n- 最后兼容性\n\n![image](DFB19AF86AFC4A6B8F9F9F610395E191)\n\n目前大部分pc浏览器能支持该功能而移动端浏览器普遍还不支持该特性。但是在MacOS上的safari里面是支持该特性的 但是推送方式 苹果有自己的 apple push 但是要实现这个功能必须要去注册成为开发者用户才能使用这个api权限 但是申请苹果的开发个人账号都要98美元 差不多人民币 600-700 快 呵呵！\n\n', null);
+INSERT INTO `b_article_detail` VALUES ('13', '22', '##vue-Bus 是 Vue.js 事件中心的一个插件\n#### \n  \n---\n\n###背景\nVue 2.0重新梳理了事件系统，因为基于组件树结构的事件流方式实在是让人难以理解，并且在组件结构扩展的过程中会变得越来越脆弱。虽然依然保留了父子组件间的事件流，但有诸多限制，比如不支持跨多层父子组件通信，也没有解决兄弟组件间的通信问题。Vue 推荐使用一个全局事件中心来分发和管理应用内的所有事件。\n\n1.什么基于组件树结构的事件流方式\n按照我的理解比如你2个组件你需要把A组件的值 传递给B组件, 必然需要B组件依赖A组件,或者是相互依赖，类似一种父子关系或者层级关系，以2个组件其中一个作为父节点就所谓的组件结构树，子组件通过emit去调父组件调方法形成了一个事件流\n\n\n2.为什么使用vue-bus\n组件通信时，我们通常会采用 props + emit 这种方式,如果子组件想把自己的数据传递给父组件，在子组件使用,但当通信双方不是父子组件甚至压根不存在相关联系，当然如果有人说可以用vuex啊,《海贼王》 --罗杰 说过每个人都自己出场的机会，那么vue-bus 也总会有它使用的场景之处。使用vue-bus 组件可以自由相互通信，这样不依赖组件结构树，便于解耦父子组件的关系。\n\n---\n\n## 如何使用vue-bus?\n\n老套路使用NPM 进行安装\n```\n$ npm install vue-bus\n```\n然后在你的工程里 main.js引用就可以了\n```\nimport Vue from \'vue\';\nimport VueBus from \'vue-bus\';\n \nVue.use(VueBus);\n\n```\n\n---\n## 使用及需要注意的地方\n\n\n#### 第一种使用场景 两个组件同时在一个路由下创建组件独立引用\n![图片描述](attimg://article/content/picture/201808/29/152457yyz26qjr71fr781s.jpg)\n\n![图片描述](attimg://article/content/picture/201808/29/152048d7pkch1mzgrfbjr8.jpg)\n\n---\n### 组件A 代码\n\n![图片描述](attimg://article/content/picture/201808/29/152536xocmbwno8m1ecb2p.jpg)\n\n### 组件B 代码\n![图片描述](attimg://article/content/picture/201808/29/152654rcydcr00lrtgyllc.jpg)\n\n\n---\n\n此时A 组件通过一个点击事件将 数据发送给B就得到\n\n![图片描述](attimg://article/content/picture/201808/29/152941z421m20dhmzhhhpa.jpg)\n\n这样正常的使用情况下貌似感觉没问题\n\n---\n\n\n### 第二种场景 两个组件不在同一个路由下或者说异步去加载的情况\n\n比如我现在需要从A组件路由跳转到B组件到路由 此时B 组件还没有被创建 \n![图片描述](attimg://article/content/picture/201808/29/155830pnzkpfanaa6b6w7a.jpg)\n\nA 组件代码\n\n![图片描述](attimg://article/content/picture/201808/29/155954kiiztq37amlmmuqn.jpg)\n\n\n#### 当点击跳转过去当时候并没有收到来A组件的数据\n![图片描述](attimg://article/content/picture/201808/29/160313pqd7h7bz057rq49p.jpg)\n---\n\n原因 ：\n因为在A组件的时候，B组件还没生成无法监听的来自于A组件的事件。这个时候当你A在组件emit事件的时候，B组件其实是没有监听到的。\n\n至于为什么那就谈到vue 生命周期 请看图\n![图片描述](attimg://article/content/picture/201808/29/161314kvbk6guxgs585yz5.jpg)\n\n\n那么要如何才能让B 组件接收到来自A 组件到数据呢？\n那就需要利用到vue 的钩子函数\n![图片描述](attimg://article/content/picture/201808/29/162023tnch58343qqlqb3y.jpg)\n\n#### A 组件代码 \n![图片描述](attimg://article/content/picture/201808/29/162108omu770ysjiv40o7i.jpg)\n\n\n#### 此时B 组件\n![图片描述](attimg://article/content/picture/201808/29/162310bxuumngia8wdriig.jpg)\n\n---\n[color=#f20257]备注（不过此时还没完！需要在B 组件销毁当时候将监听当事情给注销掉不然下一次再进入到B组件到时候会已倍数增加到形式去调用你所监听的方法, 比如下面实际上我跳转了3次而已）[/color]\n\n![图片描述](attimg://article/content/picture/201808/29/163328fi9j1i19yn8tnu1j.jpg)\n\n[color=#ff4753]解决方法(同样利用vue的钩子函数只需要再B组件销毁前将原来的监听的事件给注销掉就可以了)[/color]\n\n---\n#### B 组件代码\n\n![图片描述](attimg://article/content/picture/201808/29/163959jn8ql0bnnwugn8wb.jpg)\n\n## 这样就OK了\n\n---\n\n### 总结\n\n有时候如果项目不是很庞大的情况下 需要独立的组件相互传值的情况下可以考虑使用bus 来解决，但是在使用bus需注意两个独立组件再不同路由下的使用情况时注意vue组件生命周的问题，还有组件销毁之前需要注销监听事件避免在组件内多次调用函数\n', null);
+INSERT INTO `b_article_detail` VALUES ('14', '23', '**html 代码**\n\n```html:run\n<!DOCTYPE html>\n	<html lang=\"en\">\n	<head>\n		<meta charset=\"UTF-8\">\n		<title>观察者模式</title>\n		<style type=\"text/css\">\n			.main tr td{ border: 1px solid #ccc }\n		</style>\n		<script type=\"text/javascript\" src=\"http://xipwang.cn/js/jquery.min.js\"></script>\n		<script type=\"text/javascript\"></script>\n		<table class=\"main\"  align=\"center\">\n			<tr>\n				<td><input type=\"checkbox\" name=\"\" id=\"checkall\"><label>全选</label></td>\n			</tr>\n			<tr>\n				<td>\n					<input type=\"checkbox\" name=\"\" class=\"checkbox\">\n				</td>\n			</tr>\n			<tr>\n				<td>\n					<input type=\"checkbox\" name=\"\" class=\"checkbox\">\n				</td>\n			</tr>\n			<tr>\n				<td>\n					<input type=\"checkbox\" name=\"\" class=\"checkbox\">\n				</td>\n			</tr>\n			<tr>\n				<td>\n					<input type=\"checkbox\" name=\"\" class=\"checkbox\"><label>这个也可以设置全选</label>\n				</td>\n			</tr>\n			<tr>\n				<td>\n					<input type=\"checkbox\" name=\"\" class=\"checkbox\">\n				</td>\n			</tr>\n			<tr>\n				<td>\n					<input type=\"checkbox\" name=\"\" class=\"checkbox\">\n				</td>\n			</tr>\n\n		</table>\n	</head>\n	<body>\n	<script type=\"text/javascript\">	\n	 $(function(){\n	 		//发布订阅\n	 		function  Obserable (){ \n	 			   this.handlers ={};\n	 		}\n	 		Obserable.prototype ={\n	 			 constructor: Obserable, \n	 			 subscribe:function(type,callback){  //订阅\n	 			 	if( typeof this.handlers[type] == \"undefined\"){ //判断是否事件类型为undefined如果是则给它创建一个数组对象\n	 			 			this.handlers[type] =[];\n	 			 	};\n	 			 	this.handlers[type].push(callback)   //订阅消息添加进缓存列表  \n	 			 },\n	 			 publish:function(type){  	 //发布		   \n	 			 	if(this.handlers[type] instanceof Array) {\n	 			 		var  handle = this.handlers[type];\n	 			 		for(var i =0 ; i< handle.length; i++){//查找执行对应的回调函数集合 \n	 			 				handle[i](arguments[1]);  \n	 			 		}\n	 			 	 }\n	 			 }	 			\n	 		  }\n	 		var  pubsub = new Obserable()  //把Obserable实例化\n	 	  //第一种方法\n	 		pubsub.subscribe(\"checkbox\",function(result){    //在这里订阅主题\n	 			if(result){ // 都选上\n	 				$.each($(\".checkbox\"),function(){\n	 					$(this).prop(\"checked\",true);\n	 				})\n	 			}else{     // 都不选\n	 				$.each($(\".checkbox\"),function(){\n	 					$(this).prop(\"checked\",false);\n	 				})\n	 			}\n	 		})\n\n	 		  // 通过观察全选按钮的$(\"#checkall\")状态变化来发布 \n	 		$(\"#checkall\").change(function(){\n	 				pubsub.publish(\"checkbox\",$(this).prop(\"checked\"));\n	 		})\n\n\n	 		//第二种方法 订阅两种不同的主题\n	 		pubsub.subscribe(\"checkbox:true\",function(){  //第一个主题为全部选上	 		\n	 				$.each($(\".checkbox\"),function(){\n	 					$(this).prop(\"checked\",true);\n	 				})	 			\n	 		})\n	 		pubsub.subscribe(\"checkbox:false\",function(){ //第二个主题为全部都不选  		\n	 				$.each($(\".checkbox\"),function(){\n	 					$(this).prop(\"checked\",false);\n	 				})	 			\n	 		})\n\n	 		\n	 		$(\"#checkall\").change(function(){  // 通过观察全选按钮的状态变化来发布\n	 				var topic =\"checkbox:\"+$(this).is(\':checked\')\n	 				pubsub.publish(topic);\n	 				\n	 		})\n\n\n	 		//当然也可以把$(\".checkbox\")任意一个元素来当做发布者\n	 		$(\".checkbox\").eq(3).change(function(){  // 当然也可以来通过$(\".checkbox\").eq(3)的元素的变化来发布\n	 				var topic =\"checkbox:\"+$(this).is(\':checked\')\n	 				pubsub.publish(topic)	 				\n	 		})\n\n\n	 })\n	</script>\n	</body>\n	</html>	\n```', null);
 INSERT INTO `b_article_detail` VALUES ('15', '24', '123123', null);
 INSERT INTO `b_article_detail` VALUES ('16', '25', 'weqweqweq', null);
-INSERT INTO `b_article_detail` VALUES ('17', '26', '## 啊实打实大声道阿萨德阿萨德阿萨德阿萨德', null);
+INSERT INTO `b_article_detail` VALUES ('17', '26', '```\nvar proxyMiddleWare= require(\'http-proxy-middleware\');\nvar app = express();\nvar proxyPath = \"http://47.104.208.182:8087\";//目标后端服务地址\nvar proxyOption ={\n    target:proxyPath,\n    changeOrigoin:true,\n    ws: true,\n    pathRewrite: { \'^/api\': \'/\' }\n};\napp.use(express.static(__dirname + \"public\"));\napp.use(\"/api\",proxyMiddleWare(proxyOption));\napp.listen(4000);//4000是我要启动的端口\n\n```', null);
 INSERT INTO `b_article_detail` VALUES ('19', '32', '微凉的晨露沾湿黑礼服， 石板路有雾父在低诉\n\n无奈的觉悟只能更残酷， 一切都为了通往圣堂的路\n\n吹不散的雾隐没了意图， 谁轻柔踱步停住\n\n还来不及哭穿过的子弹就带走温度， 我们每个人都有罪\n\n犯着不同的罪， 我能决定谁对\n\n谁又该要7a64e78988e69d8331333431346366沉睡， 争论不能解决\n\n在永无止境的夜， 关掉你的嘴\n\n唯一的恩惠， 挡在前面的人都有罪\n\n后悔也无路可退， 以父之名判决\n\n那感觉没有适合词汇， 就像边笑边掉泪\n\n凝视着完全的黑， 阻挡悲剧蔓延的悲剧会让我沉醉\n\n低头亲吻我的左手， 换取被宽恕的承诺\n\n老旧管风琴在角落， 一直一直一直伴奏\n\n黑色帘幕被风吹动， 阳光无言地穿透\n\n洒向那群被我驯服后的兽， 沉默地喊叫沉默地喊叫\n\n孤单开始发酵， 不停对着我嘲笑\n\n回忆逐渐燃烧， 曾经纯真的画面\n\n残忍地温柔出现， 脆弱时间到\n\n我们一起来祷告， 仁慈的父我已坠入\n\n看不见罪的国度， 请原谅我的自负\n\n没人能说没人可说， 好难承受\n\n荣耀的背后刻着一道孤独， 闭上双眼我又看见\n\n当年那梦的画面， 天空是蒙蒙的雾\n\n父亲牵着我的双手， 轻轻走过\n\n清晨那安安静静的石板路， 低头亲吻我的左手\n\n换取被宽恕的承诺， 老旧管风琴在角落\n\n一直一直一直伴奏， 黑色帘幕被风吹动\n\n阳光无言地穿透， 洒向那群被我驯服后的兽\n\n沉默地喊叫沉默地喊叫， 孤单开始发酵\n\n不停对着我嘲笑， 回忆逐渐燃烧\n\n曾经纯真的画面， 残忍地温柔出现\n\n脆弱时间到， 我们一起来祷告', null);
 INSERT INTO `b_article_detail` VALUES ('22', '35', '啊实打实阿萨德11111', null);
 INSERT INTO `b_article_detail` VALUES ('24', '36', '1', null);
@@ -101,13 +99,12 @@ CREATE TABLE `b_article_tags` (
   KEY `tags_id` (`tags_id`),
   CONSTRAINT `b_article_tags_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `b_article` (`article_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `b_article_tags_ibfk_2` FOREIGN KEY (`tags_id`) REFERENCES `b_tags` (`tags_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_article_tags
 -- ----------------------------
 INSERT INTO `b_article_tags` VALUES ('7', '16', '1');
-INSERT INTO `b_article_tags` VALUES ('8', '17', '1');
 INSERT INTO `b_article_tags` VALUES ('9', '18', '1');
 INSERT INTO `b_article_tags` VALUES ('10', '19', '1');
 INSERT INTO `b_article_tags` VALUES ('11', '20', '1');
@@ -127,6 +124,11 @@ INSERT INTO `b_article_tags` VALUES ('28', '16', '2');
 INSERT INTO `b_article_tags` VALUES ('29', '16', '3');
 INSERT INTO `b_article_tags` VALUES ('30', '16', '4');
 INSERT INTO `b_article_tags` VALUES ('31', '16', '5');
+INSERT INTO `b_article_tags` VALUES ('32', '22', '2');
+INSERT INTO `b_article_tags` VALUES ('33', '22', '4');
+INSERT INTO `b_article_tags` VALUES ('34', '23', '1');
+INSERT INTO `b_article_tags` VALUES ('35', '23', '2');
+INSERT INTO `b_article_tags` VALUES ('36', '23', '3');
 
 -- ----------------------------
 -- Table structure for b_class
@@ -142,14 +144,14 @@ CREATE TABLE `b_class` (
 -- ----------------------------
 -- Records of b_class
 -- ----------------------------
-INSERT INTO `b_class` VALUES ('1', 'javascript1', '44');
+INSERT INTO `b_class` VALUES ('1', 'JavaScript', '44');
 INSERT INTO `b_class` VALUES ('2', 'Node', '44');
 INSERT INTO `b_class` VALUES ('3', 'Mysql', '44');
 INSERT INTO `b_class` VALUES ('4', 'Java', '44');
 INSERT INTO `b_class` VALUES ('5', 'Nginx', '44');
 INSERT INTO `b_class` VALUES ('6', 'React', '44');
 INSERT INTO `b_class` VALUES ('7', 'Vue', '44');
-INSERT INTO `b_class` VALUES ('14', '键盘侠', '44');
+INSERT INTO `b_class` VALUES ('14', '随笔', '44');
 
 -- ----------------------------
 -- Table structure for b_comments
@@ -167,7 +169,7 @@ CREATE TABLE `b_comments` (
   PRIMARY KEY (`comment_id`),
   KEY `article_id` (`article_id`),
   CONSTRAINT `b_comments_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `b_article` (`article_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_comments
@@ -183,6 +185,16 @@ INSERT INTO `b_comments` VALUES ('26', '16', '44', '0', '王希平', '395604192@
 INSERT INTO `b_comments` VALUES ('27', '16', '44', '0', '王希平', '395604192@qq.com', '谢谢了', '2020-05-22 12:57:13');
 INSERT INTO `b_comments` VALUES ('28', '16', '44', '0', '王希平', '395604192@qq.com', '禁止评论~~~！！！！！！！', '2020-05-22 12:57:27');
 INSERT INTO `b_comments` VALUES ('29', '16', '44', '28', '王希平', '395604192@qq.com', '@王希平 那是吧可能的吧', '2020-05-22 12:57:39');
+INSERT INTO `b_comments` VALUES ('30', '16', '0', '0', '马克', '395604191@qq.com', '测试咯', '2020-05-28 17:52:06');
+INSERT INTO `b_comments` VALUES ('31', '16', '0', '0', '我是匿名用户', '15154874545@qq.com', '暂未开放二级回复！', '2020-05-28 17:53:32');
+INSERT INTO `b_comments` VALUES ('32', '16', '44', '31', '黑夜男神', '395604192@qq.com', '@我是匿名用户 之后我再会弄的', '2020-05-28 17:54:40');
+INSERT INTO `b_comments` VALUES ('33', '16', '44', '31', '黑夜男神', '395604192@qq.com', '@我是匿名用户 目前二级回复只对博主开放', '2020-05-28 17:55:08');
+INSERT INTO `b_comments` VALUES ('34', '16', '44', '30', '黑夜男神', '395604192@qq.com', '@马克 恩好的来打把王者咯 我玩打野', '2020-05-28 18:30:33');
+INSERT INTO `b_comments` VALUES ('35', '10', '0', '0', '亚瑟', '101010@qq.com', '没有内容啊', '2020-05-28 19:32:23');
+INSERT INTO `b_comments` VALUES ('36', '10', '0', '0', '123', '123', '123', '2020-05-28 19:32:56');
+INSERT INTO `b_comments` VALUES ('37', '10', '0', '0', '阿大声道', '阿萨德', '阿萨德', '2020-05-28 19:35:02');
+INSERT INTO `b_comments` VALUES ('38', '10', '0', '0', '阿大声道', '阿萨德', '阿萨德', '2020-05-28 19:35:09');
+INSERT INTO `b_comments` VALUES ('39', '10', '0', '0', '啊实打实', '阿萨德', '阿萨德', '2020-05-28 19:36:35');
 
 -- ----------------------------
 -- Table structure for b_tags
@@ -193,7 +205,7 @@ CREATE TABLE `b_tags` (
   `tags_name` char(255) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`tags_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_tags
@@ -224,7 +236,7 @@ CREATE TABLE `sys_login_logs` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `LOG_USER_LOGIN` FOREIGN KEY (`user_id`) REFERENCES `sys_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=295 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=312 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_login_logs
@@ -322,6 +334,23 @@ INSERT INTO `sys_login_logs` VALUES ('291', '44', '2020-05-21 09:00:38', 'localh
 INSERT INTO `sys_login_logs` VALUES ('292', '44', '2020-05-21 13:51:21', '127.0.0.1', '未知', '登录成功！', '王希平', 'Windows 6.1', null);
 INSERT INTO `sys_login_logs` VALUES ('293', '44', '2020-05-21 18:13:22', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
 INSERT INTO `sys_login_logs` VALUES ('294', '44', '2020-05-22 09:09:37', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('295', '44', '2020-05-22 15:59:49', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('296', '44', '2020-05-22 15:59:53', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('297', '44', '2020-05-26 11:24:10', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('298', '44', '2020-05-26 12:49:15', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('299', '44', '2020-05-26 18:26:39', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('300', '44', '2020-05-26 19:39:43', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('301', '44', '2020-05-27 14:10:07', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('302', '44', '2020-05-27 14:10:13', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('303', '44', '2020-05-27 15:32:28', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('304', '44', '2020-05-27 17:45:43', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('305', '44', '2020-05-28 10:41:41', 'localhost', '本地登入', '登录成功！', '王希平', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('306', '44', '2020-05-28 12:32:59', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('307', '44', '2020-05-28 14:40:05', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('308', '44', '2020-05-28 14:40:12', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('309', '44', '2020-05-28 17:10:26', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('310', '44', '2020-05-28 17:10:30', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('311', '44', '2020-05-28 17:10:35', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
 
 -- ----------------------------
 -- Table structure for sys_operation_logs
@@ -336,7 +365,7 @@ CREATE TABLE `sys_operation_logs` (
   `action_params` char(255) DEFAULT NULL,
   `action_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6166 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6491 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_operation_logs
@@ -6506,6 +6535,331 @@ INSERT INTO `sys_operation_logs` VALUES ('6162', '44', '王希平', '[GET] /api/
 INSERT INTO `sys_operation_logs` VALUES ('6163', '44', '王希平', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-22 12:57:45');
 INSERT INTO `sys_operation_logs` VALUES ('6164', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-22 12:57:46');
 INSERT INTO `sys_operation_logs` VALUES ('6165', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 12:57:51');
+INSERT INTO `sys_operation_logs` VALUES ('6166', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-22 15:59:53');
+INSERT INTO `sys_operation_logs` VALUES ('6167', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 15:59:53');
+INSERT INTO `sys_operation_logs` VALUES ('6168', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 15:59:53');
+INSERT INTO `sys_operation_logs` VALUES ('6169', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-22 15:59:59');
+INSERT INTO `sys_operation_logs` VALUES ('6170', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 15:59:59');
+INSERT INTO `sys_operation_logs` VALUES ('6171', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:02');
+INSERT INTO `sys_operation_logs` VALUES ('6172', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:03');
+INSERT INTO `sys_operation_logs` VALUES ('6173', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-22 16:00:05');
+INSERT INTO `sys_operation_logs` VALUES ('6174', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:06');
+INSERT INTO `sys_operation_logs` VALUES ('6175', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:07');
+INSERT INTO `sys_operation_logs` VALUES ('6176', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-22 16:00:10');
+INSERT INTO `sys_operation_logs` VALUES ('6177', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:10');
+INSERT INTO `sys_operation_logs` VALUES ('6178', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:17');
+INSERT INTO `sys_operation_logs` VALUES ('6179', '44', '王希平', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:25');
+INSERT INTO `sys_operation_logs` VALUES ('6180', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-22 16:00:26');
+INSERT INTO `sys_operation_logs` VALUES ('6181', '44', '王希平', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-22 16:00:26');
+INSERT INTO `sys_operation_logs` VALUES ('6182', '44', '王希平', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-22 16:00:26');
+INSERT INTO `sys_operation_logs` VALUES ('6183', '44', '王希平', '[GET] /api/loginLogs/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-22 16:00:29');
+INSERT INTO `sys_operation_logs` VALUES ('6184', '44', '王希平', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-22 16:00:30');
+INSERT INTO `sys_operation_logs` VALUES ('6185', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:00:51');
+INSERT INTO `sys_operation_logs` VALUES ('6186', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:35:38');
+INSERT INTO `sys_operation_logs` VALUES ('6187', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:35:39');
+INSERT INTO `sys_operation_logs` VALUES ('6188', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-22 16:35:40');
+INSERT INTO `sys_operation_logs` VALUES ('6189', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-22 16:35:40');
+INSERT INTO `sys_operation_logs` VALUES ('6190', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"17\"}', '2020-05-22 16:35:40');
+INSERT INTO `sys_operation_logs` VALUES ('6191', '44', '王希平', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"123123\",\"class_id\":2,\"tagsArr\":[1],\"cover_url\":\"public/uploads/d1131a6abc9f4ae7f3d2cd92b25c98bd.png\",\"is_top\":false,\"content\":\"```\\nWindows中查看端口占用及关闭对应进程\\n开始--运行--cmd进入命令提示符输入netstat-ano即可看到所有连接的PID，之后在任务管理器（右键电脑屏幕的状态栏即可找到）中找到这个PID所对应的程序。如果任务管理器', '2020-05-22 16:35:47');
+INSERT INTO `sys_operation_logs` VALUES ('6192', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-22 16:35:47');
+INSERT INTO `sys_operation_logs` VALUES ('6193', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-22 16:35:49');
+INSERT INTO `sys_operation_logs` VALUES ('6194', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-22 16:35:49');
+INSERT INTO `sys_operation_logs` VALUES ('6195', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"17\"}', '2020-05-22 16:35:50');
+INSERT INTO `sys_operation_logs` VALUES ('6196', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-22 16:36:49');
+INSERT INTO `sys_operation_logs` VALUES ('6197', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-22 16:36:49');
+INSERT INTO `sys_operation_logs` VALUES ('6198', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"17\"}', '2020-05-22 16:36:49');
+INSERT INTO `sys_operation_logs` VALUES ('6199', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:24:11');
+INSERT INTO `sys_operation_logs` VALUES ('6200', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:24:14');
+INSERT INTO `sys_operation_logs` VALUES ('6201', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:24:53');
+INSERT INTO `sys_operation_logs` VALUES ('6202', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:25:33');
+INSERT INTO `sys_operation_logs` VALUES ('6203', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:26:34');
+INSERT INTO `sys_operation_logs` VALUES ('6204', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:28:25');
+INSERT INTO `sys_operation_logs` VALUES ('6205', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:28:33');
+INSERT INTO `sys_operation_logs` VALUES ('6206', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:28:36');
+INSERT INTO `sys_operation_logs` VALUES ('6207', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:28:37');
+INSERT INTO `sys_operation_logs` VALUES ('6208', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:28:38');
+INSERT INTO `sys_operation_logs` VALUES ('6209', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-26 11:28:49');
+INSERT INTO `sys_operation_logs` VALUES ('6210', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-26 11:28:49');
+INSERT INTO `sys_operation_logs` VALUES ('6211', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"18\"}', '2020-05-26 11:28:49');
+INSERT INTO `sys_operation_logs` VALUES ('6212', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-26 11:30:24');
+INSERT INTO `sys_operation_logs` VALUES ('6213', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-26 11:30:24');
+INSERT INTO `sys_operation_logs` VALUES ('6214', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"18\"}', '2020-05-26 11:30:25');
+INSERT INTO `sys_operation_logs` VALUES ('6215', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 11:30:28');
+INSERT INTO `sys_operation_logs` VALUES ('6216', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-26 11:30:29');
+INSERT INTO `sys_operation_logs` VALUES ('6217', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-26 11:30:29');
+INSERT INTO `sys_operation_logs` VALUES ('6218', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"18\"}', '2020-05-26 11:30:29');
+INSERT INTO `sys_operation_logs` VALUES ('6219', '44', '王希平', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"你好毒\",\"class_id\":1,\"tagsArr\":[1],\"cover_url\":\"https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg\",\"is_top\":true,\"content\":\"123123123\",\"article_id\":18}', '2020-05-26 11:30:35');
+INSERT INTO `sys_operation_logs` VALUES ('6220', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:30:41');
+INSERT INTO `sys_operation_logs` VALUES ('6221', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:30:41');
+INSERT INTO `sys_operation_logs` VALUES ('6222', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:30:42');
+INSERT INTO `sys_operation_logs` VALUES ('6223', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:30:43');
+INSERT INTO `sys_operation_logs` VALUES ('6224', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:30:50');
+INSERT INTO `sys_operation_logs` VALUES ('6225', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-26 11:30:57');
+INSERT INTO `sys_operation_logs` VALUES ('6226', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-26 11:30:57');
+INSERT INTO `sys_operation_logs` VALUES ('6227', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"24\"}', '2020-05-26 11:30:57');
+INSERT INTO `sys_operation_logs` VALUES ('6228', '44', '王希平', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"vuex\",\"class_id\":1,\"tagsArr\":[1],\"cover_url\":\"https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png\",\"is_top\":true,\"content\":\"123123\",\"article_id\":24}', '2020-05-26 11:31:00');
+INSERT INTO `sys_operation_logs` VALUES ('6229', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:31:00');
+INSERT INTO `sys_operation_logs` VALUES ('6230', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:39:45');
+INSERT INTO `sys_operation_logs` VALUES ('6231', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-26 11:39:46');
+INSERT INTO `sys_operation_logs` VALUES ('6232', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-26 11:39:47');
+INSERT INTO `sys_operation_logs` VALUES ('6233', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"36\"}', '2020-05-26 11:39:47');
+INSERT INTO `sys_operation_logs` VALUES ('6234', '44', '王希平', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"老王\",\"class_id\":1,\"tagsArr\":[3,5],\"cover_url\":\"public/uploads/d1131a6abc9f4ae7f3d2cd92b25c98bd.png\",\"is_top\":false,\"content\":\"1\",\"article_id\":36}', '2020-05-26 11:40:01');
+INSERT INTO `sys_operation_logs` VALUES ('6235', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:40:02');
+INSERT INTO `sys_operation_logs` VALUES ('6236', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-26 11:40:08');
+INSERT INTO `sys_operation_logs` VALUES ('6237', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-26 11:40:08');
+INSERT INTO `sys_operation_logs` VALUES ('6238', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"28\"}', '2020-05-26 11:40:08');
+INSERT INTO `sys_operation_logs` VALUES ('6239', '44', '王希平', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"12312\",\"class_id\":1,\"tagsArr\":[],\"cover_url\":\"https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png\",\"is_top\":true,\"content\":null,\"article_id\":28}', '2020-05-26 11:40:10');
+INSERT INTO `sys_operation_logs` VALUES ('6240', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 11:40:11');
+INSERT INTO `sys_operation_logs` VALUES ('6241', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 12:49:15');
+INSERT INTO `sys_operation_logs` VALUES ('6242', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 12:49:15');
+INSERT INTO `sys_operation_logs` VALUES ('6243', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-26 12:49:18');
+INSERT INTO `sys_operation_logs` VALUES ('6244', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-26 12:49:18');
+INSERT INTO `sys_operation_logs` VALUES ('6245', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"17\"}', '2020-05-26 12:49:18');
+INSERT INTO `sys_operation_logs` VALUES ('6246', '44', '王希平', '[DELETE] /api/blogs/deleteArticle', '127.0.0.1', '{\"article_id\":17}', '2020-05-26 12:50:08');
+INSERT INTO `sys_operation_logs` VALUES ('6247', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 12:50:08');
+INSERT INTO `sys_operation_logs` VALUES ('6248', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 18:26:39');
+INSERT INTO `sys_operation_logs` VALUES ('6249', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 18:26:39');
+INSERT INTO `sys_operation_logs` VALUES ('6250', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 18:31:19');
+INSERT INTO `sys_operation_logs` VALUES ('6251', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 19:39:44');
+INSERT INTO `sys_operation_logs` VALUES ('6252', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 19:39:44');
+INSERT INTO `sys_operation_logs` VALUES ('6253', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 19:39:44');
+INSERT INTO `sys_operation_logs` VALUES ('6254', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-26 19:40:04');
+INSERT INTO `sys_operation_logs` VALUES ('6255', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-26 19:44:52');
+INSERT INTO `sys_operation_logs` VALUES ('6256', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-27 14:10:14');
+INSERT INTO `sys_operation_logs` VALUES ('6257', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 14:10:14');
+INSERT INTO `sys_operation_logs` VALUES ('6258', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-27 15:32:28');
+INSERT INTO `sys_operation_logs` VALUES ('6259', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:32:28');
+INSERT INTO `sys_operation_logs` VALUES ('6260', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:32:30');
+INSERT INTO `sys_operation_logs` VALUES ('6261', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"3\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:32:31');
+INSERT INTO `sys_operation_logs` VALUES ('6262', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:32:33');
+INSERT INTO `sys_operation_logs` VALUES ('6263', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:32:34');
+INSERT INTO `sys_operation_logs` VALUES ('6264', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-27 15:32:53');
+INSERT INTO `sys_operation_logs` VALUES ('6265', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:32:55');
+INSERT INTO `sys_operation_logs` VALUES ('6266', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:33:26');
+INSERT INTO `sys_operation_logs` VALUES ('6267', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:33:30');
+INSERT INTO `sys_operation_logs` VALUES ('6268', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:33:31');
+INSERT INTO `sys_operation_logs` VALUES ('6269', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:33:32');
+INSERT INTO `sys_operation_logs` VALUES ('6270', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:33:34');
+INSERT INTO `sys_operation_logs` VALUES ('6271', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:33:35');
+INSERT INTO `sys_operation_logs` VALUES ('6272', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:33:55');
+INSERT INTO `sys_operation_logs` VALUES ('6273', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-27 15:40:23');
+INSERT INTO `sys_operation_logs` VALUES ('6274', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:40:24');
+INSERT INTO `sys_operation_logs` VALUES ('6275', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:40:25');
+INSERT INTO `sys_operation_logs` VALUES ('6276', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 15:40:27');
+INSERT INTO `sys_operation_logs` VALUES ('6277', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-27 16:05:10');
+INSERT INTO `sys_operation_logs` VALUES ('6278', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 16:05:11');
+INSERT INTO `sys_operation_logs` VALUES ('6279', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 16:25:37');
+INSERT INTO `sys_operation_logs` VALUES ('6280', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-27 17:45:43');
+INSERT INTO `sys_operation_logs` VALUES ('6281', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 17:45:43');
+INSERT INTO `sys_operation_logs` VALUES ('6282', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 17:45:43');
+INSERT INTO `sys_operation_logs` VALUES ('6283', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 17:45:43');
+INSERT INTO `sys_operation_logs` VALUES ('6284', '44', '王希平', '[GET] /api/loginLogs/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-27 18:19:29');
+INSERT INTO `sys_operation_logs` VALUES ('6285', '44', '王希平', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-27 18:19:31');
+INSERT INTO `sys_operation_logs` VALUES ('6286', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 18:38:53');
+INSERT INTO `sys_operation_logs` VALUES ('6287', '44', '王希平', '[PUT] /api/blogs/updateClassList', '127.0.0.1', '{\"class_name\":\"javascript\",\"id\":1}', '2020-05-27 18:38:57');
+INSERT INTO `sys_operation_logs` VALUES ('6288', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 18:38:57');
+INSERT INTO `sys_operation_logs` VALUES ('6289', '44', '王希平', '[PUT] /api/blogs/updateClassList', '127.0.0.1', '{\"class_name\":\"随笔\",\"id\":14}', '2020-05-27 18:39:20');
+INSERT INTO `sys_operation_logs` VALUES ('6290', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 18:39:20');
+INSERT INTO `sys_operation_logs` VALUES ('6291', '44', '王希平', '[PUT] /api/blogs/updateClassList', '127.0.0.1', '{\"class_name\":\"JavaScript\",\"id\":1}', '2020-05-27 18:40:21');
+INSERT INTO `sys_operation_logs` VALUES ('6292', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-27 18:40:21');
+INSERT INTO `sys_operation_logs` VALUES ('6293', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6294', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6295', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6296', '44', '王希平', '[GET] /api/loginLogs/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6297', '44', '王希平', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6298', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6299', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6300', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6301', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 10:41:42');
+INSERT INTO `sys_operation_logs` VALUES ('6302', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 10:41:46');
+INSERT INTO `sys_operation_logs` VALUES ('6303', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 10:41:46');
+INSERT INTO `sys_operation_logs` VALUES ('6304', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 10:41:47');
+INSERT INTO `sys_operation_logs` VALUES ('6305', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 10:41:58');
+INSERT INTO `sys_operation_logs` VALUES ('6306', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:42:07');
+INSERT INTO `sys_operation_logs` VALUES ('6307', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 10:42:09');
+INSERT INTO `sys_operation_logs` VALUES ('6308', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 10:42:10');
+INSERT INTO `sys_operation_logs` VALUES ('6309', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 10:42:10');
+INSERT INTO `sys_operation_logs` VALUES ('6310', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 10:42:19');
+INSERT INTO `sys_operation_logs` VALUES ('6311', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 10:42:19');
+INSERT INTO `sys_operation_logs` VALUES ('6312', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 10:42:20');
+INSERT INTO `sys_operation_logs` VALUES ('6313', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 10:42:29');
+INSERT INTO `sys_operation_logs` VALUES ('6314', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 10:42:29');
+INSERT INTO `sys_operation_logs` VALUES ('6315', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 10:42:30');
+INSERT INTO `sys_operation_logs` VALUES ('6316', '44', '王希平', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 10:45:10');
+INSERT INTO `sys_operation_logs` VALUES ('6317', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 10:45:10');
+INSERT INTO `sys_operation_logs` VALUES ('6318', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 10:45:10');
+INSERT INTO `sys_operation_logs` VALUES ('6319', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 10:45:10');
+INSERT INTO `sys_operation_logs` VALUES ('6320', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:49:23');
+INSERT INTO `sys_operation_logs` VALUES ('6321', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:49:27');
+INSERT INTO `sys_operation_logs` VALUES ('6322', '44', '王希平', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 10:49:33');
+INSERT INTO `sys_operation_logs` VALUES ('6323', '44', '王希平', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 11:24:10');
+INSERT INTO `sys_operation_logs` VALUES ('6324', '44', '王希平', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 11:24:10');
+INSERT INTO `sys_operation_logs` VALUES ('6325', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 11:24:11');
+INSERT INTO `sys_operation_logs` VALUES ('6326', '44', '王希平', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 11:24:15');
+INSERT INTO `sys_operation_logs` VALUES ('6327', '44', '王希平', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 11:24:16');
+INSERT INTO `sys_operation_logs` VALUES ('6328', '44', '王希平', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 11:24:16');
+INSERT INTO `sys_operation_logs` VALUES ('6329', '44', '王希平', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 11:24:55');
+INSERT INTO `sys_operation_logs` VALUES ('6330', '44', '王希平', '[PUT] /api/user/updateUser', '127.0.0.1', '{\"user_id\":44,\"nick_name\":\"黑夜男神\",\"phone\":\"110\",\"email\":\"395604192@qq.com\",\"avatar\":\"public/uploads/csde_1589183238000.jpeg\",\"role_id\":[1],\"password\":\"123\"}', '2020-05-28 11:25:22');
+INSERT INTO `sys_operation_logs` VALUES ('6331', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6332', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6333', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6334', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6335', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6336', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6337', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6338', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 12:33:00');
+INSERT INTO `sys_operation_logs` VALUES ('6339', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:33:05');
+INSERT INTO `sys_operation_logs` VALUES ('6340', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:33:05');
+INSERT INTO `sys_operation_logs` VALUES ('6341', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"18\"}', '2020-05-28 12:33:06');
+INSERT INTO `sys_operation_logs` VALUES ('6342', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"Vuex辅助函数\",\"class_id\":1,\"tagsArr\":[1],\"cover_url\":\"https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg\",\"is_top\":true,\"content\":\"####mapActions\\n\\n####将组件的methods映射为store.dispatch调用（需要先在根节点注入store）：\\n\\n组件中引入：\\n```\\nimport{mapActi', '2020-05-28 12:33:29');
+INSERT INTO `sys_operation_logs` VALUES ('6343', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:33:30');
+INSERT INTO `sys_operation_logs` VALUES ('6344', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:33:36');
+INSERT INTO `sys_operation_logs` VALUES ('6345', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:33:36');
+INSERT INTO `sys_operation_logs` VALUES ('6346', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"19\"}', '2020-05-28 12:33:36');
+INSERT INTO `sys_operation_logs` VALUES ('6347', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"链表结构\",\"class_id\":1,\"tagsArr\":[1],\"cover_url\":\"https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png\",\"is_top\":false,\"content\":\"```\\n<!DOCTYPEhtml>\\n<htmllang=\\\"en\\\">\\n<head>\\n<metacharset=\\\"UTF-8\\\">\\n<metaname=\\\"viewport\\\"content=', '2020-05-28 12:34:18');
+INSERT INTO `sys_operation_logs` VALUES ('6348', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:34:18');
+INSERT INTO `sys_operation_logs` VALUES ('6349', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:34:20');
+INSERT INTO `sys_operation_logs` VALUES ('6350', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:34:26');
+INSERT INTO `sys_operation_logs` VALUES ('6351', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:34:26');
+INSERT INTO `sys_operation_logs` VALUES ('6352', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"20\"}', '2020-05-28 12:34:26');
+INSERT INTO `sys_operation_logs` VALUES ('6353', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"js弹力器\",\"class_id\":1,\"tagsArr\":[1],\"cover_url\":\"https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png\",\"is_top\":true,\"content\":\"弹力球关键逻辑在于当小球当前运动的坐标值到达临界点时再改变递增正负值来改变运动方向\\n```\\n<!DOCTYPEhtml>\\n<htmllang=\\\"en\\\">\\n<head>\\n<metacharset', '2020-05-28 12:34:53');
+INSERT INTO `sys_operation_logs` VALUES ('6354', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:34:54');
+INSERT INTO `sys_operation_logs` VALUES ('6355', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:34:56');
+INSERT INTO `sys_operation_logs` VALUES ('6356', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:34:57');
+INSERT INTO `sys_operation_logs` VALUES ('6357', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"18\"}', '2020-05-28 12:34:57');
+INSERT INTO `sys_operation_logs` VALUES ('6358', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:35:07');
+INSERT INTO `sys_operation_logs` VALUES ('6359', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:35:07');
+INSERT INTO `sys_operation_logs` VALUES ('6360', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"19\"}', '2020-05-28 12:35:08');
+INSERT INTO `sys_operation_logs` VALUES ('6361', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"链表结构\",\"class_id\":1,\"tagsArr\":[1],\"cover_url\":\"https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png\",\"is_top\":true,\"content\":\"```\\n<!DOCTYPEhtml>\\n<htmllang=\\\"en\\\">\\n<head>\\n<metacharset=\\\"UTF-8\\\">\\n<metaname=\\\"viewport\\\"content=\\', '2020-05-28 12:35:12');
+INSERT INTO `sys_operation_logs` VALUES ('6362', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:35:12');
+INSERT INTO `sys_operation_logs` VALUES ('6363', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:35:16');
+INSERT INTO `sys_operation_logs` VALUES ('6364', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:35:17');
+INSERT INTO `sys_operation_logs` VALUES ('6365', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"21\"}', '2020-05-28 12:35:17');
+INSERT INTO `sys_operation_logs` VALUES ('6366', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 12:35:50');
+INSERT INTO `sys_operation_logs` VALUES ('6367', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:35:51');
+INSERT INTO `sys_operation_logs` VALUES ('6368', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:35:51');
+INSERT INTO `sys_operation_logs` VALUES ('6369', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"21\"}', '2020-05-28 12:35:51');
+INSERT INTO `sys_operation_logs` VALUES ('6370', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"PushAPI实现消息推送\",\"class_id\":1,\"tagsArr\":[1],\"cover_url\":\"https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png\",\"is_top\":true,\"content\":\"\\n\\n\\n##PWAwebPush消息推送\\n\\ngit仓库：https://gitee.com/BlockShow/PWA-web-push.git\\n\\n#####webpush可以用', '2020-05-28 12:36:16');
+INSERT INTO `sys_operation_logs` VALUES ('6371', '44', '黑夜男神', '[GET] /api/loginLogs/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-28 12:36:23');
+INSERT INTO `sys_operation_logs` VALUES ('6372', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:36:25');
+INSERT INTO `sys_operation_logs` VALUES ('6373', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:36:28');
+INSERT INTO `sys_operation_logs` VALUES ('6374', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:36:29');
+INSERT INTO `sys_operation_logs` VALUES ('6375', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"22\"}', '2020-05-28 12:36:29');
+INSERT INTO `sys_operation_logs` VALUES ('6376', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"vue-bus组件实现非父子组件通信(及需注意地方)\",\"class_id\":1,\"tagsArr\":[4,2],\"cover_url\":\"https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png\",\"is_top\":true,\"content\":\"##vue-Bus是Vue.js事件中心的一个插件\\n####\\n\\n---\\n\\n###背景\\nVue2.0重新梳理了事件系统，因为基于组件树结构的事件流方式', '2020-05-28 12:38:54');
+INSERT INTO `sys_operation_logs` VALUES ('6377', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:38:55');
+INSERT INTO `sys_operation_logs` VALUES ('6378', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:39:10');
+INSERT INTO `sys_operation_logs` VALUES ('6379', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:39:10');
+INSERT INTO `sys_operation_logs` VALUES ('6380', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"23\"}', '2020-05-28 12:39:10');
+INSERT INTO `sys_operation_logs` VALUES ('6381', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"js观察者模式\",\"class_id\":1,\"tagsArr\":[1,2,3],\"cover_url\":\"https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png\",\"is_top\":false,\"content\":\"**html代码**\\n\\n```html:run\\n<!DOCTYPEhtml>\\n\\t<htmllang=\\\"en\\\">\\n\\t<head>\\n\\t\\t<metacharset=\\\"UTF', '2020-05-28 12:39:33');
+INSERT INTO `sys_operation_logs` VALUES ('6382', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:39:33');
+INSERT INTO `sys_operation_logs` VALUES ('6383', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-05-28 12:39:54');
+INSERT INTO `sys_operation_logs` VALUES ('6384', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-05-28 12:39:54');
+INSERT INTO `sys_operation_logs` VALUES ('6385', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"26\"}', '2020-05-28 12:39:54');
+INSERT INTO `sys_operation_logs` VALUES ('6386', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"node代理配置\",\"class_id\":2,\"tagsArr\":[3,4,5],\"cover_url\":\"https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png\",\"is_top\":false,\"content\":\"```\\nvarproxyMiddleWare=require(\'http-proxy-middleware\');\\nvarapp=express();\\nvarproxyPath=\\\"ht', '2020-05-28 12:40:13');
+INSERT INTO `sys_operation_logs` VALUES ('6387', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:40:14');
+INSERT INTO `sys_operation_logs` VALUES ('6388', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 12:40:27');
+INSERT INTO `sys_operation_logs` VALUES ('6389', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:40:29');
+INSERT INTO `sys_operation_logs` VALUES ('6390', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 12:41:04');
+INSERT INTO `sys_operation_logs` VALUES ('6391', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:41:05');
+INSERT INTO `sys_operation_logs` VALUES ('6392', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:41:22');
+INSERT INTO `sys_operation_logs` VALUES ('6393', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 12:41:25');
+INSERT INTO `sys_operation_logs` VALUES ('6394', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 14:40:13');
+INSERT INTO `sys_operation_logs` VALUES ('6395', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 14:40:13');
+INSERT INTO `sys_operation_logs` VALUES ('6396', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 14:40:13');
+INSERT INTO `sys_operation_logs` VALUES ('6397', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 14:40:14');
+INSERT INTO `sys_operation_logs` VALUES ('6398', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 14:40:15');
+INSERT INTO `sys_operation_logs` VALUES ('6399', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 17:10:35');
+INSERT INTO `sys_operation_logs` VALUES ('6400', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:10:36');
+INSERT INTO `sys_operation_logs` VALUES ('6401', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:10:36');
+INSERT INTO `sys_operation_logs` VALUES ('6402', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 17:40:58');
+INSERT INTO `sys_operation_logs` VALUES ('6403', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:40:59');
+INSERT INTO `sys_operation_logs` VALUES ('6404', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:40:59');
+INSERT INTO `sys_operation_logs` VALUES ('6405', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 17:54:24');
+INSERT INTO `sys_operation_logs` VALUES ('6406', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:54:24');
+INSERT INTO `sys_operation_logs` VALUES ('6407', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:54:24');
+INSERT INTO `sys_operation_logs` VALUES ('6408', '44', '黑夜男神', '[POST] /api/blogs/createCommentsList', '127.0.0.1', '{\"parent_id\":31,\"user_id\":\"黑夜男神\",\"article_id\":16,\"comment_content\":\"@我是匿名用户之后我再会弄的\",\"comment_author_email\":\"395604192@qq.com\",\"comment_author\":\"黑夜男神\"}', '2020-05-28 17:54:40');
+INSERT INTO `sys_operation_logs` VALUES ('6409', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:54:40');
+INSERT INTO `sys_operation_logs` VALUES ('6410', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:54:40');
+INSERT INTO `sys_operation_logs` VALUES ('6411', '44', '黑夜男神', '[POST] /api/blogs/createCommentsList', '127.0.0.1', '{\"parent_id\":31,\"user_id\":\"黑夜男神\",\"article_id\":16,\"comment_content\":\"@我是匿名用户目前二级回复只对博主开放\",\"comment_author_email\":\"395604192@qq.com\",\"comment_author\":\"黑夜男神\"}', '2020-05-28 17:55:08');
+INSERT INTO `sys_operation_logs` VALUES ('6412', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:55:08');
+INSERT INTO `sys_operation_logs` VALUES ('6413', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 17:55:09');
+INSERT INTO `sys_operation_logs` VALUES ('6414', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 17:56:38');
+INSERT INTO `sys_operation_logs` VALUES ('6415', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 17:56:39');
+INSERT INTO `sys_operation_logs` VALUES ('6416', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 17:56:39');
+INSERT INTO `sys_operation_logs` VALUES ('6417', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:05:56');
+INSERT INTO `sys_operation_logs` VALUES ('6418', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:05:56');
+INSERT INTO `sys_operation_logs` VALUES ('6419', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 18:05:56');
+INSERT INTO `sys_operation_logs` VALUES ('6420', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:05:59');
+INSERT INTO `sys_operation_logs` VALUES ('6421', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:05:59');
+INSERT INTO `sys_operation_logs` VALUES ('6422', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:06:01');
+INSERT INTO `sys_operation_logs` VALUES ('6423', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:06:01');
+INSERT INTO `sys_operation_logs` VALUES ('6424', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:08:27');
+INSERT INTO `sys_operation_logs` VALUES ('6425', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:08:28');
+INSERT INTO `sys_operation_logs` VALUES ('6426', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:08:28');
+INSERT INTO `sys_operation_logs` VALUES ('6427', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:09:59');
+INSERT INTO `sys_operation_logs` VALUES ('6428', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:09:59');
+INSERT INTO `sys_operation_logs` VALUES ('6429', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:10:00');
+INSERT INTO `sys_operation_logs` VALUES ('6430', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:10:19');
+INSERT INTO `sys_operation_logs` VALUES ('6431', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:10:19');
+INSERT INTO `sys_operation_logs` VALUES ('6432', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:10:20');
+INSERT INTO `sys_operation_logs` VALUES ('6433', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 18:11:05');
+INSERT INTO `sys_operation_logs` VALUES ('6434', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:11:11');
+INSERT INTO `sys_operation_logs` VALUES ('6435', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 18:11:11');
+INSERT INTO `sys_operation_logs` VALUES ('6436', '44', '黑夜男神', '[PUT] /api/user/updateUser', '127.0.0.1', '{\"user_id\":44,\"nick_name\":\"黑夜男神\",\"password\":\"123\",\"email\":\"395604192@qq.com\",\"phone\":\"110\",\"avatar\":\"https://image.baidu.com/search/detail?ct=503316480&z=0&tn=baiduimagedetail&ipn=d&word=%E5%A4%B4%E5%83%8F%E6%B5%B7%E8%B4%BC&step_word=&ie=utf-8&in=&cl=2&lm', '2020-05-28 18:12:50');
+INSERT INTO `sys_operation_logs` VALUES ('6437', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:12:50');
+INSERT INTO `sys_operation_logs` VALUES ('6438', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:12:53');
+INSERT INTO `sys_operation_logs` VALUES ('6439', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:12:53');
+INSERT INTO `sys_operation_logs` VALUES ('6440', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 18:12:53');
+INSERT INTO `sys_operation_logs` VALUES ('6441', '44', '黑夜男神', '[PUT] /api/user/updateUser', '127.0.0.1', '{\"user_id\":44,\"nick_name\":\"黑夜男神\",\"password\":\"123\",\"email\":\"395604192@qq.com\",\"phone\":\"110\",\"avatar\":\"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590670865877&di=4e912c86eae2e61a615412d5818774a4&imgtype=0&src=http%3A%2F%2Fimgq.duit', '2020-05-28 18:13:37');
+INSERT INTO `sys_operation_logs` VALUES ('6442', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:13:37');
+INSERT INTO `sys_operation_logs` VALUES ('6443', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:13:40');
+INSERT INTO `sys_operation_logs` VALUES ('6444', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:13:41');
+INSERT INTO `sys_operation_logs` VALUES ('6445', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 18:13:41');
+INSERT INTO `sys_operation_logs` VALUES ('6446', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:15:22');
+INSERT INTO `sys_operation_logs` VALUES ('6447', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:15:23');
+INSERT INTO `sys_operation_logs` VALUES ('6448', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:15:23');
+INSERT INTO `sys_operation_logs` VALUES ('6449', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:15:26');
+INSERT INTO `sys_operation_logs` VALUES ('6450', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:15:26');
+INSERT INTO `sys_operation_logs` VALUES ('6451', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-05-28 18:25:30');
+INSERT INTO `sys_operation_logs` VALUES ('6452', '44', '黑夜男神', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-28 18:25:34');
+INSERT INTO `sys_operation_logs` VALUES ('6453', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:25:35');
+INSERT INTO `sys_operation_logs` VALUES ('6454', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:25:38');
+INSERT INTO `sys_operation_logs` VALUES ('6455', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:25:39');
+INSERT INTO `sys_operation_logs` VALUES ('6456', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-28 18:26:12');
+INSERT INTO `sys_operation_logs` VALUES ('6457', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-05-28 18:26:12');
+INSERT INTO `sys_operation_logs` VALUES ('6458', '44', '黑夜男神', '[PUT] /api/user/updateUser', '127.0.0.1', '{\"user_id\":44,\"nick_name\":\"黑夜男神\",\"password\":\"123\",\"email\":\"395604192@qq.com\",\"phone\":\"110\",\"avatar\":\"https://uploadfile.huiyi8.com/up/25/70/a1/2570a194efbc9fcd2ac7f94530dfe482.jpg\",\"role_id\":[1]}', '2020-05-28 18:26:20');
+INSERT INTO `sys_operation_logs` VALUES ('6459', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:26:20');
+INSERT INTO `sys_operation_logs` VALUES ('6460', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:30:10');
+INSERT INTO `sys_operation_logs` VALUES ('6461', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:30:11');
+INSERT INTO `sys_operation_logs` VALUES ('6462', '44', '黑夜男神', '[POST] /api/blogs/createCommentsList', '127.0.0.1', '{\"parent_id\":30,\"user_id\":\"黑夜男神\",\"article_id\":16,\"comment_content\":\"@马克恩好的来打把王者咯我玩打野\",\"comment_author_email\":\"395604192@qq.com\",\"comment_author\":\"黑夜男神\"}', '2020-05-28 18:30:33');
+INSERT INTO `sys_operation_logs` VALUES ('6463', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:30:34');
+INSERT INTO `sys_operation_logs` VALUES ('6464', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:30:34');
+INSERT INTO `sys_operation_logs` VALUES ('6465', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:32:37');
+INSERT INTO `sys_operation_logs` VALUES ('6466', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:32:37');
+INSERT INTO `sys_operation_logs` VALUES ('6467', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:32:37');
+INSERT INTO `sys_operation_logs` VALUES ('6468', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:32:42');
+INSERT INTO `sys_operation_logs` VALUES ('6469', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:32:43');
+INSERT INTO `sys_operation_logs` VALUES ('6470', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:32:43');
+INSERT INTO `sys_operation_logs` VALUES ('6471', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:32:49');
+INSERT INTO `sys_operation_logs` VALUES ('6472', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:32:49');
+INSERT INTO `sys_operation_logs` VALUES ('6473', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:33:31');
+INSERT INTO `sys_operation_logs` VALUES ('6474', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:33:32');
+INSERT INTO `sys_operation_logs` VALUES ('6475', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:33:32');
+INSERT INTO `sys_operation_logs` VALUES ('6476', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:35:03');
+INSERT INTO `sys_operation_logs` VALUES ('6477', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:35:04');
+INSERT INTO `sys_operation_logs` VALUES ('6478', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:35:04');
+INSERT INTO `sys_operation_logs` VALUES ('6479', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:45:08');
+INSERT INTO `sys_operation_logs` VALUES ('6480', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:45:10');
+INSERT INTO `sys_operation_logs` VALUES ('6481', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:45:10');
+INSERT INTO `sys_operation_logs` VALUES ('6482', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-05-28 18:47:55');
+INSERT INTO `sys_operation_logs` VALUES ('6483', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:47:56');
+INSERT INTO `sys_operation_logs` VALUES ('6484', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 18:47:56');
+INSERT INTO `sys_operation_logs` VALUES ('6485', '44', '黑夜男神', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-28 18:48:05');
+INSERT INTO `sys_operation_logs` VALUES ('6486', '44', '黑夜男神', '[GET] /api/loginLogs/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-05-28 18:48:06');
+INSERT INTO `sys_operation_logs` VALUES ('6487', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 18:48:08');
+INSERT INTO `sys_operation_logs` VALUES ('6488', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-05-28 19:00:05');
+INSERT INTO `sys_operation_logs` VALUES ('6489', '44', '黑夜男神', '[GET] /api/blogs/articleCommentsList', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 19:00:06');
+INSERT INTO `sys_operation_logs` VALUES ('6490', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-05-28 19:00:07');
 
 -- ----------------------------
 -- Table structure for sys_resource
@@ -6690,7 +7044,7 @@ INSERT INTO `sys_user` VALUES ('34', '夏侯惇', '1d7f33f8216eca12', '12', '121
 INSERT INTO `sys_user` VALUES ('41', '百里', '1d7f33f8216eca12', '1212', '121123123', '1', 'public/upload/csde_1589175881000.jpeg', '2020-04-15 22:04:22', '1');
 INSERT INTO `sys_user` VALUES ('42', '百里', '1d7f33f8216eca12', '1212', '13670135458', '1', 'public/upload/csde_1589175881000.jpeg', '2020-04-15 22:04:38', '1');
 INSERT INTO `sys_user` VALUES ('43', '甄姬', '1d7f33f8216eca12', '12', '1154789', '1', 'public/uploads/csde_1589175881000.jpeg', '2020-04-27 12:38:13', '44');
-INSERT INTO `sys_user` VALUES ('44', '王希平', '1d7f33f8216eca12', '395604192@qq.com', '110', '1', 'public/uploads/csde_1589183238000.jpeg', '2020-05-11 22:04:22', '44');
+INSERT INTO `sys_user` VALUES ('44', '黑夜男神', '1d7f33f8216eca12', '395604192@qq.com', '110', '1', 'https://uploadfile.huiyi8.com/up/25/70/a1/2570a194efbc9fcd2ac7f94530dfe482.jpg', '2020-05-11 22:04:22', '44');
 INSERT INTO `sys_user` VALUES ('45', '项羽', '1d7f33f8216eca12', '212133@qq.com', '1587545654', '1', '', '2020-05-11 19:41:36', '44');
 INSERT INTO `sys_user` VALUES ('46', '白起', '1d7f33f8216eca12', '123123123@qq.com', '15787845489', '1', '', '2020-05-11 19:36:13', '1');
 INSERT INTO `sys_user` VALUES ('47', '赵云', '1d7f33f8216eca12', '123', '1324535234323', '1', '1231', '2020-05-18 19:37:50', '44');
