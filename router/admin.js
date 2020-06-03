@@ -16,6 +16,7 @@ const BlogArticleController = require('../controller/BlogArticleController')
 const BlogClassController = require('../controller/BlogClassController')
 const BlogTagsController = require('../controller/BlogTagsController')
 const BlogCommentsController = require('../controller/BlogCommentsController')
+const BlogMsgCommentsController = require('../controller/BlogMsgCommentsController')
 const BlogRelatedLinksController = require('../controller/BlogRelatedLinksController')
 
 module.exports = function (app) {
@@ -78,6 +79,12 @@ module.exports = function (app) {
   app.post('/api/blogs/createRelatedLinksList', BlogRelatedLinksController.create) // 添加
   app.put('/api/blogs/updateRelatedLinksList', BlogRelatedLinksController.update) // 更新
   app.delete('/api/blogs/deleteRelatedLinksList', BlogRelatedLinksController.delete) // 更新
+
+  app.get('/api/blogs/msgCommentsList', BlogMsgCommentsController.list) // 列表  
+  app.get('/api/blogs/msgCommentDetail', BlogMsgCommentsController.findMsgComment) // 列表 
+  app.post('/api/blogs/createMsgCommentsList', BlogMsgCommentsController.create) // 添加
+  app.put('/api/blogs/updateMsgCommentsList', BlogMsgCommentsController.update) // 更新
+  app.delete('/api/blogs/deleteMsgCommentsList', BlogMsgCommentsController.delete) // 更新
 
   app.use(NotFind.notApi) // 访问的路由不存在  
 }

@@ -25,6 +25,10 @@ class BlogRelatedLinksController {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     let data = {
       tags_name: req.body.tags_name,
+      nick_name: req.body.nick_name,
+      icon: req.body.icon,
+      url: req.body.url,
+      description: req.body.description,
       user_id: userid
     } 
     let _data = await BlogRelatedLinksServer.create(data) 
@@ -39,8 +43,8 @@ class BlogRelatedLinksController {
     return res.R.ok(_data)
   }
   async delete (req, res) {
-    let tags_id = req.body.tags_id
-    let _data = await BlogRelatedLinksServer.delete(tags_id) // 删除
+    let id = req.body.id
+    let _data = await BlogRelatedLinksServer.delete(id) // 删除
     if (_data) {
       res.R.ok(_data)
     }

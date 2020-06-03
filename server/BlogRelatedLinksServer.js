@@ -18,11 +18,11 @@ class BlogRelatedLinksServer {
     }
     let _data = await BlogRelatedLinksModel.findAndCountAll({
       where: where,
-      distinct: true,  // 关联数据去重
-      include:[{
-        model: BlogArticleModel,
-        as: 'article'
-      }],
+      // distinct: true,  // 关联数据去重
+      // include:[{
+      //   model: BlogArticleModel,
+      //   as: 'article'
+      // }],
       limit: pageSize,
       offset: limitStart
     })
@@ -34,7 +34,10 @@ class BlogRelatedLinksServer {
   // 添加
   async create(data) {
     let classArticle = await BlogRelatedLinksModel.create({
-      class_name: data.class_name,
+      nick_name: data.nick_name,
+      icon: data.icon,
+      url: data.url,
+      description: data.description,
       user_id: data.user_id
     })
     return classArticle
@@ -42,7 +45,10 @@ class BlogRelatedLinksServer {
   // 更新
   async update(data) {
     let classArticle = await BlogRelatedLinksModel.update({
-      class_name: data.class_name
+      nick_name: data.nick_name,
+      icon: data.icon,
+      url: data.url,
+      description: data.description
     },{
       where: {
         id: data.id
