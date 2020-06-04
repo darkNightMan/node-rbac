@@ -147,6 +147,9 @@ module.exports = {
   CONTENT_IS_EMPTY: {
     code: 20404,
     msg: '文章内容不能为空'
+  },
+  MSGCOMMENT_IS_EMPTY: {
+    code: 20404,
+    msg: '评论内容不能为空'
   }
 }
-// 其中，第二三位表示功能模块编号，第四五位表示具体错误编号。

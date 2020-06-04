@@ -20,6 +20,12 @@ class BlogRelatedLinksController {
       })
     }
   }
+  async allList (req, res){
+    let _data = await BlogRelatedLinksServer.allList() // 用户表  
+    if (_data) {
+      res.R.ok(_data)
+    }
+  }
   // 创建
   async create (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户

@@ -23,6 +23,12 @@ class BlogMsgCommentsController {
     let data = await BlogMsgCommentServer.findMsgComment(comment_id)
     res.R.ok(data)
   }
+  async findMsgCommentTreeLits (req, res) {
+    // let comment_id = req.query.comment_id
+    const { pageParams, conditions } = offsetPage(req.query)
+    let data = await BlogMsgCommentServer.findMsgCommentTreeLits(pageParams, conditions)
+    res.R.ok(data)
+  }
   // 创建
   async create (req, res) {
     let commentsInfo = {
@@ -31,6 +37,9 @@ class BlogMsgCommentsController {
       comment_author_email: req.body.comment_author_email,
       comment_content: req.body.comment_content,
       comment_author: req.body.comment_author,
+    }
+    if (!req.body.comment_author_email || !req.body.comment_content || !req.body.comment_author) {
+      res.R.err('MSGCOMMENT_IS_EMPTY')
     }
     let _data = await BlogMsgCommentServer.create(commentsInfo) // 用户表
     if (_data) {

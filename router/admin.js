@@ -82,6 +82,7 @@ module.exports = function (app) {
 
   app.get('/api/blogs/msgCommentsList', BlogMsgCommentsController.list) // 列表  
   app.get('/api/blogs/msgCommentDetail', BlogMsgCommentsController.findMsgComment) // 列表 
+  app.get('/api/blogs/msgTreeCommentList', BlogMsgCommentsController.findMsgCommentTreeLits) // 列表 
   app.post('/api/blogs/createMsgCommentsList', BlogMsgCommentsController.create) // 添加
   app.put('/api/blogs/updateMsgCommentsList', BlogMsgCommentsController.update) // 更新
   app.delete('/api/blogs/deleteMsgCommentsList', BlogMsgCommentsController.delete) // 更新

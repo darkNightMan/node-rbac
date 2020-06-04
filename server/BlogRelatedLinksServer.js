@@ -31,6 +31,10 @@ class BlogRelatedLinksServer {
       count: _data.count
     }
   }
+  async allList() {
+    let _data = await BlogRelatedLinksModel.findAll()
+    return _data
+  }
   // 添加
   async create(data) {
     let classArticle = await BlogRelatedLinksModel.create({

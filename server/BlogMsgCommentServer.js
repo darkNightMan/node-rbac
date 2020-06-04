@@ -62,22 +62,22 @@ class BlogMsgCommentsServer {
     }
   }
 
-  async findMsgCommentLits(comment_id) {
+  async findMsgCommentTreeLits(pageParmas, conditions) {
+    let {pageSize, limitStart } = pageParmas
     let parentComment = []
-    let _dataParentComment = await BlogMsgCommentModel.findAll({ 
-      where: { comment_id: comment_id, parent_id: 1}, 
+    // 获取所有根级评论 
+    let _dataParentComment = await BlogMsgCommentModel.findAndCountAll({ 
+      where: { parent_id: 0}, 
       order: [
-        ['comment_time', 'DESC']
-      ]
-    }) // 获取所有根级评论 
+        ['comment_time', 'ASC']
+      ],
+      limit: pageSize,
+      offset: limitStart
+    }) 
+    // 子集
     let _dataAllComment = await BlogMsgCommentModel.findAll({
-       where: { comment_id: comment_id},
-       include:[{
-        model:SysUserModel, 
-        as: 'userInfo',
-        attributes: ['avatar']
-      }]
-    }) // 获取所有根级评论
+      //  where: { parent_id: comment_id},
+    }) // 组装评论
     let findChild = async(item, childComments) => {
       _dataAllComment.map(it => {
          if (item.comment_id === it.parent_id ) {
@@ -86,7 +86,7 @@ class BlogMsgCommentsServer {
          }
       })
     }
-    _dataParentComment.map((it) => { 
+    _dataParentComment.rows.map((it) => { 
         parentComment.push(
           {
             comment_time: it.comment_time,
@@ -104,7 +104,7 @@ class BlogMsgCommentsServer {
     })
     return {
       comments: parentComment,
-      count: _dataAllComment.length
+      count: _dataParentComment.count
     }
   }
   // 添加
