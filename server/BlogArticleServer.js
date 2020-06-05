@@ -164,5 +164,23 @@ class BlogArticleServer {
     })
     return data
   }
+  // 归档
+  async filedList () {
+    let years = await BlogArticleModel.findAll({
+      raw: true,
+      attributes: [[Sequelize.fn('date_format',Sequelize.col('update_time'), '%Y'),'year']],
+      group: [[Sequelize.fn('date_format',Sequelize.col('update_time'), '%Y'),'year']],
+      order: [['update_time', 'DESC']]
+    })
+    const getyearsList = async() => {
+       return years.map(async (it) => {
+        let data = await BlogArticleModel.findAll({where: {update_time: Sequelize.where(Sequelize.fn('date_format',Sequelize.col('update_time'), '%Y'), it.year)},raw: true,})
+        return {year:it.year, data}
+      }) 
+    }
+    let fn = await getyearsList() 
+    let data = Promise.all(fn)   
+    return data
+  }
 }
 module.exports = new BlogArticleServer()

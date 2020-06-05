@@ -69,7 +69,7 @@ class BlogMsgCommentsServer {
     let _dataParentComment = await BlogMsgCommentModel.findAndCountAll({ 
       where: { parent_id: 0}, 
       order: [
-        ['comment_time', 'ASC']
+        ['comment_time', 'DESC']
       ],
       limit: pageSize,
       offset: limitStart
@@ -104,7 +104,7 @@ class BlogMsgCommentsServer {
     })
     return {
       comments: parentComment,
-      count: _dataParentComment.count
+      count: _dataAllComment.length
     }
   }
   // 添加

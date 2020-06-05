@@ -79,5 +79,9 @@ class BlogArticleController {
     let data = await BlogArticleServer.articlesNew()
     res.R.ok(data)
   }
+  async filedList (req, res) {
+    let  _data = await BlogArticleServer.filedList()
+    res.R.ok(_data) 
+  }
 }
 module.exports = new BlogArticleController()
