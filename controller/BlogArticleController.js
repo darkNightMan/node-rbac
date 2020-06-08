@@ -54,6 +54,7 @@ class BlogArticleController {
     if (!articleId) {
       return res.R.err('ARTICLE_IS_EMPTY')
     }
+    await BlogArticleServer.lookArticle(articleId)
     let data = await BlogArticleServer.findOne(articleId)
     return res.R.ok(data)
   }

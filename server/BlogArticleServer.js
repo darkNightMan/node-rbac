@@ -182,5 +182,20 @@ class BlogArticleServer {
     let data = Promise.all(fn)   
     return data
   }
+  // 查看
+  async lookArticle (article_id) {
+    let articles = await BlogArticleModel.findByPk(article_id)
+    articles.update(
+      {
+        read_count: articles.read_count + 1
+      },
+      {
+        where:{
+          article_id: article_id
+        }
+      }
+    )
+    return true
+  }
 }
 module.exports = new BlogArticleServer()
