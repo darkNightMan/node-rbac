@@ -34,6 +34,11 @@ class BlogArticleServer {
         as: 'article_class'
       },
       {
+        model: BlogCommentModel,
+        // attributes: ['class_name'],
+        as: 'comments'
+      },
+      {
         model: BlogTagsModel,
         as: 'tagsArr',
         through: {
@@ -93,7 +98,7 @@ class BlogArticleServer {
           through: {
             attributes: [] // 排除中间表
           }, 
-        }
+        },
       ]
     })
     return data.toJSON()
