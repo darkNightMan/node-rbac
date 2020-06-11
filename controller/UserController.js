@@ -33,6 +33,8 @@ class UserController {
     try {
       let _data = await UserServer.login(phone)
       let dataLog = {
+        user_id: _data.user_id,
+        user_name: _data.nick_name,
         login_ip: env === 'dev'? req.hostname : req.headers.remoteIP,
         login_address: env === 'dev' ? '本地登入' : '未知',
         login_agent: req.agent
@@ -42,7 +44,13 @@ class UserController {
         await SysLogServer.insert(dataLog)      
         return res.R.err('USER_NOT_EXITS')
       }
-      // 密码解密
+      // 用户被禁用
+      if (!_data.state) {
+        dataLog.login_description = errMsg['USER_NOT_DISABLE'].msg
+        await SysLogServer.insert(dataLog)      
+        return res.R.err('USER_NOT_DISABLE')
+      }
+      // 校验密码
       if (_data.password !== cryptoAuth.encrypted(password)) {   
         dataLog.login_description = errMsg['USER_PASSWORD_WRONG'].msg   
         await SysLogServer.insert(dataLog)
@@ -53,8 +61,6 @@ class UserController {
         admin: true,
       }
       dataLog.login_description = successMsg['LOGING_SUCCESS']
-      dataLog.user_id = _data.user_id
-      dataLog.user_name = _data.nick_name
       let logrow = await SysLogServer.insert(dataLog)
       let token = JwtToken.createToken(payload) // 签发
       redis.set(`token_${_data.user_id}`, token, JWT_COMF.JWTEXP) //  同步到redis
@@ -79,9 +85,9 @@ class UserController {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     // 遍历菜单
     function menuEach(menu) {
-      // let root = menu.filter((it, index) => it.parent_id == null) //  获取根级
-      let parentMenu = menu.filter((it, index) => !it.parent_id)  //  获取根父级
-      parentMenu.map((p, i1) => {
+      let root = menu.filter((it, index) => it.parent_id == 0) //  获取根级
+      // let parentMenu = menu.filter((it, index) => !it.parent_id)  //  获取根父级
+      root.map((p, i1) => {
         menu.map((c, i2) => {
           if (p.res_id == c.parent_id) {
             if (Object.prototype.toString.call(p.children) == '[object Array]') {
@@ -93,7 +99,7 @@ class UserController {
           }
         })
       })
-      return parentMenu
+      return root
     }
     let _menu = await SysMenuServer.getUserMenu(userid)
     let _perms = await SysMenuServer.getUserPer(userid)  

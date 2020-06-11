@@ -28,7 +28,7 @@ class SysLogServer {
     } 
     let data = await SysLoginLogsModel.findAndCountAll({
       where,
-      distinct:true, //  include 关联会出现重复条数 去重
+      distinct: true, //  include 关联会出现重复条数 去重
       include: [{
         model: SysUserModel,
         attributes: ['user_id'],

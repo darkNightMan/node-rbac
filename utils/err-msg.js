@@ -50,6 +50,10 @@ module.exports = {
     code: 20101,
     msg: '该用户不存在'
   },
+  USER_NOT_DISABLE: {
+    code: 20102,
+    msg: '该用户已经被禁用请联系管理员!'
+  },
   USER_PHONE_NULL: {
     code: 21333,
     msg: '账号不能为空'
@@ -136,9 +140,16 @@ module.exports = {
     code: 20403,
     msg: '文章标题不能为空'
   },
+  ARTICLE_IS_EMPTY: {
+    code: 204032,
+    msg: '文章ID不能为空'
+  },
   CONTENT_IS_EMPTY: {
     code: 20404,
     msg: '文章内容不能为空'
+  },
+  MSGCOMMENT_IS_EMPTY: {
+    code: 20404,
+    msg: '评论内容不能为空'
   }
 }
-// 其中，第二三位表示功能模块编号，第四五位表示具体错误编号。

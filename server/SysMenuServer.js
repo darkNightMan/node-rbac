@@ -25,7 +25,8 @@ class SysMenuServer {
     let rescource = await SysResourceModel.findAndCountAll({
       where,
       order: [
-        ['sort', 'ASC']
+        // [conditions.treeId ? 'parent_id' : 'sort', 'ASC']
+        ['parent_id' , 'ASC']
       ],
       limit: pageParmas.pageSize,
       offset: pageParmas.limitStart
@@ -44,7 +45,8 @@ class SysMenuServer {
           component:row.component,
           description:row.description,
           sort:row.sort,
-          create_time: row.create_time 
+          create_time: row.create_time,
+          perms: row.perms
         }
       )
     })
@@ -117,6 +119,7 @@ class SysMenuServer {
     // 查询权限
     let menu = await SysRoleModel.findAll({
       attributes: [],
+      // distinct:true,
       where: {
         role_id: roleList
       },
@@ -133,7 +136,7 @@ class SysMenuServer {
         }, // 排除中间表
         required: false,
       }],
-      group: 'sys_resources.res_id', // 不只为什么 不个以主建res_id作分组 非要用主键需要加上表名 搞不懂    
+      group: 'sys_resources.res_id', //  
       order: [
         [{
           model: SysResourceModel

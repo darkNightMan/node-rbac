@@ -38,10 +38,7 @@ class SysUserController {
       email: req.body.email || '',
       avatar: req.body.avatar || '',
       role_id: req.body.role_id,
-      user_id: userid
-    } 
-    if (!userid) {
-      res.R.err('USER_ID_NULL')
+      update_id: userid
     }
     // 密码加密
     userInfo.password = CryptoAuth.encrypted(userInfo.password)
