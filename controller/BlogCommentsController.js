@@ -18,6 +18,7 @@ class BlogCommentsController {
       })
     }
   }
+  // 查询文章评论
   async findArticleComment (req, res) {
     let articleId = req.query.article_id
     let data = await BlogCommentsServer.findArticleComment(articleId)

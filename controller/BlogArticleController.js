@@ -23,7 +23,7 @@ class BlogArticleController {
       })
     }
   }
-  // 新建文章
+  // 新建
   async create (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     let data = req.body
@@ -58,13 +58,14 @@ class BlogArticleController {
     let data = await BlogArticleServer.findOne(articleId)
     return res.R.ok(data)
   }
-  // 更新用户
+  // 更新
   async update (req, res) {
     let data = req.body
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     let _data = await BlogArticleServer.update(Object.assign(data, {user_id: userid})) // 更新
     return res.R.ok(_data)
   }
+  // 删除
   async delete (req, res) {
     let articleId = req.body.article_id
     let _data = await BlogArticleServer.delete(articleId) // 删除
@@ -72,14 +73,17 @@ class BlogArticleController {
       res.R.ok()
     }
   }
+  // 推荐文章
   async articleRecommenda (req, res) {
     let data = await BlogArticleServer.articleRecommenda()
     res.R.ok(data)
   }
+  // 最新文章
   async articlesNew (req, res) {
     let data = await BlogArticleServer.articlesNew()
     res.R.ok(data)
   }
+  // 文章归档
   async filedList (req, res) {
     let  _data = await BlogArticleServer.filedList()
     res.R.ok(_data) 

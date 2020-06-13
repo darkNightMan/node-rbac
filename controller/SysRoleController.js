@@ -29,7 +29,7 @@ class SysRoleController {
       res.R.ok('修改成功')
     }
   }
-  //  获取角色列表
+  //  列表
   async list (req, res){
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
@@ -40,8 +40,8 @@ class SysRoleController {
       res.R.ok({roleList: _data})
     }
   }
-  // 创建一个角色
-  async createRole (req, res) {
+  // 创建
+  async create (req, res) {
     let roleName = req.body.role_name
     let roleCode = req.body.role_code
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
@@ -53,8 +53,8 @@ class SysRoleController {
       res.R.ok('新增成功')
     }
   }
-  // 更新角色信息
-  async updateRole (req, res) {
+  // 更新
+  async update (req, res) {
     let roleName = req.body.role_name
     let roleCode = req.body.role_code
     let roleId = req.body.role_id
@@ -67,8 +67,8 @@ class SysRoleController {
       res.R.ok('修改成功')      
     }
   }
-  // 删除角色
-  async deleteRole (req, res) {    
+  // 删除
+  async delete (req, res) {    
     // let role_id = req.query['role_id'] // 参数
     let role_id = req.body.role_id // 参数
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户

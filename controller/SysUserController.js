@@ -7,11 +7,7 @@ const CryptoAuth = require('../utils/crypto')
 const { offsetPage } = require('../utils/offsetPage')
 const { SALTKEY } = require('../conf')
 class SysUserController {
-  async test (req, res) {
-    let data = await UserServer.testSql()
-    res.R.ok(data)
-  }
-   // 获取所有用户列表
+   // 列表
   async list (req, res){
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
@@ -28,8 +24,8 @@ class SysUserController {
       })
     }
   }
-  // 创建用户
-  async createUser (req, res) {
+  // 创建
+  async create (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     let userInfo = {
       nick_name: req.body.nick_name,
@@ -47,8 +43,8 @@ class SysUserController {
       res.R.ok(_data)
     }
   }
-  // 更新用户
-  async updateUser (req, res) {
+  // 更新
+  async update (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')
@@ -58,13 +54,14 @@ class SysUserController {
     let _data = await SysUserServer.updateUser(data) // 更新
     res.R.ok(_data)
   }
-  async deleteUser (req, res) {
+  // 删除
+  async delete (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     if (!userid) {
       res.R.err('USER_ID_NULL')
     }
     let user_id = req.body.user_id
-    let _data = await SysUserServer.deleteUser(user_id) // 删除
+    let _data = await SysUserServer.deleteUser(user_id)
     if (_data) {
       res.R.ok(_data)
     }

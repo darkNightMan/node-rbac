@@ -20,6 +20,7 @@ class BlogRelatedLinksController {
       })
     }
   }
+  // 所有列表
   async allList (req, res){
     let _data = await BlogRelatedLinksServer.allList() // 用户表  
     if (_data) {
@@ -48,6 +49,7 @@ class BlogRelatedLinksController {
     let _data = await BlogRelatedLinksServer.update(data) // 更新
     return res.R.ok(_data)
   }
+  // 删除
   async delete (req, res) {
     let id = req.body.id
     let _data = await BlogRelatedLinksServer.delete(id) // 删除

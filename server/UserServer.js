@@ -20,7 +20,6 @@ class UserServer {
         where: { user_id: userId },
         include: [{
           model: SysRoleModel,
-          attributes: ['role_id'],
           through: {
             attributes: []
           }, // 排除中间表

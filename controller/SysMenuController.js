@@ -84,7 +84,7 @@ class SysMenuController {
     }
     res.R.ok(recursionMenu(_data)[0].children)
   }
-  async createMenu (req, res) {    
+  async create (req, res) {    
     let data = req.body
     let _data = await SysMenuServer.createMenu(data)
     if(_data) {
@@ -93,7 +93,7 @@ class SysMenuController {
       res.R.err('MENU_INSERT_FAILED')
     }
   }
-  async updatedMenu (req, res) {
+  async updated (req, res) {
     let data = req.body
     let _data = await SysMenuServer.updatedMenu(data)
     if(_data) {
@@ -102,7 +102,7 @@ class SysMenuController {
       res.R.err('MENU_UPDATE_FAILED')
     }
   }
-  async deleteMenu (req, res) {
+  async delete (req, res) {
     let res_id = req.body.res_id
     let _data = await SysMenuServer.deleteMenu(res_id)
     if(_data) {

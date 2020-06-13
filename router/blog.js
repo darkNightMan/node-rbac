@@ -17,5 +17,4 @@ module.exports = function (app) {
   app.get('/api/relatedLink/allList',BlogRelatedLinksController.allList)
   app.get('/api/msgComments/treeLits',BlogMsgCommentsController.findMsgCommentTreeLits)
   app.post('/api/msgComments/createMsg',BlogMsgCommentsController.create)
- 
 }

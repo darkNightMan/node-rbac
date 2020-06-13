@@ -18,6 +18,7 @@ class BlogMsgCommentsController {
       })
     }
   }
+  // 查询留言评论
   async findMsgComment (req, res) {
     let comment_id = req.query.comment_id
     let data = await BlogMsgCommentServer.findMsgComment(comment_id)

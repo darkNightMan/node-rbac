@@ -184,9 +184,10 @@ class SysMenuServer {
         }, // 排除中间表
         required: false,
       }],
-      group: 'perms',
+      // group: 'perms',
       plain: true
     })
+    console.log(perms, 'permspermspermspermspermspermspermspermspermspermspermspermsperms')
     return perms.toJSON().sys_resources
   }
   // 添加菜单

@@ -1,12 +1,9 @@
 const UserServer = require('../server/UserServer')
 const SysMenuServer = require('../server/SysMenuServer')
-const SysRoleServer = require('../server/SysRoleServer')
 const SysLogServer = require('../server/SysLogServer')
-const http = require('http');
 const { JWT_COMF } = require('../conf')
 const redis = require('../db/redis')
 const JwtToken = require('../utils/authToken')
-const colors = require('colors')
 const errMsg = require('../utils/err-msg')
 const successMsg = require('../utils/success-msg')
 const cryptoAuth = require('../utils/crypto')
@@ -61,7 +58,8 @@ class UserController {
         admin: true,
       }
       dataLog.login_description = successMsg['LOGING_SUCCESS']
-      let logrow = await SysLogServer.insert(dataLog)
+      // 登录记录
+      await SysLogServer.insert(dataLog)
       let token = JwtToken.createToken(payload) // 签发
       redis.set(`token_${_data.user_id}`, token, JWT_COMF.JWTEXP) //  同步到redis
       res.cookie(`token_${_data.user_id}`, _data.user_id, { maxAge: 900000, httpOnly: true }) // 设置cookie
@@ -113,8 +111,6 @@ class UserController {
       })
       return permsArr
     }
-    let roleArr = [] // 角色集合
-    _data.sys_roles.map(it=> roleArr.push(it.role_id))
     let menuList = menuEach(_menu) // 获取菜单树  
     let userInfo = {
       user_id: _data.user_id,
@@ -123,7 +119,7 @@ class UserController {
       login_time: _data.login_time,
       email: _data.email,
       avatar: _data.avatar,
-      role_id: roleArr
+      role_list: _data.sys_roles
     }
     if (!_menu) return res.R.err('USER_NOT_EXITS')
     redis.set(`user_perms_${userid}`, getPerms(_perms).toString(), JWT_COMF.JWTEXP) //  将权限存储到reids

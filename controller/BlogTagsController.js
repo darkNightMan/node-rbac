@@ -7,11 +7,7 @@ const CryptoAuth = require('../utils/crypto')
 const { offsetPage } = require('../utils/offsetPage')
 const { SALTKEY } = require('../conf')
 class BlogClassController {
-  async test (req, res) {
-    let data = await UserServer.testSql()
-    res.R.ok(data)
-  }
-   // 列表
+  // 列表
   async list (req, res){
     let userid = req.userInfo ? req.userInfo.user_id : ''// 获取存在通过token校验的用户
     const { pageParams, conditions } = offsetPage(req.query)
@@ -43,6 +39,7 @@ class BlogClassController {
     let _data = await BlogtagsServer.update(data) // 更新
     return res.R.ok(_data)
   }
+  // 删除
   async delete (req, res) {
     let tags_id = req.body.tags_id
     let _data = await BlogtagsServer.delete(tags_id) // 删除

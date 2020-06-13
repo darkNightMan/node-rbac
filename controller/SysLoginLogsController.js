@@ -5,6 +5,7 @@ const SysRoleServer = require('../server/SysRoleServer')
 const { formatDate } = require('../utils/format')
 const { offsetPage } = require('../utils/offsetPage')
 class SysLoginLogsController {
+  // 登入列表
   async list (req, res) {
     let userid = req.userInfo.user_id // 获取存在通过token校验的用户
     let { pageParams, conditions } = offsetPage(req.query)

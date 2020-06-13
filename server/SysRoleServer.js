@@ -46,7 +46,7 @@ class SysRoleServer {
     })
     return data
   }
-  // 更新角色
+  // 更新角色名
   async updateRole(roleId, name, code) {
     let data = await SysRoleModel.update({
       role_name: name,
@@ -67,11 +67,9 @@ class SysRoleServer {
     })
     return data
   }
+  // 查询当前角色
   async findRoles(userid) {
-      let data = await SysUserRoleModel.findAll({ where: {user_id: userid}})
-    // let sql = userid ? `SELECT role_id, user_id FROM sys_user_role WHERE user_id =${userid}` : `SELECT * FROM sys_user_role`
-    // let data = await exec(sql)
-    // console.log(data, '----------------------------')
+    let data = await SysUserRoleModel.findAll({ where: {user_id: userid}})
     return data
   }
 }
