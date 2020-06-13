@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50719
 File Encoding         : 65001
 
-Date: 2020-06-08 18:15:00
+Date: 2020-06-13 15:14:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -38,13 +38,13 @@ CREATE TABLE `b_article` (
 -- ----------------------------
 -- Records of b_article
 -- ----------------------------
-INSERT INTO `b_article` VALUES ('9', 'nodejs 全栈开发你值得拥有1', '33', '1', '0', '1212', '2020-05-13 15:54:02', '2020-05-13 15:54:04', '1231', 'https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg');
-INSERT INTO `b_article` VALUES ('10', 'nodejs 全栈开发你值得拥有2', '33', '1', '0', '1214', '2020-05-13 15:54:02', '2020-06-08 16:31:05', '1231', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('16', 'nodejs 全栈开发你值得拥有3', '44', '2', '1', '8', '2020-05-14 19:56:42', '2020-06-08 16:34:11', '0', 'public/uploads/企业微信截图_15901288062668.png');
+INSERT INTO `b_article` VALUES ('9', 'nodejs 全栈开发你值得拥有1', '33', '1', '0', '1214', '2020-05-13 15:54:02', '2020-06-09 09:07:40', '1231', 'https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg');
+INSERT INTO `b_article` VALUES ('10', 'nodejs 全栈开发你值得拥有2', '33', '1', '0', '1215', '2020-05-13 15:54:02', '2020-06-09 13:02:06', '1231', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('16', 'nodejs 全栈开发你值得拥有3', '44', '2', '1', '15', '2020-05-14 19:56:42', '2020-06-13 14:50:08', '0', '/public/uploads/企业微信截图_15670744476158.png');
 INSERT INTO `b_article` VALUES ('18', 'Vuex辅助函数', '44', '1', '1', '0', '2020-05-15 12:04:04', '2020-05-28 12:33:30', '0', 'https://img1.mukewang.com/szimg/5e95524508fe369f06000338-360-202.jpg');
-INSERT INTO `b_article` VALUES ('19', '链表结构', '44', '1', '1', '1', '2020-05-15 12:05:03', '2020-06-08 16:37:01', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('19', '链表结构', '44', '1', '1', '2', '2020-05-15 12:05:03', '2020-06-09 09:04:11', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
 INSERT INTO `b_article` VALUES ('20', 'js弹力器', '44', '1', '1', '2', '2020-05-15 12:06:29', '2020-06-08 16:36:51', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
-INSERT INTO `b_article` VALUES ('21', 'Push API实现消息推送', '44', '1', '1', '0', '2020-05-15 12:23:14', '2020-05-28 12:36:16', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
+INSERT INTO `b_article` VALUES ('21', 'Push API实现消息推送', '44', '1', '1', '1', '2020-05-15 12:23:14', '2020-06-09 13:08:22', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
 INSERT INTO `b_article` VALUES ('22', 'vue-bus 组件实现非父子组件通信(及需注意地方)', '44', '1', '1', '0', '2020-05-15 12:25:57', '2020-05-28 12:38:54', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
 INSERT INTO `b_article` VALUES ('23', 'js 观察者模式', '44', '1', '0', '0', '2020-05-15 12:26:55', '2018-05-28 12:39:33', '0', 'https://img2.mukewang.com/szimg/5ea0118b0948c90a12000676-360-202.png');
 INSERT INTO `b_article` VALUES ('24', 'vuex', '44', '1', '1', '0', '2020-05-15 13:11:52', '2020-05-26 11:31:00', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
@@ -169,7 +169,7 @@ CREATE TABLE `b_comments` (
   PRIMARY KEY (`comment_id`),
   KEY `article_id` (`article_id`),
   CONSTRAINT `b_comments_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `b_article` (`article_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_comments
@@ -196,6 +196,9 @@ INSERT INTO `b_comments` VALUES ('39', '10', '0', '0', '啊实打实', '阿萨�
 INSERT INTO `b_comments` VALUES ('40', '10', '0', '0', '12', '123', '123', '2020-06-04 16:54:07');
 INSERT INTO `b_comments` VALUES ('41', '10', '0', '0', '', '', '', '2020-06-04 16:54:09');
 INSERT INTO `b_comments` VALUES ('42', '18', '0', '0', '赵云', '112121@qq.com', '恩 不错', '2020-06-08 14:40:44');
+INSERT INTO `b_comments` VALUES ('43', '9', '0', '0', '黄忠', '3960418@qq.com', '为什么没有内容啊', '2020-06-09 09:08:14');
+INSERT INTO `b_comments` VALUES ('44', '10', '0', '0', '元歌', '111@qq.com', '来咯', '2020-06-09 13:02:36');
+INSERT INTO `b_comments` VALUES ('45', '16', '0', '0', '赵云', '1243@163.com', '看看看咯', '2020-06-09 13:09:24');
 
 -- ----------------------------
 -- Table structure for b_msg_comments
@@ -210,7 +213,7 @@ CREATE TABLE `b_msg_comments` (
   `comment_content` text,
   `comment_time` datetime DEFAULT NULL,
   PRIMARY KEY (`comment_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_msg_comments
@@ -225,6 +228,14 @@ INSERT INTO `b_msg_comments` VALUES ('19', '0', '0', '蔡文姬', '12312@qq.com'
 INSERT INTO `b_msg_comments` VALUES ('20', '0', '0', '廉颇', '12312@qq.com', '顶', '2020-06-05 12:55:05');
 INSERT INTO `b_msg_comments` VALUES ('21', '19', '44', '黑夜男神', '395604192@qq.com', '@蔡文姬 可以的', '2020-06-05 12:59:59');
 INSERT INTO `b_msg_comments` VALUES ('22', '18', '44', '黑夜男神', '395604192@qq.com', '@牛肉干 发一下你的友链', '2020-06-05 13:00:45');
+INSERT INTO `b_msg_comments` VALUES ('23', '0', '0', '员工', '12312@qq.com', '来咯', '2020-06-09 12:59:58');
+INSERT INTO `b_msg_comments` VALUES ('24', '0', '0', '元歌', '134346@qq.com', '来看看咯', '2020-06-09 13:00:08');
+INSERT INTO `b_msg_comments` VALUES ('25', '0', '0', '元歌', '134346@qq.com', '来看看咯', '2020-06-09 13:00:08');
+INSERT INTO `b_msg_comments` VALUES ('26', '0', '0', '元歌', '134346@qq.com', '来看看咯', '2020-06-09 13:00:08');
+INSERT INTO `b_msg_comments` VALUES ('27', '0', '0', '元歌', '134346@qq.com', '来看看咯', '2020-06-09 13:00:08');
+INSERT INTO `b_msg_comments` VALUES ('28', '0', '0', '元歌', '134346@qq.com', '来看看咯', '2020-06-09 13:00:08');
+INSERT INTO `b_msg_comments` VALUES ('29', '0', '0', '元歌', '134346@qq.com', '来看看咯', '2020-06-09 13:00:08');
+INSERT INTO `b_msg_comments` VALUES ('30', '0', '0', '元歌', '134346@qq.com', '来看看咯', '2020-06-09 13:00:08');
 
 -- ----------------------------
 -- Table structure for b_related_links
@@ -295,7 +306,7 @@ CREATE TABLE `sys_login_logs` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `LOG_USER_LOGIN` FOREIGN KEY (`user_id`) REFERENCES `sys_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=331 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=340 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_login_logs
@@ -429,6 +440,15 @@ INSERT INTO `sys_login_logs` VALUES ('327', '44', '2020-06-05 09:27:43', 'localh
 INSERT INTO `sys_login_logs` VALUES ('328', '44', '2020-06-05 12:59:08', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
 INSERT INTO `sys_login_logs` VALUES ('329', '44', '2020-06-08 15:26:05', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
 INSERT INTO `sys_login_logs` VALUES ('330', '44', '2020-06-08 15:26:11', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('331', '44', '2020-06-11 12:28:05', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('332', '44', '2020-06-11 13:38:31', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('333', '44', '2020-06-11 13:38:36', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('334', '44', '2020-06-12 12:06:38', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('335', '44', '2020-06-12 12:06:42', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('336', '44', '2020-06-13 09:05:15', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('337', '44', '2020-06-13 10:10:29', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('338', '9', '2020-06-13 14:48:41', 'localhost', '本地登入', '登录成功！', '王者1', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('339', '44', '2020-06-13 14:49:22', 'localhost', '本地登入', '登录成功！', '黑夜男神', 'Windows 6.1', null);
 
 -- ----------------------------
 -- Table structure for sys_operation_logs
@@ -443,7 +463,7 @@ CREATE TABLE `sys_operation_logs` (
   `action_params` char(255) DEFAULT NULL,
   `action_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7050 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7356 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_operation_logs
@@ -7497,6 +7517,312 @@ INSERT INTO `sys_operation_logs` VALUES ('7046', '44', '黑夜男神', '[GET] /a
 INSERT INTO `sys_operation_logs` VALUES ('7047', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-08 16:34:23');
 INSERT INTO `sys_operation_logs` VALUES ('7048', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-08 16:40:42');
 INSERT INTO `sys_operation_logs` VALUES ('7049', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-08 16:40:42');
+INSERT INTO `sys_operation_logs` VALUES ('7050', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-11 12:28:06');
+INSERT INTO `sys_operation_logs` VALUES ('7051', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-06-11 12:28:06');
+INSERT INTO `sys_operation_logs` VALUES ('7052', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-06-11 12:28:06');
+INSERT INTO `sys_operation_logs` VALUES ('7053', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-11 12:28:10');
+INSERT INTO `sys_operation_logs` VALUES ('7054', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-11 12:52:00');
+INSERT INTO `sys_operation_logs` VALUES ('7055', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-11 12:52:00');
+INSERT INTO `sys_operation_logs` VALUES ('7056', '44', '黑夜男神', '[GET] /api/loginOut', '127.0.0.1', '', '2020-06-11 12:52:05');
+INSERT INTO `sys_operation_logs` VALUES ('7057', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-11 13:38:36');
+INSERT INTO `sys_operation_logs` VALUES ('7058', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-12 12:06:42');
+INSERT INTO `sys_operation_logs` VALUES ('7059', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-06-12 12:06:42');
+INSERT INTO `sys_operation_logs` VALUES ('7060', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-06-12 12:06:43');
+INSERT INTO `sys_operation_logs` VALUES ('7061', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-06-12 12:06:43');
+INSERT INTO `sys_operation_logs` VALUES ('7062', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-12 12:06:56');
+INSERT INTO `sys_operation_logs` VALUES ('7063', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-06-12 12:07:05');
+INSERT INTO `sys_operation_logs` VALUES ('7064', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-06-12 12:07:05');
+INSERT INTO `sys_operation_logs` VALUES ('7065', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-06-12 12:07:05');
+INSERT INTO `sys_operation_logs` VALUES ('7066', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-12 12:24:37');
+INSERT INTO `sys_operation_logs` VALUES ('7067', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-06-12 12:24:38');
+INSERT INTO `sys_operation_logs` VALUES ('7068', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-06-12 12:24:38');
+INSERT INTO `sys_operation_logs` VALUES ('7069', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-06-12 12:24:38');
+INSERT INTO `sys_operation_logs` VALUES ('7070', '44', '黑夜男神', '[POST] /api/single/uploadImage/', '127.0.0.1', '', '2020-06-12 12:24:48');
+INSERT INTO `sys_operation_logs` VALUES ('7071', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '127.0.0.1', '{\"title\":\"nodejs全栈开发你值得拥有3\",\"class_id\":2,\"tagsArr\":[1,2,3,4,5],\"cover_url\":\"/public/uploads/企业微信截图_15670744476158.png\",\"is_top\":true,\"content\":\"```\\n//和自定义过滤器一样,我们这里定义的是全局指令\\nVue.directive(\'focus\',{\\ninserted(el){\\nel.focus()\\n}\\n})\\n```\\n\\n```\\n<divid=\'a', '2020-06-12 12:24:58');
+INSERT INTO `sys_operation_logs` VALUES ('7072', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-12 12:25:03');
+INSERT INTO `sys_operation_logs` VALUES ('7073', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-06-12 12:25:06');
+INSERT INTO `sys_operation_logs` VALUES ('7074', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-06-12 12:25:06');
+INSERT INTO `sys_operation_logs` VALUES ('7075', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-06-12 12:25:06');
+INSERT INTO `sys_operation_logs` VALUES ('7076', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-12 12:29:37');
+INSERT INTO `sys_operation_logs` VALUES ('7077', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-12 13:04:32');
+INSERT INTO `sys_operation_logs` VALUES ('7078', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-12 13:08:06');
+INSERT INTO `sys_operation_logs` VALUES ('7079', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-12 13:17:28');
+INSERT INTO `sys_operation_logs` VALUES ('7080', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-12 13:23:54');
+INSERT INTO `sys_operation_logs` VALUES ('7081', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 09:05:16');
+INSERT INTO `sys_operation_logs` VALUES ('7082', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 09:05:27');
+INSERT INTO `sys_operation_logs` VALUES ('7083', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:10:30');
+INSERT INTO `sys_operation_logs` VALUES ('7084', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:12:39');
+INSERT INTO `sys_operation_logs` VALUES ('7085', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:12:39');
+INSERT INTO `sys_operation_logs` VALUES ('7086', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:14:56');
+INSERT INTO `sys_operation_logs` VALUES ('7087', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:14:56');
+INSERT INTO `sys_operation_logs` VALUES ('7088', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:14:56');
+INSERT INTO `sys_operation_logs` VALUES ('7089', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:15:31');
+INSERT INTO `sys_operation_logs` VALUES ('7090', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:15:32');
+INSERT INTO `sys_operation_logs` VALUES ('7091', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:15:32');
+INSERT INTO `sys_operation_logs` VALUES ('7092', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:15:52');
+INSERT INTO `sys_operation_logs` VALUES ('7093', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:15:52');
+INSERT INTO `sys_operation_logs` VALUES ('7094', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:15:52');
+INSERT INTO `sys_operation_logs` VALUES ('7095', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:17:32');
+INSERT INTO `sys_operation_logs` VALUES ('7096', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:17:32');
+INSERT INTO `sys_operation_logs` VALUES ('7097', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:17:32');
+INSERT INTO `sys_operation_logs` VALUES ('7098', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:18:28');
+INSERT INTO `sys_operation_logs` VALUES ('7099', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:18:28');
+INSERT INTO `sys_operation_logs` VALUES ('7100', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:18:28');
+INSERT INTO `sys_operation_logs` VALUES ('7101', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:18:52');
+INSERT INTO `sys_operation_logs` VALUES ('7102', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:18:53');
+INSERT INTO `sys_operation_logs` VALUES ('7103', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:18:53');
+INSERT INTO `sys_operation_logs` VALUES ('7104', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:21:06');
+INSERT INTO `sys_operation_logs` VALUES ('7105', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:21:06');
+INSERT INTO `sys_operation_logs` VALUES ('7106', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:21:06');
+INSERT INTO `sys_operation_logs` VALUES ('7107', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 10:50:03');
+INSERT INTO `sys_operation_logs` VALUES ('7108', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 10:50:03');
+INSERT INTO `sys_operation_logs` VALUES ('7109', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 10:50:04');
+INSERT INTO `sys_operation_logs` VALUES ('7110', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 11:07:30');
+INSERT INTO `sys_operation_logs` VALUES ('7111', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 11:07:31');
+INSERT INTO `sys_operation_logs` VALUES ('7112', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 11:07:31');
+INSERT INTO `sys_operation_logs` VALUES ('7113', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 11:09:08');
+INSERT INTO `sys_operation_logs` VALUES ('7114', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 11:09:08');
+INSERT INTO `sys_operation_logs` VALUES ('7115', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 11:09:09');
+INSERT INTO `sys_operation_logs` VALUES ('7116', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 11:09:18');
+INSERT INTO `sys_operation_logs` VALUES ('7117', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 11:09:18');
+INSERT INTO `sys_operation_logs` VALUES ('7118', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 11:09:18');
+INSERT INTO `sys_operation_logs` VALUES ('7119', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 11:09:57');
+INSERT INTO `sys_operation_logs` VALUES ('7120', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 11:09:57');
+INSERT INTO `sys_operation_logs` VALUES ('7121', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 11:09:58');
+INSERT INTO `sys_operation_logs` VALUES ('7122', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 11:33:54');
+INSERT INTO `sys_operation_logs` VALUES ('7123', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 11:33:55');
+INSERT INTO `sys_operation_logs` VALUES ('7124', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 11:33:55');
+INSERT INTO `sys_operation_logs` VALUES ('7125', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:03:52');
+INSERT INTO `sys_operation_logs` VALUES ('7126', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 12:03:52');
+INSERT INTO `sys_operation_logs` VALUES ('7127', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 12:03:52');
+INSERT INTO `sys_operation_logs` VALUES ('7128', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:04:28');
+INSERT INTO `sys_operation_logs` VALUES ('7129', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 12:04:28');
+INSERT INTO `sys_operation_logs` VALUES ('7130', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 12:04:28');
+INSERT INTO `sys_operation_logs` VALUES ('7131', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:05:09');
+INSERT INTO `sys_operation_logs` VALUES ('7132', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:06:00');
+INSERT INTO `sys_operation_logs` VALUES ('7133', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:06:51');
+INSERT INTO `sys_operation_logs` VALUES ('7134', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:07:16');
+INSERT INTO `sys_operation_logs` VALUES ('7135', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:08:30');
+INSERT INTO `sys_operation_logs` VALUES ('7136', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:08:47');
+INSERT INTO `sys_operation_logs` VALUES ('7137', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:08:54');
+INSERT INTO `sys_operation_logs` VALUES ('7138', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:10:44');
+INSERT INTO `sys_operation_logs` VALUES ('7139', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:10:50');
+INSERT INTO `sys_operation_logs` VALUES ('7140', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:12:27');
+INSERT INTO `sys_operation_logs` VALUES ('7141', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:22:56');
+INSERT INTO `sys_operation_logs` VALUES ('7142', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:23:20');
+INSERT INTO `sys_operation_logs` VALUES ('7143', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:27:30');
+INSERT INTO `sys_operation_logs` VALUES ('7144', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:28:02');
+INSERT INTO `sys_operation_logs` VALUES ('7145', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:33:01');
+INSERT INTO `sys_operation_logs` VALUES ('7146', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:38:07');
+INSERT INTO `sys_operation_logs` VALUES ('7147', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:39:07');
+INSERT INTO `sys_operation_logs` VALUES ('7148', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:39:55');
+INSERT INTO `sys_operation_logs` VALUES ('7149', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:49:42');
+INSERT INTO `sys_operation_logs` VALUES ('7150', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:56:11');
+INSERT INTO `sys_operation_logs` VALUES ('7151', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 12:58:17');
+INSERT INTO `sys_operation_logs` VALUES ('7152', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:06:10');
+INSERT INTO `sys_operation_logs` VALUES ('7153', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:06:36');
+INSERT INTO `sys_operation_logs` VALUES ('7154', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:06:49');
+INSERT INTO `sys_operation_logs` VALUES ('7155', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:07:07');
+INSERT INTO `sys_operation_logs` VALUES ('7156', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:07:31');
+INSERT INTO `sys_operation_logs` VALUES ('7157', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:49:31');
+INSERT INTO `sys_operation_logs` VALUES ('7158', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:49:38');
+INSERT INTO `sys_operation_logs` VALUES ('7159', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 13:54:04');
+INSERT INTO `sys_operation_logs` VALUES ('7160', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:05:12');
+INSERT INTO `sys_operation_logs` VALUES ('7161', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:06:45');
+INSERT INTO `sys_operation_logs` VALUES ('7162', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:07:16');
+INSERT INTO `sys_operation_logs` VALUES ('7163', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:10:01');
+INSERT INTO `sys_operation_logs` VALUES ('7164', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:10:13');
+INSERT INTO `sys_operation_logs` VALUES ('7165', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:17:29');
+INSERT INTO `sys_operation_logs` VALUES ('7166', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:17:46');
+INSERT INTO `sys_operation_logs` VALUES ('7167', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:18:24');
+INSERT INTO `sys_operation_logs` VALUES ('7168', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:18:56');
+INSERT INTO `sys_operation_logs` VALUES ('7169', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:22:05');
+INSERT INTO `sys_operation_logs` VALUES ('7170', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:23:24');
+INSERT INTO `sys_operation_logs` VALUES ('7171', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:24:00');
+INSERT INTO `sys_operation_logs` VALUES ('7172', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:24:11');
+INSERT INTO `sys_operation_logs` VALUES ('7173', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:31:24');
+INSERT INTO `sys_operation_logs` VALUES ('7174', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:31:24');
+INSERT INTO `sys_operation_logs` VALUES ('7175', '44', '黑夜男神', '[PUT] /api/user/updateUser', '127.0.0.1', '{\"user_id\":44,\"nick_name\":\"黑夜男神\",\"password\":\"123\",\"email\":\"395604192@qq.com\",\"phone\":\"110\",\"avatar\":\"https://uploadfile.huiyi8.com/up/25/70/a1/2570a194efbc9fcd2ac7f94530dfe482.jpg\",\"role_id\":[1,2,3]}', '2020-06-13 14:31:33');
+INSERT INTO `sys_operation_logs` VALUES ('7176', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:31:34');
+INSERT INTO `sys_operation_logs` VALUES ('7177', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:31:39');
+INSERT INTO `sys_operation_logs` VALUES ('7178', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:31:40');
+INSERT INTO `sys_operation_logs` VALUES ('7179', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:31:40');
+INSERT INTO `sys_operation_logs` VALUES ('7180', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:31:55');
+INSERT INTO `sys_operation_logs` VALUES ('7181', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:31:55');
+INSERT INTO `sys_operation_logs` VALUES ('7182', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:32:02');
+INSERT INTO `sys_operation_logs` VALUES ('7183', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:32:03');
+INSERT INTO `sys_operation_logs` VALUES ('7184', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:32:03');
+INSERT INTO `sys_operation_logs` VALUES ('7185', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:32:05');
+INSERT INTO `sys_operation_logs` VALUES ('7186', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:32:05');
+INSERT INTO `sys_operation_logs` VALUES ('7187', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:32:05');
+INSERT INTO `sys_operation_logs` VALUES ('7188', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:32:14');
+INSERT INTO `sys_operation_logs` VALUES ('7189', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:32:14');
+INSERT INTO `sys_operation_logs` VALUES ('7190', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:32:16');
+INSERT INTO `sys_operation_logs` VALUES ('7191', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:35:02');
+INSERT INTO `sys_operation_logs` VALUES ('7192', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:35:02');
+INSERT INTO `sys_operation_logs` VALUES ('7193', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:35:43');
+INSERT INTO `sys_operation_logs` VALUES ('7194', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:35:44');
+INSERT INTO `sys_operation_logs` VALUES ('7195', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:36:12');
+INSERT INTO `sys_operation_logs` VALUES ('7196', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:36:13');
+INSERT INTO `sys_operation_logs` VALUES ('7197', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:36:51');
+INSERT INTO `sys_operation_logs` VALUES ('7198', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:36:52');
+INSERT INTO `sys_operation_logs` VALUES ('7199', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:37:59');
+INSERT INTO `sys_operation_logs` VALUES ('7200', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:38:02');
+INSERT INTO `sys_operation_logs` VALUES ('7201', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:38:03');
+INSERT INTO `sys_operation_logs` VALUES ('7202', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:41:13');
+INSERT INTO `sys_operation_logs` VALUES ('7203', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:41:14');
+INSERT INTO `sys_operation_logs` VALUES ('7204', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:41:14');
+INSERT INTO `sys_operation_logs` VALUES ('7205', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:45:41');
+INSERT INTO `sys_operation_logs` VALUES ('7206', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:45:41');
+INSERT INTO `sys_operation_logs` VALUES ('7207', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:45:41');
+INSERT INTO `sys_operation_logs` VALUES ('7208', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:46:17');
+INSERT INTO `sys_operation_logs` VALUES ('7209', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:46:18');
+INSERT INTO `sys_operation_logs` VALUES ('7210', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:46:18');
+INSERT INTO `sys_operation_logs` VALUES ('7211', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:46:29');
+INSERT INTO `sys_operation_logs` VALUES ('7212', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:46:30');
+INSERT INTO `sys_operation_logs` VALUES ('7213', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:46:30');
+INSERT INTO `sys_operation_logs` VALUES ('7214', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:47:08');
+INSERT INTO `sys_operation_logs` VALUES ('7215', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:47:09');
+INSERT INTO `sys_operation_logs` VALUES ('7216', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:47:09');
+INSERT INTO `sys_operation_logs` VALUES ('7217', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:47:24');
+INSERT INTO `sys_operation_logs` VALUES ('7218', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:47:24');
+INSERT INTO `sys_operation_logs` VALUES ('7219', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:47:25');
+INSERT INTO `sys_operation_logs` VALUES ('7220', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:47:35');
+INSERT INTO `sys_operation_logs` VALUES ('7221', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:47:35');
+INSERT INTO `sys_operation_logs` VALUES ('7222', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:47:36');
+INSERT INTO `sys_operation_logs` VALUES ('7223', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:47:37');
+INSERT INTO `sys_operation_logs` VALUES ('7224', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:47:38');
+INSERT INTO `sys_operation_logs` VALUES ('7225', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:47:38');
+INSERT INTO `sys_operation_logs` VALUES ('7226', '44', '黑夜男神', '[PUT] /api/user/updateUser', '127.0.0.1', '{\"user_id\":44,\"nick_name\":\"黑夜男神\",\"password\":\"123\",\"email\":\"395604192@qq.com\",\"phone\":\"110\",\"avatar\":\"https://uploadfile.huiyi8.com/up/25/70/a1/2570a194efbc9fcd2ac7f94530dfe482.jpg\",\"role_id\":[1,2]}', '2020-06-13 14:47:46');
+INSERT INTO `sys_operation_logs` VALUES ('7227', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:47:47');
+INSERT INTO `sys_operation_logs` VALUES ('7228', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:47:49');
+INSERT INTO `sys_operation_logs` VALUES ('7229', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:47:49');
+INSERT INTO `sys_operation_logs` VALUES ('7230', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:47:50');
+INSERT INTO `sys_operation_logs` VALUES ('7231', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:48:02');
+INSERT INTO `sys_operation_logs` VALUES ('7232', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:48:07');
+INSERT INTO `sys_operation_logs` VALUES ('7233', '44', '黑夜男神', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:48:10');
+INSERT INTO `sys_operation_logs` VALUES ('7234', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:48:12');
+INSERT INTO `sys_operation_logs` VALUES ('7235', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:48:12');
+INSERT INTO `sys_operation_logs` VALUES ('7236', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:48:20');
+INSERT INTO `sys_operation_logs` VALUES ('7237', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:48:21');
+INSERT INTO `sys_operation_logs` VALUES ('7238', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:48:22');
+INSERT INTO `sys_operation_logs` VALUES ('7239', '44', '黑夜男神', '[GET] /api/loginOut', '127.0.0.1', '', '2020-06-13 14:48:30');
+INSERT INTO `sys_operation_logs` VALUES ('7240', '9', '王者1', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:48:41');
+INSERT INTO `sys_operation_logs` VALUES ('7241', '9', '王者1', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:48:50');
+INSERT INTO `sys_operation_logs` VALUES ('7242', '9', '王者1', '[GET] /api/loginLogs/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:48:54');
+INSERT INTO `sys_operation_logs` VALUES ('7243', '9', '王者1', '[GET] /api/loginOut', '127.0.0.1', '', '2020-06-13 14:49:07');
+INSERT INTO `sys_operation_logs` VALUES ('7244', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:49:23');
+INSERT INTO `sys_operation_logs` VALUES ('7245', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:49:27');
+INSERT INTO `sys_operation_logs` VALUES ('7246', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:49:36');
+INSERT INTO `sys_operation_logs` VALUES ('7247', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:49:39');
+INSERT INTO `sys_operation_logs` VALUES ('7248', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '', '2020-06-13 14:50:07');
+INSERT INTO `sys_operation_logs` VALUES ('7249', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '', '2020-06-13 14:50:07');
+INSERT INTO `sys_operation_logs` VALUES ('7250', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '127.0.0.1', '{\"article_id\":\"16\"}', '2020-06-13 14:50:08');
+INSERT INTO `sys_operation_logs` VALUES ('7251', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:50:12');
+INSERT INTO `sys_operation_logs` VALUES ('7252', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:50:15');
+INSERT INTO `sys_operation_logs` VALUES ('7253', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:50:17');
+INSERT INTO `sys_operation_logs` VALUES ('7254', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:50:19');
+INSERT INTO `sys_operation_logs` VALUES ('7255', '44', '黑夜男神', '[GET] /api/blogs/relatedLinksList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:50:20');
+INSERT INTO `sys_operation_logs` VALUES ('7256', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:50:30');
+INSERT INTO `sys_operation_logs` VALUES ('7257', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:50:30');
+INSERT INTO `sys_operation_logs` VALUES ('7258', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:50:31');
+INSERT INTO `sys_operation_logs` VALUES ('7259', '44', '黑夜男神', '[GET] /api/role/getRoleTreePer/', '127.0.0.1', '{\"role_id\":\"1\"}', '2020-06-13 14:50:35');
+INSERT INTO `sys_operation_logs` VALUES ('7260', '44', '黑夜男神', '[GET] /api/menu/sysMenutree/', '127.0.0.1', '', '2020-06-13 14:50:35');
+INSERT INTO `sys_operation_logs` VALUES ('7261', '44', '黑夜男神', '[GET] /api/role/getRoleTreePer/', '127.0.0.1', '{\"role_id\":\"1\"}', '2020-06-13 14:50:58');
+INSERT INTO `sys_operation_logs` VALUES ('7262', '44', '黑夜男神', '[GET] /api/menu/sysMenutree/', '127.0.0.1', '', '2020-06-13 14:50:58');
+INSERT INTO `sys_operation_logs` VALUES ('7263', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:51:03');
+INSERT INTO `sys_operation_logs` VALUES ('7264', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:51:03');
+INSERT INTO `sys_operation_logs` VALUES ('7265', '44', '黑夜男神', '[GET] /api/role/getRoleTreePer/', '127.0.0.1', '{\"role_id\":\"1\"}', '2020-06-13 14:51:22');
+INSERT INTO `sys_operation_logs` VALUES ('7266', '44', '黑夜男神', '[GET] /api/menu/sysMenutree/', '127.0.0.1', '', '2020-06-13 14:51:22');
+INSERT INTO `sys_operation_logs` VALUES ('7267', '44', '黑夜男神', '[POST] /api/role/setRoleTreePer/', '127.0.0.1', '{\"res_idArr\":[2,7,83,84,85,96,9,90,89,95,93,10,86,97,87,88,92,94,4,8,98,38,1,5,106,40,99,108,101,102,104,103,35,41,80,82],\"role_id\":1}', '2020-06-13 14:51:29');
+INSERT INTO `sys_operation_logs` VALUES ('7268', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 14:51:34');
+INSERT INTO `sys_operation_logs` VALUES ('7269', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:51:34');
+INSERT INTO `sys_operation_logs` VALUES ('7270', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:51:34');
+INSERT INTO `sys_operation_logs` VALUES ('7271', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 14:51:39');
+INSERT INTO `sys_operation_logs` VALUES ('7272', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:51:39');
+INSERT INTO `sys_operation_logs` VALUES ('7273', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 14:51:39');
+INSERT INTO `sys_operation_logs` VALUES ('7274', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:51:43');
+INSERT INTO `sys_operation_logs` VALUES ('7275', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 14:51:51');
+INSERT INTO `sys_operation_logs` VALUES ('7276', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:52:20');
+INSERT INTO `sys_operation_logs` VALUES ('7277', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:52:20');
+INSERT INTO `sys_operation_logs` VALUES ('7278', '44', '黑夜男神', '[PUT] /api/menu/updatedMenu', '127.0.0.1', '{\"type\":3,\"res_id\":106,\"res_name\":\"添加文章\",\"parent_id\":5,\"component\":\"blogArticleDetail\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":0,\"state\":1,\"perms\":\"blog:article:add\"}', '2020-06-13 14:52:55');
+INSERT INTO `sys_operation_logs` VALUES ('7279', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:52:56');
+INSERT INTO `sys_operation_logs` VALUES ('7280', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:52:56');
+INSERT INTO `sys_operation_logs` VALUES ('7281', '44', '黑夜男神', '[POST] /api/menu/createMenu', '127.0.0.1', '{\"type\":3,\"res_id\":\"\",\"res_name\":\"删除\",\"parent_id\":5,\"component\":\"\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":\"\",\"state\":1,\"perms\":\"blog:article:delete\"}', '2020-06-13 14:53:44');
+INSERT INTO `sys_operation_logs` VALUES ('7282', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:53:44');
+INSERT INTO `sys_operation_logs` VALUES ('7283', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:53:45');
+INSERT INTO `sys_operation_logs` VALUES ('7284', '44', '黑夜男神', '[PUT] /api/menu/updatedMenu', '127.0.0.1', '{\"type\":3,\"res_id\":106,\"res_name\":\"添加文章\",\"parent_id\":5,\"component\":\"/\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":0,\"state\":1,\"perms\":\"blog:article:add\"}', '2020-06-13 14:53:54');
+INSERT INTO `sys_operation_logs` VALUES ('7285', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:53:54');
+INSERT INTO `sys_operation_logs` VALUES ('7286', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:53:54');
+INSERT INTO `sys_operation_logs` VALUES ('7287', '44', '黑夜男神', '[PUT] /api/menu/updatedMenu', '127.0.0.1', '{\"type\":3,\"res_id\":109,\"res_name\":\"删除\",\"parent_id\":5,\"component\":\"/\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":0,\"state\":1,\"perms\":\"blog:article:delete\"}', '2020-06-13 14:53:58');
+INSERT INTO `sys_operation_logs` VALUES ('7288', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:53:58');
+INSERT INTO `sys_operation_logs` VALUES ('7289', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:53:59');
+INSERT INTO `sys_operation_logs` VALUES ('7290', '44', '黑夜男神', '[PUT] /api/menu/updatedMenu', '127.0.0.1', '{\"type\":3,\"res_id\":106,\"res_name\":\"添加文章\",\"parent_id\":5,\"component\":\"/\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":0,\"state\":1,\"perms\":\"blog:article:add\"}', '2020-06-13 14:54:44');
+INSERT INTO `sys_operation_logs` VALUES ('7291', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:54:44');
+INSERT INTO `sys_operation_logs` VALUES ('7292', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:54:45');
+INSERT INTO `sys_operation_logs` VALUES ('7293', '44', '黑夜男神', '[POST] /api/menu/createMenu', '127.0.0.1', '{\"type\":3,\"res_id\":\"\",\"res_name\":\"更新\",\"parent_id\":5,\"component\":\"\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":\"\",\"state\":1,\"perms\":\"blog:article:update\"}', '2020-06-13 14:55:15');
+INSERT INTO `sys_operation_logs` VALUES ('7294', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:55:16');
+INSERT INTO `sys_operation_logs` VALUES ('7295', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:55:16');
+INSERT INTO `sys_operation_logs` VALUES ('7296', '44', '黑夜男神', '[PUT] /api/menu/updatedMenu', '127.0.0.1', '{\"type\":3,\"res_id\":106,\"res_name\":\"添加\",\"parent_id\":5,\"component\":\"/\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":0,\"state\":1,\"perms\":\"blog:article:add\"}', '2020-06-13 14:55:20');
+INSERT INTO `sys_operation_logs` VALUES ('7297', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:55:21');
+INSERT INTO `sys_operation_logs` VALUES ('7298', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:55:21');
+INSERT INTO `sys_operation_logs` VALUES ('7299', '44', '黑夜男神', '[POST] /api/menu/createMenu', '127.0.0.1', '{\"type\":3,\"res_id\":\"\",\"res_name\":\"列表\",\"parent_id\":5,\"component\":\"/\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"fafa-wpexplorer\",\"sort\":\"\",\"state\":1,\"perms\":\"blog:article:list\"}', '2020-06-13 14:56:52');
+INSERT INTO `sys_operation_logs` VALUES ('7300', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:56:53');
+INSERT INTO `sys_operation_logs` VALUES ('7301', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:56:53');
+INSERT INTO `sys_operation_logs` VALUES ('7302', '44', '黑夜男神', '[PUT] /api/menu/updatedMenu', '127.0.0.1', '{\"type\":3,\"res_id\":110,\"res_name\":\"更新\",\"parent_id\":5,\"component\":\"/\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":0,\"state\":1,\"perms\":\"blog:article:update\"}', '2020-06-13 14:56:59');
+INSERT INTO `sys_operation_logs` VALUES ('7303', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 14:56:59');
+INSERT INTO `sys_operation_logs` VALUES ('7304', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 14:56:59');
+INSERT INTO `sys_operation_logs` VALUES ('7305', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:01:30');
+INSERT INTO `sys_operation_logs` VALUES ('7306', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:01:37');
+INSERT INTO `sys_operation_logs` VALUES ('7307', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 15:01:37');
+INSERT INTO `sys_operation_logs` VALUES ('7308', '44', '黑夜男神', '[POST] /api/menu/createMenu', '127.0.0.1', '{\"type\":3,\"res_id\":\"\",\"res_name\":\"编辑\",\"parent_id\":5,\"component\":\"\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":\"\",\"state\":1,\"perms\":\"blog:article:edit\"}', '2020-06-13 15:04:51');
+INSERT INTO `sys_operation_logs` VALUES ('7309', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 15:04:52');
+INSERT INTO `sys_operation_logs` VALUES ('7310', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:04:52');
+INSERT INTO `sys_operation_logs` VALUES ('7311', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 15:05:09');
+INSERT INTO `sys_operation_logs` VALUES ('7312', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:05:10');
+INSERT INTO `sys_operation_logs` VALUES ('7313', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:05:11');
+INSERT INTO `sys_operation_logs` VALUES ('7314', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 15:05:31');
+INSERT INTO `sys_operation_logs` VALUES ('7315', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:05:32');
+INSERT INTO `sys_operation_logs` VALUES ('7316', '44', '黑夜男神', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 15:05:45');
+INSERT INTO `sys_operation_logs` VALUES ('7317', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 15:05:46');
+INSERT INTO `sys_operation_logs` VALUES ('7318', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:05:47');
+INSERT INTO `sys_operation_logs` VALUES ('7319', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 15:05:47');
+INSERT INTO `sys_operation_logs` VALUES ('7320', '44', '黑夜男神', '[GET] /api/role/getRoleTreePer/', '127.0.0.1', '{\"role_id\":\"1\"}', '2020-06-13 15:05:48');
+INSERT INTO `sys_operation_logs` VALUES ('7321', '44', '黑夜男神', '[GET] /api/menu/sysMenutree/', '127.0.0.1', '', '2020-06-13 15:05:49');
+INSERT INTO `sys_operation_logs` VALUES ('7322', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"1\"}', '2020-06-13 15:06:13');
+INSERT INTO `sys_operation_logs` VALUES ('7323', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:06:13');
+INSERT INTO `sys_operation_logs` VALUES ('7324', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 15:06:14');
+INSERT INTO `sys_operation_logs` VALUES ('7325', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:06:14');
+INSERT INTO `sys_operation_logs` VALUES ('7326', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 15:07:13');
+INSERT INTO `sys_operation_logs` VALUES ('7327', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 15:07:14');
+INSERT INTO `sys_operation_logs` VALUES ('7328', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 15:07:29');
+INSERT INTO `sys_operation_logs` VALUES ('7329', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 15:07:30');
+INSERT INTO `sys_operation_logs` VALUES ('7330', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:07:34');
+INSERT INTO `sys_operation_logs` VALUES ('7331', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 15:09:00');
+INSERT INTO `sys_operation_logs` VALUES ('7332', '44', '黑夜男神', '[GET] /api/user/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:09:00');
+INSERT INTO `sys_operation_logs` VALUES ('7333', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 15:09:01');
+INSERT INTO `sys_operation_logs` VALUES ('7334', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 15:09:01');
+INSERT INTO `sys_operation_logs` VALUES ('7335', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:09:01');
+INSERT INTO `sys_operation_logs` VALUES ('7336', '44', '黑夜男神', '[GET] /api/role/getRoleTreePer/', '127.0.0.1', '{\"role_id\":\"1\"}', '2020-06-13 15:09:04');
+INSERT INTO `sys_operation_logs` VALUES ('7337', '44', '黑夜男神', '[GET] /api/menu/sysMenutree/', '127.0.0.1', '', '2020-06-13 15:09:05');
+INSERT INTO `sys_operation_logs` VALUES ('7338', '44', '黑夜男神', '[POST] /api/role/setRoleTreePer/', '127.0.0.1', '{\"res_idArr\":[2,7,83,84,85,96,9,90,89,95,93,10,86,87,97,88,92,94,4,8,98,38,1,5,106,109,110,111,112,40,99,108,101,104,102,103,35,41,80,82],\"role_id\":1}', '2020-06-13 15:09:38');
+INSERT INTO `sys_operation_logs` VALUES ('7339', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:09:40');
+INSERT INTO `sys_operation_logs` VALUES ('7340', '44', '黑夜男神', '[GET] /api/getUserMenuList', '127.0.0.1', '', '2020-06-13 15:09:42');
+INSERT INTO `sys_operation_logs` VALUES ('7341', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:09:43');
+INSERT INTO `sys_operation_logs` VALUES ('7342', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:09:44');
+INSERT INTO `sys_operation_logs` VALUES ('7343', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:09:46');
+INSERT INTO `sys_operation_logs` VALUES ('7344', '44', '黑夜男神', '[GET] /api/blogs/articleList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:09:48');
+INSERT INTO `sys_operation_logs` VALUES ('7345', '44', '黑夜男神', '[GET] /api/operationLos/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 15:10:03');
+INSERT INTO `sys_operation_logs` VALUES ('7346', '44', '黑夜男神', '[GET] /api/loginLogs/list', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 15:10:05');
+INSERT INTO `sys_operation_logs` VALUES ('7347', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-13 15:10:49');
+INSERT INTO `sys_operation_logs` VALUES ('7348', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:10:49');
+INSERT INTO `sys_operation_logs` VALUES ('7349', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 15:10:51');
+INSERT INTO `sys_operation_logs` VALUES ('7350', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:10:51');
+INSERT INTO `sys_operation_logs` VALUES ('7351', '44', '黑夜男神', '[PUT] /api/menu/updatedMenu', '127.0.0.1', '{\"type\":3,\"res_id\":112,\"res_name\":\"编辑\",\"parent_id\":5,\"component\":\"/\",\"description\":\"\",\"res_code\":\"\",\"res_icon\":\"\",\"sort\":0,\"state\":1,\"perms\":\"blog:article:edit\"}', '2020-06-13 15:11:10');
+INSERT INTO `sys_operation_logs` VALUES ('7352', '44', '黑夜男神', '[GET] /api/menu/list/', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"treeId\":\"5\"}', '2020-06-13 15:11:10');
+INSERT INTO `sys_operation_logs` VALUES ('7353', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '127.0.0.1', '', '2020-06-13 15:11:10');
+INSERT INTO `sys_operation_logs` VALUES ('7354', '44', '黑夜男神', '[GET] /api/blogs/relatedLinksList', '127.0.0.1', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-13 15:12:34');
+INSERT INTO `sys_operation_logs` VALUES ('7355', '44', '黑夜男神', '[GET] /api/role/list', '127.0.0.1', '', '2020-06-13 15:13:17');
 
 -- ----------------------------
 -- Table structure for sys_resource
@@ -7516,7 +7842,7 @@ CREATE TABLE `sys_resource` (
   `sort` bigint(20) DEFAULT NULL,
   `perms` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`res_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_resource
@@ -7556,8 +7882,12 @@ INSERT INTO `sys_resource` VALUES ('101', '0', '网站功能', 'el-icon-coin', '
 INSERT INTO `sys_resource` VALUES ('102', '101', '友情链接', 'fa fa-chain', '2020-05-13 19:04:46', '1', '', '2', 'relatedLinksList', '', '0', '');
 INSERT INTO `sys_resource` VALUES ('103', '101', '留言管理', '', '2020-05-13 19:09:14', '1', '', '2', 'messageComments', '', '0', '');
 INSERT INTO `sys_resource` VALUES ('104', '101', '广告管理', '', '2020-05-13 19:09:39', '1', '', '2', '', '', '0', '');
-INSERT INTO `sys_resource` VALUES ('106', '5', '添加文章', '', '2020-05-14 16:00:43', '1', '', '3', 'blogArticleDetail', '', '0', 'add');
+INSERT INTO `sys_resource` VALUES ('106', '5', '添加', '', '2020-05-14 16:00:43', '1', '', '3', '/', '', '0', 'blog:article:add');
 INSERT INTO `sys_resource` VALUES ('108', '1', '评论管理', 'el-icon-chat-dot-round', '2020-05-20 17:02:28', '1', 'pl', '2', 'blogCommentsList', '', '34', '');
+INSERT INTO `sys_resource` VALUES ('109', '5', '删除', '', '2020-06-13 14:53:44', '1', '', '3', '/', '', '0', 'blog:article:delete');
+INSERT INTO `sys_resource` VALUES ('110', '5', '更新', '', '2020-06-13 14:55:15', '1', '', '3', '/', '', '0', 'blog:article:update');
+INSERT INTO `sys_resource` VALUES ('111', '5', '列表', 'fa fa-wpexplorer', '2020-06-13 14:56:52', '1', '', '3', '/', '', '0', 'blog:article:list');
+INSERT INTO `sys_resource` VALUES ('112', '5', '编辑', '', '2020-06-13 15:04:51', '1', '', '3', '/', '', '0', 'blog:article:edit');
 
 -- ----------------------------
 -- Table structure for sys_role
@@ -7592,7 +7922,7 @@ CREATE TABLE `sys_role_permmision` (
   KEY `res_id` (`res_id`),
   CONSTRAINT `FK_sys_res` FOREIGN KEY (`res_id`) REFERENCES `sys_resource` (`res_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_sys_role` FOREIGN KEY (`role_id`) REFERENCES `sys_role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=832 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=908 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_role_permmision
@@ -7611,40 +7941,46 @@ INSERT INTO `sys_role_permmision` VALUES ('662', '2', '97', null);
 INSERT INTO `sys_role_permmision` VALUES ('664', '2', '4', null);
 INSERT INTO `sys_role_permmision` VALUES ('665', '2', '8', null);
 INSERT INTO `sys_role_permmision` VALUES ('666', '2', '98', null);
-INSERT INTO `sys_role_permmision` VALUES ('798', '1', '2', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('799', '1', '7', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('800', '1', '84', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('801', '1', '85', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('802', '1', '96', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('803', '1', '9', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('804', '1', '90', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('805', '1', '89', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('806', '1', '95', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('807', '1', '93', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('808', '1', '10', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('809', '1', '86', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('810', '1', '97', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('811', '1', '87', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('812', '1', '88', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('813', '1', '92', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('814', '1', '94', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('815', '1', '4', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('816', '1', '8', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('817', '1', '98', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('818', '1', '38', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('819', '1', '1', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('820', '1', '5', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('821', '1', '40', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('822', '1', '99', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('823', '1', '108', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('824', '1', '101', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('825', '1', '102', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('826', '1', '104', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('827', '1', '103', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('828', '1', '35', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('829', '1', '41', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('830', '1', '80', '2020-06-05 09:24:28');
-INSERT INTO `sys_role_permmision` VALUES ('831', '1', '82', '2020-06-05 09:24:28');
+INSERT INTO `sys_role_permmision` VALUES ('868', '1', '2', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('869', '1', '7', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('870', '1', '83', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('871', '1', '84', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('872', '1', '85', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('873', '1', '96', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('874', '1', '9', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('875', '1', '90', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('876', '1', '89', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('877', '1', '95', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('878', '1', '93', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('879', '1', '10', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('880', '1', '86', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('881', '1', '87', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('882', '1', '97', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('883', '1', '88', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('884', '1', '92', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('885', '1', '94', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('886', '1', '4', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('887', '1', '8', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('888', '1', '98', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('889', '1', '38', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('890', '1', '1', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('891', '1', '5', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('892', '1', '106', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('893', '1', '109', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('894', '1', '110', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('895', '1', '111', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('896', '1', '112', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('897', '1', '40', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('898', '1', '99', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('899', '1', '108', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('900', '1', '101', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('901', '1', '104', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('902', '1', '102', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('903', '1', '103', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('904', '1', '35', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('905', '1', '41', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('906', '1', '80', '2020-06-13 15:09:38');
+INSERT INTO `sys_role_permmision` VALUES ('907', '1', '82', '2020-06-13 15:09:38');
 
 -- ----------------------------
 -- Table structure for sys_user
@@ -7698,7 +8034,7 @@ CREATE TABLE `sys_user_role` (
   KEY `role_id` (`role_id`),
   CONSTRAINT `FK_sys_role_id` FOREIGN KEY (`role_id`) REFERENCES `sys_role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_sys_user_id` FOREIGN KEY (`user_id`) REFERENCES `sys_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_user_role
@@ -7723,3 +8059,4 @@ INSERT INTO `sys_user_role` VALUES ('50', '41', '5');
 INSERT INTO `sys_user_role` VALUES ('51', '45', '5');
 INSERT INTO `sys_user_role` VALUES ('52', '46', '5');
 INSERT INTO `sys_user_role` VALUES ('53', '47', '3');
+INSERT INTO `sys_user_role` VALUES ('54', '44', '2');
