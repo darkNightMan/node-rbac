@@ -30,8 +30,6 @@ class UserController {
     try {
       let _data = await UserServer.login(phone)
       let dataLog = {
-        user_id: _data.user_id,
-        user_name: _data.nick_name,
         login_ip: env === 'dev'? req.hostname : req.headers.remoteIP,
         login_address: env === 'dev' ? '本地登入' : '未知',
         login_agent: req.agent
@@ -57,6 +55,8 @@ class UserController {
         userInfo: _data,
         admin: true,
       }
+      dataLog.user_id = _data.user_id,
+      dataLog.user_name = _data.nick_name,
       dataLog.login_description = successMsg['LOGING_SUCCESS']
       // 登录记录
       await SysLogServer.insert(dataLog)
