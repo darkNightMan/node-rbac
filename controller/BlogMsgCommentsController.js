@@ -34,7 +34,7 @@ class BlogMsgCommentsController {
   async create (req, res) {
     let commentsInfo = {
       parent_id: req.body.parent_id || 0,
-      user_id: req.userInfo ? req.userInfo.user_id : '',
+      user_id: req.userInfo ? req.userInfo.user_id : null,
       comment_author_email: req.body.comment_author_email,
       comment_content: req.body.comment_content,
       comment_author: req.body.comment_author,
