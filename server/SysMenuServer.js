@@ -187,7 +187,6 @@ class SysMenuServer {
       // group: 'perms',
       plain: true
     })
-    console.log(perms, 'permspermspermspermspermspermspermspermspermspermspermspermsperms')
     return perms.toJSON().sys_resources
   }
   // 添加菜单
