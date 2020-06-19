@@ -164,7 +164,7 @@ class BlogArticleServer {
           as: 'article_class'
         },
       ],
-      order: [['create_time']],
+      order: [['create_time', 'DESC']],
       limit: 8,
     })
     return data

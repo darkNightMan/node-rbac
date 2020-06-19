@@ -21,6 +21,14 @@ class BlogClassController {
       })
     }
   }
+   // 列表
+  async listAll (req, res){
+    let userid = req.userInfo ? req.userInfo.user_id : ''// 获取存在通过token校验的用户
+    let _data = await BlogClassServer.listAll({ user_id: userid}) // 用户表  
+    if (_data) {
+      res.R.ok(_data)
+    }
+  }
   // 创建
   async create (req, res) {
     let userid = req.userInfo ? req.userInfo.user_id : ''// 获取存在通过token校验的用户

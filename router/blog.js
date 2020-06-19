@@ -11,6 +11,7 @@ module.exports = function (app) {
   app.get('/api/articles/filedList', BlogArticleController.filedList)
   app.get('/api/articlesClass/list', BlogClassController.list)
   app.get('/api/articlesTags/list', BlogTagsController.list)
+  app.get('/api/articlesTags/listAll', BlogTagsController.listAll)
   app.get('/api/articles/detail', BlogArticleController.findOne)
   app.post('/api/articlesComment/create', BlogCommentsController.create)
   app.get('/api/articlesComment/list', BlogCommentsController.findArticleComment)

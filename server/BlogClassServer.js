@@ -31,6 +31,21 @@ class BlogClassServer {
       count: _data.count
     }
   }
+  // 获取所有列表
+  async listAll(conditions) {
+    let { user_id = '' } = conditions
+  
+    let where = {}
+    if (conditions) {
+      if (user_id) {
+        where['user_id']= user_id
+      }
+    }
+    let _data = await BlogClassModel.findAll({ where: where})
+    return {
+      list: _data
+    }
+  }
   // 添加
   async create(data) {
     let classArticle = await BlogClassModel.create({
