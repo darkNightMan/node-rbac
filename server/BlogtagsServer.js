@@ -25,6 +25,20 @@ class BlogClassServer {
       count: _data.count
     }
   }
+  // 获取所有标签
+  async listAll(conditions) {
+    let { user_id } = conditions
+    let where = {}
+    if (conditions) {
+      if (user_id) {
+        where['user_id']= conditions.user_id
+      }
+    }
+    let _data = await BlogTagsModel.findAll({ where: where})
+    return {
+      list:_data
+    }
+  }
   // 添加
   async create(data) {
     let tags = await BlogTagsModel.create({

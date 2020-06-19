@@ -11,7 +11,7 @@ class BlogClassController {
   async list (req, res){
     let userid = req.userInfo ? req.userInfo.user_id : ''// 获取存在通过token校验的用户
     const { pageParams, conditions } = offsetPage(req.query)
-    let _data = await BlogtagsServer.list(pageParams, Object.assign({ user_id: userid}, conditions)) // 用户表  
+    let _data = await BlogtagsServer.list(pageParams, Object.assign({ user_id: userid}, conditions))
     if (_data) {
       res.R.ok({
         list: _data.list,
@@ -20,6 +20,11 @@ class BlogClassController {
         pageSize: pageParams.pageSize
       })
     }
+  }
+  async listAll (req, res){
+    let userid = req.userInfo ? req.userInfo.user_id : ''// 获取存在通过token校验的用户
+    let _data = await BlogtagsServer.listAll({user_id: userid}) 
+    res.R.ok(_data)
   }
   // 创建
   async create (req, res) {
