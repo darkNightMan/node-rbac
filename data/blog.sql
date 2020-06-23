@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50562
 File Encoding         : 65001
 
-Date: 2020-06-23 19:26:58
+Date: 2020-06-23 19:37:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -43,7 +43,7 @@ INSERT INTO `b_article` VALUES ('18', 'Vuex辅助函数', '44', '1', '1', '3', '
 INSERT INTO `b_article` VALUES ('19', '链表结构', '44', '1', '1', '3', '2020-05-15 12:05:03', '2020-06-23 09:32:27', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
 INSERT INTO `b_article` VALUES ('20', 'js弹力器', '44', '1', '1', '3', '2020-05-15 12:06:29', '2020-06-23 09:32:47', '0', '/public/uploads/timg.jpg');
 INSERT INTO `b_article` VALUES ('21', 'Push API实现消息推送', '44', '1', '1', '4', '2020-05-15 12:23:14', '2020-06-23 18:04:08', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
-INSERT INTO `b_article` VALUES ('22', 'vue-bus 组件实现非父子组件通信(及需注意地方)', '44', '1', '1', '1', '2020-05-15 12:25:57', '2020-06-23 09:33:24', '0', '/public/uploads/5ba338b158474650.jpg');
+INSERT INTO `b_article` VALUES ('22', 'vue-bus 组件实现非父子组件通信(及需注意地方)', '44', '1', '1', '1', '2019-05-01 09:33:24', '2019-05-01 09:33:24', '0', '/public/uploads/5ba338b158474650.jpg');
 INSERT INTO `b_article` VALUES ('23', 'js 观察者模式', '44', '1', '0', '2', '2020-05-15 12:26:55', '2020-06-23 09:34:20', '0', '/public/uploads/u=4180093578,3682525324&fm=193.jpg');
 INSERT INTO `b_article` VALUES ('24', 'vuex', '44', '1', '1', '1', '2020-05-15 13:11:52', '2020-06-23 09:33:57', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
 INSERT INTO `b_article` VALUES ('26', 'node代理配置', '44', '2', '0', '1', '2020-05-15 13:16:50', '2020-06-23 09:34:43', '0', '/public/uploads/u=1047114984,3765510098&fm=26&gp=0.jpg');
@@ -54,23 +54,23 @@ INSERT INTO `b_article` VALUES ('40', '手写promise', '44', '1', '0', '1', '202
 INSERT INTO `b_article` VALUES ('41', 'Vue之自定义指令', '44', '7', '0', '1', '2020-06-23 09:41:18', '2020-06-23 09:41:35', '0', '/public/uploads/5ba338b158474650.jpg');
 INSERT INTO `b_article` VALUES ('42', 'js 二叉树', '44', '1', '1', '0', '2020-06-23 09:42:39', '2020-06-23 09:42:39', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
 INSERT INTO `b_article` VALUES ('44', 'nginx 前后端部署配置', '44', '5', '1', '0', '2020-06-23 11:12:11', '2020-06-23 11:12:11', '0', '/public/uploads/36b5b11af6cd688c13aa2dabd374a32b_005M94J9ly4fpj08nwdv1j30g608it8i.jpg');
-INSERT INTO `b_article` VALUES ('48', 'javaScript 文件分片上传思路', '44', '1', '0', '6', '2020-06-23 18:26:23', '2020-06-23 19:07:15', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('49', '自制H5视频播放器', '44', '1', '1', '4', '2020-06-23 18:27:43', '2020-06-23 18:59:18', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('48', 'javaScript 文件分片上传思路', '44', '1', '0', '6', '2018-06-23 19:07:15', '2018-06-23 19:07:15', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('49', '自制H5视频播放器', '44', '1', '1', '4', '2017-06-23 18:59:18', '2017-06-23 18:59:18', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
 INSERT INTO `b_article` VALUES ('50', '原生javascript上传图片带进度条', '44', '1', '0', '1', '2020-06-23 18:56:46', '2020-06-23 18:59:35', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('51', 'cookie其他域下访问', '44', '1', '0', '0', '2020-06-23 19:00:49', '2020-06-23 19:00:49', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('51', 'cookie其他域下访问', '44', '1', '0', '0', '2020-06-23 19:00:49', '2018-06-23 19:00:49', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
 INSERT INTO `b_article` VALUES ('52', '关于input   [type=file]  的change事件不触发问题', '44', '1', '0', '0', '2020-06-23 19:01:37', '2020-06-23 19:01:37', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
 INSERT INTO `b_article` VALUES ('53', 'webpack基本配置', '44', '1', '0', '1', '2020-06-23 19:03:14', '2020-06-23 19:03:40', '0', '/public/uploads/9eb3c72bd44612b96176d43e38e5cf14.jpg');
 INSERT INTO `b_article` VALUES ('56', '搭建自己简单的ssr-demo', '44', '1', '0', '0', '2020-06-23 19:05:09', '2020-06-23 19:05:09', '0', '/public/uploads/5ba338b158474650.jpg');
-INSERT INTO `b_article` VALUES ('57', 'JQuery无缝轮播', '44', '1', '0', '0', '2020-06-23 19:05:40', '2020-06-23 19:05:40', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('57', 'JQuery无缝轮播', '44', '1', '0', '0', '2017-06-23 19:05:40', '2017-06-23 19:05:40', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
 INSERT INTO `b_article` VALUES ('58', '正则表达式修饰符', '44', '1', '0', '0', '2020-06-23 19:06:17', '2020-06-23 19:06:17', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
-INSERT INTO `b_article` VALUES ('59', '封装图片预加载', '44', '1', '0', '0', '2020-06-23 19:06:45', '2020-06-23 19:06:45', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('59', '封装图片预加载', '44', '1', '0', '0', '2017-06-23 19:06:45', '2017-06-23 19:06:45', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
 INSERT INTO `b_article` VALUES ('60', 'vue中 组件封装v-mode 使用', '44', '1', '1', '0', '2020-06-23 19:07:25', '2020-06-23 19:07:25', '0', '/public/uploads/5ba338b158474650.jpg');
 INSERT INTO `b_article` VALUES ('61', 'git操作', '44', '19', '0', '0', '2020-06-23 19:10:15', '2020-06-23 19:10:15', '0', '/public/uploads/timg (2).jpg');
-INSERT INTO `b_article` VALUES ('62', 'div水平垂直居中', '44', '17', '0', '0', '2020-06-23 19:10:58', '2020-06-23 19:10:58', '0', '/public/uploads/u=3117196604,665035782&fm=26&gp=0.jpg');
-INSERT INTO `b_article` VALUES ('63', 'call()、apply()和bind()的异同', '44', '1', '0', '0', '2020-06-23 19:12:38', '2020-06-23 19:12:38', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('65', 'jquery许愿墙', '44', '1', '0', '1', '2020-06-23 19:15:13', '2020-06-23 19:15:20', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
-INSERT INTO `b_article` VALUES ('66', '纵向拖动排序', '44', '1', '0', '0', '2020-06-23 19:17:16', '2020-06-23 19:17:16', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
-INSERT INTO `b_article` VALUES ('67', 'javascript原生滑动解锁', '44', '1', '0', '0', '2020-06-23 19:18:22', '2020-06-23 19:18:22', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
+INSERT INTO `b_article` VALUES ('62', 'div水平垂直居中', '44', '17', '0', '0', '2019-06-23 19:10:58', '2020-06-23 19:10:58', '0', '/public/uploads/u=3117196604,665035782&fm=26&gp=0.jpg');
+INSERT INTO `b_article` VALUES ('63', 'call()、apply()和bind()的异同', '44', '1', '0', '0', '2017-06-23 19:12:38', '2017-06-23 19:12:38', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('65', 'jquery许愿墙', '44', '1', '0', '1', '2017-06-23 19:15:13', '2017-06-23 19:15:20', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
+INSERT INTO `b_article` VALUES ('66', '纵向拖动排序', '44', '1', '0', '0', '2017-06-23 19:17:16', '2017-06-23 19:17:16', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
+INSERT INTO `b_article` VALUES ('67', 'javascript原生滑动解锁', '44', '1', '0', '0', '2020-06-23 19:18:22', '2017-06-23 19:18:22', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
 INSERT INTO `b_article` VALUES ('68', '发布一个自己的NPM包', '44', '5', '0', '1', '2020-06-23 19:25:48', '2020-06-23 19:25:52', '0', '/public/uploads/u=1779279395,2616950993&fm=26&gp=0.jpg');
 
 -- ----------------------------
