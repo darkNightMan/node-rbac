@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50562
 File Encoding         : 65001
 
-Date: 2020-06-23 19:37:03
+Date: 2020-06-30 12:04:12
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -33,45 +33,46 @@ CREATE TABLE `b_article` (
   PRIMARY KEY (`article_id`),
   KEY `class_id` (`class_id`),
   CONSTRAINT `b_article_ibfk_1` FOREIGN KEY (`class_id`) REFERENCES `b_class` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_article
 -- ----------------------------
-INSERT INTO `b_article` VALUES ('16', 'vue 指令', '44', '1', '1', '20', '2020-05-14 19:56:42', '2020-06-23 17:43:17', '0', '/public/uploads/5ba338b158474650.jpg');
-INSERT INTO `b_article` VALUES ('18', 'Vuex辅助函数', '44', '1', '1', '3', '2020-05-15 12:04:04', '2020-06-23 09:36:33', '0', '/public/uploads/5ba338b158474650.jpg');
-INSERT INTO `b_article` VALUES ('19', '链表结构', '44', '1', '1', '3', '2020-05-15 12:05:03', '2020-06-23 09:32:27', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
-INSERT INTO `b_article` VALUES ('20', 'js弹力器', '44', '1', '1', '3', '2020-05-15 12:06:29', '2020-06-23 09:32:47', '0', '/public/uploads/timg.jpg');
-INSERT INTO `b_article` VALUES ('21', 'Push API实现消息推送', '44', '1', '1', '4', '2020-05-15 12:23:14', '2020-06-23 18:04:08', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
-INSERT INTO `b_article` VALUES ('22', 'vue-bus 组件实现非父子组件通信(及需注意地方)', '44', '1', '1', '1', '2019-05-01 09:33:24', '2019-05-01 09:33:24', '0', '/public/uploads/5ba338b158474650.jpg');
-INSERT INTO `b_article` VALUES ('23', 'js 观察者模式', '44', '1', '0', '2', '2020-05-15 12:26:55', '2020-06-23 09:34:20', '0', '/public/uploads/u=4180093578,3682525324&fm=193.jpg');
-INSERT INTO `b_article` VALUES ('24', 'vuex', '44', '1', '1', '1', '2020-05-15 13:11:52', '2020-06-23 09:33:57', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
-INSERT INTO `b_article` VALUES ('26', 'node代理配置', '44', '2', '0', '1', '2020-05-15 13:16:50', '2020-06-23 09:34:43', '0', '/public/uploads/u=1047114984,3765510098&fm=26&gp=0.jpg');
-INSERT INTO `b_article` VALUES ('28', '12312', '44', '1', '1', '0', '2020-05-18 17:44:32', '2020-05-26 11:40:11', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
-INSERT INTO `b_article` VALUES ('37', 'npm安装模块', '44', '15', '0', '0', '2020-06-23 09:36:10', '2020-06-23 09:36:10', '0', '/public/uploads/u=337418265,3258441697&fm=193.jpg');
-INSERT INTO `b_article` VALUES ('38', 'nodejs express获取不了用户的外网ip地址解决方法', '44', '5', '0', '0', '2020-06-23 09:37:08', '2020-06-23 09:37:08', '0', '/public/uploads/36b5b11af6cd688c13aa2dabd374a32b_005M94J9ly4fpj08nwdv1j30g608it8i.jpg');
-INSERT INTO `b_article` VALUES ('40', '手写promise', '44', '1', '0', '1', '2020-06-23 09:40:11', '2020-06-23 18:58:22', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('41', 'Vue之自定义指令', '44', '7', '0', '1', '2020-06-23 09:41:18', '2020-06-23 09:41:35', '0', '/public/uploads/5ba338b158474650.jpg');
-INSERT INTO `b_article` VALUES ('42', 'js 二叉树', '44', '1', '1', '0', '2020-06-23 09:42:39', '2020-06-23 09:42:39', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
-INSERT INTO `b_article` VALUES ('44', 'nginx 前后端部署配置', '44', '5', '1', '0', '2020-06-23 11:12:11', '2020-06-23 11:12:11', '0', '/public/uploads/36b5b11af6cd688c13aa2dabd374a32b_005M94J9ly4fpj08nwdv1j30g608it8i.jpg');
-INSERT INTO `b_article` VALUES ('48', 'javaScript 文件分片上传思路', '44', '1', '0', '6', '2018-06-23 19:07:15', '2018-06-23 19:07:15', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('49', '自制H5视频播放器', '44', '1', '1', '4', '2017-06-23 18:59:18', '2017-06-23 18:59:18', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('50', '原生javascript上传图片带进度条', '44', '1', '0', '1', '2020-06-23 18:56:46', '2020-06-23 18:59:35', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('51', 'cookie其他域下访问', '44', '1', '0', '0', '2020-06-23 19:00:49', '2018-06-23 19:00:49', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('52', '关于input   [type=file]  的change事件不触发问题', '44', '1', '0', '0', '2020-06-23 19:01:37', '2020-06-23 19:01:37', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('53', 'webpack基本配置', '44', '1', '0', '1', '2020-06-23 19:03:14', '2020-06-23 19:03:40', '0', '/public/uploads/9eb3c72bd44612b96176d43e38e5cf14.jpg');
-INSERT INTO `b_article` VALUES ('56', '搭建自己简单的ssr-demo', '44', '1', '0', '0', '2020-06-23 19:05:09', '2020-06-23 19:05:09', '0', '/public/uploads/5ba338b158474650.jpg');
-INSERT INTO `b_article` VALUES ('57', 'JQuery无缝轮播', '44', '1', '0', '0', '2017-06-23 19:05:40', '2017-06-23 19:05:40', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('58', '正则表达式修饰符', '44', '1', '0', '0', '2020-06-23 19:06:17', '2020-06-23 19:06:17', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
-INSERT INTO `b_article` VALUES ('59', '封装图片预加载', '44', '1', '0', '0', '2017-06-23 19:06:45', '2017-06-23 19:06:45', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('60', 'vue中 组件封装v-mode 使用', '44', '1', '1', '0', '2020-06-23 19:07:25', '2020-06-23 19:07:25', '0', '/public/uploads/5ba338b158474650.jpg');
-INSERT INTO `b_article` VALUES ('61', 'git操作', '44', '19', '0', '0', '2020-06-23 19:10:15', '2020-06-23 19:10:15', '0', '/public/uploads/timg (2).jpg');
-INSERT INTO `b_article` VALUES ('62', 'div水平垂直居中', '44', '17', '0', '0', '2019-06-23 19:10:58', '2020-06-23 19:10:58', '0', '/public/uploads/u=3117196604,665035782&fm=26&gp=0.jpg');
-INSERT INTO `b_article` VALUES ('63', 'call()、apply()和bind()的异同', '44', '1', '0', '0', '2017-06-23 19:12:38', '2017-06-23 19:12:38', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
-INSERT INTO `b_article` VALUES ('65', 'jquery许愿墙', '44', '1', '0', '1', '2017-06-23 19:15:13', '2017-06-23 19:15:20', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
-INSERT INTO `b_article` VALUES ('66', '纵向拖动排序', '44', '1', '0', '0', '2017-06-23 19:17:16', '2017-06-23 19:17:16', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
-INSERT INTO `b_article` VALUES ('67', 'javascript原生滑动解锁', '44', '1', '0', '0', '2020-06-23 19:18:22', '2017-06-23 19:18:22', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
-INSERT INTO `b_article` VALUES ('68', '发布一个自己的NPM包', '44', '5', '0', '1', '2020-06-23 19:25:48', '2020-06-23 19:25:52', '0', '/public/uploads/u=1779279395,2616950993&fm=26&gp=0.jpg');
+INSERT INTO `b_article` VALUES ('16', 'vue 指令', '44', '1', '1', '26', '2020-05-14 19:56:42', '2020-06-29 15:22:39', '0', '/public/uploads/5ba338b158474650.jpg');
+INSERT INTO `b_article` VALUES ('18', 'Vuex辅助函数', '44', '1', '1', '7', '2020-05-15 12:04:04', '2020-06-29 08:16:09', '0', '/public/uploads/5ba338b158474650.jpg');
+INSERT INTO `b_article` VALUES ('19', '链表结构', '44', '1', '1', '7', '2020-05-15 12:05:03', '2020-06-30 03:53:04', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
+INSERT INTO `b_article` VALUES ('20', 'js弹力器', '44', '1', '1', '10', '2020-05-15 12:06:29', '2020-06-30 03:45:34', '0', '/public/uploads/timg.jpg');
+INSERT INTO `b_article` VALUES ('21', 'Push API实现消息推送', '44', '1', '1', '8', '2020-05-15 12:23:14', '2020-06-30 03:47:05', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
+INSERT INTO `b_article` VALUES ('22', 'vue-bus 组件实现非父子组件通信(及需注意地方)', '44', '1', '1', '4', '2019-05-01 09:33:24', '2020-06-30 03:53:21', '0', '/public/uploads/5ba338b158474650.jpg');
+INSERT INTO `b_article` VALUES ('23', 'js 观察者模式', '44', '1', '0', '5', '2020-05-15 12:26:55', '2020-06-30 03:52:09', '0', '/public/uploads/u=4180093578,3682525324&fm=193.jpg');
+INSERT INTO `b_article` VALUES ('24', 'vuex', '44', '1', '1', '4', '2020-05-15 13:11:52', '2020-06-30 03:54:07', '0', 'https://img2.mukewang.com/szimg/5ec2043b09a0ed9312000676-360-202.png');
+INSERT INTO `b_article` VALUES ('26', 'node代理配置', '44', '2', '0', '4', '2020-05-15 13:16:50', '2020-06-30 03:52:54', '0', '/public/uploads/u=1047114984,3765510098&fm=26&gp=0.jpg');
+INSERT INTO `b_article` VALUES ('37', 'npm安装模块', '44', '15', '0', '3', '2020-06-23 09:36:10', '2020-06-30 03:49:02', '0', '/public/uploads/u=337418265,3258441697&fm=193.jpg');
+INSERT INTO `b_article` VALUES ('38', 'nodejs express获取不了用户的外网ip地址解决方法', '44', '5', '0', '4', '2020-06-23 09:37:08', '2020-06-30 03:50:05', '0', '/public/uploads/36b5b11af6cd688c13aa2dabd374a32b_005M94J9ly4fpj08nwdv1j30g608it8i.jpg');
+INSERT INTO `b_article` VALUES ('40', '手写promise', '44', '1', '0', '4', '2020-06-23 09:40:11', '2020-06-30 03:52:33', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('41', 'Vue之自定义指令', '44', '7', '0', '3', '2020-06-23 09:41:18', '2020-06-30 03:52:57', '0', '/public/uploads/5ba338b158474650.jpg');
+INSERT INTO `b_article` VALUES ('42', 'js 二叉树', '44', '1', '1', '2', '2020-06-23 09:42:39', '2020-06-30 03:50:21', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
+INSERT INTO `b_article` VALUES ('44', 'nginx 前后端部署配置', '44', '5', '1', '3', '2020-06-23 11:12:11', '2020-06-30 03:52:26', '0', '/public/uploads/36b5b11af6cd688c13aa2dabd374a32b_005M94J9ly4fpj08nwdv1j30g608it8i.jpg');
+INSERT INTO `b_article` VALUES ('48', 'javaScript 文件分片上传思路', '44', '1', '0', '9', '2018-06-23 19:07:15', '2020-06-30 03:53:47', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('49', '自制H5视频播放器', '44', '1', '1', '7', '2017-06-23 18:59:18', '2020-06-30 03:49:51', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('50', '原生javascript上传图片带进度条', '44', '1', '0', '4', '2020-06-23 18:56:46', '2020-06-30 03:50:52', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('51', 'cookie其他域下访问', '44', '1', '0', '3', '2020-06-23 19:00:49', '2020-06-30 03:52:49', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('52', '关于input   [type=file]  的change事件不触发问题', '44', '1', '0', '3', '2020-06-23 19:01:37', '2020-06-30 03:54:26', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('53', 'webpack基本配置', '44', '1', '0', '7', '2020-06-23 19:03:14', '2020-06-30 03:47:22', '0', '/public/uploads/9eb3c72bd44612b96176d43e38e5cf14.jpg');
+INSERT INTO `b_article` VALUES ('56', '搭建自己简单的ssr-demo', '44', '1', '0', '3', '2020-06-23 19:05:09', '2020-06-30 03:49:00', '0', '/public/uploads/5ba338b158474650.jpg');
+INSERT INTO `b_article` VALUES ('57', 'JQuery无缝轮播', '44', '1', '0', '3', '2017-06-23 19:05:40', '2020-06-30 03:54:05', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('58', '正则表达式修饰符', '44', '1', '0', '3', '2020-06-23 19:06:17', '2020-06-30 03:45:22', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
+INSERT INTO `b_article` VALUES ('59', '封装图片预加载', '44', '1', '0', '3', '2017-06-23 19:06:45', '2020-06-30 03:48:29', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('60', 'vue中 组件封装v-mode 使用', '44', '1', '1', '4', '2020-06-23 19:07:25', '2020-06-30 03:51:07', '0', '/public/uploads/5ba338b158474650.jpg');
+INSERT INTO `b_article` VALUES ('61', 'git操作', '44', '19', '0', '3', '2020-06-23 19:10:15', '2020-06-30 03:52:18', '0', '/public/uploads/timg (2).jpg');
+INSERT INTO `b_article` VALUES ('62', 'div水平垂直居中', '44', '17', '0', '3', '2019-06-23 19:10:58', '2020-06-30 03:48:45', '0', '/public/uploads/u=3117196604,665035782&fm=26&gp=0.jpg');
+INSERT INTO `b_article` VALUES ('63', 'call()、apply()和bind()的异同', '44', '1', '0', '3', '2017-06-23 19:12:38', '2020-06-30 03:52:44', '0', '/public/uploads/84ae30c406481c699e9e0294838d6852.jpg');
+INSERT INTO `b_article` VALUES ('65', 'jquery许愿墙', '44', '1', '0', '4', '2017-06-23 19:15:13', '2020-06-30 03:49:18', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
+INSERT INTO `b_article` VALUES ('66', '纵向拖动排序', '44', '1', '0', '3', '2017-06-23 19:17:16', '2020-06-30 03:52:39', '0', '/public/uploads/a20a581f88ca12dd3bf761a5e9f56ec1.jpg');
+INSERT INTO `b_article` VALUES ('67', 'javascript原生滑动解锁', '44', '1', '0', '4', '2020-06-23 19:18:22', '2020-06-30 03:46:47', '0', '/public/uploads/261d3a5215d7dba12b086161c17bb697.jpeg');
+INSERT INTO `b_article` VALUES ('68', '发布一个自己的NPM包', '44', '5', '0', '5', '2020-06-23 19:25:48', '2020-06-30 03:46:10', '0', '/public/uploads/u=1779279395,2616950993&fm=26&gp=0.jpg');
+INSERT INTO `b_article` VALUES ('69', 'mysql 查看当前使用的配置文件my.cnf的方法', '44', '3', '0', '0', '2020-06-30 10:51:12', '2020-06-30 10:51:12', '0', '/public/uploads/3b22337e04ce438248768f9d59941f30_u=3160244586,1161773702&fm=193.jpg');
+INSERT INTO `b_article` VALUES ('70', 'mysql配置指定ip可访问', '44', '3', '0', '1', '2020-06-30 11:00:31', '2020-06-30 11:07:50', '0', '/public/uploads/3b22337e04ce438248768f9d59941f30_u=3160244586,1161773702&fm=193.jpg');
 
 -- ----------------------------
 -- Table structure for b_article_detail
@@ -85,7 +86,7 @@ CREATE TABLE `b_article_detail` (
   PRIMARY KEY (`id`),
   KEY `article_id` (`article_id`),
   CONSTRAINT `b_article_detail_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `b_article` (`article_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_article_detail
@@ -123,6 +124,8 @@ INSERT INTO `b_article_detail` VALUES ('47', '65', '**html 代码**\n\n```html:r
 INSERT INTO `b_article_detail` VALUES ('48', '66', '**html 代码**\n\n```html:run\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>纵向拖拽</title>\n	<script type=\"text/javascript\" src=\"http://www.xipwang.cn/js/jquery.min.js\"></script>\n	<script type=\"text/javascript\" src=\"drageOrderList.js\"></script>\n</head>\n<style type=\"text/css\">\n*{\n	margin:0;\n	padding:0;\n}\n#dargorder{\n	width:300px;\n	margin: 0 auto;\n	background: #cfe;\n	height: auto;\n}\n#dargorder .darg-div{\n	width:300px;	\n	margin:10px 0px;\n	background:#333;\n	cursor: move;\n	color: #fff;\n\n}\n\n.temp_div{\n	width:300px;\n	height: 50px;\n	margin:10px 0px;\n	background:#fcc;\n	border:1px solid #f00;\n}\n.show{\n	border: 1px solid #e23;\n}\nbody{\n   -moz-user-select: none; /*火狐*/\n   -webkit-user-select: none;  /*webkit浏览器*/\n   -ms-user-select: none;   /*IE10*/\n   -khtml-user-select: none; /*早期浏览器*/\n   user-select: none;\n}\n\n</style>\n<body>\n	\n	<div id=\"dargorder\">\n		<div class=\"darg-div\">\n			<img src=\"1.jpg\" width=\"300\" ondragstart=\"return false;\" title=\"1\">\n		</div>\n		<div class=\"darg-div\">\n			<img src=\"2.jpg\" width=\"300\" ondragstart=\"return false;\"  title=\"2\">\n		</div>\n		<div class=\"darg-div\">\n			<img src=\"2.jpg\" width=\"300\" ondragstart=\"return false;\"  title=\"3\">\n		</div>\n		<div class=\"darg-div\">\n			<img src=\"1.jpg\" width=\"300\" ondragstart=\"return false;\"  title=\"4\">\n		</div>\n	</div>\n	\n</body>\n<script type=\"text/javascript\">\n;(function($) {\n	function DragOrderListor(opts) {\n		$_d = this;\n		$_d.start = {//鼠标x,y起始坐标;\n			x: 0,\n			y: 0\n		}; \n		$_d.thisDarg = null; //拖拽对象;\n		$_d.tempDiv = null; //临时对象;\n		$_d.flag = false; //拖拽状态;\n		$_d.jq = opts; //JQ对象\n		$_d.init();\n	}\n	DragOrderListor.prototype = {\n		init: function() {\n			this.startDown(); //鼠标按下\n			this.drageMove(); //鼠标移动\n			this.drageUp(); //鼠标抬起\n		},\n		startDown: function() {\n			$d = this;\n			$($d.jq).on(\"mousedown\", \".darg-div\", function(e) {\n				var e = e || event;\n				$_d.flag = true; //开启拖拽状态\n				$_d.thisDarg = $(this); //获取当前拖得对象;\n				var initOffsetY = $_d.thisDarg.offset().top; //获取当前对象距离top偏移量\n				var initOffsetX = $_d.thisDarg.offset().left; //获取当前对象距离left偏移量	\n				$_d.start.y = e.pageY - initOffsetY; //鼠标实际Y轴距离\n				$_d.start.x = e.pageX - initOffsetX; //鼠标实际X轴距离\n				//设置当前拖动状态\n				$_d.thisDarg.css({\n					position: \"absolute\",\n					opacTity: \"0.8\",\n					top: initOffsetY,\n					left: initOffsetX,\n					zIndex: 1\n				});\n				// 创建临时Div 插入当前拖动对象之前\n				$(\"<div class=\'temp_div\'></div>\").insertBefore($_d.thisDarg);\n				$d.tempDiv = $(\".temp_div\");\n			});\n		},\n		drageMove: function() {\n			var $d = this;\n			$(document).on(\'mousemove\', function(e) {\n				//判断当前拖动状态\n				if ($d.flag) {\n					var e = e || event; //获取event事件对象\n					var mouseY = e.pageY - $d.start.y; //鼠标实际移动Y轴距离\n					var mouseX = e.pageX - $d.start.x; //鼠标实际移动X轴距离\n					//拖动对象跟随鼠标移动\n					$d.thisDarg.css({\n						top: mouseY,\n						left: mouseX\n					});\n					$d.thisDarg.addClass(\'show\');\n					//获取临时Div距离顶部偏移量 \n					var tempDivTop = $d.tempDiv.offset().top - ($d.tempDiv.height()) / 2;\n					var tempDivBottom = $d.tempDiv.offset().top + ($d.tempDiv.height()) / 2;\n\n					//判断向上拖动的div的top值是否小于临时div距离顶部的偏移量,将临时div插入到上一个div之前\n					if (mouseY < tempDivTop) {\n						$d.tempDiv.insertBefore($d.tempDiv.prev());\n					}\n					//判断向下拖动的div的top值是否小于临时div距离顶部的偏移量,将临时div插入到下一个div之后\n					if (mouseY > tempDivBottom) {\n						$d.tempDiv.insertAfter($d.tempDiv.next());\n					}\n				}\n			});\n		},\n		drageUp: function() {\n			$(document).on(\'mouseup\', function(e) {\n				$d.flag = false; //关闭拖动状态；\n				//当鼠标抬起的时候将当前拖动的对象插入临时对象之前;				\n					if($d.tempDiv){\n						 try{\n						    $d.thisDarg.removeClass(\'show\');\n						    $d.thisDarg.css({\n							position: \"inherit\"\n						    });\n						    $d.thisDarg.insertBefore($d.tempDiv);\n						    //将临时div移除\n						    $d.tempDiv.remove();\n						    $d.tempDiv = null;\n						    $_d.thisDarg = null;					\n						 }catch(err){\n							alert(err.description);\n\n						}\n					}\n				\n			});\n		}\n	};\n	$.fn.dragOrderListor = function() {\n		new DragOrderListor(this);\n	};\n\n\n})(jQuery);\n$(function(){\n	$(\"#dargorder\").dragOrderListor();\n\n});\n</script>\n</html>\n```', null);
 INSERT INTO `b_article_detail` VALUES ('49', '67', '**html 代码**\n\n```html:run\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"utf-8\">\n	<style type=\"text/css\">\n	* {\n		margin: 0;\n		padding: 0;\n	}\n	#slider-box {\n		width: 300px;\n		height: 50px;\n		border-radius: 4px;\n		background: #ccc;\n		margin: 250px auto;\n		position: relative;\n	}\n	#slider {\n		width: 48px;\n		height: 48px;\n		border: 1px solid #eee;\n		text-align: center;\n		line-height: 48px;\n		display: inline-block;\n		background: #fff;\n		border-radius: 4px;\n		cursor: move;\n		position: absolute;\n		left: 0;\n		z-index: 5;\n	}\n	#slider-text {\n		text-align: center;\n		line-height: 50px;\n		display: inline-block;\n		width: 100%;\n		height: 50px;\n		font-family: \"微软雅黑\";\n		position: absolute;\n		left: 0;\n		z-index: 4;\n	}\n	#slider-bg {\n		width: 0;\n		height: 48px;\n		background: green;\n		position: absolute;\n		z-index: 3;\n		border-radius: 4px;\n		\n	}\n	#slider-Emerge {\n		width: 100px;\n		background:;\n		height: 50px;\n		position: absolute;\n	}\n	#stop-go {\n		width: 48px;\n		height: 48px;\n		border: 1px solid #eee;\n		background:#36F;\n		position: absolute;\n		right: -1px;\n		display: none;\n		text-align: center;\n		line-height: 48px;\n		color: #fff;\n		font-family: \"微软雅黑\";\n		border-radius: 4px;\n		z-index: 5;\n	}\n	div{\n			-moz-user-select:none;\n			-webkit-user-select:none;\n			user-select:none;    \n		}\n	</style>\n</head>\n<body>\n	<div id=\"slider-box\">\n		<span id=\"slider\">＞</span>\n		<span id=\"slider-text\">滑动解锁</span>\n		<span id=\"slider-bg\"></span>\n		<span id=\"slider-Emerge\"></span>\n		<span id=\"stop-go\">∨</span>\n	</div>\n</body>\n	<script type=\"text/javascript\">\n			var  sliderel={\n					$: function(selector){\n						return document.getElementById(selector)\n					},\n				getEvent:function(e){\n\n					 var e=e || window.event\n					 return e;\n				},\n				stopBubble:function(e){\n					var e =this.getEvent(e)\n					if(typeof e.preventDefault != \"undefined\"){\n						e.preventDefault();\n					}else{\n						e.returnValue = false;\n					}\n				}\n			 },\n			Elemt={\n				flag:false,\n				nowMoseX: 0,\n				mx:sliderel.$(\"slider-box\"),\n				sd:sliderel.$(\"slider\"),\n				st:sliderel.$(\"slider-text\"),\n				sb:sliderel.$(\"slider-bg\"),\n				se:sliderel.$(\"slider-Emerge\"),\n				sg:sliderel.$(\"stop-go\"),\n			}\n				Elemt.sd.onmousedown=function(e){				\n					var e =sliderel.getEvent(e)\n					sliderel.stopBubble(e);\n					Elemt.flag=true\n					nowMoseX=e.clientX-Elemt.sd.offsetLeft;\n					\n				}\n				//滑块最大移动的距离\n				maxMove=Elemt.mx.offsetWidth -Elemt.sd.offsetWidth;\n				\n				//鼠标移动的时候是否成功\n				Elemt.mx.onmousemove=function(e){\n						var e =sliderel.getEvent(e)\n						if(Elemt.flag){\n							var moveX=e.clientX-nowMoseX;\n							var oElemLeft=Elemt.sd.offsetLeft;//判断滑块移动的范围							\n							if(oElemLeft<0){ //判断滑块是否超出限制位置\n								moveX=0;\n								Elemt.flag=false\n							}else if(oElemLeft>maxMove){\n								moveX=maxMove;\n								Elemt.sg.style.display=\"block\";\n								Elemt.sd.style.display=\"none\"\n								Elemt.sb.style.width=300+\"px\"\n								Elemt.st.innerHTML=\"滑动成功\"\n								Elemt.st.style.color=\"#fff\"\n							}\n						}\n					 Elemt.sd.style.left=moveX+\"px\"	\n					 Elemt.sb.style.width=oElemLeft+20+\"px\";\n				}\n				//当鼠抬起判断是否滑动成功\n				Elemt.mx.onmouseup=function(e){\n					var e =sliderel.getEvent(e)\n						Elemt.flag=false\n						if(Elemt.sd.offsetLeft<maxMove){\n							speed=Math.ceil(Elemt.sd.offsetLeft/40);\n							time=setInterval(function(){\n								if(Elemt.sd.offsetLeft>=0){\n									Elemt.sd.style.left=Elemt.sd.offsetLeft-speed+\"px\";\n									Elemt.sb.style.width=Elemt.sb.offsetWidth-speed+\"px\";\n								}else{\n									clearInterval(time);\n									return false;\n								}\n							},10)\n					   }\n					}\n				//当鼠离开是否滑动成功	\n				Elemt.sd.onmouseout=function(e){\n					sliderel.stopBubble(e);\n					Elemt.flag=false;\n						if(	Elemt.sd.offsetLeft<maxMove){\n							speed=Math.ceil(Elemt.sd.offsetLeft/40);\n							time=setInterval(function(){\n								if(Elemt.sd.offsetLeft>=0){\n									Elemt.sd.style.left=Elemt.sd.offsetLeft-speed+\"px\";\n									Elemt.sb.style.width=Elemt.sb.offsetWidth-speed+\"px\";\n								}else{\n									clearInterval(time);\n									return false;\n								}\n						  },10);\n					 }\n				}\n    </script>\n</html>\n```', null);
 INSERT INTO `b_article_detail` VALUES ('50', '68', 'npm账号\n```\n用户名: wangxiping\n密码： Wang101029xixi.\n```\n### npm包: wang-sum-number  已经上传\n\ngithub:https://github.com/darkNightMan/sum-number.git \n```\nnpm get registry\n# 如果不是这个地址https://registry.npmjs.org  需要设置官网源\nnpm config set registry https://registry.npmjs.org\n```\n\n### 注册npm账号（有账号跳过这步）\n```\nnpm adduser\n# Username: 用户名\n# Password: 密码\n# Email: 邮箱\n### 创建模块\n```\nnpm init \n\n# package.json 内容\n```\n{\n  \"name\": \"isnumber-lpz\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Number\\u001b[D\\u001b[D\\u001b[D\\u001b[D\\u001b[D\\u001b[D\\u001b[D\\u001b[D\\u001b[D\\u001b[C\\u001b[C\\u001b[Cis\\u001b[C\\u001b[C\\u001b[Number\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/lanpangzhi/isNumber-lpz.git\"\n  },\n  \"author\": \"lanpangzhi\",\n  \"license\": \"ISC\",\n  \"bugs\": {\n    \"url\": \"https://github.com/lanpangzhi/isNumber-lpz/issues\"\n  },\n  \"homepage\": \"https://github.com/lanpangzhi/isNumber-lpz#readme\"\n}\n\n# 创建 index.js\ntouch index.js\n\nfunction isNumber(number) {\n  number = parseFloat(number)\n  return number === number && typeof number === \'number\' \n}\n\nmodule.exports = isNumber\n```\n\n# 登录\n```\nnpm login\n```\n### 发布包\n\n```\nnpm publish\n```\n\n', null);
+INSERT INTO `b_article_detail` VALUES ('51', '69', '```\nmy.cnf是mysql启动时加载的配置文件，一般会放在mysql的安装目录中，用户也可以放在其他目录加载。\n\n安装mysql后，系统中会有多个my.cnf文件，有些是用于测试的。\n\n使用locate my.cnf命令可以列出所有的my.cnf文件\n```\n---\n命令:\n```\nlocate my.cnf\n```\n当我们需要修改配置文件时，需要找到mysql启动时是加载了哪个my.cnf文件。\n\n### 1.查看是否使用了指定目录的my.cnf\n命令：\n```\nps aux|grep mysql|grep \'my.cnf\'\n```\n\n', null);
+INSERT INTO `b_article_detail` VALUES ('52', '70', '当我们的服务器在公网的环境时要注意做好ip的限制和隔离，最好的办法是先做好外网端口访问限制，将3306端口限制只能内网访问，可以通过iptables做限制，也可以通过阿里云或是腾讯云的管理后台将端口的外网访问权限封禁掉。我们除了上述的情况外，还可以通过mysql的配置信息，将mysql的访问限制在固定的ip或是ip网段、这样就可以避免一些来自网络的攻击。\n配置方法是通过命令行登录mysql数据库服务\n\n#### 进入数据库后使用如下命令可以禁止外网访问权限：\n```\n#使用mysql默认管理数据库 \nuse mysql;\n#查看用户和ip信息，能查看到一个用户的列表\nselect user , password, host from user;\n#将带有%的用户删掉并刷新用户权限\ndelete from user where user=admin and host=\'%\';\n#刷新用户权限\nflush privileges;\n```\n\n#### 增加ip访问服务器，只有在不存在%的host时才会生效\n```\n#创建用户；\ncreate user \'admin\'@\'192.168.0.1\';\n#修改密码\nset password for \'admin\'@\'192.168.0.1\' = password(\'admin\');\n#授权\ngrant all privileges on  *.* to \'admin\'@\'192.168.0.1\';\n#刷新权限\nflush privileges;\n```\n\n这样只有来自192.168.0.1的用户才能通过admin访问服务器。\n\n#### 为需要远程登录的用户赋予权限\n1.新建用户远程连接mysql数据库\n```\ngrant all on . to admin@\'%\' identified by \'123456\' with grant option;\nflush privileges;\n```\n意思允许任何ip地址(%表示允许任何ip地址)的电脑用admin帐户和密码(123456)来访问这个mysql server。\n', null);
 
 -- ----------------------------
 -- Table structure for b_article_tags
@@ -137,7 +140,7 @@ CREATE TABLE `b_article_tags` (
   KEY `tags_id` (`tags_id`),
   CONSTRAINT `b_article_tags_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `b_article` (`article_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `b_article_tags_ibfk_2` FOREIGN KEY (`tags_id`) REFERENCES `b_tags` (`tags_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_article_tags
@@ -206,6 +209,10 @@ INSERT INTO `b_article_tags` VALUES ('86', '67', '1');
 INSERT INTO `b_article_tags` VALUES ('87', '68', '3');
 INSERT INTO `b_article_tags` VALUES ('88', '68', '4');
 INSERT INTO `b_article_tags` VALUES ('89', '68', '12');
+INSERT INTO `b_article_tags` VALUES ('90', '69', '12');
+INSERT INTO `b_article_tags` VALUES ('91', '69', '3');
+INSERT INTO `b_article_tags` VALUES ('92', '70', '4');
+INSERT INTO `b_article_tags` VALUES ('93', '70', '12');
 
 -- ----------------------------
 -- Table structure for b_class
@@ -250,7 +257,7 @@ CREATE TABLE `b_comments` (
   PRIMARY KEY (`comment_id`),
   KEY `article_id` (`article_id`),
   CONSTRAINT `b_comments_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `b_article` (`article_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_comments
@@ -269,26 +276,12 @@ CREATE TABLE `b_msg_comments` (
   `comment_content` text,
   `comment_time` datetime DEFAULT NULL,
   PRIMARY KEY (`comment_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_msg_comments
 -- ----------------------------
-INSERT INTO `b_msg_comments` VALUES ('4', '0', '44', '啊实打实多', '123132@qq.com', '阿萨德', '2020-06-16 14:56:23');
-INSERT INTO `b_msg_comments` VALUES ('6', '5', '44', '黑夜男神', '395604192@qq.com', '@黑夜男神 1111', '2020-06-03 15:03:27');
-INSERT INTO `b_msg_comments` VALUES ('8', '0', '0', '项羽', '354564545@qq.com', '我来留言了', '2020-06-04 16:45:07');
-INSERT INTO `b_msg_comments` VALUES ('16', '0', '0', '安其拉', '12312@qq.com', '萝莉身御姐心', '2020-06-04 18:10:00');
-INSERT INTO `b_msg_comments` VALUES ('17', '16', '44', '黑夜男神', '395604192@qq.com', '@安其拉 那你很棒哦！！', '2020-06-04 18:11:08');
-INSERT INTO `b_msg_comments` VALUES ('18', '0', '0', '牛肉干', '395604181@qq.com', '加个友情链', '2020-06-05 12:52:35');
-INSERT INTO `b_msg_comments` VALUES ('20', '0', '0', '廉颇', '12312@qq.com', '顶', '2020-06-05 12:55:05');
-INSERT INTO `b_msg_comments` VALUES ('31', '0', '0', '尘少', '1545@qq.com', '测试一下', '2020-06-18 18:28:32');
-INSERT INTO `b_msg_comments` VALUES ('32', '0', '0', '想我留言', '门都没有', '窗户也没有', '2020-06-18 18:35:24');
-INSERT INTO `b_msg_comments` VALUES ('33', '0', '0', 'luojie', 'luojie@163.com', '做得还可以啊', '2020-06-18 18:44:04');
 INSERT INTO `b_msg_comments` VALUES ('34', '0', '0', 'HmLiu', '286507075@.com', '大佬，求带', '2020-06-18 18:50:56');
-INSERT INTO `b_msg_comments` VALUES ('35', '26', '44', '黑夜男神', '395604192@qq.com', '@HmLiu 来起飞！', '2020-06-18 19:17:41');
-INSERT INTO `b_msg_comments` VALUES ('36', '25', '44', '黑夜男神', '395604192@qq.com', '@luojie 康巴得！', '2020-06-18 19:17:52');
-INSERT INTO `b_msg_comments` VALUES ('37', '24', '44', '黑夜男神', '395604192@qq.com', '@想我留言 嗯哼', '2020-06-18 19:18:00');
-INSERT INTO `b_msg_comments` VALUES ('38', '23', '44', '黑夜男神', '395604192@qq.com', '@尘少 测呗', '2020-06-18 19:18:08');
 INSERT INTO `b_msg_comments` VALUES ('39', '0', '0', 'wwwww', 'w1254592050@foxmail.com', '厉害了', '2020-06-18 19:27:25');
 INSERT INTO `b_msg_comments` VALUES ('40', '0', '0', 'Sasan', '18816798025@163.com', '大佬牛啊！大佬求带！！！', '2020-06-18 19:35:41');
 INSERT INTO `b_msg_comments` VALUES ('41', '0', '0', '大佬的朋友', '1319708000@qq.com', '大佬越来越厉害了', '2020-06-18 20:17:16');
@@ -297,6 +290,13 @@ INSERT INTO `b_msg_comments` VALUES ('43', '0', '0', 'TanJia', 'tanjia2014@126.c
 INSERT INTO `b_msg_comments` VALUES ('44', '0', '0', 'King', '213356666', '牛逼啊', '2020-06-18 21:41:25');
 INSERT INTO `b_msg_comments` VALUES ('45', '0', '0', 'hh', '1635194023@qq.com', '大佬厉害了', '2020-06-19 08:11:15');
 INSERT INTO `b_msg_comments` VALUES ('46', '0', '0', 'zxhuan', '1123046380@qq.com', '大神带我飞起来', '2020-06-19 10:26:19');
+INSERT INTO `b_msg_comments` VALUES ('47', '0', null, 'TanJia', 'tanjia2014@126.com', '又来了~', '2020-06-28 16:01:51');
+INSERT INTO `b_msg_comments` VALUES ('48', '47', '44', '黑夜男神', '395604192@qq.com', '@TanJia 恩恩', '2020-06-30 11:14:02');
+INSERT INTO `b_msg_comments` VALUES ('49', '0', null, 'luojie', 'luojie@163.com', '做得还可以啊', '2020-06-30 11:22:58');
+INSERT INTO `b_msg_comments` VALUES ('50', '0', null, 'King', '213356666', '牛逼啊', '2020-06-30 11:25:07');
+INSERT INTO `b_msg_comments` VALUES ('51', '0', null, 'TanJia', 'tanjia2014@126.com', '！！！好流畅～友链友链', '2020-06-30 11:25:27');
+INSERT INTO `b_msg_comments` VALUES ('52', '46', '44', '黑夜男神', '395604192@qq.com', '@zxhuan 能不能正常点 好好说话', '2020-06-30 11:26:56');
+INSERT INTO `b_msg_comments` VALUES ('53', '51', '44', '黑夜男神', '395604192@qq.com', '@TanJia 加起来！', '2020-06-30 11:28:30');
 
 -- ----------------------------
 -- Table structure for b_related_links
@@ -310,7 +310,7 @@ CREATE TABLE `b_related_links` (
   `description` varchar(255) DEFAULT NULL,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_related_links
@@ -326,6 +326,7 @@ INSERT INTO `b_related_links` VALUES ('11', 'zkpeace', 'https://img-1253324855.c
 INSERT INTO `b_related_links` VALUES ('12', 'cungudafa', 'https://cungudafa.top/links/ 来源：cungudafa姑  https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg', ' https://cungudafa.top', '一个学习记录者', '44');
 INSERT INTO `b_related_links` VALUES ('13', '飒白', 'https://tjzzz.com/img/avatar.png', ' https://www.tjzzz.com', '一个主播和程序员的奇妙结合体', '44');
 INSERT INTO `b_related_links` VALUES ('14', '文渊', 'https://www.wenyuanblog.com/medias/avatar.png', 'https://www.wenyuanblog.com/', '一个90后程序员，终身学习者。', '44');
+INSERT INTO `b_related_links` VALUES ('15', 'SSCS', ' https://leo-1258096517.cos.ap-shanghai.myqcloud.com/sscs/logo1.png', 'https://www.sscrazy.com/', ' 如果不能保持永恒，那就追求一刹那的光辉！', '44');
 
 -- ----------------------------
 -- Table structure for b_tags
@@ -371,7 +372,7 @@ CREATE TABLE `sys_login_logs` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `LOG_USER_LOGIN` FOREIGN KEY (`user_id`) REFERENCES `sys_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=346 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=353 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_login_logs
@@ -520,6 +521,13 @@ INSERT INTO `sys_login_logs` VALUES ('342', '44', '2020-06-23 09:20:01', '14.23.
 INSERT INTO `sys_login_logs` VALUES ('343', '44', '2020-06-23 11:11:18', '14.23.92.186', '未知', '登录成功！', '黑夜男神', 'Windows 6.1', null);
 INSERT INTO `sys_login_logs` VALUES ('344', '44', '2020-06-23 11:11:24', '14.23.92.186', '未知', '登录成功！', '黑夜男神', 'Windows 6.1', null);
 INSERT INTO `sys_login_logs` VALUES ('345', '44', '2020-06-23 17:36:48', '14.23.92.186', '未知', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('346', null, '2020-06-29 14:53:28', '14.23.92.186', '未知', '用户密码错误', '', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('347', null, '2020-06-29 14:53:34', '14.23.92.186', '未知', '用户密码错误', '', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('348', null, '2020-06-29 14:53:38', '14.23.92.186', '未知', '用户密码错误', '', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('349', '44', '2020-06-29 14:54:21', '14.23.92.186', '未知', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('350', null, '2020-06-30 09:44:31', '14.23.92.186', '未知', '用户密码错误', '', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('351', '44', '2020-06-30 09:44:33', '14.23.92.186', '未知', '登录成功！', '黑夜男神', 'Windows 6.1', null);
+INSERT INTO `sys_login_logs` VALUES ('352', '44', '2020-06-30 10:46:11', '14.23.92.186', '未知', '登录成功！', '黑夜男神', 'Windows 6.1', null);
 
 -- ----------------------------
 -- Table structure for sys_operation_logs
@@ -534,7 +542,7 @@ CREATE TABLE `sys_operation_logs` (
   `action_params` char(255) DEFAULT NULL,
   `action_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7773 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7836 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_operation_logs
@@ -732,6 +740,69 @@ INSERT INTO `sys_operation_logs` VALUES ('7769', '44', '黑夜男神', '[POST] /
 INSERT INTO `sys_operation_logs` VALUES ('7770', '44', '黑夜男神', '[POST] /api/single/uploadImage/', '14.23.92.186', '', '2020-06-23 19:25:36');
 INSERT INTO `sys_operation_logs` VALUES ('7771', '44', '黑夜男神', '[POST] /api/blogs/createArticle', '14.23.92.186', '{\"title\":\"发布一个自己的NPM包\",\"class_id\":5,\"tagsArr\":[3,4,12],\"cover_url\":\"/public/uploads/u=1779279395,2616950993&fm=26&gp=0.jpg\",\"is_top\":false,\"content\":\"npm账号\\n```\\n用户名:wangxiping\\n密码：Wang101029xixi.\\n```\\n###npm包:wang-sum-number已经上传\\n\\ngithub:https://github', '2020-06-23 19:25:48');
 INSERT INTO `sys_operation_logs` VALUES ('7772', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"4\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-23 19:25:48');
+INSERT INTO `sys_operation_logs` VALUES ('7773', '44', '黑夜男神', '[GET] /api/getUserMenuList', '14.23.92.186', '', '2020-06-29 14:54:21');
+INSERT INTO `sys_operation_logs` VALUES ('7774', '44', '黑夜男神', '[GET] /api/user/list', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:54:22');
+INSERT INTO `sys_operation_logs` VALUES ('7775', '44', '黑夜男神', '[GET] /api/role/list', '14.23.92.186', '', '2020-06-29 14:54:22');
+INSERT INTO `sys_operation_logs` VALUES ('7776', '44', '黑夜男神', '[PUT] /api/user/updateUser', '14.23.92.186', '{\"user_id\":44,\"nick_name\":\"黑夜男神\",\"password\":\"101029xixi.\",\"email\":\"395604192@qq.com\",\"phone\":\"13076897374\",\"avatar\":\"https://uploadfile.huiyi8.com/up/25/70/a1/2570a194efbc9fcd2ac7f94530dfe482.jpg\",\"role_id\":[1,2]}', '2020-06-29 14:54:33');
+INSERT INTO `sys_operation_logs` VALUES ('7777', '44', '黑夜男神', '[GET] /api/user/list', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:54:33');
+INSERT INTO `sys_operation_logs` VALUES ('7778', '44', '黑夜男神', '[GET] /api/role/list', '14.23.92.186', '', '2020-06-29 14:54:36');
+INSERT INTO `sys_operation_logs` VALUES ('7779', '44', '黑夜男神', '[GET] /api/menu/list/', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-29 14:54:37');
+INSERT INTO `sys_operation_logs` VALUES ('7780', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '14.23.92.186', '', '2020-06-29 14:54:37');
+INSERT INTO `sys_operation_logs` VALUES ('7781', '44', '黑夜男神', '[GET] /api/getUserMenuList', '14.23.92.186', '', '2020-06-29 14:55:05');
+INSERT INTO `sys_operation_logs` VALUES ('7782', '44', '黑夜男神', '[GET] /api/menu/list/', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-29 14:55:05');
+INSERT INTO `sys_operation_logs` VALUES ('7783', '44', '黑夜男神', '[GET] /api/menu/selectMenuList', '14.23.92.186', '', '2020-06-29 14:55:06');
+INSERT INTO `sys_operation_logs` VALUES ('7784', '44', '黑夜男神', '[GET] /api/user/list', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:55:08');
+INSERT INTO `sys_operation_logs` VALUES ('7785', '44', '黑夜男神', '[GET] /api/role/list', '14.23.92.186', '', '2020-06-29 14:55:08');
+INSERT INTO `sys_operation_logs` VALUES ('7786', '44', '黑夜男神', '[GET] /api/role/list', '14.23.92.186', '', '2020-06-29 14:55:09');
+INSERT INTO `sys_operation_logs` VALUES ('7787', '44', '黑夜男神', '[GET] /api/operationLos/list', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-29 14:55:11');
+INSERT INTO `sys_operation_logs` VALUES ('7788', '44', '黑夜男神', '[GET] /api/loginLogs/list', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\"}', '2020-06-29 14:55:11');
+INSERT INTO `sys_operation_logs` VALUES ('7789', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:55:15');
+INSERT INTO `sys_operation_logs` VALUES ('7790', '44', '黑夜男神', '[GET] /api/blogs/articleClassList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:55:16');
+INSERT INTO `sys_operation_logs` VALUES ('7791', '44', '黑夜男神', '[GET] /api/blogs/commentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:55:16');
+INSERT INTO `sys_operation_logs` VALUES ('7792', '44', '黑夜男神', '[GET] /api/blogs/articleTagsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:55:18');
+INSERT INTO `sys_operation_logs` VALUES ('7793', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 14:55:37');
+INSERT INTO `sys_operation_logs` VALUES ('7794', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 15:00:20');
+INSERT INTO `sys_operation_logs` VALUES ('7795', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"3\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-29 15:00:21');
+INSERT INTO `sys_operation_logs` VALUES ('7796', '44', '黑夜男神', '[GET] /api/getUserMenuList', '14.23.92.186', '', '2020-06-30 09:44:33');
+INSERT INTO `sys_operation_logs` VALUES ('7797', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 09:44:41');
+INSERT INTO `sys_operation_logs` VALUES ('7798', '44', '黑夜男神', '[GET] /api/blogs/articleTagsListAll', '14.23.92.186', '', '2020-06-30 09:44:43');
+INSERT INTO `sys_operation_logs` VALUES ('7799', '44', '黑夜男神', '[GET] /api/blogs/articleClassListAll', '14.23.92.186', '', '2020-06-30 09:44:43');
+INSERT INTO `sys_operation_logs` VALUES ('7800', '44', '黑夜男神', '[GET] /api/getUserMenuList', '14.23.92.186', '', '2020-06-30 10:46:12');
+INSERT INTO `sys_operation_logs` VALUES ('7801', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 10:46:12');
+INSERT INTO `sys_operation_logs` VALUES ('7802', '44', '黑夜男神', '[GET] /api/blogs/articleClassListAll', '14.23.92.186', '', '2020-06-30 10:46:12');
+INSERT INTO `sys_operation_logs` VALUES ('7803', '44', '黑夜男神', '[GET] /api/blogs/articleTagsListAll', '14.23.92.186', '', '2020-06-30 10:46:12');
+INSERT INTO `sys_operation_logs` VALUES ('7804', '44', '黑夜男神', '[POST] /api/single/uploadImage/', '14.23.92.186', '', '2020-06-30 10:46:18');
+INSERT INTO `sys_operation_logs` VALUES ('7805', '44', '黑夜男神', '[POST] /api/blogs/createArticle', '14.23.92.186', '{\"title\":\"mysql查看当前使用的配置文件my.cnf的方法\",\"class_id\":3,\"tagsArr\":[12,3],\"cover_url\":\"/public/uploads/3b22337e04ce438248768f9d59941f30_u=3160244586,1161773702&fm=193.jpg\",\"is_top\":false,\"content\":\"```\\nmy.cnf是mysql启动时加载的配置文件，一般会放在mysql的安装目录中，用户也可以放在其他目录加载。\\n\\n安', '2020-06-30 10:51:12');
+INSERT INTO `sys_operation_logs` VALUES ('7806', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 10:51:13');
+INSERT INTO `sys_operation_logs` VALUES ('7807', '44', '黑夜男神', '[GET] /api/blogs/articleClassListAll', '14.23.92.186', '', '2020-06-30 10:58:55');
+INSERT INTO `sys_operation_logs` VALUES ('7808', '44', '黑夜男神', '[GET] /api/blogs/articleTagsListAll', '14.23.92.186', '', '2020-06-30 10:58:55');
+INSERT INTO `sys_operation_logs` VALUES ('7809', '44', '黑夜男神', '[POST] /api/single/uploadImage/', '14.23.92.186', '', '2020-06-30 10:59:05');
+INSERT INTO `sys_operation_logs` VALUES ('7810', '44', '黑夜男神', '[POST] /api/blogs/createArticle', '14.23.92.186', '{\"title\":\"mysql配置指定ip可访问\",\"class_id\":3,\"tagsArr\":[4,12],\"cover_url\":\"/public/uploads/3b22337e04ce438248768f9d59941f30_u=3160244586,1161773702&fm=193.jpg\",\"is_top\":false,\"content\":\"当我们的服务器在公网的环境时要注意做好ip的限制和隔离，最好的办法是先做好外网端口访问限制，将3306端口限制只能内网访问，可以通过iptables做', '2020-06-30 11:00:31');
+INSERT INTO `sys_operation_logs` VALUES ('7811', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:00:31');
+INSERT INTO `sys_operation_logs` VALUES ('7812', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"4\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:07:44');
+INSERT INTO `sys_operation_logs` VALUES ('7813', '44', '黑夜男神', '[GET] /api/blogs/articleClassListAll', '14.23.92.186', '', '2020-06-30 11:07:50');
+INSERT INTO `sys_operation_logs` VALUES ('7814', '44', '黑夜男神', '[GET] /api/blogs/articleTagsListAll', '14.23.92.186', '', '2020-06-30 11:07:50');
+INSERT INTO `sys_operation_logs` VALUES ('7815', '44', '黑夜男神', '[GET] /api/blogs/articleDetail', '14.23.92.186', '{\"article_id\":\"70\"}', '2020-06-30 11:07:50');
+INSERT INTO `sys_operation_logs` VALUES ('7816', '44', '黑夜男神', '[PUT] /api/blogs/updateArticle', '14.23.92.186', '{\"title\":\"mysql配置指定ip可访问\",\"class_id\":3,\"tagsArr\":[4,12],\"cover_url\":\"/public/uploads/3b22337e04ce438248768f9d59941f30_u=3160244586,1161773702&fm=193.jpg\",\"is_top\":false,\"content\":\"当我们的服务器在公网的环境时要注意做好ip的限制和隔离，最好的办法是先做好外网端口访问限制，将3306端口限制只能内网访问，可以通过iptables做', '2020-06-30 11:09:13');
+INSERT INTO `sys_operation_logs` VALUES ('7817', '44', '黑夜男神', '[GET] /api/blogs/articleList', '14.23.92.186', '{\"page\":\"4\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:09:13');
+INSERT INTO `sys_operation_logs` VALUES ('7818', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:13:53');
+INSERT INTO `sys_operation_logs` VALUES ('7819', '44', '黑夜男神', '[POST] /api/blogs/createMsgCommentsList', '14.23.92.186', '{\"parent_id\":47,\"user_id\":\"黑夜男神\",\"comment_content\":\"@TanJia恩恩\",\"comment_author_email\":\"395604192@qq.com\",\"comment_author\":\"黑夜男神\"}', '2020-06-30 11:14:02');
+INSERT INTO `sys_operation_logs` VALUES ('7820', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:14:02');
+INSERT INTO `sys_operation_logs` VALUES ('7821', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:14:02');
+INSERT INTO `sys_operation_logs` VALUES ('7822', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:26:25');
+INSERT INTO `sys_operation_logs` VALUES ('7823', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:26:31');
+INSERT INTO `sys_operation_logs` VALUES ('7824', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:26:39');
+INSERT INTO `sys_operation_logs` VALUES ('7825', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:26:42');
+INSERT INTO `sys_operation_logs` VALUES ('7826', '44', '黑夜男神', '[POST] /api/blogs/createMsgCommentsList', '14.23.92.186', '{\"parent_id\":46,\"user_id\":\"黑夜男神\",\"comment_content\":\"@zxhuan能不能正常点好好说话\",\"comment_author_email\":\"395604192@qq.com\",\"comment_author\":\"黑夜男神\"}', '2020-06-30 11:26:56');
+INSERT INTO `sys_operation_logs` VALUES ('7827', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:26:56');
+INSERT INTO `sys_operation_logs` VALUES ('7828', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:26:56');
+INSERT INTO `sys_operation_logs` VALUES ('7829', '44', '黑夜男神', '[POST] /api/blogs/createMsgCommentsList', '14.23.92.186', '{\"parent_id\":51,\"user_id\":\"黑夜男神\",\"comment_content\":\"@TanJia加起来！\",\"comment_author_email\":\"395604192@qq.com\",\"comment_author\":\"黑夜男神\"}', '2020-06-30 11:28:30');
+INSERT INTO `sys_operation_logs` VALUES ('7830', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:28:30');
+INSERT INTO `sys_operation_logs` VALUES ('7831', '44', '黑夜男神', '[GET] /api/blogs/msgCommentsList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:28:30');
+INSERT INTO `sys_operation_logs` VALUES ('7832', '44', '黑夜男神', '[GET] /api/blogs/relatedLinksList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:55:32');
+INSERT INTO `sys_operation_logs` VALUES ('7833', '44', '黑夜男神', '[POST] /api/blogs/createRelatedLinksList', '14.23.92.186', '{\"id\":\"\",\"nick_name\":\"SSCS\",\"url\":\"https://www.sscrazy.com/\",\"icon\":\"https://leo-1258096517.cos.ap-shanghai.myqcloud.com/sscs/logo1.png\",\"description\":\"如果不能保持永恒，那就追求一刹那的光辉！\"}', '2020-06-30 11:56:03');
+INSERT INTO `sys_operation_logs` VALUES ('7834', '44', '黑夜男神', '[GET] /api/blogs/relatedLinksList', '14.23.92.186', '{\"page\":\"1\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:56:03');
+INSERT INTO `sys_operation_logs` VALUES ('7835', '44', '黑夜男神', '[GET] /api/blogs/relatedLinksList', '14.23.92.186', '{\"page\":\"2\",\"pageSize\":\"10\",\"currentPage\":\"1\"}', '2020-06-30 11:56:07');
 
 -- ----------------------------
 -- Table structure for sys_resource
@@ -751,7 +822,7 @@ CREATE TABLE `sys_resource` (
   `sort` bigint(20) DEFAULT NULL,
   `perms` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`res_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_resource
@@ -925,7 +996,7 @@ INSERT INTO `sys_user` VALUES ('34', '夏侯惇', '1d7f33f8216eca12', '12', '121
 INSERT INTO `sys_user` VALUES ('41', '百里', '1d7f33f8216eca12', '1212', '121123123', '1', 'public/upload/csde_1589175881000.jpeg', '2020-04-15 22:04:22', '1');
 INSERT INTO `sys_user` VALUES ('42', '百里', '1d7f33f8216eca12', '1212', '13670135458', '1', 'public/upload/csde_1589175881000.jpeg', '2020-04-15 22:04:38', '1');
 INSERT INTO `sys_user` VALUES ('43', '甄姬', '1d7f33f8216eca12', '12', '1154789', '1', 'public/uploads/csde_1589175881000.jpeg', '2020-04-27 12:38:13', '44');
-INSERT INTO `sys_user` VALUES ('44', '黑夜男神', '85bc30c1bcfda79b145dcca78371bb7e', '395604192@qq.com', '13076897374', '1', 'https://uploadfile.huiyi8.com/up/25/70/a1/2570a194efbc9fcd2ac7f94530dfe482.jpg', '2020-05-11 22:04:22', '44');
+INSERT INTO `sys_user` VALUES ('44', '黑夜男神', '85bc30c1bcfda79b7851b7b461b0c715', '395604192@qq.com', '13076897374', '1', 'https://uploadfile.huiyi8.com/up/25/70/a1/2570a194efbc9fcd2ac7f94530dfe482.jpg', '2020-05-11 22:04:22', '44');
 INSERT INTO `sys_user` VALUES ('45', '项羽', '1d7f33f8216eca12', '212133@qq.com', '1587545654', '1', '', '2020-05-11 19:41:36', '44');
 INSERT INTO `sys_user` VALUES ('46', '白起', '1d7f33f8216eca12', '123123123@qq.com', '15787845489', '1', '', '2020-05-11 19:36:13', '1');
 INSERT INTO `sys_user` VALUES ('47', '赵云', '1d7f33f8216eca12', '123', '1324535234323', '1', '1231', '2020-05-18 19:37:50', '44');
@@ -969,3 +1040,20 @@ INSERT INTO `sys_user_role` VALUES ('51', '45', '5');
 INSERT INTO `sys_user_role` VALUES ('52', '46', '5');
 INSERT INTO `sys_user_role` VALUES ('53', '47', '3');
 INSERT INTO `sys_user_role` VALUES ('54', '44', '2');
+
+-- ----------------------------
+-- Table structure for WARNING
+-- ----------------------------
+DROP TABLE IF EXISTS `WARNING`;
+CREATE TABLE `WARNING` (
+  `id` int(11) NOT NULL,
+  `warning` text COLLATE utf8_unicode_ci,
+  `website` text COLLATE utf8_unicode_ci,
+  `token` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of WARNING
+-- ----------------------------
+INSERT INTO `WARNING` VALUES ('1', 'To recover your lost databases and avoid leaking it: visit http://dbrestore.to and enter your unique token a122a9fb40c0b577 and pay the required amount of Bitcoin to get it back. Databases that we have: blog, PLEASE_READ_ME_VVV. Your databases are downloaded and backed up on our servers. If we dont receive your payment in the next 9 Days, we will sell your database to the highest bidder or use them otherwise.', 'http://dbrestore.to', 'a122a9fb40c0b577');

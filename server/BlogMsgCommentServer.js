@@ -75,9 +75,7 @@ class BlogMsgCommentsServer {
       offset: limitStart
     }) 
     // 子集
-    let _dataAllComment = await BlogMsgCommentModel.findAll({
-      //  where: { parent_id: comment_id},
-    }) // 组装评论
+    let _dataAllComment = await BlogMsgCommentModel.findAll() // 组装评论
     let findChild = async(item, childComments) => {
       _dataAllComment.map(it => {
          if (item.comment_id === it.parent_id ) {
