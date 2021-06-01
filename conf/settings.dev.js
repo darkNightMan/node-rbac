@@ -7,9 +7,9 @@ module.exports = {
   APP_PORT: 10086,
   // mysql
   MYSQL_CONF: { // 服务器
-    host: "106.54.63.174", //数据库的地址 127.0.0.1 106.54.63.174
-    user: "blog", // 用户的名字
-    password: "101029xixi.", // 用户密码 ， csdewang
+    host: "localhost", //数据库的地址 127.0.0.1 106.54.63.174
+    user: "root", // 用户的名字
+    password: "root", // 用户密码 ， csdewang
     database: "blog", //数据库名字,
     useConnectionPooling: true
   },
@@ -54,3 +54,11 @@ module.exports = {
     }
   }
 }
+
+// MYSQL_CONF: { // 服务器
+//   host: "106.54.63.174", //数据库的地址 127.0.0.1 106.54.63.174
+//   user: "blog", // 用户的名字
+//   password: "101029xixi.", // 用户密码 ， csdewang
+//   database: "blog", //数据库名字,
+//   useConnectionPooling: true
+// },

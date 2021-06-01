@@ -19,6 +19,7 @@ const BlogCommentsController = require('../controller/BlogCommentsController')
 const BlogMsgCommentsController = require('../controller/BlogMsgCommentsController')
 const BlogRelatedLinksController = require('../controller/BlogRelatedLinksController')
 
+const MarketingPageController = require('../controller/MarketingPageController')
 module.exports = function (app) {
   app.use(log.setLog)
   app.get('/api/getCaptcha', UserController.captcha)
@@ -89,5 +90,10 @@ module.exports = function (app) {
   app.put('/api/blogs/updateMsgCommentsList', BlogMsgCommentsController.update) // 更新
   app.delete('/api/blogs/deleteMsgCommentsList', BlogMsgCommentsController.delete) // 更新
 
+  app.get('/api/maketing/list', MarketingPageController.list) // 列表  
+  app.post('/api/maketing/create', MarketingPageController.create) // 添加
+  app.put('/api/maketing/update', MarketingPageController.update) // 更新
+  app.delete('/api/maketing/delete', MarketingPageController.delete) // 更新
+  
   app.use(NotFind.notApi) // 访问的路由不存在  
 }

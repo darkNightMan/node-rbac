@@ -6,6 +6,7 @@ const SysRolePermmisionModel = require('./SysRolePermmisionModel') // 角色权�
 const SysResourceModel = require('./SysResourceModel') // 权限表
 const SysLoginLogsModel = require('./SysLoginLogsModel')
 const SysOperationModel = require('./SysOperationModel')
+const MarketingPageModel = require('./MarketingPageModel')
 const  Sequelize = require('sequelize')
 const Op = Sequelize.Op
 
@@ -64,6 +65,7 @@ SysResourceModel.belongsToMany(SysRoleModel, {
 
 // --------------日志-----
 SysUserModel.hasMany(SysLoginLogsModel, { foreignKey: 'user_id',} )
+SysUserModel.hasMany(MarketingPageModel, { foreignKey: 'user_id',} )
 SysLoginLogsModel.belongsTo(SysUserModel, { foreignKey: 'user_id', as: 'userInfo'})
 
 
@@ -75,5 +77,6 @@ module.exports = {
   SysResourceModel,
   SysLoginLogsModel,
   SysOperationModel,
+  MarketingPageModel,
   Op
 }
