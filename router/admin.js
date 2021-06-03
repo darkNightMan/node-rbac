@@ -17,17 +17,15 @@ const BlogTagsController = require('../controller/BlogTagsController')
 const BlogCommentsController = require('../controller/BlogCommentsController')
 const BlogMsgCommentsController = require('../controller/BlogMsgCommentsController')
 const BlogRelatedLinksController = require('../controller/BlogRelatedLinksController')
-
 const MarketingPageController = require('../controller/MarketingPageController')
+
 module.exports = function (app) {
   app.use(log.setLog)
-  app.get('/api/getCaptcha', UserController.captcha)
   app.post('/api/login', UserController.login) // 登入接口
   app.use(InterceptAuth.authToken) // 校验token
   app.use(log.operatioLogs)
   app.get('/api/test', TestController.test) // 测试接口  
   app.get('/api/loginOut', UserController.loginOut) // 退出 
-
   app.get('/api/getUserMenuList', UserController.getUserMenuList) // 获取用户信息和菜单
  // 角色
   app.get('/api/role/getRoleTreePer/',permissions.hasPerms('sys:role:lookPerms'), SysRoleController.getRoleTreePer) // 获取当前角色下的权限 
@@ -88,4 +86,9 @@ module.exports = function (app) {
   app.post('/api/blogs/createMsgCommentsList', BlogMsgCommentsController.create) // 添加
   app.put('/api/blogs/updateMsgCommentsList', BlogMsgCommentsController.update) // 更新
   app.delete('/api/blogs/deleteMsgCommentsList', BlogMsgCommentsController.delete) // 更新
+  // marketing
+  app.get('/api/marketing/list', MarketingPageController.list) // 列表  
+  app.post('/api/marketing/create', MarketingPageController.create) // 添加
+  app.put('/api/marketing/update', MarketingPageController.update) // 更新
+  app.delete('/api/marketing/delete', MarketingPageController.delete) // 更新 
 }
