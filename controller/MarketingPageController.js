@@ -13,7 +13,7 @@ class MarketingPageController {
       res.R.err('USER_ID_NULL')
     }
     const { pageParams, conditions } = offsetPage(req.query)
-    let _data = await MarketingPageServer.list(pageParams, conditions, userid) // 用户表  
+    let _data = await MarketingPageServer.list(pageParams, conditions, userid)
     if (_data) {
       res.R.ok({
         list: _data.list,
@@ -21,6 +21,14 @@ class MarketingPageController {
         currentPage: pageParams.page,
         pageSize: pageParams.pageSize
       })
+    }
+  }
+  // 查询一条
+  async findOne(req, res) {
+   let id = req.query.id
+   let _data = await MarketingPageServer.findOne({id :id})
+   if (_data) {
+      res.R.ok(_data)
     }
   }
   // 创建

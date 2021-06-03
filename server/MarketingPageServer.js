@@ -51,5 +51,14 @@ class MarketingPageServer {
     })
     return row
   }
+  // 查询一条
+  async findOne(data) {
+    let row = await MarketingPageModel.findOne({
+      where: {
+        id: data.id
+      }
+    })
+    return row
+  }
 }
 module.exports = new MarketingPageServer()

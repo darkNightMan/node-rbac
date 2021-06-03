@@ -7,7 +7,6 @@ const SysLoginLogsController = require('../controller/SysLoginLogsController')
 const SysOperationController = require('../controller/SysOperationController')
 const InterceptAuth = require('../middlewares/intercept')
 const log = require('../middlewares/log')
-const NotFind = require('../middlewares/notFind')
 const permissions = require('../middlewares/permissions')
 const UploadImageController = require('../controller/UploadImageController')
 const upload = require('../utils/upload')
@@ -90,10 +89,8 @@ module.exports = function (app) {
   app.put('/api/blogs/updateMsgCommentsList', BlogMsgCommentsController.update) // 更新
   app.delete('/api/blogs/deleteMsgCommentsList', BlogMsgCommentsController.delete) // 更新
 
-  app.get('/api/maketing/list', MarketingPageController.list) // 列表  
-  app.post('/api/maketing/create', MarketingPageController.create) // 添加
-  app.put('/api/maketing/update', MarketingPageController.update) // 更新
-  app.delete('/api/maketing/delete', MarketingPageController.delete) // 更新
-  
-  app.use(NotFind.notApi) // 访问的路由不存在  
+  app.get('/api/marketing/list', MarketingPageController.list) // 列表  
+  app.post('/api/marketing/create', MarketingPageController.create) // 添加
+  app.put('/api/marketing/update', MarketingPageController.update) // 更新
+  app.delete('/api/marketing/delete', MarketingPageController.delete) // 更新 
 }
